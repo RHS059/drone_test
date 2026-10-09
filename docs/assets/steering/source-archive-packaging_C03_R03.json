@@ -1,0 +1,27 @@
+{
+  "complete_original_sha256": "42e551fe5206dcaef830f69fa63365c7811fee984cc794b0201efb3ec671ea5c",
+  "instructions": "Extract all three ordinary ZIP archives into the same empty directory. All 215 paths are unique and exactly match the full source package. Verify PUBLIC_WHITELIST_SHA256.json.",
+  "archives": [
+    {
+      "file": "C03_R03_assembly_glb.zip",
+      "bytes": 8463719,
+      "sha256": "1eb4ca21fdf1a737c6d2107ca4769b1718f6028daef099904d3a2060785f520d",
+      "git_blob_sha": "bf7311018bab593e1abd7c1f34fa9409c280160d",
+      "entries": 1
+    },
+    {
+      "file": "C03_R03_assembly_step.zip",
+      "bytes": 4610068,
+      "sha256": "d307fcd24f22679973b8ba0f530320469be2a320684f8fae8139c28300a654b4",
+      "git_blob_sha": "5637442eee93d96ee45fb9a1475c3f130d4efd20",
+      "entries": 1
+    },
+    {
+      "file": "C03_R03_sources_tests.zip",
+      "bytes": 11620032,
+      "sha256": "09ea9688aa3c212bef776a525f1eec74eb1753a04ff622ca62dfd840d9b02e09",
+      "git_blob_sha": "60298db65fa33a495a553dbb5ccd1c1ee6357b55",
+      "entries": 213
+    }
+  ]
+}

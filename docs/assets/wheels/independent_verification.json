@@ -1,0 +1,63 @@
+{
+  "tests": {
+    "tire_step_valid_single_solid": true,
+    "rim_step_valid_single_solid": true,
+    "step_tire_rim_clear": true,
+    "two_exact_node_names": true,
+    "identity_source_scale": true,
+    "explicit_metre_Zup_Yaxle_contract": true,
+    "tire_finite_and_valid_triangles": true,
+    "tire_glb_bounds_close_to_native": true,
+    "tire_nonzero_triangle_area": true,
+    "rim_finite_and_valid_triangles": true,
+    "rim_glb_bounds_close_to_native": true,
+    "rim_nonzero_triangle_area": true,
+    "pcd165_1_and_phase36": true,
+    "mount_face18mm": true,
+    "tire_envelope876_3by317_5": true
+  },
+  "all_pass": true,
+  "details": {
+    "tire_step_bounds_mm": [
+      -438.1499999999914,
+      -158.75,
+      -438.1499999999914,
+      438.1499999999914,
+      158.75,
+      438.1499999999914
+    ],
+    "rim_step_bounds_mm": [
+      -244.6,
+      -114.95,
+      -244.6,
+      244.6,
+      114.95,
+      244.6
+    ],
+    "tire_glb_bounds_m": [
+      [
+        -0.43814998865127563,
+        -0.1587499976158142,
+        -0.43814998865127563
+      ],
+      [
+        0.43814998865127563,
+        0.1587499976158142,
+        0.43814998865127563
+      ]
+    ],
+    "rim_glb_bounds_m": [
+      [
+        -0.24459999799728394,
+        -0.11495000123977661,
+        -0.24459999799728394
+      ],
+      [
+        0.24459999799728394,
+        0.11495000123977661,
+        0.24459999799728394
+      ]
+    ]
+  },
+  "scope": "File validity, dimensions and nominal interfaces only; not actual product/structural qualification."
+}

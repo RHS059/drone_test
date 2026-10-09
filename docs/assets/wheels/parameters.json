@@ -1,0 +1,31 @@
+{
+  "tire_diameter_mm": 876.3,
+  "tire_section_width_mm": 317.5,
+  "tire_measuring_rim_width_mm": 254.0,
+  "tread_depth_mm": 14.2875,
+  "bead_seat_diameter_mm": 457.2,
+  "bead_seat_width_mm": 215.89999999999998,
+  "rim_pcd_mm": 165.1,
+  "rim_hole_count": 5,
+  "center_bore_mm": 114.1,
+  "offset_mm": 18.0,
+  "lug_phase_deg": 36.0,
+  "assumed_lug_hole_mm": 18.0,
+  "assumed_hub_pad_thickness_mm": 20.0,
+  "assumed_barrel_wall_mm": 8.0,
+  "assumed_flange_height_mm": 16.0,
+  "assumed_flange_thickness_mm": 7.0,
+  "assumed_tread_rows": 4,
+  "assumed_tread_repeats": 40,
+  "assumed_tread_arc_deg": 6.3,
+  "assumed_tread_row_width_mm": 46.0,
+  "assumed_tread_row_centers_mm": [
+    -82.5,
+    -27.5,
+    27.5,
+    82.5
+  ],
+  "assumed_vent_count": 5,
+  "assumed_vent_pcd_mm": 308.0,
+  "assumed_vent_diameter_mm": 72.0
+}

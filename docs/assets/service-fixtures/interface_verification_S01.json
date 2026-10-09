@@ -1,0 +1,342 @@
+{
+  "revision": "S01",
+  "fabrication_release": false,
+  "rated_load_kg": null,
+  "test_scope": "Nominal exported B-rep geometry only, not strength, stability, tolerances, floor capacity or an approved lifting/removal sequence. Pin extraction cylinder checks below compare only the S01 cradle against the nominal cylinder; they do not establish installed-wheel or tool access.",
+  "chassis_trestles_vs_frame_R07": {
+    "positive_volume_intersections_mm3": [],
+    "zero_gap_solid_contacts": [
+      [
+        3,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        13,
+        0
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        19,
+        1
+      ],
+      [
+        21,
+        1
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        26,
+        1
+      ],
+      [
+        30,
+        0
+      ],
+      [
+        33,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        43,
+        1
+      ],
+      [
+        46,
+        1
+      ],
+      [
+        48,
+        1
+      ],
+      [
+        51,
+        1
+      ],
+      [
+        53,
+        1
+      ]
+    ]
+  },
+  "chassis_trestles_vs_body_R01": {
+    "positive_volume_intersections_mm3": [],
+    "zero_gap_solid_contacts": []
+  },
+  "trestles_vs_all_six_original_wheels": [
+    {
+      "station_X_mm": -1350,
+      "side": -1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    {
+      "station_X_mm": -1350,
+      "side": 1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    {
+      "station_X_mm": 0,
+      "side": -1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    {
+      "station_X_mm": 0,
+      "side": 1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    {
+      "station_X_mm": 1350,
+      "side": -1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    {
+      "station_X_mm": 1350,
+      "side": 1,
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    }
+  ],
+  "cradle_vs_original_wheel": {
+    "positive_volume_intersections_mm3": [],
+    "zero_gap_solid_contacts": [
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        0
+      ]
+    ]
+  },
+  "cradle_vs_body": {
+    "positive_volume_intersections_mm3": [],
+    "zero_gap_solid_contacts": []
+  },
+  "cradle_at_all_stations_vs_trestles_and_body": [
+    {
+      "station_X_mm": -1350,
+      "side": -1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    },
+    {
+      "station_X_mm": -1350,
+      "side": 1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    },
+    {
+      "station_X_mm": 0,
+      "side": -1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    },
+    {
+      "station_X_mm": 0,
+      "side": 1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    },
+    {
+      "station_X_mm": 1350,
+      "side": -1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    },
+    {
+      "station_X_mm": 1350,
+      "side": 1,
+      "trestles": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      },
+      "body": {
+        "positive_volume_intersections_mm3": [],
+        "zero_gap_solid_contacts": []
+      }
+    }
+  ],
+  "cradle_vs_C02_original_corner": {
+    "stationary_clamp_C02_R01": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "inner_backing_C02_R01": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "upper_wishbone_C02_R02": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "lower_wishbone_C02_R02": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "upright_pins_C02_R02": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "original_upright_C02_R04": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    },
+    "original_wheel_adapter_C02_R02": {
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": []
+    }
+  },
+  "pin_extraction_screens": [
+    {
+      "axis": "X",
+      "pin_Z_mm": -80,
+      "envelope_radius_mm": 14,
+      "X_span_mm": [
+        -260,
+        260
+      ],
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": [],
+      "tested_pair": "S01 cradle versus nominal pin extraction cylinder ONLY; wheel and tool excluded"
+    },
+    {
+      "axis": "X",
+      "pin_Z_mm": -420,
+      "envelope_radius_mm": 14,
+      "X_span_mm": [
+        -260,
+        260
+      ],
+      "positive_volume_intersections_mm3": [],
+      "zero_gap_solid_contacts": [],
+      "tested_pair": "S01 cradle versus nominal pin extraction cylinder ONLY; wheel and tool excluded"
+    }
+  ],
+  "important_not_tested": [
+    "Proprietary drive geometry is not read or redistributed; its envelope/mass/CG and lifting method are unqualified.",
+    "Wishbone support fixtures and coilover energy control are absent: no permission to withdraw the pins.",
+    "All suspension sweep and lowered/raised load-transfer states: only C02 q=0 static fit screened.",
+    "Human/tool clearance beyond the stated pin extraction cylinder.",
+    "Cradle insertion beneath vehicle, actual jack/hoist lift points and equipment path.",
+    "Body-frame service connectors/brake isolation.",
+    "Whole-vehicle CG, support reactions and floor loading."
+  ],
+  "export_roundtrip": [
+    {
+      "file": "chassis_trestles_S01",
+      "STEP_solid_count": 54,
+      "GLB_nodes": 54,
+      "STEP_valid": true,
+      "bounds_max_delta_mm": 4.76837158203125e-05,
+      "STEP_bounds_mm": [
+        -1950.0,
+        -650.0,
+        -788.15,
+        1950.0,
+        650.0,
+        -30.0
+      ],
+      "GLB_bounds_mm": [
+        -1950.0000476837158,
+        -649.9999761581421,
+        -788.1500124931335,
+        1950.0000476837158,
+        649.9999761581421,
+        -29.999999329447746
+      ]
+    },
+    {
+      "file": "corner_cradle_S01",
+      "STEP_solid_count": 62,
+      "GLB_nodes": 62,
+      "STEP_valid": true,
+      "bounds_max_delta_mm": 1.430511474609375e-05,
+      "STEP_bounds_mm": [
+        -560.0,
+        640.0,
+        -788.15,
+        560.0,
+        1240.0,
+        150.0
+      ],
+      "GLB_bounds_mm": [
+        -560.0000023841858,
+        639.9999856948853,
+        -788.1500124931335,
+        560.0000023841858,
+        1240.0000095367432,
+        150.00000596046448
+      ]
+    }
+  ],
+  "known_installed_wheel_obstruction": {
+    "evidence_file": "pin_axis_tire_obstruction.json",
+    "result": "The installed original tire model contains points on both pin axes at X offsets \u00b1220 mm; the full \u00b1260 mm extraction corridor is obstructed.",
+    "scope": "Original tire hidden profile assumptions remain; shorter extraction, offset tooling and wheel-first service are unqualified alternatives."
+  }
+}

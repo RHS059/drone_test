@@ -1,0 +1,236 @@
+{
+  "configuration": "C02_R05 ORIGINAL SIX-CORNER DEVELOPMENT",
+  "status": "allpartsvalid, reviseduprightclearanceunderindependentcheck; noqualifiedtravel yet",
+  "units": {
+    "STEP": "mm",
+    "GLB": "m"
+  },
+  "axes": "Xforward,Yleft,Zup",
+  "wheel_stations_m": [
+    {
+      "id": "left_0",
+      "x": -1.35,
+      "side": 1,
+      "wheel_center": [
+        -1.35,
+        0.94,
+        -0.25
+      ]
+    },
+    {
+      "id": "right_0",
+      "x": -1.35,
+      "side": -1,
+      "wheel_center": [
+        -1.35,
+        -0.94,
+        -0.25
+      ]
+    },
+    {
+      "id": "left_1",
+      "x": 0,
+      "side": 1,
+      "wheel_center": [
+        0,
+        0.94,
+        -0.25
+      ]
+    },
+    {
+      "id": "right_1",
+      "x": 0,
+      "side": -1,
+      "wheel_center": [
+        0,
+        -0.94,
+        -0.25
+      ]
+    },
+    {
+      "id": "left_2",
+      "x": 1.35,
+      "side": 1,
+      "wheel_center": [
+        1.35,
+        0.94,
+        -0.25
+      ]
+    },
+    {
+      "id": "right_2",
+      "x": 1.35,
+      "side": -1,
+      "wheel_center": [
+        1.35,
+        -0.94,
+        -0.25
+      ]
+    }
+  ],
+  "left_at_station_zero": {
+    "upper_pivot": [
+      0,
+      0.55,
+      0.07
+    ],
+    "lower_pivot": [
+      0,
+      0.55,
+      -0.27
+    ],
+    "outer_upper": [
+      0,
+      0.812,
+      -0.08
+    ],
+    "outer_lower": [
+      0,
+      0.812,
+      -0.42
+    ],
+    "upper_lower_link_vector": [
+      0,
+      0.262,
+      -0.15
+    ],
+    "link_length_m": 0.30190064590855054,
+    "upright_joint_separation_m": 0.34,
+    "pivot_axis": [
+      1,
+      0,
+      0
+    ],
+    "wheel_center": [
+      0,
+      0.94,
+      -0.25
+    ],
+    "wheel_axis": [
+      0,
+      1,
+      0
+    ],
+    "coilover_fixed_eye": [
+      0,
+      0.56,
+      0.17
+    ],
+    "coilover_lower_attachment_vector_from_lower_pivot": [
+      0,
+      0.1703,
+      -0.0975
+    ]
+  },
+  "motion": {
+    "left": "rotate upper/lower abouttheir ownXaxes byq; translateupright/adapter/wheel byRx(q)*v\u2212v",
+    "right": "properRz(pi) ofleftcorner; same localq corresponds global\u2212q",
+    "upright": "no rotation in this parallel-link proposal",
+    "steering": "FIXED WHEELS/skid-steer candidate only; noactualkingpin,tierod,actuator orworkingsteering. Scrub/thermal/loadanalysisoutstanding.",
+    "planned_sweep_degrees": [
+      -12,
+      12
+    ],
+    "cleared_sweep_degrees": null
+  },
+  "meshes": [
+    {
+      "file": "stationary_clamp_C02_R01.glb",
+      "group": "stationary",
+      "transform": "already C,leftstation0"
+    },
+    {
+      "file": "inner_backing_C02_R01.glb",
+      "group": "stationary",
+      "transform": "already C,leftstation0"
+    },
+    {
+      "file": "upper_wishbone_C02_R02.glb",
+      "group": "upper_arm",
+      "transform": "already C,leftstation0"
+    },
+    {
+      "file": "lower_wishbone_C02_R02.glb",
+      "group": "lower_arm",
+      "transform": "already C,leftstation0"
+    },
+    {
+      "file": "upright_WD220_C02_R04.glb",
+      "group": "upright",
+      "initial_rotation_x_rad": 1.5707963267948966,
+      "initial_translation_m": [
+        0,
+        0.797,
+        -0.25
+      ]
+    },
+    {
+      "file": "wheel_adapter_C02_R02.glb",
+      "group": "wheel_spin",
+      "initial_rotation_x_rad": -1.5707963267948966,
+      "initial_translation_m": [
+        0,
+        0.928,
+        -0.25
+      ]
+    },
+    {
+      "file": "stationary_hardware_C02_R01.glb",
+      "group": "stationary",
+      "transform": "alreadyC,leftstation0"
+    },
+    {
+      "file": "upright_pins_C02_R02.glb",
+      "group": "upright",
+      "transform": "alreadyC,leftstation0; translatewithupright"
+    },
+    {
+      "file": "upper_bearing_envelopes_C02_R02.glb",
+      "group": "upper_arm",
+      "transform": "alreadyC,leftstation0; REFERENCE FIT ENVELOPES ONLY"
+    },
+    {
+      "file": "lower_bearing_envelopes_C02_R02.glb",
+      "group": "lower_arm",
+      "transform": "alreadyC,leftstation0; REFERENCE FIT ENVELOPES ONLY"
+    }
+  ],
+  "motor_reference_planes_left_m": {
+    "wheel": 0.928,
+    "frame": 0.797,
+    "rear_nominal": 0.606,
+    "rear_conservative": 0.5914,
+    "rotor_clocking": "Rotate outputrotor\u221218deg relative source motorXYneutral to align originalinputpattern phase0; doNOTrotatetheasymmetricstator."
+  },
+  "wheel_interface": {
+    "selected": "BFGKM3MSPN72204 +EVOSE5240060141",
+    "diameter_source_m": 0.8763,
+    "section_published_on10inrim_m": 0.3175,
+    "actual_section_on8_5in_rim": "unknown",
+    "positive_offset_m": 0.018,
+    "wheel_mount_face_Y_m": 0.958,
+    "adapter_face_spacing_m": 0.03,
+    "input_pcd_m": 0.14,
+    "output_pcd_m": 0.1651,
+    "output_phase_deg": 36,
+    "source_mesh_reuse": "No Warthog scaling; selectedwheeloriginalgeometryhandledseparately",
+    "output_tap_drill_m": 0.0145,
+    "tap_source": "https://osgtool.com/1122/"
+  },
+  "shock_visual": "No OEMshockCAD or certifiedspring/valving yet. Endpoints alone supplied; do not fabricate internals or imply installedqualified hardware.",
+  "bearing_envelope_warning": "Nominal externalfit shells only; notOEMinternalCADandnotbearingmass. GE20ESretention/lube/load/steeringtilt notqualified.",
+  "revision_change": "R04upright includeswiderclevis/reliefandthroughpinholecuts; R02arms100mmoutereyes,R02pins26mmheads. PriorR01/R02/R03uprights hadconfirmedinterferences; notcurrent. R05assemblyuseswheeladapterR02withcorrect\u00d814.5M16x1.5tappilots; removesmaterialonly, allposesunchanged.",
+  "source_drive_limits": {
+    "voltage_V": 48,
+    "nameplate_power_W": 2200,
+    "duty": "S2 60min, NOTcontinuous",
+    "nameplate_current_A": 47,
+    "output_rpm": 74,
+    "maximum_output_torque_Nm": 1000,
+    "maximum_is_not_rated_continuous": true,
+    "ratio": 40.61,
+    "brake_Nm": 12,
+    "exact_mass_and_bearing_capacity": "unknown; no familyrating substituted"
+  },
+  "source_motor_protection": "PrivateOEMCADneverincluded; onlysource-backeddimensions/originalinterfacespublic."
+}

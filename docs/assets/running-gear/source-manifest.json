@@ -1,0 +1,62 @@
+{
+  "retrieved_utc": "2026-10-09T08:33:00Z",
+  "repository": "https://github.com/warthog-cpr/warthog",
+  "branch": "kinetic-devel",
+  "license_evidence": {
+    "repository": "BSD-3-Clause",
+    "package": "warthog_description/package.xml explicitly licenses robot-description package BSD",
+    "mesh_directory": "No separate license/exclusion in mesh directory listing; package-level BSD applies as published. No representation of additional trademark/patent/manufacturing rights."
+  },
+  "files": [
+    {
+      "local": "LICENSE",
+      "path": "LICENSE",
+      "git_blob_sha": "3fd3245a3b1409e83dc8e6d5073513cd3ec02977",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/LICENSE"
+    },
+    {
+      "local": "warthog.urdf.xacro",
+      "path": "warthog_description/urdf/warthog.urdf.xacro",
+      "git_blob_sha": "f2cf15ad7ae4d65f59271fb6e0f975efcb1fa85e",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/urdf/warthog.urdf.xacro",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/urdf/warthog.urdf.xacro"
+    },
+    {
+      "local": "rocker.stl",
+      "path": "warthog_description/meshes/rocker.stl",
+      "git_blob_sha": "c0ed51a752a5f9d044e625c4e36f743824395683",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/rocker.stl",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/rocker.stl"
+    },
+    {
+      "local": "fenders.stl",
+      "path": "warthog_description/meshes/fenders.stl",
+      "git_blob_sha": "4d52f80f9210aed4f0855b311edb0a9badda63c1",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/fenders.stl",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/fenders.stl"
+    },
+    {
+      "local": "diff-link.stl",
+      "path": "warthog_description/meshes/diff-link.stl",
+      "git_blob_sha": "0171f94ec8cca0e99192b4c94d63f862f84cf262",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/diff-link.stl",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/diff-link.stl"
+    },
+    {
+      "local": "susp-link.stl",
+      "path": "warthog_description/meshes/susp-link.stl",
+      "git_blob_sha": "7443bd062cec88561c639077a8c2163b38871a23",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/susp-link.stl",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/susp-link.stl"
+    },
+    {
+      "local": "wheel.stl",
+      "path": "warthog_description/meshes/wheel.stl",
+      "git_blob_sha": "9567e5da4da49d199d36baa437d7e4485eea4129",
+      "url": "https://github.com/warthog-cpr/warthog/blob/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/wheel.stl",
+      "raw_url": "https://raw.githubusercontent.com/warthog-cpr/warthog/55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a/warthog_description/meshes/wheel.stl"
+    }
+  ],
+  "commit": "55555b6db5fc7aa7b710b5652f7cb5bf0589ec6a"
+}

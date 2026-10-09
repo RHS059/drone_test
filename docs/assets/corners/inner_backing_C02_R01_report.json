@@ -1,0 +1,47 @@
+{
+  "part": "inner_backing_C02_R01",
+  "original_geometry": true,
+  "not_vendor_CAD": true,
+  "not_fabrication_released": true,
+  "bounds_mm": [
+    -50.0,
+    398.0,
+    -130.0,
+    50.0,
+    410.0,
+    130.0
+  ],
+  "solid_count": 1,
+  "BRep_valid": true,
+  "density_kg_m3": 7850,
+  "density_assumed": true,
+  "volume_m3": 0.00030562885009851985,
+  "mass_kg": 2.3991864732733807,
+  "com_m": [
+    -7.14195431338175e-19,
+    0.4040000000000002,
+    7.618084600940533e-19
+  ],
+  "inertia_com_kg_m2": [
+    [
+      0.013175446176463872,
+      -7.214926881715658e-19,
+      -1.4621764421463014e-20
+    ],
+    [
+      -7.214926881715658e-19,
+      0.015125861100668657,
+      -1.9739381968975038e-19
+    ],
+    [
+      -1.4621764421463014e-20,
+      -1.9739381968975038e-19,
+      0.0020079953995628098
+    ]
+  ],
+  "notes": {
+    "axes": "already vehicleC mm atstationX0,leftside",
+    "design": "original welded CHS32x3 tube link with\u00d850 eyes/\u00d835nominal bearing pockets, chosenGE20ESenvelope20x35x16",
+    "status": "fits,retainers,pins,grade,welds,stiffness,fatigue andloadselection unresolved"
+  }
+}

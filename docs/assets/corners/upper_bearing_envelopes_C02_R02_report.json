@@ -1,0 +1,29 @@
+{
+  "group": "upper_bearing_envelopes_C02_R02",
+  "count": 6,
+  "all_BRep_valid": true,
+  "bounds_mm": [
+    -210.0,
+    532.5,
+    -97.5,
+    210.0,
+    829.5,
+    87.5
+  ],
+  "density_assumption_kg_m3": 7850,
+  "volume_m3": 6.220353454107801e-05,
+  "com_m": [
+    -3.181588450976139e-17,
+    0.6373333333333331,
+    0.019999999999999966
+  ],
+  "inertia_com_kg_m2": null,
+  "notes": {
+    "NOT_physical_bearing_model": true,
+    "reference_only": "GE20ESnominal20x35x16outerfit-envelope; no invented races or internal geometry",
+    "mass_warning": "computed filled-envelope mass MUST NOT be used as purchased bearing mass",
+    "retention": "not resolved"
+  },
+  "filled_fit_envelope_mass_NOT_product_kg": 0.4882977461474624,
+  "mass_kg": null
+}

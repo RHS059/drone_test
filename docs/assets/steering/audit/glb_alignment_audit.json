@@ -1,0 +1,4706 @@
+{
+  "summary": {
+    "glb_node_count": 76,
+    "manifest_node_count": 76,
+    "unique_glb_names": 76,
+    "names_match_manifest": true,
+    "all_nodes_identity": true,
+    "all_nodes_direct_scene_roots": true,
+    "source_up_axis": "Z",
+    "source_units": "metres",
+    "max_tessellated_com_error_vs_cad_m": 4.6949781815460985e-06,
+    "max_tessellated_relative_volume_error": 0.0004474683540823272,
+    "max_nominal_axis_error_deg": 4.363443244452969e-05,
+    "max_nominal_centroid_to_axis_m": 7.505229917680177e-08,
+    "transformed_axis_checks": 216,
+    "max_transformed_axis_error_deg": 4.365113462023975e-05,
+    "max_transformed_centroid_to_axis_m": 7.505229930610049e-08,
+    "max_rotation_determinant_error": 4.440892098500626e-16,
+    "failures": [],
+    "notes": [
+      "Geometry-only mesh fit check. Mesh-versus-CAD centroid/volume deviations include tessellation and are not tolerances or physical qualification.",
+      "Axes use integrated tetrahedral volume covariance of the GLB triangles, avoiding nonuniform vertex-sampling bias; small deviations are tessellation/numeric effects.",
+      "Transforms use already-baked world coordinates: arms P + Rx(x-P); steer delta + K + Rz(x-K); tie Icurrent + Ralign(x-Inominal); rack x+[0,r,0].",
+      "Middle C02 fixed-steer corners are excluded from this C03 assembly."
+    ],
+    "pass": true
+  },
+  "node_reports": [
+    {
+      "node": "rear_right_clamp",
+      "motion_group": "rear_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 28188,
+      "triangle_count": 9396,
+      "bounds_m": [
+        [
+          -1.5850000381469727,
+          -0.5899999737739563,
+          -0.3199999928474426
+        ],
+        [
+          -1.1150000095367432,
+          -0.5099999904632568,
+          0.20000000298023224
+        ]
+      ],
+      "mesh_volume_m3": 0.002256118900655183,
+      "relative_volume_error_vs_cad": 7.885956001993014e-06,
+      "mesh_com_m": [
+        -1.3503758524488156,
+        -0.520242795215416,
+        -0.0720677564649771
+      ],
+      "com_error_vs_cad_m": 2.4771498259068076e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_inner_backing_C02_R01",
+      "motion_group": "rear_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 6132,
+      "triangle_count": 2044,
+      "bounds_m": [
+        [
+          -1.399999976158142,
+          -0.4099999964237213,
+          -0.12999999523162842
+        ],
+        [
+          -1.2999999523162842,
+          -0.39800000190734863,
+          0.12999999523162842
+        ]
+      ],
+      "mesh_volume_m3": 0.00030563141088948666,
+      "relative_volume_error_vs_cad": 8.378760597973366e-06,
+      "mesh_com_m": [
+        -1.3499999622195074,
+        -0.403999999165535,
+        -3.7269449679189215e-17
+      ],
+      "com_error_vs_cad_m": 3.778970687926694e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_stationary_hardware_C02_R01",
+      "motion_group": "rear_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 45120,
+      "triangle_count": 15040,
+      "bounds_m": [
+        [
+          -1.5850000381469727,
+          -0.5659950375556946,
+          -0.28600001335144043
+        ],
+        [
+          -1.1089999675750732,
+          -0.390500009059906,
+          0.12600000202655792
+        ]
+      ],
+      "mesh_volume_m3": 0.00026257872148228534,
+      "relative_volume_error_vs_cad": 0.0003608540403740126,
+      "mesh_com_m": [
+        -1.344782905661839,
+        -0.5244377751486483,
+        -0.0691582700943222
+      ],
+      "com_error_vs_cad_m": 1.6843228039974314e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_upper_wishbone_C03_R02",
+      "motion_group": "rear_right_upper",
+      "identity_transform": true,
+      "vertex_count": 31584,
+      "triangle_count": 10528,
+      "bounds_m": [
+        [
+          -1.559999942779541,
+          -0.8519999980926514,
+          -0.1199999675154686
+        ],
+        [
+          -1.1399999856948853,
+          -0.5250077843666077,
+          0.0949999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0003908238937986088,
+      "relative_volume_error_vs_cad": 0.00029647524171648654,
+      "mesh_com_m": [
+        -1.3496942569571742,
+        -0.6434799529649793,
+        0.006183179178211595
+      ],
+      "com_error_vs_cad_m": 4.5856443018743145e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_lower_wishbone_C03_R03",
+      "motion_group": "rear_right_lower",
+      "identity_transform": true,
+      "vertex_count": 71679,
+      "triangle_count": 23893,
+      "bounds_m": [
+        [
+          -1.559999942779541,
+          -0.8519999980926514,
+          -0.4599999785423279
+        ],
+        [
+          -1.1399999856948853,
+          -0.5250077843666077,
+          -0.24500000476837158
+        ]
+      ],
+      "mesh_volume_m3": 0.00045537498846670956,
+      "relative_volume_error_vs_cad": 0.00026107787130855674,
+      "mesh_com_m": [
+        -1.3497381010135208,
+        -0.6583257413697166,
+        -0.338233589792287
+      ],
+      "com_error_vs_cad_m": 3.818169517407476e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_outer_pins_left_C03_R01",
+      "motion_group": "rear_right_steer",
+      "identity_transform": true,
+      "vertex_count": 9720,
+      "triangle_count": 3240,
+      "bounds_m": [
+        [
+          -1.406999945640564,
+          -0.8259999752044678,
+          -0.43399563431739807
+        ],
+        [
+          -1.3009999990463257,
+          -0.7979999780654907,
+          -0.06600435078144073
+        ]
+      ],
+      "mesh_volume_m3": 6.40630478819777e-05,
+      "relative_volume_error_vs_cad": 0.0003936470769210769,
+      "mesh_com_m": [
+        -1.350680097904417,
+        -0.8120000033261965,
+        -0.24999999567105485
+      ],
+      "com_error_vs_cad_m": 3.382123024579959e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_upright",
+      "motion_group": "rear_right_steer",
+      "identity_transform": true,
+      "vertex_count": 28734,
+      "triangle_count": 9578,
+      "bounds_m": [
+        [
+          -1.4950000047683716,
+          -0.8659999966621399,
+          -0.46000000834465027
+        ],
+        [
+          -1.0410000085830688,
+          -0.6890965104103088,
+          -0.03999999910593033
+        ]
+      ],
+      "mesh_volume_m3": 0.0011708286174632622,
+      "relative_volume_error_vs_cad": 0.00013878089003411154,
+      "mesh_com_m": [
+        -1.3349323742972383,
+        -0.7973547842993357,
+        -0.257216004814814
+      ],
+      "com_error_vs_cad_m": 4.060989845301962e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_retainer_upper",
+      "motion_group": "rear_right_upper",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          -1.3657000064849854,
+          -0.8519999980926514,
+          -0.11998756974935532
+        ],
+        [
+          -1.3626999855041504,
+          -0.7720000147819519,
+          -0.040012434124946594
+        ]
+      ],
+      "mesh_volume_m3": 8.900428388480167e-06,
+      "relative_volume_error_vs_cad": 0.00040774549740300924,
+      "mesh_com_m": [
+        -1.3641999959945679,
+        -0.8119999973580899,
+        -0.0800000003406115
+      ],
+      "com_error_vs_cad_m": 4.810322310539503e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_retainer_lower",
+      "motion_group": "rear_right_lower",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          -1.3657000064849854,
+          -0.8519999980926514,
+          -0.4599875807762146
+        ],
+        [
+          -1.3626999855041504,
+          -0.7720000147819519,
+          -0.3800124228000641
+        ]
+      ],
+      "mesh_volume_m3": 8.900428362595352e-06,
+      "relative_volume_error_vs_cad": 0.00040774840448340064,
+      "mesh_com_m": [
+        -1.3641999959945679,
+        -0.8119999973581131,
+        -0.42000000271372145
+      ],
+      "com_error_vs_cad_m": 5.512471391864104e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "identity_transform": true,
+      "vertex_count": 26958,
+      "triangle_count": 8986,
+      "bounds_m": [
+        [
+          -1.4600000381469727,
+          -0.9679999947547913,
+          -0.35996580123901367
+        ],
+        [
+          -1.2400000095367432,
+          -0.9279999732971191,
+          -0.14003418385982513
+        ]
+      ],
+      "mesh_volume_m3": 0.0008229678887467387,
+      "relative_volume_error_vs_cad": 0.00039925778463528483,
+      "mesh_com_m": [
+        -1.3499999373339036,
+        -0.9432244857600804,
+        -0.24999999959871616
+      ],
+      "com_error_vs_cad_m": 3.7952513414409485e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0655152797698975,
+          -0.6903736591339111,
+          -0.3259899616241455
+        ],
+        [
+          -0.9844846725463867,
+          -0.4916263520717621,
+          -0.19401003420352936
+        ]
+      ],
+      "mesh_volume_m3": 7.565946930677267e-05,
+      "relative_volume_error_vs_cad": 0.00041528929519313415,
+      "mesh_com_m": [
+        -1.0249999860116847,
+        -0.5909999986928723,
+        -0.2600000009694868
+      ],
+      "com_error_vs_cad_m": 1.4082664557574926e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0210001468658447,
+          -0.5404021739959717,
+          -0.2378542572259903
+        ],
+        [
+          -0.9883755445480347,
+          -0.4937705397605896,
+          -0.19751179218292236
+        ]
+      ],
+      "mesh_volume_m3": 8.51210441704764e-06,
+      "relative_volume_error_vs_cad": 0.0004146479708748679,
+      "mesh_com_m": [
+        -1.0046878576329998,
+        -0.5170863526591593,
+        -0.21768302175812204
+      ],
+      "com_error_vs_cad_m": 6.815848919349095e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0616244077682495,
+          -0.6882294416427612,
+          -0.3224882185459137
+        ],
+        [
+          -1.0289998054504395,
+          -0.6415978074073792,
+          -0.28214573860168457
+        ]
+      ],
+      "mesh_volume_m3": 8.512111398533443e-06,
+      "relative_volume_error_vs_cad": 0.00041382812767103627,
+      "mesh_com_m": [
+        -1.0453121438731356,
+        -0.664913652841648,
+        -0.3023169739958571
+      ],
+      "com_error_vs_cad_m": 6.68052574663525e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          -1.0015000104904175,
+          -0.4910829961299896,
+          -0.22271114587783813
+        ],
+        [
+          -0.9764999747276306,
+          -0.4311197102069855,
+          -0.13879388570785522
+        ]
+      ],
+      "mesh_volume_m3": 1.8154923550602886e-05,
+      "relative_volume_error_vs_cad": 0.00038712200776611457,
+      "mesh_com_m": [
+        -0.9889999998371444,
+        -0.46135106038917184,
+        -0.18264014799011774
+      ],
+      "com_error_vs_cad_m": 3.961576281883475e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          -1.0735000371932983,
+          -0.7530829906463623,
+          -0.3727111518383026
+        ],
+        [
+          -1.0484999418258667,
+          -0.6931197047233582,
+          -0.2887938916683197
+        ]
+      ],
+      "mesh_volume_m3": 1.8154928294779352e-05,
+      "relative_volume_error_vs_cad": 0.00038686079268334734,
+      "mesh_com_m": [
+        -1.0609999934807148,
+        -0.7233510647846406,
+        -0.33264013932828984
+      ],
+      "com_error_vs_cad_m": 4.059134732289468e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_clamp",
+      "motion_group": "rear_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 28188,
+      "triangle_count": 9396,
+      "bounds_m": [
+        [
+          -1.5850000381469727,
+          0.5099999904632568,
+          -0.3199999928474426
+        ],
+        [
+          -1.1150000095367432,
+          0.5899999737739563,
+          0.20000000298023224
+        ]
+      ],
+      "mesh_volume_m3": 0.002256118900655183,
+      "relative_volume_error_vs_cad": 7.885955999109604e-06,
+      "mesh_com_m": [
+        -1.3503758524488159,
+        0.520242795215416,
+        -0.07206775646497691
+      ],
+      "com_error_vs_cad_m": 2.477149819728233e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_inner_backing_C02_R01",
+      "motion_group": "rear_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 6132,
+      "triangle_count": 2044,
+      "bounds_m": [
+        [
+          -1.399999976158142,
+          0.39800000190734863,
+          -0.12999999523162842
+        ],
+        [
+          -1.2999999523162842,
+          0.4099999964237213,
+          0.12999999523162842
+        ]
+      ],
+      "mesh_volume_m3": 0.0003056314108894867,
+      "relative_volume_error_vs_cad": 8.378760598150738e-06,
+      "mesh_com_m": [
+        -1.3499999622195071,
+        0.403999999165535,
+        3.7269449679189215e-18
+      ],
+      "com_error_vs_cad_m": 3.778970732324787e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_stationary_hardware_C02_R01",
+      "motion_group": "rear_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 45120,
+      "triangle_count": 15040,
+      "bounds_m": [
+        [
+          -1.590999960899353,
+          0.390500009059906,
+          -0.28600001335144043
+        ],
+        [
+          -1.1150000095367432,
+          0.5659950375556946,
+          0.12600000202655792
+        ]
+      ],
+      "mesh_volume_m3": 0.0002625785284782391,
+      "relative_volume_error_vs_cad": 0.000361588808214353,
+      "mesh_com_m": [
+        -1.3552169829068335,
+        0.5244377563595535,
+        -0.06915824742222729
+      ],
+      "com_error_vs_cad_m": 1.7550261614095314e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_upper_wishbone_C03_R02",
+      "motion_group": "rear_left_upper",
+      "identity_transform": true,
+      "vertex_count": 31584,
+      "triangle_count": 10528,
+      "bounds_m": [
+        [
+          -1.559999942779541,
+          0.5250077843666077,
+          -0.1199999675154686
+        ],
+        [
+          -1.1399999856948853,
+          0.8519999980926514,
+          0.0949999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0003908242274661272,
+      "relative_volume_error_vs_cad": 0.0002956217406909705,
+      "mesh_com_m": [
+        -1.3503055874504326,
+        0.6434801050274687,
+        0.006183102928861997
+      ],
+      "com_error_vs_cad_m": 4.694978180859662e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_lower_wishbone_C03_R03",
+      "motion_group": "rear_left_lower",
+      "identity_transform": true,
+      "vertex_count": 71679,
+      "triangle_count": 23893,
+      "bounds_m": [
+        [
+          -1.559999942779541,
+          0.5250077843666077,
+          -0.4599999785423279
+        ],
+        [
+          -1.1399999856948853,
+          0.8519999980926514,
+          -0.24500000476837158
+        ]
+      ],
+      "mesh_volume_m3": 0.00045537533968769046,
+      "relative_volume_error_vs_cad": 0.0002603067940785692,
+      "mesh_com_m": [
+        -1.3502617611842143,
+        0.6583258655432228,
+        -0.3382336568988736
+      ],
+      "com_error_vs_cad_m": 3.955688016549985e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_outer_pins_left_C03_R01",
+      "motion_group": "rear_left_steer",
+      "identity_transform": true,
+      "vertex_count": 9720,
+      "triangle_count": 3240,
+      "bounds_m": [
+        [
+          -1.3990000486373901,
+          0.7979999780654907,
+          -0.43399563431739807
+        ],
+        [
+          -1.2929999828338623,
+          0.8259999752044678,
+          -0.06600435078144073
+        ]
+      ],
+      "mesh_volume_m3": 6.40631162221577e-05,
+      "relative_volume_error_vs_cad": 0.0003925807324317385,
+      "mesh_com_m": [
+        -1.3493198899501067,
+        0.812000003342728,
+        -0.24999999567105177
+      ],
+      "com_error_vs_cad_m": 3.503565496092678e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_upright",
+      "motion_group": "rear_left_steer",
+      "identity_transform": true,
+      "vertex_count": 28734,
+      "triangle_count": 9578,
+      "bounds_m": [
+        [
+          -1.4950000047683716,
+          0.6890965104103088,
+          -0.46000000834465027
+        ],
+        [
+          -1.0410000085830688,
+          0.8659999966621399,
+          -0.03999999910593033
+        ]
+      ],
+      "mesh_volume_m3": 0.001170828615901968,
+      "relative_volume_error_vs_cad": 0.00013892812639505745,
+      "mesh_com_m": [
+        -1.3349323746316113,
+        0.7973547841713838,
+        -0.2572160052760608
+      ],
+      "com_error_vs_cad_m": 4.06442754562731e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_retainer_upper",
+      "motion_group": "rear_left_upper",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          -1.3372999429702759,
+          0.7720000147819519,
+          -0.11998756974935532
+        ],
+        [
+          -1.3343000411987305,
+          0.8519999980926514,
+          -0.040012434124946594
+        ]
+      ],
+      "mesh_volume_m3": 8.900074719705286e-06,
+      "relative_volume_error_vs_cad": 0.0004474654471181832,
+      "mesh_com_m": [
+        -1.3357999920845032,
+        0.8119999973580899,
+        -0.08000000034061153
+      ],
+      "com_error_vs_cad_m": 8.351693835365742e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_retainer_lower",
+      "motion_group": "rear_left_lower",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          -1.3372999429702759,
+          0.7720000147819519,
+          -0.4599875807762146
+        ],
+        [
+          -1.3343000411987305,
+          0.8519999980926514,
+          -0.3800124228000641
+        ]
+      ],
+      "mesh_volume_m3": 8.900074693821504e-06,
+      "relative_volume_error_vs_cad": 0.0004474683540823272,
+      "mesh_com_m": [
+        -1.3357999920845032,
+        0.811999997358113,
+        -0.42000000271372145
+      ],
+      "com_error_vs_cad_m": 8.774903988055638e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "identity_transform": true,
+      "vertex_count": 26958,
+      "triangle_count": 8986,
+      "bounds_m": [
+        [
+          -1.4600000381469727,
+          0.9279999732971191,
+          -0.35996580123901367
+        ],
+        [
+          -1.2400000095367432,
+          0.9679999947547913,
+          -0.14003418385982513
+        ]
+      ],
+      "mesh_volume_m3": 0.0008229678666078571,
+      "relative_volume_error_vs_cad": 0.0003992846751646888,
+      "mesh_com_m": [
+        -1.3500000750512264,
+        0.9432244859107047,
+        -0.24999999959870725
+      ],
+      "com_error_vs_cad_m": 3.819132869442978e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0655152797698975,
+          0.4916263520717621,
+          -0.3259899616241455
+        ],
+        [
+          -0.9844846725463867,
+          0.6903736591339111,
+          -0.19401003420352936
+        ]
+      ],
+      "mesh_volume_m3": 7.565950066398277e-05,
+      "relative_volume_error_vs_cad": 0.000414875015420867,
+      "mesh_com_m": [
+        -1.024999983910645,
+        0.5909999991133648,
+        -0.2600000013237144
+      ],
+      "com_error_vs_cad_m": 1.616804495779916e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0210001468658447,
+          0.4937705397605896,
+          -0.2378542572259903
+        ],
+        [
+          -0.9883755445480347,
+          0.5404021739959717,
+          -0.19751179218292236
+        ]
+      ],
+      "mesh_volume_m3": 8.512101697955395e-06,
+      "relative_volume_error_vs_cad": 0.00041496727672905376,
+      "mesh_com_m": [
+        -1.0046878557422878,
+        0.5170863538346464,
+        -0.21768302064999936
+      ],
+      "com_error_vs_cad_m": 6.6244342059344995e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          -1.0616244077682495,
+          0.6415978074073792,
+          -0.3224882185459137
+        ],
+        [
+          -1.0289998054504395,
+          0.6882294416427612,
+          -0.28214573860168457
+        ]
+      ],
+      "mesh_volume_m3": 8.51211133510317e-06,
+      "relative_volume_error_vs_cad": 0.00041383557635466043,
+      "mesh_com_m": [
+        -1.045312147156229,
+        0.6649136513977734,
+        -0.30231697485014203
+      ],
+      "com_error_vs_cad_m": 4.469190746215127e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          -1.0015000104904175,
+          0.4311197102069855,
+          -0.22271114587783813
+        ],
+        [
+          -0.9764999747276306,
+          0.4910829961299896,
+          -0.13879388570785522
+        ]
+      ],
+      "mesh_volume_m3": 1.8154924391569894e-05,
+      "relative_volume_error_vs_cad": 0.0003870757039938655,
+      "mesh_com_m": [
+        -0.9889999993864999,
+        0.4613510599352243,
+        -0.1826401485584544
+      ],
+      "com_error_vs_cad_m": 3.9543952855340043e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          -1.0735000371932983,
+          0.6931197047233582,
+          -0.3727111518383026
+        ],
+        [
+          -1.0484999418258667,
+          0.7530829906463623,
+          -0.2887938916683197
+        ]
+      ],
+      "mesh_volume_m3": 1.815493046032196e-05,
+      "relative_volume_error_vs_cad": 0.0003867415575747533,
+      "mesh_com_m": [
+        -1.0609999945780488,
+        0.7233510609496067,
+        -0.33264014505540684
+      ],
+      "com_error_vs_cad_m": 3.9902777601928157e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_clamp",
+      "motion_group": "front_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 28188,
+      "triangle_count": 9396,
+      "bounds_m": [
+        [
+          1.1150000095367432,
+          -0.5899999737739563,
+          -0.3199999928474426
+        ],
+        [
+          1.5850000381469727,
+          -0.5099999904632568,
+          0.20000000298023224
+        ]
+      ],
+      "mesh_volume_m3": 0.0022561189006551833,
+      "relative_volume_error_vs_cad": 7.885956010451014e-06,
+      "mesh_com_m": [
+        1.3503758524488159,
+        -0.520242795215416,
+        -0.07206775646497687
+      ],
+      "com_error_vs_cad_m": 2.477149829227999e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_inner_backing_C02_R01",
+      "motion_group": "front_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 6132,
+      "triangle_count": 2044,
+      "bounds_m": [
+        [
+          1.2999999523162842,
+          -0.4099999964237213,
+          -0.12999999523162842
+        ],
+        [
+          1.399999976158142,
+          -0.39800000190734863,
+          0.12999999523162842
+        ]
+      ],
+      "mesh_volume_m3": 0.0003056314108894867,
+      "relative_volume_error_vs_cad": 8.378760598150738e-06,
+      "mesh_com_m": [
+        1.3499999622195071,
+        -0.403999999165535,
+        3.7269449679189215e-18
+      ],
+      "com_error_vs_cad_m": 3.778970732324787e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_stationary_hardware_C02_R01",
+      "motion_group": "front_right_fixed",
+      "identity_transform": true,
+      "vertex_count": 45120,
+      "triangle_count": 15040,
+      "bounds_m": [
+        [
+          1.1150000095367432,
+          -0.5659950375556946,
+          -0.28600001335144043
+        ],
+        [
+          1.590999960899353,
+          -0.390500009059906,
+          0.12600000202655792
+        ]
+      ],
+      "mesh_volume_m3": 0.00026257852847823927,
+      "relative_volume_error_vs_cad": 0.00036158880821311496,
+      "mesh_com_m": [
+        1.3552169829068317,
+        -0.5244377563595534,
+        -0.06915824742222615
+      ],
+      "com_error_vs_cad_m": 1.7550261625659224e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_upper_wishbone_C03_R02",
+      "motion_group": "front_right_upper",
+      "identity_transform": true,
+      "vertex_count": 31584,
+      "triangle_count": 10528,
+      "bounds_m": [
+        [
+          1.1399999856948853,
+          -0.8519999980926514,
+          -0.1199999675154686
+        ],
+        [
+          1.559999942779541,
+          -0.5250077843666077,
+          0.0949999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0003908242274661272,
+      "relative_volume_error_vs_cad": 0.0002956217406906933,
+      "mesh_com_m": [
+        1.3503055874504326,
+        -0.6434801050274687,
+        0.006183102928861997
+      ],
+      "com_error_vs_cad_m": 4.6949781815460985e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_lower_wishbone_C03_R03",
+      "motion_group": "front_right_lower",
+      "identity_transform": true,
+      "vertex_count": 71679,
+      "triangle_count": 23893,
+      "bounds_m": [
+        [
+          1.1399999856948853,
+          -0.8519999980926514,
+          -0.4599999785423279
+        ],
+        [
+          1.559999942779541,
+          -0.5250077843666077,
+          -0.24500000476837158
+        ]
+      ],
+      "mesh_volume_m3": 0.00045537533968769046,
+      "relative_volume_error_vs_cad": 0.0002603067940785692,
+      "mesh_com_m": [
+        1.3502617611842143,
+        -0.6583258655432228,
+        -0.3382336568988736
+      ],
+      "com_error_vs_cad_m": 3.955688017404664e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_outer_pins_left_C03_R01",
+      "motion_group": "front_right_steer",
+      "identity_transform": true,
+      "vertex_count": 9720,
+      "triangle_count": 3240,
+      "bounds_m": [
+        [
+          1.2929999828338623,
+          -0.8259999752044678,
+          -0.43399563431739807
+        ],
+        [
+          1.3990000486373901,
+          -0.7979999780654907,
+          -0.06600435078144073
+        ]
+      ],
+      "mesh_volume_m3": 6.40631162221577e-05,
+      "relative_volume_error_vs_cad": 0.0003925807324317385,
+      "mesh_com_m": [
+        1.3493198899501067,
+        -0.812000003342728,
+        -0.24999999567105177
+      ],
+      "com_error_vs_cad_m": 3.5035654983039505e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_upright",
+      "motion_group": "front_right_steer",
+      "identity_transform": true,
+      "vertex_count": 28734,
+      "triangle_count": 9578,
+      "bounds_m": [
+        [
+          1.0410000085830688,
+          -0.8659999966621399,
+          -0.46000000834465027
+        ],
+        [
+          1.4950000047683716,
+          -0.6890965104103088,
+          -0.03999999910593033
+        ]
+      ],
+      "mesh_volume_m3": 0.0011708286314331376,
+      "relative_volume_error_vs_cad": 0.0001389413933680922,
+      "mesh_com_m": [
+        1.3349323722037045,
+        -0.797354783585099,
+        -0.2572160061759118
+      ],
+      "com_error_vs_cad_m": 4.0620644612611294e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_retainer_upper",
+      "motion_group": "front_right_upper",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          1.3343000411987305,
+          -0.8519999980926514,
+          -0.11998756974935532
+        ],
+        [
+          1.3372999429702759,
+          -0.7720000147819519,
+          -0.040012434124946594
+        ]
+      ],
+      "mesh_volume_m3": 8.900074719705286e-06,
+      "relative_volume_error_vs_cad": 0.0004474654471178029,
+      "mesh_com_m": [
+        1.3357999920845032,
+        -0.8119999973580899,
+        -0.08000000034061153
+      ],
+      "com_error_vs_cad_m": 8.351694219149052e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_retainer_lower",
+      "motion_group": "front_right_lower",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          1.3343000411987305,
+          -0.8519999980926514,
+          -0.4599875807762146
+        ],
+        [
+          1.3372999429702759,
+          -0.7720000147819519,
+          -0.3800124228000641
+        ]
+      ],
+      "mesh_volume_m3": 8.900074693821504e-06,
+      "relative_volume_error_vs_cad": 0.00044746835408213706,
+      "mesh_com_m": [
+        1.3357999920845032,
+        -0.811999997358113,
+        -0.42000000271372145
+      ],
+      "com_error_vs_cad_m": 8.774904020572615e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "identity_transform": true,
+      "vertex_count": 26958,
+      "triangle_count": 8986,
+      "bounds_m": [
+        [
+          1.2400000095367432,
+          -0.9679999947547913,
+          -0.35996580123901367
+        ],
+        [
+          1.4600000381469727,
+          -0.9279999732971191,
+          -0.14003418385982513
+        ]
+      ],
+      "mesh_volume_m3": 0.0008229678666078571,
+      "relative_volume_error_vs_cad": 0.0003992846751646888,
+      "mesh_com_m": [
+        1.3500000750512264,
+        -0.9432244859107047,
+        -0.24999999959870725
+      ],
+      "com_error_vs_cad_m": 3.8191328681345166e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          0.9844846725463867,
+          -0.6903736591339111,
+          -0.3259899616241455
+        ],
+        [
+          1.0655152797698975,
+          -0.4916263520717621,
+          -0.19401003420352936
+        ]
+      ],
+      "mesh_volume_m3": 7.56594877009128e-05,
+      "relative_volume_error_vs_cad": 0.0004150462786692409,
+      "mesh_com_m": [
+        1.0249999864696613,
+        -0.590999998588382,
+        -0.26000000076946456
+      ],
+      "com_error_vs_cad_m": 1.3625520463181084e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          0.9883755445480347,
+          -0.5404021739959717,
+          -0.2378542572259903
+        ],
+        [
+          1.0210001468658447,
+          -0.4937705397605896,
+          -0.19751179218292236
+        ]
+      ],
+      "mesh_volume_m3": 8.512103580356985e-06,
+      "relative_volume_error_vs_cad": 0.00041474622433703795,
+      "mesh_com_m": [
+        1.0046878590023987,
+        -0.5170863528315673,
+        -0.2176830211075627
+      ],
+      "com_error_vs_cad_m": 8.266554182627962e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          1.0289998054504395,
+          -0.6882294416427612,
+          -0.3224882185459137
+        ],
+        [
+          1.0616244077682495,
+          -0.6415978074073792,
+          -0.28214573860168457
+        ]
+      ],
+      "mesh_volume_m3": 8.512114424568744e-06,
+      "relative_volume_error_vs_cad": 0.0004134727771729483,
+      "mesh_com_m": [
+        1.04531214654738,
+        -0.6649136509012882,
+        -0.30231697576620786
+      ],
+      "com_error_vs_cad_m": 4.444763446451578e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          0.9764999747276306,
+          -0.4910829961299896,
+          -0.22271114587783813
+        ],
+        [
+          1.0015000104904175,
+          -0.4311197102069855,
+          -0.13879388570785522
+        ]
+      ],
+      "mesh_volume_m3": 1.8154923888672024e-05,
+      "relative_volume_error_vs_cad": 0.0003871033936274519,
+      "mesh_com_m": [
+        0.9889999997208317,
+        -0.4613510602430589,
+        -0.18264014811697477
+      ],
+      "com_error_vs_cad_m": 3.959744305186348e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          1.0484999418258667,
+          -0.7530829906463623,
+          -0.3727111518383026
+        ],
+        [
+          1.0735000371932983,
+          -0.6931197047233582,
+          -0.2887938916683197
+        ]
+      ],
+      "mesh_volume_m3": 1.815492934488571e-05,
+      "relative_volume_error_vs_cad": 0.00038680297366601354,
+      "mesh_com_m": [
+        1.0609999966641812,
+        -0.7233510649463631,
+        -0.33264013908685686
+      ],
+      "com_error_vs_cad_m": 4.061579432377598e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_clamp",
+      "motion_group": "front_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 28188,
+      "triangle_count": 9396,
+      "bounds_m": [
+        [
+          1.1150000095367432,
+          0.5099999904632568,
+          -0.3199999928474426
+        ],
+        [
+          1.5850000381469727,
+          0.5899999737739563,
+          0.20000000298023224
+        ]
+      ],
+      "mesh_volume_m3": 0.002256118900655183,
+      "relative_volume_error_vs_cad": 7.885955996226194e-06,
+      "mesh_com_m": [
+        1.3503758524488156,
+        0.520242795215416,
+        -0.0720677564649771
+      ],
+      "com_error_vs_cad_m": 2.4771498322067253e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_inner_backing_C02_R01",
+      "motion_group": "front_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 6132,
+      "triangle_count": 2044,
+      "bounds_m": [
+        [
+          1.2999999523162842,
+          0.39800000190734863,
+          -0.12999999523162842
+        ],
+        [
+          1.399999976158142,
+          0.4099999964237213,
+          0.12999999523162842
+        ]
+      ],
+      "mesh_volume_m3": 0.00030563141088948666,
+      "relative_volume_error_vs_cad": 8.378760597973366e-06,
+      "mesh_com_m": [
+        1.3499999622195074,
+        0.403999999165535,
+        -3.7269449679189215e-17
+      ],
+      "com_error_vs_cad_m": 3.778970687926694e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_stationary_hardware_C02_R01",
+      "motion_group": "front_left_fixed",
+      "identity_transform": true,
+      "vertex_count": 45120,
+      "triangle_count": 15040,
+      "bounds_m": [
+        [
+          1.1089999675750732,
+          0.390500009059906,
+          -0.28600001335144043
+        ],
+        [
+          1.5850000381469727,
+          0.5659950375556946,
+          0.12600000202655792
+        ]
+      ],
+      "mesh_volume_m3": 0.00026257872148228566,
+      "relative_volume_error_vs_cad": 0.00036085404037339324,
+      "mesh_com_m": [
+        1.3447829056618377,
+        0.5244377751486484,
+        -0.06915827009432246
+      ],
+      "com_error_vs_cad_m": 1.6843228039363468e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_upper_wishbone_C03_R02",
+      "motion_group": "front_left_upper",
+      "identity_transform": true,
+      "vertex_count": 31584,
+      "triangle_count": 10528,
+      "bounds_m": [
+        [
+          1.1399999856948853,
+          0.5250077843666077,
+          -0.1199999675154686
+        ],
+        [
+          1.559999942779541,
+          0.8519999980926514,
+          0.0949999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0003908238937986088,
+      "relative_volume_error_vs_cad": 0.0002964752417167638,
+      "mesh_com_m": [
+        1.3496942569571742,
+        0.6434799529649793,
+        0.006183179178211595
+      ],
+      "com_error_vs_cad_m": 4.585644301789741e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_lower_wishbone_C03_R03",
+      "motion_group": "front_left_lower",
+      "identity_transform": true,
+      "vertex_count": 71679,
+      "triangle_count": 23893,
+      "bounds_m": [
+        [
+          1.1399999856948853,
+          0.5250077843666077,
+          -0.4599999785423279
+        ],
+        [
+          1.559999942779541,
+          0.8519999980926514,
+          -0.24500000476837158
+        ]
+      ],
+      "mesh_volume_m3": 0.00045537498846670956,
+      "relative_volume_error_vs_cad": 0.0002610778713093896,
+      "mesh_com_m": [
+        1.3497381010135208,
+        0.6583257413697166,
+        -0.338233589792287
+      ],
+      "com_error_vs_cad_m": 3.818169517363839e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_outer_pins_left_C03_R01",
+      "motion_group": "front_left_steer",
+      "identity_transform": true,
+      "vertex_count": 9720,
+      "triangle_count": 3240,
+      "bounds_m": [
+        [
+          1.3009999990463257,
+          0.7979999780654907,
+          -0.43399563431739807
+        ],
+        [
+          1.406999945640564,
+          0.8259999752044678,
+          -0.06600435078144073
+        ]
+      ],
+      "mesh_volume_m3": 6.40630478819777e-05,
+      "relative_volume_error_vs_cad": 0.0003936470769210769,
+      "mesh_com_m": [
+        1.350680097904417,
+        0.8120000033261965,
+        -0.24999999567105485
+      ],
+      "com_error_vs_cad_m": 3.382123029029533e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_upright",
+      "motion_group": "front_left_steer",
+      "identity_transform": true,
+      "vertex_count": 28734,
+      "triangle_count": 9578,
+      "bounds_m": [
+        [
+          1.0410000085830688,
+          0.6890965104103088,
+          -0.46000000834465027
+        ],
+        [
+          1.4950000047683716,
+          0.8659999966621399,
+          -0.03999999910593033
+        ]
+      ],
+      "mesh_volume_m3": 0.0011708286320646147,
+      "relative_volume_error_vs_cad": 0.00013879336222627655,
+      "mesh_com_m": [
+        1.334932372136116,
+        0.7973547835736913,
+        -0.2572160062254272
+      ],
+      "com_error_vs_cad_m": 4.058698127139466e-06,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_retainer_upper",
+      "motion_group": "front_left_upper",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          1.3626999855041504,
+          0.7720000147819519,
+          -0.11998756974935532
+        ],
+        [
+          1.3657000064849854,
+          0.8519999980926514,
+          -0.040012434124946594
+        ]
+      ],
+      "mesh_volume_m3": 8.900428388480167e-06,
+      "relative_volume_error_vs_cad": 0.0004077454974033896,
+      "mesh_com_m": [
+        1.3641999959945679,
+        0.8119999973580899,
+        -0.0800000003406115
+      ],
+      "com_error_vs_cad_m": 4.810321639811689e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_retainer_lower",
+      "motion_group": "front_left_lower",
+      "identity_transform": true,
+      "vertex_count": 9120,
+      "triangle_count": 3040,
+      "bounds_m": [
+        [
+          1.3626999855041504,
+          0.7720000147819519,
+          -0.4599875807762146
+        ],
+        [
+          1.3657000064849854,
+          0.8519999980926514,
+          -0.3800124228000641
+        ]
+      ],
+      "mesh_volume_m3": 8.900428362595352e-06,
+      "relative_volume_error_vs_cad": 0.0004077484044835908,
+      "mesh_com_m": [
+        1.3641999959945679,
+        0.8119999973581131,
+        -0.42000000271372145
+      ],
+      "com_error_vs_cad_m": 5.512471178762246e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "identity_transform": true,
+      "vertex_count": 26958,
+      "triangle_count": 8986,
+      "bounds_m": [
+        [
+          1.2400000095367432,
+          0.9279999732971191,
+          -0.35996580123901367
+        ],
+        [
+          1.4600000381469727,
+          0.9679999947547913,
+          -0.14003418385982513
+        ]
+      ],
+      "mesh_volume_m3": 0.0008229678887467387,
+      "relative_volume_error_vs_cad": 0.00039925778463528483,
+      "mesh_com_m": [
+        1.3499999373339036,
+        0.9432244857600804,
+        -0.24999999959871616
+      ],
+      "com_error_vs_cad_m": 3.7952513414409485e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          0.9844846725463867,
+          0.4916263520717621,
+          -0.3259899616241455
+        ],
+        [
+          1.0655152797698975,
+          0.6903736591339111,
+          -0.19401003420352936
+        ]
+      ],
+      "mesh_volume_m3": 7.565948814931261e-05,
+      "relative_volume_error_vs_cad": 0.0004150403545780938,
+      "mesh_com_m": [
+        1.0249999843883653,
+        0.5909999996417732,
+        -0.26000000031162795
+      ],
+      "com_error_vs_cad_m": 1.561885317084614e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          0.9883755445480347,
+          0.4937705397605896,
+          -0.2378542572259903
+        ],
+        [
+          1.0210001468658447,
+          0.5404021739959717,
+          -0.19751179218292236
+        ]
+      ],
+      "mesh_volume_m3": 8.512105261670346e-06,
+      "relative_volume_error_vs_cad": 0.00041454878594391996,
+      "mesh_com_m": [
+        1.0046878587438361,
+        0.5170863531469906,
+        -0.21768302065528763
+      ],
+      "com_error_vs_cad_m": 8.38192349384034e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "identity_transform": true,
+      "vertex_count": 3024,
+      "triangle_count": 1008,
+      "bounds_m": [
+        [
+          1.0289998054504395,
+          0.6415978074073792,
+          -0.3224882185459137
+        ],
+        [
+          1.0616244077682495,
+          0.6882294416427612,
+          -0.28214573860168457
+        ]
+      ],
+      "mesh_volume_m3": 8.51210945607956e-06,
+      "relative_volume_error_vs_cad": 0.00041405623207080696,
+      "mesh_com_m": [
+        1.0453121478139578,
+        0.6649136506772421,
+        -0.3023169756721
+      ],
+      "com_error_vs_cad_m": 4.171150108976533e-09,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          0.9764999747276306,
+          0.4311197102069855,
+          -0.22271114587783813
+        ],
+        [
+          1.0015000104904175,
+          0.4910829961299896,
+          -0.13879388570785522
+        ]
+      ],
+      "mesh_volume_m3": 1.815492554596145e-05,
+      "relative_volume_error_vs_cad": 0.00038701214301765544,
+      "mesh_com_m": [
+        0.9889999998170141,
+        0.46135106021265115,
+        -0.1826401482073659
+      ],
+      "com_error_vs_cad_m": 3.95880783286319e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "identity_transform": true,
+      "vertex_count": 4998,
+      "triangle_count": 1666,
+      "bounds_m": [
+        [
+          1.0484999418258667,
+          0.6931197047233582,
+          -0.3727111518383026
+        ],
+        [
+          1.0735000371932983,
+          0.7530829906463623,
+          -0.2887938916683197
+        ]
+      ],
+      "mesh_volume_m3": 1.815493037160404e-05,
+      "relative_volume_error_vs_cad": 0.0003867464423970045,
+      "mesh_com_m": [
+        1.0609999960654335,
+        0.7233510610403383,
+        -0.3326401449226422
+      ],
+      "com_error_vs_cad_m": 3.991639694601499e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_rack_guide_C03_R11",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 360,
+      "triangle_count": 120,
+      "bounds_m": [
+        [
+          -1.0290000438690186,
+          -0.30000001192092896,
+          -0.2800000011920929
+        ],
+        [
+          -0.9290000200271606,
+          0.30000001192092896,
+          -0.2199999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0008880013447406098,
+      "relative_volume_error_vs_cad": 1.5143475340161268e-06,
+      "mesh_com_m": [
+        -0.9883244057085425,
+        -0.0038513718105194356,
+        -0.25000001671344285
+      ],
+      "com_error_vs_cad_m": 8.556463979806585e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_guide_liner_-1_C03_R11",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 96,
+      "triangle_count": 32,
+      "bounds_m": [
+        [
+          -1.0230000019073486,
+          -0.29499998688697815,
+          -0.27399998903274536
+        ],
+        [
+          -0.9549999833106995,
+          -0.24500000476837158,
+          -0.22599999606609344
+        ]
+      ],
+      "mesh_volume_m3": 4.068749874085963e-05,
+      "relative_volume_error_vs_cad": 3.0946614272114266e-08,
+      "mesh_com_m": [
+        -0.9889999028724699,
+        -0.26999999582767487,
+        -0.24999997011528086
+      ],
+      "com_error_vs_cad_m": 1.0170674434172431e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_guide_liner_1_C03_R11",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 96,
+      "triangle_count": 32,
+      "bounds_m": [
+        [
+          -1.0230000019073486,
+          0.24500000476837158,
+          -0.27399998903274536
+        ],
+        [
+          -0.9549999833106995,
+          0.29499998688697815,
+          -0.22599999606609344
+        ]
+      ],
+      "mesh_volume_m3": 4.068749874085963e-05,
+      "relative_volume_error_vs_cad": 3.0946614272114266e-08,
+      "mesh_com_m": [
+        -0.9889999028724699,
+        0.26999999582767487,
+        -0.24999997011528086
+      ],
+      "com_error_vs_cad_m": 1.0170674434172431e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_actuator_rear_pin_C03_R11",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 4872,
+      "triangle_count": 1624,
+      "bounds_m": [
+        [
+          -1.122499942779541,
+          -0.35100001096725464,
+          -0.26099658012390137
+        ],
+        [
+          -1.0575000047683716,
+          -0.32899999618530273,
+          -0.23900341987609863
+        ]
+      ],
+      "mesh_volume_m3": 8.587548886200842e-06,
+      "relative_volume_error_vs_cad": 0.00038436367502230886,
+      "mesh_com_m": [
+        -1.0850428115014574,
+        -0.34000000253657964,
+        -0.250000000086795
+      ],
+      "com_error_vs_cad_m": 4.169650533712796e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_actuator_front_pin_C03_R11",
+      "motion_group": "rear_rack",
+      "identity_transform": true,
+      "vertex_count": 4872,
+      "triangle_count": 1624,
+      "bounds_m": [
+        [
+          -1.1200000047683716,
+          0.13899999856948853,
+          -0.26099658012390137
+        ],
+        [
+          -1.0549999475479126,
+          0.16099999845027924,
+          -0.23900341987609863
+        ]
+      ],
+      "mesh_volume_m3": 8.587564591553999e-06,
+      "relative_volume_error_vs_cad": 0.00038253552647917827,
+      "mesh_com_m": [
+        -1.082542814659086,
+        0.14999999940913755,
+        -0.2500000000533367
+      ],
+      "com_error_vs_cad_m": 4.201063686259476e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_rack_crossbeam_C03_R11",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 17448,
+      "triangle_count": 5816,
+      "bounds_m": [
+        [
+          -1.2369999885559082,
+          -0.5099999904632568,
+          -0.3199999928474426
+        ],
+        [
+          -0.9490000009536743,
+          0.5099999904632568,
+          -0.10999999940395355
+        ]
+      ],
+      "mesh_volume_m3": 0.001526215233994271,
+      "relative_volume_error_vs_cad": 1.8811442140216059e-06,
+      "mesh_com_m": [
+        -1.0467643226997867,
+        -0.012405053089186657,
+        -0.2846514213204586
+      ],
+      "com_error_vs_cad_m": 4.954510969698945e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_rack_carriage_C03_R11",
+      "motion_group": "rear_rack",
+      "identity_transform": true,
+      "vertex_count": 19968,
+      "triangle_count": 6656,
+      "bounds_m": [
+        [
+          -1.1119999885559082,
+          -0.49290817975997925,
+          -0.2849999964237213
+        ],
+        [
+          -0.9390000104904175,
+          0.49290817975997925,
+          -0.12206525355577469
+        ]
+      ],
+      "mesh_volume_m3": 0.0009301369445567633,
+      "relative_volume_error_vs_cad": 1.2769334191205644e-05,
+      "mesh_com_m": [
+        -0.9930173257969716,
+        0.008229214724830278,
+        -0.23915938301686823
+      ],
+      "com_error_vs_cad_m": 8.878292443901875e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "rear_rack_fasteners",
+      "motion_group": "rear_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 73632,
+      "triangle_count": 24544,
+      "bounds_m": [
+        [
+          -1.1899968385696411,
+          -0.5350000262260437,
+          -0.24500000476837158
+        ],
+        [
+          -1.1380031108856201,
+          0.5350000262260437,
+          -0.11500000208616257
+        ]
+      ],
+      "mesh_volume_m3": 4.950669614473457e-05,
+      "relative_volume_error_vs_cad": 0.0002033124727230354,
+      "mesh_com_m": [
+        -1.163999970491924,
+        7.15028486295065e-15,
+        -0.18000000184203277
+      ],
+      "com_error_vs_cad_m": 2.956551564145342e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_rack_guide_C03_R11",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 360,
+      "triangle_count": 120,
+      "bounds_m": [
+        [
+          0.9290000200271606,
+          -0.30000001192092896,
+          -0.2800000011920929
+        ],
+        [
+          1.0290000438690186,
+          0.30000001192092896,
+          -0.2199999988079071
+        ]
+      ],
+      "mesh_volume_m3": 0.0008880013447406098,
+      "relative_volume_error_vs_cad": 1.5143475340161268e-06,
+      "mesh_com_m": [
+        0.9883244057085425,
+        -0.0038513718105194356,
+        -0.25000001671344285
+      ],
+      "com_error_vs_cad_m": 8.556463979806585e-08,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_guide_liner_-1_C03_R11",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 96,
+      "triangle_count": 32,
+      "bounds_m": [
+        [
+          0.9549999833106995,
+          -0.29499998688697815,
+          -0.27399998903274536
+        ],
+        [
+          1.0230000019073486,
+          -0.24500000476837158,
+          -0.22599999606609344
+        ]
+      ],
+      "mesh_volume_m3": 4.068749874085963e-05,
+      "relative_volume_error_vs_cad": 3.0946614272114266e-08,
+      "mesh_com_m": [
+        0.9889999028724699,
+        -0.26999999582767487,
+        -0.24999997011528086
+      ],
+      "com_error_vs_cad_m": 1.0170674434172431e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_guide_liner_1_C03_R11",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 96,
+      "triangle_count": 32,
+      "bounds_m": [
+        [
+          0.9549999833106995,
+          0.24500000476837158,
+          -0.27399998903274536
+        ],
+        [
+          1.0230000019073486,
+          0.29499998688697815,
+          -0.22599999606609344
+        ]
+      ],
+      "mesh_volume_m3": 4.068749874085963e-05,
+      "relative_volume_error_vs_cad": 3.0946614272114266e-08,
+      "mesh_com_m": [
+        0.9889999028724699,
+        0.26999999582767487,
+        -0.24999997011528086
+      ],
+      "com_error_vs_cad_m": 1.0170674434172431e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_actuator_rear_pin_C03_R11",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 4872,
+      "triangle_count": 1624,
+      "bounds_m": [
+        [
+          1.0575000047683716,
+          -0.35100001096725464,
+          -0.26099658012390137
+        ],
+        [
+          1.122499942779541,
+          -0.32899999618530273,
+          -0.23900341987609863
+        ]
+      ],
+      "mesh_volume_m3": 8.587548886200842e-06,
+      "relative_volume_error_vs_cad": 0.00038436367502230886,
+      "mesh_com_m": [
+        1.0850428115014574,
+        -0.34000000253657964,
+        -0.250000000086795
+      ],
+      "com_error_vs_cad_m": 4.169650533712796e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_actuator_front_pin_C03_R11",
+      "motion_group": "front_rack",
+      "identity_transform": true,
+      "vertex_count": 4872,
+      "triangle_count": 1624,
+      "bounds_m": [
+        [
+          1.0549999475479126,
+          0.13899999856948853,
+          -0.26099658012390137
+        ],
+        [
+          1.1200000047683716,
+          0.16099999845027924,
+          -0.23900341987609863
+        ]
+      ],
+      "mesh_volume_m3": 8.587564591553999e-06,
+      "relative_volume_error_vs_cad": 0.00038253552647917827,
+      "mesh_com_m": [
+        1.082542814659086,
+        0.14999999940913755,
+        -0.2500000000533367
+      ],
+      "com_error_vs_cad_m": 4.201063686259476e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_rack_crossbeam_C03_R11",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 17448,
+      "triangle_count": 5816,
+      "bounds_m": [
+        [
+          0.9490000009536743,
+          -0.5099999904632568,
+          -0.3199999928474426
+        ],
+        [
+          1.2369999885559082,
+          0.5099999904632568,
+          -0.10999999940395355
+        ]
+      ],
+      "mesh_volume_m3": 0.001526215233994271,
+      "relative_volume_error_vs_cad": 1.8811442140216059e-06,
+      "mesh_com_m": [
+        1.0467643226997867,
+        -0.012405053089186657,
+        -0.2846514213204586
+      ],
+      "com_error_vs_cad_m": 4.954510969698945e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_rack_carriage_C03_R11",
+      "motion_group": "front_rack",
+      "identity_transform": true,
+      "vertex_count": 19968,
+      "triangle_count": 6656,
+      "bounds_m": [
+        [
+          0.9390000104904175,
+          -0.49290817975997925,
+          -0.2849999964237213
+        ],
+        [
+          1.1119999885559082,
+          0.49290817975997925,
+          -0.12206525355577469
+        ]
+      ],
+      "mesh_volume_m3": 0.0009301369445567633,
+      "relative_volume_error_vs_cad": 1.2769334191205644e-05,
+      "mesh_com_m": [
+        0.9930173257969716,
+        0.008229214724830278,
+        -0.23915938301686823
+      ],
+      "com_error_vs_cad_m": 8.878292443901875e-07,
+      "cad_com_inside_glb_bounds": true
+    },
+    {
+      "node": "front_rack_fasteners",
+      "motion_group": "front_rack_fixed",
+      "identity_transform": true,
+      "vertex_count": 73632,
+      "triangle_count": 24544,
+      "bounds_m": [
+        [
+          1.1380031108856201,
+          -0.5350000262260437,
+          -0.24500000476837158
+        ],
+        [
+          1.1899968385696411,
+          0.5350000262260437,
+          -0.11500000208616257
+        ]
+      ],
+      "mesh_volume_m3": 4.950669614473457e-05,
+      "relative_volume_error_vs_cad": 0.0002033124727230354,
+      "mesh_com_m": [
+        1.163999970491924,
+        7.15028486295065e-15,
+        -0.18000000184203277
+      ],
+      "com_error_vs_cad_m": 2.956551564145342e-08,
+      "cad_com_inside_glb_bounds": true
+    }
+  ],
+  "nominal_axis_checks": [
+    {
+      "node": "rear_right_wheel_adapter",
+      "kind": "wheel_axis",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_expected_axis_m": 6.266738133629261e-08,
+      "measured_axis_unsigned": [
+        -8.594897234877892e-08,
+        -0.9999999999999966,
+        -7.838481211911852e-10
+      ],
+      "expected_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "node": "rear_right_tie_tube_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_expected_axis_m": 1.3537637237505273e-08,
+      "measured_axis_unsigned": [
+        0.2319830120195366,
+        0.8441604800668167,
+        0.48329800954246127
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_expected_axis_m": 6.689436984794189e-09,
+      "measured_axis_unsigned": [
+        0.2319830989330255,
+        0.8441604472557703,
+        0.4832980251339415
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_expected_axis_m": 5.156387844398458e-09,
+      "measured_axis_unsigned": [
+        0.2319837480402224,
+        0.8441603708588666,
+        0.48329784700185824
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_right_inner_tie_pin",
+      "kind": "inner_tie_pin",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_expected_axis_m": 1.7642023819278625e-10,
+      "measured_axis_unsigned": [
+        -1.766349404515003e-08,
+        -0.49685218477547866,
+        0.8678351839398041
+      ],
+      "expected_axis": [
+        0.0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "rear_right_outer_tie_pin",
+      "kind": "outer_tie_pin",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_expected_axis_m": 6.532881750921491e-09,
+      "measured_axis_unsigned": [
+        1.0020672358636647e-07,
+        -0.49685217510106594,
+        0.8678351894785841
+      ],
+      "expected_axis": [
+        0.0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "rear_left_wheel_adapter",
+      "kind": "wheel_axis",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_expected_axis_m": 7.505229917680177e-08,
+      "measured_axis_unsigned": [
+        -9.558146606053849e-08,
+        -0.9999999999999959,
+        7.838658968051722e-10
+      ],
+      "expected_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "node": "rear_left_tie_tube_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_expected_axis_m": 1.5705129405987698e-08,
+      "measured_axis_unsigned": [
+        0.23198301235924804,
+        -0.8441604797551182,
+        0.4832980099238332
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 6.883343194785022e-06,
+      "centroid_to_expected_axis_m": 6.497919277383565e-09,
+      "measured_axis_unsigned": [
+        0.23198314859960611,
+        -0.8441604478301927,
+        0.4832980002906499
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_expected_axis_m": 1.5190437499689387e-09,
+      "measured_axis_unsigned": [
+        0.23198374843899955,
+        -0.8441603545364355,
+        0.483297875320294
+      ],
+      "expected_axis": [
+        -0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "rear_left_inner_tie_pin",
+      "kind": "inner_tie_pin",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_expected_axis_m": 6.150569191146624e-10,
+      "measured_axis_unsigned": [
+        4.3137529295089045e-08,
+        -0.4968522273355478,
+        -0.8678351595733508
+      ],
+      "expected_axis": [
+        0.0,
+        0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "rear_left_outer_tie_pin",
+      "kind": "outer_tie_pin",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_expected_axis_m": 5.496782075856135e-09,
+      "measured_axis_unsigned": [
+        1.4205327709725744e-07,
+        0.4968522221153009,
+        0.8678351625620314
+      ],
+      "expected_axis": [
+        0.0,
+        0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "front_right_wheel_adapter",
+      "kind": "wheel_axis",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_expected_axis_m": 7.505229917680177e-08,
+      "measured_axis_unsigned": [
+        -9.558146616615799e-08,
+        -0.999999999999995,
+        -7.838658878178034e-10
+      ],
+      "expected_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "node": "front_right_tie_tube_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_expected_axis_m": 1.3037814422463135e-08,
+      "measured_axis_unsigned": [
+        0.23198301135267854,
+        -0.8441604804299037,
+        -0.4832980092283619
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_expected_axis_m": 8.185071899436194e-09,
+      "measured_axis_unsigned": [
+        0.2319831395942658,
+        -0.8441604396832973,
+        -0.48329801884312495
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 4.2748404691376206e-05,
+      "centroid_to_expected_axis_m": 1.7506222600851343e-09,
+      "measured_axis_unsigned": [
+        -0.23198375769042515,
+        0.8441603684292668,
+        0.48329784661344705
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        -0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_right_inner_tie_pin",
+      "kind": "inner_tie_pin",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_expected_axis_m": 2.7919785783492227e-10,
+      "measured_axis_unsigned": [
+        1.2095580942115749e-08,
+        0.49685218358126426,
+        -0.8678351846235143
+      ],
+      "expected_axis": [
+        0.0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "front_right_outer_tie_pin",
+      "kind": "outer_tie_pin",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_expected_axis_m": 3.3598195076097816e-09,
+      "measured_axis_unsigned": [
+        1.5582111316852437e-07,
+        0.49685217485080124,
+        -0.8678351896218567
+      ],
+      "expected_axis": [
+        0.0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "front_left_wheel_adapter",
+      "kind": "wheel_axis",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_expected_axis_m": 6.266738133629261e-08,
+      "measured_axis_unsigned": [
+        -8.594897239348998e-08,
+        -0.9999999999999963,
+        7.838481200518176e-10
+      ],
+      "expected_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "node": "front_left_tie_tube_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_expected_axis_m": 1.5156181303791442e-08,
+      "measured_axis_unsigned": [
+        0.23198301210860803,
+        0.8441604801660897,
+        -0.4832980093263108
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 6.097163388881822e-06,
+      "centroid_to_expected_axis_m": 8.299849170402958e-09,
+      "measured_axis_unsigned": [
+        0.2319831290154406,
+        0.8441604456558726,
+        -0.4832980134888659
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "kind": "tie_line",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_expected_axis_m": 4.689633542729628e-10,
+      "measured_axis_unsigned": [
+        -0.2319837735666989,
+        -0.8441603593487632,
+        0.4832978548534242
+      ],
+      "expected_axis": [
+        0.23198303435499845,
+        0.8441604861251337,
+        -0.4832979882395805
+      ]
+    },
+    {
+      "node": "front_left_inner_tie_pin",
+      "kind": "inner_tie_pin",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_expected_axis_m": 1.8437478463431658e-10,
+      "measured_axis_unsigned": [
+        4.5187015954123476e-08,
+        -0.4968522288382513,
+        -0.8678351587130239
+      ],
+      "expected_axis": [
+        0.0,
+        0.4968521996651735,
+        0.8678351754151697
+      ]
+    },
+    {
+      "node": "front_left_outer_tie_pin",
+      "kind": "outer_tie_pin",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_expected_axis_m": 4.034221045510113e-09,
+      "measured_axis_unsigned": [
+        -1.1231854412548256e-07,
+        0.49685222329319856,
+        0.8678351618876667
+      ],
+      "expected_axis": [
+        0.0,
+        0.4968521996651735,
+        0.8678351754151697
+      ]
+    }
+  ],
+  "transformed_checks": [
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.829673078902934e-06,
+      "centroid_to_current_axis_m": 6.266738132523148e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.5156181180890753e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849040124807e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.3642784331378985e-05,
+      "centroid_to_current_axis_m": 4.689634999921973e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034220974405752e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.515618128206142e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.29984914912128e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_current_axis_m": 4.689634969244437e-10,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221045510113e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.829673078902934e-06,
+      "centroid_to_current_axis_m": 6.266738128060437e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.5156181274532664e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849065554952e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.3642784331378985e-05,
+      "centroid_to_current_axis_m": 4.689632573012375e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437477873279412e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221070642725e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.26673811471981e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.9090959104164224e-06,
+      "centroid_to_current_axis_m": 1.5156181267630987e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849049589304e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_current_axis_m": 4.689633251008144e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.0342208709938944e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5156181303791442e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.097163388881822e-06,
+      "centroid_to_current_axis_m": 8.299849170402958e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_current_axis_m": 4.689633542729628e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221045510113e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738137139848e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.515618130643534e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849155008121e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.365113462023975e-05,
+      "centroid_to_current_axis_m": 4.689633578380044e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437477873279412e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034220988123746e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738146913818e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.5156181008667303e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849195094978e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_current_axis_m": 4.689632003303488e-10,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221013406223e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.2074182697257333e-06,
+      "centroid_to_current_axis_m": 1.5156181222932707e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.299849258432523e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.363443244452969e-05,
+      "centroid_to_current_axis_m": 4.689634113504616e-10,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437478463431658e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221045510113e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_wheel_adapter",
+      "motion_group": "front_left_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738145629697e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_tube_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.5156181484463447e-08,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 6.037091348628668e-06,
+      "centroid_to_current_axis_m": 8.29984923686825e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "motion_group": "front_left_tie",
+      "axis_angle_error_deg": 4.3642784331378985e-05,
+      "centroid_to_current_axis_m": 4.689631928642657e-10,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 3.078324659199975e-06,
+      "centroid_to_current_axis_m": 1.8437477873279412e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_left_outer_tie_pin",
+      "motion_group": "front_left_steer",
+      "axis_angle_error_deg": 6.557959812547711e-06,
+      "centroid_to_current_axis_m": 4.034221148483421e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.505229928624818e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.2074182697257333e-06,
+      "centroid_to_current_axis_m": 1.3037814481991498e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.722620413208828e-06,
+      "centroid_to_current_axis_m": 8.185071811876638e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.275692965001941e-05,
+      "centroid_to_current_axis_m": 1.7506221623671756e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 8.99506352021738e-06,
+      "centroid_to_current_axis_m": 3.359819599956577e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917695017e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.3037814379380423e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.185071918582422e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.27654529092788e-05,
+      "centroid_to_current_axis_m": 1.7506222704823564e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_current_axis_m": 3.3598195076097816e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.505229907484951e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.3037814310473016e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.185072013849467e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.27654529092788e-05,
+      "centroid_to_current_axis_m": 1.750622174090389e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 8.99506352021738e-06,
+      "centroid_to_current_axis_m": 3.359819596578541e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.505229915496995e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814416873554e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.830189170012755e-06,
+      "centroid_to_current_axis_m": 8.185072064870407e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.277397447017025e-05,
+      "centroid_to_current_axis_m": 1.7506223651430034e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_current_axis_m": 3.359819511389593e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917680177e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814422463135e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.185071899436194e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.2748404691376206e-05,
+      "centroid_to_current_axis_m": 1.7506222600851343e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_current_axis_m": 3.3598195076097816e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229930610049e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814554023043e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.18507162427123e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.275692965001941e-05,
+      "centroid_to_current_axis_m": 1.7506223822700189e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 8.99506352021738e-06,
+      "centroid_to_current_axis_m": 3.359819498459924e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.50522990818717e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814548397776e-08,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.18507183004222e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.27654529092788e-05,
+      "centroid_to_current_axis_m": 1.750622299426164e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_current_axis_m": 3.359819502386676e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917680177e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814313852525e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.830189170012755e-06,
+      "centroid_to_current_axis_m": 8.185071784790038e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.275692965001941e-05,
+      "centroid_to_current_axis_m": 1.7506222803445769e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 9.035490975690211e-06,
+      "centroid_to_current_axis_m": 3.3598195076097816e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_wheel_adapter",
+      "motion_group": "front_right_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.50522991118728e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_tube_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3037814182595932e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 6.776618231767655e-06,
+      "centroid_to_current_axis_m": 8.185071867675512e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "motion_group": "front_right_tie",
+      "axis_angle_error_deg": 4.2748404691376206e-05,
+      "centroid_to_current_axis_m": 1.7506222207237568e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_inner_tie_pin",
+      "motion_group": "front_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 2.7919785783492227e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "front_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "front_right_outer_tie_pin",
+      "motion_group": "front_right_steer",
+      "axis_angle_error_deg": 8.99506352021738e-06,
+      "centroid_to_current_axis_m": 3.3598195418695793e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.399738656763834e-06,
+      "centroid_to_current_axis_m": 7.505229907484951e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5705129349089858e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.9360898910140305e-06,
+      "centroid_to_current_axis_m": 6.49791920107302e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190437615836714e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.4967822221566535e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917695017e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5705129355518613e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.9360898910140305e-06,
+      "centroid_to_current_axis_m": 6.497919194129335e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.21041137625546e-05,
+      "centroid_to_current_axis_m": 1.5190437611604868e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496782075856135e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229928624818e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.57051293748839e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.9360898910140305e-06,
+      "centroid_to_current_axis_m": 6.497919349417967e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190438274647275e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569225397745e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496782142124759e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.533085616490783e-06,
+      "centroid_to_current_axis_m": 7.505229930610049e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.570512951703983e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.9360898910140305e-06,
+      "centroid_to_current_axis_m": 6.4979193706818865e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.519043866266446e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.4967820988469205e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917680177e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5705129405987698e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.883343194785022e-06,
+      "centroid_to_current_axis_m": 6.497919277383565e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190437499689387e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496782075856135e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229915496995e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.5705129463604255e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.9360898910140305e-06,
+      "centroid_to_current_axis_m": 6.497919304633184e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190437593790322e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569225397745e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496781934061449e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.533085616490783e-06,
+      "centroid_to_current_axis_m": 7.50522991118728e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5705129533942394e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.883343194785022e-06,
+      "centroid_to_current_axis_m": 6.497919393633868e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190437561296469e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496782053599114e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.505229917680177e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.570512955275145e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.883343194785022e-06,
+      "centroid_to_current_axis_m": 6.497919128583429e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.2095456599152194e-05,
+      "centroid_to_current_axis_m": 1.5190436160110102e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569191146624e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.496782075856135e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_wheel_adapter",
+      "motion_group": "rear_left_spin",
+      "axis_angle_error_deg": 5.4668187275950014e-06,
+      "centroid_to_current_axis_m": 7.50522990818717e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_tube_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.5705129386915586e-08,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 6.883343194785022e-06,
+      "centroid_to_current_axis_m": 6.497919234246984e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "motion_group": "rear_left_tie",
+      "axis_angle_error_deg": 4.208679765499e-05,
+      "centroid_to_current_axis_m": 1.5190437744734184e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 2.9575586669421963e-06,
+      "centroid_to_current_axis_m": 6.150569225397745e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_left",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_left_outer_tie_pin",
+      "motion_group": "rear_left_steer",
+      "axis_angle_error_deg": 8.233494873389921e-06,
+      "centroid_to_current_axis_m": 5.49678216389067e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.829673078902934e-06,
+      "centroid_to_current_axis_m": 6.266738128060437e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.3537637059239915e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689437074816395e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.156387910124794e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642021965933083e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.5328816775829116e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3537637222401873e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.676310850554341e-06,
+      "centroid_to_current_axis_m": 6.689436949882021e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219922534312107e-05,
+      "centroid_to_current_axis_m": 5.1563878780678e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881750921491e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.829673078902934e-06,
+      "centroid_to_current_axis_m": 6.266738132523148e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.9090959104164224e-06,
+      "centroid_to_current_axis_m": 1.3537637465527975e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.829673078902934e-06,
+      "centroid_to_current_axis_m": 6.689436740030928e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219922534312107e-05,
+      "centroid_to_current_axis_m": 5.15638792257077e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": -0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.5328818413029305e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738137139848e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3537637157431056e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.676310850554341e-06,
+      "centroid_to_current_axis_m": 6.68943694975027e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.156387959544515e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642021965933083e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": -0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881781083841e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.3537637237505273e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689436984794189e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.156387844398458e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.0,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881750921491e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.26673811471981e-08,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.4787793334710982e-06,
+      "centroid_to_current_axis_m": 1.3537637324000371e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689436907369227e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.1563879141970485e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.0,
+      "rack_m": 0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881696428773e-09,
+      "rotation_determinant": 0.9999999999999999
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738145629697e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3537637189742708e-08,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689436948580031e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.156388025479079e-09,
+      "rotation_determinant": 1.0000000000000004
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642021965933083e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": -0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881909605263e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738133629261e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.7075472925031877e-06,
+      "centroid_to_current_axis_m": 1.3537637102919963e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689436989938312e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219058769584133e-05,
+      "centroid_to_current_axis_m": 5.156387872347749e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.0,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.532881750921491e-09,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_wheel_adapter",
+      "motion_group": "rear_right_spin",
+      "axis_angle_error_deg": 4.90455619685548e-06,
+      "centroid_to_current_axis_m": 6.266738146913818e-08,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_tube_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 1.9090959104164224e-06,
+      "centroid_to_current_axis_m": 1.353763725144154e-08,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.7536104815230715e-06,
+      "centroid_to_current_axis_m": 6.689437069627148e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "motion_group": "rear_right_tie",
+      "axis_angle_error_deg": 4.219922534312107e-05,
+      "centroid_to_current_axis_m": 5.156387785654897e-09,
+      "rotation_determinant": 1.0000000000000002
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_inner_tie_pin",
+      "motion_group": "rear_rack",
+      "axis_angle_error_deg": 8.537736462515939e-07,
+      "centroid_to_current_axis_m": 1.7642023819278625e-10,
+      "rotation_determinant": 1.0
+    },
+    {
+      "corner": "rear_right",
+      "q_rad": 0.20943951023931956,
+      "rack_m": 0.075,
+      "node": "rear_right_outer_tie_pin",
+      "motion_group": "rear_right_steer",
+      "axis_angle_error_deg": 5.853177225625916e-06,
+      "centroid_to_current_axis_m": 6.5328818400630934e-09,
+      "rotation_determinant": 1.0
+    }
+  ]
+}

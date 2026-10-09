@@ -1,0 +1,348 @@
+{
+  "generated_utc": "2026-10-09T11:20:58.007981+00:00",
+  "scope": "Original C03 geometric/FK only; no physical, load, motor, actuator, service or safety qualification. Private OEM source excluded.",
+  "method": "Contract world coordinates; independent Rx suspension reconstruction, Euclidean tie residual scanned through a complete turn, bracketed Brent roots, neutral-nearest branch. No analytic source formula duplicated.",
+  "source_sha256": {
+    "interface_contract_C03_R01.json": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+    "kinematics_C03_R01.js": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+    "original_steering_C03_R01_manifest.json": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+    "original_steering_C03_R01.glb": "7d57a2c5f0007436ea3e4ddeaf17c7ea9a2b01a92dcc9d257571aafa2c38dfa5",
+    "README_C03_R01.md": "a42a6e0224aaba6e2a0930d7880c853df4f6d78d2ba4b93331bc88d2f2b373f4"
+  },
+  "sample_counts": {
+    "boundary_grid": 36,
+    "random_bounded": 4096,
+    "zero_rack_sweep": 964,
+    "mirror_pairs": 512
+  },
+  "random_seed": 20261009,
+  "fixture_count": 4132,
+  "maximum_errors_by_pose_field": {
+    "q": 0.0,
+    "rackM": 0.0,
+    "side": 0.0,
+    "fore": 0.0,
+    "steerRad": 6.716849298982197e-15,
+    "armWorldRx": 0.0,
+    "nominalKingpinM": 0.0,
+    "kingpinM": 1.1102230246251565e-16,
+    "uprightDeltaM": 1.1102230246251565e-16,
+    "tieInnerM": 1.1102230246251565e-16,
+    "tieOuterM": 1.887379141862766e-15,
+    "tieLengthM": 5.551115123125783e-17,
+    "wheelCenterM": 8.881784197001252e-16,
+    "upperPivotM": 0.0,
+    "lowerPivotM": 0.0,
+    "shockFixedM": 0.0,
+    "shockMovingM": 1.1102230246251565e-16,
+    "innerTiePinAxis": 0.0,
+    "outerTiePinAxis": 3.2057689836051395e-15,
+    "wheelAxis": 6.453171330633722e-15,
+    "kingpinAxis": 0.0,
+    "actuatorFixedM": 0.0,
+    "actuatorMovingM": 0.0,
+    "actuatorPinDistanceM": 0.0,
+    "actuatorExtensionM": 0.0
+  },
+  "maximum_root_disagreement_rad": 6.716849298982197e-15,
+  "maximum_tie_closure_error_m": 1.6653345369377348e-15,
+  "maximum_zero_rack_bump_steer_rad": 8.881784197001252e-16,
+  "maximum_parallel_arm_joint_separation_error_m": 1.2412670766236366e-16,
+  "maximum_axis_norm_error": 1.1102230246251565e-16,
+  "maximum_wheel_center_axis_consistency_error_m": 1.2412670766236366e-16,
+  "maximum_baked_upright_transform_error_m": 4.965068306494546e-16,
+  "mirror_errors": {
+    "fore_aft_positions_m": 0.0,
+    "fore_aft_axes": 0.0,
+    "fore_aft_steer_rad": 0.0,
+    "left_right_positions_m": 0.0,
+    "left_right_axes": 0.0,
+    "left_right_steer_rad": 0.0
+  },
+  "maximum_sampled_steer": {
+    "rad": 0.37467015023942,
+    "degrees": 21.467018318251238,
+    "input": {
+      "corner_id": "front_left",
+      "q_rad": -0.20943951023931956,
+      "rack_m": -0.075,
+      "side": 1,
+      "fore": 1,
+      "kind": "boundary_grid"
+    }
+  },
+  "minimum_selected_vs_other_root_abs_angle_margin_rad": 0.29507385915973,
+  "input_validation": [
+    {
+      "name": "q NaN",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack NaN",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q +Infinity",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack +Infinity",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q -Infinity",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack -Infinity",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q null",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack null",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q undefined",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack undefined",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q string",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack string",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q array",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack array",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q object",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack object",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q boolean",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "rack boolean",
+      "expected": "TypeError",
+      "actual": "TypeError",
+      "pass": true
+    },
+    {
+      "name": "q at limit -1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "rack at limit -1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "q outside -1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "rack outside -1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "q roundoff allowance -1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "rack roundoff allowance -1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "q at limit 1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "rack at limit 1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "q outside 1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "rack outside 1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "q roundoff allowance 1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "rack roundoff allowance 1",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    },
+    {
+      "name": "invalid side 0",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore 0",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side 2",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore 2",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side -2",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore -2",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side NaN",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore NaN",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side Infinity",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore Infinity",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side null",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore null",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid side 1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "invalid fore 1",
+      "expected": "RangeError",
+      "actual": "RangeError",
+      "pass": true
+    },
+    {
+      "name": "defaults",
+      "expected": "accepted",
+      "actual": "accepted",
+      "pass": true
+    }
+  ],
+  "pass": true
+}

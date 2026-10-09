@@ -1,0 +1,162 @@
+{
+  "units": "millimetres/radians",
+  "source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "native_source_bbox_mm": [
+    -124.0000001,
+    -103,
+    -30.0000001,
+    134.5069527135882,
+    202.2549335702201,
+    336.596248899624
+  ],
+  "nominal_source_to_vehicle_transforms": {
+    "front_left": {
+      "matrix4x4": [
+        [
+          1,
+          0,
+          0,
+          1350
+        ],
+        [
+          0,
+          0,
+          -1,
+          928
+        ],
+        [
+          0,
+          1,
+          0,
+          -250
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "nominal_kingpin_mm": [
+        1350,
+        812,
+        -250
+      ]
+    },
+    "front_right": {
+      "matrix4x4": [
+        [
+          -1,
+          0,
+          0,
+          1350
+        ],
+        [
+          0,
+          0,
+          1,
+          -928
+        ],
+        [
+          0,
+          1,
+          0,
+          -250
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "nominal_kingpin_mm": [
+        1350,
+        -812,
+        -250
+      ]
+    },
+    "rear_left": {
+      "matrix4x4": [
+        [
+          1,
+          0,
+          0,
+          -1350
+        ],
+        [
+          0,
+          0,
+          -1,
+          928
+        ],
+        [
+          0,
+          1,
+          0,
+          -250
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "nominal_kingpin_mm": [
+        -1350,
+        812,
+        -250
+      ]
+    },
+    "rear_right": {
+      "matrix4x4": [
+        [
+          -1,
+          0,
+          0,
+          -1350
+        ],
+        [
+          0,
+          0,
+          1,
+          -928
+        ],
+        [
+          0,
+          1,
+          0,
+          -250
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "nominal_kingpin_mm": [
+        -1350,
+        -812,
+        -250
+      ]
+    }
+  },
+  "pose_operation_order": [
+    "Apply the nominal proper source-to-vehicle matrix below.",
+    "Yaw by current solver steerRad about nominalKingpinM converted to millimetres. The solver already handles rear steering sign.",
+    "Translate by current solver uprightDeltaM converted to millimetres."
+  ],
+  "constraints": [
+    "Rear source motor uses the same proper side orientation as front, followed only by its station translation; never mirror the commercial motor.",
+    "Source local+Z is the inward motor axis, equal to minus solver wheelAxis.",
+    "Source native origin maps to wheelCenterM minus12 millimetres along the outward wheelAxis.",
+    "Output-rotor clock\u221218 degrees is separate from the asymmetric stator placement; no whole-motor clock correction.",
+    "Source geometry remains private. This file contains numerical placement facts only."
+  ]
+}

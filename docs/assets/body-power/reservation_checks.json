@@ -1,0 +1,167 @@
+{
+  "status": "provisional nominal packaging check only",
+  "suspension_reservations": [
+    {
+      "station_m": [
+        -1.35,
+        -0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          -1.4100000000000001,
+          -0.8,
+          -0.43
+        ],
+        [
+          -1.29,
+          -0.52,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    },
+    {
+      "station_m": [
+        -1.35,
+        0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          -1.4100000000000001,
+          0.52,
+          -0.43
+        ],
+        [
+          -1.29,
+          0.8,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    },
+    {
+      "station_m": [
+        0.0,
+        -0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          -0.06,
+          -0.8,
+          -0.43
+        ],
+        [
+          0.06,
+          -0.52,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    },
+    {
+      "station_m": [
+        0.0,
+        0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          -0.06,
+          0.52,
+          -0.43
+        ],
+        [
+          0.06,
+          0.8,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    },
+    {
+      "station_m": [
+        1.35,
+        -0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          1.29,
+          -0.8,
+          -0.43
+        ],
+        [
+          1.4100000000000001,
+          -0.52,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    },
+    {
+      "station_m": [
+        1.35,
+        0.94,
+        -0.25
+      ],
+      "reservation_bounds_m": [
+        [
+          1.29,
+          0.52,
+          -0.43
+        ],
+        [
+          1.4100000000000001,
+          0.8,
+          0.2
+        ]
+      ],
+      "body_intersection_mm3": 0.0,
+      "minimum_body_distance_m": 0.015524174696260024
+    }
+  ],
+  "minimum_clearance_m": 0.015524174696260024,
+  "suspension_full_geometry_checked": false,
+  "suspension_motion_sweep_performed": false,
+  "optional_second_bay": {
+    "status": "unmodeled structural variant; not extra installed capacity",
+    "proposed_well_bounds_m": [
+      [
+        -0.3,
+        -0.36,
+        -0.08
+      ],
+      [
+        0.35,
+        0.36,
+        0.337
+      ]
+    ],
+    "R06_frame_intersection_mm3": 0.0,
+    "R06_frame_minimum_clearance_m": 0.042,
+    "present_tool_bay_clear_height_mm": 234,
+    "battery_height_mm": 276,
+    "required_changes": [
+      "Replace/cut existing tool-bay base deck; current battery envelope would intersect it",
+      "New recessed welded well, access lid support and qualified retention",
+      "Removal of this low tool/payload volume",
+      "Recheck revised frame, station-centred suspension clamps and cable route",
+      "Electrical bank, inrush, bus/current sharing and fusing qualification remain necessary"
+    ],
+    "nominal_four_unit_mass_kg": 62.4,
+    "nominal_four_unit_energy_Wh": 6144,
+    "do_not_infer": [
+      "more batteries guarantee power compatibility",
+      "sum of ratings is a qualified pack rating",
+      "current tool bay already fits batteries"
+    ]
+  }
+}

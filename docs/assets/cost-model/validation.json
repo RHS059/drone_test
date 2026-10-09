@@ -1,0 +1,21 @@
+{
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "configuration": {
+    "corner_revision": "C03_R03",
+    "middle_corner_revision": "C02_R06",
+    "steering_corner_count": 4,
+    "middle_corner_count": 2,
+    "rack_count": 2,
+    "selected_upper_source": "upper_wishbone_C03_R06.step",
+    "selected_lower_source": "lower_wishbone_C03_R04.step",
+    "frame_revision": "R07",
+    "body_revision": "R01",
+    "tool_adapter_revision": "R04",
+    "public_feature_commit_at_assignment": "82ce94f27dd37db02015ecf62f48a54884a4a75a",
+    "not_fabrication_released": true
+  },
+  "scope": "Cost arithmetic,CSV/JSON agreement,quantity/source/null/bundle/revision safeguards;not supplier or engineering qualification."
+}

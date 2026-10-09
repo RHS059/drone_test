@@ -1,0 +1,8 @@
+{
+  "scope": "Public-safe supplemental numerical wheel/motor evidence. This supplements, rather than rewrites, the frozen R03 composite and prior whitelist.",
+  "file": "private-C03-nominal-motor-wheel-fit.json",
+  "sha256": "13bf100d7fe553ac49e92792fba8e524350008b0695c8f3b00b2518b51d29f2d",
+  "geometry_exported": false,
+  "nominal_result": "Zero positive-volume overlaps or Boolean errors in50 exact B-rep pairs;430 other source-solid pairs separated by AABB.",
+  "qualification": "Original assumed rim/tire model, source neutral rotor phase; no wheel-spin, assembly-tolerance or physical qualification."
+}

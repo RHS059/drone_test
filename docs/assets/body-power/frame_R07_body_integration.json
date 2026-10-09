@@ -1,0 +1,131 @@
+{
+  "test": "independent original R07 frame vs frozen original body R01 exact B-rep intersections",
+  "hashes": {
+    "frame_R07.step": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+    "body_power_R01.step": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba"
+  },
+  "body_solid_count": 175,
+  "frame_solid_count": 18,
+  "frame_valid": true,
+  "body_valid": true,
+  "all_possible_pairs": 3150,
+  "AABB_pruned_pairs": 3129,
+  "BRep_intersection_pairs_checked": 21,
+  "positive_volume_intersections_mm3": [],
+  "zero_gap_contacts": [
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 130,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 142,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 147,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 169,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 0,
+      "body_solid_index": 172,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 124,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 136,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 147,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 169,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 1,
+      "body_solid_index": 172,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 3,
+      "body_solid_index": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 4,
+      "body_solid_index": 0,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 5,
+      "body_solid_index": 168,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 6,
+      "body_solid_index": 168,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 7,
+      "body_solid_index": 147,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 8,
+      "body_solid_index": 147,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 9,
+      "body_solid_index": 147,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 10,
+      "body_solid_index": 168,
+      "volume_mm3": 0.0
+    },
+    {
+      "frame_solid_index": 11,
+      "body_solid_index": 168,
+      "volume_mm3": 0.0
+    }
+  ],
+  "pose": "nominal static installed; same frame C origin; no scale or displacement",
+  "manufacturing_strength_or_safety_qualified": false,
+  "minimum_noncontact_clearance_qualified": false,
+  "scope_limits": [
+    "No frame stress/fatigue/weld test",
+    "No real joint, bolt-preload or electrical qualification",
+    "Frame R07 remains original development design",
+    "Suspension/robot motion handled by independent assembly audit"
+  ]
+}

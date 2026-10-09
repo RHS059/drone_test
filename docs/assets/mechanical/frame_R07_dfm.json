@@ -1,0 +1,238 @@
+{
+  "file": "frame_R07.step",
+  "solids": 18,
+  "issues": [],
+  "parts": [
+    {
+      "part": "solid_00",
+      "stock": "hollow section 200x100 L=4000",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_01",
+      "stock": "hollow section 200x100 L=4000",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_02",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_03",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_04",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_05",
+      "stock": "hollow section 200x100 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_06",
+      "stock": "hollow section 200x100 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_07",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_08",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_09",
+      "stock": "hollow section 100x60 L=844",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_10",
+      "stock": "plate t=30.0",
+      "stock_standard": true,
+      "holes": [
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            847.5,
+            209.1,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            952.5,
+            209.1,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            795.0,
+            300.0,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            847.5,
+            390.9,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            1005.0,
+            300.0,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            952.5,
+            390.9,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        }
+      ]
+    },
+    {
+      "part": "solid_11",
+      "stock": "plate t=30.0",
+      "stock_standard": true,
+      "holes": [
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            847.5,
+            -390.9,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            952.5,
+            -390.9,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            795.0,
+            -300.0,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            847.5,
+            -209.1,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            1005.0,
+            -300.0,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            952.5,
+            -209.1,
+            115.0
+          ],
+          "class": "M10 tap drill",
+          "blocked_by": []
+        }
+      ]
+    },
+    {
+      "part": "solid_12",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_13",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_14",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_15",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_16",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    },
+    {
+      "part": "solid_17",
+      "stock": "plate t=8.0",
+      "stock_standard": true,
+      "holes": []
+    }
+  ],
+  "pass": true
+}

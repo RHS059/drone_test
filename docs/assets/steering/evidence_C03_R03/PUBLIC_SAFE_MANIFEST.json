@@ -1,0 +1,41 @@
+{
+  "scope": "Explicit public-safe numerical evidence companions only. Do not recursively copy the audit directory or copy any commercial source geometry.",
+  "primary_report": {
+    "file": "C03_R03-private-composite-summary.json",
+    "sha256": "5b56161c2852756cef4ec62c2dfcddb137ad91bb83bb466478a09616661f40c6"
+  },
+  "companions": [
+    {
+      "file": "private-C03-q0-12case-summary.json",
+      "sha256": "8c18569a8509810196f115cbc9f580be8a82efe46df299bbc51e51942c182a59"
+    },
+    {
+      "file": "private-C03-travel-final-summary.json",
+      "sha256": "226a3c59d7a0b64112b6c0062bd7fb6e3780b011c757600f8915df30e3799ecd"
+    },
+    {
+      "file": "C03-upperR03-lowerR04-private-arm-summary.json",
+      "sha256": "2947ca6c0c0d096de657ce7706c8f4032191db44e040c0f3397a1996d0c6d05e"
+    },
+    {
+      "file": "C03-upperR06-private-arm-summary.json",
+      "sha256": "deed2df8f947e01deb654d6454211ba5a79cbcbe596606350d24e20ad000d0a5"
+    },
+    {
+      "file": "arm-inheritance-R03/numerical_audit.json",
+      "sha256": "e1275bd76d807be16ca1d779fb7309805815badaadb5a3b0be5b06552e7ffb81"
+    },
+    {
+      "file": "R03-cross-corner-arm-bounds.json",
+      "sha256": "157ec5dd3684f2561ba8343da60a2693eebcb901d16322b95346f922c5c8582e"
+    },
+    {
+      "file": "selected-revision-equivalence.json",
+      "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
+    },
+    {
+      "file": "motor-placement-numeric-contract.json",
+      "sha256": "d03b130f5f9c808d17e7c7a2b16bb0db2184b72fb11ce60b2b34f6b10c4bbbf6"
+    }
+  ]
+}

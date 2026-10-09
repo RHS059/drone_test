@@ -1,0 +1,143 @@
+{
+  "revision": "R01",
+  "portable_notebook_status": "prepared, not executed in Colab",
+  "geometry_part_count": 175,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 9019,
+      "sha256": "a8fee3ab531ffa71756d499c805a6b353542d0a13a2812bca39d4a323cb67101"
+    },
+    {
+      "file": "SOURCES.json",
+      "bytes": 6400,
+      "sha256": "ff9d22319f367d400606810ba7e883d78bf0c7f2e3d693b2ea2e834fda73081f"
+    },
+    {
+      "file": "arm_clearance_screen.json",
+      "bytes": 15480,
+      "sha256": "7513a5aefb1db600738b2e4250c046f72df8f74639cc9dc4cf0d1a089f439ce1"
+    },
+    {
+      "file": "arm_triangle_clearance_screen.json",
+      "bytes": 4156,
+      "sha256": "289f8c1f71347b567e9b8582d4252f691652acb2cd4b005dc4c46260ed6d8863"
+    },
+    {
+      "file": "body_closed_qa.png",
+      "bytes": 222387,
+      "sha256": "7280c811c425c43fe858fa642b8a0e4e794f87d7d009b31657173afbe01f6efa"
+    },
+    {
+      "file": "body_cutaway_qa.png",
+      "bytes": 217086,
+      "sha256": "b12d651218bed205983d92ebe7195d57251ead5a0b0b16ad161c2472f77ae053"
+    },
+    {
+      "file": "body_power_R01.glb",
+      "bytes": 9817408,
+      "sha256": "186dd531e2402e8ed62a9d306d7427c01ab8d863546b37c47d12c209aac07d3f"
+    },
+    {
+      "file": "body_power_R01.step",
+      "bytes": 6825896,
+      "sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba"
+    },
+    {
+      "file": "body_power_R01_colab.ipynb",
+      "bytes": 2107735,
+      "sha256": "136b3baa322bfc2a9f6a66bdbb766da1d4e8d484381ae7911ea6f0b9f13057f6"
+    },
+    {
+      "file": "build_body_power.py",
+      "bytes": 24121,
+      "sha256": "c9c74980acd3a3fc5949126d3b933705fee38e5452d6beb81fc76715c5d553e8"
+    },
+    {
+      "file": "check_arm_clearance.py",
+      "bytes": 4292,
+      "sha256": "636a66d2219f1a77b4d1ffdd222b006f844f19ae7d255a64ad56f6e61bf6217a"
+    },
+    {
+      "file": "check_reservations.py",
+      "bytes": 2054,
+      "sha256": "25035b26e57eab37e417a408706b31a29407b2a5cc4b0eae519466e1ce5bed8a"
+    },
+    {
+      "file": "check_triangle_clearance.py",
+      "bytes": 3230,
+      "sha256": "386306eb2e783c0ae58c55458d8afbc1db2f6ce4734fb35ac2ae3bcb87b0c6da"
+    },
+    {
+      "file": "cots_reservations_R01.glb",
+      "bytes": 12708,
+      "sha256": "5c47ad1ffa160436c221265870b0b80d1482da1530df5cd8863533aa707af36a"
+    },
+    {
+      "file": "cots_reservations_R01.step",
+      "bytes": 102060,
+      "sha256": "729dc6ba9c397e86b97c48c9d4af96d12519c0cb52b953bc0b06dd13fbebf648"
+    },
+    {
+      "file": "export_roundtrip.json",
+      "bytes": 571,
+      "sha256": "c477080df400345ac58f80858528e7b012b1af406312ecf6cdf151da9f110624"
+    },
+    {
+      "file": "finalize_body.py",
+      "bytes": 2541,
+      "sha256": "b8550b3b9cf0b73308d105bfad82f722a6a7c9db7e2ec2adbd607ee26c3c294c"
+    },
+    {
+      "file": "interface_contract.json",
+      "bytes": 12858,
+      "sha256": "bc3ad4d6af75e81cd97ef0d13476f39c3e5cd7c5aa906c576943587f8dadf3f8"
+    },
+    {
+      "file": "original_cutlist.csv",
+      "bytes": 40572,
+      "sha256": "12f7321eafe598824e260d315d98e62082f0e4e6d31b0cabac025a631d99ba80"
+    },
+    {
+      "file": "package_release.py",
+      "bytes": 4295,
+      "sha256": "b7fc3951e761fa950abbc145bae87f9763f3e6a960ddb3a6c4979f76022cc564"
+    },
+    {
+      "file": "reference_frame_R06.step",
+      "bytes": 1546526,
+      "sha256": "4f31f400a6a1bdcfdcb79a962813ca3dd4fac7f6c3da46e5b73fb70bbcd1b9ab"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 50,
+      "sha256": "9e038c84c017d85ac109b009f5e1fc32cee5352e0cb3f702ac84d6293f190016"
+    },
+    {
+      "file": "reservation_checks.json",
+      "bytes": 3517,
+      "sha256": "801ea8ac5ec9183dba2a44b29bca847c65e481425ce05be90e0a02ac0e794e94"
+    },
+    {
+      "file": "sourced_bom.csv",
+      "bytes": 1291,
+      "sha256": "52a635d126c28801222ee0f25614132899cea6a9bf9facbe6f5be02f3728a8b3"
+    },
+    {
+      "file": "tire_envelope_screen_C02.json",
+      "bytes": 2155,
+      "sha256": "f10cc105f1ac23eae3d1001a1f2aede2047902aa94f8d0be8700b765c1afdfdd"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 117473,
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "file": "verify_export.py",
+      "bytes": 1581,
+      "sha256": "cf70481ec49cb5be468ff78a80d7f9620b00321d2d7020d78b5dd31fc1c8e32c"
+    }
+  ],
+  "restricted_supplier_geometry_included": false
+}

@@ -1,0 +1,1740 @@
+{
+  "scope": "Bounding proof that all non-local replacement arm instances are disjoint from each motor in36 sampled poses. Local replacement arms use the separate exact B-rep test. No vendor geometry accessed or exported.",
+  "count": 216,
+  "all_disjoint": true,
+  "minimum_AABB_gap_lower_bound_mm": 1006.6129601040047,
+  "selected_source_sha256": {
+    "upper_wishbone_C03_R06.step": "cea5bba0af9ab4a41abd9957f143350cff1a7bc74f3a1f3fc3fe20f103347a6f",
+    "lower_wishbone_C03_R04.step": "d08551d2b34fb49c493e7be7ac75c6e2ccd8ab5e694dcef657fae0f2b5945bc0"
+  },
+  "checks": [
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2616.163858457897
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2616.163858457897
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2565.421558997983
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2565.421558997983
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2323.6004988453333
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2323.6004988453333
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1087.321708206618
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1087.321708206618
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2556.401845552659
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2556.401845552659
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2312.8510623360044
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2312.8510623360044
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1088.9951144960455
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1088.9951144960455
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2531.572822901348
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2531.572822901348
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2321.1711049903315
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2321.1711049903315
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1010.4581431265033
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1010.4581431265033
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2524.6667116832514
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2524.6667116832514
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2312.5268132781653
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2312.5268132781653
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1012.9964180346603
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1012.9964180346603
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2571.801884959902
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2575.4247448215083
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2324.6190391836262
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2324.6190391836262
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1100.1414718790945
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1108.5842046971104
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2561.88374524095
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2565.524860881629
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2313.0269819066166
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2313.0269819066166
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1101.4329326390064
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1109.8756654570225
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2584.6989342228353
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2584.6989342228353
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2621.465216477586
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2625.111613667192
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1128.7709608898858
+    },
+    {
+      "motor_corner": "front_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1137.2136937079017
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2606.665461963087
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2606.665461963087
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.706342247
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.706342247
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2548.397797466969
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2548.397797466969
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1091.7302027103328
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1091.7302027103328
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2313.725022590233
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2313.725022590233
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2554.9565657136
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2554.9565657136
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1083.734087552321
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1083.734087552321
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.3870213929767
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.3870213929767
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2516.4922989570928
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2516.4922989570928
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1015.7497203699011
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1015.7497203699011
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2311.393036635709
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2311.393036635709
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2521.0726727441615
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2521.0726727441615
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1006.6129601040047
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1006.6129601040047
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.8796053400133
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2302.8796053400133
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2553.9028356249296
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2557.564309655857
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1104.158148601043
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1112.6008814190589
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2314.705966152742
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2314.705966152742
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2561.3521532207938
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2564.978310200101
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1096.659082425208
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1105.1018152432239
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2575.084479558406
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2575.084479558406
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2611.9860982577607
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2615.6457100494886
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1128.7709608898858
+    },
+    {
+      "motor_corner": "front_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1137.2136937079017
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2606.6654619630876
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2606.6654619630876
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1083.734087552321
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1083.734087552321
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2554.956565713601
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2554.956565713601
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2313.7250225902335
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2313.7250225902335
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1091.7302027103328
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1091.7302027103328
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2548.397797466969
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2548.397797466969
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.7063422469996
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.7063422469996
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1006.6129601040047
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1006.6129601040047
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2521.0726727441615
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2521.0726727441615
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2311.393036635709
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2311.393036635709
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1015.7497203699011
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1015.7497203699011
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2516.4922989570928
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2516.4922989570928
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.3870213929763
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.3870213929763
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1096.659082425208
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1105.1018152432239
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2561.3521532207938
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2564.978310200101
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2314.7059661527414
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2314.7059661527414
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1104.1581486010427
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1112.6008814190586
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2553.90283562493
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2557.564309655857
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.8796053400133
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2302.8796053400133
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2575.084479558406
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2575.084479558406
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1128.7709608898858
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "rear_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1137.2136937079017
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2611.9860982577616
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2615.645710049489
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_left",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2355.493047186412
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1116.403751000376
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2616.1638584578964
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2616.1638584578964
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1088.9951144960455
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1088.9951144960455
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2312.8510623360044
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2312.8510623360044
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2556.401845552659
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2556.401845552659
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1087.321708206618
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1087.321708206618
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2323.6004988453333
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2323.6004988453333
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2565.4215589979826
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2565.4215589979826
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1012.9964180346603
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1012.9964180346603
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2312.5268132781657
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2312.5268132781657
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2524.6667116832514
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2524.6667116832514
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1010.4581431265033
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1010.4581431265033
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2321.1711049903315
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2321.1711049903315
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2531.5728229013475
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2531.5728229013475
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1101.4329326390064
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 1109.8756654570225
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2313.0269819066166
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2313.0269819066166
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2561.8837452409493
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "AABB_distance_lower_bound_mm": 2565.5248608816287
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1100.1414718790945
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 1108.5842046971104
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2324.6190391836262
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2324.6190391836262
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2571.801884959902
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "AABB_distance_lower_bound_mm": 2575.4247448215083
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1040.5347574776438
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2584.698934222835
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2584.698934222835
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1128.7709608898858
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "rear_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 1137.2136937079017
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_right",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2365.9999998
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "upper",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2621.4652164775857
+    },
+    {
+      "motor_corner": "rear_right",
+      "arm_corner": "front_left",
+      "arm": "lower",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "AABB_distance_lower_bound_mm": 2625.1116136671917
+    }
+  ]
+}

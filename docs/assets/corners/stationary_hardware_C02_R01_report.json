@@ -1,0 +1,41 @@
+{
+  "group": "stationary_hardware_C02_R01",
+  "count": 16,
+  "all_BRep_valid": true,
+  "bounds_mm": [
+    -241.0,
+    390.5,
+    -286.0,
+    235.0000001,
+    566.0,
+    126.0
+  ],
+  "density_assumption_kg_m3": 7850,
+  "volume_m3": 0.0002626735103469178,
+  "mass_kg": 2.061987056223305,
+  "com_m": [
+    -0.005217712683758581,
+    0.5244388677709625,
+    -0.06915939302976587
+  ],
+  "inertia_com_kg_m2": [
+    [
+      0.05841690149366352,
+      0.00027500742860405076,
+      -0.0003318406033264079
+    ],
+    [
+      0.00027500742860405076,
+      0.0983514495516321,
+      0.0036451768008138787
+    ],
+    [
+      -0.0003318406033264079,
+      0.0036451768008138787,
+      0.04891626914905095
+    ]
+  ],
+  "notes": {
+    "status": "Original hinge pins and nominal M12 fastener envelopes. Grade, torque, locking/cotter hardware and fit not approved. No helical threads modeled."
+  }
+}

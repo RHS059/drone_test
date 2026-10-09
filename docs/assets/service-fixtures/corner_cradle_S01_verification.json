@@ -1,0 +1,1386 @@
+{
+  "revision": "corner_cradle_S01",
+  "parts": [
+    {
+      "name": "cradle_foot_-480_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Floor contact, no casters. Anchor pattern is original and unqualified.",
+      "volume_mm3": 395073.2755698007,
+      "assumed_mass_kg": 3.101325213222936,
+      "bounds_mm": [
+        -560.0,
+        640.0,
+        -788.15,
+        -400.0,
+        800.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_foot_480_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Floor contact, no casters. Anchor pattern is original and unqualified.",
+      "volume_mm3": 395073.2755698007,
+      "assumed_mass_kg": 3.101325213222936,
+      "bounds_mm": [
+        400.0,
+        640.0,
+        -788.15,
+        560.0,
+        800.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_longitudinal_box_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1678099.3364445774,
+      "assumed_mass_kg": 13.173079791089934,
+      "bounds_mm": [
+        -560.0,
+        680.0,
+        -772.15,
+        560.0,
+        760.0,
+        -692.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_foot_-480_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Floor contact, no casters. Anchor pattern is original and unqualified.",
+      "volume_mm3": 395073.27556980064,
+      "assumed_mass_kg": 3.1013252132229354,
+      "bounds_mm": [
+        -560.0,
+        1080.0,
+        -788.15,
+        -400.0,
+        1240.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_foot_480_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Floor contact, no casters. Anchor pattern is original and unqualified.",
+      "volume_mm3": 395073.27556980064,
+      "assumed_mass_kg": 3.1013252132229354,
+      "bounds_mm": [
+        400.0,
+        1080.0,
+        -788.15,
+        560.0,
+        1240.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_longitudinal_box_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1678099.3364445774,
+      "assumed_mass_kg": 13.173079791089934,
+      "bounds_mm": [
+        -560.0,
+        1120.0,
+        -772.15,
+        560.0,
+        1200.0,
+        -692.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_cross_box_-220",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 468000.0,
+      "assumed_mass_kg": 3.6738000000000004,
+      "bounds_mm": [
+        -270.0,
+        760.0,
+        -772.15,
+        -170.0,
+        1120.0,
+        -732.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_contour_shoe_-220",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Original closed weldment: 8 mm bottom/end/side walls and 6 mm curved top, concave R444.15. Bottom rests on crossmember Z\u2212732.15. Weld design and strength not released.",
+      "volume_mm3": 1594293.6001778045,
+      "assumed_mass_kg": 12.515204761395767,
+      "bounds_mm": [
+        -340.0,
+        820.0,
+        -732.1500000000001,
+        -100.0,
+        1060.0,
+        -535.7782750665276
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_replaceable_contact_liner_-220",
+      "group": "corner_cradle",
+      "material": "elastomer",
+      "note": "6 mm radial nominal liner follows R438.15 unloaded tire envelope. Real tread compression/contact, width on 8.5-in rim and liner attachment remain qualification gates.",
+      "volume_mm3": 413745.3595556424,
+      "assumed_mass_kg": 0.4964944314667709,
+      "bounds_mm": [
+        -340.0,
+        820.0,
+        -682.7461409417766,
+        -100.0,
+        1060.0,
+        -526.361036508405
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_cross_box_220",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 468000.0,
+      "assumed_mass_kg": 3.6738000000000004,
+      "bounds_mm": [
+        170.0,
+        760.0,
+        -772.15,
+        270.0,
+        1120.0,
+        -732.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_contour_shoe_220",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Original closed weldment: 8 mm bottom/end/side walls and 6 mm curved top, concave R444.15. Bottom rests on crossmember Z\u2212732.15. Weld design and strength not released.",
+      "volume_mm3": 1594293.6001778056,
+      "assumed_mass_kg": 12.515204761395776,
+      "bounds_mm": [
+        100.0,
+        820.0,
+        -732.1500000000001,
+        340.0,
+        1060.0,
+        -535.7782750665276
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_replaceable_contact_liner_220",
+      "group": "corner_cradle",
+      "material": "elastomer",
+      "note": "6 mm radial nominal liner follows R438.15 unloaded tire envelope. Real tread compression/contact, width on 8.5-in rim and liner attachment remain qualification gates.",
+      "volume_mm3": 413745.35955564457,
+      "assumed_mass_kg": 0.49649443146677347,
+      "bounds_mm": [
+        100.0,
+        820.0,
+        -682.7461409417766,
+        340.0000000000002,
+        1060.0,
+        -526.3610365084048
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_-340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261077,
+      "assumed_mass_kg": 0.012186980867924945,
+      "bounds_mm": [
+        -384.8149545762236,
+        711.5,
+        -707.15,
+        -365.1850454237764,
+        728.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_-340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577516,
+      "assumed_mass_kg": 0.0034402795751298353,
+      "bounds_mm": [
+        -385.0,
+        710.0,
+        -684.15,
+        -365.0,
+        730.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_-340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495336,
+      "assumed_mass_kg": 0.02916639868274384,
+      "bounds_mm": [
+        -384.8149545762236,
+        711.5,
+        -707.15,
+        -365.1850454237764,
+        728.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_-340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261082,
+      "assumed_mass_kg": 0.01218698086792495,
+      "bounds_mm": [
+        -314.8149545762236,
+        711.5,
+        -707.15,
+        -295.1850454237764,
+        728.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_-340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577516,
+      "assumed_mass_kg": 0.0034402795751298353,
+      "bounds_mm": [
+        -315.0,
+        710.0,
+        -684.15,
+        -295.0,
+        730.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_-340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495336,
+      "assumed_mass_kg": 0.02916639868274384,
+      "bounds_mm": [
+        -314.8149545762236,
+        711.5,
+        -707.15,
+        -295.1850454237764,
+        728.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_base_-340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Removable post weldment: two M10-style through fasteners into retained rail nuts; structural approval required.",
+      "volume_mm3": 54479.46915566255,
+      "assumed_mass_kg": 0.42766383287195103,
+      "bounds_mm": [
+        -390.0,
+        685.0,
+        -692.15,
+        -290.0,
+        755.0,
+        -684.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_-340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 342834.59999999986,
+      "assumed_mass_kg": 2.6912516099999992,
+      "bounds_mm": [
+        -360.0,
+        700.0,
+        -684.15,
+        -320.0,
+        740.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_cap_-340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 41607.212524629984,
+      "assumed_mass_kg": 0.3266166183183454,
+      "bounds_mm": [
+        -370.0,
+        690.0,
+        88.0,
+        -310.0,
+        750.0,
+        100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_weldnut_-340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Nominal captive weldnut, threads omitted. No proof of weld or fastener capacity.",
+      "volume_mm3": 1478.5994121198942,
+      "assumed_mass_kg": 0.01160700538514117,
+      "bounds_mm": [
+        -350.39230484541326,
+        711.0,
+        78.0,
+        -329.60769515458674,
+        729.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_washer_-340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 639.3141050055228,
+      "assumed_mass_kg": 0.005018615724293354,
+      "bounds_mm": [
+        -352.0,
+        708.0,
+        140.0,
+        -328.0,
+        732.0,
+        142.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_bolt_-340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original M12-style smooth-shank captive crossbar fastener, length/grade/preload not selected.",
+      "volume_mm3": 9482.967320480153,
+      "assumed_mass_kg": 0.0744412934657692,
+      "bounds_mm": [
+        -350.39230484541326,
+        711.0,
+        78.0,
+        -329.60769515458674,
+        729.0,
+        150.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_-340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261096,
+      "assumed_mass_kg": 0.012186980867924961,
+      "bounds_mm": [
+        -384.8149545762236,
+        1151.5,
+        -707.15,
+        -365.1850454237764,
+        1168.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_-340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577687,
+      "assumed_mass_kg": 0.0034402795751298488,
+      "bounds_mm": [
+        -385.0,
+        1150.0,
+        -684.15,
+        -365.0,
+        1170.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_-340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495236,
+      "assumed_mass_kg": 0.029166398682743764,
+      "bounds_mm": [
+        -384.8149545762236,
+        1151.5,
+        -707.15,
+        -365.1850454237764,
+        1168.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_-340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.48163922611,
+      "assumed_mass_kg": 0.012186980867924965,
+      "bounds_mm": [
+        -314.8149545762236,
+        1151.5,
+        -707.15,
+        -295.1850454237764,
+        1168.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_-340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577687,
+      "assumed_mass_kg": 0.0034402795751298488,
+      "bounds_mm": [
+        -315.0,
+        1150.0,
+        -684.15,
+        -295.0,
+        1170.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_-340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495236,
+      "assumed_mass_kg": 0.029166398682743764,
+      "bounds_mm": [
+        -314.8149545762236,
+        1151.5,
+        -707.15,
+        -295.1850454237764,
+        1168.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_base_-340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Removable post weldment: two M10-style through fasteners into retained rail nuts; structural approval required.",
+      "volume_mm3": 54479.46915566255,
+      "assumed_mass_kg": 0.42766383287195103,
+      "bounds_mm": [
+        -390.0,
+        1125.0,
+        -692.15,
+        -290.0,
+        1195.0,
+        -684.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_-340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 342834.59999999986,
+      "assumed_mass_kg": 2.6912516099999992,
+      "bounds_mm": [
+        -360.0,
+        1140.0,
+        -684.15,
+        -320.0,
+        1180.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_cap_-340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 41607.212524629984,
+      "assumed_mass_kg": 0.3266166183183454,
+      "bounds_mm": [
+        -370.0,
+        1130.0,
+        88.0,
+        -310.0,
+        1190.0,
+        100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_weldnut_-340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Nominal captive weldnut, threads omitted. No proof of weld or fastener capacity.",
+      "volume_mm3": 1478.5994121198962,
+      "assumed_mass_kg": 0.011607005385141185,
+      "bounds_mm": [
+        -350.39230484541326,
+        1151.0,
+        78.0,
+        -329.60769515458674,
+        1169.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_washer_-340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 639.314105005524,
+      "assumed_mass_kg": 0.005018615724293364,
+      "bounds_mm": [
+        -352.0,
+        1148.0,
+        140.0,
+        -328.0,
+        1172.0,
+        142.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_bolt_-340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original M12-style smooth-shank captive crossbar fastener, length/grade/preload not selected.",
+      "volume_mm3": 9482.967320480142,
+      "assumed_mass_kg": 0.07444129346576912,
+      "bounds_mm": [
+        -350.39230484541326,
+        1151.0,
+        78.0,
+        -329.60769515458674,
+        1169.0,
+        150.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_removable_capture_crossbar_-340",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Install after supported module is seated. This closes the cage; it is not a lifting bail or approved transport restraint.",
+      "volume_mm3": 211527.2125246299,
+      "assumed_mass_kg": 1.6604886183183447,
+      "bounds_mm": [
+        -360.0,
+        700.0,
+        100.0,
+        -320.0,
+        1180.0,
+        140.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261082,
+      "assumed_mass_kg": 0.01218698086792495,
+      "bounds_mm": [
+        295.1850454237764,
+        711.5,
+        -707.15,
+        314.8149545762236,
+        728.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577516,
+      "assumed_mass_kg": 0.0034402795751298353,
+      "bounds_mm": [
+        295.0,
+        710.0,
+        -684.15,
+        315.0,
+        730.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_340_720_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495336,
+      "assumed_mass_kg": 0.02916639868274384,
+      "bounds_mm": [
+        295.1850454237764,
+        711.5,
+        -707.15,
+        314.8149545762236,
+        728.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261077,
+      "assumed_mass_kg": 0.012186980867924945,
+      "bounds_mm": [
+        365.1850454237764,
+        711.5,
+        -707.15,
+        384.8149545762236,
+        728.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577516,
+      "assumed_mass_kg": 0.0034402795751298353,
+      "bounds_mm": [
+        365.0,
+        710.0,
+        -684.15,
+        385.0,
+        730.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_340_720_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495336,
+      "assumed_mass_kg": 0.02916639868274384,
+      "bounds_mm": [
+        365.1850454237764,
+        711.5,
+        -707.15,
+        384.8149545762236,
+        728.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_base_340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Removable post weldment: two M10-style through fasteners into retained rail nuts; structural approval required.",
+      "volume_mm3": 54479.46915566255,
+      "assumed_mass_kg": 0.42766383287195103,
+      "bounds_mm": [
+        290.0,
+        685.0,
+        -692.15,
+        390.0,
+        755.0,
+        -684.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 342834.59999999986,
+      "assumed_mass_kg": 2.6912516099999992,
+      "bounds_mm": [
+        320.0,
+        700.0,
+        -684.15,
+        360.0,
+        740.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_cap_340_720",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 41607.212524629984,
+      "assumed_mass_kg": 0.3266166183183454,
+      "bounds_mm": [
+        310.0,
+        690.0,
+        88.0,
+        370.0,
+        750.0,
+        100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_weldnut_340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Nominal captive weldnut, threads omitted. No proof of weld or fastener capacity.",
+      "volume_mm3": 1478.5994121198942,
+      "assumed_mass_kg": 0.01160700538514117,
+      "bounds_mm": [
+        329.60769515458674,
+        711.0,
+        78.0,
+        350.39230484541326,
+        729.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_washer_340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 639.3141050055228,
+      "assumed_mass_kg": 0.005018615724293354,
+      "bounds_mm": [
+        328.0,
+        708.0,
+        140.0,
+        352.0,
+        732.0,
+        142.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_bolt_340_720",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original M12-style smooth-shank captive crossbar fastener, length/grade/preload not selected.",
+      "volume_mm3": 9482.967320480153,
+      "assumed_mass_kg": 0.0744412934657692,
+      "bounds_mm": [
+        329.60769515458674,
+        711.0,
+        78.0,
+        350.39230484541326,
+        729.0,
+        150.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.48163922611,
+      "assumed_mass_kg": 0.012186980867924965,
+      "bounds_mm": [
+        295.1850454237764,
+        1151.5,
+        -707.15,
+        314.8149545762236,
+        1168.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577687,
+      "assumed_mass_kg": 0.0034402795751298488,
+      "bounds_mm": [
+        295.0,
+        1150.0,
+        -684.15,
+        315.0,
+        1170.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_340_1160_-35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495236,
+      "assumed_mass_kg": 0.029166398682743764,
+      "bounds_mm": [
+        295.1850454237764,
+        1151.5,
+        -707.15,
+        314.8149545762236,
+        1168.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_weldnut_340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Retained beneath top rail wall; nominal smooth-bore M10 envelope, no thread or weld rating.",
+      "volume_mm3": 1552.4816392261096,
+      "assumed_mass_kg": 0.012186980867924961,
+      "bounds_mm": [
+        365.1850454237764,
+        1151.5,
+        -707.15,
+        384.8149545762236,
+        1168.5,
+        -697.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_washer_340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 438.25217517577687,
+      "assumed_mass_kg": 0.0034402795751298488,
+      "bounds_mm": [
+        365.0,
+        1150.0,
+        -684.15,
+        385.0,
+        1170.0,
+        -682.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_post_base_bolt_340_1160_35",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Remove to install capture-post weldment after unloaded cradle is positioned beneath supported corner.",
+      "volume_mm3": 3715.4648003495236,
+      "assumed_mass_kg": 0.029166398682743764,
+      "bounds_mm": [
+        365.1850454237764,
+        1151.5,
+        -707.15,
+        384.8149545762236,
+        1168.5,
+        -675.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_base_340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Removable post weldment: two M10-style through fasteners into retained rail nuts; structural approval required.",
+      "volume_mm3": 54479.46915566255,
+      "assumed_mass_kg": 0.42766383287195103,
+      "bounds_mm": [
+        290.0,
+        1125.0,
+        -692.15,
+        390.0,
+        1195.0,
+        -684.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 342834.59999999986,
+      "assumed_mass_kg": 2.6912516099999992,
+      "bounds_mm": [
+        320.0,
+        1140.0,
+        -684.15,
+        360.0,
+        1180.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_post_cap_340_1160",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 41607.212524629984,
+      "assumed_mass_kg": 0.3266166183183454,
+      "bounds_mm": [
+        310.0,
+        1130.0,
+        88.0,
+        370.0,
+        1190.0,
+        100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_weldnut_340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Nominal captive weldnut, threads omitted. No proof of weld or fastener capacity.",
+      "volume_mm3": 1478.5994121198962,
+      "assumed_mass_kg": 0.011607005385141185,
+      "bounds_mm": [
+        329.60769515458674,
+        1151.0,
+        78.0,
+        350.39230484541326,
+        1169.0,
+        88.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_washer_340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 639.314105005524,
+      "assumed_mass_kg": 0.005018615724293364,
+      "bounds_mm": [
+        328.0,
+        1148.0,
+        140.0,
+        352.0,
+        1172.0,
+        142.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_capture_bolt_340_1160",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original M12-style smooth-shank captive crossbar fastener, length/grade/preload not selected.",
+      "volume_mm3": 9482.967320480142,
+      "assumed_mass_kg": 0.07444129346576912,
+      "bounds_mm": [
+        329.60769515458674,
+        1151.0,
+        78.0,
+        350.39230484541326,
+        1169.0,
+        150.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cradle_removable_capture_crossbar_340",
+      "group": "corner_cradle",
+      "material": "steel",
+      "note": "Install after supported module is seated. This closes the cage; it is not a lifting bail or approved transport restraint.",
+      "volume_mm3": 211527.2125246299,
+      "assumed_mass_kg": 1.6604886183183447,
+      "bounds_mm": [
+        320.0,
+        700.0,
+        100.0,
+        360.0,
+        1180.0,
+        140.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    }
+  ],
+  "count": 62,
+  "all_single_valid_solids": true,
+  "total_assumed_mass_kg": 89.94818123350177,
+  "positive_volume_intersections_mm3": [],
+  "zero_gap_contacts": [
+    [
+      "cradle_foot_-480_720",
+      "cradle_longitudinal_box_720"
+    ],
+    [
+      "cradle_foot_480_720",
+      "cradle_longitudinal_box_720"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_cross_box_-220"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_cross_box_220"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_post_base_weldnut_-340_720_-35"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_post_base_weldnut_-340_720_35"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_capture_post_base_-340_720"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_post_base_weldnut_340_720_-35"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_post_base_weldnut_340_720_35"
+    ],
+    [
+      "cradle_longitudinal_box_720",
+      "cradle_capture_post_base_340_720"
+    ],
+    [
+      "cradle_foot_-480_1160",
+      "cradle_longitudinal_box_1160"
+    ],
+    [
+      "cradle_foot_480_1160",
+      "cradle_longitudinal_box_1160"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_cross_box_-220"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_cross_box_220"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_post_base_weldnut_-340_1160_-35"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_post_base_weldnut_-340_1160_35"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_capture_post_base_-340_1160"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_post_base_weldnut_340_1160_-35"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_post_base_weldnut_340_1160_35"
+    ],
+    [
+      "cradle_longitudinal_box_1160",
+      "cradle_capture_post_base_340_1160"
+    ],
+    [
+      "cradle_cross_box_-220",
+      "cradle_contour_shoe_-220"
+    ],
+    [
+      "cradle_contour_shoe_-220",
+      "cradle_replaceable_contact_liner_-220"
+    ],
+    [
+      "cradle_cross_box_220",
+      "cradle_contour_shoe_220"
+    ],
+    [
+      "cradle_contour_shoe_220",
+      "cradle_replaceable_contact_liner_220"
+    ],
+    [
+      "cradle_post_base_washer_-340_720_-35",
+      "cradle_post_base_bolt_-340_720_-35"
+    ],
+    [
+      "cradle_post_base_washer_-340_720_-35",
+      "cradle_capture_post_base_-340_720"
+    ],
+    [
+      "cradle_post_base_washer_-340_720_35",
+      "cradle_post_base_bolt_-340_720_35"
+    ],
+    [
+      "cradle_post_base_washer_-340_720_35",
+      "cradle_capture_post_base_-340_720"
+    ],
+    [
+      "cradle_capture_post_base_-340_720",
+      "cradle_capture_post_-340_720"
+    ],
+    [
+      "cradle_capture_post_-340_720",
+      "cradle_capture_post_cap_-340_720"
+    ],
+    [
+      "cradle_capture_post_cap_-340_720",
+      "cradle_capture_weldnut_-340_720"
+    ],
+    [
+      "cradle_capture_post_cap_-340_720",
+      "cradle_removable_capture_crossbar_-340"
+    ],
+    [
+      "cradle_capture_washer_-340_720",
+      "cradle_capture_bolt_-340_720"
+    ],
+    [
+      "cradle_capture_washer_-340_720",
+      "cradle_removable_capture_crossbar_-340"
+    ],
+    [
+      "cradle_post_base_washer_-340_1160_-35",
+      "cradle_post_base_bolt_-340_1160_-35"
+    ],
+    [
+      "cradle_post_base_washer_-340_1160_-35",
+      "cradle_capture_post_base_-340_1160"
+    ],
+    [
+      "cradle_post_base_washer_-340_1160_35",
+      "cradle_post_base_bolt_-340_1160_35"
+    ],
+    [
+      "cradle_post_base_washer_-340_1160_35",
+      "cradle_capture_post_base_-340_1160"
+    ],
+    [
+      "cradle_capture_post_base_-340_1160",
+      "cradle_capture_post_-340_1160"
+    ],
+    [
+      "cradle_capture_post_-340_1160",
+      "cradle_capture_post_cap_-340_1160"
+    ],
+    [
+      "cradle_capture_post_cap_-340_1160",
+      "cradle_capture_weldnut_-340_1160"
+    ],
+    [
+      "cradle_capture_post_cap_-340_1160",
+      "cradle_removable_capture_crossbar_-340"
+    ],
+    [
+      "cradle_capture_washer_-340_1160",
+      "cradle_capture_bolt_-340_1160"
+    ],
+    [
+      "cradle_capture_washer_-340_1160",
+      "cradle_removable_capture_crossbar_-340"
+    ],
+    [
+      "cradle_post_base_washer_340_720_-35",
+      "cradle_post_base_bolt_340_720_-35"
+    ],
+    [
+      "cradle_post_base_washer_340_720_-35",
+      "cradle_capture_post_base_340_720"
+    ],
+    [
+      "cradle_post_base_washer_340_720_35",
+      "cradle_post_base_bolt_340_720_35"
+    ],
+    [
+      "cradle_post_base_washer_340_720_35",
+      "cradle_capture_post_base_340_720"
+    ],
+    [
+      "cradle_capture_post_base_340_720",
+      "cradle_capture_post_340_720"
+    ],
+    [
+      "cradle_capture_post_340_720",
+      "cradle_capture_post_cap_340_720"
+    ],
+    [
+      "cradle_capture_post_cap_340_720",
+      "cradle_capture_weldnut_340_720"
+    ],
+    [
+      "cradle_capture_post_cap_340_720",
+      "cradle_removable_capture_crossbar_340"
+    ],
+    [
+      "cradle_capture_washer_340_720",
+      "cradle_capture_bolt_340_720"
+    ],
+    [
+      "cradle_capture_washer_340_720",
+      "cradle_removable_capture_crossbar_340"
+    ],
+    [
+      "cradle_post_base_washer_340_1160_-35",
+      "cradle_post_base_bolt_340_1160_-35"
+    ],
+    [
+      "cradle_post_base_washer_340_1160_-35",
+      "cradle_capture_post_base_340_1160"
+    ],
+    [
+      "cradle_post_base_washer_340_1160_35",
+      "cradle_post_base_bolt_340_1160_35"
+    ],
+    [
+      "cradle_post_base_washer_340_1160_35",
+      "cradle_capture_post_base_340_1160"
+    ],
+    [
+      "cradle_capture_post_base_340_1160",
+      "cradle_capture_post_340_1160"
+    ],
+    [
+      "cradle_capture_post_340_1160",
+      "cradle_capture_post_cap_340_1160"
+    ],
+    [
+      "cradle_capture_post_cap_340_1160",
+      "cradle_capture_weldnut_340_1160"
+    ],
+    [
+      "cradle_capture_post_cap_340_1160",
+      "cradle_removable_capture_crossbar_340"
+    ],
+    [
+      "cradle_capture_washer_340_1160",
+      "cradle_capture_bolt_340_1160"
+    ],
+    [
+      "cradle_capture_washer_340_1160",
+      "cradle_removable_capture_crossbar_340"
+    ]
+  ],
+  "fabrication_release": false,
+  "rated_load_kg": null,
+  "source_safety_class": "original static workholding development only"
+}

@@ -1,0 +1,169 @@
+#!/usr/bin/env python3
+"""Read-only consistency and anti-double-counting checks for the cost package."""
+from pathlib import Path
+from decimal import Decimal
+import csv,json,math,unittest
+HERE=Path(__file__).resolve().parent
+M=json.loads((HERE/'cost_model.json').read_text())
+S={x['id']:x for x in json.loads((HERE/'sources.json').read_text())['observations']}
+P={x['id']:x for x in M['parts']}
+
+class CostModelChecks(unittest.TestCase):
+    def test_unknown_build_total(self):
+        self.assertIsNone(M['build_summary']['complete_build_cost'])
+        self.assertGreater(len(M['build_summary']['essential_unpriced_line_ids']),0)
+        for k in ['drives','arms','arm_controllers','frame_R07','body_R01']:
+            self.assertIsNone(P[k]['unit_price'])
+            self.assertIsNone(P[k]['extended_price'])
+    def test_null_is_not_zero(self):
+        for p in M['parts']:
+            self.assertNotEqual(p['unit_price'],0)
+            self.assertNotEqual(p['unit_mass_kg'],0)
+            self.assertNotEqual(p['quantity'],0)
+    def test_exact_quantities(self):
+        for id,n in [('tires',6),('rims',6),('drives',6),('batteries',4),('arms',2),('arm_controllers',2),('grippers',2),('couplings',2),('wheel_nuts',30)]:
+            self.assertEqual(P[id]['quantity'],n)
+    def test_native_currency_baskets(self):
+        bs=M['build_summary']['public_price_baskets']
+        self.assertEqual({x['currency'] for x in bs},{'USD','EUR'})
+        for b in bs:
+            total=Decimal(0)
+            for id in b['line_ids']:
+                p=P[id]
+                self.assertEqual(p['currency'],b['currency'])
+                self.assertIsNotNone(p['unit_price'])
+                total+=Decimal(str(p['unit_price']))*Decimal(str(p['quantity']))
+            self.assertEqual(total,Decimal(str(b['reference_subtotal'])))
+            self.assertFalse(b['complete_build_total'])
+        self.assertEqual({x['currency']:x['reference_subtotal'] for x in bs},{'USD':20019.9,'EUR':2891.34})
+    def test_sources_and_prices_match(self):
+        for p in M['parts']:
+            for id in p['source_ids']:
+                self.assertIn(id,S)
+            if p['unit_price'] is not None:
+                s=S[p['price_source_id']]
+                self.assertEqual(p['unit_price'],s['price'])
+                self.assertEqual(p['currency'],s['currency'])
+                self.assertTrue(s['exact_sku_match'])
+                self.assertEqual(s['retrieved_on'],M['as_of'])
+    def test_no_bundle_or_alternative_double_count(self):
+        self.assertEqual(P['wheel_nuts']['included_in_cost_of'],'rims')
+        self.assertIsNone(P['wheel_nuts']['unit_price'])
+        self.assertEqual(P['couplings']['sku'],'GRP-CPL-062')
+        for a in M['alternatives']:
+            self.assertFalse(a['baseline_included'])
+            self.assertNotIn(a['id'],P)
+        self.assertFalse(S['drive_rejected_price']['exact_sku_match'])
+    def test_mass_pinning(self):
+        self.assertEqual(M['configuration']['corner_revision'],'C03_R03')
+        self.assertEqual(M['configuration']['middle_corner_revision'],'C02_R06')
+        known=sum(p['unit_mass_kg']*p['quantity'] for p in M['parts'] if p['included_in_pinned_mass_subtotal'])
+        self.assertAlmostEqual(known,1127.4662815201427,places=8)
+        self.assertAlmostEqual(known,M['mass_context']['pinned_known_subset_kg'],places=8)
+        self.assertIsNone(M['mass_context']['whole_vehicle_mass_kg'])
+        self.assertFalse(P['wheel_nuts']['included_in_pinned_mass_subtotal'])
+    def test_exact_c03_original_ledger(self):
+        ledger_path=Path('/workspace/shared/ugv-reconstruction/mechanical/running_gear_C03/mass_cost_ledger_C03_R03.json') if (HERE.parent/'app').is_dir() else HERE.parent/'steering/mass_cost_ledger_C03_R03.json'
+        ledger=json.loads(ledger_path.read_text())
+        nodes=ledger['original_items']
+        self.assertEqual(len(nodes),84)
+        for n in nodes:
+            row=P[n['node']]
+            self.assertEqual(row['quantity'],n['quantity'])
+            self.assertEqual(row['unit_mass_kg'],n['unit_mass_kg'])
+            self.assertEqual(row['source_step_sha256'],n['sha256'])
+            self.assertEqual(row['source_step'],n['source'])
+            self.assertIsNone(row['unit_price'])
+        selected=[r for r in M['parts'] if r.get('ledger_node') is not None]
+        self.assertEqual(len(selected),84)
+        self.assertAlmostEqual(sum(r['unit_mass_kg']*r['quantity'] for r in selected),332.56466061455905,places=10)
+        self.assertEqual(sum(r['quantity'] for r in selected if r['assembly_group']=='middle_C02_R06'),16)
+        self.assertEqual(len([r for r in selected if r['assembly_group']=='steering_C03_R03']),76)
+        for obsolete in ['stationary_clamp_C02_R01','inner_backing_C02_R01','upper_wishbone_C02_R02','lower_wishbone_C02_R02','upright_WD220_C02_R05','wheel_adapter_C02_R02','stationary_hardware_C02_R01','upright_pins_C02_R02']:
+            self.assertNotIn(obsolete,P)
+    def test_c03_purchased_quantities_and_unknowns(self):
+        required={'spherical_bearings':56,'outer_spherical_bearings':8,'outer_misalignment_spacers':16,'tie_rod_end_RH':4,'tie_rod_end_LH':4,'tie_misalignment_spacers':16,'housing_retainer_screws':32,'steering_actuators':2,'coilovers':6,'wheel_studs':60}
+        for id,quantity in required.items():
+            self.assertEqual(P[id]['quantity'],quantity)
+            self.assertIsNone(P[id]['unit_price'])
+            self.assertIsNone(P[id]['unit_mass_kg'])
+        self.assertEqual(P['steering_actuators']['stroke_mm'],200)
+        self.assertEqual(P['upper_bearing_envelopes_C02_R02']['quantity'],2)
+        self.assertEqual(P['lower_bearing_envelopes_C02_R02']['quantity'],2)
+        self.assertEqual(P['upper_bearing_envelopes_C02_R02']['scope'],'reference_only')
+        self.assertIsNone(M['electrical_context']['steering_power_budget_kw'])
+        self.assertFalse(M['electrical_context']['steering_duty_qualified'])
+        self.assertIsNone(M['operating_cost']['actual_inputs']['measured_steering_kwh_per_operating_hour'])
+    def test_r03_selected_arms_and_unselected_actuator_alternatives(self):
+        originals=[r for r in M['parts'] if r.get('ledger_node')]
+        upper=[r for r in originals if r['source_step']=='running_gear_C03/upper_wishbone_C03_R06.step']
+        lower=[r for r in originals if r['source_step']=='running_gear_C03/lower_wishbone_C03_R04.step']
+        self.assertEqual(sum(r['quantity'] for r in upper),4)
+        self.assertEqual(sum(r['quantity'] for r in lower),4)
+        for obsolete in ['running_gear_C03/upper_wishbone_C03_R02.step','running_gear_C03/lower_wishbone_C03_R03.step']:
+            self.assertFalse(any(r['source_step']==obsolete for r in originals))
+        self.assertIn('B045',P['steering_actuators']['sku'])
+        self.assertFalse(any('B068' in (r['sku'] or '') or 'B100' in (r['sku'] or '') for r in M['parts']))
+        self.assertIsNone(P['steering_actuators']['unit_price'])
+        self.assertIsNone(P['steering_actuators']['unit_mass_kg'])
+    def test_exact_rim_net_mass_not_package_mass(self):
+        self.assertEqual(P['rims']['unit_mass_kg'],15.1)
+        self.assertTrue(P['rims']['included_in_pinned_mass_subtotal'])
+        self.assertEqual(M['mass_context']['accepted_rim_net_mass_kg'],90.6)
+        self.assertEqual(S['rim_net_mass']['sku'],'SE5240060141')
+        evidence=json.loads((HERE/'manufacturer-mass-evidence.json').read_text())
+        self.assertEqual(float(evidence['rim_api']['peso_netto']),15.1)
+        self.assertIsNone(P['tires']['unit_mass_kg'])
+        self.assertIsNone(P['wheel_nuts']['unit_mass_kg'])
+        self.assertIsNone(M['mass_context']['additional_catalog_nuts_kg'])
+    def test_recall_is_serial_specific(self):
+        s=S['battery_recall']
+        self.assertEqual(s['affected_model'],'48V030-GC2')
+        self.assertEqual(len(s['affected_serial_ranges']),3)
+        self.assertEqual(M['procurement_gates'][0]['status'],'unresolved_no_serials')
+    def test_measured_operating_inputs_remain_unknown(self):
+        o=M['operating_cost']
+        self.assertIsNone(o['actual_cost_per_operating_hour'])
+        self.assertIsNone(o['whole_rover_runtime_hours'])
+        for k in ['measured_grid_kwh_per_operating_hour','measured_battery_kwh_per_operating_hour','site_tariff_per_kwh','validated_cycle_life','complete_build_cost']:
+            self.assertIsNone(o['actual_inputs'][k])
+    def test_scenarios_arithmetic(self):
+        for s in M['operating_cost']['scenarios']:
+            i,o=s['inputs'],s['outputs']
+            energy=i['assumed_mean_battery_kw']/i['assumed_charging_efficiency']*i['assumed_tariff_usd_per_kwh']
+            labor=i['assumed_supervision_hours_per_robot_hour']*i['assumed_supervisor_usd_per_hour']+i['assumed_maintenance_labor_hours_per_robot_hour']*i['assumed_technician_usd_per_hour']
+            cycle=i['module_replacement_public_reference_usd']*i['assumed_mean_battery_kw']/(6.144*i['assumed_cycle_depth']*i['assumed_cycle_life'])
+            calendar=i['module_replacement_public_reference_usd']/(i['assumed_calendar_life_years']*i['assumed_annual_operating_hours'])
+            partial=energy+labor+max(cycle,calendar)
+            self.assertAlmostEqual(energy,o['energy_only_usd_per_operating_hour'])
+            self.assertAlmostEqual(partial,o['modeled_partial_usd_per_operating_hour'])
+            self.assertAlmostEqual(partial*i['assumed_annual_operating_hours'],o['modeled_partial_usd_per_assumed_year'])
+            self.assertIsNone(o['complete_operating_cost_usd_per_hour'])
+            self.assertIsNone(o['fully_burdened_cost_usd_per_hour'])
+            self.assertIsNone(o['whole_rover_runtime_hours'])
+    def test_unitless_nut_weight_remains_unknown(self):
+        self.assertIsNone(P['wheel_nuts']['unit_mass_kg'])
+        self.assertIsNone(M['mass_context']['additional_catalog_nuts_kg'])
+
+    def test_csv_matches_json(self):
+        with (HERE/'BOM.csv').open(newline='') as f:
+            rows=list(csv.DictReader(f))
+        self.assertEqual(len(rows),len(M['parts']))
+        self.assertEqual({r['id'] for r in rows},set(P))
+        for r in rows:
+            p=P[r['id']]
+            for k,v in r.items():
+                actual=p[k]
+                expected='null' if actual is None else '|'.join(actual) if isinstance(actual,list) else str(actual).lower() if isinstance(actual,bool) else str(actual)
+                self.assertEqual(v,expected,(r['id'],k))
+    def test_no_legacy_configuration_in_current_scenarios(self):
+        self.assertEqual(M['electrical_context']['battery_count'],4)
+        self.assertEqual(M['electrical_context']['nominal_bank_kwh'],6.144)
+        self.assertFalse(M['electrical_context']['DC_bus_current_basis_verified'])
+        self.assertIsNone(M['electrical_context']['system_current_rating_A'])
+
+if __name__=='__main__':
+    suite=unittest.defaultTestLoader.loadTestsFromTestCase(CostModelChecks)
+    result=unittest.TextTestRunner(verbosity=2).run(suite)
+    (HERE/'validation.json').write_text(json.dumps(dict(tests_run=result.testsRun,failures=len(result.failures),errors=len(result.errors),passed=result.wasSuccessful(),configuration=M['configuration'],scope='Cost arithmetic,CSV/JSON agreement,quantity/source/null/bundle/revision safeguards;not supplier or engineering qualification.'),indent=2)+'\n')
+    raise SystemExit(not result.wasSuccessful())

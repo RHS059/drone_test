@@ -1,0 +1,10 @@
+{
+  "cost_model.json": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41",
+  "BOM.csv": "7041d4e5479e02a88012579e014f2be56edb2afc9067b53338d734b61c5ce396",
+  "sources.json": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240",
+  "README.md": "41a40a918cdc284548c2fa17fdf55025856047ce4b6c5b5452ecf3be20e3fae8",
+  "build_cost_model.py": "7e13e4128a371166a20ed9bc812a4994feeb5fac5a39bb9f1c3b57eb7aa41d77",
+  "test_cost_model.py": "ebb6796f9a3270f50d2f7ba2ba7913d35e68e3e7b59b9356a66a3c467b4f5ec3",
+  "validation.json": "52a921f4575f3e342e74b6b5116da3f4ce90717cc0b9cb49bc2fd7b1146b8c65",
+  "manufacturer-mass-evidence.json": "96a0ba69db97a79e885202cbbc4b301301be91b1688947f202d99a2d08d6a403"
+}

@@ -1,0 +1,12 @@
+{
+  "encoding": "gzip, lossless",
+  "source_file": "original_steering_C03_R03.glb",
+  "source_bytes": 42252148,
+  "source_sha256": "d5d30b548613a690cf0b9cebfe5995dc517183bd99743e05db1fad73931d0ac7",
+  "runtime_file": "original_steering_C03_R03.glb.gz",
+  "runtime_bytes": 8424492,
+  "runtime_sha256": "e00479aadc092d5c0d39e0c760cc29dcba3d716e84fb769315497798cd685123",
+  "decompressed_byte_identity_verified": true,
+  "mesh_simplification": false,
+  "quantization": false
+}

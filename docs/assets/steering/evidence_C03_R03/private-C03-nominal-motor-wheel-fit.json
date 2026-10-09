@@ -1,0 +1,384 @@
+{
+  "scope": "Direct private motor-source B-rep against the selected ORIGINAL C01 rim/tire model at nominal front-left wheel pose. Proper side/rear and q/r rigid transform equivalence is verified for36 poses; wheel rolling/spin and rotor/stud clock changes are not inferred.",
+  "source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "source_solid_count": 240,
+  "selected_wheel_input_sha256": {
+    "rim_C01.step": "a88d8fc9192be9ff9b222a4709c4ed1b1a0777f5e53f5d0be9f55b6458f21b10",
+    "tire_C01.step": "a59623920b27b75258a55e123f050d828b1595e52f3a30df2910f32621082b5b",
+    "wheel_C01.step": "b98e8e2b983024b612cf7083ec386be9b89862c21d7134c376f278037b28714b",
+    "interface_contract.json": "a6fffb467706228c037eb6e846d9f88eb5875998fb96e4ae7ba90016828e3ff3",
+    "wheel_C01.glb": "120fd2031706d4f1aa89a15fd9ff35ffbd90de574aab48799bfd49c8afca7cac"
+  },
+  "selected_combined_STEP_part_correspondence": [
+    {
+      "part": "rim",
+      "solid": 1,
+      "relative_volume_error": 0.0,
+      "COM_max_error_mm": 0.0,
+      "bounds_max_error_mm": 0.0
+    },
+    {
+      "part": "tire",
+      "solid": 0,
+      "relative_volume_error": 0.0,
+      "COM_max_error_mm": 0.0,
+      "bounds_max_error_mm": 0.0
+    }
+  ],
+  "native_wheel_to_native_motor_matrix4x4": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      6.123233995736766e-17,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      6.123233995736766e-17,
+      -12.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "tested_front_left_motor_origin_C_mm": [
+    1350,
+    928,
+    -250
+  ],
+  "tested_front_left_wheel_center_C_mm": [
+    1350,
+    940,
+    -250
+  ],
+  "pose_mapping_checks": [
+    {
+      "q_deg": -12.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 4.547473508864641e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": -12.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 1.7053025658242404e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 1.1102230246251565e-16,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 1.7053025658242404e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 1.8103015116217367e-48,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 9.266095515126716e-49,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 3.962007924762358e-17,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 1.1368683772161603e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 0.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": -75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 9.116918040647228e-18,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": -75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 1.8103015116217367e-48,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 9.266095515126716e-49,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 0.0,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": -1,
+      "relative_transform_error": 5.684341886080802e-14,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": -1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 75.0,
+      "side": -1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    },
+    {
+      "q_deg": 12.0,
+      "rack_mm": 75.0,
+      "side": 1,
+      "fore": 1,
+      "relative_transform_error": 2.2737367544323206e-13,
+      "proper_source_and_wheel_rotation": true
+    }
+  ],
+  "max_relative_transform_error": 4.547473508864641e-13,
+  "positive_overlap_reporting_threshold_mm3": 0.0001,
+  "wheel_assumptions": "Original source-backed dimensional model, not manufacturer rim/tire CAD. Hidden rim/dish/tread/carcass shapes are original assumptions; tire width on8.5-inch rim remains provisional.",
+  "clocking": "Commercial source neutral rotor/stud phase retained. No whole-stator clock correction; separate\u221218-degree rotor/output clock and adapter/thread seating/fastening are not qualified.",
+  "parts": [
+    {
+      "part": "rim",
+      "exact_boolean_pairs": 8,
+      "AABB_disjoint_source_solids": 232,
+      "positive_pairs": 0,
+      "complete": true
+    },
+    {
+      "part": "tire",
+      "exact_boolean_pairs": 42,
+      "AABB_disjoint_source_solids": 198,
+      "positive_pairs": 0,
+      "complete": true
+    }
+  ],
+  "interferences": [],
+  "errors": [],
+  "complete": true,
+  "status": "PASS for the stated nominal geometry and phase",
+  "limits": [
+    "No exact minimum positive gap is measured.",
+    "This does not establish fit of actual manufacturer hidden rim/tire geometry, loaded/deformed tire clearance, wheel spin sweep or assembly tolerance.",
+    "Thread engagement, stud clocking, adapter/nut/washer stack, bearing fit, material strengths and load paths are separate qualifications.",
+    "No vendor geometry or derived mesh has been exported."
+  ]
+}

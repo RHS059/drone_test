@@ -1,0 +1,626 @@
+{
+  "status": "FAIL: full combined-travel domain has positive-volume motor/lower-arm and motor/upper-arm interference. Keep suspension at q=0 for the separately checked viewer domain.",
+  "snapshot_at_utc": "2026-10-09T11:43:41.385397+00:00",
+  "evidence_type": "Numerical CAD fit report only. No vendor CAD, converted vendor mesh, or clash geometry included.",
+  "source_model": "WD220 99220041A339 private STEP",
+  "source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "local_import_solid_count": 240,
+  "positive_overlap_threshold_mm3": 0.0001,
+  "planned_case_count": 36,
+  "completed_case_count": 36,
+  "pending_case_count": 0,
+  "completed_zero_overlap_case_count": 22,
+  "failure_case_count": 14,
+  "exact_pair_failure_count": 18,
+  "errors": [],
+  "failure_witnesses": [
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": 21.46701831825096,
+      "part": "front_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 4236.630144258488,
+      "bounds_C_mm": [
+        1428.873070239461,
+        613.266193758005,
+        -371.19500320432354,
+        1480.005054956913,
+        655.9826595291971,
+        -325.27518431659604
+      ],
+      "centroid_C_mm": [
+        1451.9691882039788,
+        630.3100176228473,
+        -349.71700009225935
+      ]
+    },
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": 21.46701831825096,
+      "part": "front_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 211,
+      "volume_mm3": 35.46374047832852,
+      "bounds_C_mm": [
+        1441.6566106898051,
+        622.0657212024115,
+        -360.51105304934646,
+        1467.0312702920703,
+        633.305409211324,
+        -335.7690671597419
+      ],
+      "centroid_C_mm": [
+        1454.6726467951153,
+        627.9439787487836,
+        -348.0552129018051
+      ]
+    },
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": -15.19148472906597,
+      "part": "front_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 1292.5553787199312,
+      "bounds_C_mm": [
+        1233.4959712625123,
+        609.4943878089864,
+        -357.1177811814991,
+        1261.2025974138448,
+        639.7960758267038,
+        -321.3293804505312
+      ],
+      "centroid_C_mm": [
+        1246.6714942964875,
+        619.5076587788294,
+        -341.09974724038403
+      ]
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": 19.35599911601513,
+      "part": "front_left_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 132.35022691118542,
+      "bounds_C_mm": [
+        1420.6865532946294,
+        636.0978424453991,
+        0.5056563544012806,
+        1435.5177797698432,
+        648.294780658496,
+        10.005656554402618
+      ],
+      "centroid_C_mm": [
+        1430.0731286557016,
+        644.7139547254517,
+        5.456301729490093
+      ]
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": -15.032839660175508,
+      "part": "front_left_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 450.5107384297219,
+      "bounds_C_mm": [
+        1378.1258670721397,
+        702.8002707972062,
+        -35.75376607848926,
+        1392.1632893518276,
+        719.4105344515898,
+        -24.425393068240787
+      ],
+      "centroid_C_mm": [
+        1385.616085157879,
+        711.4687056127774,
+        -30.606609552945883
+      ]
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": 15.19148472906597,
+      "part": "front_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 1292.3152105138872,
+      "bounds_C_mm": [
+        1233.4959712625116,
+        -639.7960758267227,
+        -357.11778118061204,
+        1261.2025974193336,
+        -609.4943878089865,
+        -321.32938045053083
+      ],
+      "centroid_C_mm": [
+        1246.6725301327865,
+        -619.5088829837975,
+        -341.1020380190278
+      ]
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": -21.46701831825096,
+      "part": "front_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 4236.892425363973,
+      "bounds_C_mm": [
+        1428.8730702394612,
+        -655.9826595296114,
+        -371.19500320432684,
+        1480.0050549569128,
+        -613.266193758005,
+        -325.2751843165959
+      ],
+      "centroid_C_mm": [
+        1451.9681377986333,
+        -630.3105499169178,
+        -349.71851297782
+      ]
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": -21.46701831825096,
+      "part": "front_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 211,
+      "volume_mm3": 35.46374115085754,
+      "bounds_C_mm": [
+        1441.656610689805,
+        -633.3054092113238,
+        -360.51105304934646,
+        1467.03127029207,
+        -622.0657212024116,
+        -335.76906715974184
+      ],
+      "centroid_C_mm": [
+        1454.672646708493,
+        -627.9439786914443,
+        -348.05521296270217
+      ]
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": -19.35599911601513,
+      "part": "front_right_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 615.6091968204032,
+      "bounds_C_mm": [
+        1317.2436340872969,
+        -716.9865897510186,
+        -36.14749483143391,
+        1434.9862930876693,
+        -636.2071976029265,
+        10.005656554402103
+      ],
+      "centroid_C_mm": [
+        1345.680454382444,
+        -696.1376775283329,
+        -19.897950585323485
+      ]
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": -21.46701831825096,
+      "part": "rear_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 4236.892384188977,
+      "bounds_C_mm": [
+        -1480.005054956913,
+        613.266193758005,
+        -371.19500320432684,
+        -1428.8730702394614,
+        655.9826595296113,
+        -325.275184316596
+      ],
+      "centroid_C_mm": [
+        -1451.9681379271042,
+        630.3105498611978,
+        -349.71851276299424
+      ]
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": -21.46701831825096,
+      "part": "rear_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 211,
+      "volume_mm3": 35.463741149538116,
+      "bounds_C_mm": [
+        -1467.0312702920703,
+        622.0657212024115,
+        -360.5110530493465,
+        -1441.6566106898051,
+        633.3054092113239,
+        -335.7690671597418
+      ],
+      "centroid_C_mm": [
+        -1454.6726467086983,
+        627.9439786915818,
+        -348.05521296244007
+      ]
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": 15.19148472906597,
+      "part": "rear_left_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 1292.3152105119068,
+      "bounds_C_mm": [
+        -1261.2025974193336,
+        609.4943878089864,
+        -357.11778118061204,
+        -1233.4959712625118,
+        639.7960758267228,
+        -321.32938045053106
+      ],
+      "centroid_C_mm": [
+        -1246.672530132942,
+        619.5088829839888,
+        -341.1020380191335
+      ]
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": -19.35599911601513,
+      "part": "rear_left_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 615.6093138484872,
+      "bounds_C_mm": [
+        -1434.9862930876693,
+        636.2071976029265,
+        -36.14749483143397,
+        -1317.2436340872969,
+        716.9865897510188,
+        10.005656554402302
+      ],
+      "centroid_C_mm": [
+        -1345.6804489413298,
+        696.1376782017409,
+        -19.89795244338322
+      ]
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": -15.19148472906597,
+      "part": "rear_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 1292.5553788096595,
+      "bounds_C_mm": [
+        -1261.202597413845,
+        -639.7960758267042,
+        -357.1177811814991,
+        -1233.495971262512,
+        -609.4943878089864,
+        -321.32938045053095
+      ],
+      "centroid_C_mm": [
+        -1246.6714942962672,
+        -619.5076587784143,
+        -341.0997472401525
+      ]
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": 21.46701831825096,
+      "part": "rear_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 4236.63016031019,
+      "bounds_C_mm": [
+        -1480.005054956913,
+        -655.9826595290352,
+        -371.19500320432354,
+        -1428.8730702394607,
+        -613.266193758005,
+        -325.2751843165959
+      ],
+      "centroid_C_mm": [
+        -1451.969188189854,
+        -630.3100176361401,
+        -349.7170000952158
+      ]
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": 21.46701831825096,
+      "part": "rear_right_lower_wishbone_C03_R03",
+      "part_solid": 0,
+      "motor_solid": 211,
+      "volume_mm3": 35.4637404780985,
+      "bounds_C_mm": [
+        -1467.0312702920703,
+        -633.3054092113239,
+        -360.5110530493464,
+        -1441.6566106898051,
+        -622.0657212024115,
+        -335.7690671597417
+      ],
+      "centroid_C_mm": [
+        -1454.672646795162,
+        -627.9439787488003,
+        -348.0552129017574
+      ]
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": -15.032839660175508,
+      "part": "rear_right_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 450.510738458606,
+      "bounds_C_mm": [
+        -1392.1632893518276,
+        -719.4105344515898,
+        -35.75376607848899,
+        -1378.1258670721397,
+        -702.8002707972058,
+        -24.425393068240815
+      ],
+      "centroid_C_mm": [
+        -1385.6160851579987,
+        -711.4687056125433,
+        -30.606609552797977
+      ]
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": 19.35599911601513,
+      "part": "rear_right_upper_wishbone_C03_R02",
+      "part_solid": 0,
+      "motor_solid": 1,
+      "volume_mm3": 132.35022713405093,
+      "bounds_C_mm": [
+        -1435.5177797698434,
+        -648.294780658496,
+        0.5056563544012806,
+        -1420.6865532946292,
+        -636.0978424453987,
+        10.005656554402231
+      ],
+      "centroid_C_mm": [
+        -1430.0731286598696,
+        -644.7139547219296,
+        5.456301728032059
+      ]
+    }
+  ],
+  "pending_cases": [],
+  "selected_revision_bridge": {
+    "checked_at_utc": "2026-10-09T11:37:32.659Z",
+    "audited_solver_sha256": "c154342c1ddda9ffc2b286ad028aa95b57f8e0dacbe58575db78d22245af3817",
+    "current_solver_sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+    "audited_contract_sha256": "f3df7c28efc57ce8d6abea051cc0e1f6390d601d2d4c0d5de6713c2f33cc9911",
+    "current_contract_sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+    "all_36_poses_identical": true,
+    "audited_pose_fixture_identical": true,
+    "pose_count": 36,
+    "q0_pose_count": 12,
+    "current_contract_changed_top_level_keys": [
+      "tests",
+      "service"
+    ],
+    "contract_changes_limited_to_tests_service": true,
+    "current_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+    "audited_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
+  },
+  "original_input_sha256": [
+    {
+      "file": "frame_R07.step",
+      "sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e"
+    },
+    {
+      "file": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "file": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "file": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "file": "running_gear_C03/actuator_front_pin_C03_R11.step",
+      "sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904"
+    },
+    {
+      "file": "running_gear_C03/actuator_rear_pin_C03_R11.step",
+      "sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c"
+    },
+    {
+      "file": "running_gear_C03/build_original_steering_assembly.py",
+      "sha256": "ee82354401cfa77c477fa859b8d77f4717e3b04be7adba2c80f4bfae145b369e"
+    },
+    {
+      "file": "running_gear_C03/guide_liner_-1_C03_R11.step",
+      "sha256": "71d2057081e508bcc4c20395bc8e05fe58672ae4f31132708400aca203360316"
+    },
+    {
+      "file": "running_gear_C03/guide_liner_1_C03_R11.step",
+      "sha256": "52c9fa2fe2d395a60f83322110bc94921bbfe64d48fbda8777245083f1c743c5"
+    },
+    {
+      "file": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "file": "running_gear_C03/interface_contract_C03_R01.json",
+      "sha256": "f3df7c28efc57ce8d6abea051cc0e1f6390d601d2d4c0d5de6713c2f33cc9911"
+    },
+    {
+      "file": "running_gear_C03/kinematics_C03_R01.js",
+      "sha256": "c154342c1ddda9ffc2b286ad028aa95b57f8e0dacbe58575db78d22245af3817"
+    },
+    {
+      "file": "running_gear_C03/lower_wishbone_C03_R03.step",
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6"
+    },
+    {
+      "file": "running_gear_C03/original_steering_C03_R01_manifest.json",
+      "sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
+    },
+    {
+      "file": "running_gear_C03/outer_pins_left_C03_R01.step",
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5"
+    },
+    {
+      "file": "running_gear_C03/rack_C03_R11_report.json",
+      "sha256": "9591220bdd90fc7cfcd9ef658494f90ac9c9df06f1453628d4b0d8bffbf90874"
+    },
+    {
+      "file": "running_gear_C03/rack_carriage_C03_R11.step",
+      "sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c"
+    },
+    {
+      "file": "running_gear_C03/rack_crossbeam_C03_R11.step",
+      "sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e"
+    },
+    {
+      "file": "running_gear_C03/rack_guide_C03_R11.step",
+      "sha256": "d339047aec152c6275d5477bfcb5f1b2b6e1b25855b9e8832eef240d01fffbfd"
+    },
+    {
+      "file": "running_gear_C03/rack_mount_hardware_C03_R03.step",
+      "sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957"
+    },
+    {
+      "file": "running_gear_C03/stationary_clamp_front_left_C03_R03.step",
+      "sha256": "4a2cf4b57f1e1ee32a47bd45d383487d1414a7d14280b256a60e42514ec62fa5"
+    },
+    {
+      "file": "running_gear_C03/stationary_clamp_front_right_C03_R03.step",
+      "sha256": "d1101faea8741ba4a896c42635ee0de1a7a3ca1a6246cd661c4fb299e0dc338d"
+    },
+    {
+      "file": "running_gear_C03/stationary_clamp_rear_left_C03_R03.step",
+      "sha256": "13752d447f94cd9cd5e2babf28cf19cb80718ddb8e30a18ee1ebfd54ca27b95a"
+    },
+    {
+      "file": "running_gear_C03/stationary_clamp_rear_right_C03_R03.step",
+      "sha256": "3d67bdf8caa1c51133528d1d7cdd5c9f9254dd06a2c541f1e40503389f22b8fb"
+    },
+    {
+      "file": "running_gear_C03/steering_upright_left_C03_R05.step",
+      "sha256": "98a971f13dc85d9ea67025a9d8d12f541da0078b149e759d4f1e30fc8a44d8ce"
+    },
+    {
+      "file": "running_gear_C03/steering_upright_rear_left_C03_R05.step",
+      "sha256": "7d43b85020592064657ca5308482394ef29c3960c48c7f65a039ca44fe11b19d"
+    },
+    {
+      "file": "running_gear_C03/steering_upright_rear_right_C03_R05.step",
+      "sha256": "7a85968a193ce2979d29ad3e42527f85aa07b925fcd6d909257228dc603c2f90"
+    },
+    {
+      "file": "running_gear_C03/steering_upright_right_C03_R05.step",
+      "sha256": "d5e92536a0c04b85eb55e187b516d29750067db25677a96542e8e8ac73d15023"
+    },
+    {
+      "file": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "file": "running_gear_C03/tie_insert_LH_C03_R02.step",
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04"
+    },
+    {
+      "file": "running_gear_C03/tie_insert_RH_C03_R02.step",
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5"
+    },
+    {
+      "file": "running_gear_C03/tie_tube_C03_R02.step",
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110"
+    },
+    {
+      "file": "running_gear_C03/upper_wishbone_C03_R02.step",
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c"
+    },
+    {
+      "file": "body_power_R01.step",
+      "sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba"
+    }
+  ],
+  "limits": [
+    "Results apply to sampled poses, not a continuous collision-free travel interval.",
+    "Recorded per-solid overlap volumes are not summed into a physical collision volume because source solids may overlap.",
+    "The separately completed12 q=0 cases remain free of detected positive-volume overlaps.",
+    "Adapters/output-stud clocking, vendor rod-end bodies, actuator body, coilover selection, tolerances, forces and physical qualification are outside this report."
+  ],
+  "sweep_complete": true,
+  "runtime": {
+    "CadQuery": "2.7.0",
+    "OCP": "7.8.1.1.post1"
+  },
+  "exact_boolean_pairs_executed": 5398,
+  "exact_boolean_pairs_reused": 5332,
+  "worker_statuses": [
+    {
+      "corner": "front_left",
+      "exit_status": 0
+    },
+    {
+      "corner": "front_right",
+      "exit_status": 0
+    },
+    {
+      "corner": "rear_left",
+      "exit_status": 0
+    },
+    {
+      "corner": "rear_right",
+      "exit_status": 0
+    }
+  ],
+  "bounds_and_clearance_notes": [
+    "world_motor_bounds_mm is the transformed native source axis-aligned bounding box; at steered poses it is conservative, not necessarily the tightest motor AABB.",
+    "AABB gap fields apply only to AABB-disjoint components and are not an overall minimum assembly clearance.",
+    "Reported clash bounds/centroids are measured from exact B-rep common shapes, numerical values only.",
+    "Zero reported positive overlap uses the stated0.0001 mm\u00b3 threshold and does not establish a positive tolerance-qualified gap."
+  ]
+}

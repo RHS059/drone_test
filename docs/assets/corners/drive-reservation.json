@@ -1,0 +1,29 @@
+{
+  "classification": "coarse dimensional reservation, not physical motor CAD",
+  "source": "Official publicly downloadable WD220-SMAC132-050-48V-EMB-5STUDS dimensional source; private geometry not redistributed",
+  "source_url": "https://www.e-comer.com/en/?Itemid=461",
+  "measurement": "Fresh numerical axis-aligned bounds after the exact mating transform; includes studs and connectors",
+  "left_corner_C_bounds_m": [
+    [
+      -0.1240000001,
+      0.5914037511,
+      -0.353
+    ],
+    [
+      0.1345069527,
+      0.9580000001,
+      -0.0477450664
+    ]
+  ],
+  "center_m": [
+    0.0052534763,
+    0.7747018756,
+    -0.2003725332
+  ],
+  "size_m": [
+    0.2585069528,
+    0.366596249,
+    0.3052549336
+  ],
+  "use": "Space-planning outline only. Its empty bounding volume is not an interference mesh or evidence of actual internal shape."
+}

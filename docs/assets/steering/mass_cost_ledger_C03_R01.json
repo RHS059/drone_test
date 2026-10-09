@@ -1,0 +1,883 @@
+{
+  "configuration": "C03_R01 candidate",
+  "original_four_steering_corners_and_two_racks_kg": 238.20493005850565,
+  "two_middle_C02_R06_original_corner_mass_kg": 90.68257823879313,
+  "six_corner_running_gear_original_subtotal_kg": 328.8875082972988,
+  "difference_vs_C02_six_original_corners_kg": 56.83977358091937,
+  "same_scope_frame_body_runninggear_original_subtotal_kg": 831.5554359568823,
+  "not_complete_vehicle_mass": true,
+  "fabrication_released": false,
+  "original_items": [
+    {
+      "node": "rear_right_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 17.710393706757635,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/stationary_clamp_rear_right_C03_R03.step",
+      "sha256": "3d67bdf8caa1c51133528d1d7cdd5c9f9254dd06a2c541f1e40503389f22b8fb"
+    },
+    {
+      "node": "rear_right_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "node": "rear_right_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.061987039990519,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "node": "rear_right_upper_wishbone_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 3.0688774124917457,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/upper_wishbone_C03_R02.step",
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c"
+    },
+    {
+      "node": "rear_right_lower_wishbone_C03_R03",
+      "quantity": 1,
+      "unit_mass_kg": 3.5756271765955288,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/lower_wishbone_C03_R03.step",
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6"
+    },
+    {
+      "node": "rear_right_outer_pins_left_C03_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.5030929669493842,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/outer_pins_left_C03_R01.step",
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5"
+    },
+    {
+      "node": "rear_right_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.189729288276808,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/steering_upright_rear_right_C03_R05.step",
+      "sha256": "7a85968a193ce2979d29ad3e42527f85aa07b925fcd6d909257228dc603c2f90"
+    },
+    {
+      "node": "rear_right_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "rear_right_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "rear_right_wheel_adapter",
+      "quantity": 1,
+      "unit_mass_kg": 6.462878281126789,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "node": "rear_right_tie_tube_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.5941735879887436,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_tube_C03_R02.step",
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110"
+    },
+    {
+      "node": "rear_right_tie_insert_RH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272364,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_RH_C03_R02.step",
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5"
+    },
+    {
+      "node": "rear_right_tie_insert_LH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272354,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_LH_C03_R02.step",
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04"
+    },
+    {
+      "node": "rear_right_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654337,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "rear_right_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654365,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "rear_left_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 17.71039370675769,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/stationary_clamp_rear_left_C03_R03.step",
+      "sha256": "13752d447f94cd9cd5e2babf28cf19cb80718ddb8e30a18ee1ebfd54ca27b95a"
+    },
+    {
+      "node": "rear_left_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "node": "rear_left_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.0619870399905205,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "node": "rear_left_upper_wishbone_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 3.0688774124917466,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/upper_wishbone_C03_R02.step",
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c"
+    },
+    {
+      "node": "rear_left_lower_wishbone_C03_R03",
+      "quantity": 1,
+      "unit_mass_kg": 3.57562717659553,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/lower_wishbone_C03_R03.step",
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6"
+    },
+    {
+      "node": "rear_left_outer_pins_left_C03_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.5030929669493842,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/outer_pins_left_C03_R01.step",
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5"
+    },
+    {
+      "node": "rear_left_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.189727923148006,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/steering_upright_rear_left_C03_R05.step",
+      "sha256": "7d43b85020592064657ca5308482394ef29c3960c48c7f65a039ca44fe11b19d"
+    },
+    {
+      "node": "rear_left_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073233,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "rear_left_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073232,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "rear_left_wheel_adapter",
+      "quantity": 1,
+      "unit_mass_kg": 6.462878281126787,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "node": "rear_left_tie_tube_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.5941735879887442,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_tube_C03_R02.step",
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110"
+    },
+    {
+      "node": "rear_left_tie_insert_RH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272358,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_RH_C03_R02.step",
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5"
+    },
+    {
+      "node": "rear_left_tie_insert_LH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272356,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_LH_C03_R02.step",
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04"
+    },
+    {
+      "node": "rear_left_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654343,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "rear_left_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654362,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "front_right_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 17.71039370675749,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/stationary_clamp_front_right_C03_R03.step",
+      "sha256": "d1101faea8741ba4a896c42635ee0de1a7a3ca1a6246cd661c4fb299e0dc338d"
+    },
+    {
+      "node": "front_right_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "node": "front_right_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.061987039990519,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "node": "front_right_upper_wishbone_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 3.0688774124917457,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/upper_wishbone_C03_R02.step",
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c"
+    },
+    {
+      "node": "front_right_lower_wishbone_C03_R03",
+      "quantity": 1,
+      "unit_mass_kg": 3.57562717659553,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/lower_wishbone_C03_R03.step",
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6"
+    },
+    {
+      "node": "front_right_outer_pins_left_C03_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.5030929669493842,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/outer_pins_left_C03_R01.step",
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5"
+    },
+    {
+      "node": "front_right_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.189727923147814,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/steering_upright_right_C03_R05.step",
+      "sha256": "d5e92536a0c04b85eb55e187b516d29750067db25677a96542e8e8ac73d15023"
+    },
+    {
+      "node": "front_right_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "front_right_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "front_right_wheel_adapter",
+      "quantity": 1,
+      "unit_mass_kg": 6.462878281126787,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "node": "front_right_tie_tube_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.5941735879887438,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_tube_C03_R02.step",
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110"
+    },
+    {
+      "node": "front_right_tie_insert_RH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.0668477379527237,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_RH_C03_R02.step",
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5"
+    },
+    {
+      "node": "front_right_tie_insert_LH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272368,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_LH_C03_R02.step",
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04"
+    },
+    {
+      "node": "front_right_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654337,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "front_right_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654365,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "front_left_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 17.71039370675774,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/stationary_clamp_front_left_C03_R03.step",
+      "sha256": "4a2cf4b57f1e1ee32a47bd45d383487d1414a7d14280b256a60e42514ec62fa5"
+    },
+    {
+      "node": "front_left_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "node": "front_left_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.0619870399905205,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "node": "front_left_upper_wishbone_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 3.0688774124917466,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/upper_wishbone_C03_R02.step",
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c"
+    },
+    {
+      "node": "front_left_lower_wishbone_C03_R03",
+      "quantity": 1,
+      "unit_mass_kg": 3.5756271765955314,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/lower_wishbone_C03_R03.step",
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6"
+    },
+    {
+      "node": "front_left_outer_pins_left_C03_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.5030929669493842,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/outer_pins_left_C03_R01.step",
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5"
+    },
+    {
+      "node": "front_left_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.189729288281356,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/steering_upright_left_C03_R05.step",
+      "sha256": "98a971f13dc85d9ea67025a9d8d12f541da0078b149e759d4f1e30fc8a44d8ce"
+    },
+    {
+      "node": "front_left_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073233,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "front_left_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073232,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/housing_retainer_C03_R01.step",
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "node": "front_left_wheel_adapter",
+      "quantity": 1,
+      "unit_mass_kg": 6.462878281126789,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "node": "front_left_tie_tube_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.5941735879887438,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_tube_C03_R02.step",
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110"
+    },
+    {
+      "node": "front_left_tie_insert_RH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272361,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_RH_C03_R02.step",
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5"
+    },
+    {
+      "node": "front_left_tie_insert_LH_C03_R02",
+      "quantity": 1,
+      "unit_mass_kg": 0.06684773795272371,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_insert_LH_C03_R02.step",
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04"
+    },
+    {
+      "node": "front_left_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654343,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "front_left_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654362,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    },
+    {
+      "node": "rear_rack_guide_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 6.970799999999997,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_guide_C03_R11.step",
+      "sha256": "d339047aec152c6275d5477bfcb5f1b2b6e1b25855b9e8832eef240d01fffbfd"
+    },
+    {
+      "node": "rear_guide_liner_-1_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.03824625,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/guide_liner_-1_C03_R11.step",
+      "sha256": "71d2057081e508bcc4c20395bc8e05fe58672ae4f31132708400aca203360316"
+    },
+    {
+      "node": "rear_guide_liner_1_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.03824625,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/guide_liner_1_C03_R11.step",
+      "sha256": "52c9fa2fe2d395a60f83322110bc94921bbfe64d48fbda8777245083f1c743c5"
+    },
+    {
+      "node": "rear_actuator_rear_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954320265,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/actuator_rear_pin_C03_R11.step",
+      "sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c"
+    },
+    {
+      "node": "rear_actuator_front_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954321525,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/actuator_front_pin_C03_R11.step",
+      "sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904"
+    },
+    {
+      "node": "rear_rack_crossbeam_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 11.980767049304413,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_crossbeam_C03_R11.step",
+      "sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e"
+    },
+    {
+      "node": "rear_rack_carriage_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 7.301668252212658,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_carriage_C03_R11.step",
+      "sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c"
+    },
+    {
+      "node": "rear_rack_fasteners",
+      "quantity": 1,
+      "unit_mass_kg": 0.388706593634882,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_mount_hardware_C03_R03.step",
+      "sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957"
+    },
+    {
+      "node": "front_rack_guide_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 6.970799999999997,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_guide_C03_R11.step",
+      "sha256": "d339047aec152c6275d5477bfcb5f1b2b6e1b25855b9e8832eef240d01fffbfd"
+    },
+    {
+      "node": "front_guide_liner_-1_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.03824625,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/guide_liner_-1_C03_R11.step",
+      "sha256": "71d2057081e508bcc4c20395bc8e05fe58672ae4f31132708400aca203360316"
+    },
+    {
+      "node": "front_guide_liner_1_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.03824625,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/guide_liner_1_C03_R11.step",
+      "sha256": "52c9fa2fe2d395a60f83322110bc94921bbfe64d48fbda8777245083f1c743c5"
+    },
+    {
+      "node": "front_actuator_rear_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954320265,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/actuator_rear_pin_C03_R11.step",
+      "sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c"
+    },
+    {
+      "node": "front_actuator_front_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954321525,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/actuator_front_pin_C03_R11.step",
+      "sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904"
+    },
+    {
+      "node": "front_rack_crossbeam_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 11.980767049304413,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_crossbeam_C03_R11.step",
+      "sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e"
+    },
+    {
+      "node": "front_rack_carriage_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 7.301668252212658,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_carriage_C03_R11.step",
+      "sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c"
+    },
+    {
+      "node": "front_rack_fasteners",
+      "quantity": 1,
+      "unit_mass_kg": 0.388706593634882,
+      "basis": "Original CAD volume with assumed material density; no purchased envelopes counted",
+      "unit_cost": null,
+      "source": "running_gear_C03/rack_mount_hardware_C03_R03.step",
+      "sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957"
+    },
+    {
+      "node": "two_middle_stationary_clamp_C02_R01",
+      "quantity": 2,
+      "unit_mass_kg": 17.746202208141767,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_clamp_C02_R01.step",
+      "sha256": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec"
+    },
+    {
+      "node": "two_middle_inner_backing_C02_R01",
+      "quantity": 2,
+      "unit_mass_kg": 2.3991864732733807,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "node": "two_middle_upper_wishbone_C02_R02",
+      "quantity": 2,
+      "unit_mass_kg": 3.3050465839693355,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/upper_wishbone_C02_R02.step",
+      "sha256": "0fc7fcf8957847f143a3e0b55314df7bac19835ea2d4a494f0544199a5dc2664"
+    },
+    {
+      "node": "two_middle_lower_wishbone_C02_R02",
+      "quantity": 2,
+      "unit_mass_kg": 3.72632257275236,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/lower_wishbone_C02_R02.step",
+      "sha256": "9c2d92ca7ee0e0d6ab6449fe19155cc5eb3194da1bb590a56acf7182970d7dd1"
+    },
+    {
+      "node": "two_middle_upright_WD220_C02_R05",
+      "quantity": 2,
+      "unit_mass_kg": 8.853733428185155,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/upright_WD220_C02_R05.step",
+      "sha256": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a"
+    },
+    {
+      "node": "two_middle_wheel_adapter_C02_R02",
+      "quantity": 2,
+      "unit_mass_kg": 6.462878281126489,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "node": "two_middle_stationary_hardware_C02_R01",
+      "quantity": 2,
+      "unit_mass_kg": 2.061987056223305,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "node": "two_middle_upright_pins_C02_R02",
+      "quantity": 2,
+      "unit_mass_kg": 0.7859325157247677,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "source": "running_gear_C02/upright_pins_C02_R02.step",
+      "sha256": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62"
+    }
+  ],
+  "purchased_items": [
+    {
+      "component": "WD220 drive candidate",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "KM3MSPN72204 tire",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "EVOSE5240060141 rim",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "EVOCM0750180040 flat-seat nut; raw212 unit unverified",
+      "quantity": 30,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "Wheeladapter outputstuds/inputnuts, finishedstack TBD",
+      "quantity": 60,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "GE20ES root/middle reference-bearing fit; grade/retention unselected",
+      "quantity": 56,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "FKAIN16 spherical bearing",
+      "quantity": 8,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "FK16-12HB misalignment spacer",
+      "quantity": 16,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "FKJMX12 RH tie rod end",
+      "quantity": 4,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "FKJMXL12 LH tie rod end",
+      "quantity": 4,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "FK12-10HB misalignment spacer",
+      "quantity": 16,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "AINhousing retainer M5 screws, grade/length unselected",
+      "quantity": 32,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "ThomsonHD48B045200mm actuator packaging candidate",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "KingRS2008 PureRacecoilover candidate with unselectedsprings",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    },
+    {
+      "component": "Cotters, axialretainers, jamnuts, seals, lubrication",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "unit_cost": null,
+      "status": "Supplier/item/configuration/finishedstack qualification required; no invented mass or price"
+    }
+  ],
+  "further_excluded": [
+    "Arms/grippers/tools/payload",
+    "Battery/electronics/cables unless separately sourced in integration ledger",
+    "Fixture/support masses are separate"
+  ],
+  "cost_currency": null,
+  "cost_status": "Fabrication and exact purchased configurations require quotes; no complete vehicle cost asserted",
+  "important_unknown": "EVOweight212 has no verified unit; never multiply by0.001 as a mass assumption."
+}

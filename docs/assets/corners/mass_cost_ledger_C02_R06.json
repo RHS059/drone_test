@@ -1,0 +1,122 @@
+{
+  "configuration": "C02_R06 original six-corner development",
+  "original_corner_mass_kg": 45.34128911939656,
+  "six_original_corner_mass_kg": 272.0477347163794,
+  "items": [
+    {
+      "part": "stationary_clamp_C02_R01",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 17.746202208141767,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec"
+    },
+    {
+      "part": "inner_backing_C02_R01",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 2.3991864732733807,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "part": "upper_wishbone_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 3.3050465839693355,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "0fc7fcf8957847f143a3e0b55314df7bac19835ea2d4a494f0544199a5dc2664"
+    },
+    {
+      "part": "lower_wishbone_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 3.72632257275236,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "9c2d92ca7ee0e0d6ab6449fe19155cc5eb3194da1bb590a56acf7182970d7dd1"
+    },
+    {
+      "part": "upright_WD220_C02_R05",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 8.853733428185155,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a"
+    },
+    {
+      "part": "wheel_adapter_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 6.462878281126489,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "part": "stationary_hardware_C02_R01",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 2.061987056223305,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "part": "upright_pins_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": 0.7859325157247677,
+      "basis": "CADvolume\u00d7assumedsteel7850",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62"
+    },
+    {
+      "part": "upper_bearing_envelopes_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": null,
+      "basis": "REFERENCEFITENVELOPE, massunknown",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "a87979599e47a826616fe1831376e516b61194b17547510f6c526414f218b4bf"
+    },
+    {
+      "part": "lower_bearing_envelopes_C02_R02",
+      "qty_per_corner": 1,
+      "qty_rover": 6,
+      "mass_kg_per_corner": null,
+      "basis": "REFERENCEFITENVELOPE, massunknown",
+      "unit_cost": null,
+      "cost_status": "fabrication/supplierquote_required",
+      "sha256_STEP": "29eeaacc6bdacd53f81264bfb88cc172b63669ec1394bbf31b98e23d6d2cec1d"
+    }
+  ],
+  "excluded_unknown_mass": [
+    "sixWD220drives",
+    "sixKM3tires",
+    "sixEVOrims",
+    "sixselectedcoilovers/springs",
+    "72provisionalGE20ESbearings",
+    "wheeloutputstuds,inputnuts,axialretainers/cotters",
+    "steeringactuators/tierods(notmodeled)"
+  ],
+  "published_extra_known_mass_kg": {},
+  "not_total_vehicle_mass": true,
+  "cost_currency": null,
+  "all_costs_quote_required": true,
+  "wheel_nut_mass_kg": null,
+  "wheel_nut_mass_note": "Visible manufacturer weight212 has no units; Product JSON-LD specifies0.217kg. Fields require reconciliation. Previous6.36kg arithmetic is withdrawn; nut mass was never in the corner or vehicle subtotal."
+}

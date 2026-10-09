@@ -1,0 +1,116 @@
+{
+  "method": "Conservative per-triangle AABB broad phase, after source FK; all arm triangle boxes checked against exact B-rep part bounds. Positive separation proves surface nonintersection; no smooth-surface/motion or manufacturing tolerance claim.",
+  "pose_joint_rad": [
+    0.3,
+    -1.2,
+    1.5,
+    -0.8,
+    1,
+    0.2
+  ],
+  "pair_results": [
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_rear_wall",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.25467121848670365,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_left_side",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.26289229316119217,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_weld_flange",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2572319980169587,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_gasket",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2579712135488908,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_removable_lid",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2576214556085455,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_M6_3",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.26806706102958405,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_nutplate_3",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2651577539009028,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_rear_wall",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.25467121848670365,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_weld_flange",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2572319980169587,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_gasket",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2579712135488908,
+      "triangles_checked": 3900
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_removable_lid",
+      "status": "no source-mesh triangle can intersect exact part bounding box",
+      "candidate_triangle_count": 0,
+      "minimum_triangle_AABB_separation_lower_bound_m": 0.2576214556085455,
+      "triangles_checked": 3900
+    }
+  ],
+  "unresolved_pairs": [],
+  "qualified": false,
+  "source_mesh_only": true,
+  "motion_sweep_performed": false
+}
