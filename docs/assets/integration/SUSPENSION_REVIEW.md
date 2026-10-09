@@ -29,3 +29,25 @@ Numbers from `node docs/assets/integration/suspension_review.mjs`, which runs th
    force from the resulting steering torque.
 6. OK: tyre-to-spring clearance ≥ 87 mm across full travel × steer; no bump stops are modelled yet (travel limits are
    software only).
+
+## Corner connection check (live viewer scene, front-left)
+`corner_contact_dump.js` samples surface points (1.5 mm spacing) from the running viewer; `corner_contact_gaps.py`
+measures every declared joint. All 28 pass (≤ 1.6 mm, rod-end ball running clearance):
+tyre → rim → hub-motor output flange (Ø94 pilot + 5×M16 studs, 5 nuts) → motor internal bearing → motor body → 8×M10 →
+knuckle → AIN16 ball joints → arms → paired GE20ES pivot bearings → clamp → frame rail. Steering: knuckle → tie pin →
+rod ends → tie tube → inner pin → rack carriage → guide → crossbeam → clamp; Electrak pin → carriage. Shock pins → eyes, clamp, lower arm.
+
+## Drive, wheel removal and brakes
+- **Drive:** each wheel is bolted straight to a WD220 hub gear-motor (48 V, 2.2 kW S2-60 min, 40.61:1, 74 rpm,
+  1000 N·m max) → top speed 3.2 m/s (11.6 km/h). Mechanically complete; motor pigtails/terminals and controllers
+  are not yet located or wired (electrical contract lists them as unverified).
+- **Steering:** front and rear pairs steer ±20° via Electrak HD racks; middle pair fixed. With front/rear steering
+  opposite, the turn centre lies on the middle axle line, so the middle wheels can roll without scrub (Ackermann not yet checked).
+- **Wheel removal:** 5 nuts sit ~190 mm deep inside the rim dish (needs a long-extension socket), then the wheel slides
+  30 mm outboard off the studs; nothing outboard obstructs it. But the vehicle has no jacking points modelled, the
+  workshop-support placement is disabled for C04, and the wheel+tyre (~50–60 kg est.; rim 19.5 kg, tyre mass unknown)
+  is beyond a UR20's 20 kg payload — the robot cannot change its own wheel without a hoist/lift aid.
+- **Brakes:** none apart from each motor's internal 12 N·m electromagnetic parking brake (≈ 487 N·m at the wheel through
+  the gearbox, lossless). Six together hold 2924 N·m: OK for 1.6–2.0 t on 12° with 1.5× reserve, only marginal on 20°,
+  and FAIL for 2.92 t on 20°. There is no service brake, the brake's dynamic (stopping) rating is unknown, and it acts
+  through the gearbox, so a gear/shaft failure leaves the wheel free.
