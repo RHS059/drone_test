@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-10-09",
+  "title": "UGV assembly and repair architecture",
+  "status": "Preliminary design and task-gate specification; no hardware build or autonomy demonstration performed",
+  "summary": "Build a peer from prepared industrial modules with independent lifting and fixtures first. General loose-parts manufacture and most/all self-repair remain research goals, not established capability.",
+  "baseline": {
+    "bodyM": [
+      4,
+      1.8
+    ],
+    "massTargetsKg": {
+      "workshop": 2200,
+      "field": 3100
+    },
+    "massSource": "Coordinated provisional mobility worker budget, not measured vehicle",
+    "manipulatorBudgetKg": {
+      "workshop": 250,
+      "field": 300
+    },
+    "fieldCarriedLiftAllowanceKg": 150,
+    "fieldOutriggerAllowanceKg": 120,
+    "fieldSupportPointsM": [
+      [
+        -1.45,
+        -1.4
+      ],
+      [
+        -1.45,
+        1.4
+      ],
+      [
+        1.45,
+        -1.4
+      ],
+      [
+        1.45,
+        1.4
+      ]
+    ],
+    "batteryCartridgeKg": 15.6,
+    "toolsPrinterFixturesBudgetKg": {
+      "workshop": 160,
+      "field": 250
+    },
+    "heavyModuleKg": {
+      "workshopWheelPod": 110,
+      "fieldWheelPod": 135,
+      "ur20Arm": 64,
+      "workshopSuspensionSteering": 50,
+      "fieldSuspensionSteering": 60,
+      "workshopFullCorner": 160,
+      "fieldFullCorner": 195
+    },
+    "budgetWarning": "Dual bare arms+controllers already 152 kg. Lift, mounts, fixtures, hoses, enclosure, power, printer and supports must be explicitly allocated without double counting; carried autonomous lift can exceed current allowances. Suspension/steering mass 50/60 kg per corner is additional to the 110/135 kg wheel+drive figure; complete corners 160/195 kg.",
+    "workshopStabilizers": "Offboard rated indexed fixture/support stands, not vehicle-mounted stabilizer mass in current workshop mobility budget. Cost line must be classified as infrastructure."
+  },
+  "variants": [
+    {
+      "id": "workshop_module",
+      "name": "Workshop / module-kit",
+      "maturity": "Plausible development baseline; not demonstrated",
+      "infrastructure": [
+        "Level indexed chassis fixture with mechanical supports",
+        "Independent goods-rated gantry/hoist and wheel cradles",
+        "Offboard metrology, safe electrical test station, air and power",
+        "Prepared trays with parts oriented and identity checked"
+      ],
+      "robotWork": [
+        "Locate and dock modules",
+        "Guide hoist-supported modules",
+        "Insert captive fasteners with verified torque/angle",
+        "Mate deenergized guided connectors",
+        "Fit panels/sensors/printed items",
+        "Run supervised acceptance sequence"
+      ],
+      "humanOrOffboard": [
+        "Initial fixture setup and heavy lift rigging until automated tooling is validated",
+        "Battery pack, motor/gearbox, arm and harness manufacture",
+        "Safety-critical electrical acceptance and structural release"
+      ]
+    },
+    {
+      "id": "field_module",
+      "name": "Field / module-kit",
+      "maturity": "Higher-risk development extension; autonomous lift deployment unresolved",
+      "infrastructure": [
+        "Firm surveyed repair pad, exclusion zone and weather protection",
+        "Ground mats, locked stabilizers/chassis supports and independent lift",
+        "Pretested sealed modules, keyed blind-mate interfaces and clean tool rack",
+        "Independent support energy for service controller and hoist"
+      ],
+      "robotWork": [
+        "Accessible field-replaceable unit exchange",
+        "Peer wheel/pod swap with chassis safely supported",
+        "Cold battery cartridge exchange using lift/slide tray",
+        "Sensor/panel/tool exchange and verification"
+      ],
+      "humanOrOffboard": [
+        "Recovery from unstable/soft/steep ground",
+        "Deployment or repair of failed lift until proven autonomous",
+        "Contaminated/seized/damaged interfaces beyond validated recovery envelope",
+        "Deep arm/gearbox/battery repairs and damaged structural joints"
+      ]
+    },
+    {
+      "id": "workshop_loose",
+      "name": "Workshop / loose-parts",
+      "maturity": "Task-by-task automation research",
+      "infrastructure": [
+        "All workshop module infrastructure",
+        "Bearing presses, metrology, cable preparation/crimp inspection, feeders, fixtures",
+        "Subassembly handling and force-controlled insertion tools"
+      ],
+      "robotWork": [
+        "Selected rigid-part pick/place/fastening after fixture redesign",
+        "Printer mechanical assembly experiments",
+        "Preterminated wire routing in constrained channels"
+      ],
+      "humanOrOffboard": [
+        "Gearbox/bearing preload, seals and lubrication unless dedicated station validated",
+        "Loose flexible wiring, crimp quality, belt threading/tensioning, press fits",
+        "Mains/high-energy electrical release and safety validation"
+      ]
+    },
+    {
+      "id": "field_loose",
+      "name": "Field / loose-parts",
+      "maturity": "Not supported as general baseline",
+      "infrastructure": [
+        "Would require transporting a machine shop, clean assembly cell and test capability"
+      ],
+      "robotWork": [
+        "Only separately validated bounded repairs from small stocked items"
+      ],
+      "humanOrOffboard": [
+        "General fabrication, precision fitting, arbitrary broken-part reconstruction and full vehicle manufacture"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "ur20",
+      "name": "Universal Robots UR20",
+      "role": "Primary long-reach assembly arm; two-arm concept",
+      "qty": 2,
+      "payloadKg": 20,
+      "conditionalPayloadKg": 25,
+      "reachM": 1.75,
+      "massKg": 64,
+      "controllerMassKg": 12,
+      "dof": 6,
+      "repeatabilityMm": 0.1,
+      "environment": "Arm IP65; controller IP44; pendant IP54; 0\u201350 C with reduced performance from 35 C; noncondensing only",
+      "duty": "Typical program ~500 W, listed maximum 750 W; no universal continuous worst-pose duty guaranteed by these data. Vendor load/thermal cycle validation required.",
+      "cad": "Manufacturer STEP and working-area files available; download gated by login/terms; not downloaded or validated here.",
+      "sources": [
+        "ur20",
+        "ur20manual",
+        "ur20cad"
+      ],
+      "limits": [
+        "20 kg includes every wrist-mounted item and workpiece; inertia, CoM and posture matter",
+        "Cannot lift its own 64 kg replacement arm",
+        "No mud, immersion, lightning, salt-fog, off-road shock or freezing qualification established",
+        "Repeatability is not global absolute accuracy"
+      ]
+    },
+    {
+      "id": "gen3",
+      "name": "Kinova Gen3 7 DoF",
+      "role": "Light dexterity research alternative, not heavy rugged baseline",
+      "qty": 0,
+      "payloadKg": 2,
+      "conditionalPayloadKg": 4,
+      "conditionalPayloadNote": "4 kg mid-range continuous; 2 kg full-range continuous, without gripper",
+      "reachM": 0.902,
+      "massKg": 8.2,
+      "dof": 7,
+      "environment": "IP33; manufacturer lists -30 to 35 C; verify configuration",
+      "duty": "Continuous payload explicitly specified by workspace zone; typical average 36 W",
+      "cad": "Manufacturer lists 7 DoF CAD, end-effector reference and URDF",
+      "sources": [
+        "gen3"
+      ]
+    },
+    {
+      "id": "link6",
+      "name": "Kinova Link 6",
+      "role": "Medium payload comparison",
+      "qty": 0,
+      "payloadKg": 6,
+      "reachM": 1.149,
+      "massKg": 23.45,
+      "controllerMassKg": 17.6,
+      "environment": "IP54;0\u201340 C",
+      "duty": "6 kg full-range continuous with CoM 200 mm from wrist per English datasheet",
+      "cad": "Manufacturer CAD resource exists, not downloaded",
+      "sources": [
+        "link6"
+      ],
+      "limits": [
+        "English datasheet reach 1149 mm differs from older French listing 1000 mm; exact SKU/revision must be confirmed"
+      ]
+    },
+    {
+      "id": "hande50",
+      "name": "Robotiq Hand-E 50 mm, 2020 manual configuration",
+      "role": "Small parts and printed-part handling",
+      "payloadKg": 5,
+      "frictionPayloadKg": 4.7,
+      "massKg": 1.07,
+      "strokeMm": 50,
+      "environment": "Family IP67;-10\u201350 C current page",
+      "duty": "Current family page gives 5 million cycle warranty; this is not cycle-time/lifetime guarantee for this application",
+      "cad": "Manufacturer manual provides mechanical dimensions; exact downloadable CAD variant not retrieved",
+      "sources": [
+        "hande",
+        "handemanual"
+      ],
+      "limits": [
+        "5 kg form-fit and 4.7 kg friction only for specified fingers/configuration; dirty/oily parts require own grip validation",
+        "Current family page advertises 7 kg across 50/100 mm models; do not silently substitute that rating for the old 50 mm SKU",
+        "Not a 15 kg module gripper"
+      ]
+    },
+    {
+      "id": "sd100",
+      "name": "Robotiq SD-100 reference screwdriver",
+      "role": "Small cover, printer and bracket fasteners only",
+      "massKg": 1.5,
+      "torqueNm": [
+        0.3,
+        4
+      ],
+      "screwSize": "M2.5\u2013M5 product page",
+      "airLmin": 65,
+      "environment": "Not independently field-qualified in reviewed evidence",
+      "duty": "1\u2013600 rpm; cycle/thermal limits need exact manual",
+      "cad": "Dimensions published; exact CAD not retrieved",
+      "sources": [
+        "screw",
+        "screwcompat"
+      ],
+      "limits": [
+        "UR20 compatibility unverified: FAQ lists older UR3\u2013UR16 E/CB families",
+        "4 Nm is not a structural wheel/chassis fastener solution",
+        "Compressed air supply and vacuum pickup consume mobile energy"
+      ]
+    },
+    {
+      "id": "toolchanger",
+      "name": "ATI QC-20 class automatic tool changer",
+      "role": "Provisional primary arm tool interface",
+      "suggestedPayloadKg": 24.95,
+      "environment": "Exact environmental and contamination protection unresolved",
+      "duty": "Moment load and tool-specific dynamic cycle must be selected with manufacturer",
+      "cad": "Manufacturer drawing/model catalog; exact final assembly not downloaded",
+      "sources": [
+        "ati"
+      ],
+      "limits": [
+        "QC-11 35 lb/~15.9 kg suggested payload is too small for unrestricted 20 kg arm operation; use adequately rated alternative",
+        "QC-20 table lists 500 lbf-in XY and 310 lbf-in Z static moments, approximately 56.5 and 35.0 Nm; offset loads may govern",
+        "Lock sensors, tool ID, fail-safe retention, clean dock and managed electrical/air interfaces required"
+      ]
+    },
+    {
+      "id": "gantry",
+      "name": "Independent goods-rated gantry + controlled hoist",
+      "role": "Heavy module handling, mandatory",
+      "designTargetWllKg": 500,
+      "designTargetClearSpanM": 2.5,
+      "designTargetBeamLengthM": 3,
+      "environment": "Level verified ground or engineered support pads; manufacturer operating conditions govern",
+      "duty": "Hoist, trolley, slings and gantry all selected for task load chart and cycle",
+      "cad": "Reference family data only; lift and deployment geometry remain unvalidated",
+      "sources": [
+        "gantry",
+        "gantrycase"
+      ],
+      "limits": [
+        "500 kg is a provisional module-lift requirement, not whole-vehicle lifting approval",
+        "REID family 37\u201369 kg excludes hoist, rigging, controls and robotic deployment mechanism",
+        "Manufacturer case demonstrates people assembling the gantry, not a robot",
+        "Required hook height = fixture height + module height + rigging allowance + extraction clearance; solve with actual geometry",
+        "Arm guides heavy part only if side loads and contact forces remain inside its limits; hoist carries gravity load"
+      ]
+    },
+    {
+      "id": "structural_tool",
+      "name": "Torque/angle/depth-controlled nutrunner with reaction fixture",
+      "role": "Structural bolts and wheel/hub joints",
+      "status": "Engineered selection pending joint schedule",
+      "sources": [
+        "deprag"
+      ],
+      "limits": [
+        "Choose torque from joint design, bolt class, preload and friction study; no generic M-size torque assumption",
+        "Reaction loads go into a rated fixture, not an unverified robot wrist"
+      ]
+    }
+  ],
+  "taskGraph": [
+    {
+      "id": "A00",
+      "title": "Inspect kit and worksite",
+      "dependsOn": [],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Read serials/BOM and weigh or load declared modules",
+        "Survey ground, weather, access lanes and kit orientation"
+      ],
+      "requiredChecks": [
+        "Known component mass/CoM and healthy lifting points",
+        "No missing or damaged structural components",
+        "Firm level support satisfying selected lift instructions"
+      ],
+      "onFailure": "Reject task or relocate; do not guess missing properties",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A01",
+      "title": "Stabilize assembler and index chassis fixture",
+      "dependsOn": [
+        "A00"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Park, inhibit traction, deploy supports and confirm mechanical locks",
+        "Survey fixture and calibrated fiducials"
+      ],
+      "requiredChecks": [
+        "Support reactions, ground bearing and tipping margin valid for worst arm/lift posture",
+        "No human inside hazard zone",
+        "Fixed datum transform established"
+      ],
+      "onFailure": "Stop; keep loads supported and request setup correction",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A02",
+      "title": "Deploy and verify heavy lift",
+      "dependsOn": [
+        "A01"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Position independent gantry around target fixture",
+        "Verify hoist limits, brakes, rigging and proof/service records",
+        "Test unloaded motion and safe stop"
+      ],
+      "requiredChecks": [
+        "Every component WLL exceeds planned factored module+rigging load under manufacturer chart",
+        "Clear span and hook extraction height validated",
+        "No coupling of tipping load to unsupported robot"
+      ],
+      "onFailure": "No heavy lifts; human/offboard lift setup required",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A03",
+      "title": "Locate chassis structural modules",
+      "dependsOn": [
+        "A02"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Lift prepared spine/crossmembers from tray into indexed fixture",
+        "Seat dowels or shear keys before clamp bolts"
+      ],
+      "requiredChecks": [
+        "Member mass fits hoist chart",
+        "Alignment and gap sensors confirm seating",
+        "Qualified metal structure; printed skins excluded from primary load path"
+      ],
+      "onFailure": "Return to supported cradle; inspect fit",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A04",
+      "title": "Fasten and inspect structural joints",
+      "dependsOn": [
+        "A03"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Use captive fasteners with single-side tool access",
+        "React nutrunner against fixture; log torque/angle/depth and joint ID"
+      ],
+      "requiredChecks": [
+        "Engineer-defined joint schedule, preload procedure and tool calibration",
+        "No cross-threading or unexpected torque signature",
+        "Independent release inspection until process capability established"
+      ],
+      "onFailure": "Replace affected hardware and inspect threads; no forced torque-through",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A05",
+      "title": "Install six suspension and traction corner groups",
+      "dependsOn": [
+        "A04"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Install 50 kg workshop / 60 kg field suspension-steering subassembly with hoist into keyed chassis mounts",
+        "Install separate 110 kg workshop / 135 kg field wheel+drive group using its own hoist-supported service interface, OR lift complete corner at 160/195 kg",
+        "Seat retention pins and engineer-specified fasteners; mate isolated harnesses",
+        "Transfer weight only after both interface joint checks"
+      ],
+      "requiredChecks": [
+        "Six repetitions with measured masses, no arm free-lift",
+        "Suspension stored energy isolated",
+        "Hub torque, brake wiring and seal inspection",
+        "Two explicit service splits must exist in released CAD; otherwise treat entire corner as 160/195 kg",
+        "Hoist and rigging capacity assessed for complete corner, extraction path and center of gravity"
+      ],
+      "onFailure": "Keep cradle supporting module; quarantine failed corner",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A06",
+      "title": "Install electronics and battery cartridges",
+      "dependsOn": [
+        "A05"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Fit pretested controller/harness tray",
+        "Slide/lift sealed battery cartridges into guided bays",
+        "Mate touch-safe keyed connectors with energy isolated"
+      ],
+      "requiredChecks": [
+        "Independent service power maintained",
+        "Isolation verified and connectors clean/dry",
+        "Pack undamaged; thermal fault absent; precharge/interlock logic tested before energization"
+      ],
+      "onFailure": "Do not open or repair cell pack; quarantine and obtain qualified service",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A07",
+      "title": "Install peer arm modules",
+      "dependsOn": [
+        "A06"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Hoist 64 kg arm to doweled service pedestal",
+        "Support arm while fastening and mating cables",
+        "Fit tool changer and tool dock"
+      ],
+      "requiredChecks": [
+        "Hoist carries full arm mass; no claim that one UR20 lifts another",
+        "Base flatness/preload and cable bend radius verified",
+        "Brake release and fall hazards controlled per vendor service process"
+      ],
+      "onFailure": "Leave arm supported and unpowered; offboard technician/service lift",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A08",
+      "title": "Fit panels, sensors and printable items",
+      "dependsOn": [
+        "A07"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Use small gripper to fit labeled parts",
+        "Fit gaskets and covers with small-fastener tool",
+        "Install protected fiducials"
+      ],
+      "requiredChecks": [
+        "Part within actual gripper payload and finger limits",
+        "No printed part used beyond its qualified temperature/load/environment",
+        "Connector seals and panel latch checks"
+      ],
+      "onFailure": "Reprint/rework or return part to tray",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A09",
+      "title": "Cold electrical and mechanical acceptance",
+      "dependsOn": [
+        "A08"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Check continuity/polarity/grounding/insulation by approved test station",
+        "Check guards, mechanical support, joint records and emergency stops"
+      ],
+      "requiredChecks": [
+        "Qualified test procedure accepted; no exposed hazardous energy",
+        "Correct firmware and component identities",
+        "Independent reviewer/signoff for prototype"
+      ],
+      "onFailure": "Remain isolated; diagnose without energizing unsafe circuit",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A10",
+      "title": "Controlled commissioning and calibration",
+      "dependsOn": [
+        "A09"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Low-energy/guarded power-on, safety-chain and precharge tests",
+        "Calibrate arm base/TCP/hand-eye, wheel radius/steering if fitted, IMU and sensors",
+        "Validate low-speed motion unloaded before load testing"
+      ],
+      "requiredChecks": [
+        "Safe stops and diagnostics pass",
+        "Measured joint geometry and reach/clearance agree with model",
+        "Payload, CoM and tool settings entered for every tool"
+      ],
+      "onFailure": "Stop and correct calibration/electrical/mechanical failure",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "A11",
+      "title": "Proof of accepted peer build",
+      "dependsOn": [
+        "A10"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module"
+      ],
+      "actions": [
+        "Document build trace and achieved performance",
+        "Run defined traction, thermal, brake, steering and manipulation tests",
+        "Inspect after shakedown"
+      ],
+      "requiredChecks": [
+        "Objective acceptance thresholds set before testing",
+        "No unexplained failed checks",
+        "Human-approved release until autonomous acceptance demonstrated"
+      ],
+      "onFailure": "Incomplete build; do not label self-replication proven",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "P00",
+      "title": "Prepare printer modules",
+      "dependsOn": [
+        "A02"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module",
+        "workshop_loose"
+      ],
+      "actions": [
+        "Select 300 mm reference build volume for specified small parts",
+        "Stage prewired electronics, preterminated harnesses and prepared mechanical groups"
+      ],
+      "requiredChecks": [
+        "CAD/BOM revision fixed; all proposed printed parts pass bounding-box/orientation checks",
+        "Mains or high-current interfaces isolated"
+      ],
+      "onFailure": "Use offboard preassembly or redesign kit",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "P01",
+      "title": "Assemble printer frame and motion system",
+      "dependsOn": [
+        "P00"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module",
+        "workshop_loose"
+      ],
+      "actions": [
+        "Square frame in fixture; install rail/bed/toolhead groups",
+        "Measure diagonals, belt routing/tension and rail friction"
+      ],
+      "requiredChecks": [
+        "Fixture supports parts during fastening",
+        "Rail alignment and belt tension measurable",
+        "Loose-belt threading not yet demonstrated robotically"
+      ],
+      "onFailure": "Human fixture-assisted intervention or redesigned preassembled gantry",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "P02",
+      "title": "Test printer electronics and thermal protection",
+      "dependsOn": [
+        "P01"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module",
+        "workshop_loose"
+      ],
+      "actions": [
+        "Install pretested plug-in control tray",
+        "Run qualified electrical and heater/temperature/safety tests"
+      ],
+      "requiredChecks": [
+        "No live wiring",
+        "Mains safety, protective bonding and thermal cutoff accepted by qualified process",
+        "Fire-safe ventilated printing area"
+      ],
+      "onFailure": "Do not energize; offboard electrical correction",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "P03",
+      "title": "Calibrate printer and qualify output",
+      "dependsOn": [
+        "P02"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module",
+        "workshop_loose"
+      ],
+      "actions": [
+        "Home, level, calibrate extrusion and print dimensional coupons",
+        "Measure coupons and fit/load test intended part family",
+        "Cool and remove print with safe release fixture"
+      ],
+      "requiredChecks": [
+        "Dimension, strength, orientation and environmental qualification pass",
+        "Print-removal/jam recovery bounded and tested"
+      ],
+      "onFailure": "Reject print; diagnose or request service",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    },
+    {
+      "id": "P04",
+      "title": "Assemble qualified printed item",
+      "dependsOn": [
+        "P03"
+      ],
+      "modes": [
+        "workshop_module",
+        "field_module",
+        "workshop_loose"
+      ],
+      "actions": [
+        "Inspect and identify part",
+        "Fit purchased inserts/fasteners in fixture if required",
+        "Assemble and inspect product against its drawing"
+      ],
+      "requiredChecks": [
+        "No assumption printer can create motors,bearings,metal structure,electronics or raw feedstock",
+        "Insert heating and loose small items require validated tooling"
+      ],
+      "onFailure": "Reject or rework under approved procedure",
+      "evidenceLevel": "Proposed executable task specification; not physically demonstrated"
+    }
+  ],
+  "repairCoverage": [
+    {
+      "item": "Panels, sensor mast modules, tools and small printed fixtures",
+      "self": "Accessible zones only",
+      "peer": "Plausible module exchange",
+      "gate": "Reach/collision/grip and post-repair calibration demonstrated"
+    },
+    {
+      "item": "Wheel/drive pod",
+      "self": "Only with independent chassis supports and healthy manipulator/lift path",
+      "peer": "Hoist-supported separate wheel+drive 110/135 kg; full suspension+steering+traction corner 160/195 kg if service split absent",
+      "gate": "Wheel unloaded; mechanical lock holds vehicle; brakes/stored suspension energy isolated"
+    },
+    {
+      "item": "Battery",
+      "self": "Cold cartridge swap only, independent service power needed",
+      "peer": "Sealed cartridge exchange with lift or slide tray",
+      "gate": "No cell work, no thermal-damaged pack handling; isolation and qualified testing"
+    },
+    {
+      "item": "Arm",
+      "self": "Healthy second arm may handle tools but lift supports failed arm; reach not established",
+      "peer": "Hoist-supported whole-arm exchange",
+      "gate": "No own loaded base release; vendor calibration/service required; failed lift or both arms requires outside help"
+    },
+    {
+      "item": "Controller or preterminated harness tray",
+      "self": "Only if service controller and independent safe power remain available",
+      "peer": "Module exchange",
+      "gate": "Cannot remove the only controller/power path that must execute the operation"
+    },
+    {
+      "item": "Gearbox internals, bearings, seals and brake overhaul",
+      "self": "Not baseline autonomous",
+      "peer": "Workshop specialist station or service provider",
+      "gate": "Precision metrology, presses, preload and lubrication procedures"
+    },
+    {
+      "item": "Cracked structural spine, damaged arm joint or cells",
+      "self": "Not baseline",
+      "peer": "Offboard replacement/qualified manufacture",
+      "gate": "Structural/electrical safety cannot be established by a visual animation"
+    },
+    {
+      "item": "Recovery after rollover, burial or lost support system",
+      "self": "No general self-recovery claim",
+      "peer": "Recovery equipment and rated attachment plan required",
+      "gate": "Traction and lifting charts, terrain and failure posture assessed"
+    }
+  ],
+  "printEnvelope": {
+    "buildVolumeMm": [
+      300,
+      300,
+      300
+    ],
+    "usableDesignLimitMm": [
+      280,
+      280,
+      250
+    ],
+    "selectionBasis": "Chosen from proposed component envelopes below, not from full vehicle dimensions. These are design constraints, not measurements of released CAD. Re-run envelope/orientation/strength checks after CAD exists.",
+    "parts": [
+      {
+        "part": "Sensor shroud",
+        "maxDesignBoundingBoxMm": [
+          220,
+          180,
+          160
+        ]
+      },
+      {
+        "part": "Cable guide or connector guard",
+        "maxDesignBoundingBoxMm": [
+          180,
+          80,
+          60
+        ]
+      },
+      {
+        "part": "Small gripper finger prototype",
+        "maxDesignBoundingBoxMm": [
+          120,
+          50,
+          40
+        ]
+      },
+      {
+        "part": "Jig insert or drill-free assembly locator",
+        "maxDesignBoundingBoxMm": [
+          260,
+          220,
+          60
+        ]
+      },
+      {
+        "part": "Nonstructural skin tile",
+        "maxDesignBoundingBoxMm": [
+          280,
+          280,
+          30
+        ]
+      }
+    ],
+    "largerParts": "Tile nonstructural covers or manufacture offboard; do not scale printer to sedan size.",
+    "bootstrap": "First printer requires purchased parts and externally printed starter components; printing another printer does not create its rails, motors, electronics, heaters or fasteners.",
+    "reference": "Voron 2.4 300-class kit provides real human assembly reference and CAD; robot assembly is unproven.",
+    "sources": [
+      "voron",
+      "voronmanual",
+      "voronmechanical",
+      "voronelectrical",
+      "voronrepo"
+    ]
+  },
+  "interfaces": {
+    "structural": [
+      "Metal doweled/shear-keyed interfaces with captive fasteners and one-sided access",
+      "Guide rails or cones establish pose before final bolt preload",
+      "Rated lifting eyes plus fail-safe cradles at known CoM",
+      "Avoid adhesives or hidden loose nuts as routine service joints"
+    ],
+    "electrical": [
+      "Preterminated tested harness cartridges, protected keyed connectors, strain relief",
+      "Blind-mate guide pins and floating connector mounts; ingress seal qualified after cycling",
+      "Separate low-voltage data/service power from traction; interlock/precharge sequence for energy connectors",
+      "Robot validates pin seating/lock and electrical test; mating motion alone is not electrical acceptance"
+    ],
+    "tools": [
+      "Separate small gripper, form-fit locked module gripper, low-torque driver and structural nutrunner",
+      "Force/torque sensing, wrist vision, fiducials and independent load sensing",
+      "Automatic changer with lock/unlock sensors and tool identification; rack within validated reach",
+      "Tool center of gravity and calibration updated at every change"
+    ]
+  },
+  "validationGates": [
+    "Collision-free inverse kinematics for complete insertion/extraction path, both arms, hoses, hoist rigging and fixture; reach sphere alone is insufficient",
+    "Payload budget: tool changer+sensor+gripper+workpiece <= posture/CoM/inertia limited manufacturer rating; dual arms cannot simply sum ratings",
+    "Heavy loads supported by certified lift; rated load path includes rigging, connectors, trolley, beam, legs, pads and ground",
+    "Static and dynamic support reactions on every outrigger plus terrain bearing and sliding check; suspension actuator rating alone does not certify a lifting support",
+    "Validate every fastener torque/angle signature and structural joint schedule",
+    "Calibrate hand-eye, base, TCP and fixture after docking or module replacement; \u00b10.1 mm repeatability does not guarantee bolt-hole alignment",
+    "Execute hundreds of relevant trials across tolerance, contamination, lighting, wear and power-loss conditions before claiming reliable autonomous assembly",
+    "Track intervention count, successes/attempts and uncertainty by operation rather than displaying a single autonomy percentage"
+  ],
+  "humanBoundary": [
+    "Qualified manufacture of cells, motors, gears, bearings, PCBAs, primary structure and safety-critical harnesses remains offboard",
+    "Human/offboard setup and lift rigging required until automatic deployment and couplers are independently validated",
+    "No live electrical repair, cell-level repair, unqualified structural welding, improvised load-bearing printed parts or unsupported work beneath suspended loads",
+    "If the only arm, controller, energy source or lift needed for repair fails, peer/offboard assistance is required"
+  ],
+  "costs": {
+    "status": "Quote-only manufacturer equipment; no verified purchase prices obtained by this workstream",
+    "owner": "Operating cost research artifact carries coordinated USD planning ranges separately from verified prices",
+    "excludedClaims": [
+      "No equipment quote or procurement completed",
+      "No claim published generic arm price includes controller, tooling, safety engineering or mobile integration"
+    ]
+  },
+  "sources": [
+    {
+      "id": "ur20",
+      "title": "Universal Robots UR20 product",
+      "url": "https://www.universal-robots.com/products/ur20/",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "ur20manual",
+      "title": "UR20 technical specifications, SW10.8",
+      "url": "https://www.universal-robots.com/manuals/EN/HTML/SW10_8/Content/prod-usr-man/complianceUR20/H_g5_sections/appendix_g5/tech_spec_UR20.htm",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "ur20cad",
+      "title": "UR20 STEP download; login and graphical-document terms apply",
+      "url": "https://www.universal-robots.com/download/mechanical-ur-series/ur20/robot-step-file-ur20/",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "gen3",
+      "title": "Kinova Gen3 specifications and CAD/URDF resources",
+      "url": "https://www.kinovarobotics.com/product/gen3-robots",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "link6",
+      "title": "Kinova Link 6 manufacturer English datasheet",
+      "url": "https://www.kinovarobotics.com/uploads/Kinova_Onepager_Link-6_EN_2024.pdf",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "hande",
+      "title": "Robotiq Hand-E family current product page",
+      "url": "https://robotiq.com/products/adaptive-grippers",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "handemanual",
+      "title": "Hand-E 2020 manual, version-specific payload",
+      "url": "https://assets.robotiq.com/website-assets/support_documents/document/Hand-E_Manual_UniversalRobots_PDF_20200528.pdf",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "screw",
+      "title": "Robotiq SD-100 screwdriving specifications",
+      "url": "https://robotiq.com/solutions/screwdriving",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "screwcompat",
+      "title": "Robotiq FAQ compatibility limitations",
+      "url": "https://robotiq.com/faq",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "ati",
+      "title": "ATI tool changer model table",
+      "url": "https://www.ati-ia.com/products/toolchanger/tool_changer_models.aspx",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "ati11",
+      "title": "ATI QC-11; drawings and downloadable models listed",
+      "url": "https://www.ati-ia.com/products/toolchanger/QC.aspx?ID=QC-11",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "deprag",
+      "title": "DEPRAG robot screwdriving: torque/angle/depth monitoring",
+      "url": "https://www.deprag.com/en/automation/screwdriving-units/screwdriving-units-for-robots.html",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "gantry",
+      "title": "REID goods-lift gantry family; 37\u201369 kg and up to 1000 kg are family extrema, not one SKU",
+      "url": "https://uk.reidlifting.com/news/why-is-the-porta-gantry-rapide-ideal-for-goods-lifting",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "gantrycase",
+      "title": "REID 500 kg goods-lift deployment case; human assembly",
+      "url": "https://uk.reidlifting.com/news/pump-maintenance-made-quick-and-easy-in-a-confined-space",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "te",
+      "title": "TE blind-mate power connector family examples",
+      "url": "https://www.te.com/en/products/connectors/power-connectors.html",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "voron",
+      "title": "Voron 2.4 configurator/reference design",
+      "url": "https://vorondesign.com/voron2.4",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "voronmanual",
+      "title": "Voron 2.4r2 assembly manual",
+      "url": "https://github.com/VoronDesign/Voron-2/blob/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "voronmechanical",
+      "title": "Voron mechanical assembly checks",
+      "url": "https://docs.vorondesign.com/build/mechanical/",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "voronelectrical",
+      "title": "Voron electrical safety/wiring",
+      "url": "https://docs.vorondesign.com/build/electrical/",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    },
+    {
+      "id": "voronrepo",
+      "title": "Voron CAD/STL release evidence",
+      "url": "https://github.com/VoronDesign/Voron-2/releases",
+      "accessed": "2026-10-09",
+      "type": "primary manufacturer/project source"
+    }
+  ],
+  "packagingAndAccess": {
+    "status": "Concept constraints, not collision-checked CAD",
+    "peerFixture": "Peer chassis on indexed longitudinal supports; all underbody connectors routed to service faces. Assembler parks outside gantry legs and moves between front, side and rear docking stations.",
+    "gantry": "Nominal 3 m beam class, target \u22652.5 m clear span around 1.8 m peer body; exact trolley travel, foot spread, hook height and approach clearance must be taken from selected SKU. Carried folded length must fit 4 m body or trailer. No claim current portable gantry self-deploys.",
+    "stabilizers": "Field concept four feet at x=\u00b11.45 m, y=\u00b11.40 m, mechanically locked after placement. Mobility mass allowance 120 kg is not a structural qualification.",
+    "battery": "15.6 kg provisional cartridge exceeds the selected Hand-E capacity and the conservative 15 kg direct-workpiece target. Use load-bearing slide tray/hoist or separately qualified form-fit module gripper with full arm payload/CoM accounting.",
+    "deploymentBootstrap": "A folded gantry family can weigh more than the arm payload. Need self-erecting assisted deployment, subcomponents within safe handling envelope, peer assistance, or human setup. Until designed/tested, field autonomous deployment is blocked. The arm cannot free-lift a 150 kg carried lift system. Current field concept requires preassembled/self-erecting lift module on its own deployment mechanism, peer help or human setup; this is not engineered or proven.",
+    "reach": "1.75 m reach is a workspace radius only. A 4 m body cannot be serviced end-to-end from one fixed central base. Repositioning, rails or multiple arm bases plus insertion-path IK are mandatory."
+  }
+}

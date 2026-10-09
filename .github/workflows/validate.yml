@@ -1,0 +1,17 @@
+name: Validate engineering baseline
+on:
+  push:
+    branches: [main, 'aella/six-wheel-baseline-01']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check docs/app.js && node --check docs/scene.js && node --check docs/model.js
+      - run: node test-model.mjs
