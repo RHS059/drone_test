@@ -1,3 +1,5 @@
+> Historical initial reconstruction record. For the current six-wheel assembly and steering limitations, see [the current assembly record](docs/RECONSTRUCTION.md).
+
 # Six-Wheel Builder: real-CAD reconstruction R01
 
 [Open the viewer](https://rhs059.github.io/drone_test/).

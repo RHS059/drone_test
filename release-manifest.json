@@ -1,5 +1,5 @@
 {
-  "release": "six-wheel-steering-geometry-C03-01",
+  "release": "six-wheel-steering-geometry-C03-02",
   "whole_robot_qualified": false,
   "files": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "path": "RECONSTRUCTION.md",
-      "bytes": 2079,
-      "sha256": "f7996e7b8e3a38f7641ce65ff0d93c708a7421719a28d99c3bbebb83d0b2fdb0"
+      "bytes": 2244,
+      "sha256": "10b773e2da1c5838bab0132bf63cce27b0126886cf955a5322a83ec8e367e33a"
     },
     {
       "path": "docs/.nojekyll",
@@ -34,13 +34,13 @@
     },
     {
       "path": "docs/RECONSTRUCTION.md",
-      "bytes": 5868,
-      "sha256": "1042b619759c6222fc39e86d0f5e83945d09dfc9d1de1a292a3130b295e21a76"
+      "bytes": 6510,
+      "sha256": "ccafe034bbf9fd03bef7b1d9ecd004e0f7ef3f8f1edf0a75683f3cb334b39855"
     },
     {
       "path": "docs/app.js",
-      "bytes": 4176,
-      "sha256": "69de1b6d179c75fff4331c06059b895d930b36f046b4243a4f9e3bf322d4ec93"
+      "bytes": 4185,
+      "sha256": "529f72e7c16895fd69b76552d8d45b4c937eb6f5b50ad4201acb535d59b729ed"
     },
     {
       "path": "docs/assembly.json",
@@ -1223,14 +1223,19 @@
       "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
     },
     {
+      "path": "docs/assets/steering/audit/USAGE.txt",
+      "bytes": 1345,
+      "sha256": "4815fc8b3f25de59a5a3b2b9663a2c007adaf6607f136a699e1073dcb4d2055d"
+    },
+    {
       "path": "docs/assets/steering/audit/audit_c03.py",
-      "bytes": 12788,
-      "sha256": "242ac9e66e24d90c3c3a2165b8370dacc64747825ee9fab3b1d54670c345642b"
+      "bytes": 13591,
+      "sha256": "5a0a35063bcb4eae777a75fe3a93f46c3d49fea64bf66ec2361c57b3c3b0b0ec"
     },
     {
       "path": "docs/assets/steering/audit/audit_glb.py",
-      "bytes": 9696,
-      "sha256": "b55329e0e68959c3251bf18a22bf33bfdc49f75daea73cafa83cf14887a34112"
+      "bytes": 10649,
+      "sha256": "9331d143476bef4101166d93ac153fb0b147bcc6fa364f557aefb9a3150bd1d3"
     },
     {
       "path": "docs/assets/steering/audit/audit_report.md",
@@ -1253,9 +1258,29 @@
       "sha256": "382672e7d59a99fa29f21608f98eaf26da02f1b7affb63ea24d1c92d319686bd"
     },
     {
+      "path": "docs/assets/steering/audit/motor-fit-neutral-sampled.json",
+      "bytes": 10293,
+      "sha256": "c15e22c4bd087b7aceb7a010e6435be624e8739ff1bbab3e8137d94099b688ea"
+    },
+    {
+      "path": "docs/assets/steering/audit/motor-fit-travel-failures.json",
+      "bytes": 17132,
+      "sha256": "fd5aa994abff35b1e1ecd50206d0109adbb589d3ada989f725180ee2a5f5d008"
+    },
+    {
+      "path": "docs/assets/steering/audit/portability_receipt.json",
+      "bytes": 2696,
+      "sha256": "b19b00eabbefe0e1394e517b33a352a4a4028c5369074281358024b4c1e2dd61"
+    },
+    {
+      "path": "docs/assets/steering/audit/selected-revision-equivalence.json",
+      "bytes": 880,
+      "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
+    },
+    {
       "path": "docs/assets/steering/index.html",
-      "bytes": 2119,
-      "sha256": "3a7caca60a4cec82f7f66cb5cf2c5cd5268cf7f6ced7be912d7347388cfdb9de"
+      "bytes": 2661,
+      "sha256": "3f7873325140db915124be0b775e4657b2a30216cab53e56a0ed93d4f0a80391"
     },
     {
       "path": "docs/assets/steering/interface_contract_C03_R01.json",
@@ -1624,8 +1649,8 @@
     },
     {
       "path": "docs/cost-ui.js",
-      "bytes": 5154,
-      "sha256": "204576bf9c958b49b7bf8231fae5a0002494d40435979a5abfb50bc9c00e786d"
+      "bytes": 5172,
+      "sha256": "e1e506772c01603d18639df3b009430abc1a27a771ca3a08e3e6d655bc1cf5ca"
     },
     {
       "path": "docs/costs.json",
@@ -1634,8 +1659,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 12987,
-      "sha256": "15e27a2b337fdcaa6d629c2e6ed881b6ae6b0c13ad82376357f1954f9c945f47"
+      "bytes": 13060,
+      "sha256": "f13fc6daf2f5cd5a650440f950af3846697ed0fa2f66523da23e9aa3db085158"
     },
     {
       "path": "docs/kinematics.js",

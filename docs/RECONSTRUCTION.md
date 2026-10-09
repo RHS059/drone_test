@@ -23,6 +23,10 @@ Original wheel native and delivered geometry checks passed. Body solids, export 
 
 Nominal unloaded tire geometry is tangent to the flat ground plane. Loaded tire radius, terrain response, suspension dynamics, steering actuation, braking, drive duty, battery integration, complete mass/CG and structural loads remain unresolved. Selected EVO rim net mass is 15.1 kg each from the exact-SKU manufacturer API; tire, nut and drive masses are unknown and are not silently treated as zero. Current documented corner hardware exceeds single-arm payload before the motor and wheel are added. Service-cover visualization is not executed repair; supported module removal requires rated external equipment and engineered lifting points.
 
+## Known combined-travel failure
+
+The actual selected motor clears all 12 sampled cases at neutral suspension (four corners, rack -75/0/+75 mm); 2,352 exact Boolean pairs were executed and 1,204 identical-relative-pose results reused. This excludes output-stud clocking, tolerances and load qualification. Combined bump/droop and steering has confirmed motor-to-upper/lower-wishbone positive-volume intersections. The numerical failure snapshot preserves completed and pending cases. Suspension is therefore held at neutral; the original geometry is preserved for a separately revised design. See [fit evidence](assets/steering/index.html).
+
 ## Steering geometry checks
 
 Independent source analysis checked 5,608 poses, including 36 boundary fixtures and 4,096 seeded random poses. Maximum steering disagreement was 6.72e-15 rad and tie closure residual 1.67e-15 m. All 76 baked nodes and 216 transformed exported-axis checks passed. Runtime tests separately compare the actual pivot-compensated wheel/tie matrices with those fixtures, check Home/rack state and reject invalid inputs. These are kinematic/export checks, not force, continuous collision or physical qualification.

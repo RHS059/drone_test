@@ -1,0 +1,22 @@
+Extract C03_sources_tests.zip and C03_assembly_glb.zip into the same directory.
+The resulting folder must contain mechanical/running_gear_C03/ with the contract,
+solver, manifest, original GLB and README. Install NumPy and SciPy, and have Node.js
+available on PATH.
+
+From that extracted directory, default relative paths:
+  python /path/to/audit_c03.py
+  python /path/to/audit_glb.py
+
+Or, from any directory, explicit locations:
+  python /path/to/audit_c03.py --source-root /path/to/extracted/mechanical/running_gear_C03 --output-dir /path/to/fresh-output
+  python /path/to/audit_glb.py --source-root /path/to/extracted/mechanical/running_gear_C03 --output-dir /path/to/fresh-output
+
+Run audit_c03.py first. Both default to a fresh ./steering-audit-output location,
+rather than overwriting the supplied audit evidence directory. Choose a separate
+output directory when preserving a previous run. Existing files in the selected
+output directory are replaced by a rerun. Both scripts exit nonzero on audit failure;
+missing source/fixture paths produce a clear usage error before executing the audit.
+
+The original evidence and timestamps were preserved. Both full reproduction runs
+match the original fixtures byte for byte, GLB evidence exactly, and FK summary
+except its new generation timestamp. See portability_receipt.json for script hashes.

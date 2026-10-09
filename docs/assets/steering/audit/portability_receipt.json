@@ -1,0 +1,62 @@
+{
+  "generated_utc": "2026-10-09T11:39:16.535186+00:00",
+  "changed_files": {
+    "audit_c03.py": {
+      "sha256": "5a0a35063bcb4eae777a75fe3a93f46c3d49fea64bf66ec2361c57b3c3b0b0ec",
+      "bytes": 13591
+    },
+    "audit_glb.py": {
+      "sha256": "9331d143476bef4101166d93ac153fb0b147bcc6fa364f557aefb9a3150bd1d3",
+      "bytes": 10649
+    }
+  },
+  "default_source_root": "./mechanical/running_gear_C03 relative to the working directory",
+  "default_output_dir": "./steering-audit-output relative to the working directory",
+  "only_cli_path_handling_changed": true,
+  "math_and_evidence_generation_suffix_byte_identical_to_published_scripts": true,
+  "prior_evidence_files_unchanged_count": 11,
+  "prior_evidence_bytes_and_mtime_ns_preserved": true,
+  "runs": [
+    {
+      "mode": "default",
+      "output_dir": "/workspace/shared/ugv-rover-integration/steering-audit/portability-check/extracted/steering-audit-output",
+      "fk_pass": true,
+      "glb_pass": true,
+      "fk_evidence_identical_except_generation_time": true,
+      "glb_evidence_identical": true,
+      "all_three_fixture_files_byte_identical": true
+    },
+    {
+      "mode": "explicit",
+      "output_dir": "/workspace/shared/ugv-rover-integration/steering-audit/portability-check/explicit-output",
+      "fk_pass": true,
+      "glb_pass": true,
+      "fk_evidence_identical_except_generation_time": true,
+      "glb_evidence_identical": true,
+      "all_three_fixture_files_byte_identical": true
+    }
+  ],
+  "missing_input_checks": [
+    {
+      "script": "audit_c03.py",
+      "return_code": 2,
+      "clear_parser_error": "audit_c03.py: error: Missing source file: /workspace/shared/ugv-rover-integration/steering-audit/portability-check/missing-source/interface_contract_C03_R01.json. Extract the public source and GLB packages into the same directory, or set --source-root."
+    },
+    {
+      "script": "audit_glb.py",
+      "return_code": 2,
+      "clear_parser_error": "audit_glb.py: error: Missing fixtures in /workspace/shared/ugv-rover-integration/steering-audit/portability-check/missing-fixtures. Run audit_c03.py with the same --source-root and --output-dir first."
+    }
+  ],
+  "public_source_archives": [
+    {
+      "name": "C03_sources_tests.zip",
+      "sha256": "eebd643136724f2624dbc7798af0336043503d8be022df209db476588003993b"
+    },
+    {
+      "name": "C03_assembly_glb.zip",
+      "sha256": "30766ad999f0c8e74475e2696ca2ce08f4e9bd235c5c1d89de77f5cfad2d4d2e"
+    }
+  ],
+  "publication_note": "The original artifact_manifest.json is retained as prior evidence. Its two Python-script entries describe the pre-portability versions; use changed_files above when updating a public package manifest."
+}

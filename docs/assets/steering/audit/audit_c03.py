@@ -7,12 +7,21 @@ closure residual with bracketed Brent roots over a complete turn, and selects th
 neutral-nearest assembly branch. Reads frozen original C03 sources only.
 """
 from pathlib import Path
-import json, math, hashlib, struct, subprocess, datetime
+import argparse, json, math, hashlib, struct, subprocess, datetime
 import numpy as np
 from scipy.optimize import brentq
 
-ROOT=Path('/workspace/shared/ugv-reconstruction/mechanical/running_gear_C03')
-OUT=Path('/workspace/shared/ugv-rover-integration/steering-audit')
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--source-root',type=Path,default=Path('mechanical/running_gear_C03'),
+    help='Directory containing the extracted C03 contract, solver, manifest, GLB and README (default: ./mechanical/running_gear_C03).')
+parser.add_argument('--output-dir',type=Path,default=Path('steering-audit-output'),
+    help='Directory for newly generated fixtures and evidence (default: ./steering-audit-output).')
+args=parser.parse_args()
+ROOT=args.source_root.expanduser().resolve()
+OUT=args.output_dir.expanduser().resolve()
+for required in ['interface_contract_C03_R01.json','kinematics_C03_R01.js','original_steering_C03_R01_manifest.json','original_steering_C03_R01.glb','README_C03_R01.md']:
+    if not (ROOT/required).is_file():
+        parser.error(f'Missing source file: {ROOT/required}. Extract the public source and GLB packages into the same directory, or set --source-root.')
 OUT.mkdir(parents=True,exist_ok=True)
 contract=json.loads((ROOT/'interface_contract_C03_R01.json').read_text())
 manifest=json.loads((ROOT/'original_steering_C03_R01_manifest.json').read_text())

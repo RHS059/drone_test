@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-09T11:37:32.659Z",
+  "audited_solver_sha256": "c154342c1ddda9ffc2b286ad028aa95b57f8e0dacbe58575db78d22245af3817",
+  "current_solver_sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+  "audited_contract_sha256": "f3df7c28efc57ce8d6abea051cc0e1f6390d601d2d4c0d5de6713c2f33cc9911",
+  "current_contract_sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+  "all_36_poses_identical": true,
+  "audited_pose_fixture_identical": true,
+  "pose_count": 36,
+  "q0_pose_count": 12,
+  "current_contract_changed_top_level_keys": [
+    "tests",
+    "service"
+  ],
+  "contract_changes_limited_to_tests_service": true,
+  "current_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+  "audited_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
+}

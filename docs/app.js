@@ -1,4 +1,4 @@
-import{initCosts}from'./cost-ui.js?v=costs-02';
+import{initCosts}from'./cost-ui.js?v=steering-costs-01';
 initCosts();
 import{createScene}from'./scene.js?v=steering-01';
 const $=s=>document.querySelector(s);let api=null;const error=$('#scene-error');
