@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2079,
-      "sha256": "f7996e7b8e3a38f7641ce65ff0d93c708a7421719a28d99c3bbebb83d0b2fdb0"
+      "bytes": 985,
+      "sha256": "165103ea6711c870627318e4913b9f6b9a9a66c7f9cf5e9ab1847dd64fb54398"
     },
     {
       "path": "RECONSTRUCTION.md",
@@ -40,7 +40,7 @@
     {
       "path": "docs/app.js",
       "bytes": 2409,
-      "sha256": "31995d447d523fbe7da883960bb962b66203cac39596e80b226b49e1b77d5c9a"
+      "sha256": "74742d7486ecc2de1c39faf7fa1d6226321f33b380e925e667cfdcaa2f3dac7c"
     },
     {
       "path": "docs/assembly.json",
@@ -204,8 +204,8 @@
     },
     {
       "path": "docs/assets/corners/generate_interfaces.py",
-      "bytes": 10326,
-      "sha256": "5ddcf141de25a0695e8f3e75c4846640369a9de243b561e4efc0ffb7fc8938b3"
+      "bytes": 10331,
+      "sha256": "c72a44c6e29a73766ec25d95ea567aa3f5848460987012128aacc4b7c3f981d4"
     },
     {
       "path": "docs/assets/corners/inner_backing_C02_R01.glb",
@@ -226,6 +226,11 @@
       "path": "docs/assets/corners/interface_contract_C02_R04.json",
       "bytes": 5768,
       "sha256": "221ec053ab259588f523efc19d6558993a9656fbd2d793b1151f35a4c7fd39c0"
+    },
+    {
+      "path": "docs/assets/corners/interface_contract_C02_R05.json",
+      "bytes": 5958,
+      "sha256": "3f65587a1d6490c39545bd49531fa610ed6ee48dbeab5ec78963d36fd46442cb"
     },
     {
       "path": "docs/assets/corners/lower_bearing_envelopes_C02_R02.glb",
@@ -256,6 +261,11 @@
       "path": "docs/assets/corners/lower_wishbone_C02_R02_report.json",
       "bytes": 893,
       "sha256": "8286dcf3192ffec1440280db060649ca95ff81f8665d193866eb9b870e02114d"
+    },
+    {
+      "path": "docs/assets/corners/mass_cost_ledger_C02_R05.json",
+      "bytes": 4328,
+      "sha256": "437caf06d3be72621134b57a1617b933f2fdc78ca947fbc404d26e90ceb200a2"
     },
     {
       "path": "docs/assets/corners/stationary_clamp_C02_R01.glb",
@@ -361,6 +371,21 @@
       "path": "docs/assets/corners/wheel_adapter_C02_R01_report.json",
       "bytes": 2383,
       "sha256": "c1351d20ca16a7c89b664ec0e79437ea1a9008fa6b77f21c3c76eaf7d0ca07c5"
+    },
+    {
+      "path": "docs/assets/corners/wheel_adapter_C02_R02.glb",
+      "bytes": 755972,
+      "sha256": "c84a8820bc83ac6f2ea1dd9dd1c1768a2f295212915636d7ef8633b3652bdd82"
+    },
+    {
+      "path": "docs/assets/corners/wheel_adapter_C02_R02.step",
+      "bytes": 123972,
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "path": "docs/assets/corners/wheel_adapter_C02_R02_report.json",
+      "bytes": 2388,
+      "sha256": "511b0168523a557758ad8578031d69c10cd2cf7eb1d990df038f805800a4c4bb"
     },
     {
       "path": "docs/assets/mechanical/DFM_ATTRIBUTION.md",
@@ -499,8 +524,8 @@
     },
     {
       "path": "docs/assets/mechanical/mass-power-snapshot.json",
-      "bytes": 5831,
-      "sha256": "952c0b4ac771e8e7cc9d17948a9669e44e22b587b59ef3af8785d34bf79332a3"
+      "bytes": 5832,
+      "sha256": "3bb739e6a1eabe969740e4cd49818789363f53cae90507919aa8a0cac7e3ac14"
     },
     {
       "path": "docs/assets/mechanical/test_dfm.py",
@@ -591,6 +616,11 @@
       "path": "docs/assets/robots/robotiq/robotiq_coupling.glb",
       "bytes": 192476,
       "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
+    },
+    {
+      "path": "docs/assets/robots/source-manifest.json",
+      "bytes": 9887,
+      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
     },
     {
       "path": "docs/assets/robots/source/robotiq/LICENSE",
@@ -841,11 +871,6 @@
       "path": "docs/assets/robots/source/ur/urdf/ur_macro.xacro",
       "bytes": 18813,
       "sha256": "2683ddcc2db392116d69ac775e4d6dd1c7b3d420f9eca926bd10cf43a1ce8b35"
-    },
-    {
-      "path": "docs/assets/robots/source-manifest.json",
-      "bytes": 9887,
-      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
     },
     {
       "path": "docs/assets/robots/ur20/base_link_inertia.glb",
@@ -1305,7 +1330,7 @@
     {
       "path": "docs/index.html",
       "bytes": 6774,
-      "sha256": "8e604aa895e0fb54cf0c4a2c8bdb799b9a22f04082b5489067c3111afb4e9be0"
+      "sha256": "ca6a0ebd21d7784044e850c20567fb55db477e2d6431efb84b401c52032e666c"
     },
     {
       "path": "docs/kinematics.js",
@@ -1329,13 +1354,13 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 3096,
-      "sha256": "682a3be78a77a4a8ce42762afea0fb37b1b48ea37efad04ff6e21277fb8e80ee"
+      "bytes": 3136,
+      "sha256": "bdb6ce59d9e177c0953c8a90e59e24060cb286cfdcc12389464a9028ace9ec35"
     },
     {
       "path": "docs/scene.js",
       "bytes": 6624,
-      "sha256": "3ea5d9140f27efd90a7aaf38e98a44bbfb309ae13d5102343727981511e53fb3"
+      "sha256": "a516de077e4db46f989b4a2eb4eb07897c7da8970c4d6468b1e6b80cd5b8eaed"
     },
     {
       "path": "docs/style.css",

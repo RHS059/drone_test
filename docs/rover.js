@@ -5,7 +5,7 @@ import * as T from 'three/webgpu';
 export async function loadRover(root, asset) {
   const get = async p => { const r = await fetch(p); if (!r.ok) throw Error(`Missing assembly contract: ${p}`); return r.json(); };
   const [corner, bodyContract] = await Promise.all([
-    get('./assets/corners/interface_contract_C02_R04.json'),
+    get('./assets/corners/interface_contract_C02_R05.json'),
     get('./assets/body-power/interface_contract.json')
   ]);
   const body = await asset('./assets/body-power/body_power_R01.glb', 'Original faceted body and service hardware · source-backed design');
@@ -38,6 +38,6 @@ export async function loadRover(root, asset) {
     showBody(v) { body.visible = v; },
     showCorners(v) { corners.forEach(c => c.visible = v); },
     openService(v) { serviceOpen = v; removable.forEach(o => o.visible = !v); reservations.visible = v; },
-    snapshot() { return { wheelCentersC: corner.wheel_stations_m.map(s => s.wheel_center), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: 'locked', suspensionTravel: 'locked pending clearance' }; }
+    snapshot() { return { assemblyRevision: corner.configuration, wheelCentersC: corner.wheel_stations_m.map(s => s.wheel_center), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: 'locked', suspensionTravel: 'locked pending clearance' }; }
   };
 }

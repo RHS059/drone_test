@@ -1,20 +1,9 @@
-# Six-Wheel Builder: real-CAD reconstruction R01
+# Six-Wheel Builder
 
 [Open the viewer](https://rhs059.github.io/drone_test/).
 
-This is a new reconstruction of the previously unpublished local package, not recovery of that package or reuse of its audit results.
+Source-backed six-wheel vehicle development CAD with a faceted serviceable body, original corner hardware, two licensed UR20/Robotiq mechanisms, and a separate live MuJoCo gripper experiment. The current feature branch may contain newer geometry than deployed main.
 
-- Actual licensed UR20/Robotiq source meshes, original textures and source joint graphs; executable joint/mimic controls.
-- Original parametric frame R06 and adapter R03 B-rep/STEP, source generators and fresh checks.
-- Standalone MuJoCo native/WASM contact model, with software parity separated from task success. New nominal/heavy cases pass the 10 mm screen; low-friction case fails. These are new declared experiments, not the earlier lost experiments.
-- Explicit GPU fallback: CPU kinematics remains usable where WebGPU/WebGL2 is unavailable. Rendered appearance was not independently verified before initial deployment because the QA executor cannot launch Chromium; post-deploy browser checks are separate.
+See [the assembly record](docs/RECONSTRUCTION.md) for exact scope, source classifications and unresolved hardware. Steering and suspension travel remain locked. Motor/shock geometry, full mass/CG, drive/brake/electrical qualification and autonomous assembly/repair are not complete.
 
-No whole robot, rated drivetrain, collision-free motion, physical manufacturing release, autonomous assembly or repair capability is claimed. A nominal source-frame mating convention is not tolerance/preload/load qualification.
-
-## Reproduce bounded checks
-
-Run `node test-cad.mjs`, `node test-model.mjs` (historical estimates only), and `node docs/contact/scripts/validate.mjs`. Run contact native/WASM generators and mechanical/asset scripts as documented in their folders. Original robot conversion scripts are in `reconstruction/robots/`; retained upstream source/licences and fresh fixtures are in `docs/assets/robots/`. Source paths may need setting to your workspace; the pinned source commits are in the manifest.
-
-## Licensing
-
-Preserve per-asset notices. UR geometry is subject to the complete graphical-documentation terms at `docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt`, including displayed copyright and use notice. Robotiq source, MuJoCo Menagerie assets and Three.js carry their respective notices. No blanket license replaces upstream conditions. No private/review-only coupling STEP is included.
+Run `node test-cad.mjs`, `node test-rover.mjs`, and `node docs/contact/scripts/validate.mjs`. `test-model.mjs` is a historical estimates regression only. Per-asset source terms and original model assumptions remain with the assets. The release manifest records the exact public source package. No private review-only manufacturer geometry is distributed.

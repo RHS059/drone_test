@@ -48,8 +48,8 @@ def adapter():
   p=p.cut(cq.Workplane('XY').center(x,y).circle(18).extrude(32).translate((0,0,10)))
  for a in range(36,396,72):
   x,y=82.55*math.cos(math.radians(a)),82.55*math.sin(math.radians(a));outgoing.append([x,y])
-  p=p.cut(cq.Workplane('XY').center(x,y).circle(7).extrude(32))
- return export(p.val(),'wheel_adapter_C02_R01',{'drive_input_pattern':'5xØ17 clearance onØ140PCD phase0deg for sourceM16x1.5 studs','output_pattern':'5xØ14 tap-drill pilots onØ165.1PCD phase36deg intendedM16x1.5 studs; finished threads absent','input_centers_mm':incoming,'output_centers_mm':outgoing,'WD220_pilot_socket_mm':94,'EVO_pilot_lands_nominal_mm':114.1,'pilot_protrusion_mm':10,'face_spacing_mm':30,'input_socket_pockets':'Ø36 fromZ10 throughZ40 to preserve nut/socket approach; segmented outputpilot','fits':'all nominal, tolerances/retention not released','output_studs':'not modeled; actual rim thickness, closed nut cavity/engagement and stud length unresolved','load_path':'wheel rim->adapter studs/contact->drive flange; strength/torque/fatigue not validated','material':'steel7850kg/m3 assumption, not approvedgrade'})
+  p=p.cut(cq.Workplane('XY').center(x,y).circle(7.25).extrude(32))
+ return export(p.val(),'wheel_adapter_C02_R02',{'drive_input_pattern':'5xØ17 clearance onØ140PCD phase0deg for sourceM16x1.5 studs','output_pattern':'5xØ14.5 tap-drill pilots onØ165.1PCD phase36deg intendedM16x1.5 studs; finished threads absent','input_centers_mm':incoming,'output_centers_mm':outgoing,'WD220_pilot_socket_mm':94,'EVO_pilot_lands_nominal_mm':114.1,'pilot_protrusion_mm':10,'face_spacing_mm':30,'input_socket_pockets':'Ø36 fromZ10 throughZ40 to preserve nut/socket approach; segmented outputpilot','fits':'all nominal, tolerances/retention not released','output_studs':'not modeled; actual rim thickness, closed nut cavity/engagement and stud length unresolved','load_path':'wheel rim->adapter studs/contact->drive flange; strength/torque/fatigue not validated','material':'steel7850kg/m3 assumption, not approvedgrade'})
 if __name__=='__main__':upright();adapter()
 
 # The following parts are original, unqualified C02 wishbone hardware; no vendor internals.

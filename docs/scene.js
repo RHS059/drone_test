@@ -2,7 +2,7 @@ import * as T from 'three/webgpu';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {GLTFLoader} from './vendor/GLTFLoader.js';
 import {forward,origin,multiply,homeJoints} from './kinematics.js';
-import {loadRover} from './rover.js?v=rover-01';
+import {loadRover} from './rover.js?v=rover-02';
 const ROOT='./assets/robots/';
 export async function createScene(host,onSelect){
  const graph=await fetch(ROOT+'robot-kinematics.json').then(r=>{if(!r.ok)throw Error('Source joint graph unavailable');return r.json()});
