@@ -674,8 +674,8 @@
     },
     {
       "path": "docs/contact/ui.mjs",
-      "bytes": 4525,
-      "sha256": "b119688562d1e12c7e905b7cdbbf0ce4e16ca55ecd80ecf755f0d8c521ee2cac"
+      "bytes": 4819,
+      "sha256": "72a05e4a5ff93fd3bea0a2e57ccfac09e8de26772ded004bbb474b91417925e3"
     },
     {
       "path": "docs/contact/vendor/LICENSE-MUJOCO",
@@ -759,8 +759,8 @@
     },
     {
       "path": "docs/scene.js",
-      "bytes": 6546,
-      "sha256": "8ed71a42926449cda9cf96364a8b18cf15dd67e55388a1bde7b0341be3e3bd0c"
+      "bytes": 6571,
+      "sha256": "ec2881f4ff526eaf17f28cf233fc852dfaf0981005483fa3f38edfad7e655d04"
     },
     {
       "path": "docs/style.css",
