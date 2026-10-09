@@ -8,7 +8,7 @@ export async function createScene(host,onSelect){
  const scene=new T.Scene();scene.background=new T.Color('#1c2b2c');
  const camera=new T.PerspectiveCamera(38,1,.02,80);camera.up.set(0,0,1);camera.position.set(5,-6,4.4);
  let renderer=null,renderError=null;try{renderer=new T.WebGPURenderer({antialias:true,forceWebGL:new URLSearchParams(location.search).has('webgl')});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));await renderer.init();host.appendChild(renderer.domElement);renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;}catch(e){renderError=e;renderer=null;const box=document.querySelector('#scene-error');box.hidden=false;box.textContent='3D rendering is unavailable in this browser. Source joint controls and forward kinematics remain executable; no replacement geometry is shown. Try a browser with WebGPU or WebGL 2 enabled.';}
- document.querySelector('#backend').textContent=renderer?(renderer.backend.isWebGPUBackend?'WEBGPU ACTIVE':'WEBGL 2 FALLBACK'):'CPU KINEMATICS · NO GPU';
+ 
  const controls=new OrbitControls(camera,renderer?.domElement??document.createElement('div'));controls.target.set(.2,0,.7);controls.enableDamping=true;controls.minDistance=.2;controls.maxDistance=18;
  scene.add(new T.HemisphereLight('#e7f2ee','#738887',3));const light=new T.DirectionalLight('#fff2dd',4);light.position.set(2,-3,6);scene.add(light);const fill=new T.DirectionalLight('#bddef4',2);fill.position.set(-2,4,3);scene.add(fill);
  const grid=new T.GridHelper(12,24,'#668477','#334b45');grid.rotation.x=Math.PI/2;grid.position.z=-.115;scene.add(grid);const axes=new T.AxesHelper(.4);axes.visible=false;scene.add(axes);
@@ -28,7 +28,7 @@ export async function createScene(host,onSelect){
  const driver=graph.robotiq.joints.find(j=>j.type!=='fixed'&&!j.mimic).name;
  function setArm(i,values){const fk=arms[i].set(values);arms[i].chain.matrix.fromArray(multiply(fk.tool0,origin({rpy:[0,0,Math.PI]})));}
  function home(){arms.forEach((a,i)=>setArm(i,Object.fromEntries(jointNames.map((n,j)=>[n,homeJoints[j]]))));arms.forEach(a=>a.gripper.set({[driver]:0}));}
- home();document.querySelector('#part-count').textContent=`${meshCount} visual meshes`;
+ home();
  const ray=new T.Raycaster(),pointer=new T.Vector2();let down;
  renderer?.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);renderer?.domElement.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5)return;const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,1-(e.clientY-b.top)/b.height*2);ray.setFromCamera(pointer,camera);const hit=ray.intersectObjects(scene.children,true).find(h=>{let p=h.object;if(!p.userData.label)return false;while(p){if(!p.visible)return false;p=p.parent}return true});if(hit)onSelect(hit.object.userData.label)});
  const resize=()=>{if(!renderer||!host.clientWidth||!host.clientHeight)return;renderer.setSize(host.clientWidth,host.clientHeight);camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix()};new ResizeObserver(resize).observe(host);resize();renderer?.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera)});

@@ -39,8 +39,8 @@
     },
     {
       "path": "docs/app.js",
-      "bytes": 2383,
-      "sha256": "0944c0bc9ab286abc548b3b6d8b2d28a566bac20ad4cfe39c18783f42ee1e1b9"
+      "bytes": 2324,
+      "sha256": "43e7bb1b08121f7da7457e85d60c3eab1b801da1c30c4e57dd1c1ebd38100b45"
     },
     {
       "path": "docs/assembly.json",
@@ -734,8 +734,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 6927,
-      "sha256": "5d9405c6cf1d083b34e2ee7430cc0a404ab577aa0bb94ee905230541771a079f"
+      "bytes": 6020,
+      "sha256": "907f7a10d54a51f625d6031b745dfd63c8adf3074593ab1559633c775926504e"
     },
     {
       "path": "docs/kinematics.js",
@@ -759,13 +759,13 @@
     },
     {
       "path": "docs/scene.js",
-      "bytes": 6571,
-      "sha256": "ec2881f4ff526eaf17f28cf233fc852dfaf0981005483fa3f38edfad7e655d04"
+      "bytes": 6339,
+      "sha256": "731315ce612f29354209eba38e3d4c0c34cd10cfc7b48e9bd29d1373f74482b3"
     },
     {
       "path": "docs/style.css",
-      "bytes": 6099,
-      "sha256": "2ab260b01c89a91d1034be517d4ae5912357654d16511b6a15a0b5246e7cc3aa"
+      "bytes": 6308,
+      "sha256": "cb3b09cf16e4627e809f2ce48bca54138ea6d96b043e3830d843039d181454b0"
     },
     {
       "path": "docs/vendor/BufferGeometryUtils.js",
