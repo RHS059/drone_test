@@ -1,0 +1,640 @@
+{
+  "method": "Actual source GLB vertices transformed through source FK and visual origins, compared to exact body B-rep axis-aligned bounds. AABB non-overlap proves no intersection; overlap is inconclusive.",
+  "pose_joint_rad": [
+    0.3,
+    -1.2,
+    1.5,
+    -0.8,
+    1,
+    0.2
+  ],
+  "bases_m": [
+    [
+      0.9,
+      0.3,
+      0.13
+    ],
+    [
+      0.9,
+      -0.3,
+      0.13
+    ]
+  ],
+  "gripper_driver_rad": 0,
+  "qualified": false,
+  "motion_sweep_performed": false,
+  "body_collision_candidates": [
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_rear_wall",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_left_side",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_weld_flange",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_gasket",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_removable_lid",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_M6_3",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_nutplate_3",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_rear_wall",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_weld_flange",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_gasket",
+      "status": "AABB overlap only; narrow phase required"
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "part": "front_tool_hatch_removable_lid",
+      "status": "AABB overlap only; narrow phase required"
+    }
+  ],
+  "source_link_bounds": [
+    {
+      "arm": "left",
+      "link": "base_link_inertia",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7774897015835757,
+          0.17748971979025224,
+          0.13019210066666298
+        ],
+        [
+          1.0225661769962635,
+          0.42251029346133595,
+          0.2376482079883972
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.08212226867200968
+    },
+    {
+      "arm": "left",
+      "link": "shoulder_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7744286106383822,
+          0.2101252007468951,
+          0.2383726667297852
+        ],
+        [
+          0.9907418876588153,
+          0.45460960438992293,
+          0.4631675446615854
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.17450879272139108
+    },
+    {
+      "arm": "left",
+      "link": "upper_arm_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7390172960851855,
+          0.39667374265952393,
+          0.27527165629890105
+        ],
+        [
+          1.228492367193534,
+          0.7143092551505305,
+          1.2454065085388917
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.0
+    },
+    {
+      "arm": "left",
+      "link": "forearm_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.0833386240037202,
+          0.35795275991761377,
+          0.9043049968631838
+        ],
+        [
+          1.9008705316567298,
+          0.7306439698646274,
+          1.244756165107626
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5953049968631838
+    },
+    {
+      "arm": "left",
+      "link": "wrist_1_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.7558598482364702,
+          0.701269462105936,
+          0.8561297426878471
+        ],
+        [
+          1.8873076857743374,
+          0.8513847332094184,
+          1.006481513467324
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5855520088052913
+    },
+    {
+      "arm": "left",
+      "link": "wrist_2_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.798434431874845,
+          0.7500775569490165,
+          0.7629121420231928
+        ],
+        [
+          1.9646884670522977,
+          0.9084383866849051,
+          0.9042821063436133
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.520205298964423
+    },
+    {
+      "arm": "left",
+      "link": "wrist_3_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.8811695188359998,
+          0.8404902907103419,
+          0.8029098133069058
+        ],
+        [
+          2.0023181474697305,
+          0.958820779079754,
+          0.9218329008057473
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.600248851146585
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_base_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9503831209197844,
+          0.9275296125264311,
+          0.8577619381643599
+        ],
+        [
+          2.047004621533726,
+          1.0299192505024273,
+          0.9376530787251103
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.6950436056675772
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_left_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.0253570500999296,
+          0.9432344415047006,
+          0.9060785220866673
+        ],
+        [
+          2.0635213333613365,
+          0.9811251469813087,
+          0.9254386341618074
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7474186907983662
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_right_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9525841750392239,
+          1.0022231426802615,
+          0.8996804370862215
+        ],
+        [
+          1.9948613685882544,
+          1.0357877396934791,
+          0.9193353369584966
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7740389348397295
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_left_finger_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.042991237469027,
+          0.9392319056202533,
+          0.9028285172550509
+        ],
+        [
+          2.0974033477156,
+          0.990064043884033,
+          0.9508139955354007
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7445332990112272
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_right_finger_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.948133306428293,
+          1.017126318148281,
+          0.8919034284997553
+        ],
+        [
+          1.9903614691624905,
+          1.075945898936647,
+          0.9392281049776403
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7775904394755611
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_left_inner_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.012971595915178,
+          0.9785101480201591,
+          0.8986261683352098
+        ],
+        [
+          2.085518333015983,
+          1.006244976536223,
+          0.9510766629436169
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7612361286975663
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_right_inner_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9891281152123916,
+          0.9943107296611332,
+          0.8966924492553526
+        ],
+        [
+          2.0142917003384833,
+          1.0682599957178733,
+          0.9432423025871856
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.767841441315617
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_left_finger_tip_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.0678292482827993,
+          0.9733679447599553,
+          0.9232747351182353
+        ],
+        [
+          2.1010778532389036,
+          1.036375497449677,
+          0.9641975052134076
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.7842349109702718
+    },
+    {
+      "arm": "left",
+      "link": "robotiq_85_right_finger_tip_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9729536041868136,
+          1.0515661988709235,
+          0.9117229927918087
+        ],
+        [
+          2.0309843161775554,
+          1.0926612953721895,
+          0.9562955009882729
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.81551186636658
+    },
+    {
+      "arm": "right",
+      "link": "base_link_inertia",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7774897015835757,
+          -0.42251028020974774,
+          0.13019210066666298
+        ],
+        [
+          1.0225661769962635,
+          -0.177489706538664,
+          0.2376482079883972
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.08212225616794876
+    },
+    {
+      "arm": "right",
+      "link": "shoulder_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7744286106383822,
+          -0.38987479925310486,
+          0.2383726667297852
+        ],
+        [
+          0.9907418876588153,
+          -0.14539039561007705,
+          0.4631675446615854
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.14277971463472253
+    },
+    {
+      "arm": "right",
+      "link": "upper_arm_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          0.7390172960851855,
+          -0.20332625734047602,
+          0.27527165629890105
+        ],
+        [
+          1.228492367193534,
+          0.11430925515053056,
+          1.2454065085388917
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.0
+    },
+    {
+      "arm": "right",
+      "link": "forearm_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.0833386240037202,
+          -0.24204724008238626,
+          0.9043049968631838
+        ],
+        [
+          1.9008705316567298,
+          0.13064396986462742,
+          1.244756165107626
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5993049968631838
+    },
+    {
+      "arm": "right",
+      "link": "wrist_1_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.7558598482364702,
+          0.10126946210593597,
+          0.8561297426878471
+        ],
+        [
+          1.8873076857743374,
+          0.2513847332094184,
+          1.006481513467324
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5543709901375304
+    },
+    {
+      "arm": "right",
+      "link": "wrist_2_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.798434431874845,
+          0.15007755694901642,
+          0.7629121420231928
+        ],
+        [
+          1.9646884670522977,
+          0.308438386684905,
+          0.9042821063436133
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.46304188262159457
+    },
+    {
+      "arm": "right",
+      "link": "wrist_3_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.8811695188359998,
+          0.24049029071034206,
+          0.8029098133069058
+        ],
+        [
+          2.0023181474697305,
+          0.3588207790797541,
+          0.9218329008057473
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5030395539053076
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_base_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9503831209197844,
+          0.3275296125264312,
+          0.8577619381643599
+        ],
+        [
+          2.047004621533726,
+          0.42991925050242735,
+          0.9376530787251103
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5578985697401216
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_left_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.0253570500999296,
+          0.3432344415047006,
+          0.9060785220866673
+        ],
+        [
+          2.0635213333613365,
+          0.3811251469813087,
+          0.9254386341618074
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.6111734816710245
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_right_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9525841750392239,
+          0.4022231426802616,
+          0.8996804370862215
+        ],
+        [
+          1.9948613685882544,
+          0.4357877396934792,
+          0.9193353369584966
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5998308005711873
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_left_finger_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.042991237469027,
+          0.3392319056202534,
+          0.9028285172550509
+        ],
+        [
+          2.0974033477156,
+          0.39006404388403315,
+          0.9508139955354007
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.6104557280981717
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_right_finger_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.948133306428293,
+          0.41712631814828116,
+          0.8919034284997553
+        ],
+        [
+          1.9903614691624905,
+          0.4759458989366474,
+          0.9392281049776403
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.5920334001676377
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_left_inner_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.012971595915178,
+          0.37851014802015925,
+          0.8986261683352098
+        ],
+        [
+          2.085518333015983,
+          0.40624497653622305,
+          0.9510766629436169
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.602312830450014
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_right_inner_knuckle_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9891281152123916,
+          0.39431072966113323,
+          0.8966924492553526
+        ],
+        [
+          2.0142917003384833,
+          0.4682599957178734,
+          0.9432423025871856
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.598264540579426
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_left_finger_tip_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          2.0678292482827993,
+          0.37336794475995544,
+          0.9232747351182353
+        ],
+        [
+          2.1010778532389036,
+          0.4363754974496772,
+          0.9641975052134076
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.6348903456676948
+    },
+    {
+      "arm": "right",
+      "link": "robotiq_85_right_finger_tip_link",
+      "actual_source_vertex_bounds_m": [
+        [
+          1.9729536041868136,
+          0.4515661988709235,
+          0.9117229927918087
+        ],
+        [
+          2.0309843161775554,
+          0.49266129537218956,
+          0.9562955009882729
+        ]
+      ],
+      "minimum_AABB_separation_lower_bound_m": 0.6123773784345953
+    }
+  ]
+}

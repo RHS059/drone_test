@@ -1,0 +1,477 @@
+{
+  "revision": "body_power_R01",
+  "assembly_frame": "R06 frame C, X forward/Y left/Z up",
+  "units": {
+    "STEP": "mm",
+    "GLB": "m; Z up"
+  },
+  "model_classes": {
+    "body_power_R01": "original engineering/manufacturing-development CAD",
+    "cots_reservations_R01": "dimension-only packaging cuboids, not actual supplier CAD"
+  },
+  "frame_transform": {
+    "translation_m": [
+      0,
+      0,
+      0
+    ],
+    "rotation_rpy_rad": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "body_bounds_m": [
+    [
+      -2.05,
+      -0.6505389376066132,
+      -0.117
+    ],
+    [
+      2.05,
+      0.6505389376066132,
+      0.349
+    ]
+  ],
+  "source_shape_file": "body_power_R01.step",
+  "render_asset": "body_power_R01.glb",
+  "optional_dimensional_overlay": "cots_reservations_R01.glb",
+  "battery_well_bounds_m": [
+    [
+      -1.125,
+      -0.36,
+      -0.08
+    ],
+    [
+      -0.475,
+      0.36,
+      0.337
+    ]
+  ],
+  "upper_hull": {
+    "lower_wall_top_z_m": 0.22,
+    "maximum_shoulder_Y_nominal_m": 0.65,
+    "maximum_shoulder_z_nominal_m": 0.26,
+    "roof_width_m": 0.9,
+    "roof_flange_z_m": 0.337,
+    "nominal_normal_thickness_m": 0.003,
+    "provenance": "original clearance-led design choice; no dimensions measured from supplied photos"
+  },
+  "arm_mounts_unchanged_m": [
+    [
+      0.9,
+      0.3,
+      0.13
+    ],
+    [
+      0.9,
+      -0.3,
+      0.13
+    ]
+  ],
+  "arm_station_above_z_m": 0.13,
+  "arm_service_region_m": [
+    [
+      0.65,
+      -0.51,
+      0.13
+    ],
+    [
+      1.15,
+      0.51,
+      10
+    ]
+  ],
+  "suspension": {
+    "current_architecture": "provisional six independent equal-link double wishbones",
+    "station_X_m": [
+      -1.35,
+      0,
+      1.35
+    ],
+    "wheel_center_Y_m": [
+      -0.94,
+      0.94
+    ],
+    "wheel_center_Z_m": -0.25,
+    "lower_deck_cutout_X_width_m": 0.48,
+    "lower_deck_cutout_Y_abs_m": [
+      0.385,
+      0.535
+    ],
+    "lower_side_cutout_max_Z_m": 0.132,
+    "shock_envelope_source": "mechanical worker message2026-10-09; provisional, not measured CAD",
+    "shock_each_X_halfwidth_m": 0.06,
+    "shock_each_Y_abs_m": [
+      0.52,
+      0.8
+    ],
+    "shock_each_Z_m": [
+      -0.43,
+      0.2
+    ],
+    "full_suspension_CAD_and_sweep_checked": false,
+    "revision": "C02 provisional",
+    "tire_OD_m": 0.8763,
+    "provisional_tire_section_m": 0.3175,
+    "coilover_service_cutout_X_width_m": 0.16,
+    "coilover_service_cutout_top_Z_m": 0.215,
+    "shock_reservation_status": "C02 provisional envelope supplied by mechanical worker; actual spring not selected, full swept CAD not checked",
+    "coilover_fixed_eye_C_relative_station_absY_Z_m": [
+      0.56,
+      0.17
+    ],
+    "coilover_moving_eye_nominal_absY_Z_m": [
+      0.7203,
+      -0.3675
+    ]
+  },
+  "rail_clamps": {
+    "X_centers_m": [
+      -1.05,
+      -0.55
+    ],
+    "Y_centers_m": [
+      -0.46,
+      0.46
+    ],
+    "top_plate_bounds_Z_m": [
+      0.103,
+      0.109
+    ],
+    "bottom_plate_bounds_Z_m": [
+      -0.106,
+      -0.1
+    ],
+    "bolt_Y_abs_m": [
+      0.39,
+      0.53
+    ],
+    "warning": "No frame holes added; clamp wall-crush/preload/friction qualification pending"
+  },
+  "cots": {
+    "RELiON_48V030_GC2": {
+      "qty": 4,
+      "dimensions_m": [
+        0.26,
+        0.18,
+        0.276
+      ],
+      "source_mass_kg_each": 15.6,
+      "centers_C_m": [
+        [
+          -0.95,
+          -0.11,
+          0.065
+        ],
+        [
+          -0.95,
+          0.11,
+          0.065
+        ],
+        [
+          -0.65,
+          -0.11,
+          0.065
+        ],
+        [
+          -0.65,
+          0.11,
+          0.065
+        ]
+      ],
+      "status": "provisional packaging, not selected qualified battery bank"
+    },
+    "UR_OEM_DC": {
+      "qty": 2,
+      "source_dimensions_WHD_m": [
+        0.451,
+        0.15,
+        0.168
+      ],
+      "installed_envelope_XYZ_m": [
+        0.168,
+        0.451,
+        0.15
+      ],
+      "source_mass_kg_each": 4.3,
+      "centers_C_m": [
+        [
+          -1.71,
+          0,
+          0.218
+        ],
+        [
+          -1.37,
+          0,
+          0.218
+        ]
+      ],
+      "status": "source dimensional reservation, supplier hole pattern/connector details not acquired"
+    }
+  },
+  "verification_files": [
+    "verification.json",
+    "arm_clearance_screen.json",
+    "arm_triangle_clearance_screen.json",
+    "reservation_checks.json"
+  ],
+  "fabrication_release": false,
+  "electrical_architecture_qualified": false,
+  "weatherproofing_qualified": false,
+  "service_access": [
+    {
+      "id": "rear_controller_hatch",
+      "type": "bolted removable cover; no hinge",
+      "cover_nodes": [
+        "rear_controller_hatch_removable_lid"
+      ],
+      "associated_gasket_nodes": [
+        "rear_controller_hatch_gasket"
+      ],
+      "associated_removable_fastener_nodes": [
+        "rear_controller_hatch_M6_1",
+        "rear_controller_hatch_M6_2",
+        "rear_controller_hatch_M6_3",
+        "rear_controller_hatch_M6_4",
+        "rear_controller_hatch_M6_5",
+        "rear_controller_hatch_M6_6"
+      ],
+      "fixed_flange_nodes": [
+        "rear_controller_hatch_weld_flange"
+      ],
+      "removal_direction_C": [
+        0,
+        0,
+        1
+      ],
+      "viewer_lift_distance_m": 0.3,
+      "fastener_captivity": "not modeled or asserted",
+      "operation": "To show service access, hide cover/gasket/screws, retain fixed flange and nutplates; no physical hinge should be invented."
+    },
+    {
+      "id": "battery_hatch",
+      "type": "bolted removable cover; no hinge",
+      "cover_nodes": [
+        "battery_hatch_removable_lid"
+      ],
+      "associated_gasket_nodes": [
+        "battery_hatch_gasket"
+      ],
+      "associated_removable_fastener_nodes": [
+        "battery_hatch_M6_1",
+        "battery_hatch_M6_2",
+        "battery_hatch_M6_3",
+        "battery_hatch_M6_4",
+        "battery_hatch_M6_5",
+        "battery_hatch_M6_6"
+      ],
+      "fixed_flange_nodes": [
+        "battery_hatch_weld_flange"
+      ],
+      "removal_direction_C": [
+        0,
+        0,
+        1
+      ],
+      "viewer_lift_distance_m": 0.3,
+      "fastener_captivity": "not modeled or asserted",
+      "operation": "To show service access, hide cover/gasket/screws, retain fixed flange and nutplates; no physical hinge should be invented."
+    },
+    {
+      "id": "payload_tool_hatch",
+      "type": "bolted removable cover; no hinge",
+      "cover_nodes": [
+        "payload_tool_hatch_removable_lid"
+      ],
+      "associated_gasket_nodes": [
+        "payload_tool_hatch_gasket"
+      ],
+      "associated_removable_fastener_nodes": [
+        "payload_tool_hatch_M6_1",
+        "payload_tool_hatch_M6_2",
+        "payload_tool_hatch_M6_3",
+        "payload_tool_hatch_M6_4",
+        "payload_tool_hatch_M6_5",
+        "payload_tool_hatch_M6_6"
+      ],
+      "fixed_flange_nodes": [
+        "payload_tool_hatch_weld_flange"
+      ],
+      "removal_direction_C": [
+        0,
+        0,
+        1
+      ],
+      "viewer_lift_distance_m": 0.3,
+      "fastener_captivity": "not modeled or asserted",
+      "operation": "To show service access, hide cover/gasket/screws, retain fixed flange and nutplates; no physical hinge should be invented."
+    },
+    {
+      "id": "front_tool_hatch",
+      "type": "bolted removable cover; no hinge",
+      "cover_nodes": [
+        "front_tool_hatch_removable_lid"
+      ],
+      "associated_gasket_nodes": [
+        "front_tool_hatch_gasket"
+      ],
+      "associated_removable_fastener_nodes": [
+        "front_tool_hatch_M6_1",
+        "front_tool_hatch_M6_2",
+        "front_tool_hatch_M6_3",
+        "front_tool_hatch_M6_4",
+        "front_tool_hatch_M6_5",
+        "front_tool_hatch_M6_6"
+      ],
+      "fixed_flange_nodes": [
+        "front_tool_hatch_weld_flange"
+      ],
+      "removal_direction_C": [
+        0,
+        0,
+        1
+      ],
+      "viewer_lift_distance_m": 0.3,
+      "fastener_captivity": "not modeled or asserted",
+      "operation": "To show service access, hide cover/gasket/screws, retain fixed flange and nutplates; no physical hinge should be invented."
+    },
+    {
+      "id": "left_inspection_1",
+      "type": "removable inspection plate; no hinge",
+      "cover_nodes": [
+        "left_side_service_cover_1"
+      ],
+      "associated_removable_fastener_nodes": [],
+      "removal_direction_C": [
+        0,
+        1,
+        0
+      ],
+      "viewer_lift_distance_m": 0.15,
+      "fastener_captivity": "side cover screws not modeled; clearance bores and backing clips only",
+      "operation": "Hide or translate this plate outward. Fixed nutclips remain."
+    },
+    {
+      "id": "left_inspection_2",
+      "type": "removable inspection plate; no hinge",
+      "cover_nodes": [
+        "left_side_service_cover_2"
+      ],
+      "associated_removable_fastener_nodes": [],
+      "removal_direction_C": [
+        0,
+        1,
+        0
+      ],
+      "viewer_lift_distance_m": 0.15,
+      "fastener_captivity": "side cover screws not modeled; clearance bores and backing clips only",
+      "operation": "Hide or translate this plate outward. Fixed nutclips remain."
+    },
+    {
+      "id": "right_inspection_1",
+      "type": "removable inspection plate; no hinge",
+      "cover_nodes": [
+        "right_side_service_cover_1"
+      ],
+      "associated_removable_fastener_nodes": [],
+      "removal_direction_C": [
+        0,
+        -1,
+        0
+      ],
+      "viewer_lift_distance_m": 0.15,
+      "fastener_captivity": "side cover screws not modeled; clearance bores and backing clips only",
+      "operation": "Hide or translate this plate outward. Fixed nutclips remain."
+    },
+    {
+      "id": "right_inspection_2",
+      "type": "removable inspection plate; no hinge",
+      "cover_nodes": [
+        "right_side_service_cover_2"
+      ],
+      "associated_removable_fastener_nodes": [],
+      "removal_direction_C": [
+        0,
+        -1,
+        0
+      ],
+      "viewer_lift_distance_m": 0.15,
+      "fastener_captivity": "side cover screws not modeled; clearance bores and backing clips only",
+      "operation": "Hide or translate this plate outward. Fixed nutclips remain."
+    }
+  ],
+  "mass_accounting": {
+    "included_original_body_mass_kg": 115.71496048218766,
+    "included_battery_source_mass_kg": 62.4,
+    "included_UR_OEM_DC_source_mass_kg": 8.6,
+    "not_a_full_vehicle_mass": true,
+    "excluded_categories": [
+      {
+        "component": "main frame",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "UR20 robot arms and grippers",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "WD220 geared motors",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "traction inverters/controllers",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "rim/tire assemblies and drive adapters",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "electrical harness",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "contactors/fuses/precharge/charger",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "cooling fans/filters/duct attachments",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "payload/tools",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      },
+      {
+        "component": "additional brackets or fixes in other integration packages",
+        "mass_kg": null,
+        "status": "not accounted in this package; consult integrated BOM; never assume zero"
+      }
+    ]
+  },
+  "power_limits": {
+    "motor_current_rating_not_verified_as_DC_bus_current": true,
+    "six_motor_current_rating_sum_A": 282,
+    "six_mechanical_ratings_W": 13200,
+    "ideal_DC_input_A_at_nominal_51_2V_if_all_at_rated_output": 257.8125,
+    "four_battery_individual_recommended_current_sum_A": 180,
+    "four_battery_individual_maximum_current_sum_A": 400,
+    "summed_battery_ratings_qualified_as_pack_rating": false,
+    "UR_controller_heat_is_not_double_counted_as_electrical_input": true
+  }
+}

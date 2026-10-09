@@ -1,0 +1,34 @@
+{
+  "verified_at_utc": "2026-10-09",
+  "model_classification": "Original dimensional fit-development CAD; not OEM CAD",
+  "manufacturer_geometry_used": false,
+  "sources": [
+    {
+      "id": "BFG_KM3_DATABOOK",
+      "url": "https://www.usautoforce.com/wp-content/uploads/2025/03/BFGoodrich_PCLT_Databook.pdf.pdf",
+      "publisher": "BFGoodrich tire databook, hosted by U.S. AutoForce",
+      "page_pdf_zero_index": 28,
+      "page_printed": 27,
+      "row": "MSPN 72204; 35x12.50R18/E 123Q",
+      "dimensional_facts": {"diameter_in": 34.5, "section_width_in": 12.5, "measuring_rim_in": 10, "approved_rim_width_in": [8.5, 11], "tread_depth_32nds_in": 18, "revolutions_per_mile_at45mph": 602, "max_single_load_lb": 3415, "pressure_for_catalog_load_psi": 75},
+      "limits": "Dimensions measured on 10in rim; actual dimensions on selected 8.5in rim unverified. No detailed geometry or deformed radius supplied."
+    },
+    {
+      "id": "EVO_EXACT_SKU",
+      "url": "https://shop.evocorse.com/en/catalog/catalog_item/dakarzero-85x18-se5240060141.aspx?k=cm0752170010-5",
+      "publisher": "EVO Corse official shop",
+      "part": "SE5240060141",
+      "rendered_kit": "CM0750180040-5",
+      "facts": {"diameter_in": 18, "width_in": 8.5, "offset_mm": 18, "lug_count": 5, "pcd_mm": 165.1, "center_bore_mm": 114.1, "nut_seat": "flat (Piatto)", "steel_insert": false, "centering_ring": false, "published_load_kg_per_wheel": 1400},
+      "limits": "No detailed rim cross-section, lug bore diameter, pad thickness, finished fits or STEP obtained. URL query differs from rendered kit; rendered SKU and product data used. Catalog load does not qualify the original model."
+    },
+    {
+      "id": "EVO_LUG_NUT",
+      "url": "https://evocorse.com/en/product/end-nut-lug-for-land-rover-m16x1-5-black-zinc-plated/",
+      "publisher": "EVO Corse",
+      "part": "CM0750180040",
+      "facts": {"thread": "M16x1.5", "seat": "flat with washer", "hex_mm": 27, "length_mm": 51.5, "exterior_diameter_mm": 38.5, "mass_g": 212},
+      "limits": "Nuts omitted from this model. Overall length does not establish thread depth, projection or engagement."
+    }
+  ]
+}

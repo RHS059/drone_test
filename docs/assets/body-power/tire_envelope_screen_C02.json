@@ -1,0 +1,50 @@
+{
+  "status": "analytic nominal envelope screening only; not actual mesh fit or certified travel",
+  "source": "C02 mechanical worker geometry contract supplied2026-10-09 and manufacturer-dimension wheel candidate relayed by integrator",
+  "assumptions": [
+    "Equal parallel wishbones preserve upright orientation; steering locked",
+    "Wheel center relative to lower outer pivot isY+128mm andZ+170mm",
+    "Link vector from chassis to outer pivot isY262mm,Z-150mm",
+    "Link angle limited to proposed+/-12degrees for this check",
+    "876.3mm tire OD and317.5mm section are provisional factual-dimension envelopes; actual width on8.5in rim, inflation/load deflection and drive fit remain unqualified",
+    "No lateral compliance, fabrication tolerance or arm movement is included"
+  ],
+  "endpoints": [
+    {
+      "joint_angle_deg": -12,
+      "absolute_wheel_center_Y_m": 0.9030879177695933,
+      "wheel_center_Z_m": -0.3011950031043238,
+      "nominal_tire_inner_absY_m": 0.7443379177695932,
+      "conservative_lateral_gap_to_body_m": 0.09379898016298005,
+      "tire_vertical_envelope_m": [
+        -0.7393450031043238,
+        0.1369549968956762
+      ]
+    },
+    {
+      "joint_angle_deg": 0,
+      "absolute_wheel_center_Y_m": 0.9400000000000001,
+      "wheel_center_Z_m": -0.25,
+      "nominal_tire_inner_absY_m": 0.78125,
+      "conservative_lateral_gap_to_body_m": 0.1307110623933868,
+      "tire_vertical_envelope_m": [
+        -0.68815,
+        0.18814999999999998
+      ]
+    },
+    {
+      "joint_angle_deg": 12,
+      "absolute_wheel_center_Y_m": 0.965461425014921,
+      "wheel_center_Z_m": -0.19224927711581788,
+      "nominal_tire_inner_absY_m": 0.806711425014921,
+      "conservative_lateral_gap_to_body_m": 0.1561724874083078,
+      "tire_vertical_envelope_m": [
+        -0.6303992771158179,
+        0.2459007228841821
+      ]
+    }
+  ],
+  "minimum_nominal_lateral_clearance_m": 0.09379898016298005,
+  "is_circular_motion_minimum_over_interval": true,
+  "reason": "Wheel-centerY derivative is\u2212.262sin(q)+.15cos(q), positive over\u00b112deg, so smallestY occurs at\u221212deg. BodymaxabsY is an exact original-CAD bound."
+}

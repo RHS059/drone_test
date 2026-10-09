@@ -1,0 +1,83 @@
+{
+  "revision": "C01",
+  "cadquery": "2.7.0",
+  "elapsed_s": 27.518325328826904,
+  "tests": {
+    "all_brep_parts_valid": true,
+    "two_single_solid_parts": true,
+    "tire_rim_no_volume_overlap": true,
+    "outer_diameter_x_matches876_3": true,
+    "outer_diameter_z_matches876_3": true,
+    "section_width_matches_provisional317_5": true,
+    "five_lug_through_holes": true,
+    "center_bore_open": true,
+    "center_bore_wall_present": true,
+    "flat_mounting_pad_material": true,
+    "inner_air_cavity_open": true,
+    "bead_nominal_contact": true
+  },
+  "brep_bounds_mm": {
+    "tire": [
+      -438.15,
+      -158.75,
+      -438.15,
+      438.15,
+      158.75,
+      438.15
+    ],
+    "rim": [
+      -244.6,
+      -114.94999999999999,
+      -244.6,
+      244.6,
+      114.94999999999999,
+      244.6
+    ]
+  },
+  "volume_mm3": {
+    "tire": 30141975.392984502,
+    "rim": 4975462.293794162
+  },
+  "triangle_mesh": {
+    "tire": {
+      "vertices": 108888,
+      "triangles": 36296,
+      "bounds_m": [
+        [
+          -0.43815,
+          -0.15875,
+          -0.43815
+        ],
+        [
+          0.43815,
+          0.15875,
+          0.43815
+        ]
+      ]
+    },
+    "rim": {
+      "vertices": 66942,
+      "triangles": 22314,
+      "bounds_m": [
+        [
+          -0.24459999999999998,
+          -0.11494999999999998,
+          -0.24459999999999998
+        ],
+        [
+          0.24459999999999998,
+          0.11494999999999998,
+          0.24459999999999998
+        ]
+      ]
+    }
+  },
+  "tire_rim_overlap_mm3": 0.0,
+  "qualified": false,
+  "limitations": [
+    "These tests verify this original model, not actual OEM geometry or physical fit.",
+    "Tire envelope on 8.5in rim is provisional; manufacturer measuring rim is 10in.",
+    "No structural, fatigue, pressure, bead-retention, fastener, offset-load, brake, or vehicle qualification.",
+    "No manufacturer CAD used or claimed. Generic original tread and wheel disc."
+  ]
+}
