@@ -1,3 +1,7 @@
+# Archived source reference
+
+These BSD-licensed Clearpath Warthog models were acquired for comparison. They are not loaded by the current six-wheel vehicle scene and are not the selected wheel or drivetrain. The selected source-backed wheel model is in ../wheels/. Original four-wheel Warthog ratings do not qualify this six-wheel design.
+
 # Genuine running-gear source assets
 
 Retrieved 2026-10-09 from the official Clearpath Warthog ROS description distribution:

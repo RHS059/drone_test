@@ -1,20 +1,28 @@
-# Six-Wheel Builder: real-CAD reconstruction R01
+# Six-wheel vehicle development model
 
-[Open the viewer](https://rhs059.github.io/drone_test/).
+This is a new source-backed reconstruction. The earlier missing local package and its historical audits have not been recovered.
 
-This is a new reconstruction of the previously unpublished local package, not recovery of that package or reuse of its audit results.
+## Current assembly
 
-- Actual licensed UR20/Robotiq source meshes, original textures and source joint graphs; executable joint/mimic controls.
-- Original parametric frame R06 and adapter R03 B-rep/STEP, source generators and fresh checks.
-- Standalone MuJoCo native/WASM contact model, with software parity separated from task success. New nominal/heavy cases pass the 10 mm screen; low-friction case fails. These are new declared experiments, not the earlier lost experiments.
-- Explicit GPU fallback: CPU kinematics remains usable where WebGPU/WebGL2 is unavailable. Rendered appearance was not independently verified before initial deployment because the QA executor cannot launch Chromium; post-deploy browser checks are separate.
+- Six original source-backed wheel models using published BFGoodrich KM3 MSPN 72204 and EVO Corse SE5240060141 dimensions. The file's C01 suffix is its component revision; it is not the earlier Warthog assembly configuration or its test evidence.
+- Original faceted body, 175 CAD solids, eight removable service-cover groups, and separate battery/controller dimensional reservations.
+- Original R07 lighter frame candidate, 386.953 kg at assumed steel density. Geometric validity, connected interfaces and machining-access checks do not establish structural strength.
+- Original independent corner interfaces. Steering and suspension travel remain locked while geometry/hardware checks continue. Selected motor solids are excluded because their redistribution is restricted; no substitute shape is claimed as authentic motor CAD.
+- Licensed UR20 and Robotiq source meshes and joint graphs; two independently adjustable arms and mimic-driven grippers.
+- Separate executable MuJoCo gripper experiment. Newly reconstructed nominal/heavy cases pass the strict 10 mm screen; low-friction fails. This does not qualify vehicle manipulation or reuse lost experiment results.
 
-No whole robot, rated drivetrain, collision-free motion, physical manufacturing release, autonomous assembly or repair capability is claimed. A nominal source-frame mating convention is not tolerance/preload/load qualification.
+## Verification boundaries
 
-## Reproduce bounded checks
+Original wheel native and delivered geometry checks passed. Body solids, export roundtrip, service-node names and R07/body exact intersections passed. Final corner geometry and complete browser rendering are checked separately against the final release revision. The prior frame-and-arms page was rendered successfully in Colab at desktop and mobile sizes; that is not evidence for this expanded assembly.
 
-Run `node test-cad.mjs`, `node test-model.mjs` (historical estimates only), and `node docs/contact/scripts/validate.mjs`. Run contact native/WASM generators and mechanical/asset scripts as documented in their folders. Original robot conversion scripts are in `reconstruction/robots/`; retained upstream source/licences and fresh fixtures are in `docs/assets/robots/`. Source paths may need setting to your workspace; the pinned source commits are in the manifest.
+Nominal unloaded tire geometry is tangent to the flat ground plane. Loaded tire radius, terrain response, suspension dynamics, steering, braking, drive duty, battery integration, complete mass/CG and structural loads remain unresolved. Wheel and drive masses are unknown and are not silently treated as zero. Current documented corner hardware exceeds single-arm payload before the motor and wheel are added. Service-cover visualization is not executed repair; supported module removal requires rated external equipment and engineered lifting points.
 
-## Licensing
+## Reproduce bounded software checks
 
-Preserve per-asset notices. UR geometry is subject to the complete graphical-documentation terms at `docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt`, including displayed copyright and use notice. Robotiq source, MuJoCo Menagerie assets and Three.js carry their respective notices. No blanket license replaces upstream conditions. No private/review-only coupling STEP is included.
+Run `node test-cad.mjs` for source FK, mimic joints, limits and robot source hashes. `node docs/contact/scripts/validate.mjs` reads saved contact results without rewriting them. Original CAD generators and source/dimensional assumptions accompany the assets. The historical `test-model.mjs` tests the legacy cost model only.
+
+## Sources and permissions
+
+UR graphical documentation retains its complete source terms and visible copyright notice. Robotiq, MuJoCo and Three.js retain their source-specific notices. Original body, frame, interface and source-backed wheel CAD are identified separately. Original tread and hidden rim/tire profiles are explicitly assumptions. The archived BSD Warthog assets are comparison references and are not loaded as the selected running gear. Restricted motor STEP/PDF, private review coupling STEP and user reference photographs are not distributed.
+
+Buildability, autonomous peer assembly, self-repair and physical fabrication release remain open project goals.

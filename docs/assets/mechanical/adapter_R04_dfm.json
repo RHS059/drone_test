@@ -1,0 +1,175 @@
+{
+  "file": "adapter_R04.step",
+  "solids": 1,
+  "issues": [],
+  "parts": [
+    {
+      "part": "solid_00",
+      "stock": "turned from round bar >= \u00d8100+stock allowance, L=26.0",
+      "stock_standard": true,
+      "holes": [
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -20.0,
+            -34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            20.0,
+            -34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -40.0,
+            0.0,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -20.0,
+            34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            40.0,
+            0.0,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            20.0,
+            34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            20.0,
+            34.6,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            -20.0,
+            34.6,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            -40.0,
+            0.0,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            -20.0,
+            -34.6,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            20.0,
+            -34.6,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 15.0,
+          "center_mm": [
+            40.0,
+            0.0,
+            17.5
+          ],
+          "class": "M8 counterbore",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            -17.7,
+            -17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            17.7,
+            -17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            -17.7,
+            17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            17.7,
+            17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

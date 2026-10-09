@@ -1,0 +1,105 @@
+{
+  "file": "body_power_R01.glb",
+  "sha256": "186dd531e2402e8ed62a9d306d7427c01ab8d863546b37c47d12c209aac07d3f",
+  "node_count": 175,
+  "unique_node_names": true,
+  "all_service_names_match_exactly": true,
+  "service_groups": [
+    {
+      "id": "rear_controller_hatch",
+      "referenced_node_count": 9,
+      "missing_nodes": [],
+      "exact_names": [
+        "rear_controller_hatch_removable_lid",
+        "rear_controller_hatch_gasket",
+        "rear_controller_hatch_M6_1",
+        "rear_controller_hatch_M6_2",
+        "rear_controller_hatch_M6_3",
+        "rear_controller_hatch_M6_4",
+        "rear_controller_hatch_M6_5",
+        "rear_controller_hatch_M6_6",
+        "rear_controller_hatch_weld_flange"
+      ]
+    },
+    {
+      "id": "battery_hatch",
+      "referenced_node_count": 9,
+      "missing_nodes": [],
+      "exact_names": [
+        "battery_hatch_removable_lid",
+        "battery_hatch_gasket",
+        "battery_hatch_M6_1",
+        "battery_hatch_M6_2",
+        "battery_hatch_M6_3",
+        "battery_hatch_M6_4",
+        "battery_hatch_M6_5",
+        "battery_hatch_M6_6",
+        "battery_hatch_weld_flange"
+      ]
+    },
+    {
+      "id": "payload_tool_hatch",
+      "referenced_node_count": 9,
+      "missing_nodes": [],
+      "exact_names": [
+        "payload_tool_hatch_removable_lid",
+        "payload_tool_hatch_gasket",
+        "payload_tool_hatch_M6_1",
+        "payload_tool_hatch_M6_2",
+        "payload_tool_hatch_M6_3",
+        "payload_tool_hatch_M6_4",
+        "payload_tool_hatch_M6_5",
+        "payload_tool_hatch_M6_6",
+        "payload_tool_hatch_weld_flange"
+      ]
+    },
+    {
+      "id": "front_tool_hatch",
+      "referenced_node_count": 9,
+      "missing_nodes": [],
+      "exact_names": [
+        "front_tool_hatch_removable_lid",
+        "front_tool_hatch_gasket",
+        "front_tool_hatch_M6_1",
+        "front_tool_hatch_M6_2",
+        "front_tool_hatch_M6_3",
+        "front_tool_hatch_M6_4",
+        "front_tool_hatch_M6_5",
+        "front_tool_hatch_M6_6",
+        "front_tool_hatch_weld_flange"
+      ]
+    },
+    {
+      "id": "left_inspection_1",
+      "referenced_node_count": 1,
+      "missing_nodes": [],
+      "exact_names": [
+        "left_side_service_cover_1"
+      ]
+    },
+    {
+      "id": "left_inspection_2",
+      "referenced_node_count": 1,
+      "missing_nodes": [],
+      "exact_names": [
+        "left_side_service_cover_2"
+      ]
+    },
+    {
+      "id": "right_inspection_1",
+      "referenced_node_count": 1,
+      "missing_nodes": [],
+      "exact_names": [
+        "right_side_service_cover_1"
+      ]
+    },
+    {
+      "id": "right_inspection_2",
+      "referenced_node_count": 1,
+      "missing_nodes": [],
+      "exact_names": [
+        "right_side_service_cover_2"
+      ]
+    }
+  ]
+}

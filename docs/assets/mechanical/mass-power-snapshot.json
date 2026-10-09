@@ -1,0 +1,156 @@
+{
+  "snapshot_at": "2026-10-09T09:20:55.218220+00:00",
+  "not_qualification": true,
+  "corner_contract": "/workspace/shared/ugv-reconstruction/mechanical/running_gear_C02/interface_contract_C02_R04.json",
+  "mass_is_nominal_model_subtotal_not_weighed_vehicle": true,
+  "mass_known_subset_kg": 976.441201222018,
+  "whole_vehicle_mass_kg": null,
+  "whole_vehicle_CG": null,
+  "mass_ledger_known": [
+    {
+      "part": "stationary_clamp_C02_R01_report",
+      "kg_each": 17.746202208141767,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "inner_backing_C02_R01_report",
+      "kg_each": 2.3991864732733807,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "upper_wishbone_C02_R02_report",
+      "kg_each": 3.3050465839693355,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "lower_wishbone_C02_R02_report",
+      "kg_each": 3.72632257275236,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "upright_WD220_C02_R04_report",
+      "kg_each": 8.855862537886368,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "wheel_adapter_C02_R01_report",
+      "kg_each": 6.476056771434446,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "stationary_hardware_C02_R01_report",
+      "kg_each": 2.061987056223305,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "upright_pins_C02_R02_report",
+      "kg_each": 0.7859325157247677,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "original chosen geometry"
+    },
+    {
+      "part": "upper_bearing_envelopes_C02_R02_report",
+      "kg_each": null,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "reference bearing envelope"
+    },
+    {
+      "part": "lower_bearing_envelopes_C02_R02_report",
+      "kg_each": null,
+      "quantity": 6,
+      "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
+      "classification": "reference bearing envelope"
+    },
+    {
+      "part": "frame_R07",
+      "kg_each": 386.9529671773959,
+      "quantity": 1,
+      "basis": "CAD volume \u00d77850kg/m\u00b3; new lightweight geometry, strength unqualified"
+    },
+    {
+      "part": "body+4batteries+2OEMDCcontrollers",
+      "kg_each": 186.71496048218768,
+      "quantity": 1,
+      "basis": "original CAD nominal densities + source component masses"
+    },
+    {
+      "part": "UR20 arm",
+      "kg_each": 64,
+      "quantity": 2,
+      "basis": "catalogue, not source inertia normalization"
+    },
+    {
+      "part": "adapter_R04",
+      "kg_each": 1.316846623,
+      "quantity": 2,
+      "basis": "fresh imported STEP \u00d77850kg/m\u00b3"
+    }
+  ],
+  "unknown_or_excluded_mass": [
+    "six WD220 drives",
+    "six tires",
+    "six rims",
+    "two grippers/couplings",
+    "six coilovers",
+    "missing suspension pins/bearings/retainers/bolts",
+    "traction inverters/controllers",
+    "harness/contactors/fuses/precharge/charger",
+    "cooling and safety electronics",
+    "tools/payload"
+  ],
+  "drive": {
+    "power_W_each": 2200,
+    "duty": "S2 60minutes; S1 unknown",
+    "output_rpm": 74,
+    "ideal_torque_Nm_at_rated_power_speed": 283.89800659635387,
+    "max_drawing_torque_Nm_not_continuous": 1000,
+    "rated_current_A_each": 47,
+    "rated_current_DCbus_basis_verified": false,
+    "six_rating_current_sum_A_not_actual_bus_current": 282,
+    "exact_drive_mass_kg": null
+  },
+  "battery": {
+    "units": 4,
+    "nominal_voltage_V": 51.2,
+    "nominal_energy_Wh_arithmetic": 6144,
+    "recommended_current_sum_A_not_pack_rating": 180,
+    "maximum_current_sum_A_not_pack_rating": 400,
+    "source": "https://www.relionbattery.com/products/lithium/insight-gc2-48v",
+    "system_qualified": false
+  },
+  "simultaneous_rated_power_screen": {
+    "assumption": "2200W per motor is mechanical output; no arm/auxiliary power and no conversion losses",
+    "mechanical_power_W": 13200,
+    "minimum_DC_current_A_at51_2V": 257.8125,
+    "recommended_battery_current_exceeded": true,
+    "nominal_energy_divided_by_mechanical_power_h_upper_bound_not_runtime": 0.46545454545454545
+  },
+  "functions": {
+    "steering": "locked, no implemented mechanism; skid-steer not validated",
+    "suspension": "parallel-link kinematic study, springs/damping/load qualification unknown",
+    "repair": "service-access visualization, no validated autonomous removal/replacement sequence",
+    "corner_known_original_hardware_kg": 45.35659671940573,
+    "complete_corner_arm_only_lift_supported": false
+  },
+  "public_license_gate": [
+    "Explicit whitelist; no WD220 ZIP/PDF/STEP or derived vendor mesh",
+    "Source-backed original wheel is not OEM tire/rim geometry or rated manufactured hardware",
+    "Retain UR graphical terms and per-source robot/contact notices"
+  ]
+}

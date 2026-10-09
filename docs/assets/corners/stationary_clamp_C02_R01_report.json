@@ -1,0 +1,47 @@
+{
+  "part": "stationary_clamp_C02_R01",
+  "original_geometry": true,
+  "not_vendor_CAD": true,
+  "not_fabrication_released": true,
+  "bounds_mm": [
+    -235.0,
+    510.0,
+    -320.0,
+    235.0,
+    590.0,
+    200.0
+  ],
+  "solid_count": 1,
+  "BRep_valid": true,
+  "density_kg_m3": 7850,
+  "density_assumed": true,
+  "volume_m3": 0.0022606627016741104,
+  "mass_kg": 17.746202208141767,
+  "com_m": [
+    -9.681267571343675e-18,
+    0.5202341257509426,
+    -0.07228550569724351
+  ],
+  "inertia_com_kg_m2": [
+    [
+      0.38321905577335946,
+      -3.2061888229013544e-17,
+      -2.670596667100681e-18
+    ],
+    [
+      -3.2061888229013544e-17,
+      0.7529775425999758,
+      -0.0032055859069323274
+    ],
+    [
+      -2.670596667100681e-18,
+      -0.0032055859069323274,
+      0.3763238303270316
+    ]
+  ],
+  "notes": {
+    "axes": "already vehicleC mm atstationX0,leftside",
+    "design": "original welded CHS32x3 tube link with\u00d850 eyes/\u00d835nominal bearing pockets, chosenGE20ESenvelope20x35x16",
+    "status": "fits,retainers,pins,grade,welds,stiffness,fatigue andloadselection unresolved"
+  }
+}

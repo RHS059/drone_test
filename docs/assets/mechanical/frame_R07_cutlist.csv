@@ -1,0 +1,6 @@
+part,qty,stock,blank_length_mm,notes
+mainrails,2,RHS200x100x6 R12/R6,4000,supplierradii/grade TBD
+armcrosses,2,RHS200x100x6 R12/R6,860,centers730/1070;cope to mainrail
+secondarycrosses,6,RHS100x60x5 R10/R5,860,topZ100;cope to mainrail
+decks,2,plate400x400x30,400,same12pilots0degphase
+gussets,6,triangularplate100x80x8,100,weldedgeprep TBD

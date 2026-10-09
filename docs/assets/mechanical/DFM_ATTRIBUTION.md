@@ -1,0 +1,1 @@
+DFM checker and known-answer tests authored by Claude on branch claude/ugv-cad-realism-zbrycm, commit9d4eeeb3c8902a0cc1363345cbdfa0eb7a35abde. Source retained unchanged. Reports rerun on current frame R07 and adapter R04 in scratch workspace. Geometric screening does not establish fabrication readiness or strength.
