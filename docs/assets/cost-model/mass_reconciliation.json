@@ -1,0 +1,2748 @@
+{
+  "configuration": {
+    "revision": "C04_E05_R01",
+    "structural_revision": "C04_R05",
+    "mechanical_public_freeze": "C04_R02",
+    "steering_corner_count": 4,
+    "middle_corner_count": 2,
+    "rack_count": 2,
+    "frame_revision": "R07",
+    "body_revision": "PR01 + SO02_E04P + E04 trough + BA02 + E05 four bores / two partition replacements",
+    "battery_revision": "BA02",
+    "electrical_revision": "E04 + E05 two geometric Q0-to-Lynx main routes",
+    "tool_adapter_revision": "R04",
+    "not_fabrication_released": true
+  },
+  "known_subset_kg": 1272.5501071050776,
+  "whole_vehicle_mass_kg": null,
+  "groups_kg": {
+    "frame": 386.9529671773959,
+    "tools_and_arms": 139.233693246,
+    "structure": 347.912332809332,
+    "joint_details": 14.017320451359337,
+    "shock_details": 16.93926994842406,
+    "mechanical_purchased": 152.24,
+    "body": 113.53953045712207,
+    "battery_mount": 7.2705448374377335,
+    "battery_catalogue": 74.0,
+    "electrical_catalogue": 2.7,
+    "electrical_original": 13.242345372493395,
+    "E05_nominal_routed_cable": 4.0746920453939,
+    "E05_original_aluminium_stands": 0.42741076011947243
+  },
+  "body_stages": [
+    {
+      "stage": "PR01 baseline, R02 holes already included",
+      "part_count": 267,
+      "known_original_mass_kg": 116.7967822162259
+    },
+    {
+      "stage": "SO02_E04P replaces exactly 20 named parts",
+      "part_count": 267,
+      "known_original_mass_kg": 115.99386426207543
+    },
+    {
+      "stage": "E04 19-part trough/glands named delta; 15 original parts and 4 unknown-mass purchased representations",
+      "part_count": 271,
+      "known_original_mass_kg": 115.88551866207544
+    },
+    {
+      "stage": "BA02 removes 34 RELiON restraint parts and replaces battery well floor",
+      "part_count": 237,
+      "known_original_mass_kg": 113.5556902568118
+    },
+    {
+      "stage": "E05 four M25 bores, exactly two named partition replacements; 40-hole deck unchanged",
+      "part_count": 237,
+      "known_original_mass_kg": 113.53953045712207
+    }
+  ],
+  "baseline_known_subset_kg": 1268.0641640992537,
+  "delta": {
+    "revision": "C04+E05_R01",
+    "baseline_known_subset_kg": 1268.0641640992537,
+    "partition_replacement_delta_kg": -0.016159799689731358,
+    "new_original_aluminium_stands_kg": 0.4274107601194724,
+    "nominal_routed_cable_length_m": 5.628027687008149,
+    "nominal_routed_cable_mass_kg": 4.0746920453939,
+    "known_subset_delta_kg": 4.485943005823641,
+    "candidate_known_subset_kg": 1272.5501071050776,
+    "whole_vehicle_mass_kg": null,
+    "E05_complete_installed_mass_kg": null,
+    "E05_complete_cost": null,
+    "new_source_nodes": 98,
+    "replaced_body_nodes": 2,
+    "net_source_node_increase": 98,
+    "added_BOM_rows": 98,
+    "total_BOM_rows": 328,
+    "unresolved_E05_node_masses": 88,
+    "public_price_baskets": [
+      {
+        "currency": "PLN",
+        "reference_subtotal": 6090.0,
+        "line_ids": [
+          "tires"
+        ],
+        "line_count": 1,
+        "complete_build_total": false,
+        "tax_basis": "PLN tire listing gross/brutto",
+        "shipping_total": null,
+        "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+      },
+      {
+        "currency": "USD",
+        "reference_subtotal": 17200.0,
+        "line_ids": [
+          "grippers",
+          "couplings",
+          "batteries",
+          "battery_bms"
+        ],
+        "line_count": 4,
+        "complete_build_total": false,
+        "tax_basis": "Mixed references: US gripper/coupling tax basis unresolved; LATAM battery/BMS ex VAT",
+        "shipping_total": null,
+        "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+      }
+    ],
+    "priced_subset_delta_by_currency": {
+      "USD": 0.0,
+      "PLN": 0.0
+    },
+    "complete_build_cost": null,
+    "actual_cost_per_operating_hour": null,
+    "whole_rover_runtime_hours": null,
+    "operating_scenarios_changed": false,
+    "geometric_main_routes_only": 2,
+    "electrical_end_to_end_complete": false,
+    "publication_status": "Separate candidate; original app, C04 cost freeze and pending publication payload unchanged",
+    "warning": "A zero priced-subset delta means no additional accepted prices. It does not mean E05 costs zero."
+  },
+  "rows": [
+    {
+      "id": "frame_R07",
+      "quantity": 1,
+      "unit_mass_kg": 386.9529671773959,
+      "extended_mass_kg": 386.9529671773959,
+      "mass_group": "frame",
+      "basis": "source_snapshot_or_catalogue_not_weighed"
+    },
+    {
+      "id": "adapter_R04",
+      "quantity": 2,
+      "unit_mass_kg": 1.316846623,
+      "extended_mass_kg": 2.633693246,
+      "mass_group": "tools_and_arms",
+      "basis": "source_snapshot_or_catalogue_not_weighed"
+    },
+    {
+      "id": "arms",
+      "quantity": 2,
+      "unit_mass_kg": 64,
+      "extended_mass_kg": 128,
+      "mass_group": "tools_and_arms",
+      "basis": "source_snapshot_or_catalogue_not_weighed"
+    },
+    {
+      "id": "arm_controllers",
+      "quantity": 2,
+      "unit_mass_kg": 4.3,
+      "extended_mass_kg": 8.6,
+      "mass_group": "tools_and_arms",
+      "basis": "source_snapshot_or_catalogue_not_weighed"
+    },
+    {
+      "id": "grippers",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "tools_and_arms",
+      "basis": "unknown"
+    },
+    {
+      "id": "couplings",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "tools_and_arms",
+      "basis": "unknown"
+    },
+    {
+      "id": "gripper_cable_interface",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "tools_and_arms",
+      "basis": "unknown"
+    },
+    {
+      "id": "gripper_fingertips",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "tools_and_arms",
+      "basis": "unknown"
+    },
+    {
+      "id": "structure:rear_right_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 22.23048056057798,
+      "extended_mass_kg": 22.23048056057798,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.6681890876748207,
+      "extended_mass_kg": 3.6681890876748207,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_lower",
+      "quantity": 1,
+      "unit_mass_kg": 10.268957155706405,
+      "extended_mass_kg": 10.268957155706405,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.289272214215286,
+      "extended_mass_kg": 9.289272214215286,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "extended_mass_kg": 0.0698968629807323,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "extended_mass_kg": 0.0698968629807323,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654337,
+      "extended_mass_kg": 0.14257134237654337,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654365,
+      "extended_mass_kg": 0.14257134237654365,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.061987039990519,
+      "extended_mass_kg": 2.061987039990519,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845095,
+      "extended_mass_kg": 0.08997689119845095,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599903,
+      "extended_mass_kg": 0.0029670869991599903,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599885,
+      "extended_mass_kg": 0.0029670869991599885,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_right_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990872025,
+      "extended_mass_kg": 0.016184268990872025,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 22.23048056057832,
+      "extended_mass_kg": 22.23048056057832,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.668189087674823,
+      "extended_mass_kg": 3.668189087674823,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_lower",
+      "quantity": 1,
+      "unit_mass_kg": 10.268934620560124,
+      "extended_mass_kg": 10.268934620560124,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.289270852293232,
+      "extended_mass_kg": 9.289270852293232,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073233,
+      "extended_mass_kg": 0.06989686298073233,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073232,
+      "extended_mass_kg": 0.06989686298073232,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654343,
+      "extended_mass_kg": 0.14257134237654343,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654362,
+      "extended_mass_kg": 0.14257134237654362,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.0619870399905205,
+      "extended_mass_kg": 2.0619870399905205,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845097,
+      "extended_mass_kg": 0.08997689119845097,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599903,
+      "extended_mass_kg": 0.0029670869991599903,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.002967086999159988,
+      "extended_mass_kg": 0.002967086999159988,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_left_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990872025,
+      "extended_mass_kg": 0.016184268990872025,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 19.693450938638954,
+      "extended_mass_kg": 19.693450938638954,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.2946095768123294,
+      "extended_mass_kg": 3.2946095768123294,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_lower",
+      "quantity": 1,
+      "unit_mass_kg": 8.850337690749116,
+      "extended_mass_kg": 8.850337690749116,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_upright",
+      "quantity": 1,
+      "unit_mass_kg": 8.822382493350158,
+      "extended_mass_kg": 8.822382493350158,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_outer_pins",
+      "quantity": 1,
+      "unit_mass_kg": 0.7859325076089254,
+      "extended_mass_kg": 0.7859325076089254,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.0619870399905205,
+      "extended_mass_kg": 2.0619870399905205,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845095,
+      "extended_mass_kg": 0.08997689119845095,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599885,
+      "extended_mass_kg": 0.0029670869991599885,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.002967086999159987,
+      "extended_mass_kg": 0.002967086999159987,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_right_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990871987,
+      "extended_mass_kg": 0.016184268990871987,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 19.693450938638954,
+      "extended_mass_kg": 19.693450938638954,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.2946095768123285,
+      "extended_mass_kg": 3.2946095768123285,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_lower",
+      "quantity": 1,
+      "unit_mass_kg": 8.85033769074911,
+      "extended_mass_kg": 8.85033769074911,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_upright",
+      "quantity": 1,
+      "unit_mass_kg": 8.822382493350158,
+      "extended_mass_kg": 8.822382493350158,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_outer_pins",
+      "quantity": 1,
+      "unit_mass_kg": 0.785932507608926,
+      "extended_mass_kg": 0.785932507608926,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.061987039990521,
+      "extended_mass_kg": 2.061987039990521,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845097,
+      "extended_mass_kg": 0.08997689119845097,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599885,
+      "extended_mass_kg": 0.0029670869991599885,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599864,
+      "extended_mass_kg": 0.0029670869991599864,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:middle_left_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990871987,
+      "extended_mass_kg": 0.016184268990871987,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 22.230480560577988,
+      "extended_mass_kg": 22.230480560577988,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.6681890876748215,
+      "extended_mass_kg": 3.6681890876748215,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_lower",
+      "quantity": 1,
+      "unit_mass_kg": 10.268934620560124,
+      "extended_mass_kg": 10.268934620560124,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.289270848822245,
+      "extended_mass_kg": 9.289270848822245,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "extended_mass_kg": 0.0698968629807323,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.0698968629807323,
+      "extended_mass_kg": 0.0698968629807323,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654337,
+      "extended_mass_kg": 0.14257134237654337,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654365,
+      "extended_mass_kg": 0.14257134237654365,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.061987039990519,
+      "extended_mass_kg": 2.061987039990519,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845095,
+      "extended_mass_kg": 0.08997689119845095,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599903,
+      "extended_mass_kg": 0.0029670869991599903,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599885,
+      "extended_mass_kg": 0.0029670869991599885,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_right_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990872025,
+      "extended_mass_kg": 0.016184268990872025,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_clamp",
+      "quantity": 1,
+      "unit_mass_kg": 22.230480560578236,
+      "extended_mass_kg": 22.230480560578236,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_upper",
+      "quantity": 1,
+      "unit_mass_kg": 3.6681890876748215,
+      "extended_mass_kg": 3.6681890876748215,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_lower",
+      "quantity": 1,
+      "unit_mass_kg": 10.268957155706408,
+      "extended_mass_kg": 10.268957155706408,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_upright",
+      "quantity": 1,
+      "unit_mass_kg": 9.289272217695114,
+      "extended_mass_kg": 9.289272217695114,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_retainer_upper",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073233,
+      "extended_mass_kg": 0.06989686298073233,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_retainer_lower",
+      "quantity": 1,
+      "unit_mass_kg": 0.06989686298073232,
+      "extended_mass_kg": 0.06989686298073232,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_inner_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654343,
+      "extended_mass_kg": 0.14257134237654343,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_outer_tie_pin",
+      "quantity": 1,
+      "unit_mass_kg": 0.14257134237654362,
+      "extended_mass_kg": 0.14257134237654362,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_inner_backing_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.3991864732733807,
+      "extended_mass_kg": 2.3991864732733807,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_stationary_hardware_C02_R01",
+      "quantity": 1,
+      "unit_mass_kg": 2.0619870399905205,
+      "extended_mass_kg": 2.0619870399905205,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_breakout_bracket_left_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.08997689119845097,
+      "extended_mass_kg": 0.08997689119845097,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_breakout_standoff_0_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.0029670869991599903,
+      "extended_mass_kg": 0.0029670869991599903,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_breakout_standoff_1_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.002967086999159988,
+      "extended_mass_kg": 0.002967086999159988,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_left_breakout_carrier_fasteners_C04_R01",
+      "quantity": 1,
+      "unit_mass_kg": 0.016184268990872025,
+      "extended_mass_kg": 0.016184268990872025,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_actuator_rear_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954320265,
+      "extended_mass_kg": 0.06743817954320265,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_actuator_front_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954321525,
+      "extended_mass_kg": 0.06743817954321525,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_rack_crossbeam_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 11.980767049304413,
+      "extended_mass_kg": 11.980767049304413,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_rack_carriage_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 7.301668252212658,
+      "extended_mass_kg": 7.301668252212658,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_rack_guide_retained_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 6.963280069789366,
+      "extended_mass_kg": 6.963280069789366,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_liner_-1_captured_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.042070875,
+      "extended_mass_kg": 0.042070875,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_end_cap_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.07104825213222933,
+      "extended_mass_kg": 0.07104825213222933,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_-1_0_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087192,
+      "extended_mass_kg": 0.0010506575795087192,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_-1_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087207,
+      "extended_mass_kg": 0.0010506575795087207,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_-1_2_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087157,
+      "extended_mass_kg": 0.0010506575795087157,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_-1_3_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508717,
+      "extended_mass_kg": 0.001050657579508717,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_inner_stop_M4x90_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.009970303533172535,
+      "extended_mass_kg": 0.009970303533172535,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_stop_washer_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000308318102138149,
+      "extended_mass_kg": 0.000308318102138149,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_stop_nut_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0007503061191775027,
+      "extended_mass_kg": 0.0007503061191775027,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_liner_1_captured_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.042070875,
+      "extended_mass_kg": 0.042070875,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_end_cap_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.07104825213222933,
+      "extended_mass_kg": 0.07104825213222933,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_1_0_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508719,
+      "extended_mass_kg": 0.001050657579508719,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_1_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087207,
+      "extended_mass_kg": 0.0010506575795087207,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_1_2_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087157,
+      "extended_mass_kg": 0.0010506575795087157,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_guide_cap_M3x10_1_3_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508717,
+      "extended_mass_kg": 0.001050657579508717,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_inner_stop_M4x90_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.009970303533171321,
+      "extended_mass_kg": 0.009970303533171321,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_stop_washer_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000308318102138149,
+      "extended_mass_kg": 0.000308318102138149,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_liner_stop_nut_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000750306119177504,
+      "extended_mass_kg": 0.000750306119177504,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:rear_rack_fasteners",
+      "quantity": 1,
+      "unit_mass_kg": 0.388706593634882,
+      "extended_mass_kg": 0.388706593634882,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_actuator_rear_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954320265,
+      "extended_mass_kg": 0.06743817954320265,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_actuator_front_pin_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 0.06743817954321525,
+      "extended_mass_kg": 0.06743817954321525,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_rack_crossbeam_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 11.980767049304413,
+      "extended_mass_kg": 11.980767049304413,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_rack_carriage_C03_R11",
+      "quantity": 1,
+      "unit_mass_kg": 7.301668252212658,
+      "extended_mass_kg": 7.301668252212658,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_rack_guide_retained_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 6.963280069789366,
+      "extended_mass_kg": 6.963280069789366,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_liner_-1_captured_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.042070875,
+      "extended_mass_kg": 0.042070875,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_end_cap_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.07104825213222933,
+      "extended_mass_kg": 0.07104825213222933,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_-1_0_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087192,
+      "extended_mass_kg": 0.0010506575795087192,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_-1_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087207,
+      "extended_mass_kg": 0.0010506575795087207,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_-1_2_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087157,
+      "extended_mass_kg": 0.0010506575795087157,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_-1_3_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508717,
+      "extended_mass_kg": 0.001050657579508717,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_inner_stop_M4x90_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.009970303533172535,
+      "extended_mass_kg": 0.009970303533172535,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_stop_washer_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000308318102138149,
+      "extended_mass_kg": 0.000308318102138149,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_stop_nut_-1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0007503061191775027,
+      "extended_mass_kg": 0.0007503061191775027,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_liner_1_captured_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.042070875,
+      "extended_mass_kg": 0.042070875,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_end_cap_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.07104825213222933,
+      "extended_mass_kg": 0.07104825213222933,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_1_0_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508719,
+      "extended_mass_kg": 0.001050657579508719,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_1_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087207,
+      "extended_mass_kg": 0.0010506575795087207,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_1_2_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.0010506575795087157,
+      "extended_mass_kg": 0.0010506575795087157,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_guide_cap_M3x10_1_3_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.001050657579508717,
+      "extended_mass_kg": 0.001050657579508717,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_inner_stop_M4x90_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.009970303533171321,
+      "extended_mass_kg": 0.009970303533171321,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_stop_washer_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000308318102138149,
+      "extended_mass_kg": 0.000308318102138149,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_liner_stop_nut_1_C04_R12",
+      "quantity": 1,
+      "unit_mass_kg": 0.000750306119177504,
+      "extended_mass_kg": 0.000750306119177504,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "structure:front_rack_fasteners",
+      "quantity": 1,
+      "unit_mass_kg": 0.388706593634882,
+      "extended_mass_kg": 0.388706593634882,
+      "mass_group": "structure",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_cheek_spacer_100_C04_R01",
+      "quantity": 8,
+      "unit_mass_kg": 0.005425530512749573,
+      "extended_mass_kg": 0.043404244101996586,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_cheek_spacer_80_C04_R01",
+      "quantity": 48,
+      "unit_mass_kg": 0.005425530512749574,
+      "extended_mass_kg": 0.2604254646119796,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_inner_ring_spacer_100_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.07378721497339422,
+      "extended_mass_kg": 0.29514885989357686,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_inner_ring_spacer_80_C04_R01",
+      "quantity": 24,
+      "unit_mass_kg": 0.0520850929223959,
+      "extended_mass_kg": 1.2500422301375016,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_outer_race_spacer_100_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.1957630055009369,
+      "extended_mass_kg": 0.7830520220037476,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_outer_race_spacer_80_C04_R01",
+      "quantity": 24,
+      "unit_mass_kg": 0.14138439286178775,
+      "extended_mass_kg": 3.393225428682906,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_retainer_100_positive_C04_R01",
+      "quantity": 8,
+      "unit_mass_kg": 0.02480651196438427,
+      "extended_mass_kg": 0.19845209571507416,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:GE20_retainer_80_positive_C04_R01",
+      "quantity": 48,
+      "unit_mass_kg": 0.024806511964384267,
+      "extended_mass_kg": 1.1907125742904447,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:actuator_front_external_washer_C04_R01",
+      "quantity": 2,
+      "unit_mass_kg": 0.009598333774295389,
+      "extended_mass_kg": 0.019196667548590778,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:actuator_rear_external_washer_C04_R01",
+      "quantity": 2,
+      "unit_mass_kg": 0.0197018430103958,
+      "extended_mass_kg": 0.0394036860207916,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:middle_outer_pin_cotter_washer_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.012655974727325783,
+      "extended_mass_kg": 0.05062389890930313,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:middle_outer_pin_head_takeup_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.018921537663214128,
+      "extended_mass_kg": 0.07568615065285651,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:outer_pin_fork72_C04_R02",
+      "quantity": 8,
+      "unit_mass_kg": 0.25378391376026976,
+      "extended_mass_kg": 2.030271310082158,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:outer_shim_layer_0_C04_R02",
+      "quantity": 16,
+      "unit_mass_kg": 0.0012685568530122592,
+      "extended_mass_kg": 0.020296909648196148,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:outer_shim_layer_1_C04_R02",
+      "quantity": 16,
+      "unit_mass_kg": 0.0005074227412049061,
+      "extended_mass_kg": 0.008118763859278498,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:outer_shim_layer_2_C04_R02",
+      "quantity": 16,
+      "unit_mass_kg": 0.0002537113706024531,
+      "extended_mass_kg": 0.004059381929639249,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:outer_shim_layer_3_C04_R02",
+      "quantity": 16,
+      "unit_mass_kg": 0.0002537113706024531,
+      "extended_mass_kg": 0.004059381929639249,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:root_pin_cotter_washer_C04_R01",
+      "quantity": 24,
+      "unit_mass_kg": 0.012655974727325776,
+      "extended_mass_kg": 0.30374339345581863,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:root_pin_head_takeup_C04_R01",
+      "quantity": 24,
+      "unit_mass_kg": 0.04466814609644392,
+      "extended_mass_kg": 1.072035506314654,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:tie_insert_LH_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.05255304492912053,
+      "extended_mass_kg": 0.21021217971648212,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:tie_insert_RH_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.05255304492912053,
+      "extended_mass_kg": 0.21021217971648212,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:tie_pin_cotter_washer_C04_R01",
+      "quantity": 8,
+      "unit_mass_kg": 0.02228047127290624,
+      "extended_mass_kg": 0.1782437701832499,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "joint_details:tie_tube_C04_R01",
+      "quantity": 4,
+      "unit_mass_kg": 0.5941735879887423,
+      "extended_mass_kg": 2.3766943519549693,
+      "mass_group": "joint_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:guided_upper_carrier_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 1.84713955467078,
+      "extended_mass_kg": 11.08283732802468,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:guided_lower_carrier_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 0.7244417478085237,
+      "extended_mass_kg": 4.346650486851142,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:shock_clevis_reducer_sleeve_C04_R01",
+      "quantity": 24,
+      "unit_mass_kg": 0.0021623205243540117,
+      "extended_mass_kg": 0.05189569258449628,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:shock_spring_shared_pin_C04_R03",
+      "quantity": 6,
+      "unit_mass_kg": 0.08561910302546698,
+      "extended_mass_kg": 0.5137146181528018,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:shock_spring_external_washer_C04_R03",
+      "quantity": 6,
+      "unit_mass_kg": 0.004628655718689481,
+      "extended_mass_kg": 0.027771934312136884,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:shock_lower_service_pin_C04_R05",
+      "quantity": 6,
+      "unit_mass_kg": 0.13981464175960676,
+      "extended_mass_kg": 0.8388878505576405,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:shock_lower_service_washer_C04_R05",
+      "quantity": 6,
+      "unit_mass_kg": 0.004628655718689479,
+      "extended_mass_kg": 0.027771934312136877,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:bronze_telescoping_guide_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "shock_details",
+      "basis": "unknown"
+    },
+    {
+      "id": "shock_details:guide_retaining_M4x10_0_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 0.0020725043178757697,
+      "extended_mass_kg": 0.012435025907254618,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:guide_retaining_M4x10_1_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 0.0020725043178757697,
+      "extended_mass_kg": 0.012435025907254618,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:guide_retaining_M4x10_2_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 0.0020725043178757697,
+      "extended_mass_kg": 0.012435025907254618,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "shock_details:guide_retaining_M4x10_3_C04_R07",
+      "quantity": 6,
+      "unit_mass_kg": 0.0020725043178757697,
+      "extended_mass_kg": 0.012435025907254618,
+      "mass_group": "shock_details",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "drives",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "rims",
+      "quantity": 6,
+      "unit_mass_kg": 19.5,
+      "extended_mass_kg": 117.0,
+      "mass_group": "mechanical_purchased",
+      "basis": "catalogue mass; not weighed"
+    },
+    {
+      "id": "tires",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "wheel_nuts",
+      "quantity": 30,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "dampers",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "springs",
+      "quantity": 6,
+      "unit_mass_kg": 3.54,
+      "extended_mass_kg": 21.240000000000002,
+      "mass_group": "mechanical_purchased",
+      "basis": "catalogue mass; not weighed"
+    },
+    {
+      "id": "steering_actuators",
+      "quantity": 2,
+      "unit_mass_kg": 7.0,
+      "extended_mass_kg": 14.0,
+      "mass_group": "mechanical_purchased",
+      "basis": "catalogue mass; not weighed"
+    },
+    {
+      "id": "spherical_bearings",
+      "quantity": 56,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "outer_spherical_bearings",
+      "quantity": 8,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "outer_spacers",
+      "quantity": 16,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "tie_spacers",
+      "quantity": 16,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "tie_ends",
+      "quantity": 8,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "tie_jam_nuts",
+      "quantity": 8,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "motor_mount_screws",
+      "quantity": 48,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "joint_retaining_screws",
+      "quantity": 224,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "bearing_retaining_screws",
+      "quantity": 32,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "guide_retaining_screws",
+      "quantity": 24,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "rack_cap_screws",
+      "quantity": 16,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "rack_stop_screws",
+      "quantity": 4,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": "mechanical_purchased",
+      "basis": "unknown"
+    },
+    {
+      "id": "body_composed",
+      "quantity": 1,
+      "unit_mass_kg": 113.53953045712207,
+      "extended_mass_kg": 113.53953045712207,
+      "mass_group": "body",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "battery_mount_BA02",
+      "quantity": 1,
+      "unit_mass_kg": 7.2705448374377335,
+      "extended_mass_kg": 7.2705448374377335,
+      "mass_group": "battery_mount",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "batteries",
+      "quantity": 2,
+      "unit_mass_kg": 37,
+      "extended_mass_kg": 74,
+      "mass_group": "battery_catalogue",
+      "basis": "catalogue mass; not weighed"
+    },
+    {
+      "id": "battery_strap_pairs",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:QB1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:QB2",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:Q0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:Q_shrouds",
+      "quantity": 12,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "battery_bms",
+      "quantity": 1,
+      "unit_mass_kg": 2.7,
+      "extended_mass_kg": 2.7,
+      "mass_group": "electrical_catalogue",
+      "basis": "catalogue mass; not weighed"
+    },
+    {
+      "id": "electrical:PG1/PG2",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:PG_nuts",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:QB_lugs",
+      "quantity": 8,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:Q0_lugs",
+      "quantity": 4,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:LYNX_lugs",
+      "quantity": 4,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:breakout_cases",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical:lid_screws",
+      "quantity": 24,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_positive_pack_fuse",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_battery_merge_bus",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_bank_positive_fuse",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_load_distribution",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:traction_branch_protection",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:traction_branch_contactor",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:DC_to_three_phase_inverter",
+      "quantity": 6,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_UR_inrush_branch",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:required_external_steering_switch",
+      "quantity": 2,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:vehicle_controller_candidate",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:battery_telemetry_gateway",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "required:current_sensor_candidate",
+      "quantity": 11,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "electrical_original",
+      "quantity": 1,
+      "unit_mass_kg": 13.242345372493395,
+      "extended_mass_kg": 13.242345372493395,
+      "mass_group": "electrical_original",
+      "basis": "original material-volume estimate; not weighed"
+    },
+    {
+      "id": "remaining_harness",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "charger",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "aux_converter",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "cooling",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "safety_controls",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "tire_services",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "steering",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "task_tools",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "residual_mechanical_hardware",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "build_labor",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "engineering_nre",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "logistics_tax",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "external_workcell",
+      "quantity": null,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "unknown"
+    },
+    {
+      "id": "E05:MAIN_positive_70mm2_routed_jacket",
+      "quantity": 2.7697464313510465,
+      "unit_mass_kg": 0.724,
+      "extended_mass_kg": 2.0052964162981577,
+      "mass_group": "E05_nominal_routed_cable",
+      "basis": "Manufacturer nominal 724 kg/km × geometric centreline length; excludes allowances, terminations and hardware; procurement cut length unreleased"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535216881,
+      "extended_mass_kg": 0.05035083535216881,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535216881,
+      "extended_mass_kg": 0.05035083535216881,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535217693,
+      "extended_mass_kg": 0.05035083535217693,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535217491,
+      "extended_mass_kg": 0.05035083535217491,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_70mm2_routed_jacket",
+      "quantity": 2.8582812556571024,
+      "unit_mass_kg": 0.724,
+      "extended_mass_kg": 2.0693956290957423,
+      "mass_group": "E05_nominal_routed_cable",
+      "basis": "Manufacturer nominal 724 kg/km × geometric centreline length; excludes allowances, terminations and hardware; procurement cut length unreleased"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    }
+  ],
+  "exclusions": "Known modeled/catalogue subtotal, not weighed or complete. Drives, tires, nuts, straps/buckles, dampers, bearings and most installed electrical components remain unknown. Named patches replace prior geometry; density is never applied to purchased representations. E05 nominal routed cable length and aluminium stand estimates are included. Procurement cut allowances, 64 unselected commercial fasteners, 16 material-unspecified clamps and eight purchased gland/locknut masses remain unknown. Do not treat the known subset as installed whole-vehicle mass."
+}

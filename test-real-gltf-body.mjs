@@ -1,0 +1,7 @@
+import{registerHooks}from'node:module';import fs from'node:fs';import{gunzipSync}from'node:zlib';import assert from'node:assert/strict';
+registerHooks({resolve(specifier,context,next){if(specifier==='three')return{url:new URL('./docs/vendor/three.core.js',import.meta.url).href,shortCircuit:true};return next(specifier,context);}});
+const T=await import('./docs/vendor/three.core.js');const{GLTFLoader}=await import('./docs/vendor/GLTFLoader.js');
+const{restoreCadNodeNames}=await import('./docs/connected/restore-cad-names.mjs');const{loadConnectedBody}=await import('./docs/connected/body-scene.mjs');
+const contract=JSON.parse(fs.readFileSync(new URL('./docs/assets/connected-body/body-contract.json',import.meta.url)));let sanitized=0;
+const body=await loadConnectedBody(new T.Group(),async path=>{let bytes=fs.readFileSync(new URL('./docs/'+path.replace(/^\.\//,''),import.meta.url));if(path.endsWith('.gz'))bytes=gunzipSync(bytes);const gltf=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');gltf.scene.traverse(n=>{if(n.userData.name&&n.name!==n.userData.name)sanitized++;});return restoreCadNodeNames(gltf).scene;},{contract});
+assert(sanitized>0);assert.equal(body.snapshot().parts,287);assert(body.assembly.getObjectByName('QB2_partition_gland_366.5_53111020_body'));body.setServiceOpen(true);body.setServiceOpen(false);console.log(JSON.stringify({pass:true,actualGLTFLoader:true,sanitizedSourceNamesRestored:sanitized,parts:287}));

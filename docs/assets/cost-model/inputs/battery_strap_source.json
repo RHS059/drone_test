@@ -1,0 +1,27 @@
+{
+  "checked_utc_date": "2026-10-09",
+  "manufacturer": "NRS",
+  "manufacturer_catalogue_sku": "60027.01.112",
+  "variant": "1-inch HD Tie-Down Straps, 4-foot Pair, Stealth Black",
+  "strap_count": 4,
+  "retail_packages": 2,
+  "straps_per_retail_package": 2,
+  "source_sku_url": "https://dh36nblqpps8a.cloudfront.net/assets/downloads/workbooks/2025_NRS_Rescue_Book.pdf",
+  "source_sku_access_note": "Manufacturer 2025 book row was returned in web-search excerpt; full PDF fetch exceeded the web tool content-length limit. Current product text does not print the selected SKU. Reconfirm current ordering SKU before purchase.",
+  "product_url": "https://www.nrs.com/rescue/nrs-1-hd-tie-down-straps/p4yc",
+  "WLL_lbf": 500,
+  "minimum_breaking_strength_lbf": 1500,
+  "rating_scope": "Purchased complete NRS strap including original cam buckle and sewn termination only. No rating transferred to original CAD buckle depiction, battery case or vehicle.",
+  "width_mm": 25.4,
+  "length_per_strap_mm": 1219.2,
+  "exact_variant_price": null,
+  "observed_family_price_range": [
+    12.95,
+    43.95
+  ],
+  "family_currency": "USD",
+  "price_scope": "Family range spans multiple lengths and package sizes. Do not assign it as the selected 4-foot pair price.",
+  "commercial_strap_buckle_mass_kg": null,
+  "source_mounting_permission": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51,2_V/en/introduction.html",
+  "no_purchase_made": true
+}

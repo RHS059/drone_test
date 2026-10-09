@@ -1,0 +1,2491 @@
+{
+  "schema_version": "1.0",
+  "composition_order": [
+    "PR01",
+    "SO02_E04P",
+    "E04 trough",
+    "BA02",
+    "E05 exactly two partition replacements"
+  ],
+  "material_policy": "PR01 materials follow its source generator, including aluminium bosses/clips. No density is applied to purchased representations.",
+  "history": [
+    {
+      "stage": "PR01 baseline, R02 holes already included",
+      "part_count": 267,
+      "known_original_mass_kg": 116.7967822162259
+    },
+    {
+      "stage": "SO02_E04P replaces exactly 20 named parts",
+      "part_count": 267,
+      "known_original_mass_kg": 115.99386426207543
+    },
+    {
+      "stage": "E04 19-part trough/glands named delta; 15 original parts and 4 unknown-mass purchased representations",
+      "part_count": 271,
+      "known_original_mass_kg": 115.88551866207544
+    },
+    {
+      "stage": "BA02 removes 34 RELiON restraint parts and replaces battery well floor",
+      "part_count": 237,
+      "known_original_mass_kg": 113.5556902568118
+    },
+    {
+      "stage": "E05 four M25 bores, exactly two named partition replacements; 40-hole deck unchanged",
+      "part_count": 237,
+      "known_original_mass_kg": 113.53953045712207
+    }
+  ],
+  "removed_battery_restraint_parts": [
+    {
+      "name": "battery_1_isolator_pad",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 187200.0,
+      "mass_kg": 0.22464,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_1_stop_-1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_1_stop_1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_2_isolator_pad",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 187200.0,
+      "mass_kg": 0.22464,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_2_stop_-1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_2_stop_1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_3_isolator_pad",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 187200.0,
+      "mass_kg": 0.22464,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_3_stop_-1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_3_stop_1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_4_isolator_pad",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 187200.0,
+      "mass_kg": 0.22464,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_4_stop_-1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_4_stop_1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 24960.0,
+      "mass_kg": 0.067392,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_crossbar_1",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 59513.43012981,
+      "mass_kg": 0.16068626135048703,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_stud_1_-235",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 16336.28179867,
+      "mass_kg": 0.1282398121195595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_1_-235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_1_-235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_stud_1_235",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 16336.28179867,
+      "mass_kg": 0.1282398121195595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_1_235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_1_235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_crossbar_2",
+      "material": "restraint",
+      "density_kg_m3": 2700,
+      "volume_mm3": 59513.43012981,
+      "mass_kg": 0.16068626135048703,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_stud_2_-235",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 16336.28179867,
+      "mass_kg": 0.1282398121195595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_2_-235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_2_-235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_stud_2_235",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 16336.28179867,
+      "mass_kg": 0.1282398121195595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_2_235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_nut_2_235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 624.60327008,
+      "mass_kg": 0.004903135670128,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_1_-235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_1_-235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_1_235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_1_235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_2_-235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_2_-235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_2_235_bottom",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_retention_washer_2_235_top",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 233.03077667,
+      "mass_kg": 0.0018292915968595,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    }
+  ],
+  "removed_external_battery_proxy_names": [
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_1",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_2",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_3",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_4"
+  ],
+  "parts": [
+    {
+      "name": "main_base_deck_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 5377767.260619007,
+      "mass_kg": 14.51997160367132,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_left_side_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 470881.6680941708,
+      "mass_kg": 1.2713805038542612,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_side_service_cover_1",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 85389.45667203,
+      "mass_kg": 0.230551533014481,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_side_service_cover_2",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 42609.45667203,
+      "mass_kg": 0.11504553301448099,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_right_side_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 485846.0795950209,
+      "mass_kg": 1.3117844149065563,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_side_service_cover_1",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 85389.45667203,
+      "mass_kg": 0.230551533014481,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_side_service_cover_2",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 26973.045171205515,
+      "mass_kg": 0.0728272219622549,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.364168007212,
+      "mass_kg": 0.012682883253619473,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.364168007212,
+      "mass_kg": 0.012682883253619473,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 4697.36416801,
+      "mass_kg": 0.012682883253627,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_left_lower_sloping_shoulder",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1026050.15992868,
+      "mass_kg": 2.770335431807436,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_left_upper_sloping_shoulder",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1555229.35257163,
+      "mass_kg": 4.199119251943401,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_right_lower_sloping_shoulder",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1026050.15992869,
+      "mass_kg": 2.770335431807463,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "main_right_upper_sloping_shoulder",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1555229.35257163,
+      "mass_kg": 4.199119251943401,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_bulkhead_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 747773.2568419738,
+      "mass_kg": 2.018987793473329,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "arm_facing_bulkhead_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 742005.02754904,
+      "mass_kg": 2.003413574382408,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_battery_partition",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 701598.0087692622,
+      "mass_kg": 1.8943146236770079,
+      "source": "inputs/E05/main_routes_E05/partition_patch_E05.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_tool_partition",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 725792.8519688171,
+      "mass_kg": 1.959640700315806,
+      "source": "inputs/E05/main_routes_E05/partition_patch_E05.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_well_floor_3mm",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1401810.4355841544,
+      "mass_kg": 3.7848881760772173,
+      "source": "battery_BA02_manifest.json:replacement floor",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_well_left_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 802738.40746699,
+      "mass_kg": 2.167393700160873,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_well_right_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 807300.0,
+      "mass_kg": 2.17971,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_well_rear_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 886788.0,
+      "mass_kg": 2.3943276,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_well_front_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 886788.0,
+      "mass_kg": 2.3943276,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_weld_flange",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 193304.18500804,
+      "mass_kg": 0.521921299521708,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_gasket",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 103271.67711724,
+      "mass_kg": 0.12392601254068801,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_removable_lid",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2022437.3709784,
+      "mass_kg": 5.460580901641681,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_5",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_6",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_deck_shoulder",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 432000.0,
+      "mass_kg": 1.1664,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_weld_flange",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 158984.18500804,
+      "mass_kg": 0.42925729952170794,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_gasket",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 84967.67711703,
+      "mass_kg": 0.101961212540436,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_removable_lid",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1386953.3709784,
+      "mass_kg": 3.7447741016416805,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_5",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_nutplate_6",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_weld_flange",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 223304.18500804,
+      "mass_kg": 0.602921299521708,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_gasket",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 119271.67711699,
+      "mass_kg": 0.14312601254038798,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_removable_lid",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2695937.3709784,
+      "mass_kg": 7.279030901641681,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_5",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_6",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_mount_tray_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 443360.81421051,
+      "mass_kg": 1.197074198368377,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_tray_leg_1_-250",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27750.0,
+      "mass_kg": 0.074925,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_tray_leg_1_250",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27750.0,
+      "mass_kg": 0.074925,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_mount_tray_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 443360.81421051,
+      "mass_kg": 1.197074198368377,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_tray_leg_2_-250",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27750.0,
+      "mass_kg": 0.074925,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "controller_tray_leg_2_250",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27750.0,
+      "mass_kg": 0.074925,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "cable_duct_floor_1",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 85560.0,
+      "mass_kg": 0.231012,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_floor_2",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 80600.0,
+      "mass_kg": 0.21762,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_floor_3",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 119040.0,
+      "mass_kg": 0.321408,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "rail_saddle_1_top",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_1_bottom",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_1_M10_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_1_M10_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_top",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_bottom",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_M10_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_M10_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_top",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_bottom",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_M10_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_M10_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_top",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_bottom",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 75700.69389866,
+      "mass_kg": 0.5942504471044809,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_M10_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_M10_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 19254.15438576,
+      "mass_kg": 0.151145111928216,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 1636.93510797,
+      "mass_kg": 0.0128499405975645,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_base",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1996092.0,
+      "mass_kg": 5.3894484,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_rear_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 574860.0,
+      "mass_kg": 1.552122,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_left_side",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 269094.6125635215,
+      "mass_kg": 0.726555453921508,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_right_side",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 269094.6125635215,
+      "mass_kg": 0.726555453921508,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_nose_wall",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 257544.0,
+      "mass_kg": 0.6953688,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_sloped_service_nose",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 830967.3391875696,
+      "mass_kg": 2.243611815806438,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_weld_flange",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 176984.18500804,
+      "mass_kg": 0.47785729952170797,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_gasket",
+      "material": "gasket",
+      "density_kg_m3": 1200,
+      "volume_mm3": 94567.67711705,
+      "mass_kg": 0.11348121254046001,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_removable_lid",
+      "material": "lid",
+      "density_kg_m3": 2700,
+      "volume_mm3": 1502585.3709784,
+      "mass_kg": 4.0569805016416804,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_1",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_2",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_3",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_4",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_5",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_nutplate_6",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 2957.25666118,
+      "mass_kg": 0.007984592985186,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "arm_center_cable_guard",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 387600.0,
+      "mass_kg": 1.04652,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_bumper_RHS_70x50x3",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 745560.0,
+      "mass_kg": 5.852646,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_bumper_cap_-1",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 10500.0,
+      "mass_kg": 0.082425,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_bumper_cap_1",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 10500.0,
+      "mass_kg": 0.082425,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_bumper_RHS_70x50x3",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 745560.0,
+      "mass_kg": 5.852646,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_bumper_cap_-1",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 10500.0,
+      "mass_kg": 0.082425,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_bumper_cap_1",
+      "material": "steel",
+      "density_kg_m3": 7850,
+      "volume_mm3": 10500.0,
+      "mass_kg": 0.082425,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "battery_hatch_M6_washer_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_1",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_2",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_3",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_4",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_5",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_6",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "rear_hatch_partition_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 51348.0,
+      "mass_kg": 0.1386396,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "payload_hatch_partition_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 51348.0,
+      "mass_kg": 0.1386396,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_hatch_left_support_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27210.0,
+      "mass_kg": 0.073467,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_hatch_right_support_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 27210.0,
+      "mass_kg": 0.073467,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_hatch_rear_support_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 58890.0,
+      "mass_kg": 0.159003,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "front_hatch_nose_support_ledge",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 74219.56901849,
+      "mass_kg": 0.20039283634992303,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_1_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_1_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_1_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_2_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_2_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_2_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_3_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_3_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_3_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_4_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_4_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_1_4_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_1_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_1_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_1_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_2_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_2_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_2_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_3_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_3_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_3_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_4_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_4_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "left_service_nutclip_2_4_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_1_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_1_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_1_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_2_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_2_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_2_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_3_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_3_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_3_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_4_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_4_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_1_4_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_1_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.433659529963,
+      "mass_kg": 0.010379970880730898,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_1_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704009297,
+      "mass_kg": 0.007628423312647299,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_1_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281036574,
+      "mass_kg": 0.0010164484800613712,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_2_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.433659529963,
+      "mass_kg": 0.010379970880730898,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_2_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704009297,
+      "mass_kg": 0.007628423312647299,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_2_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281036574,
+      "mass_kg": 0.0010164484800613712,
+      "source": "body_SO02_E04P_parts.json",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_3_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_3_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_3_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_4_tapped_boss",
+      "material": "aluminium",
+      "density_kg_m3": 2700,
+      "volume_mm3": 3844.43365953,
+      "mass_kg": 0.010379970880730999,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_4_M6x20",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 971.7736704,
+      "mass_kg": 0.00762842331264,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "right_service_nutclip_2_4_washer",
+      "material": "fastener",
+      "density_kg_m3": 7850,
+      "volume_mm3": 129.48388281,
+      "mass_kg": 0.0010164484800585,
+      "source": "body_PR01_check.json + body_PR01_material_source.py",
+      "mass_basis": "original nominal material-volume estimate"
+    },
+    {
+      "name": "cable_duct_1_rear_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 15221.999999999734,
+      "mass_kg": 0.041099399999999287,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_1_front_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 14189.999999999998,
+      "mass_kg": 0.03831299999999999,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_2_rear_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 10320.00000000073,
+      "mass_kg": 0.02786400000000197,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_2_front_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 10320.000000000531,
+      "mass_kg": 0.027864000000001433,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_3_rear_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 10836.00000000171,
+      "mass_kg": 0.029257200000004615,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_3_front_welded_support",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 13416.000000002297,
+      "mass_kg": 0.03622320000000621,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_1_484",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 55200.0,
+      "mass_kg": 0.14904,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_1_546",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 55200.0,
+      "mass_kg": 0.14904,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_2_484",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 51999.99999999999,
+      "mass_kg": 0.14039999999999997,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_2_546",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 51999.99999999999,
+      "mass_kg": 0.14039999999999997,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_3_484",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 76800.0,
+      "mass_kg": 0.20736,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "cable_duct_side_3_546",
+      "material": "original aluminium, matching body same-alloy proposal",
+      "density_kg_m3": 2700,
+      "volume_mm3": 76800.0,
+      "mass_kg": 0.20736,
+      "mass_basis": "original material-volume estimate",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "QB2_partition_gland_366.5_53111020_body",
+      "material": "purchased representation",
+      "density_kg_m3": null,
+      "volume_mm3": 15386.874165460224,
+      "mass_kg": null,
+      "mass_basis": "unknown purchased mass",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "QB2_partition_gland_366.5_53119020_locknut",
+      "material": "purchased representation",
+      "density_kg_m3": null,
+      "volume_mm3": 1867.1195103738312,
+      "mass_kg": null,
+      "mass_basis": "unknown purchased mass",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "QB2_partition_gland_443.5_53111020_body",
+      "material": "purchased representation",
+      "density_kg_m3": null,
+      "volume_mm3": 15386.874165460224,
+      "mass_kg": null,
+      "mass_basis": "unknown purchased mass",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    },
+    {
+      "name": "QB2_partition_gland_443.5_53119020_locknut",
+      "material": "purchased representation",
+      "density_kg_m3": null,
+      "volume_mm3": 1867.1195103738314,
+      "mass_kg": null,
+      "mass_basis": "unknown purchased mass",
+      "source": "electrical_mass_ledger.json:trough_parts"
+    }
+  ],
+  "modeled_original_mass_kg": 113.53953045712207,
+  "whole_body_installed_mass_kg": null,
+  "warning": "Battery additions are separately counted in the BA02 original metal row. Battery catalogue mass is separate. Four LAPP gland/nut representations have unknown mass; do not treat this known subtotal as complete. E05 replaces two partitions only; eight new E05 gland/locknut representations are separate unknown-mass BOM rows. E05 stands are separate original-metal rows.",
+  "baseline_source_root": "inputs/C04/inputs/"
+}

@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0",
+  "revision": "C04+E05_R01",
+  "as_of": "2026-10-09",
+  "inputs": [
+    {
+      "file": "inputs/C04/BOM.csv",
+      "source": "cost-model-C04/BOM.csv",
+      "sha256": "9526b29d95d0ef38235e6ff275701f3645011968a0ff2bbce37fe1cc4d6f3444",
+      "bytes": 108778
+    },
+    {
+      "file": "inputs/C04/README.md",
+      "source": "cost-model-C04/README.md",
+      "sha256": "7c91879e939cd27c0696a9cdbdcb1d4a8d2abcd9bdbbf2d089726095a4e094fc",
+      "bytes": 9026
+    },
+    {
+      "file": "inputs/C04/UI_INTEGRATION.md",
+      "source": "cost-model-C04/UI_INTEGRATION.md",
+      "sha256": "7179aa97ba289e3e3ca0272a1e02e385cf0681371d581d4829abbdad18395146",
+      "bytes": 2443
+    },
+    {
+      "file": "inputs/C04/body_composition.json",
+      "source": "cost-model-C04/body_composition.json",
+      "sha256": "8dbce749c773cb4b1f88f4c082242de423f65e35efaddc3b8f14b9d1a87cc993",
+      "bytes": 88397
+    },
+    {
+      "file": "inputs/C04/build_cost_model.py",
+      "source": "cost-model-C04/build_cost_model.py",
+      "sha256": "6a723a227a5bf06863d7001ebfddc503cda79e8049f25b3d9123e7174acd8d6a",
+      "bytes": 34697
+    },
+    {
+      "file": "inputs/C04/checksums.json",
+      "source": "cost-model-C04/checksums.json",
+      "sha256": "88c35c6e0837b5bd3ec3666dc965d542ec1b76bc545caaea8728ae3ae97c8355",
+      "bytes": 4310
+    },
+    {
+      "file": "inputs/C04/cost_model.json",
+      "source": "cost-model-C04/cost_model.json",
+      "sha256": "f88bb6db3c91821508fa741fa38f44283b99b6ad5661fdeb0f22ce7c7e4d22a2",
+      "bytes": 378801
+    },
+    {
+      "file": "inputs/C04/electrical_mass_selection.json",
+      "source": "cost-model-C04/electrical_mass_selection.json",
+      "sha256": "b545f1ee8e8329697ac3e5af04b376d524ff062359c26086bc1c1992f8a3cbf3",
+      "bytes": 716672
+    },
+    {
+      "file": "inputs/C04/freeze_inputs.py",
+      "source": "cost-model-C04/freeze_inputs.py",
+      "sha256": "6bfb6b3bf1598cac274428237c45402500ee890fbc69683425982441a15e0dd6",
+      "bytes": 3162
+    },
+    {
+      "file": "inputs/C04/input-manifest.json",
+      "source": "cost-model-C04/input-manifest.json",
+      "sha256": "85267ce5566403f7c351ae4e9ad79e8f27e335097f7c0a54ec75538ab5e38b88",
+      "bytes": 7557
+    },
+    {
+      "file": "inputs/C04/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "source": "cost-model-C04/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b",
+      "bytes": 126298
+    },
+    {
+      "file": "inputs/C04/inputs/actuator_contract_R02.json",
+      "source": "cost-model-C04/inputs/actuator_contract_R02.json",
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203",
+      "bytes": 3971
+    },
+    {
+      "file": "inputs/C04/inputs/battery_BA02_manifest.json",
+      "source": "cost-model-C04/inputs/battery_BA02_manifest.json",
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224",
+      "bytes": 37675
+    },
+    {
+      "file": "inputs/C04/inputs/battery_BA02_verification.json",
+      "source": "cost-model-C04/inputs/battery_BA02_verification.json",
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953",
+      "bytes": 13309
+    },
+    {
+      "file": "inputs/C04/inputs/battery_original_hardware_mass.csv",
+      "source": "cost-model-C04/inputs/battery_original_hardware_mass.csv",
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837",
+      "bytes": 3333
+    },
+    {
+      "file": "inputs/C04/inputs/battery_strap_source.json",
+      "source": "cost-model-C04/inputs/battery_strap_source.json",
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09",
+      "bytes": 1442
+    },
+    {
+      "file": "inputs/C04/inputs/body_PR01_check.json",
+      "source": "cost-model-C04/inputs/body_PR01_check.json",
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1",
+      "bytes": 186640
+    },
+    {
+      "file": "inputs/C04/inputs/body_PR01_manifest.json",
+      "source": "cost-model-C04/inputs/body_PR01_manifest.json",
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f",
+      "bytes": 153959
+    },
+    {
+      "file": "inputs/C04/inputs/body_PR01_material_source.py",
+      "source": "cost-model-C04/inputs/body_PR01_material_source.py",
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f",
+      "bytes": 16448
+    },
+    {
+      "file": "inputs/C04/inputs/body_R01_verification.json",
+      "source": "cost-model-C04/inputs/body_R01_verification.json",
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d",
+      "bytes": 117473
+    },
+    {
+      "file": "inputs/C04/inputs/body_SO02_E04P_parts.json",
+      "source": "cost-model-C04/inputs/body_SO02_E04P_parts.json",
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c",
+      "bytes": 527868
+    },
+    {
+      "file": "inputs/C04/inputs/body_SO02_E04P_selected.json",
+      "source": "cost-model-C04/inputs/body_SO02_E04P_selected.json",
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02",
+      "bytes": 4146
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_bom_E04.json",
+      "source": "cost-model-C04/inputs/electrical_bom_E04.json",
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce",
+      "bytes": 2430
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_contract_E04.json",
+      "source": "cost-model-C04/inputs/electrical_contract_E04.json",
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2",
+      "bytes": 348630
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_mass_ledger.json",
+      "source": "cost-model-C04/inputs/electrical_mass_ledger.json",
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831",
+      "bytes": 563123
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_temperature_limits.json",
+      "source": "cost-model-C04/inputs/electrical_temperature_limits.json",
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd",
+      "bytes": 2963
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_topology_E04.json",
+      "source": "cost-model-C04/inputs/electrical_topology_E04.json",
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7",
+      "bytes": 180659
+    },
+    {
+      "file": "inputs/C04/inputs/electrical_trough_contract.json",
+      "source": "cost-model-C04/inputs/electrical_trough_contract.json",
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557",
+      "bytes": 13845
+    },
+    {
+      "file": "inputs/C04/inputs/historical_C03_model.json",
+      "source": "cost-model-C04/inputs/historical_C03_model.json",
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41",
+      "bytes": 213456
+    },
+    {
+      "file": "inputs/C04/inputs/historical_C03_sources.json",
+      "source": "cost-model-C04/inputs/historical_C03_sources.json",
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240",
+      "bytes": 21267
+    },
+    {
+      "file": "inputs/C04/inputs/mechanical_mass_BOM_C04_R01.json",
+      "source": "cost-model-C04/inputs/mechanical_mass_BOM_C04_R01.json",
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6",
+      "bytes": 23024
+    },
+    {
+      "file": "inputs/C04/inputs/structural_connections_C04_R05_manifest.json",
+      "source": "cost-model-C04/inputs/structural_connections_C04_R05_manifest.json",
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d",
+      "bytes": 140171
+    },
+    {
+      "file": "inputs/C04/inputs/victron_price_observations.json",
+      "source": "cost-model-C04/inputs/victron_price_observations.json",
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a",
+      "bytes": 1241
+    },
+    {
+      "file": "inputs/C04/inputs/wheel_candidates.json",
+      "source": "cost-model-C04/inputs/wheel_candidates.json",
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d",
+      "bytes": 3804
+    },
+    {
+      "file": "inputs/C04/inputs/wheel_nut_contract.json",
+      "source": "cost-model-C04/inputs/wheel_nut_contract.json",
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119",
+      "bytes": 3999
+    },
+    {
+      "file": "inputs/C04/inputs/wheel_price_observations.json",
+      "source": "cost-model-C04/inputs/wheel_price_observations.json",
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683",
+      "bytes": 1471
+    },
+    {
+      "file": "inputs/C04/mass_reconciliation.json",
+      "source": "cost-model-C04/mass_reconciliation.json",
+      "sha256": "a5969fe9201fece172bb633c65853234045c969785c05ed436a5172356d8c23a",
+      "bytes": 60136
+    },
+    {
+      "file": "inputs/C04/source_reconciliation.json",
+      "source": "cost-model-C04/source_reconciliation.json",
+      "sha256": "28c265d4298d813707efa9900aa7522c8fb219ad50678e6724f95ff120aa4399",
+      "bytes": 1022
+    },
+    {
+      "file": "inputs/C04/sources.json",
+      "source": "cost-model-C04/sources.json",
+      "sha256": "0848fee83c24e503b112f8884b97117e7bcaf5065a602714fab4eabaf2b214c1",
+      "bytes": 16913
+    },
+    {
+      "file": "inputs/C04/test_cost_model.py",
+      "source": "cost-model-C04/test_cost_model.py",
+      "sha256": "541fd20bc9767fff4a055a72891f4dce27b448b476d1fc368ddb8c905880e454",
+      "bytes": 11492
+    },
+    {
+      "file": "inputs/C04/test_run.log",
+      "source": "cost-model-C04/test_run.log",
+      "sha256": "c69b387542d61381000d48f6eaff6300b069391e10dd47233894a03934dfe820",
+      "bytes": 1887
+    },
+    {
+      "file": "inputs/C04/validation.json",
+      "source": "cost-model-C04/validation.json",
+      "sha256": "d8bb355f06ee65912b3b73c6ff8a1739ab3f972562eb9717ac437e56bd93e250",
+      "bytes": 296
+    },
+    {
+      "file": "inputs/C04/viewer_formula_validation.json",
+      "source": "cost-model-C04/viewer_formula_validation.json",
+      "sha256": "20345bd8f939bf7e0a927948d94cb37b7c7ffce7224b1ab1aa074b209e55b360",
+      "bytes": 814
+    },
+    {
+      "file": "inputs/E05/build_main_pair_E05.py",
+      "source": "electrical-drive/build_main_pair_E05.py",
+      "sha256": "a68cf6a8ce79cf4bce75c554ce35d480f491ba006d6c7ee5bda66d6286e8bb8c",
+      "bytes": 9762
+    },
+    {
+      "file": "inputs/E05/cad_export_E05.py",
+      "source": "electrical-drive/cad_export_E05.py",
+      "sha256": "57bcafb791a147d45c62c696331d578086676fb858ed5d4705a5f154e94c08df",
+      "bytes": 4308
+    },
+    {
+      "file": "inputs/E05/check_main_pair_E05.py",
+      "source": "electrical-drive/check_main_pair_E05.py",
+      "sha256": "4c96a4e8082c4449afdf0c2484b5a5547643afa823345e2642b88e470b28b3e7",
+      "bytes": 6330
+    },
+    {
+      "file": "inputs/E05/check_main_pair_mechanical_E05.py",
+      "source": "electrical-drive/check_main_pair_mechanical_E05.py",
+      "sha256": "a0d1ec591099c1778871029b78d4b3a640670292200c3f0c568961b27a6fdf72",
+      "bytes": 1548
+    },
+    {
+      "file": "inputs/E05/freeze_main_pair_E05.py",
+      "source": "electrical-drive/freeze_main_pair_E05.py",
+      "sha256": "1f24d12d37971765853d156a21090beb45306a9cd0cc3b8d22a6cc06c3932d07",
+      "bytes": 9317
+    },
+    {
+      "file": "inputs/E05/check_main_pair_retention_E05.py",
+      "source": "electrical-drive/check_main_pair_retention_E05.py",
+      "sha256": "5909feb685f18f2fcd9dfa94cca691448574bb18a748b07efea5d976a3ec6769",
+      "bytes": 5020
+    },
+    {
+      "file": "inputs/E05/align_main_pair_visual_E05.py",
+      "source": "electrical-drive/align_main_pair_visual_E05.py",
+      "sha256": "56d7940210b6b987c3c55e7d20f3ef2c99cc09d2a41fc564597695301c8e096f",
+      "bytes": 2114
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_supported_E05.step",
+      "source": "electrical-drive/main_routes_E05/main_pair_supported_E05.step",
+      "sha256": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+      "bytes": 3069940
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_supported_E05.glb",
+      "source": "electrical-drive/main_routes_E05/main_pair_supported_E05.glb",
+      "sha256": "8b24f5116e278d8b02a474eeaea88cf0162e6e998461a5f816fb54ec69cf2756",
+      "bytes": 3172868
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_contract_E05.json",
+      "source": "electrical-drive/main_routes_E05/main_pair_contract_E05.json",
+      "sha256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d",
+      "bytes": 65770
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_geometry_check_E05.json",
+      "source": "electrical-drive/main_routes_E05/main_pair_geometry_check_E05.json",
+      "sha256": "0e585ce5499246e583d957bcd2a822e3e312fa502bb5afd2b5dc4a9a0e6a9224",
+      "bytes": 21602
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_mechanical_check_E05.json",
+      "source": "electrical-drive/main_routes_E05/main_pair_mechanical_check_E05.json",
+      "sha256": "ba0a5350a8454e9aa714eb7e5bc0c8c5530ef1be72ebb80024bc552b160ad720",
+      "bytes": 312
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/partition_main_glands_E05.step",
+      "source": "electrical-drive/main_routes_E05/partition_main_glands_E05.step",
+      "sha256": "c0e812cfb328b30b1e4b23abfdaa0dae923e479321ce609cc0552a58205a4b57",
+      "bytes": 173662
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/partition_main_glands_E05.glb",
+      "source": "electrical-drive/main_routes_E05/partition_main_glands_E05.glb",
+      "sha256": "37154f8ead92cae9f4684d2b6b90e00c373850e4a3b54429c1aef2b49385c29e",
+      "bytes": 93800
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/partition_patch_E05.json",
+      "source": "electrical-drive/main_routes_E05/partition_patch_E05.json",
+      "sha256": "e0f995c6af3930aaeb51a686491f4e5a835f8e2c7f32b8aafa712a2624c16321",
+      "bytes": 3231
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_graph_E05.json",
+      "source": "electrical-drive/main_routes_E05/main_pair_graph_E05.json",
+      "sha256": "77f8ed5fda1a54c696e784d36cb06a00b03c4c8da4ee0a3727f1e423dcfb44fc",
+      "bytes": 41791
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/battery_polarity_regression_E05.py",
+      "source": "electrical-drive/main_routes_E05/battery_polarity_regression_E05.py",
+      "sha256": "f83f5b7b3bcd4a517c08826a876f93b16600309595660a644a8c604b838a9574",
+      "bytes": 1795
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/battery_polarity_regression_E05.json",
+      "source": "electrical-drive/main_routes_E05/battery_polarity_regression_E05.json",
+      "sha256": "3691a13f6cd1b575001980aa12c48d085005c5f8766a4c2bdd30d36379b89d96",
+      "bytes": 1782
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/cable_separation_screen_E05.json",
+      "source": "electrical-drive/main_routes_E05/cable_separation_screen_E05.json",
+      "sha256": "565c61984885f7e48bb630c217511ecdccdabc150db2e1c0a23f77bca6f4bea8",
+      "bytes": 447
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/main_pair_retention_check_E05.json",
+      "source": "electrical-drive/main_routes_E05/main_pair_retention_check_E05.json",
+      "sha256": "783266faa63622621ab4d5b071c693932ec9a731c1f4256ec829f120e64e0070",
+      "bytes": 20051
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/cable_source_and_scenario_E05.json",
+      "source": "electrical-drive/main_routes_E05/cable_source_and_scenario_E05.json",
+      "sha256": "f80d184e9820c45f483d697c4cf3e30cda6f8b213da7ded665c9e3bb0dc2d251",
+      "bytes": 2413
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/README_E05.md",
+      "source": "electrical-drive/main_routes_E05/README_E05.md",
+      "sha256": "80b692a2c3d906c368f9dfb1a640e77b93a020bc07a843265bb1f266ab6e49a1",
+      "bytes": 3349
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/INPUT_HASHES_E05.json",
+      "source": "electrical-drive/main_routes_E05/INPUT_HASHES_E05.json",
+      "sha256": "656fddcf8d3843fb278c14ee69fa2af8d03e601f0c0b30b735bd66175869bb79",
+      "bytes": 1866
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/bom_E05.json",
+      "source": "electrical-drive/main_routes_E05/bom_E05.json",
+      "sha256": "b9aca5ec8b8fdbfff80e14df426299ccbd7cda1401f59f8f0de1dbed51a8037a",
+      "bytes": 1854
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/visual_endplane_check_E05.json",
+      "source": "electrical-drive/main_routes_E05/visual_endplane_check_E05.json",
+      "sha256": "628ca8a373fa9646a20936014d424207d7f4b79c734f3fd310659781a483c8b5",
+      "bytes": 495
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/FREEZE_E05.json",
+      "source": "electrical-drive/main_routes_E05/FREEZE_E05.json",
+      "sha256": "3edfb9b7023b351e1da30d0bf47bbc011602c470691d1803275fe9755c1ebbd7",
+      "bytes": 378
+    },
+    {
+      "file": "inputs/E05/main_routes_E05/PUBLIC_FILES_E05.json",
+      "source": "electrical-drive/main_routes_E05/PUBLIC_FILES_E05.json",
+      "sha256": "49db3e7bc2e46399615c24f7a35053ad732b373a7b7675731ba7af04ddf68814",
+      "bytes": 4643
+    },
+    {
+      "file": "inputs/runtime_C04/electrical-scene.mjs",
+      "source": "app-C04/docs/connected/electrical-scene.mjs",
+      "sha256": "8d138b3da55bcbf0f9a0cbd23530301fcb1842e6ede7d710b01f1d0b680de446",
+      "bytes": 2317
+    },
+    {
+      "file": "inputs/runtime_C04/electrical-contract.json",
+      "source": "app-C04/docs/assets/connected-electrical/electrical-contract.json",
+      "sha256": "4cba33b51081c4e92b8f134bb5d43c54683cecaf352dd14cba8f159f0b35f566",
+      "bytes": 395863
+    },
+    {
+      "file": "inputs/upstream_dependency_verification.json",
+      "source": "locally authored factual snapshot",
+      "sha256": "c7fdd483423731c1e6eec9c57ed5328cfff7fe2d7e800d83da4d240f03549728",
+      "bytes": 5696
+    },
+    {
+      "file": "inputs/explicit_material_ledger_E05.json",
+      "source": "locally authored factual snapshot",
+      "sha256": "6b72f2a1689c076de17f8e33e9dba4f5b4f72368160c41fa0055d3e16353f203",
+      "bytes": 43527
+    },
+    {
+      "file": "inputs/manufacturer_cable_observation.json",
+      "source": "locally authored factual snapshot",
+      "sha256": "e9f153564940e6d963ea70c63c31da37a893e283dc801340913f25162630b89a",
+      "bytes": 1007
+    },
+    {
+      "file": "inputs/isolation_snapshot.json",
+      "source": "locally authored factual snapshot",
+      "sha256": "bcb3edc5433ba725c3879eb599ab0965abc8046bd3725d88a52707749e049f26",
+      "bytes": 103470
+    }
+  ],
+  "normal_replay": "Offline, bundled inputs only; never run freeze_inputs.py during a normal rebuild."
+}

@@ -1,16 +1,18 @@
 {
-  "release": "six-wheel-motion-study-C03-R03",
+  "release": "six-wheel-connected-components-C04-main-pair-E05",
   "whole_robot_qualified": false,
+  "full_electrical_continuity_verified": false,
+  "rendered_QA_status": "C04 f82123e inspected; E05 exact candidate review pending",
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 1019,
-      "sha256": "0e40dc6ae50583ba784d961347cca822ea783c5f05454ad24cad8de790370e3c"
+      "bytes": 1417,
+      "sha256": "31f425166b640220f2ea62da21679e69e81b17e52577b6df4cc01ae707f1ca6d"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 809,
-      "sha256": "f72a6a95eb920df58fb2dc743b6a421c7b1be13e7222c5c52d72df5c696d057d"
+      "bytes": 1207,
+      "sha256": "12c4285ff6225290fdb89f80c5c79fd4a282b670f52f3b44159809f6137417d3"
     },
     {
       "path": "BASELINE.md",
@@ -19,13 +21,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1295,
-      "sha256": "b434b61aea30c6cca49531ad0d457f53860df2e2c498d5975580333183ded7d4"
+      "bytes": 1599,
+      "sha256": "6975cf07be0b60c1d73abc26a6a98ece4cf09025d507b6a915f6c222111397a1"
     },
     {
       "path": "RECONSTRUCTION.md",
-      "bytes": 2244,
-      "sha256": "10b773e2da1c5838bab0132bf63cce27b0126886cf955a5322a83ec8e367e33a"
+      "bytes": 2897,
+      "sha256": "3f13544252a9e3f05c0894b0097d815ca43d3ba7e27b15a200271a8daad6b7b1"
     },
     {
       "path": "docs/.nojekyll",
@@ -34,18 +36,68 @@
     },
     {
       "path": "docs/RECONSTRUCTION.md",
-      "bytes": 7675,
-      "sha256": "d522ba354d39f5eaf18891bd204932cbe72de2896e53ce56e2cf9c47bb803c8e"
+      "bytes": 4721,
+      "sha256": "3c803a97c65436e14c59ac53d2416d2ede80808967c3b0a9afd4e34a98cfd697"
     },
     {
       "path": "docs/app.js",
-      "bytes": 5282,
-      "sha256": "543b00ba2fa2af606765b407ab99cf538258b0bf839f9abbf2c4a3baf36aae6a"
+      "bytes": 5878,
+      "sha256": "dadfa9a779b5faa33c059efb40ece142281f5f5cb912a275a366b77d1f50bc00"
     },
     {
       "path": "docs/assembly.json",
       "bytes": 40848,
       "sha256": "50ff5d6d83ad6148d18758e5e196524c7247909d000c535949cd91f55c2cf0e4"
+    },
+    {
+      "path": "docs/assets/actuators/actuator_fixed_interface.glb",
+      "bytes": 191992,
+      "sha256": "2ce906627b9798ab4c5a9a6c2d7e10dcc9da7e3e1aa77d197ccefa02d534d176"
+    },
+    {
+      "path": "docs/assets/actuators/actuator_moving_interface.glb",
+      "bytes": 104332,
+      "sha256": "15b08e934a1d98e7008dfdc589a91977eb6323baef3f9b3bdfef31369b847804"
+    },
+    {
+      "path": "docs/assets/battery-polarity/PACKAGE_SHA256.json",
+      "bytes": 697,
+      "sha256": "1a5a43e7c761357e145d7871952dd3c6cb6cd8d301fbfab4157a8375eaa29139"
+    },
+    {
+      "path": "docs/assets/battery-polarity/README.md",
+      "bytes": 8705,
+      "sha256": "ca52ac8e8015038c3e3ac2d343511cce5f8d4e30b279077c1dbd821c00b93449"
+    },
+    {
+      "path": "docs/assets/battery-polarity/apply-battery-polarity.mjs",
+      "bytes": 8127,
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "docs/assets/battery-polarity/battery-polarity-contract.json",
+      "bytes": 7901,
+      "sha256": "bc78ee5d1f9d893171836d1ec35579373f5cb78998fbccad3588947229604c70"
+    },
+    {
+      "path": "docs/assets/battery-polarity/runtime-regression-results.json",
+      "bytes": 1131,
+      "sha256": "9af05d3bd7b47615a0086c932155c282d270154b73d6c702509a334e46f927f0"
+    },
+    {
+      "path": "docs/assets/battery-polarity/source-regression-results.json",
+      "bytes": 3139,
+      "sha256": "2156884a292ec80ce544f7ea27139bdaf532c082a542b68a1d4bc1c6392a47da"
+    },
+    {
+      "path": "docs/assets/battery-polarity/test-battery-polarity.mjs",
+      "bytes": 9180,
+      "sha256": "76268b55d4f8bb7edd9fca5c529cbcbb53fd9f516c7f927c2e0fcdce4d39bd97"
+    },
+    {
+      "path": "docs/assets/battery-polarity/verify-source-polarity.py",
+      "bytes": 9111,
+      "sha256": "8aab031933eb1cdcb4ec38ed0f7d5b40047ab5d2e5b966db0a8774cfdf7e8b56"
     },
     {
       "path": "docs/assets/body-power/README.md",
@@ -203,6 +255,286 @@
       "sha256": "3d775993edff5130dcb896b7eb34f986020aa7e5c3a8e423688f3f44f513eb38"
     },
     {
+      "path": "docs/assets/connected-audit/R11_lower_miter_wall_audit.json",
+      "bytes": 1155,
+      "sha256": "5a6491b3c3ce73c4e7d174c54a86e69d656b025e6c59ac91a057a9aecc2a8957"
+    },
+    {
+      "path": "docs/assets/connected-audit/battery_polarity_independent_audit.json",
+      "bytes": 2838,
+      "sha256": "a1a2db72cdd85616cd97ededff5802faf14ddae93442ddaee21c0f52b867dfc9"
+    },
+    {
+      "path": "docs/assets/connected-audit/guided_module_R08_interface_audit.json",
+      "bytes": 5188,
+      "sha256": "6ba81c9727a644ba6ee05e309bf1e0a3df916e8eb9db7a68ae717ba547fe42d1"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_R08_X_bound_numeric_check.json",
+      "bytes": 9520,
+      "sha256": "fcb0a891de497dd7d572e8a431b7f3586dd69cf3ef33941336c1746d2491378b"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_R11_support_numeric_check.json",
+      "bytes": 7641,
+      "sha256": "a6c49a7d88fcdc8a51a54dca585a0f96291d34142fbf622365b5718e1946485d"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_R12_rack_X_numeric_check.json",
+      "bytes": 8773,
+      "sha256": "02d21032dd33423f43f855c72bb8bd5a838524afb392241cd46686e8a39dacec"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_R13_upper_numeric_check.json",
+      "bytes": 11339,
+      "sha256": "b6a21148c3f2ba2c9afe913f44437dcfb93fca24ce1d7e887a59624771652206"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_import_environment.json",
+      "bytes": 1088,
+      "sha256": "a815673580d6d7f765a30cc1f895d1ad598d382de8db9b76270027a79356b437"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_selected_carrier_numeric_check.json",
+      "bytes": 4474,
+      "sha256": "11d7c69df3a3ee33791e4f148940774e93c7ac2c6a7300e27ae25c3030eb16b4"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_shock_numeric_check.json",
+      "bytes": 6300,
+      "sha256": "c9fa7931ea7011734a0fbc3a8b16b17f796b603929040725ecea1dbfb2d4ea9d"
+    },
+    {
+      "path": "docs/assets/connected-audit/private_motor_terminal_datum_review.json",
+      "bytes": 1273,
+      "sha256": "83537347ecf6eeaa38d67e332a836d1de8bb0cbc5f6a19cc86ff595893dceab3"
+    },
+    {
+      "path": "docs/assets/connected-audit/selected_private_fit_final_manifest_reconciliation.json",
+      "bytes": 2617,
+      "sha256": "a7342c7d2aa7428fad8e9a3f08877b4fd7892d55482561eb7b700651ada10ee2"
+    },
+    {
+      "path": "docs/assets/connected-audit/whitelist.json",
+      "bytes": 4713,
+      "sha256": "381ddab1b1286ff321507c3ed5670c34d315fc6c986fad1388d58e6afd287967"
+    },
+    {
+      "path": "docs/assets/connected-body/battery.glb.gz",
+      "bytes": 500241,
+      "sha256": "9497be6d21a27036c1c1f8207f9c1df9876eee40622f5a218ede242458cb9f2d"
+    },
+    {
+      "path": "docs/assets/connected-body/body-contract.json",
+      "bytes": 32902,
+      "sha256": "b099d705b9c400cd69d66927a94fa33e19cd67aff2a17fc442d543e69b7e8167"
+    },
+    {
+      "path": "docs/assets/connected-body/body.glb.gz",
+      "bytes": 2494179,
+      "sha256": "46f8884960eb11c0992a246f83b6c3a679f8b186b922fa83c54473d6cd34d27e"
+    },
+    {
+      "path": "docs/assets/connected-body/openings.glb.gz",
+      "bytes": 378243,
+      "sha256": "72f8da837be7a27bfc2ff831a20e2cc77e3bbb28aa5c4019d06904a4aa96fb11"
+    },
+    {
+      "path": "docs/assets/connected-body/partition-main-E05.glb.gz",
+      "bytes": 14702,
+      "sha256": "be03a42d53bcb95c325b26e62096081eb33ef29199a53ff51c8e97dce0b48e7d"
+    },
+    {
+      "path": "docs/assets/connected-body/trough.glb.gz",
+      "bytes": 25617,
+      "sha256": "f56d44d6f80bf69140bff3dd85e9858682397bf6763384d1ea254c9e0c3b4846"
+    },
+    {
+      "path": "docs/assets/connected-electrical/breakout-fasteners.glb.gz",
+      "bytes": 15472,
+      "sha256": "2f8503bdda286eef5a1b3f6671988bd65ac04c26539b8c652452c3e63314719e"
+    },
+    {
+      "path": "docs/assets/connected-electrical/breakout.glb.gz",
+      "bytes": 37936,
+      "sha256": "8db4dd0c2c9459116f05d66c5721c54862646ae105c1b4ec702798a51ccbefc0"
+    },
+    {
+      "path": "docs/assets/connected-electrical/carriers.glb.gz",
+      "bytes": 1349717,
+      "sha256": "42c507fb8044fdc51bd26bb3b2e0c57a00c960d89d87999cc89f8d187f1869b4"
+    },
+    {
+      "path": "docs/assets/connected-electrical/controllers.glb.gz",
+      "bytes": 181992,
+      "sha256": "bd817b5c9ad4a1c55d9a6db45dc74a96e185946569fc8db1eb6763c63128b448"
+    },
+    {
+      "path": "docs/assets/connected-electrical/deck-fasteners.glb.gz",
+      "bytes": 159736,
+      "sha256": "dcfab06f5d1f3aa1577bef8e97ae24e64690003d8a0efb90fb321bb582ec4673"
+    },
+    {
+      "path": "docs/assets/connected-electrical/electrical-contract.json",
+      "bytes": 400673,
+      "sha256": "821bf8becef0aa1ee012e20c9855bbdb5bc58e3e11d64acb282ea24e1f5612de"
+    },
+    {
+      "path": "docs/assets/connected-electrical/isolators.glb.gz",
+      "bytes": 356243,
+      "sha256": "6d5ef3419f93fa621bd0300666c8bd0e9c9f4cf2e48a163e66476b11ed5e68ae"
+    },
+    {
+      "path": "docs/assets/connected-electrical/lynx.glb.gz",
+      "bytes": 125625,
+      "sha256": "806a979854632523851f35c8fb9a95c5d4ba8be3830802701c09ac4dfe723a94"
+    },
+    {
+      "path": "docs/assets/connected-electrical/ur-cases.glb.gz",
+      "bytes": 1279,
+      "sha256": "0935e1d3b7a11c35c319a5bb3e4dd00fe6c014544408aaa9207d27bdb48a9623"
+    },
+    {
+      "path": "docs/assets/connected-sources/archives.json",
+      "bytes": 3483,
+      "sha256": "a3ff8e8079fdd603a3d28b5924ecb34c5931f5fdaa96fe39c74d271b9c8d21bb"
+    },
+    {
+      "path": "docs/assets/connected-sources/battery-source.zip",
+      "bytes": 1409661,
+      "sha256": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da"
+    },
+    {
+      "path": "docs/assets/connected-sources/body-openings-source.zip",
+      "bytes": 2447925,
+      "sha256": "7f0b807a1389f765ab53727fd13e2508e122a2f85c37609d1ddc83fcf42d23a3"
+    },
+    {
+      "path": "docs/assets/connected-sources/body-retention-source.zip.part01",
+      "bytes": 8388608,
+      "sha256": "45e93fabfd43fb72ce988276f712cd14429acdbc4c4cb5c72572f32b851dbb24"
+    },
+    {
+      "path": "docs/assets/connected-sources/body-retention-source.zip.part02",
+      "bytes": 975063,
+      "sha256": "c9428a4dbf1d964731b018667a03117c43fe8ba9821a336d855f9cf0a319cd1c"
+    },
+    {
+      "path": "docs/assets/connected-sources/electrical-source.zip",
+      "bytes": 2748487,
+      "sha256": "288ea2936be26025d588983a029850d104e16ad61e191c8bec1ae1cc7405b752"
+    },
+    {
+      "path": "docs/assets/connected-sources/index.html",
+      "bytes": 1995,
+      "sha256": "5f125ea8e0e0607f46446bd949ca8efbcd35835ed3faa35f83414a1687983dfb"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part01",
+      "bytes": 8388608,
+      "sha256": "c46b452dda5f47ecbd705ae4337a6a034f34cb9e6e799e7b09e28adeb3b44dcf"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part02",
+      "bytes": 8388608,
+      "sha256": "62d214b5546e31cd3ba50fe8f4acdeeaa20e9327e76dc4434731678e8639080a"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part03",
+      "bytes": 8388608,
+      "sha256": "9d1d9ae2c0cb1bcef580c1c9859d5d57c4f2c9be9a684264a87e82bdda51865e"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part04",
+      "bytes": 8388608,
+      "sha256": "0e2e44f955986241b00149303748dfb8bed18112723b6b81cee5f09012c44602"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part05",
+      "bytes": 8388608,
+      "sha256": "5534035e9f2a6a6d14a507730bc2ebb24ae3203b14cc2e87d4f81f73bea01c04"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part06",
+      "bytes": 8388608,
+      "sha256": "cb149aebcf68fa550b829dddbd4c802a5ba30ea433200a5fa332c595b012473d"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part07",
+      "bytes": 8388608,
+      "sha256": "b5aab8d714d6a9820c1684a7bb741249398b23edebfc4a540f480a14a7711444"
+    },
+    {
+      "path": "docs/assets/connected-sources/mechanical-source.zip.part08",
+      "bytes": 2800861,
+      "sha256": "69694e8480b30048c6178304c7814bf2f51e6640ea36d3d647f1472de6c54be5"
+    },
+    {
+      "path": "docs/assets/connected/actuator.json",
+      "bytes": 3971,
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "docs/assets/connected/drive.glb.gz",
+      "bytes": 610822,
+      "sha256": "b17a40e2913c70606a253610d84d1c59765e49836384b3abec0275259a5a5e6f"
+    },
+    {
+      "path": "docs/assets/connected/drive.json",
+      "bytes": 10966,
+      "sha256": "153cbcf754da7a3c830ae7fa3ac221beb97fb2d6557057b8ac79f4d457a0ba00"
+    },
+    {
+      "path": "docs/assets/connected/joints.glb.gz",
+      "bytes": 1616908,
+      "sha256": "a15a93d1f751b5951c68a0b4149541733acaebda2f698a9cf8929894a19de74c"
+    },
+    {
+      "path": "docs/assets/connected/joints.json",
+      "bytes": 481636,
+      "sha256": "945a21aea2d3a304912020ef2677732c6d664f11adcf665ca20c99de514283ae"
+    },
+    {
+      "path": "docs/assets/connected/mechanical-contract.json",
+      "bytes": 9530,
+      "sha256": "a49138b89926d5338b96a993fa07c616b830ddf6aab2ea4b078a4217bb2fc8b5"
+    },
+    {
+      "path": "docs/assets/connected/retained-graph.json",
+      "bytes": 404268,
+      "sha256": "eec5e71f23f76af841ecfe7d0dfd3c92de881f608b95e426dc0eb1962a17509d"
+    },
+    {
+      "path": "docs/assets/connected/shock.glb.gz",
+      "bytes": 2032322,
+      "sha256": "6a486b8902f5c83bfbb7e43629fbfffd8d4a961b80f0101cd1c6b73588bafeea"
+    },
+    {
+      "path": "docs/assets/connected/shock.json",
+      "bytes": 11320,
+      "sha256": "8d4f102c6e61f1cb9e68e7f96215d1658bcff187773e1d03548b8edf8d02cd3b"
+    },
+    {
+      "path": "docs/assets/connected/structure.glb.gz",
+      "bytes": 12251666,
+      "sha256": "7ce4dda8c2ef9457c5718c1cba0755d75da71b57e35566b58322b2ed5d63ffe7"
+    },
+    {
+      "path": "docs/assets/connected/structure.json",
+      "bytes": 140171,
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "docs/assets/connected/wheel.glb.gz",
+      "bytes": 1291564,
+      "sha256": "4428707128dcccc0c4f3cfe7de55ee5307a66a8ed89c7083a30c02cb2b98071f"
+    },
+    {
+      "path": "docs/assets/connected/wheel.json",
+      "bytes": 2759,
+      "sha256": "772213abb0f5dccfe95340abd31fe3000194b822039def732009be58820fa201"
+    },
+    {
       "path": "docs/assets/corners/drive-reservation.json",
       "bytes": 846,
       "sha256": "1fec15f0a65d2b5bec05c6f412e97dc4c0d69a503986b8f283508bb938245792"
@@ -228,6 +560,11 @@
       "sha256": "ba24b8ed2e1ac430472e7df3bfa7aadcbefd902641327e3753e336ebf98f3b8e"
     },
     {
+      "path": "docs/assets/corners/interface_contract_C02_R02.json",
+      "bytes": 5070,
+      "sha256": "c965f84d9091ec334117d14ce188e87ab7d85e0bbc4336cc7d14f730be5cffa7"
+    },
+    {
       "path": "docs/assets/corners/interface_contract_C02_R04.json",
       "bytes": 5768,
       "sha256": "221ec053ab259588f523efc19d6558993a9656fbd2d793b1151f35a4c7fd39c0"
@@ -243,6 +580,11 @@
       "sha256": "d499bc60c0424d9aa594a301a2b9397bbc326040f2a9ba4a256cfae6d85149e8"
     },
     {
+      "path": "docs/assets/corners/lower_bearing_envelopes_C02_R01.glb",
+      "bytes": 512832,
+      "sha256": "f3542c9b436122147e5ec380d4f753307c7b9539f20ba0f4aff48c9377699331"
+    },
+    {
       "path": "docs/assets/corners/lower_bearing_envelopes_C02_R02.glb",
       "bytes": 512828,
       "sha256": "f900fc29459a8059615a72a5e25fb96a799c4a3079647dc05856282a9807cc18"
@@ -256,6 +598,11 @@
       "path": "docs/assets/corners/lower_bearing_envelopes_C02_R02_report.json",
       "bytes": 736,
       "sha256": "8a3e17dbd76dd2f15fd057b0cf70a4234b1090e5b5cc14ac68f8b33dca0600a6"
+    },
+    {
+      "path": "docs/assets/corners/lower_wishbone_C02_R01.glb",
+      "bytes": 1129856,
+      "sha256": "aca14b8592a6b5c674a0e70d02ba140eafdcb14f7d817b6797dbde53f57e6dfb"
     },
     {
       "path": "docs/assets/corners/lower_wishbone_C02_R02.glb",
@@ -313,6 +660,11 @@
       "sha256": "ee0e091b66ffda0191e39450be2adc60e2a9bf55db4a14ba35c24ac980ff3f74"
     },
     {
+      "path": "docs/assets/corners/upper_bearing_envelopes_C02_R01.glb",
+      "bytes": 512832,
+      "sha256": "13fd7c70fd02d2dd6e69848d23dcf59a8ccb8eaeb4790c54c2f30590208c973c"
+    },
+    {
       "path": "docs/assets/corners/upper_bearing_envelopes_C02_R02.glb",
       "bytes": 512828,
       "sha256": "5785f405ba8a4185a2502c330a79b523f03b3eb68f2a860dfb8014728cb8ef2a"
@@ -328,6 +680,11 @@
       "sha256": "012441b9c30773ac30e7ae57bb94a42a17bbaa57c31f0da0483ecb17b4e0920d"
     },
     {
+      "path": "docs/assets/corners/upper_wishbone_C02_R01.glb",
+      "bytes": 505512,
+      "sha256": "6615455c6d4ecd7878a6dec84c351cd0b0af32565d4b48169ae88b7b7082b765"
+    },
+    {
       "path": "docs/assets/corners/upper_wishbone_C02_R02.glb",
       "bytes": 508200,
       "sha256": "37bfcbe140f49599e9b9c0fee3d7db6d0d5826591b3c54a177427d0b5d35d89e"
@@ -341,6 +698,11 @@
       "path": "docs/assets/corners/upper_wishbone_C02_R02_report.json",
       "bytes": 889,
       "sha256": "68d83ff0c1c3b4b856fa8f3140d369fc0b9c0b076525c8148702c20556726211"
+    },
+    {
+      "path": "docs/assets/corners/upright_WD220_C02_R02.glb",
+      "bytes": 571676,
+      "sha256": "fa487ccaefeea44caf121e081487faa6c0e831522ca02cf0f7e25ae379555f92"
     },
     {
       "path": "docs/assets/corners/upright_WD220_C02_R04.glb",
@@ -371,6 +733,11 @@
       "path": "docs/assets/corners/upright_WD220_C02_R05_report.json",
       "bytes": 2072,
       "sha256": "599cb5653e9967af7649bf39e78d7927efd13331332baee3341048ea5903e106"
+    },
+    {
+      "path": "docs/assets/corners/upright_pins_C02_R01.glb",
+      "bytes": 287496,
+      "sha256": "6d85a478a3aa165a1460baff24a4a6746311947774a10396d1f89780e313ab33"
     },
     {
       "path": "docs/assets/corners/upright_pins_C02_R02.glb",
@@ -419,28 +786,583 @@
     },
     {
       "path": "docs/assets/cost-model/BOM.csv",
-      "bytes": 84163,
-      "sha256": "7041d4e5479e02a88012579e014f2be56edb2afc9067b53338d734b61c5ce396"
+      "bytes": 169866,
+      "sha256": "6dea6d0cd5004c51a38c72a7db8986c081381dd6f244b052e5000e1fd57c7d31"
     },
     {
       "path": "docs/assets/cost-model/README.md",
-      "bytes": 12749,
-      "sha256": "41a40a918cdc284548c2fa17fdf55025856047ce4b6c5b5452ecf3be20e3fae8"
+      "bytes": 8806,
+      "sha256": "3ffa0ca338a3891e03c1ae224595501ec06bc1a5945e4580523b6eb7e9c16e57"
+    },
+    {
+      "path": "docs/assets/cost-model/UI_INTEGRATION.md",
+      "bytes": 1947,
+      "sha256": "54905d06d8c8c557940b6d3fb6ea3c74dd217e5092895fa3c50b33dc9a8bb189"
+    },
+    {
+      "path": "docs/assets/cost-model/body_composition.json",
+      "bytes": 88894,
+      "sha256": "06e99e6b4e43563d8e35725d559375c0a8978110898931ad98151e775a4f0893"
     },
     {
       "path": "docs/assets/cost-model/build_cost_model.py",
-      "bytes": 48263,
-      "sha256": "7e13e4128a371166a20ed9bc812a4994feeb5fac5a39bb9f1c3b57eb7aa41d77"
+      "bytes": 18865,
+      "sha256": "cd672a54268f32fc54af7990d461951d1dece89b11bf628ea3190c325a65cc88"
     },
     {
       "path": "docs/assets/cost-model/checksums.json",
-      "bytes": 721,
-      "sha256": "061944df0f27004492ced184ebece567c98359058d3f39e8b549ce17745a68d7"
+      "bytes": 10634,
+      "sha256": "8e9909917203521f433defc1f32ade19ee2de8b2181b5ba5f9ec7e64319384e8"
     },
     {
       "path": "docs/assets/cost-model/cost_model.json",
+      "bytes": 555202,
+      "sha256": "6f32765b5b802c712020f4b697bfcac2412b41d894dd4110db4c76d66369270f"
+    },
+    {
+      "path": "docs/assets/cost-model/delta_summary.json",
+      "bytes": 2119,
+      "sha256": "d67baebbc44fefd62c5403627826e5ae4eb1696e37e56e17a233b3472a53d3f5"
+    },
+    {
+      "path": "docs/assets/cost-model/dependency_manifest.json",
+      "bytes": 9395,
+      "sha256": "179ca10be0ff2964768cb74cd78012db5611215ae28538ea4d53512f99645ab3"
+    },
+    {
+      "path": "docs/assets/cost-model/electrical_mass_selection.json",
+      "bytes": 716672,
+      "sha256": "b545f1ee8e8329697ac3e5af04b376d524ff062359c26086bc1c1992f8a3cbf3"
+    },
+    {
+      "path": "docs/assets/cost-model/freeze_inputs.py",
+      "bytes": 5577,
+      "sha256": "0ea6570d0e664911f00f07889cc62951a6a6496fd5427a2502bcad5a12350c75"
+    },
+    {
+      "path": "docs/assets/cost-model/input-manifest.json",
+      "bytes": 18887,
+      "sha256": "bf9e4495382f54dd26584d749bc1f900cf0d4ce42bc20d52f3075946026ff6f0"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/BOM.csv",
+      "bytes": 108778,
+      "sha256": "9526b29d95d0ef38235e6ff275701f3645011968a0ff2bbce37fe1cc4d6f3444"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/README.md",
+      "bytes": 9026,
+      "sha256": "7c91879e939cd27c0696a9cdbdcb1d4a8d2abcd9bdbbf2d089726095a4e094fc"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/UI_INTEGRATION.md",
+      "bytes": 2443,
+      "sha256": "7179aa97ba289e3e3ca0272a1e02e385cf0681371d581d4829abbdad18395146"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/body_composition.json",
+      "bytes": 88397,
+      "sha256": "8dbce749c773cb4b1f88f4c082242de423f65e35efaddc3b8f14b9d1a87cc993"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/build_cost_model.py",
+      "bytes": 34697,
+      "sha256": "6a723a227a5bf06863d7001ebfddc503cda79e8049f25b3d9123e7174acd8d6a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/checksums.json",
+      "bytes": 4310,
+      "sha256": "88c35c6e0837b5bd3ec3666dc965d542ec1b76bc545caaea8728ae3ae97c8355"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/cost_model.json",
+      "bytes": 378801,
+      "sha256": "f88bb6db3c91821508fa741fa38f44283b99b6ad5661fdeb0f22ce7c7e4d22a2"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/electrical_mass_selection.json",
+      "bytes": 716672,
+      "sha256": "b545f1ee8e8329697ac3e5af04b376d524ff062359c26086bc1c1992f8a3cbf3"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/freeze_inputs.py",
+      "bytes": 3162,
+      "sha256": "6bfb6b3bf1598cac274428237c45402500ee890fbc69683425982441a15e0dd6"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/input-manifest.json",
+      "bytes": 7557,
+      "sha256": "85267ce5566403f7c351ae4e9ad79e8f27e335097f7c0a54ec75538ab5e38b88"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "bytes": 126298,
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/actuator_contract_R02.json",
+      "bytes": 3971,
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/battery_BA02_manifest.json",
+      "bytes": 37675,
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/battery_BA02_verification.json",
+      "bytes": 13309,
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/battery_original_hardware_mass.csv",
+      "bytes": 3333,
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/battery_strap_source.json",
+      "bytes": 1442,
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_PR01_check.json",
+      "bytes": 186640,
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_PR01_manifest.json",
+      "bytes": 153959,
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_PR01_material_source.py",
+      "bytes": 16448,
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_R01_verification.json",
+      "bytes": 117473,
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_SO02_E04P_parts.json",
+      "bytes": 527868,
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/body_SO02_E04P_selected.json",
+      "bytes": 4146,
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_bom_E04.json",
+      "bytes": 2430,
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_contract_E04.json",
+      "bytes": 348630,
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_mass_ledger.json",
+      "bytes": 563123,
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_temperature_limits.json",
+      "bytes": 2963,
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_topology_E04.json",
+      "bytes": 180659,
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/electrical_trough_contract.json",
+      "bytes": 13845,
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/historical_C03_model.json",
       "bytes": 213456,
       "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/historical_C03_sources.json",
+      "bytes": 21267,
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/mechanical_mass_BOM_C04_R01.json",
+      "bytes": 23024,
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/structural_connections_C04_R05_manifest.json",
+      "bytes": 140171,
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/victron_price_observations.json",
+      "bytes": 1241,
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/wheel_candidates.json",
+      "bytes": 3804,
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/wheel_nut_contract.json",
+      "bytes": 3999,
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/inputs/wheel_price_observations.json",
+      "bytes": 1471,
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/mass_reconciliation.json",
+      "bytes": 60136,
+      "sha256": "a5969fe9201fece172bb633c65853234045c969785c05ed436a5172356d8c23a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/source_reconciliation.json",
+      "bytes": 1022,
+      "sha256": "28c265d4298d813707efa9900aa7522c8fb219ad50678e6724f95ff120aa4399"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/sources.json",
+      "bytes": 16913,
+      "sha256": "0848fee83c24e503b112f8884b97117e7bcaf5065a602714fab4eabaf2b214c1"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/test_cost_model.py",
+      "bytes": 11492,
+      "sha256": "541fd20bc9767fff4a055a72891f4dce27b448b476d1fc368ddb8c905880e454"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/test_run.log",
+      "bytes": 1887,
+      "sha256": "c69b387542d61381000d48f6eaff6300b069391e10dd47233894a03934dfe820"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/validation.json",
+      "bytes": 296,
+      "sha256": "d8bb355f06ee65912b3b73c6ff8a1739ab3f972562eb9717ac437e56bd93e250"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/C04/viewer_formula_validation.json",
+      "bytes": 814,
+      "sha256": "20345bd8f939bf7e0a927948d94cb37b7c7ffce7224b1ab1aa074b209e55b360"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/align_main_pair_visual_E05.py",
+      "bytes": 2114,
+      "sha256": "56d7940210b6b987c3c55e7d20f3ef2c99cc09d2a41fc564597695301c8e096f"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/build_main_pair_E05.py",
+      "bytes": 9762,
+      "sha256": "a68cf6a8ce79cf4bce75c554ce35d480f491ba006d6c7ee5bda66d6286e8bb8c"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/cad_export_E05.py",
+      "bytes": 4308,
+      "sha256": "57bcafb791a147d45c62c696331d578086676fb858ed5d4705a5f154e94c08df"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/check_main_pair_E05.py",
+      "bytes": 6330,
+      "sha256": "4c96a4e8082c4449afdf0c2484b5a5547643afa823345e2642b88e470b28b3e7"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/check_main_pair_mechanical_E05.py",
+      "bytes": 1548,
+      "sha256": "a0d1ec591099c1778871029b78d4b3a640670292200c3f0c568961b27a6fdf72"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/check_main_pair_retention_E05.py",
+      "bytes": 5020,
+      "sha256": "5909feb685f18f2fcd9dfa94cca691448574bb18a748b07efea5d976a3ec6769"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/freeze_main_pair_E05.py",
+      "bytes": 9317,
+      "sha256": "1f24d12d37971765853d156a21090beb45306a9cd0cc3b8d22a6cc06c3932d07"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/FREEZE_E05.json",
+      "bytes": 378,
+      "sha256": "3edfb9b7023b351e1da30d0bf47bbc011602c470691d1803275fe9755c1ebbd7"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/INPUT_HASHES_E05.json",
+      "bytes": 1866,
+      "sha256": "656fddcf8d3843fb278c14ee69fa2af8d03e601f0c0b30b735bd66175869bb79"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/PUBLIC_FILES_E05.json",
+      "bytes": 4643,
+      "sha256": "49db3e7bc2e46399615c24f7a35053ad732b373a7b7675731ba7af04ddf68814"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/README_E05.md",
+      "bytes": 3349,
+      "sha256": "80b692a2c3d906c368f9dfb1a640e77b93a020bc07a843265bb1f266ab6e49a1"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/battery_polarity_regression_E05.json",
+      "bytes": 1782,
+      "sha256": "3691a13f6cd1b575001980aa12c48d085005c5f8766a4c2bdd30d36379b89d96"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/battery_polarity_regression_E05.py",
+      "bytes": 1795,
+      "sha256": "f83f5b7b3bcd4a517c08826a876f93b16600309595660a644a8c604b838a9574"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/bom_E05.json",
+      "bytes": 1854,
+      "sha256": "b9aca5ec8b8fdbfff80e14df426299ccbd7cda1401f59f8f0de1dbed51a8037a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/cable_separation_screen_E05.json",
+      "bytes": 447,
+      "sha256": "565c61984885f7e48bb630c217511ecdccdabc150db2e1c0a23f77bca6f4bea8"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/cable_source_and_scenario_E05.json",
+      "bytes": 2413,
+      "sha256": "f80d184e9820c45f483d697c4cf3e30cda6f8b213da7ded665c9e3bb0dc2d251"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_contract_E05.json",
+      "bytes": 65770,
+      "sha256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_geometry_check_E05.json",
+      "bytes": 21602,
+      "sha256": "0e585ce5499246e583d957bcd2a822e3e312fa502bb5afd2b5dc4a9a0e6a9224"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_graph_E05.json",
+      "bytes": 41791,
+      "sha256": "77f8ed5fda1a54c696e784d36cb06a00b03c4c8da4ee0a3727f1e423dcfb44fc"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_mechanical_check_E05.json",
+      "bytes": 312,
+      "sha256": "ba0a5350a8454e9aa714eb7e5bc0c8c5530ef1be72ebb80024bc552b160ad720"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_retention_check_E05.json",
+      "bytes": 20051,
+      "sha256": "783266faa63622621ab4d5b071c693932ec9a731c1f4256ec829f120e64e0070"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_supported_E05.glb",
+      "bytes": 3172868,
+      "sha256": "8b24f5116e278d8b02a474eeaea88cf0162e6e998461a5f816fb54ec69cf2756"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/main_pair_supported_E05.step",
+      "bytes": 3069940,
+      "sha256": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/partition_main_glands_E05.glb",
+      "bytes": 93800,
+      "sha256": "37154f8ead92cae9f4684d2b6b90e00c373850e4a3b54429c1aef2b49385c29e"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/partition_main_glands_E05.step",
+      "bytes": 173662,
+      "sha256": "c0e812cfb328b30b1e4b23abfdaa0dae923e479321ce609cc0552a58205a4b57"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/partition_patch_E05.json",
+      "bytes": 3231,
+      "sha256": "e0f995c6af3930aaeb51a686491f4e5a835f8e2c7f32b8aafa712a2624c16321"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/E05/main_routes_E05/visual_endplane_check_E05.json",
+      "bytes": 495,
+      "sha256": "628ca8a373fa9646a20936014d424207d7f4b79c734f3fd310659781a483c8b5"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/PUBLIC_SOURCE_FREEZE_C04_R01.json",
+      "bytes": 125509,
+      "sha256": "0cc41d854453be315558d153fd7963c1607c949b3e04359c2ee112cf253c32ee"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "bytes": 126298,
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/actuator_contract_R02.json",
+      "bytes": 3971,
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/battery_BA02_manifest.json",
+      "bytes": 37675,
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/battery_BA02_verification.json",
+      "bytes": 13309,
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/battery_original_hardware_mass.csv",
+      "bytes": 3333,
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/battery_strap_source.json",
+      "bytes": 1442,
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_PR01_check.json",
+      "bytes": 186640,
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_PR01_manifest.json",
+      "bytes": 153959,
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_PR01_material_source.py",
+      "bytes": 16448,
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_R01_verification.json",
+      "bytes": 117473,
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_SO02_E04P_parts.json",
+      "bytes": 527868,
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/body_SO02_E04P_selected.json",
+      "bytes": 4146,
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_bom_E04.json",
+      "bytes": 2430,
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_contract_E04.json",
+      "bytes": 348630,
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_mass_ledger.json",
+      "bytes": 563123,
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_temperature_limits.json",
+      "bytes": 2963,
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_topology_E04.json",
+      "bytes": 180659,
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/electrical_trough_contract.json",
+      "bytes": 13845,
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/explicit_material_ledger_E05.json",
+      "bytes": 43527,
+      "sha256": "6b72f2a1689c076de17f8e33e9dba4f5b4f72368160c41fa0055d3e16353f203"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/historical_C03_model.json",
+      "bytes": 213456,
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/historical_C03_sources.json",
+      "bytes": 21267,
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/isolation_snapshot.json",
+      "bytes": 103470,
+      "sha256": "bcb3edc5433ba725c3879eb599ab0965abc8046bd3725d88a52707749e049f26"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/manufacturer_cable_observation.json",
+      "bytes": 1007,
+      "sha256": "e9f153564940e6d963ea70c63c31da37a893e283dc801340913f25162630b89a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/mechanical_mass_BOM_C04_R01.json",
+      "bytes": 23024,
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/runtime_C04/electrical-contract.json",
+      "bytes": 395863,
+      "sha256": "4cba33b51081c4e92b8f134bb5d43c54683cecaf352dd14cba8f159f0b35f566"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/runtime_C04/electrical-scene.mjs",
+      "bytes": 2317,
+      "sha256": "8d138b3da55bcbf0f9a0cbd23530301fcb1842e6ede7d710b01f1d0b680de446"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/structural_connections_C04_R05_manifest.json",
+      "bytes": 140171,
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/upstream_dependency_verification.json",
+      "bytes": 5696,
+      "sha256": "c7fdd483423731c1e6eec9c57ed5328cfff7fe2d7e800d83da4d240f03549728"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/victron_price_observations.json",
+      "bytes": 1241,
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/wheel_candidates.json",
+      "bytes": 3804,
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/wheel_nut_contract.json",
+      "bytes": 3999,
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119"
+    },
+    {
+      "path": "docs/assets/cost-model/inputs/wheel_price_observations.json",
+      "bytes": 1471,
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683"
+    },
+    {
+      "path": "docs/assets/cost-model/isolation_verification.json",
+      "bytes": 289,
+      "sha256": "a4fb9dd22ea1ec740c6cc6f91cd62e15ea1e0bf72c8fcdf1d9c5e98073ce3c5b"
     },
     {
       "path": "docs/assets/cost-model/manufacturer-mass-evidence.json",
@@ -448,19 +1370,219 @@
       "sha256": "96a0ba69db97a79e885202cbbc4b301301be91b1688947f202d99a2d08d6a403"
     },
     {
+      "path": "docs/assets/cost-model/mass_reconciliation.json",
+      "bytes": 88985,
+      "sha256": "2d653be66ed5dcb52aadf7bf24d02a7cf2bb1ffceedee456e6754cee6c9df7d0"
+    },
+    {
+      "path": "docs/assets/cost-model/material_mass_ledger_E05.json",
+      "bytes": 91169,
+      "sha256": "8d4627933906d4094cdc4495bfb7060bf9c29a5f17ba37a1dece4726a6b0bdc4"
+    },
+    {
+      "path": "docs/assets/cost-model/output-checksums.json",
+      "bytes": 839,
+      "sha256": "126826b0bc5c1cd5476721d9ed4e12d1bbb168e1af396c429b1089f18a71701f"
+    },
+    {
+      "path": "docs/assets/cost-model/replacement_map.json",
+      "bytes": 7601,
+      "sha256": "801342e19e7f58d01e78ca3e82891827b495f3473f77e87283602bfc3ce29a23"
+    },
+    {
+      "path": "docs/assets/cost-model/source_reconciliation.json",
+      "bytes": 1022,
+      "sha256": "28c265d4298d813707efa9900aa7522c8fb219ad50678e6724f95ff120aa4399"
+    },
+    {
       "path": "docs/assets/cost-model/sources.json",
-      "bytes": 21267,
-      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
+      "bytes": 18767,
+      "sha256": "a309af6a477ccb06dc61174757d2f2bfce7391b69b59f87422bfa04fbb0a0e59"
     },
     {
       "path": "docs/assets/cost-model/test_cost_model.py",
-      "bytes": 11403,
-      "sha256": "ebb6796f9a3270f50d2f7ba2ba7913d35e68e3e7b59b9356a66a3c467b4f5ec3"
+      "bytes": 11410,
+      "sha256": "d0cff3fd20edd3f7743cc8d46b41bce678677453cd729021c68c7bb38534ddf6"
+    },
+    {
+      "path": "docs/assets/cost-model/test_run.log",
+      "bytes": 3295,
+      "sha256": "3c611c9a94a9dbb487a46126286e5d98ebedf4253dd31ebd369eb946003d2741"
     },
     {
       "path": "docs/assets/cost-model/validation.json",
-      "bytes": 733,
-      "sha256": "52a921f4575f3e342e74b6b5116da3f4ce90717cc0b9cb49bc2fd7b1146b8c65"
+      "bytes": 401,
+      "sha256": "3c8591ec7a49af96c7eb031b64e080ef58baac9e6cb522bd2aae08ee3a6a5778"
+    },
+    {
+      "path": "docs/assets/cost-model/viewer_formula_validation.json",
+      "bytes": 814,
+      "sha256": "20345bd8f939bf7e0a927948d94cb37b7c7ffce7224b1ab1aa074b209e55b360"
+    },
+    {
+      "path": "docs/assets/flange-regression/adapter_R04_reference.json",
+      "bytes": 4564,
+      "sha256": "85f045450615791d3cedb088fd3ce7fb0e1f4e941b3e127724b5f3ae46ddb457"
+    },
+    {
+      "path": "docs/assets/flange-regression/check_flange_fastener.py",
+      "bytes": 3319,
+      "sha256": "3735ac968142f8eef734b93ce881f2c3229b5f15cc71895200f2369e7a921bfa"
+    },
+    {
+      "path": "docs/assets/flange-regression/flange-fastener-contract.json",
+      "bytes": 858,
+      "sha256": "129c1696507242f88d45d588fb52eb04ec0b60ec002aec6b111e25487adde62e"
+    },
+    {
+      "path": "docs/assets/flange-regression/flange-fastener-report.json",
+      "bytes": 2092,
+      "sha256": "0d7517330e1c6c2e42bf7533f3e46808a46e2fa7b0316788f676c3259a8951ba"
+    },
+    {
+      "path": "docs/assets/flange-regression/test-flange-fastener.mjs",
+      "bytes": 1687,
+      "sha256": "c2077621fdc2cd92675adbf4d8f0bde24535bf161c7d9d8c8459703adf8e490d"
+    },
+    {
+      "path": "docs/assets/flange-regression/test_flange_fastener.py",
+      "bytes": 778,
+      "sha256": "a08d83a64822ee906e003c260a712dc3a7f9c0e93e7b716869bc50b7da0499ca"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/FREEZE_E05.json",
+      "bytes": 378,
+      "sha256": "3edfb9b7023b351e1da30d0bf47bbc011602c470691d1803275fe9755c1ebbd7"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/PUBLIC_FILES_E05.json",
+      "bytes": 4643,
+      "sha256": "49db3e7bc2e46399615c24f7a35053ad732b373a7b7675731ba7af04ddf68814"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/align_main_pair_visual_E05.py",
+      "bytes": 2114,
+      "sha256": "56d7940210b6b987c3c55e7d20f3ef2c99cc09d2a41fc564597695301c8e096f"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/build_main_pair_E05.py",
+      "bytes": 9762,
+      "sha256": "a68cf6a8ce79cf4bce75c554ce35d480f491ba006d6c7ee5bda66d6286e8bb8c"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/cad_export_E05.py",
+      "bytes": 4308,
+      "sha256": "57bcafb791a147d45c62c696331d578086676fb858ed5d4705a5f154e94c08df"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/check_main_pair_E05.py",
+      "bytes": 6330,
+      "sha256": "4c96a4e8082c4449afdf0c2484b5a5547643afa823345e2642b88e470b28b3e7"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/check_main_pair_mechanical_E05.py",
+      "bytes": 1548,
+      "sha256": "a0d1ec591099c1778871029b78d4b3a640670292200c3f0c568961b27a6fdf72"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/check_main_pair_retention_E05.py",
+      "bytes": 5020,
+      "sha256": "5909feb685f18f2fcd9dfa94cca691448574bb18a748b07efea5d976a3ec6769"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/freeze_main_pair_E05.py",
+      "bytes": 9317,
+      "sha256": "1f24d12d37971765853d156a21090beb45306a9cd0cc3b8d22a6cc06c3932d07"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/index.html",
+      "bytes": 1126,
+      "sha256": "95f45c4faf681604147bfa577fc3af711bf4bcfecc9419364e544bbaaea1ab1c"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_pair_supported_E05.glb.gz",
+      "bytes": 399584,
+      "sha256": "7256016b2b15ba94355d1273ec577083115ee870e1af4a6cfe4d6bbc6649f6bd"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/INPUT_HASHES_E05.json",
+      "bytes": 1866,
+      "sha256": "656fddcf8d3843fb278c14ee69fa2af8d03e601f0c0b30b735bd66175869bb79"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/README_E05.md",
+      "bytes": 3349,
+      "sha256": "80b692a2c3d906c368f9dfb1a640e77b93a020bc07a843265bb1f266ab6e49a1"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/battery_polarity_regression_E05.json",
+      "bytes": 1782,
+      "sha256": "3691a13f6cd1b575001980aa12c48d085005c5f8766a4c2bdd30d36379b89d96"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/battery_polarity_regression_E05.py",
+      "bytes": 1795,
+      "sha256": "f83f5b7b3bcd4a517c08826a876f93b16600309595660a644a8c604b838a9574"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/bom_E05.json",
+      "bytes": 1854,
+      "sha256": "b9aca5ec8b8fdbfff80e14df426299ccbd7cda1401f59f8f0de1dbed51a8037a"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/cable_separation_screen_E05.json",
+      "bytes": 447,
+      "sha256": "565c61984885f7e48bb630c217511ecdccdabc150db2e1c0a23f77bca6f4bea8"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/cable_source_and_scenario_E05.json",
+      "bytes": 2413,
+      "sha256": "f80d184e9820c45f483d697c4cf3e30cda6f8b213da7ded665c9e3bb0dc2d251"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/main_pair_contract_E05.json",
+      "bytes": 65770,
+      "sha256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/main_pair_geometry_check_E05.json",
+      "bytes": 21602,
+      "sha256": "0e585ce5499246e583d957bcd2a822e3e312fa502bb5afd2b5dc4a9a0e6a9224"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/main_pair_graph_E05.json",
+      "bytes": 41791,
+      "sha256": "77f8ed5fda1a54c696e784d36cb06a00b03c4c8da4ee0a3727f1e423dcfb44fc"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/main_pair_mechanical_check_E05.json",
+      "bytes": 312,
+      "sha256": "ba0a5350a8454e9aa714eb7e5bc0c8c5530ef1be72ebb80024bc552b160ad720"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/main_pair_retention_check_E05.json",
+      "bytes": 20051,
+      "sha256": "783266faa63622621ab4d5b071c693932ec9a731c1f4256ec829f120e64e0070"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/partition_patch_E05.json",
+      "bytes": 3231,
+      "sha256": "e0f995c6af3930aaeb51a686491f4e5a835f8e2c7f32b8aafa712a2624c16321"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/main_routes_E05/visual_endplane_check_E05.json",
+      "bytes": 495,
+      "sha256": "628ca8a373fa9646a20936014d424207d7f4b79c734f3fd310659781a483c8b5"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/original_main_pair_E05.zip",
+      "bytes": 1012315,
+      "sha256": "ba9c96ef4ff2f06199055eec714ebbcfd78250c395f720b5ce19f34b9a6af1b6"
+    },
+    {
+      "path": "docs/assets/main-pair-E05/partition_main_glands_E05.glb.gz",
+      "bytes": 14702,
+      "sha256": "be03a42d53bcb95c325b26e62096081eb33ef29199a53ff51c8e97dce0b48e7d"
     },
     {
       "path": "docs/assets/mechanical/DFM_ATTRIBUTION.md",
@@ -1543,6 +2665,111 @@
       "sha256": "3f1917a6631350220d788990cca939344c208cb504ecdda131788455a0bff453"
     },
     {
+      "path": "docs/connected/actuator-scene.mjs",
+      "bytes": 2282,
+      "sha256": "10c61f5a4170648f09f0a92413391cb16f499ee57b89a44c74dfb260c219f1ea"
+    },
+    {
+      "path": "docs/connected/apply-battery-polarity.mjs",
+      "bytes": 8127,
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "docs/connected/body-scene.mjs",
+      "bytes": 1290,
+      "sha256": "ce213bf22ffdd2ff532fe927ad1075e9a27fa889e3f1f05d598e6d9a3a1cd190"
+    },
+    {
+      "path": "docs/connected/connected-mechanics.mjs",
+      "bytes": 2040,
+      "sha256": "beb9998be14e1b93ce9dc7ac27dadb8c50aa04047905af836ec5890ebd3b48d8"
+    },
+    {
+      "path": "docs/connected/connected-motion.mjs",
+      "bytes": 1043,
+      "sha256": "387141c3aadd1d62edc44efc408cbf5677124adf4d454e1a50480cb0ce0e79dc"
+    },
+    {
+      "path": "docs/connected/connected-transforms.mjs",
+      "bytes": 2546,
+      "sha256": "be9944cfe219c0059a4af9253013a0ba4363ab98fb4717376cb07f19cf82e03c"
+    },
+    {
+      "path": "docs/connected/connection-registry.mjs",
+      "bytes": 1870,
+      "sha256": "6474eaafbee4f2eb07700cbfd3b512a4d8312d184074c9fc57feb5810e684127"
+    },
+    {
+      "path": "docs/connected/drive-scene.mjs",
+      "bytes": 2737,
+      "sha256": "c063b4d2f01f3a53853ad14005928ed9c146772b39c6e041f8be2c07178c7336"
+    },
+    {
+      "path": "docs/connected/electrical-scene.mjs",
+      "bytes": 2846,
+      "sha256": "c6ffc69ffb0d25b26f83a920245a5323a0af2e81d758f5212b29541f7f6e0a38"
+    },
+    {
+      "path": "docs/connected/extend-actuator-graph.mjs",
+      "bytes": 2018,
+      "sha256": "a94838a9f8d948ada5a79cd1ee525eb8c4372e95e701f1cc6959a033efc4b23f"
+    },
+    {
+      "path": "docs/connected/graph-coverage.mjs",
+      "bytes": 3369,
+      "sha256": "8392f52c45ea3034e6f9709a43fe1c2f6b4b45619dbf0be552e72fb01092c48d"
+    },
+    {
+      "path": "docs/connected/joint-scene.mjs",
+      "bytes": 1682,
+      "sha256": "3c122ca5303536626bd784892e29064dbcf0525d038f337fc3c8a5e4a12e17c2"
+    },
+    {
+      "path": "docs/connected/kinematics_C04_R03.mjs",
+      "bytes": 3382,
+      "sha256": "b9066e540dba1d6f9849716d2932578d48234f4352b91e25a3a9dac3a25da56e"
+    },
+    {
+      "path": "docs/connected/main-pair-graph.mjs",
+      "bytes": 1010,
+      "sha256": "91bf072f18fd60413cc29cc616fc7b12c1eef811586c1086d2cbd9eea8c38dbf"
+    },
+    {
+      "path": "docs/connected/named-part-patch.mjs",
+      "bytes": 2731,
+      "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
+    },
+    {
+      "path": "docs/connected/restore-cad-names.mjs",
+      "bytes": 538,
+      "sha256": "e30f33f9640a7ec518a2f4d3ff38a90f9b05c054bdc1c78a14291215c23ecb40"
+    },
+    {
+      "path": "docs/connected/rigid-matrix.mjs",
+      "bytes": 619,
+      "sha256": "7c9693be24985d27ea330665fad6a0f6d22b6cfc7f87640628e7882cb99cd006"
+    },
+    {
+      "path": "docs/connected/shock-scene.mjs",
+      "bytes": 3735,
+      "sha256": "48fbf03dd8b5444407b5fa97d290ca5d39e25fe7e4a129e6951d8fce9765350e"
+    },
+    {
+      "path": "docs/connected/spring_profile_runtime_C04_R08.mjs",
+      "bytes": 2716,
+      "sha256": "f00efd948ba3debb91071995a4f42d9e7c7d66edb033df3750be6c439ee383b5"
+    },
+    {
+      "path": "docs/connected/structure-scene.mjs",
+      "bytes": 2025,
+      "sha256": "796d8c4961b244741708288565c1c2e6044c029f6c15e83ae78703093d162442"
+    },
+    {
+      "path": "docs/connected/wheel-scene.mjs",
+      "bytes": 1645,
+      "sha256": "fce24c26605150f3840975b1ab67f27465dbaed17fe9227bb00e27e00c70d728"
+    },
+    {
       "path": "docs/contact/README.md",
       "bytes": 6430,
       "sha256": "3cb5d7030caf0a723a38b673e36c0326f909e1f65450b8c3f80281584547091e"
@@ -1773,14 +3000,19 @@
       "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
     },
     {
+      "path": "docs/cost-display.mjs",
+      "bytes": 514,
+      "sha256": "d1d42c908b2061ecd886a78cc6d98f8b5f9824113a0e75a4a405c60058145f20"
+    },
+    {
       "path": "docs/cost-math.js",
       "bytes": 1104,
       "sha256": "cc2b10dcd990c7e7ecffa66aa890678bbb33e3a4ca97a470e2c3f87af0c82027"
     },
     {
       "path": "docs/cost-ui.js",
-      "bytes": 5168,
-      "sha256": "ed82027cd02252e15250f6e14c7f02b12d1fd91ac5f79d62192faaf2f6a54561"
+      "bytes": 5263,
+      "sha256": "2372cbfcef42603a0d4451d35641dc08974a65e71df2c50317982b08264543e2"
     },
     {
       "path": "docs/costs.json",
@@ -1789,8 +3021,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 13770,
-      "sha256": "681893fc32aaeee1706b7c4cd4607d342aabfb6b7ed4b9f30a88a0281c57e632"
+      "bytes": 15081,
+      "sha256": "60edd0588786322cc80ed763d9eb98ab1f6a48195f2734ada83b1f04bbc2242f"
     },
     {
       "path": "docs/kinematics.js",
@@ -1814,13 +3046,13 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 6306,
-      "sha256": "95a81df6393838fea949b122f23a5c5abb434289874eafe236595fe01008578f"
+      "bytes": 4769,
+      "sha256": "5ae77bf01f316eb2818d2d44720201d4ce782e9df27edc7e856d616f206dbd4f"
     },
     {
       "path": "docs/scene.js",
-      "bytes": 7151,
-      "sha256": "eec944f52ea501efe8bd350308bcc0c3db8b55b3cd1fa15699010b166c03db00"
+      "bytes": 7530,
+      "sha256": "3bbc981a2513721207631dd8a41ec2d66eb3e11782eac96d0c5af9388b7430e7"
     },
     {
       "path": "docs/steering-transforms.js",
@@ -1836,6 +3068,11 @@
       "path": "docs/style.css",
       "bytes": 8348,
       "sha256": "5441156b066a6a0ab7a8afe95e440f455c2fe7b2e81200ec14a42c0c0c72477b"
+    },
+    {
+      "path": "docs/suspension.js",
+      "bytes": 1145,
+      "sha256": "8446608810fcdb8c0393dc29783bcc883067034da804f0f4ba8d91ad40beb50e"
     },
     {
       "path": "docs/vendor/BufferGeometryUtils.js",
@@ -1878,6 +3115,171 @@
       "sha256": "400a88cec339247254762dfb91d3ee0588a00fac46edb6a774d1fe7c11b94067"
     },
     {
+      "path": "reconstruction/connected/ACCEPTANCE.md",
+      "bytes": 3780,
+      "sha256": "04417f2fcfcb6ad5b6ea2eb9fd6bbdb78a81d975bc577349489f1ee0d243d81a"
+    },
+    {
+      "path": "reconstruction/connected/apply-battery-polarity.mjs",
+      "bytes": 8127,
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "reconstruction/connected/body-scene.mjs",
+      "bytes": 1290,
+      "sha256": "ce213bf22ffdd2ff532fe927ad1075e9a27fa889e3f1f05d598e6d9a3a1cd190"
+    },
+    {
+      "path": "reconstruction/connected/check-connections.mjs",
+      "bytes": 4576,
+      "sha256": "83d1d2c687b8261a9973ba3813807e7ee370861b5913d34b565d6389f46f97f8"
+    },
+    {
+      "path": "reconstruction/connected/connected-mechanics.mjs",
+      "bytes": 2068,
+      "sha256": "c026ea5db06c713120a03a9b75fa8becffca27bae3f82a6cf4dfbdf08f1ed847"
+    },
+    {
+      "path": "reconstruction/connected/connected-motion.mjs",
+      "bytes": 1043,
+      "sha256": "387141c3aadd1d62edc44efc408cbf5677124adf4d454e1a50480cb0ce0e79dc"
+    },
+    {
+      "path": "reconstruction/connected/connected-transforms.mjs",
+      "bytes": 2555,
+      "sha256": "ed531305ab036b3719f3adc37204043a70573b9ea58608695023a7484d88e736"
+    },
+    {
+      "path": "reconstruction/connected/connection-registry.mjs",
+      "bytes": 1870,
+      "sha256": "6474eaafbee4f2eb07700cbfd3b512a4d8312d184074c9fc57feb5810e684127"
+    },
+    {
+      "path": "reconstruction/connected/drive-scene.mjs",
+      "bytes": 2746,
+      "sha256": "575a5093032167759d66017e1e7e313f8d7d268beefee4c0408636e9b05a4797"
+    },
+    {
+      "path": "reconstruction/connected/electrical-scene.mjs",
+      "bytes": 2326,
+      "sha256": "9b6f452093af6f7c8c59dde7d00269d48445c29081bc5a5eaf3b5ad3dd5250b0"
+    },
+    {
+      "path": "reconstruction/connected/extend-actuator-graph.mjs",
+      "bytes": 2018,
+      "sha256": "a94838a9f8d948ada5a79cd1ee525eb8c4372e95e701f1cc6959a033efc4b23f"
+    },
+    {
+      "path": "reconstruction/connected/graph-coverage.mjs",
+      "bytes": 3369,
+      "sha256": "8392f52c45ea3034e6f9709a43fe1c2f6b4b45619dbf0be552e72fb01092c48d"
+    },
+    {
+      "path": "reconstruction/connected/joint-scene.mjs",
+      "bytes": 1691,
+      "sha256": "4e88666561456379169225a1acba1fa36b39848f6257ea418e10810d3e2d5702"
+    },
+    {
+      "path": "reconstruction/connected/mechanical-graph-coverage-development.json",
+      "bytes": 449,
+      "sha256": "8895dd491769ed31d8a96eff3f6d44a6f37a2857ede3e4ae682ac437c4d66f22"
+    },
+    {
+      "path": "reconstruction/connected/named-part-patch.mjs",
+      "bytes": 2731,
+      "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
+    },
+    {
+      "path": "reconstruction/connected/read-original-glb.mjs",
+      "bytes": 1141,
+      "sha256": "9e5449f3c8ded843dab64429f0d58f882fb71080f870c0c8d1fd5599c215b6f1"
+    },
+    {
+      "path": "reconstruction/connected/rigid-matrix.mjs",
+      "bytes": 619,
+      "sha256": "7c9693be24985d27ea330665fad6a0f6d22b6cfc7f87640628e7882cb99cd006"
+    },
+    {
+      "path": "reconstruction/connected/shock-scene.mjs",
+      "bytes": 3744,
+      "sha256": "d46462e57c8c66e77887164bf31c77c99a569450be3347025b8f09bf9a3691af"
+    },
+    {
+      "path": "reconstruction/connected/structure-scene.mjs",
+      "bytes": 2034,
+      "sha256": "90fcf2b9c2d4eb96b982356687c40f1642f99fc1ee8e72ea02069312a08606e0"
+    },
+    {
+      "path": "reconstruction/connected/test-check-connections.mjs",
+      "bytes": 1685,
+      "sha256": "5fdc024dabfb70c975ce75329fc2f425145c9c62100784cf6dec7b4c0161459e"
+    },
+    {
+      "path": "reconstruction/connected/test-composed-body.mjs",
+      "bytes": 1164,
+      "sha256": "5cc69cebb5e05ae99e5c88fd82d17838129ca2c7e9cfe19c2ee99e6f94e047bd"
+    },
+    {
+      "path": "reconstruction/connected/test-connected-mechanics.mjs",
+      "bytes": 4282,
+      "sha256": "5e610a2ba201d2e18b028ed80f460bbbdfb05e16f9a4644756273072222e0167"
+    },
+    {
+      "path": "reconstruction/connected/test-connected-motion.mjs",
+      "bytes": 1189,
+      "sha256": "60c19bbbcc333fd5eaacb6275f022c962703eae785fca9522c4ec3ce9eef19db"
+    },
+    {
+      "path": "reconstruction/connected/test-connected-transforms.mjs",
+      "bytes": 1798,
+      "sha256": "0552f5d45062150a49500a2c0398350f17dc722eeb19415fda289ffafcb12e14"
+    },
+    {
+      "path": "reconstruction/connected/test-drive-scene.mjs",
+      "bytes": 2938,
+      "sha256": "5d40471b3ddc15227d75e8ec8ef3cf4a3682da033737a1f4154f6e6ea6a141cd"
+    },
+    {
+      "path": "reconstruction/connected/test-electrical-scene.mjs",
+      "bytes": 1484,
+      "sha256": "6e9c8d7ddb1b485a4af075a823f8ceedb7ac00bb97bef1af41af29d4c0f46cc9"
+    },
+    {
+      "path": "reconstruction/connected/test-joint-scene.mjs",
+      "bytes": 2372,
+      "sha256": "5114a708fec23e949916fca7ea6cdcd0f0f4bdc897ebdb137de424f696e4aa00"
+    },
+    {
+      "path": "reconstruction/connected/test-named-part-patch.mjs",
+      "bytes": 2792,
+      "sha256": "7ce93baf19c0dd3344418cd80267bc38285bf5c674d8257f13fafc46e8efe113"
+    },
+    {
+      "path": "reconstruction/connected/test-rigid-matrix.mjs",
+      "bytes": 759,
+      "sha256": "684010691d8fe37eedf1017e61aac1f6602bd151f2eedf3141acc4870719bd9f"
+    },
+    {
+      "path": "reconstruction/connected/test-shock-scene.mjs",
+      "bytes": 3106,
+      "sha256": "436622291e83e113749a42c5273cc34435897d9e8a8072583096dc6031b1495e"
+    },
+    {
+      "path": "reconstruction/connected/test-structure-scene.mjs",
+      "bytes": 1865,
+      "sha256": "d0b98fe038f59b5f4bf8bc5ca7339d61864f80e5e2d006c22e53d9cf2430c2ed"
+    },
+    {
+      "path": "reconstruction/connected/test-wheel-drive-attachment.mjs",
+      "bytes": 3014,
+      "sha256": "92ede012e7dc88d54e7c60d5f3cbaeb90151285679e4ba3d02b128f0fdbf215a"
+    },
+    {
+      "path": "reconstruction/connected/wheel-scene.mjs",
+      "bytes": 1654,
+      "sha256": "7c054364784e6865851c37a476f4f0f69901b2798522b9aa4301e1172cb8dc5d"
+    },
+    {
       "path": "reconstruction/robots/README.md",
       "bytes": 7538,
       "sha256": "41a104d03496b321ee27b19ac1f9ced05dd46be4e657b538d93919930356ab3c"
@@ -1908,9 +3310,24 @@
       "sha256": "e5090252c2ecdaea8b881de63684fb2c5e3813e17079df3ed3e9ad1c1a199afe"
     },
     {
+      "path": "test-battery-polarity.mjs",
+      "bytes": 9209,
+      "sha256": "f8109abdd2bd085181cefbd2ed2f497145b6004a3f77c04966405ec7636e795d"
+    },
+    {
       "path": "test-cad.mjs",
       "bytes": 1943,
       "sha256": "5cf4acba261a30483d19555634b54adfc1fa0915a40fcd1273d055bebf566122"
+    },
+    {
+      "path": "test-composed-body.mjs",
+      "bytes": 1203,
+      "sha256": "14a249066a3b45b3e5d13a9ef020e940b32a8d8df8e56aa9f07777240bf4710d"
+    },
+    {
+      "path": "test-connected-mechanics.mjs",
+      "bytes": 3616,
+      "sha256": "c77663e06d736eb73d9d05bbfbfd3ad1b44c15312e18ec49b688cca64c4c63c7"
     },
     {
       "path": "test-controls-ready.mjs",
@@ -1919,8 +3336,23 @@
     },
     {
       "path": "test-costs.mjs",
-      "bytes": 2628,
-      "sha256": "b3de0a6354ff03afdc57037459c4f8b4d819e7e5fbe6c09adfc09ae116f33d50"
+      "bytes": 2997,
+      "sha256": "ae75715d261e6a3f75f4039e1c25a4793aa1d539fd8f74438aa31d5a0aadd2e5"
+    },
+    {
+      "path": "test-current-rover.mjs",
+      "bytes": 1906,
+      "sha256": "4788350d81b6b65436ca7086401a74a5a36b9fd276f1167ab7345d013cb66f3f"
+    },
+    {
+      "path": "test-electrical-scene.mjs",
+      "bytes": 1527,
+      "sha256": "2a9b72bded7c7fd69fef0cc48da619b9be209b930749b6423109c88c17350c3a"
+    },
+    {
+      "path": "test-main-pair.mjs",
+      "bytes": 2382,
+      "sha256": "446f546f9ee70fc9be036d9c3d7cf3fcd80607ae9756d87572c36387a09324d7"
     },
     {
       "path": "test-model.mjs",
@@ -1933,6 +3365,16 @@
       "sha256": "cc21f61d1c112efb94f2ca18ca8ff377f844bdb110b762fbef7ba5dc09e3dbdb"
     },
     {
+      "path": "test-real-gltf-body.mjs",
+      "bytes": 1502,
+      "sha256": "f5a3ecb528f3a814b43e13c8c59040a2cb041391cbf6c7db347f2db1d677e8f5"
+    },
+    {
+      "path": "test-rigid-matrix.mjs",
+      "bytes": 769,
+      "sha256": "5bb4c4f075820f2b425e48720efe95357f1539ae52a09be2bea80816a16db1d7"
+    },
+    {
       "path": "test-rover.mjs",
       "bytes": 2641,
       "sha256": "9a8d4e5798e6e3ecb888a7d1fb1d7e297c118aaa7e70976486557c7d348d89d0"
@@ -1941,6 +3383,11 @@
       "path": "test-steering.mjs",
       "bytes": 5074,
       "sha256": "d26f601e33c5ea3ab2b9a597f81d883c0f9e9a307567fa89acf614a349cdcfbf"
+    },
+    {
+      "path": "test-support/read-original-glb.mjs",
+      "bytes": 1224,
+      "sha256": "fbf37db1e24add29f490a8ea2316c227fe07635f7371c097b90e5771ce279fb7"
     }
   ]
 }

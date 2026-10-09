@@ -1,0 +1,32 @@
+{
+  "retrieved_on": "2026-10-09",
+  "scope": "Source observations for selected C04 development tire/rim, not a quotation or purchase approval",
+  "tire": {
+    "url": "https://tyretrade.pl/opona/12-16-5-trelleborg-sk-900-12pr/",
+    "seller": "TyreTrade",
+    "seller_sku": "35546",
+    "description": "12-16.5 Trelleborg SK-900 12PR",
+    "unit_price": 1015,
+    "currency": "PLN",
+    "tax_basis": "Displayed gross/brutto; displayed net 825.2 PLN",
+    "six_item_gross_subtotal": 6090,
+    "availability": "Page structured data says instock and displayed express dispatch within 24h; six-unit allocation unverified",
+    "exclusions": [
+      "destination freight",
+      "destination taxes/import charges",
+      "mounting",
+      "verified manufacturer article identifier"
+    ],
+    "source_capture_sha256": "99b45003ba4ab2bbb95a8f215a64df08bfc425c6ccea181f0e9805304f58c26f"
+  },
+  "rim": {
+    "url": "https://onlineshop.bohnenkamp-benelux.com/en/rim-jantsa-9-75-x-16-5-10005240",
+    "seller": "Bohnenkamp Benelux",
+    "seller_sku": "10005240",
+    "unit_price": null,
+    "currency": null,
+    "reason": "No public numeric price was exposed in fetched listing text; no zero or placeholder accepted",
+    "source_capture_sha256": "4ac58a933e30cffad02dc8e08779661369dfdbd0ca704e0fd0cdf2dd085bf45c"
+  },
+  "source_captures_publication": "Raw fetched listing text is review-only, do not include in public source package; factual JSON and source links may be used."
+}

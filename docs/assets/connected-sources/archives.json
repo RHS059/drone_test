@@ -1,0 +1,105 @@
+{
+  "format": "Concatenate each archive parts in listed order before opening; verify full SHA256. Parts are raw ZIP byte segments.",
+  "archives": [
+    {
+      "name": "mechanical-source.zip",
+      "bytes": 61521117,
+      "sha256": "ac7c25a580be589a50c8fc6a9817f4cf5eef074300c3f532da402cfdcf98b456",
+      "parts": [
+        {
+          "file": "mechanical-source.zip.part01",
+          "bytes": 8388608,
+          "sha256": "c46b452dda5f47ecbd705ae4337a6a034f34cb9e6e799e7b09e28adeb3b44dcf"
+        },
+        {
+          "file": "mechanical-source.zip.part02",
+          "bytes": 8388608,
+          "sha256": "62d214b5546e31cd3ba50fe8f4acdeeaa20e9327e76dc4434731678e8639080a"
+        },
+        {
+          "file": "mechanical-source.zip.part03",
+          "bytes": 8388608,
+          "sha256": "9d1d9ae2c0cb1bcef580c1c9859d5d57c4f2c9be9a684264a87e82bdda51865e"
+        },
+        {
+          "file": "mechanical-source.zip.part04",
+          "bytes": 8388608,
+          "sha256": "0e2e44f955986241b00149303748dfb8bed18112723b6b81cee5f09012c44602"
+        },
+        {
+          "file": "mechanical-source.zip.part05",
+          "bytes": 8388608,
+          "sha256": "5534035e9f2a6a6d14a507730bc2ebb24ae3203b14cc2e87d4f81f73bea01c04"
+        },
+        {
+          "file": "mechanical-source.zip.part06",
+          "bytes": 8388608,
+          "sha256": "cb149aebcf68fa550b829dddbd4c802a5ba30ea433200a5fa332c595b012473d"
+        },
+        {
+          "file": "mechanical-source.zip.part07",
+          "bytes": 8388608,
+          "sha256": "b5aab8d714d6a9820c1684a7bb741249398b23edebfc4a540f480a14a7711444"
+        },
+        {
+          "file": "mechanical-source.zip.part08",
+          "bytes": 2800861,
+          "sha256": "69694e8480b30048c6178304c7814bf2f51e6640ea36d3d647f1472de6c54be5"
+        }
+      ]
+    },
+    {
+      "name": "electrical-source.zip",
+      "bytes": 2748487,
+      "sha256": "288ea2936be26025d588983a029850d104e16ad61e191c8bec1ae1cc7405b752",
+      "parts": [
+        {
+          "file": "electrical-source.zip",
+          "bytes": 2748487,
+          "sha256": "288ea2936be26025d588983a029850d104e16ad61e191c8bec1ae1cc7405b752"
+        }
+      ]
+    },
+    {
+      "name": "battery-source.zip",
+      "bytes": 1409661,
+      "sha256": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da",
+      "parts": [
+        {
+          "file": "battery-source.zip",
+          "bytes": 1409661,
+          "sha256": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da"
+        }
+      ]
+    },
+    {
+      "name": "body-retention-source.zip",
+      "bytes": 9363671,
+      "sha256": "cda7f38c7acb352745d302da0a7e2205429e647d8d042a9712561a38618e0b12",
+      "parts": [
+        {
+          "file": "body-retention-source.zip.part01",
+          "bytes": 8388608,
+          "sha256": "45e93fabfd43fb72ce988276f712cd14429acdbc4c4cb5c72572f32b851dbb24"
+        },
+        {
+          "file": "body-retention-source.zip.part02",
+          "bytes": 975063,
+          "sha256": "c9428a4dbf1d964731b018667a03117c43fe8ba9821a336d855f9cf0a319cd1c"
+        }
+      ]
+    },
+    {
+      "name": "body-openings-source.zip",
+      "bytes": 2447925,
+      "sha256": "7f0b807a1389f765ab53727fd13e2508e122a2f85c37609d1ddc83fcf42d23a3",
+      "parts": [
+        {
+          "file": "body-openings-source.zip",
+          "bytes": 2447925,
+          "sha256": "7f0b807a1389f765ab53727fd13e2508e122a2f85c37609d1ddc83fcf42d23a3"
+        }
+      ]
+    }
+  ]
+}

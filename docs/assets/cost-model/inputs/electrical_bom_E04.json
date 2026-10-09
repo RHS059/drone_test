@@ -1,0 +1,87 @@
+{
+  "revision": "E04",
+  "items": [
+    {
+      "ref": "QB1",
+      "part": "OTDC160GV11-ESS",
+      "quantity": 1,
+      "status": "mounted source-dimensional candidate",
+      "qualification": "180A limited-power architecture; switch/fuse/DC arc coordination open"
+    },
+    {
+      "ref": "QB2",
+      "part": "OTDC160GV11-ESS",
+      "quantity": 1,
+      "status": "mounted source-dimensional candidate",
+      "qualification": "180A limited-power architecture; switch/fuse/DC arc coordination open"
+    },
+    {
+      "ref": "Q0",
+      "part": "OTDC250GV11-ESS",
+      "quantity": 1,
+      "status": "mounted source-dimensional candidate",
+      "qualification": "180A limited-power architecture; switch/fuse/DC arc coordination open"
+    },
+    {
+      "ref": "Q_shrouds",
+      "part": "ABB OTDCS200GG1",
+      "quantity": 12,
+      "status": "source external shell installed; clip retention incomplete"
+    },
+    {
+      "ref": "LYNX",
+      "part": "LYN034170310",
+      "quantity": 1,
+      "status": "mounted source-terminal/foot interface candidate"
+    },
+    {
+      "ref": "BAT1/BAT2",
+      "part": "BAT548110620",
+      "quantity": 2,
+      "status": "battery-owner BA02 candidate, terminal source-revision gate"
+    },
+    {
+      "ref": "PG1/PG2",
+      "part": "LAPP53111020",
+      "quantity": 2,
+      "status": "mounted gland max-interface model"
+    },
+    {
+      "ref": "PG_nuts",
+      "part": "LAPP53119020",
+      "quantity": 2,
+      "status": "retained nominal M20x1.5 interface"
+    },
+    {
+      "ref": "QB_lugs",
+      "part": "Klauke105R8",
+      "quantity": 8,
+      "status": "installed source dimensions; crimp/palm thickness gate"
+    },
+    {
+      "ref": "Q0_lugs",
+      "part": "Klauke7SG8",
+      "quantity": 4,
+      "status": "installed source dimensions; crimp/palm thickness gate"
+    },
+    {
+      "ref": "LYNX_lugs",
+      "part": "Klauke7SG10",
+      "quantity": 4,
+      "status": "installed source dimensions; crimp/palm thickness gate"
+    },
+    {
+      "ref": "breakout_cases",
+      "part": "original project30x30x56 retained enclosure",
+      "quantity": 6,
+      "status": "retained original development geometry; phase ports empty"
+    },
+    {
+      "ref": "lid_screws",
+      "part": "M2x10 coarse0.4 nominal interface",
+      "quantity": 24,
+      "status": "modelled7.5mm boss engagement, grade/fit/strength unknown"
+    }
+  ],
+  "complete_system_BOM": false
+}

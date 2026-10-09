@@ -1,63 +1,34 @@
-import * as T from 'three/webgpu';
-import {loadSteering} from './steering.js?v=motion-03';
-
-// All imported geometry is metres, Z-up. Right corners use a proper rotation,
-// never a reflected or resized copy. Optional four-corner motion study is unloaded and held above the ground reference.
-export async function loadRover(root, asset) {
-  const get = async p => { const r = await fetch(p); if (!r.ok) throw Error(`Missing assembly contract: ${p}`); return r.json(); };
-  const [corner, bodyContract, fixtureContract, driveReservation] = await Promise.all([
-    get('./assets/corners/interface_contract_C02_R06.json'),
-    get('./assets/body-power/interface_contract.json'),
-    get('./assets/service-fixtures/service_interface_contract_S01.json'),
-    get('./assets/corners/drive-reservation.json')
-  ]);
-  const body = await asset('./assets/body-power/body_power_R01.glb', 'Original faceted body and service hardware · source-backed design');
-  root.add(body);
-  const reservations = await asset('./assets/body-power/cots_reservations_R01.glb', 'Battery/controller dimensional reservation · manufacturer shape and wiring not modeled');
-  reservations.visible = false; root.add(reservations);
-  const fixtures = new T.Group(); fixtures.visible = false; root.add(fixtures);
-  fixtures.add(await asset('./assets/service-fixtures/chassis_trestles_S01.glb', 'Original chassis support trestles · static fit study, no load rating'));
-  const cradle = new T.Group(); fixtures.add(cradle);
-  cradle.add(await asset('./assets/service-fixtures/corner_cradle_S01.glb', 'Original wheel-module cradle · support and restraint unqualified'));
-  let workshop = false, motionStudy = false, cradleStation = 'left_1';
-  const motorReservations = new T.Group(); motorReservations.visible = false; root.add(motorReservations);
-  const corners = [], wheelSpinners = [];
-  const steering = await loadSteering(root,asset,get);
-  for (const station of corner.wheel_stations_m) {
-    const group = new T.Group(); group.name = station.id;
-    group.position.x = station.x; group.rotation.z = station.side < 0 ? Math.PI : 0;
-    root.add(group); corners.push(group);
-    const reserved = new T.Group(); reserved.position.x=station.x; reserved.rotation.z=station.side<0?Math.PI:0;
-    const box = new T.Mesh(new T.BoxGeometry(...driveReservation.size_m),new T.MeshBasicMaterial({color:0x83c6d0,wireframe:true,transparent:true,opacity:.35}));
-    box.position.set(...driveReservation.center_m);box.userData.label='Wheel-drive reserved space · bounding box only, not motor CAD';reserved.add(box);motorReservations.add(reserved);
-    for (const spec of (station.x === 0 ? corner.meshes : [])) {
-      // Bearing fit shells are evidence envelopes, not authentic bearing internals.
-      if (spec.file.includes('bearing_envelopes')) continue;
-      const part = await asset('./assets/corners/' + spec.file, 'Original ' + spec.file.replace(/_C02_.*$/, '').replaceAll('_', ' ') + ' · strength and joints unqualified');
-      if (spec.initial_rotation_x_rad) part.rotation.x = spec.initial_rotation_x_rad;
-      if (spec.initial_translation_m) part.position.set(...spec.initial_translation_m);
-      group.add(part);
-    }
-    const spin = new T.Group(); spin.position.set(...corner.left_at_station_zero.wheel_center); group.add(spin);
-    spin.add(await asset('./assets/wheels/wheel_C01.glb', 'BFGoodrich KM3 / EVO Corse dimensional model · original tire profile, tread and rim details; see source assumptions'));
-    wheelSpinners.push(spin);
-    if(station.x!==0){const id=(station.x>0?'front':'rear')+'_'+(station.side>0?'left':'right');root.attach(spin);steering.bindWheel(id,spin);reserved.updateMatrix();steering.bindReservation(id,reserved,reserved.matrix.clone());}
-  }
-  const removableNames = new Set(bodyContract.service_access.flatMap(s => [...s.cover_nodes, ...(s.associated_gasket_nodes || []), ...(s.associated_removable_fastener_nodes || [])]));
-  const removable = []; body.traverse(o => { if (removableNames.has(o.name)) removable.push(o); });
-  if (removable.length < 8) throw Error('Service cover names do not match delivered CAD');
-  let serviceOpen = false;
-  return {
-    corner, bodyContract, corners, steering,
-    setRack(end,value){if(workshop && value!==0)throw Error('Workshop placement is checked only with centered steering');steering.setRack(end,value);},
-    setMotionStudy(v){if(v&&workshop)throw Error('Exit workshop support study before moving suspension');motionStudy=Boolean(v);if(!v)steering.setSuspension(0);root.position.z=workshop?.78815:motionStudy?.88815:.68815;},
-    setSuspension(q){if(q!==0&&(!motionStudy||workshop))throw Error('Enable unloaded motion study before changing suspension');steering.setSuspension(q);},
-    homeSteering(){steering.home();motionStudy=false;root.position.z=workshop?.78815:.68815;},
-    setWorkshop(v) { workshop=v; if(v){steering.home();motionStudy=false;} fixtures.visible=v; root.position.z=v?-fixtureContract.illustrative_floor_Z_C_m:motionStudy?.88815:.68815; },
-    setCradle(id) { const station=corner.wheel_stations_m.find(s=>s.id===id);if(!station)throw Error('Unknown cradle station');cradleStation=id;cradle.position.x=station.x;cradle.rotation.z=station.side<0?Math.PI:0; },
-    showBody(v) { body.visible = v; },
-    showCorners(v) { corners.forEach(c => c.visible = v);wheelSpinners.forEach(w=>w.visible=v);steering.assembly.visible=v; },
-    openService(v) { serviceOpen = v; removable.forEach(o => o.visible = !v); reservations.visible = v; motorReservations.visible=v; },
-    snapshot() { const state=steering.snapshot(); return { assemblyRevision: steering.contract.configuration, workshop, motionStudy, chassisDisplayOffsetM:motionStudy?.2:workshop?.1:0, cradleStation, fixtureLoadRating:null, nominalWheelCentersC: corner.wheel_stations_m.map(s=>s.wheel_center), wheelCentersC: corner.wheel_stations_m.map(s=>s.x===0?s.wheel_center:state.corners[(s.x>0?'front':'rear')+'_'+(s.side>0?'left':'right')].wheelCenterM), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: state, suspensionTravel: motionStudy?'four steering corners: unloaded kinematic study ±12 degrees; middle pair fixed':'held at neutral' }; }
-  };
+import{bindMainPairGraph}from'./connected/main-pair-graph.mjs';
+import{loadConnectedElectrical}from'./connected/electrical-scene.mjs';
+import{solveConnectedMotion}from'./connected/connected-motion.mjs';
+import{loadConnectedBody}from'./connected/body-scene.mjs';
+import{loadConnectedMechanics}from'./connected/connected-mechanics.mjs';
+import{cornerPose,middlePose}from'./connected/kinematics_C04_R03.mjs';
+import{makeSpringProfile}from'./connected/spring_profile_runtime_C04_R08.mjs';
+// Connected development assembly; electrical qualification remains open.
+export async function loadRover(root,asset){
+ const get=async p=>{const r=await fetch(p);if(!r.ok)throw Error('Missing connected component contract: '+p);return r.json();},P='./assets/connected/';
+ const [structuralManifest,jointManifest,driveContract,wheelContract,shockAnchors,actuatorContract]=await Promise.all(['structure.json','joints.json','drive.json','wheel.json','shock.json','actuator.json'].map(n=>get(P+n)));
+ const rig=await loadConnectedMechanics(root,asset,{cornerPose,middlePose,makeSpringProfile,structuralManifest,jointManifest,driveContract,wheelContract,shockAnchors,actuatorContract,files:{structure:P+'structure.glb.gz',joints:P+'joints.glb.gz',drive:P+'drive.glb.gz',wheel:P+'wheel.glb.gz',shock:P+'shock.glb.gz'}});
+ const bodyContract=await get('./assets/connected-body/body-contract.json');
+ const connectedBody=await loadConnectedBody(root,asset,{contract:bodyContract});const body=connectedBody.assembly;
+ const removable=connectedBody.snapshot().service.removable;
+ const electricalContract=await get('./assets/connected-electrical/electrical-contract.json');const electrical=await loadConnectedElectrical(root,asset,{contract:electricalContract});
+ const mainPairGraph=bindMainPairGraph(root,await get('./assets/main-pair-E05/main_routes_E05/main_pair_graph_E05.json'));
+ for(const [module,label]of[[rig.structure.assembly,'Original connected suspension and rack support'],[rig.joints.assembly,'Retained bearing, rod end or fastener'],[rig.drive.assembly,'Source-dimensioned direct-drive external interface'],[rig.wheels.assembly,'Jantsa rim / Trelleborg tire dimensional model'],[rig.shocks.assembly,'Guided spring and damper mounting study']])module.traverse(n=>{if(n.isMesh)n.userData.label=label;});
+ let q=0,frontRack=0,rearRack=0,wheelAngle=0,motionStudy=false,serviceOpen=false;
+ function applyMotion(state){const solved=solveConnectedMotion(cornerPose,middlePose,state);rig.update(state);electrical.update(solved);}
+ function update(){applyMotion({q,frontRack,rearRack,wheelAngle});root.position.z=motionStudy?.8655:.6655;}
+ const steering={contract:{configuration:'C04 connected mechanical development'},assembly:rig.assembly,snapshot(){const s=rig.snapshot();return{rackPositionsM:{front:frontRack,rear:rearRack},suspensionRad:q,corners:Object.fromEntries(['front_left','front_right','rear_left','rear_right'].map(id=>{const side=id.endsWith('left')?1:-1,fore=id.startsWith('front')?1:-1;return[id,cornerPose(q,fore>0?frontRack:rearRack,side,fore)];}))};}};
+ update();
+ return{mainPairGraph,rig,steering,bodyContract,electrical,connectedBody,
+  setRack(end,v){if(!['front','rear'].includes(end))throw Error('Unknown steering axle');const next={q,frontRack,rearRack,wheelAngle,[end+'Rack']:v};applyMotion(next);frontRack=next.frontRack;rearRack=next.rearRack;},
+  setWheelAngle(v){applyMotion({q,frontRack,rearRack,wheelAngle:v});wheelAngle=v;},
+  setMotionStudy(v){motionStudy=Boolean(v);if(!v)q=0;update();},
+  setSuspension(v){if(v!==0&&!motionStudy)throw Error('Enable unloaded motion study first');applyMotion({q:v,frontRack,rearRack,wheelAngle});q=v;},
+  homeSteering(){q=0;frontRack=0;rearRack=0;wheelAngle=0;motionStudy=false;update();},
+  setWorkshop(v){if(v)throw Error('Revised workshop support placement has not been checked for this assembly');},
+  setCradle(){},showBody(v){body.visible=v;},showCorners(v){rig.assembly.visible=v;},openService(v){serviceOpen=v;connectedBody.setServiceOpen(v);},
+  snapshot(){return{mainPairGraph:mainPairGraph.snapshot(),electrical:electrical.snapshot(),body:connectedBody.snapshot(),assemblyRevision:'C04 connected development',wheelAngleRad:wheelAngle,workshop:false,workshopAvailable:false,motionStudy,chassisDisplayOffsetM:motionStudy?.2:0,cradleStation:'left_1',fixtureLoadRating:null,nominalWheelCentersC:[...rig.wheels.instances].map(i=>[i.x,i.side*.998,-.25]),wheelCentersC:Object.values(rig.snapshot().wheelCenters),wheelDiameter:.831,groundLift:root.position.z,cornerCount:6,serviceOpen,removableNodes:removable.length,steering:steering.snapshot(),suspensionTravel:motionStudy?'four steering corners: unloaded kinematic study; middle pair held neutral':'held at neutral',physicalOperationQualified:false};}
+ };
 }

@@ -1,0 +1,9 @@
+{
+  "README.md": "ca52ac8e8015038c3e3ac2d343511cce5f8d4e30b279077c1dbd821c00b93449",
+  "apply-battery-polarity.mjs": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb",
+  "battery-polarity-contract.json": "bc78ee5d1f9d893171836d1ec35579373f5cb78998fbccad3588947229604c70",
+  "runtime-regression-results.json": "9af05d3bd7b47615a0086c932155c282d270154b73d6c702509a334e46f927f0",
+  "source-regression-results.json": "2156884a292ec80ce544f7ea27139bdaf532c082a542b68a1d4bc1c6392a47da",
+  "test-battery-polarity.mjs": "76268b55d4f8bb7edd9fca5c529cbcbb53fd9f516c7f927c2e0fcdce4d39bd97",
+  "verify-source-polarity.py": "8aab031933eb1cdcb4ec38ed0f7d5b40047ab5d2e5b966db0a8774cfdf7e8b56"
+}

@@ -1,0 +1,54 @@
+{
+  "revision": "E05",
+  "manufacturer": "LAPP",
+  "family": "\u00d6LFLEX HEAT 180 SiF",
+  "article": "0060001",
+  "official_source": "https://products.lappgroup.com/online-catalogue/power-and-control-cables/expanded-ambient-temperatures/silicone-single-cores/oelflex-heat-180-sif.html",
+  "verified_UTC": "2026-10-09",
+  "source_facts": {
+    "conductor_cross_section_mm2": 70,
+    "outside_diameter_nominal_mm": 14.2,
+    "colour": "black",
+    "mass_kg_per_km": 724,
+    "conductor": "Fine-wire tinned copper, class 5",
+    "insulation": "Silicone",
+    "fixed_bend_radius_multiplier_D": 6,
+    "fixed_bend_radius_nominal_mm": 85.2,
+    "one_end_bend_exception_used": false,
+    "nominal_voltage_U0_U_V": [
+      300,
+      500
+    ],
+    "OD_tolerance_source_supplied": false
+  },
+  "application_gates": [
+    "Fixed installed routing only; no flex-life or moving corner qualification.",
+    "Supplier describes nominal dimensions; bend and clamp fits need measured maximum OD and tolerances.",
+    "Silicone mechanical protection, vibration, clamp liner and moisture environment unqualified.",
+    "Black positive cable requires durable positive identification.",
+    "Crimp contacts, lug strip length and tooling are not qualified.",
+    "Catalogue voltage value does not establish system certification or protection coordination."
+  ],
+  "scenario": {
+    "current_A": 180,
+    "current_limit_status": "Proposed warm-bank development cap; enforcement absent. This value is not cable ampacity approval.",
+    "model": "R = rho20 * (positive centreline length + negative centreline length) / 70 mm\u00b2; voltage drop = I*R; heat = I\u00b2*R.",
+    "rho20_ohm_mm2_per_m": 0.017241,
+    "rho20_status": "Declared ideal-copper modelling assumption; not the maximum conductor resistance of this tinned stranded SKU.",
+    "exclusions": [
+      "Lug and contact resistance",
+      "Stranding and tolerance effects",
+      "Temperature rise",
+      "Other system branches",
+      "Fuse and busbar losses"
+    ],
+    "ampacity_thermal_and_fault_protection_approved": false,
+    "electrically_operational": false,
+    "positive_length_m": 2.7697464313510465,
+    "negative_length_m": 2.8582812556571024,
+    "loop_resistance_model_ohm": 0.0013861832193101072,
+    "loop_voltage_drop_model_V": 0.2495129794758193,
+    "loop_heat_model_W": 44.91233630564747
+  },
+  "source_length_mass_estimate_kg": 4.0746920453939
+}

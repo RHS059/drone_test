@@ -1,0 +1,150 @@
+{
+  "revision": "adapter_R04",
+  "new_reconstruction": true,
+  "units": {
+    "STEP": "mm",
+    "GLB": "m, Z-up"
+  },
+  "solid_count": 1,
+  "bbox_m": [
+    0.1,
+    0.1,
+    0.026
+  ],
+  "bounds_m": [
+    [
+      -0.05,
+      -0.05,
+      -0.0025
+    ],
+    [
+      0.05,
+      0.05,
+      0.0235
+    ]
+  ],
+  "valid_single_solids": true,
+  "positive_volume_intersections_mm3": [],
+  "zero_gap_contacts": [],
+  "density_kg_m3": 7850,
+  "density_is_assumption": true,
+  "assembly_properties": {
+    "volume_m3": 0.00016775116221704343,
+    "mass_kg": 1.316846623403791,
+    "com_m": [
+      1.1056857865630446e-17,
+      -7.403994617346774e-19,
+      0.010794129695471142
+    ],
+    "inertia_com_kg_m2": [
+      [
+        0.0008464321395441122,
+        7.142389222281052e-20,
+        -1.7797944179214352e-19
+      ],
+      [
+        7.142389222281052e-20,
+        0.0008464321395440926,
+        -8.168149808463166e-21
+      ],
+      [
+        -1.7797944179214352e-19,
+        -8.168149808463166e-21,
+        0.0015679829970266514
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "name": "original_adapter_nominal_R04",
+      "volume_m3": 0.00016775116221704343,
+      "mass_kg": 1.316846623403791,
+      "com_m": [
+        1.1056857865630446e-17,
+        -7.403994617346774e-19,
+        0.010794129695471142
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0008464321395441122,
+          7.142389222281052e-20,
+          -1.7797944179214352e-19
+        ],
+        [
+          7.142389222281052e-20,
+          0.0008464321395440926,
+          -8.168149808463166e-21
+        ],
+        [
+          -1.7797944179214352e-19,
+          -8.168149808463166e-21,
+          0.0015679829970266514
+        ]
+      ]
+    }
+  ],
+  "fabrication_release": false,
+  "nominal_total_thickness_mm": 26,
+  "face_separation_mm": 23.5,
+  "ur_pilot_protrusion_mm": 2.5,
+  "ur_pilot_diameter_mm": 50,
+  "pilot_fit_status": "Nominal geometry only; male fit/tolerance NOT selected or approved",
+  "M8_clearance_count": 6,
+  "M8_clearance_diameter_mm": 8.5,
+  "M8_counterbore_diameter_mm": 15,
+  "M8_counterbore_depth_mm": 12,
+  "M6_tap_pilot_count": 4,
+  "M6_tap_pilot_diameter_mm": 5,
+  "M6_tap_pilot_depth_mm": 12,
+  "locating_pin_seats": "not modeled pending validated datum/index requirements",
+  "thread_representation": "tap-drill holes only, threads not cut",
+  "release_blockers": [
+    "Pilot fit unapproved",
+    "Thread effective engagement and drill tip relief unresolved",
+    "Index pin orientation/seats unresolved",
+    "Screw grade,length,head tooling clearance and torque unresolved",
+    "Adapter strength and payload/inertia limit review unresolved",
+    "Full vendor assembly swept-volume check pending",
+    "Maximum7mmtoolboltprotrusionmustbeguaranteedwithactualfastenerandmanufacturingtolerances",
+    "2.5mmoutercounterboreligamentstrengthunqualified"
+  ],
+  "coupling_skirt_relief": {
+    "inner_radius_mm": 31,
+    "outer_radius_mm": 38,
+    "depth_mm": 3.5,
+    "chosen_nominal_clearance_mm": 0.5,
+    "status": "original design clearance, NOT manufacturer fit"
+  },
+  "coupling_skirt_conservative_envelope_intersection_mm3": 0,
+  "assumed_M8_head": {
+    "diameter_mm": 13,
+    "height_mm": 8,
+    "count": 6,
+    "top_Z_mm": 19.5,
+    "minimum_axial_skirt_clearance_mm": 1,
+    "status": "nominal ISO4762 size envelope; actual hardware/tolerance/length unapproved"
+  },
+  "tests_passed": [
+    "valid single B-rep solid",
+    "26mm total axial envelope",
+    "4 actual \u00d85 M6 tap pilots",
+    "nominal vendor skirt conservative envelope has no intersection",
+    "six nominal M8 head envelopes clear adapter and skirt"
+  ],
+  "outer_edge_ligament_mm": 2.5,
+  "manufacturer_tool_mount_requirements": {
+    "source": "https://www.universal-robots.com/articles/ur/application-installation/end-effector-mounting-on-tool-output-flange/",
+    "bolt_standard": "ISO4762 M8 strengthclass8.8",
+    "installation_torque_Nm": 16,
+    "maximum_bolt_protrusion_into_robot_mm": 7,
+    "adapter_underhead_stack_mm": 11.5,
+    "nominal_max_underhead_screw_length_before_tolerances_mm": 18.5,
+    "candidate_only": "M8x18gives6.5mm nominalprotrusion; exactlength/tolerancestack/engagementnotapproved",
+    "warning": "17.25drawingdimension doesNOTauthorize17.25mmboltinsertion"
+  },
+  "counterbore_basis": {
+    "chosen_mm": 15,
+    "source": "https://www.somta.se/_filebank/somta-catalogue/files/assets/common/downloads/publication.pdf",
+    "status": "toolingmanufacturercatalogue lists15mmforM8; DIN974-1publishedscopechecked,butfullpaidstandardnotreproduced"
+  }
+}

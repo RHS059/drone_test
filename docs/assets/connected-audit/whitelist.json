@@ -1,0 +1,84 @@
+{
+  "revision": "C04 independent numeric evidence whitelist R02, selected carrier fit added",
+  "scope": "Only these exact JSON files are approved as public-safe audit evidence. This is a content-safety and identity whitelist, not engineering/installation/fabrication/operation approval. No supplier STEP, PDF, image, mesh, B-rep, topology dump or source ZIP may be included.",
+  "files": [
+    {
+      "path": "private_motor_import_environment.json",
+      "sha256": "a815673580d6d7f765a30cc1f895d1ad598d382de8db9b76270027a79356b437",
+      "bytes": 1088,
+      "scope": "Exact source/hash/import reconciliation;240 imported solids are not an OEM part count."
+    },
+    {
+      "path": "private_motor_shock_numeric_check.json",
+      "sha256": "c9fa7931ea7011734a0fbc3a8b16b17f796b603929040725ecea1dbfb2d4ea9d",
+      "bytes": 6300,
+      "scope": "Rejected original centerline shock placement: exact nonzero imported-component overlap witnesses; partial diagnostic test only."
+    },
+    {
+      "path": "private_motor_R08_X_bound_numeric_check.json",
+      "sha256": "fcb0a891de497dd7d572e8a431b7f3586dd69cf3ef33941336c1746d2491378b",
+      "bytes": 9520,
+      "scope": "Frozen24-component guided module versus actual private motor continuous \u00b122 degree X reservation; selected offsets \u2212550/+550/\u2212350 separated. Includes explicitly unapproved and superseded alternative reservations."
+    },
+    {
+      "path": "private_motor_R11_support_numeric_check.json",
+      "sha256": "a6c49a7d88fcdc8a51a54dca585a0f96291d34142fbf622365b5718e1946485d",
+      "bytes": 7641,
+      "scope": "Frozen R11 lower-support sources:21 sampled q/yaw cases, zero positive-volume overlaps."
+    },
+    {
+      "path": "private_motor_R13_upper_numeric_check.json",
+      "sha256": "b6a21148c3f2ba2c9afe913f44437dcfb93fca24ce1d7e887a59624771652206",
+      "bytes": 11339,
+      "scope": "Frozen R13 upper-clamp sources:39 sampled q/yaw cases, zero positive-volume overlaps."
+    },
+    {
+      "path": "private_motor_terminal_datum_review.json",
+      "sha256": "83537347ecf6eeaa38d67e332a836d1de8bb0cbc5f6a19cc86ff595893dceab3",
+      "bytes": 1273,
+      "scope": "Negative source-evidence result: usable OEM terminal/cable-exit XYZ datums and phase coordinates remain unverified."
+    },
+    {
+      "path": "R11_lower_miter_wall_audit.json",
+      "sha256": "5a6491b3c3ce73c4e7d174c54a86e69d656b025e6c59ac91a057a9aecc2a8957",
+      "bytes": 1155,
+      "scope": "Final R11 lower-source hashes and432 around-bend wall material samples; no weld/strength approval."
+    },
+    {
+      "path": "guided_module_R08_interface_audit.json",
+      "sha256": "6ba81c9727a644ba6ee05e309bf1e0a3df916e8eb9db7a68ae717ba547fe42d1",
+      "bytes": 5188,
+      "scope": "Reusable guided-module nominal attachment and guide-stop/slide checks; no installed vehicle approval."
+    },
+    {
+      "path": "private_motor_R12_rack_X_numeric_check.json",
+      "sha256": "02d21032dd33423f43f855c72bb8bd5a838524afb392241cd46686e8a39dacec",
+      "bytes": 8773,
+      "scope": "Actual19 retained R12 source parts and38 declared structural placements; at least121.457mm continuous longitudinal separation from six handed private motors."
+    },
+    {
+      "path": "private_motor_selected_carrier_numeric_check.json",
+      "sha256": "11d7c69df3a3ee33791e4f148940774e93c7ac2c6a7300e27ae25c3030eb16b4",
+      "bytes": 4474,
+      "scope": "Five selected carrier sources: actual private motor has zero positive overlap and zero nominal contact distance; fixed relative q/yaw relation only."
+    },
+    {
+      "path": "selected_private_fit_final_manifest_reconciliation.json",
+      "sha256": "a7342c7d2aa7428fad8e9a3f08877b4fd7892d55482561eb7b700651ada10ee2",
+      "bytes": 2617,
+      "scope": "Final structural manifest compatibility for all tested carrier sources and38 retained rack placements; old report input hashes preserved."
+    }
+  ],
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "source_geometry_included": false,
+  "source_images_included": false,
+  "private_derived_geometry_included": false,
+  "whole_vehicle_or_operational_acceptance": false,
+  "open_scope": [
+    "Other unlisted hardware and any revised geometry require separate source/hash and fit reconciliation",
+    "Whole-scene pixels and complete composed source/hash identity remain pending",
+    "Sampled support checks do not prove continuous support clearances or manufacturing tolerance allowance",
+    "Supplier wheel-seat application, actuator force, OEM electrical datums/compatibility and current-limit commissioning remain open"
+  ],
+  "supersedes": "PUBLIC_NUMERIC_PRIVATE_FIT_WHITELIST_C04_R01.json"
+}

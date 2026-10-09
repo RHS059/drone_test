@@ -1,0 +1,19 @@
+{
+  "revision": "E05",
+  "source_STEP_unchanged_SHA256": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+  "GLB_SHA256": "8b24f5116e278d8b02a474eeaea88cf0162e6e998461a5f816fb54ec69cf2756",
+  "destination_cap_checks": [
+    {
+      "route": "MAIN_positive",
+      "end_plane_Y_error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "route": "MAIN_negative",
+      "end_plane_Y_error_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "visual_not_metrology_mesh": true
+}

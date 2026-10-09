@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "part": "lower_steering_negative_offset_joint_seats_C04_R11",
+      "single_valid_solid": true,
+      "miter_wall_samples": 144,
+      "offset_from_bisector_mm": 0.1,
+      "failures": [],
+      "passed": true,
+      "sha256": "5c261a605d6d3d57ec8ada993075ac330740979921412113baa394228e40e39f"
+    },
+    {
+      "part": "lower_steering_positive_offset_joint_seats_C04_R11",
+      "single_valid_solid": true,
+      "miter_wall_samples": 144,
+      "offset_from_bisector_mm": 0.1,
+      "failures": [],
+      "passed": true,
+      "sha256": "bcbdc15f957fd02f7acc2334a2fba47405b5a20c0d4eeff955bc342e86ee05e2"
+    },
+    {
+      "part": "lower_middle_negative_offset_joint_seats_C04_R11",
+      "single_valid_solid": true,
+      "miter_wall_samples": 144,
+      "offset_from_bisector_mm": 0.1,
+      "failures": [],
+      "passed": true,
+      "sha256": "525f595a9bde7b042e6ff18bcea2955ecc570f979f047a71a7d10d7f45b91ceb"
+    }
+  ],
+  "scope": "Actual frozen R11 offset retained-seat lower arm STEP cross-section material samples at miter bend bisectors; limited geometric continuity screening, not weld or manufacturing approval."
+}

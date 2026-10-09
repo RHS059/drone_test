@@ -1,0 +1,21 @@
+{
+  "cadquery_version": "2.7.0",
+  "ocp_version": "7.8.1.1",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "imported_solid_count": 240,
+  "orientation_counts": {
+    "TopAbs_Orientation.TopAbs_FORWARD": 240
+  },
+  "negative_volume_solids": 0,
+  "source_product_count_is_not_imported_solid_count": true,
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "source_product_count": 1,
+  "source_manifold_solid_brep_entities": 12,
+  "source_brep_with_voids_entities": 1,
+  "source_closed_shell_entities": 244,
+  "vendor_part_count_inferred": false,
+  "count_note": "Kernel-imported solid decomposition, not unique vendor parts. The preserved final Colab output independently records the same source SHA, CadQuery2.7.0 and240 valid solids. Earlier unsupported verbal30 count is superseded; no duplication explanation is inferred.",
+  "reconciled_prior_numeric_report_sha256": "13000ecd41dd7a0ed304b880a326c7ab1e702a0c0f26f3599603c6d7dcf76386",
+  "prior_CadQuery_version": "2.7.0",
+  "prior_all_solids_valid": true
+}

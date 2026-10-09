@@ -1,0 +1,7 @@
+{
+  "as_of": "2026-10-09",
+  "checked_file_count": 614,
+  "changed_files": [],
+  "unchanged": true,
+  "scope": "Read-only comparison of app-C04 excluding .git/node_modules, cost-model-C04 and publication-C04 to snapshot before this separate patch build; no writes to those directories."
+}

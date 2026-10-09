@@ -1,0 +1,5151 @@
+{
+  "revision": "R01",
+  "release_status": "manufacturing-development, not fabrication/operational release",
+  "units": {
+    "CAD": "mm",
+    "GLB": "m, Z-up"
+  },
+  "original_part_count": 175,
+  "individual_valid": true,
+  "bounds_m": [
+    [
+      -2.05,
+      -0.6505389376066132,
+      -0.117
+    ],
+    [
+      2.05,
+      0.6505389376066132,
+      0.349
+    ]
+  ],
+  "material_assumptions": {
+    "aluminium": {
+      "density": 2700,
+      "color": [
+        0.57,
+        0.54,
+        0.46,
+        1
+      ],
+      "assumption": "5083-like aluminium density; alloy/temper and weld procedure not qualified"
+    },
+    "lid": {
+      "density": 2700,
+      "color": [
+        0.66,
+        0.62,
+        0.53,
+        1
+      ],
+      "assumption": "5083-like aluminium density; alloy/temper TBD"
+    },
+    "steel": {
+      "density": 7850,
+      "color": [
+        0.21,
+        0.25,
+        0.28,
+        1
+      ],
+      "assumption": "generic carbon steel density; grade not specified"
+    },
+    "fastener": {
+      "density": 7850,
+      "color": [
+        0.66,
+        0.69,
+        0.7,
+        1
+      ],
+      "assumption": "simplified unthreaded steel fastener, strength class TBD"
+    },
+    "gasket": {
+      "density": 1200,
+      "color": [
+        0.055,
+        0.064,
+        0.07,
+        1
+      ],
+      "assumption": "EPDM-like nominal density, material and compression qualification pending"
+    },
+    "restraint": {
+      "density": 2700,
+      "color": [
+        0.76,
+        0.43,
+        0.1,
+        1
+      ],
+      "assumption": "aluminium, unqualified strength"
+    },
+    "proxy": {
+      "density": 0,
+      "color": [
+        0.89,
+        0.45,
+        0.1,
+        0.45
+      ],
+      "assumption": "nonphysical dimensional envelope, not supplier CAD"
+    }
+  },
+  "body_hardware_mass_kg": 115.71496048218766,
+  "body_hardware_com_m": [
+    -0.31541683490042016,
+    0.006613890748569074,
+    0.16931938757699985
+  ],
+  "body_plus_reserved_component_mass_kg": 186.71496048218768,
+  "body_plus_reserved_component_com_m": [
+    -0.5337678691013432,
+    0.004098900830590851,
+    0.13669813161423489
+  ],
+  "positive_volume_body_intersections": [],
+  "frame_intersections": [],
+  "dimensional_reservation_intersections": [],
+  "zero_gap_contacts": [
+    [
+      "main_base_deck_3mm",
+      "main_left_side_3mm"
+    ],
+    [
+      "main_base_deck_3mm",
+      "main_right_side_3mm"
+    ],
+    [
+      "main_base_deck_3mm",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_base_deck_3mm",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_base_deck_3mm",
+      "controller_battery_partition"
+    ],
+    [
+      "main_base_deck_3mm",
+      "battery_tool_partition"
+    ],
+    [
+      "main_base_deck_3mm",
+      "battery_well_left_wall"
+    ],
+    [
+      "main_base_deck_3mm",
+      "battery_well_right_wall"
+    ],
+    [
+      "main_base_deck_3mm",
+      "battery_well_rear_wall"
+    ],
+    [
+      "main_base_deck_3mm",
+      "battery_well_front_wall"
+    ],
+    [
+      "main_base_deck_3mm",
+      "controller_tray_leg_1_-250"
+    ],
+    [
+      "main_base_deck_3mm",
+      "controller_tray_leg_1_250"
+    ],
+    [
+      "main_base_deck_3mm",
+      "controller_tray_leg_2_-250"
+    ],
+    [
+      "main_base_deck_3mm",
+      "controller_tray_leg_2_250"
+    ],
+    [
+      "main_base_deck_3mm",
+      "rail_saddle_1_top"
+    ],
+    [
+      "main_base_deck_3mm",
+      "rail_saddle_2_top"
+    ],
+    [
+      "main_base_deck_3mm",
+      "rail_saddle_3_top"
+    ],
+    [
+      "main_base_deck_3mm",
+      "rail_saddle_4_top"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_1_1"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_1_2"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_1_3"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_1_4"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_2_1"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_2_2"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_2_3"
+    ],
+    [
+      "main_left_side_3mm",
+      "left_service_nutclip_2_4"
+    ],
+    [
+      "main_left_side_3mm",
+      "main_left_lower_sloping_shoulder"
+    ],
+    [
+      "main_left_side_3mm",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_left_side_3mm",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_left_side_3mm",
+      "controller_battery_partition"
+    ],
+    [
+      "main_left_side_3mm",
+      "battery_tool_partition"
+    ],
+    [
+      "left_side_service_cover_1",
+      "left_service_nutclip_1_1"
+    ],
+    [
+      "left_side_service_cover_1",
+      "left_service_nutclip_1_2"
+    ],
+    [
+      "left_side_service_cover_1",
+      "left_service_nutclip_1_3"
+    ],
+    [
+      "left_side_service_cover_1",
+      "left_service_nutclip_1_4"
+    ],
+    [
+      "left_service_nutclip_1_1",
+      "left_service_nutclip_1_2"
+    ],
+    [
+      "left_service_nutclip_1_3",
+      "left_service_nutclip_1_4"
+    ],
+    [
+      "left_side_service_cover_2",
+      "left_service_nutclip_2_1"
+    ],
+    [
+      "left_side_service_cover_2",
+      "left_service_nutclip_2_2"
+    ],
+    [
+      "left_side_service_cover_2",
+      "left_service_nutclip_2_3"
+    ],
+    [
+      "left_side_service_cover_2",
+      "left_service_nutclip_2_4"
+    ],
+    [
+      "left_service_nutclip_2_1",
+      "left_service_nutclip_2_2"
+    ],
+    [
+      "left_service_nutclip_2_3",
+      "left_service_nutclip_2_4"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_1_1"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_1_2"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_1_3"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_1_4"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_2_1"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_2_2"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_2_3"
+    ],
+    [
+      "main_right_side_3mm",
+      "right_service_nutclip_2_4"
+    ],
+    [
+      "main_right_side_3mm",
+      "main_right_lower_sloping_shoulder"
+    ],
+    [
+      "main_right_side_3mm",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_right_side_3mm",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_right_side_3mm",
+      "controller_battery_partition"
+    ],
+    [
+      "main_right_side_3mm",
+      "battery_tool_partition"
+    ],
+    [
+      "right_side_service_cover_1",
+      "right_service_nutclip_1_1"
+    ],
+    [
+      "right_side_service_cover_1",
+      "right_service_nutclip_1_2"
+    ],
+    [
+      "right_side_service_cover_1",
+      "right_service_nutclip_1_3"
+    ],
+    [
+      "right_side_service_cover_1",
+      "right_service_nutclip_1_4"
+    ],
+    [
+      "right_service_nutclip_1_1",
+      "right_service_nutclip_1_2"
+    ],
+    [
+      "right_service_nutclip_1_3",
+      "right_service_nutclip_1_4"
+    ],
+    [
+      "right_side_service_cover_2",
+      "right_service_nutclip_2_1"
+    ],
+    [
+      "right_side_service_cover_2",
+      "right_service_nutclip_2_2"
+    ],
+    [
+      "right_side_service_cover_2",
+      "right_service_nutclip_2_3"
+    ],
+    [
+      "right_side_service_cover_2",
+      "right_service_nutclip_2_4"
+    ],
+    [
+      "right_service_nutclip_2_1",
+      "right_service_nutclip_2_2"
+    ],
+    [
+      "right_service_nutclip_2_3",
+      "right_service_nutclip_2_4"
+    ],
+    [
+      "main_left_lower_sloping_shoulder",
+      "main_left_upper_sloping_shoulder"
+    ],
+    [
+      "main_left_lower_sloping_shoulder",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_left_lower_sloping_shoulder",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_left_lower_sloping_shoulder",
+      "controller_battery_partition"
+    ],
+    [
+      "main_left_lower_sloping_shoulder",
+      "battery_tool_partition"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "controller_battery_partition"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "battery_tool_partition"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "rear_controller_hatch_weld_flange"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "battery_deck_shoulder"
+    ],
+    [
+      "main_left_upper_sloping_shoulder",
+      "payload_tool_hatch_weld_flange"
+    ],
+    [
+      "main_right_lower_sloping_shoulder",
+      "main_right_upper_sloping_shoulder"
+    ],
+    [
+      "main_right_lower_sloping_shoulder",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_right_lower_sloping_shoulder",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_right_lower_sloping_shoulder",
+      "controller_battery_partition"
+    ],
+    [
+      "main_right_lower_sloping_shoulder",
+      "battery_tool_partition"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "rear_bulkhead_3mm"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "arm_facing_bulkhead_3mm"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "controller_battery_partition"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "battery_tool_partition"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "rear_controller_hatch_weld_flange"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "battery_deck_shoulder"
+    ],
+    [
+      "main_right_upper_sloping_shoulder",
+      "payload_tool_hatch_weld_flange"
+    ],
+    [
+      "rear_bulkhead_3mm",
+      "rear_controller_hatch_weld_flange"
+    ],
+    [
+      "arm_facing_bulkhead_3mm",
+      "payload_tool_hatch_weld_flange"
+    ],
+    [
+      "controller_battery_partition",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_tool_partition",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_well_left_wall"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_well_right_wall"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_well_rear_wall"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_well_front_wall"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_1_isolator_pad"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_2_isolator_pad"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_3_isolator_pad"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_4_isolator_pad"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_retention_nut_1_-235_bottom"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_retention_nut_1_235_bottom"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_retention_nut_2_-235_bottom"
+    ],
+    [
+      "battery_well_floor_3mm",
+      "battery_retention_nut_2_235_bottom"
+    ],
+    [
+      "battery_well_left_wall",
+      "battery_well_rear_wall"
+    ],
+    [
+      "battery_well_left_wall",
+      "battery_well_front_wall"
+    ],
+    [
+      "battery_well_left_wall",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_well_left_wall",
+      "battery_hatch_weld_flange"
+    ],
+    [
+      "battery_well_right_wall",
+      "battery_well_rear_wall"
+    ],
+    [
+      "battery_well_right_wall",
+      "battery_well_front_wall"
+    ],
+    [
+      "battery_well_right_wall",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_well_right_wall",
+      "battery_hatch_weld_flange"
+    ],
+    [
+      "battery_well_rear_wall",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_well_rear_wall",
+      "battery_hatch_weld_flange"
+    ],
+    [
+      "battery_well_front_wall",
+      "battery_deck_shoulder"
+    ],
+    [
+      "battery_well_front_wall",
+      "battery_hatch_weld_flange"
+    ],
+    [
+      "battery_retention_crossbar_1",
+      "battery_retention_nut_1_-235_top"
+    ],
+    [
+      "battery_retention_crossbar_1",
+      "battery_retention_nut_1_235_top"
+    ],
+    [
+      "battery_retention_crossbar_2",
+      "battery_retention_nut_2_-235_top"
+    ],
+    [
+      "battery_retention_crossbar_2",
+      "battery_retention_nut_2_235_top"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_gasket"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_1"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_2"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_3"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_4"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_5"
+    ],
+    [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_nutplate_6"
+    ],
+    [
+      "rear_controller_hatch_gasket",
+      "rear_controller_hatch_removable_lid"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_1"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_2"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_3"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_4"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_5"
+    ],
+    [
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_6"
+    ],
+    [
+      "battery_deck_shoulder",
+      "battery_hatch_weld_flange"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_gasket"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_1"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_2"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_3"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_4"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_5"
+    ],
+    [
+      "battery_hatch_weld_flange",
+      "battery_hatch_nutplate_6"
+    ],
+    [
+      "battery_hatch_gasket",
+      "battery_hatch_removable_lid"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_1"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_2"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_3"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_4"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_5"
+    ],
+    [
+      "battery_hatch_removable_lid",
+      "battery_hatch_M6_6"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_gasket"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_1"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_2"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_3"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_4"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_5"
+    ],
+    [
+      "payload_tool_hatch_weld_flange",
+      "payload_tool_hatch_nutplate_6"
+    ],
+    [
+      "payload_tool_hatch_gasket",
+      "payload_tool_hatch_removable_lid"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_1"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_2"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_3"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_4"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_5"
+    ],
+    [
+      "payload_tool_hatch_removable_lid",
+      "payload_tool_hatch_M6_6"
+    ],
+    [
+      "controller_mount_tray_1",
+      "controller_tray_leg_1_-250"
+    ],
+    [
+      "controller_mount_tray_1",
+      "controller_tray_leg_1_250"
+    ],
+    [
+      "controller_mount_tray_2",
+      "controller_tray_leg_2_-250"
+    ],
+    [
+      "controller_mount_tray_2",
+      "controller_tray_leg_2_250"
+    ],
+    [
+      "cable_duct_floor_1",
+      "cable_duct_side_1_400"
+    ],
+    [
+      "cable_duct_floor_1",
+      "cable_duct_side_1_470"
+    ],
+    [
+      "cable_duct_floor_2",
+      "cable_duct_side_2_400"
+    ],
+    [
+      "cable_duct_floor_2",
+      "cable_duct_side_2_470"
+    ],
+    [
+      "cable_duct_floor_3",
+      "cable_duct_side_3_400"
+    ],
+    [
+      "cable_duct_floor_3",
+      "cable_duct_side_3_470"
+    ],
+    [
+      "rail_saddle_1_top",
+      "rail_saddle_1_M10_1"
+    ],
+    [
+      "rail_saddle_1_top",
+      "rail_saddle_1_M10_2"
+    ],
+    [
+      "rail_saddle_1_bottom",
+      "rail_saddle_1_M10_nut_1"
+    ],
+    [
+      "rail_saddle_1_bottom",
+      "rail_saddle_1_M10_nut_2"
+    ],
+    [
+      "rail_saddle_2_top",
+      "rail_saddle_2_M10_1"
+    ],
+    [
+      "rail_saddle_2_top",
+      "rail_saddle_2_M10_2"
+    ],
+    [
+      "rail_saddle_2_bottom",
+      "rail_saddle_2_M10_nut_1"
+    ],
+    [
+      "rail_saddle_2_bottom",
+      "rail_saddle_2_M10_nut_2"
+    ],
+    [
+      "rail_saddle_3_top",
+      "rail_saddle_3_M10_1"
+    ],
+    [
+      "rail_saddle_3_top",
+      "rail_saddle_3_M10_2"
+    ],
+    [
+      "rail_saddle_3_bottom",
+      "rail_saddle_3_M10_nut_1"
+    ],
+    [
+      "rail_saddle_3_bottom",
+      "rail_saddle_3_M10_nut_2"
+    ],
+    [
+      "rail_saddle_4_top",
+      "rail_saddle_4_M10_1"
+    ],
+    [
+      "rail_saddle_4_top",
+      "rail_saddle_4_M10_2"
+    ],
+    [
+      "rail_saddle_4_bottom",
+      "rail_saddle_4_M10_nut_1"
+    ],
+    [
+      "rail_saddle_4_bottom",
+      "rail_saddle_4_M10_nut_2"
+    ],
+    [
+      "front_tool_base",
+      "front_tool_rear_wall"
+    ],
+    [
+      "front_tool_base",
+      "front_tool_left_side"
+    ],
+    [
+      "front_tool_base",
+      "front_tool_right_side"
+    ],
+    [
+      "front_tool_base",
+      "front_tool_nose_wall"
+    ],
+    [
+      "front_tool_rear_wall",
+      "front_tool_left_side"
+    ],
+    [
+      "front_tool_rear_wall",
+      "front_tool_right_side"
+    ],
+    [
+      "front_tool_rear_wall",
+      "front_tool_hatch_weld_flange"
+    ],
+    [
+      "front_tool_left_side",
+      "front_tool_nose_wall"
+    ],
+    [
+      "front_tool_left_side",
+      "front_sloped_service_nose"
+    ],
+    [
+      "front_tool_left_side",
+      "front_tool_hatch_weld_flange"
+    ],
+    [
+      "front_tool_right_side",
+      "front_tool_nose_wall"
+    ],
+    [
+      "front_tool_right_side",
+      "front_sloped_service_nose"
+    ],
+    [
+      "front_tool_right_side",
+      "front_tool_hatch_weld_flange"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_gasket"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_1"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_2"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_3"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_4"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_5"
+    ],
+    [
+      "front_tool_hatch_weld_flange",
+      "front_tool_hatch_nutplate_6"
+    ],
+    [
+      "front_tool_hatch_gasket",
+      "front_tool_hatch_removable_lid"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_1"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_2"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_3"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_4"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_5"
+    ],
+    [
+      "front_tool_hatch_removable_lid",
+      "front_tool_hatch_M6_6"
+    ],
+    [
+      "rear_bumper_RHS_70x50x3",
+      "rear_bumper_cap_-1"
+    ],
+    [
+      "rear_bumper_RHS_70x50x3",
+      "rear_bumper_cap_1"
+    ],
+    [
+      "front_bumper_RHS_70x50x3",
+      "front_bumper_cap_-1"
+    ],
+    [
+      "front_bumper_RHS_70x50x3",
+      "front_bumper_cap_1"
+    ]
+  ],
+  "parts": [
+    {
+      "name": "main_base_deck_3mm",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 14.57654587352637,
+      "volume_m3": 0.005398720693898656,
+      "com_m": [
+        -0.6424668457175119,
+        -2.153654713162936e-18,
+        0.10150000000000003
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.513,
+        0.1,
+        0.55,
+        0.513,
+        0.103
+      ],
+      "note": "2.45 m laser-cut base; recessed battery-well opening; sits on frame Z=100."
+    },
+    {
+      "name": "main_left_side_3mm",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.4637510000000005,
+      "volume_m3": 0.0005421300000000002,
+      "com_m": [
+        -0.7399156106468937,
+        0.5144999999999996,
+        0.16069268441148835
+      ],
+      "bounds_m": [
+        -1.9,
+        0.513,
+        0.103,
+        0.55,
+        0.516,
+        0.22
+      ],
+      "note": ""
+    },
+    {
+      "name": "left_side_service_cover_1",
+      "group": "side_service",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.23055153301447795,
+      "volume_m3": 8.538945667202887e-05,
+      "com_m": [
+        -0.8000000000000005,
+        0.5145,
+        0.1838077514409883
+      ],
+      "bounds_m": [
+        -1.038,
+        0.513,
+        0.153,
+        -0.562,
+        0.516,
+        0.215
+      ],
+      "note": "62 mm-high removable access panel. Requires sealed handle inserts."
+    },
+    {
+      "name": "left_service_nutclip_1_1",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.036874308718856684,
+      "volume_m3": 4.697364168007221e-06,
+      "com_m": [
+        -1.0219999999999998,
+        0.5115000000000001,
+        0.164
+      ],
+      "bounds_m": [
+        -1.042,
+        0.51,
+        0.144,
+        -1.002,
+        0.513,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_1_2",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.036874308718856684,
+      "volume_m3": 4.697364168007221e-06,
+      "com_m": [
+        -1.0219999999999998,
+        0.5115000000000001,
+        0.20399999999999996
+      ],
+      "bounds_m": [
+        -1.042,
+        0.51,
+        0.184,
+        -1.002,
+        0.513,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_1_3",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        -0.5779999999999998,
+        0.5115000000000001,
+        0.16399999999999998
+      ],
+      "bounds_m": [
+        -0.598,
+        0.51,
+        0.144,
+        -0.558,
+        0.513,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_1_4",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        -0.5779999999999998,
+        0.5115000000000001,
+        0.204
+      ],
+      "bounds_m": [
+        -0.598,
+        0.51,
+        0.184,
+        -0.558,
+        0.513,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_side_service_cover_2",
+      "group": "side_service",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.11504553301447795,
+      "volume_m3": 4.260945667202887e-05,
+      "com_m": [
+        0.3900000000000002,
+        0.5144999999999998,
+        0.1836147334117317
+      ],
+      "bounds_m": [
+        0.267,
+        0.513,
+        0.153,
+        0.513,
+        0.516,
+        0.215
+      ],
+      "note": "62 mm-high removable access panel. Requires sealed handle inserts."
+    },
+    {
+      "name": "left_service_nutclip_2_1",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.2829999999999999,
+        0.5115000000000001,
+        0.164
+      ],
+      "bounds_m": [
+        0.263,
+        0.51,
+        0.144,
+        0.303,
+        0.513,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_2_2",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.2829999999999999,
+        0.5115000000000001,
+        0.204
+      ],
+      "bounds_m": [
+        0.263,
+        0.51,
+        0.184,
+        0.303,
+        0.513,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_2_3",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.49699999999999994,
+        0.5115000000000001,
+        0.16399999999999998
+      ],
+      "bounds_m": [
+        0.477,
+        0.51,
+        0.144,
+        0.517,
+        0.513,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "left_service_nutclip_2_4",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.49699999999999994,
+        0.5115000000000001,
+        0.204
+      ],
+      "bounds_m": [
+        0.477,
+        0.51,
+        0.184,
+        0.517,
+        0.513,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "main_right_side_3mm",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.4637510000000005,
+      "volume_m3": 0.0005421300000000002,
+      "com_m": [
+        -0.7399156106468937,
+        -0.5144999999999996,
+        0.16069268441148835
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.516,
+        0.103,
+        0.55,
+        -0.513,
+        0.22
+      ],
+      "note": ""
+    },
+    {
+      "name": "right_side_service_cover_1",
+      "group": "side_service",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.23055153301447795,
+      "volume_m3": 8.538945667202887e-05,
+      "com_m": [
+        -0.8000000000000005,
+        -0.5145,
+        0.1838077514409883
+      ],
+      "bounds_m": [
+        -1.038,
+        -0.516,
+        0.153,
+        -0.562,
+        -0.513,
+        0.215
+      ],
+      "note": "62 mm-high removable access panel. Requires sealed handle inserts."
+    },
+    {
+      "name": "right_service_nutclip_1_1",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.036874308718856684,
+      "volume_m3": 4.697364168007221e-06,
+      "com_m": [
+        -1.0219999999999998,
+        -0.5115,
+        0.164
+      ],
+      "bounds_m": [
+        -1.042,
+        -0.513,
+        0.144,
+        -1.002,
+        -0.51,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_1_2",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.036874308718856684,
+      "volume_m3": 4.697364168007221e-06,
+      "com_m": [
+        -1.0219999999999998,
+        -0.5115,
+        0.20399999999999996
+      ],
+      "bounds_m": [
+        -1.042,
+        -0.513,
+        0.184,
+        -1.002,
+        -0.51,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_1_3",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        -0.5779999999999998,
+        -0.5115,
+        0.16399999999999998
+      ],
+      "bounds_m": [
+        -0.598,
+        -0.513,
+        0.144,
+        -0.558,
+        -0.51,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_1_4",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        -0.5779999999999998,
+        -0.5115,
+        0.204
+      ],
+      "bounds_m": [
+        -0.598,
+        -0.513,
+        0.184,
+        -0.558,
+        -0.51,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_side_service_cover_2",
+      "group": "side_service",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.11504553301447795,
+      "volume_m3": 4.260945667202887e-05,
+      "com_m": [
+        0.3900000000000002,
+        -0.5145,
+        0.1836147334117317
+      ],
+      "bounds_m": [
+        0.267,
+        -0.516,
+        0.153,
+        0.513,
+        -0.513,
+        0.215
+      ],
+      "note": "62 mm-high removable access panel. Requires sealed handle inserts."
+    },
+    {
+      "name": "right_service_nutclip_2_1",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.2829999999999999,
+        -0.5115,
+        0.164
+      ],
+      "bounds_m": [
+        0.263,
+        -0.513,
+        0.144,
+        0.303,
+        -0.51,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_2_2",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.2829999999999999,
+        -0.5115,
+        0.204
+      ],
+      "bounds_m": [
+        0.263,
+        -0.513,
+        0.184,
+        0.303,
+        -0.51,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_2_3",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.49699999999999994,
+        -0.5115,
+        0.16399999999999998
+      ],
+      "bounds_m": [
+        0.477,
+        -0.513,
+        0.144,
+        0.517,
+        -0.51,
+        0.184
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "right_service_nutclip_2_4",
+      "group": "side_service",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.03687430871885669,
+      "volume_m3": 4.6973641680072215e-06,
+      "com_m": [
+        0.49699999999999994,
+        -0.5115,
+        0.204
+      ],
+      "bounds_m": [
+        0.477,
+        -0.513,
+        0.184,
+        0.517,
+        -0.51,
+        0.224
+      ],
+      "note": "M6 nut/insert not modeled; clip requires weld detail."
+    },
+    {
+      "name": "main_left_lower_sloping_shoulder",
+      "group": "main_body",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.7703354318074402,
+      "volume_m3": 0.0010260501599286815,
+      "com_m": [
+        -0.6748907100745121,
+        0.5829862411426097,
+        0.23999419160069901
+      ],
+      "bounds_m": [
+        -1.9,
+        0.5155709467104173,
+        0.2185626714798981,
+        0.55,
+        0.6504290532895826,
+        0.26143732852010193
+      ],
+      "note": "Original 3mm planar welded flared shoulder; 1.3m max hull span is a design choice, not a recovered reference dimension. Edge mitres and bulkhead notches explicitly trimmed in B-rep."
+    },
+    {
+      "name": "main_left_upper_sloping_shoulder",
+      "group": "main_body",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 4.199119251943411,
+      "volume_m3": 0.0015552293525716336,
+      "com_m": [
+        -0.6748474528058784,
+        0.548983421014306,
+        0.298899487915408
+      ],
+      "bounds_m": [
+        -1.9,
+        0.4494610623933867,
+        0.26,
+        0.55,
+        0.6505389376066132,
+        0.33839983793925504
+      ],
+      "note": "Original 3mm planar welded flared shoulder; 1.3m max hull span is a design choice, not a recovered reference dimension. Edge mitres and bulkhead notches explicitly trimmed in B-rep."
+    },
+    {
+      "name": "main_right_lower_sloping_shoulder",
+      "group": "main_body",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.770335431807464,
+      "volume_m3": 0.0010260501599286904,
+      "com_m": [
+        -0.6748907100745118,
+        -0.5829862411426101,
+        0.23999419160069893
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.6504290532895827,
+        0.21856267147989808,
+        0.55,
+        -0.5155709467104174,
+        0.26143732852010193
+      ],
+      "note": "Original 3mm planar welded flared shoulder; 1.3m max hull span is a design choice, not a recovered reference dimension. Edge mitres and bulkhead notches explicitly trimmed in B-rep."
+    },
+    {
+      "name": "main_right_upper_sloping_shoulder",
+      "group": "main_body",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 4.19911925194341,
+      "volume_m3": 0.0015552293525716331,
+      "com_m": [
+        -0.6748474528058789,
+        -0.5489834210143056,
+        0.29889948791540794
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.6505389376066132,
+        0.25999999999999995,
+        0.55,
+        -0.4494610623933868,
+        0.3383998379392551
+      ],
+      "note": "Original 3mm planar welded flared shoulder; 1.3m max hull span is a design choice, not a recovered reference dimension. Edge mitres and bulkhead notches explicitly trimmed in B-rep."
+    },
+    {
+      "name": "rear_bulkhead_3mm",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.028707793473516,
+      "volume_m3": 0.000751373256842043,
+      "com_m": [
+        -1.8985000000000003,
+        -2.0698806869889936e-17,
+        0.2216445007217217
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.65,
+        0.103,
+        -1.897,
+        0.65,
+        0.337
+      ],
+      "note": "Connector apertures only; glands, EMC seals, bonding and connectors not selected."
+    },
+    {
+      "name": "arm_facing_bulkhead_3mm",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.0034135743824035,
+      "volume_m3": 0.0007420050275490384,
+      "com_m": [
+        0.5484999999999999,
+        -2.5102864267423805e-18,
+        0.22136207219049978
+      ],
+      "bounds_m": [
+        0.547,
+        -0.65,
+        0.103,
+        0.55,
+        0.65,
+        0.337
+      ],
+      "note": "Connector apertures only; glands, EMC seals, bonding and connectors not selected."
+    },
+    {
+      "name": "controller_battery_partition",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.9293590001608665,
+      "volume_m3": 0.0007145774074669875,
+      "com_m": [
+        -1.1414999999999997,
+        -0.00953497506177245,
+        0.22385724839550397
+      ],
+      "bounds_m": [
+        -1.143,
+        -0.65,
+        0.103,
+        -1.14,
+        0.65,
+        0.337
+      ],
+      "note": "Battery/cable segregation with service openings; fire barrier not qualified."
+    },
+    {
+      "name": "battery_tool_partition",
+      "group": "main_body",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.989493400160867,
+      "volume_m3": 0.0007368494074669878,
+      "com_m": [
+        -0.45849999999999996,
+        -0.009246771037417119,
+        0.22064249567634567
+      ],
+      "bounds_m": [
+        -0.46,
+        -0.65,
+        0.103,
+        -0.457,
+        0.65,
+        0.337
+      ],
+      "note": "Battery/cable segregation with service openings; fire barrier not qualified."
+    },
+    {
+      "name": "battery_well_floor_3mm",
+      "group": "battery_well",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 3.7888293920257397,
+      "volume_m3": 0.0014032701451947183,
+      "com_m": [
+        -0.8,
+        -1.088850286034198e-18,
+        -0.07849999999999999
+      ],
+      "bounds_m": [
+        -1.125,
+        -0.36,
+        -0.08,
+        -0.475,
+        0.36,
+        -0.077
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_well_left_wall",
+      "group": "battery_well",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.1673937001608667,
+      "volume_m3": 0.0008027384074669877,
+      "com_m": [
+        -0.7994317460718734,
+        0.35849999999999993,
+        0.12921580957918524
+      ],
+      "bounds_m": [
+        -1.125,
+        0.357,
+        -0.077,
+        -0.475,
+        0.36,
+        0.337
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_well_right_wall",
+      "group": "battery_well",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.17971,
+      "volume_m3": 0.0008073,
+      "com_m": [
+        -0.8,
+        -0.3585,
+        0.13
+      ],
+      "bounds_m": [
+        -1.125,
+        -0.36,
+        -0.077,
+        -0.475,
+        -0.357,
+        0.337
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_well_rear_wall",
+      "group": "battery_well",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.3943276,
+      "volume_m3": 0.000886788,
+      "com_m": [
+        -1.1235,
+        0.0,
+        0.13
+      ],
+      "bounds_m": [
+        -1.125,
+        -0.357,
+        -0.077,
+        -1.122,
+        0.357,
+        0.337
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_well_front_wall",
+      "group": "battery_well",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.3943276,
+      "volume_m3": 0.000886788,
+      "com_m": [
+        -0.4765,
+        0.0,
+        0.13
+      ],
+      "bounds_m": [
+        -0.478,
+        -0.357,
+        -0.077,
+        -0.475,
+        0.357,
+        0.337
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_1_isolator_pad",
+      "group": "battery_support",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.22464000000000003,
+      "volume_m3": 0.00018720000000000002,
+      "com_m": [
+        -0.95,
+        -0.11,
+        -0.075
+      ],
+      "bounds_m": [
+        -1.08,
+        -0.2,
+        -0.077,
+        -0.82,
+        -0.02,
+        -0.073
+      ],
+      "note": "4 mm pad. Battery mass/thermal/chemical compatibility requires supplier validation."
+    },
+    {
+      "name": "battery_1_stop_-1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.95,
+        -0.214,
+        -0.059
+      ],
+      "bounds_m": [
+        -1.08,
+        -0.2155,
+        -0.073,
+        -0.82,
+        -0.2125,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_1_stop_1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.95,
+        -0.006,
+        -0.059
+      ],
+      "bounds_m": [
+        -1.08,
+        -0.0075,
+        -0.073,
+        -0.82,
+        -0.0045,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_2_isolator_pad",
+      "group": "battery_support",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.22464000000000003,
+      "volume_m3": 0.00018720000000000002,
+      "com_m": [
+        -0.95,
+        0.11,
+        -0.075
+      ],
+      "bounds_m": [
+        -1.08,
+        0.02,
+        -0.077,
+        -0.82,
+        0.2,
+        -0.073
+      ],
+      "note": "4 mm pad. Battery mass/thermal/chemical compatibility requires supplier validation."
+    },
+    {
+      "name": "battery_2_stop_-1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.95,
+        0.006,
+        -0.059
+      ],
+      "bounds_m": [
+        -1.08,
+        0.0045,
+        -0.073,
+        -0.82,
+        0.0075,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_2_stop_1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.95,
+        0.214,
+        -0.059
+      ],
+      "bounds_m": [
+        -1.08,
+        0.2125,
+        -0.073,
+        -0.82,
+        0.2155,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_3_isolator_pad",
+      "group": "battery_support",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.22464000000000003,
+      "volume_m3": 0.00018720000000000002,
+      "com_m": [
+        -0.65,
+        -0.11,
+        -0.075
+      ],
+      "bounds_m": [
+        -0.78,
+        -0.2,
+        -0.077,
+        -0.52,
+        -0.02,
+        -0.073
+      ],
+      "note": "4 mm pad. Battery mass/thermal/chemical compatibility requires supplier validation."
+    },
+    {
+      "name": "battery_3_stop_-1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.65,
+        -0.214,
+        -0.059
+      ],
+      "bounds_m": [
+        -0.78,
+        -0.2155,
+        -0.073,
+        -0.52,
+        -0.2125,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_3_stop_1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.65,
+        -0.006,
+        -0.059
+      ],
+      "bounds_m": [
+        -0.78,
+        -0.0075,
+        -0.073,
+        -0.52,
+        -0.0045,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_4_isolator_pad",
+      "group": "battery_support",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.22464000000000003,
+      "volume_m3": 0.00018720000000000002,
+      "com_m": [
+        -0.65,
+        0.11,
+        -0.075
+      ],
+      "bounds_m": [
+        -0.78,
+        0.02,
+        -0.077,
+        -0.52,
+        0.2,
+        -0.073
+      ],
+      "note": "4 mm pad. Battery mass/thermal/chemical compatibility requires supplier validation."
+    },
+    {
+      "name": "battery_4_stop_-1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.65,
+        0.006,
+        -0.059
+      ],
+      "bounds_m": [
+        -0.78,
+        0.0045,
+        -0.073,
+        -0.52,
+        0.0075,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_4_stop_1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.058968,
+      "volume_m3": 2.184e-05,
+      "com_m": [
+        -0.65,
+        0.214,
+        -0.059
+      ],
+      "bounds_m": [
+        -0.78,
+        0.2125,
+        -0.073,
+        -0.52,
+        0.2155,
+        -0.045
+      ],
+      "note": "Welded low stop; supplier hold-down interface unknown."
+    },
+    {
+      "name": "battery_retention_crossbar_1",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.16068626135049244,
+      "volume_m3": 5.9513430129812015e-05,
+      "com_m": [
+        -0.95,
+        1.1003166576824176e-18,
+        0.217
+      ],
+      "bounds_m": [
+        -0.965,
+        -0.25,
+        0.215,
+        -0.935,
+        0.25,
+        0.219
+      ],
+      "note": "12 mm top gap reserved for adjustable insulating pads; clamps NOT contact-qualified."
+    },
+    {
+      "name": "battery_retention_stud_1_-235",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.12350480367204494,
+      "volume_m3": 1.57330960091777e-05,
+      "com_m": [
+        -0.95,
+        -0.235,
+        0.0695
+      ],
+      "bounds_m": [
+        -0.954,
+        -0.239,
+        -0.087,
+        -0.946,
+        -0.231,
+        0.226
+      ],
+      "note": "Smooth M8 tie-rod approximation through real floor/crossbar clearance bores; terminal clearance and preload unresolved."
+    },
+    {
+      "name": "battery_retention_nut_1_-235_bottom",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.95,
+        -0.235,
+        -0.08349999999999999
+      ],
+      "bounds_m": [
+        -0.9575,
+        -0.24149519052838328,
+        -0.087,
+        -0.9425,
+        -0.22850480947161672,
+        -0.08
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_nut_1_-235_top",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.95,
+        -0.235,
+        0.22249999999999998
+      ],
+      "bounds_m": [
+        -0.9575,
+        -0.24149519052838328,
+        0.219,
+        -0.9425,
+        -0.22850480947161672,
+        0.226
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_stud_1_235",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.12350480367204494,
+      "volume_m3": 1.57330960091777e-05,
+      "com_m": [
+        -0.95,
+        0.235,
+        0.0695
+      ],
+      "bounds_m": [
+        -0.954,
+        0.231,
+        -0.087,
+        -0.946,
+        0.239,
+        0.226
+      ],
+      "note": "Smooth M8 tie-rod approximation through real floor/crossbar clearance bores; terminal clearance and preload unresolved."
+    },
+    {
+      "name": "battery_retention_nut_1_235_bottom",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.95,
+        0.23500000000000007,
+        -0.08349999999999999
+      ],
+      "bounds_m": [
+        -0.9575,
+        0.22850480947161672,
+        -0.087,
+        -0.9425,
+        0.24149519052838328,
+        -0.08
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_nut_1_235_top",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.95,
+        0.23500000000000007,
+        0.22249999999999998
+      ],
+      "bounds_m": [
+        -0.9575,
+        0.22850480947161672,
+        0.219,
+        -0.9425,
+        0.24149519052838328,
+        0.226
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_crossbar_2",
+      "group": "battery_support",
+      "material": "restraint",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.16068626135049244,
+      "volume_m3": 5.9513430129812015e-05,
+      "com_m": [
+        -0.6499999999999999,
+        9.7805925127326e-19,
+        0.217
+      ],
+      "bounds_m": [
+        -0.665,
+        -0.25,
+        0.215,
+        -0.635,
+        0.25,
+        0.219
+      ],
+      "note": "12 mm top gap reserved for adjustable insulating pads; clamps NOT contact-qualified."
+    },
+    {
+      "name": "battery_retention_stud_2_-235",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.12350480367204494,
+      "volume_m3": 1.57330960091777e-05,
+      "com_m": [
+        -0.65,
+        -0.235,
+        0.0695
+      ],
+      "bounds_m": [
+        -0.654,
+        -0.239,
+        -0.087,
+        -0.646,
+        -0.231,
+        0.226
+      ],
+      "note": "Smooth M8 tie-rod approximation through real floor/crossbar clearance bores; terminal clearance and preload unresolved."
+    },
+    {
+      "name": "battery_retention_nut_2_-235_bottom",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.6499999999999999,
+        -0.235,
+        -0.08349999999999999
+      ],
+      "bounds_m": [
+        -0.6575,
+        -0.24149519052838328,
+        -0.087,
+        -0.6425,
+        -0.22850480947161672,
+        -0.08
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_nut_2_-235_top",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.6499999999999999,
+        -0.235,
+        0.22249999999999998
+      ],
+      "bounds_m": [
+        -0.6575,
+        -0.24149519052838328,
+        0.219,
+        -0.6425,
+        -0.22850480947161672,
+        0.226
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_stud_2_235",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.12350480367204494,
+      "volume_m3": 1.57330960091777e-05,
+      "com_m": [
+        -0.65,
+        0.235,
+        0.0695
+      ],
+      "bounds_m": [
+        -0.654,
+        0.231,
+        -0.087,
+        -0.646,
+        0.239,
+        0.226
+      ],
+      "note": "Smooth M8 tie-rod approximation through real floor/crossbar clearance bores; terminal clearance and preload unresolved."
+    },
+    {
+      "name": "battery_retention_nut_2_235_bottom",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.6499999999999999,
+        0.23500000000000007,
+        -0.08349999999999999
+      ],
+      "bounds_m": [
+        -0.6575,
+        0.22850480947161672,
+        -0.087,
+        -0.6425,
+        0.24149519052838328,
+        -0.08
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "battery_retention_nut_2_235_top",
+      "group": "battery_support",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004912352488594564,
+      "volume_m3": 6.2577738708211e-07,
+      "com_m": [
+        -0.6499999999999999,
+        0.23500000000000007,
+        0.22249999999999998
+      ],
+      "bounds_m": [
+        -0.6575,
+        0.22850480947161672,
+        0.219,
+        -0.6425,
+        0.24149519052838328,
+        0.226
+      ],
+      "note": "M8 hex-nut approximation; smooth clearance bore represents omitted threads."
+    },
+    {
+      "name": "rear_controller_hatch_weld_flange",
+      "group": "hatches",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5219212995217188,
+      "volume_m3": 0.000193304185008044,
+      "com_m": [
+        -1.5219999999999947,
+        1.1133893775687766e-16,
+        0.33849999999999897
+      ],
+      "bounds_m": [
+        -1.9,
+        -0.45,
+        0.337,
+        -1.144,
+        0.45,
+        0.34
+      ],
+      "note": ""
+    },
+    {
+      "name": "rear_controller_hatch_gasket",
+      "group": "hatches",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.12392601254068239,
+      "volume_m3": 0.00010327167711723532,
+      "com_m": [
+        -1.5219999999999951,
+        -2.6631812854546226e-17,
+        0.3410000000000014
+      ],
+      "bounds_m": [
+        -1.899,
+        -0.449,
+        0.34,
+        -1.145,
+        0.449,
+        0.342
+      ],
+      "note": "Concept gasket with 2 mm nominal uncompressed thickness; finger holes mean lid is not weather sealed."
+    },
+    {
+      "name": "rear_controller_hatch_removable_lid",
+      "group": "hatches",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 5.460580901641679,
+      "volume_m3": 0.0020224373709783997,
+      "com_m": [
+        -1.5219999999999994,
+        -2.3384518685645557e-19,
+        0.34349999999999986
+      ],
+      "bounds_m": [
+        -1.899,
+        -0.449,
+        0.342,
+        -1.145,
+        0.449,
+        0.345
+      ],
+      "note": "3 mm laser-cut lid. Finger slots require sealed insert handles before weatherproofing."
+    },
+    {
+      "name": "rear_controller_hatch_M6_1",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.8860000000000001,
+        -0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.891,
+        -0.441,
+        0.334,
+        -1.881,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_M6_2",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.1580000000000001,
+        -0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.163,
+        -0.441,
+        0.334,
+        -1.153,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_M6_3",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.8860000000000001,
+        0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.891,
+        0.431,
+        0.334,
+        -1.881,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_M6_4",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.1580000000000001,
+        0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.163,
+        0.431,
+        0.334,
+        -1.153,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_M6_5",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.5219999999999998,
+        -0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.527,
+        -0.441,
+        0.334,
+        -1.517,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_M6_6",
+      "group": "hatches",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819562,
+      "volume_m3": 5.958673908050398e-07,
+      "com_m": [
+        -1.5219999999999998,
+        0.43599999999999994,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -1.527,
+        0.431,
+        0.334,
+        -1.517,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_1",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.8860000000000001,
+        -0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.895,
+        -0.445,
+        0.333,
+        -1.877,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_2",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.1580000000000001,
+        -0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.167,
+        -0.445,
+        0.333,
+        -1.149,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_3",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.8860000000000001,
+        0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.895,
+        0.427,
+        0.333,
+        -1.877,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_4",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.1580000000000001,
+        0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.167,
+        0.427,
+        0.333,
+        -1.149,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_5",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.5220000000000005,
+        -0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.531,
+        -0.445,
+        0.333,
+        -1.513,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_6",
+      "group": "hatches",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.5220000000000005,
+        0.43600000000000005,
+        0.335
+      ],
+      "bounds_m": [
+        -1.531,
+        0.427,
+        0.333,
+        -1.513,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_deck_shoulder",
+      "group": "battery_hatch",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.1664,
+      "volume_m3": 0.00043200000000000004,
+      "com_m": [
+        -0.7999999999999994,
+        -1.1941328584389003e-17,
+        0.3384999999999996
+      ],
+      "bounds_m": [
+        -1.14,
+        -0.45,
+        0.337,
+        -0.46,
+        0.45,
+        0.34
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_hatch_weld_flange",
+      "group": "battery_hatch",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.4292572995217168,
+      "volume_m3": 0.00015898418500804326,
+      "com_m": [
+        -0.8000000000000003,
+        4.848832663347827e-17,
+        0.3385000000000009
+      ],
+      "bounds_m": [
+        -1.125,
+        -0.36,
+        0.337,
+        -0.475,
+        0.36,
+        0.34
+      ],
+      "note": ""
+    },
+    {
+      "name": "battery_hatch_gasket",
+      "group": "battery_hatch",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.10196121254043401,
+      "volume_m3": 8.496767711702834e-05,
+      "com_m": [
+        -0.7999999999999984,
+        -5.720221914011192e-17,
+        0.34099999999999886
+      ],
+      "bounds_m": [
+        -1.124,
+        -0.359,
+        0.34,
+        -0.476,
+        0.359,
+        0.342
+      ],
+      "note": "Concept gasket with 2 mm nominal uncompressed thickness; finger holes mean lid is not weather sealed."
+    },
+    {
+      "name": "battery_hatch_removable_lid",
+      "group": "battery_hatch",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 3.7447741016416782,
+      "volume_m3": 0.0013869533709783993,
+      "com_m": [
+        -0.7999999999999999,
+        3.27088110340951e-18,
+        0.3434999999999998
+      ],
+      "bounds_m": [
+        -1.124,
+        -0.359,
+        0.342,
+        -0.476,
+        0.359,
+        0.345
+      ],
+      "note": "3 mm laser-cut lid. Finger slots require sealed insert handles before weatherproofing."
+    },
+    {
+      "name": "battery_hatch_M6_1",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        -1.111,
+        -0.34599999999999986,
+        0.3430361279556535
+      ],
+      "bounds_m": [
+        -1.116,
+        -0.351,
+        0.334,
+        -1.106,
+        -0.341,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_M6_2",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819557,
+      "volume_m3": 5.958673908050391e-07,
+      "com_m": [
+        -0.48900000000000005,
+        -0.3459999999999999,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -0.494,
+        -0.351,
+        0.334,
+        -0.484,
+        -0.341,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_M6_3",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        -1.111,
+        0.34599999999999986,
+        0.3430361279556535
+      ],
+      "bounds_m": [
+        -1.116,
+        0.341,
+        0.334,
+        -1.106,
+        0.351,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_M6_4",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819557,
+      "volume_m3": 5.958673908050391e-07,
+      "com_m": [
+        -0.48900000000000005,
+        0.3459999999999999,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        -0.494,
+        0.341,
+        0.334,
+        -0.484,
+        0.351,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_M6_5",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.00467755901781957,
+      "volume_m3": 5.958673908050407e-07,
+      "com_m": [
+        -0.8,
+        -0.3459999999999999,
+        0.3430361279556535
+      ],
+      "bounds_m": [
+        -0.805,
+        -0.351,
+        0.334,
+        -0.795,
+        -0.341,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_M6_6",
+      "group": "battery_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.00467755901781957,
+      "volume_m3": 5.958673908050407e-07,
+      "com_m": [
+        -0.8,
+        0.3459999999999999,
+        0.3430361279556535
+      ],
+      "bounds_m": [
+        -0.805,
+        0.341,
+        0.334,
+        -0.795,
+        0.351,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "battery_hatch_nutplate_1",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.111,
+        -0.34600000000000003,
+        0.335
+      ],
+      "bounds_m": [
+        -1.12,
+        -0.355,
+        0.333,
+        -1.102,
+        -0.337,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_hatch_nutplate_2",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.4890000000000001,
+        -0.34600000000000014,
+        0.335
+      ],
+      "bounds_m": [
+        -0.498,
+        -0.355,
+        0.333,
+        -0.48,
+        -0.337,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_hatch_nutplate_3",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        -1.111,
+        0.34600000000000003,
+        0.335
+      ],
+      "bounds_m": [
+        -1.12,
+        0.337,
+        0.333,
+        -1.102,
+        0.355,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_hatch_nutplate_4",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.4890000000000001,
+        0.34600000000000014,
+        0.335
+      ],
+      "bounds_m": [
+        -0.498,
+        0.337,
+        0.333,
+        -0.48,
+        0.355,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_hatch_nutplate_5",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.8000000000000003,
+        -0.34600000000000014,
+        0.33500000000000013
+      ],
+      "bounds_m": [
+        -0.809,
+        -0.355,
+        0.333,
+        -0.791,
+        -0.337,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "battery_hatch_nutplate_6",
+      "group": "battery_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.8000000000000003,
+        0.34600000000000014,
+        0.33500000000000013
+      ],
+      "bounds_m": [
+        -0.809,
+        0.337,
+        0.333,
+        -0.791,
+        0.355,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_weld_flange",
+      "group": "tool_hatch",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.6029212995217194,
+      "volume_m3": 0.0002233041850080442,
+      "com_m": [
+        0.0470000000000002,
+        2.9422600052797726e-17,
+        0.3384999999999989
+      ],
+      "bounds_m": [
+        -0.456,
+        -0.45,
+        0.337,
+        0.55,
+        0.45,
+        0.34
+      ],
+      "note": ""
+    },
+    {
+      "name": "payload_tool_hatch_gasket",
+      "group": "tool_hatch",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.14312601254038781,
+      "volume_m3": 0.00011927167711698986,
+      "com_m": [
+        0.04700000000000012,
+        -2.275420498555082e-17,
+        0.34100000000000275
+      ],
+      "bounds_m": [
+        -0.455,
+        -0.449,
+        0.34,
+        0.549,
+        0.449,
+        0.342
+      ],
+      "note": "Concept gasket with 2 mm nominal uncompressed thickness; finger holes mean lid is not weather sealed."
+    },
+    {
+      "name": "payload_tool_hatch_removable_lid",
+      "group": "tool_hatch",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 7.279030901641678,
+      "volume_m3": 0.0026959373709783993,
+      "com_m": [
+        0.046999999999999986,
+        -7.313910681567933e-19,
+        0.3435000000000001
+      ],
+      "bounds_m": [
+        -0.455,
+        -0.449,
+        0.342,
+        0.549,
+        0.449,
+        0.345
+      ],
+      "note": "3 mm laser-cut lid. Finger slots require sealed insert handles before weatherproofing."
+    },
+    {
+      "name": "payload_tool_hatch_M6_1",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819556,
+      "volume_m3": 5.95867390805039e-07,
+      "com_m": [
+        -0.442,
+        -0.4360000000000001,
+        0.34303612795565364
+      ],
+      "bounds_m": [
+        -0.447,
+        -0.441,
+        0.334,
+        -0.437,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_M6_2",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819569,
+      "volume_m3": 5.958673908050406e-07,
+      "com_m": [
+        0.536,
+        -0.436,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        0.531,
+        -0.441,
+        0.334,
+        0.541,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_M6_3",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819556,
+      "volume_m3": 5.95867390805039e-07,
+      "com_m": [
+        -0.442,
+        0.4360000000000001,
+        0.34303612795565364
+      ],
+      "bounds_m": [
+        -0.447,
+        0.431,
+        0.334,
+        -0.437,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_M6_4",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819569,
+      "volume_m3": 5.958673908050406e-07,
+      "com_m": [
+        0.536,
+        0.436,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        0.531,
+        0.431,
+        0.334,
+        0.541,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_M6_5",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819557,
+      "volume_m3": 5.958673908050391e-07,
+      "com_m": [
+        0.04700000000000001,
+        -0.436,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        0.042,
+        -0.441,
+        0.334,
+        0.052,
+        -0.431,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_M6_6",
+      "group": "tool_hatch",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819557,
+      "volume_m3": 5.958673908050391e-07,
+      "com_m": [
+        0.04700000000000001,
+        0.436,
+        0.3430361279556536
+      ],
+      "bounds_m": [
+        0.042,
+        0.431,
+        0.334,
+        0.052,
+        0.441,
+        0.349
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_1",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.44200000000000006,
+        -0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        -0.451,
+        -0.445,
+        0.333,
+        -0.433,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_2",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        0.536,
+        -0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        0.527,
+        -0.445,
+        0.333,
+        0.545,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_3",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        -0.44200000000000006,
+        0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        -0.451,
+        0.427,
+        0.333,
+        -0.433,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_4",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        0.536,
+        0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        0.527,
+        0.427,
+        0.333,
+        0.545,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_5",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        0.047000000000000014,
+        -0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        0.038,
+        -0.445,
+        0.333,
+        0.056,
+        -0.427,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_6",
+      "group": "tool_hatch",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475582,
+      "volume_m3": 1.1591522240096284e-06,
+      "com_m": [
+        0.047000000000000014,
+        0.4360000000000001,
+        0.335
+      ],
+      "bounds_m": [
+        0.038,
+        0.427,
+        0.333,
+        0.056,
+        0.445,
+        0.337
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "controller_mount_tray_1",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.19707419836838,
+      "volume_m3": 0.0004433608142105111,
+      "com_m": [
+        -1.709999999999999,
+        -6.958228895143153e-18,
+        0.1415
+      ],
+      "bounds_m": [
+        -1.845,
+        -0.275,
+        0.14,
+        -1.575,
+        0.275,
+        0.143
+      ],
+      "note": "Adapter slot locations are our design, not verified against UR OEM hole drawing."
+    },
+    {
+      "name": "controller_tray_leg_1_-250",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.074925,
+      "volume_m3": 2.775e-05,
+      "com_m": [
+        -1.71,
+        -0.25,
+        0.1215
+      ],
+      "bounds_m": [
+        -1.835,
+        -0.2515,
+        0.103,
+        -1.585,
+        -0.2485,
+        0.14
+      ],
+      "note": ""
+    },
+    {
+      "name": "controller_tray_leg_1_250",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.074925,
+      "volume_m3": 2.775e-05,
+      "com_m": [
+        -1.71,
+        0.25,
+        0.1215
+      ],
+      "bounds_m": [
+        -1.835,
+        0.2485,
+        0.103,
+        -1.585,
+        0.2515,
+        0.14
+      ],
+      "note": ""
+    },
+    {
+      "name": "controller_mount_tray_2",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.19707419836838,
+      "volume_m3": 0.0004433608142105111,
+      "com_m": [
+        -1.3700000000000003,
+        -6.958228895143153e-18,
+        0.1415
+      ],
+      "bounds_m": [
+        -1.505,
+        -0.275,
+        0.14,
+        -1.235,
+        0.275,
+        0.143
+      ],
+      "note": "Adapter slot locations are our design, not verified against UR OEM hole drawing."
+    },
+    {
+      "name": "controller_tray_leg_2_-250",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.074925,
+      "volume_m3": 2.775e-05,
+      "com_m": [
+        -1.37,
+        -0.25,
+        0.1215
+      ],
+      "bounds_m": [
+        -1.495,
+        -0.2515,
+        0.103,
+        -1.245,
+        -0.2485,
+        0.14
+      ],
+      "note": ""
+    },
+    {
+      "name": "controller_tray_leg_2_250",
+      "group": "controller_trays",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.074925,
+      "volume_m3": 2.775e-05,
+      "com_m": [
+        -1.37,
+        0.25,
+        0.1215
+      ],
+      "bounds_m": [
+        -1.495,
+        0.2485,
+        0.103,
+        -1.245,
+        0.2515,
+        0.14
+      ],
+      "note": ""
+    },
+    {
+      "name": "cable_duct_floor_1",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.26082,
+      "volume_m3": 9.66e-05,
+      "com_m": [
+        -1.518,
+        0.435,
+        0.231
+      ],
+      "bounds_m": [
+        -1.863,
+        0.4,
+        0.23,
+        -1.173,
+        0.47,
+        0.232
+      ],
+      "note": ""
+    },
+    {
+      "name": "cable_duct_side_1_400",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.14904,
+      "volume_m3": 5.520000000000001e-05,
+      "com_m": [
+        -1.518,
+        0.4,
+        0.252
+      ],
+      "bounds_m": [
+        -1.863,
+        0.399,
+        0.232,
+        -1.173,
+        0.401,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "cable_duct_side_1_470",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.14904,
+      "volume_m3": 5.520000000000001e-05,
+      "com_m": [
+        -1.518,
+        0.47,
+        0.252
+      ],
+      "bounds_m": [
+        -1.863,
+        0.469,
+        0.232,
+        -1.173,
+        0.471,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "cable_duct_floor_2",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.24570000000000006,
+      "volume_m3": 9.100000000000002e-05,
+      "com_m": [
+        -0.7999999999999999,
+        0.435,
+        0.231
+      ],
+      "bounds_m": [
+        -1.125,
+        0.4,
+        0.23,
+        -0.475,
+        0.47,
+        0.232
+      ],
+      "note": ""
+    },
+    {
+      "name": "cable_duct_side_2_400",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.1307232,
+      "volume_m3": 4.8416000000000005e-05,
+      "com_m": [
+        -0.7925974884335757,
+        0.4,
+        0.25155584930601455
+      ],
+      "bounds_m": [
+        -1.125,
+        0.399,
+        0.232,
+        -0.475,
+        0.401,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "cable_duct_side_2_470",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.1404,
+      "volume_m3": 5.2e-05,
+      "com_m": [
+        -0.8000000000000002,
+        0.47,
+        0.252
+      ],
+      "bounds_m": [
+        -1.125,
+        0.469,
+        0.232,
+        -0.475,
+        0.471,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "cable_duct_floor_3",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.36288000000000004,
+      "volume_m3": 0.00013440000000000001,
+      "com_m": [
+        0.039999999999999994,
+        0.435,
+        0.231
+      ],
+      "bounds_m": [
+        -0.44,
+        0.4,
+        0.23,
+        0.52,
+        0.47,
+        0.232
+      ],
+      "note": ""
+    },
+    {
+      "name": "cable_duct_side_3_400",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.20736000000000002,
+      "volume_m3": 7.680000000000001e-05,
+      "com_m": [
+        0.03999999999999998,
+        0.4,
+        0.252
+      ],
+      "bounds_m": [
+        -0.44,
+        0.399,
+        0.232,
+        0.52,
+        0.401,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "cable_duct_side_3_470",
+      "group": "cable_route",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.20736000000000002,
+      "volume_m3": 7.680000000000001e-05,
+      "com_m": [
+        0.03999999999999998,
+        0.47,
+        0.252
+      ],
+      "bounds_m": [
+        -0.44,
+        0.469,
+        0.232,
+        0.52,
+        0.471,
+        0.272
+      ],
+      "note": "Open-top duct, branch notch aligned to battery cable aperture; cable/strain-relief selection pending."
+    },
+    {
+      "name": "rail_saddle_1_top",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044486,
+      "volume_m3": 7.570069389865587e-05,
+      "com_m": [
+        -1.0499999999999998,
+        -0.46,
+        0.10599999999999998
+      ],
+      "bounds_m": [
+        -1.09,
+        -0.54,
+        0.103,
+        -1.01,
+        -0.38,
+        0.109
+      ],
+      "note": "80\u00d7160\u00d76 strap, clamp preload and frame wall crush checks pending."
+    },
+    {
+      "name": "rail_saddle_1_bottom",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044486,
+      "volume_m3": 7.570069389865587e-05,
+      "com_m": [
+        -1.0499999999999998,
+        -0.46,
+        -0.10299999999999998
+      ],
+      "bounds_m": [
+        -1.09,
+        -0.54,
+        -0.106,
+        -1.01,
+        -0.38,
+        -0.1
+      ],
+      "note": ""
+    },
+    {
+      "name": "rail_saddle_1_M10_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818378,
+      "volume_m3": 1.9254154385755894e-05,
+      "com_m": [
+        -1.05,
+        -0.39,
+        0.00509011097272353
+      ],
+      "bounds_m": [
+        -1.0585,
+        -0.3985,
+        -0.117,
+        -1.0415,
+        -0.3815,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.012849940597571614,
+      "volume_m3": 1.6369351079709064e-06,
+      "com_m": [
+        -1.0500000000000003,
+        -0.3899999999999999,
+        -0.11099999999999999
+      ],
+      "bounds_m": [
+        -1.059815,
+        -0.39850003933814426,
+        -0.116,
+        -1.040185,
+        -0.3814999606618557,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_1_M10_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818408,
+      "volume_m3": 1.9254154385755935e-05,
+      "com_m": [
+        -1.0499999999999998,
+        -0.5299999999999999,
+        0.005090110972723554
+      ],
+      "bounds_m": [
+        -1.0585,
+        -0.5385,
+        -0.117,
+        -1.0415,
+        -0.5215,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.01284994059757154,
+      "volume_m3": 1.6369351079708968e-06,
+      "com_m": [
+        -1.05,
+        -0.53,
+        -0.11099999999999996
+      ],
+      "bounds_m": [
+        -1.059815,
+        -0.5385000393381443,
+        -0.116,
+        -1.040185,
+        -0.5214999606618558,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_2_top",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044486,
+      "volume_m3": 7.570069389865587e-05,
+      "com_m": [
+        -1.0499999999999998,
+        0.46,
+        0.10599999999999998
+      ],
+      "bounds_m": [
+        -1.09,
+        0.38,
+        0.103,
+        -1.01,
+        0.54,
+        0.109
+      ],
+      "note": "80\u00d7160\u00d76 strap, clamp preload and frame wall crush checks pending."
+    },
+    {
+      "name": "rail_saddle_2_bottom",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044486,
+      "volume_m3": 7.570069389865587e-05,
+      "com_m": [
+        -1.0499999999999998,
+        0.46,
+        -0.10299999999999998
+      ],
+      "bounds_m": [
+        -1.09,
+        0.38,
+        -0.106,
+        -1.01,
+        0.54,
+        -0.1
+      ],
+      "note": ""
+    },
+    {
+      "name": "rail_saddle_2_M10_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818378,
+      "volume_m3": 1.9254154385755894e-05,
+      "com_m": [
+        -1.05,
+        0.39,
+        0.00509011097272353
+      ],
+      "bounds_m": [
+        -1.0585,
+        0.3815,
+        -0.117,
+        -1.0415,
+        0.3985,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.012849940597571611,
+      "volume_m3": 1.636935107970906e-06,
+      "com_m": [
+        -1.0500000000000003,
+        0.39000000000000007,
+        -0.111
+      ],
+      "bounds_m": [
+        -1.059815,
+        0.3814999606618557,
+        -0.116,
+        -1.040185,
+        0.39850003933814426,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_2_M10_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818408,
+      "volume_m3": 1.9254154385755935e-05,
+      "com_m": [
+        -1.0499999999999998,
+        0.5299999999999999,
+        0.005090110972723554
+      ],
+      "bounds_m": [
+        -1.0585,
+        0.5215,
+        -0.117,
+        -1.0415,
+        0.5385,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.01284994059757154,
+      "volume_m3": 1.6369351079708968e-06,
+      "com_m": [
+        -1.05,
+        0.5300000000000001,
+        -0.11099999999999996
+      ],
+      "bounds_m": [
+        -1.059815,
+        0.5214999606618558,
+        -0.116,
+        -1.040185,
+        0.5385000393381443,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_3_top",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044485,
+      "volume_m3": 7.570069389865586e-05,
+      "com_m": [
+        -0.55,
+        -0.4600000000000001,
+        0.10600000000000001
+      ],
+      "bounds_m": [
+        -0.59,
+        -0.54,
+        0.103,
+        -0.51,
+        -0.38,
+        0.109
+      ],
+      "note": "80\u00d7160\u00d76 strap, clamp preload and frame wall crush checks pending."
+    },
+    {
+      "name": "rail_saddle_3_bottom",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044485,
+      "volume_m3": 7.570069389865586e-05,
+      "com_m": [
+        -0.55,
+        -0.4600000000000001,
+        -0.10299999999999998
+      ],
+      "bounds_m": [
+        -0.59,
+        -0.54,
+        -0.106,
+        -0.51,
+        -0.38,
+        -0.1
+      ],
+      "note": ""
+    },
+    {
+      "name": "rail_saddle_3_M10_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818406,
+      "volume_m3": 1.925415438575593e-05,
+      "com_m": [
+        -0.5499999999999999,
+        -0.38999999999999996,
+        0.005090110972723573
+      ],
+      "bounds_m": [
+        -0.5585,
+        -0.3985,
+        -0.117,
+        -0.5415,
+        -0.3815,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.012849940597571642,
+      "volume_m3": 1.6369351079709097e-06,
+      "com_m": [
+        -0.5499999999999998,
+        -0.38999999999999996,
+        -0.11099999999999999
+      ],
+      "bounds_m": [
+        -0.5598150000000001,
+        -0.39850003933814426,
+        -0.116,
+        -0.5401849999999999,
+        -0.3814999606618557,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_3_M10_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818433,
+      "volume_m3": 1.9254154385755965e-05,
+      "com_m": [
+        -0.5499999999999999,
+        -0.5300000000000001,
+        0.0050901109727235945
+      ],
+      "bounds_m": [
+        -0.5585,
+        -0.5385,
+        -0.117,
+        -0.5415,
+        -0.5215,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.012849940597571562,
+      "volume_m3": 1.6369351079708996e-06,
+      "com_m": [
+        -0.5499999999999999,
+        -0.5299999999999998,
+        -0.11099999999999999
+      ],
+      "bounds_m": [
+        -0.5598150000000001,
+        -0.5385000393381443,
+        -0.116,
+        -0.5401849999999999,
+        -0.5214999606618558,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_4_top",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044485,
+      "volume_m3": 7.570069389865586e-05,
+      "com_m": [
+        -0.55,
+        0.4600000000000001,
+        0.10600000000000001
+      ],
+      "bounds_m": [
+        -0.59,
+        0.38,
+        0.103,
+        -0.51,
+        0.54,
+        0.109
+      ],
+      "note": "80\u00d7160\u00d76 strap, clamp preload and frame wall crush checks pending."
+    },
+    {
+      "name": "rail_saddle_4_bottom",
+      "group": "rail_clamps",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.5942504471044485,
+      "volume_m3": 7.570069389865586e-05,
+      "com_m": [
+        -0.55,
+        0.4600000000000001,
+        -0.10299999999999998
+      ],
+      "bounds_m": [
+        -0.59,
+        0.38,
+        -0.106,
+        -0.51,
+        0.54,
+        -0.1
+      ],
+      "note": ""
+    },
+    {
+      "name": "rail_saddle_4_M10_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818406,
+      "volume_m3": 1.925415438575593e-05,
+      "com_m": [
+        -0.5499999999999999,
+        0.38999999999999996,
+        0.005090110972723573
+      ],
+      "bounds_m": [
+        -0.5585,
+        0.3815,
+        -0.117,
+        -0.5415,
+        0.3985,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_1",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.01284994059757164,
+      "volume_m3": 1.6369351079709095e-06,
+      "com_m": [
+        -0.5500000000000002,
+        0.39000000000000007,
+        -0.111
+      ],
+      "bounds_m": [
+        -0.5598150000000001,
+        0.3814999606618557,
+        -0.116,
+        -0.5401849999999999,
+        0.39850003933814426,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "rail_saddle_4_M10_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.15114511192818433,
+      "volume_m3": 1.9254154385755965e-05,
+      "com_m": [
+        -0.5499999999999999,
+        0.53,
+        0.0050901109727235945
+      ],
+      "bounds_m": [
+        -0.5585,
+        0.5215,
+        -0.117,
+        -0.5415,
+        0.5385,
+        0.116
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_2",
+      "group": "rail_clamps",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.012849940597571562,
+      "volume_m3": 1.6369351079708996e-06,
+      "com_m": [
+        -0.5499999999999999,
+        0.5300000000000001,
+        -0.11099999999999999
+      ],
+      "bounds_m": [
+        -0.5598150000000001,
+        0.5214999606618558,
+        -0.116,
+        -0.5401849999999999,
+        0.5385000393381443,
+        -0.106
+      ],
+      "note": "M10 hex-nut approximation, smooth clearance bore; strength class/preload not selected."
+    },
+    {
+      "name": "front_tool_base",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 5.424246,
+      "volume_m3": 0.00200898,
+      "com_m": [
+        1.6018363049905922,
+        0.0,
+        0.1015
+      ],
+      "bounds_m": [
+        1.2,
+        -0.513,
+        0.1,
+        1.95,
+        0.513,
+        0.103
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_tool_rear_wall",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.5521220000000002,
+      "volume_m3": 0.0005748600000000001,
+      "com_m": [
+        1.2014999999999998,
+        8.993283283680241e-35,
+        0.20319632606199772
+      ],
+      "bounds_m": [
+        1.2,
+        -0.513,
+        0.103,
+        1.203,
+        0.513,
+        0.297
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_tool_left_side",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.8606088000000003,
+      "volume_m3": 0.0003187440000000001,
+      "com_m": [
+        1.5849407408453178,
+        0.5144999999999997,
+        0.20431244980297666
+      ],
+      "bounds_m": [
+        1.203,
+        0.513,
+        0.103,
+        1.947,
+        0.516,
+        0.297
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_tool_right_side",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.8606088000000003,
+      "volume_m3": 0.0003187440000000001,
+      "com_m": [
+        1.5849407408453178,
+        -0.5144999999999997,
+        0.20431244980297666
+      ],
+      "bounds_m": [
+        1.203,
+        -0.516,
+        0.103,
+        1.947,
+        -0.513,
+        0.297
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_tool_nose_wall",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.6980904,
+      "volume_m3": 0.000258552,
+      "com_m": [
+        1.9485,
+        -7.204141330297027e-18,
+        0.14499999999999996
+      ],
+      "bounds_m": [
+        1.947,
+        -0.513,
+        0.103,
+        1.95,
+        0.513,
+        0.187
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_sloped_service_nose",
+      "group": "front_tool",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 2.247076207912742,
+      "volume_m3": 0.0008322504473750896,
+      "com_m": [
+        1.8235,
+        -9.512943374081641e-18,
+        0.24349999999999994
+      ],
+      "bounds_m": [
+        1.6993897630195312,
+        -0.513,
+        0.1871297405984018,
+        1.9476102369804689,
+        0.513,
+        0.2998702594015982
+      ],
+      "note": "3mm planar sloped sheet; final seam trim and weld detail still required."
+    },
+    {
+      "name": "front_tool_hatch_weld_flange",
+      "group": "front_tool",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.47785729952171785,
+      "volume_m3": 0.00017698418500804365,
+      "com_m": [
+        1.4499999999999973,
+        1.2177012568796378e-16,
+        0.29849999999999893
+      ],
+      "bounds_m": [
+        1.203,
+        -0.513,
+        0.297,
+        1.697,
+        0.513,
+        0.3
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_tool_hatch_gasket",
+      "group": "front_tool",
+      "material": "gasket",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.11348121254045732,
+      "volume_m3": 9.456767711704777e-05,
+      "com_m": [
+        1.4499999999999944,
+        1.6815053357096036e-16,
+        0.30099999999999927
+      ],
+      "bounds_m": [
+        1.204,
+        -0.512,
+        0.3,
+        1.696,
+        0.512,
+        0.302
+      ],
+      "note": "Concept gasket with 2 mm nominal uncompressed thickness; finger holes mean lid is not weather sealed."
+    },
+    {
+      "name": "front_tool_hatch_removable_lid",
+      "group": "front_tool",
+      "material": "lid",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 4.056980501641678,
+      "volume_m3": 0.0015025853709783991,
+      "com_m": [
+        1.4500000000000002,
+        1.3703687288484261e-17,
+        0.3034999999999997
+      ],
+      "bounds_m": [
+        1.204,
+        -0.512,
+        0.302,
+        1.696,
+        0.512,
+        0.305
+      ],
+      "note": "3 mm laser-cut lid. Finger slots require sealed insert handles before weatherproofing."
+    },
+    {
+      "name": "front_tool_hatch_M6_1",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.2169999999999996,
+        -0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.212,
+        -0.504,
+        0.294,
+        1.222,
+        -0.494,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_M6_2",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.6829999999999998,
+        -0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.678,
+        -0.504,
+        0.294,
+        1.688,
+        -0.494,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_M6_3",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.2169999999999996,
+        0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.212,
+        0.494,
+        0.294,
+        1.222,
+        0.504,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_M6_4",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.6829999999999998,
+        0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.678,
+        0.494,
+        0.294,
+        1.688,
+        0.504,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_M6_5",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.4500000000000002,
+        -0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.445,
+        -0.504,
+        0.294,
+        1.455,
+        -0.494,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_M6_6",
+      "group": "front_tool",
+      "material": "fastener",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.004677559017819563,
+      "volume_m3": 5.958673908050399e-07,
+      "com_m": [
+        1.4500000000000002,
+        0.499,
+        0.30303612795565354
+      ],
+      "bounds_m": [
+        1.445,
+        0.494,
+        0.294,
+        1.455,
+        0.504,
+        0.309
+      ],
+      "note": "Nominal M6-style envelope, no thread model or strength rating."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_1",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.2169999999999999,
+        -0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.208,
+        -0.508,
+        0.293,
+        1.226,
+        -0.49,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_2",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.683,
+        -0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.674,
+        -0.508,
+        0.293,
+        1.692,
+        -0.49,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_3",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.2169999999999999,
+        0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.208,
+        0.49,
+        0.293,
+        1.226,
+        0.508,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_4",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.683,
+        0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.674,
+        0.49,
+        0.293,
+        1.692,
+        0.508,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_5",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.4500000000000004,
+        -0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.441,
+        -0.508,
+        0.293,
+        1.459,
+        -0.49,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "front_tool_hatch_nutplate_6",
+      "group": "front_tool",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.009099344958475584,
+      "volume_m3": 1.1591522240096286e-06,
+      "com_m": [
+        1.4500000000000004,
+        0.49900000000000005,
+        0.29500000000000004
+      ],
+      "bounds_m": [
+        1.441,
+        0.49,
+        0.293,
+        1.459,
+        0.508,
+        0.297
+      ],
+      "note": "M6 rivet-nut or weld-nut finishing operation not yet selected; clearance hole modeled."
+    },
+    {
+      "name": "arm_center_cable_guard",
+      "group": "arm_service",
+      "material": "aluminium",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 1.0465200000000001,
+      "volume_m3": 0.00038760000000000004,
+      "com_m": [
+        0.875,
+        2.3464775587536845e-19,
+        0.1015
+      ],
+      "bounds_m": [
+        0.552,
+        -0.1,
+        0.1,
+        1.198,
+        0.1,
+        0.103
+      ],
+      "note": "Between 400mm arm mounting plates, does not cover UR bolt patterns."
+    },
+    {
+      "name": "rear_bumper_RHS_70x50x3",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 5.852645999999999,
+      "volume_m3": 0.0007455599999999999,
+      "com_m": [
+        -2.0250000000000004,
+        -8.705072954358626e-18,
+        -0.009999999999999998
+      ],
+      "bounds_m": [
+        -2.05,
+        -0.545,
+        -0.045,
+        -2.0,
+        0.545,
+        0.025
+      ],
+      "note": "Development guard, not crash/tow rated. Attachment brackets must be load-qualified."
+    },
+    {
+      "name": "rear_bumper_cap_-1",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.08242500000000001,
+      "volume_m3": 1.0500000000000001e-05,
+      "com_m": [
+        -2.025,
+        -0.5465,
+        -0.01
+      ],
+      "bounds_m": [
+        -2.05,
+        -0.548,
+        -0.045,
+        -2.0,
+        -0.545,
+        0.025
+      ],
+      "note": ""
+    },
+    {
+      "name": "rear_bumper_cap_1",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.08242500000000001,
+      "volume_m3": 1.0500000000000001e-05,
+      "com_m": [
+        -2.025,
+        0.5465,
+        -0.01
+      ],
+      "bounds_m": [
+        -2.05,
+        0.545,
+        -0.045,
+        -2.0,
+        0.548,
+        0.025
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_bumper_RHS_70x50x3",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 5.852645999999999,
+      "volume_m3": 0.0007455599999999999,
+      "com_m": [
+        2.0250000000000004,
+        -8.705072954358626e-18,
+        -0.009999999999999998
+      ],
+      "bounds_m": [
+        2.0,
+        -0.545,
+        -0.045,
+        2.05,
+        0.545,
+        0.025
+      ],
+      "note": "Development guard, not crash/tow rated. Attachment brackets must be load-qualified."
+    },
+    {
+      "name": "front_bumper_cap_-1",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.08242500000000001,
+      "volume_m3": 1.0500000000000001e-05,
+      "com_m": [
+        2.025,
+        -0.5465,
+        -0.01
+      ],
+      "bounds_m": [
+        2.0,
+        -0.548,
+        -0.045,
+        2.05,
+        -0.545,
+        0.025
+      ],
+      "note": ""
+    },
+    {
+      "name": "front_bumper_cap_1",
+      "group": "bumpers",
+      "material": "steel",
+      "valid": true,
+      "solid_count": 1,
+      "mass_kg": 0.08242500000000001,
+      "volume_m3": 1.0500000000000001e-05,
+      "com_m": [
+        2.025,
+        0.5465,
+        -0.01
+      ],
+      "bounds_m": [
+        2.0,
+        0.545,
+        -0.045,
+        2.05,
+        0.548,
+        0.025
+      ],
+      "note": ""
+    }
+  ],
+  "dimensional_reservations": [
+    {
+      "name": "DIMENSION_ONLY_RELiON_InSight_48V_battery_1",
+      "mass_kg": 15.6,
+      "com_m": [
+        -0.95,
+        -0.11,
+        0.065
+      ],
+      "bounds_m": [
+        -1.08,
+        -0.2,
+        -0.073,
+        -0.82,
+        -0.02,
+        0.203
+      ],
+      "note": "Supplier overall dimensions only; terminal and handle details NOT modeled."
+    },
+    {
+      "name": "DIMENSION_ONLY_RELiON_InSight_48V_battery_2",
+      "mass_kg": 15.6,
+      "com_m": [
+        -0.95,
+        0.11,
+        0.065
+      ],
+      "bounds_m": [
+        -1.08,
+        0.02,
+        -0.073,
+        -0.82,
+        0.2,
+        0.203
+      ],
+      "note": "Supplier overall dimensions only; terminal and handle details NOT modeled."
+    },
+    {
+      "name": "DIMENSION_ONLY_RELiON_InSight_48V_battery_3",
+      "mass_kg": 15.6,
+      "com_m": [
+        -0.65,
+        -0.11,
+        0.065
+      ],
+      "bounds_m": [
+        -0.78,
+        -0.2,
+        -0.073,
+        -0.52,
+        -0.02,
+        0.203
+      ],
+      "note": "Supplier overall dimensions only; terminal and handle details NOT modeled."
+    },
+    {
+      "name": "DIMENSION_ONLY_RELiON_InSight_48V_battery_4",
+      "mass_kg": 15.6,
+      "com_m": [
+        -0.65,
+        0.11,
+        0.065
+      ],
+      "bounds_m": [
+        -0.78,
+        0.02,
+        -0.073,
+        -0.52,
+        0.2,
+        0.203
+      ],
+      "note": "Supplier overall dimensions only; terminal and handle details NOT modeled."
+    },
+    {
+      "name": "DIMENSION_ONLY_UR_OEM_DC_controller_1",
+      "mass_kg": 4.3,
+      "com_m": [
+        -1.71,
+        -1.4436423837665528e-18,
+        0.218
+      ],
+      "bounds_m": [
+        -1.794,
+        -0.2255,
+        0.143,
+        -1.626,
+        0.2255,
+        0.293
+      ],
+      "note": "451\u00d7150\u00d7168 mm dimensions; source axes rotated so width is Y. No supplier mounting holes or connector detail."
+    },
+    {
+      "name": "DIMENSION_ONLY_UR_OEM_DC_controller_2",
+      "mass_kg": 4.3,
+      "com_m": [
+        -1.37,
+        -1.4436423837665528e-18,
+        0.218
+      ],
+      "bounds_m": [
+        -1.454,
+        -0.2255,
+        0.143,
+        -1.286,
+        0.2255,
+        0.293
+      ],
+      "note": "451\u00d7150\u00d7168 mm dimensions; source axes rotated so width is Y. No supplier mounting holes or connector detail."
+    }
+  ],
+  "exclusions": [
+    "frame mass, arms, drive train, wheels, tools, cabling, cooling fans, glands and fastener threads excluded from this package mass",
+    "OEM controller mass allocated uniformly at dimensional-envelope centroid, not measured supplier CG",
+    "battery mass allocated uniformly at supplier-envelope centroid, not measured supplier CG",
+    "mounting/welding/contact validation is geometrical only; no strength, fatigue, stability or IP qualification"
+  ],
+  "visual_finish": "Warm gray/sand visualization only; no coating specification or supplier finish selection."
+}

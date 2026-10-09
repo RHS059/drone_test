@@ -1,0 +1,20 @@
+{
+  "revision": "tool-fastener-screen-R01",
+  "adapter_revision": "R04",
+  "ur_face_z_mm": 0,
+  "candidate_underhead_length_mm": 18,
+  "candidate_status": "Nominal development candidate; exact purchased length and tolerance not selected",
+  "thread": "M8",
+  "standard": "ISO 4762",
+  "manufacturer_strength_class": "8.8",
+  "manufacturer_torque_nm": 16,
+  "manufacturer_max_protrusion_mm": 7,
+  "source": "https://www.universal-robots.com/articles/ur/application-installation/end-effector-mounting-on-tool-output-flange/",
+  "source_checked_on": "2026-10-09",
+  "proposed_minimum_nominal_protrusion_mm": 4,
+  "minimum_status": "Project screening assumption, not a verified UR minimum thread engagement requirement",
+  "length_tolerance_mm": null,
+  "grip_tolerance_mm": null,
+  "effective_full_thread_engagement_mm": null,
+  "fabrication_approved": false
+}

@@ -1,0 +1,145 @@
+{
+  "revision": "SO02_E04P",
+  "status": "Geometry checks passed; development candidate, not fabrication release",
+  "selected_step": "body_shock_partition_replacements_SO02_E04P.step",
+  "selected_glb": "body_shock_partition_replacements_SO02_E04P.glb",
+  "replacement_count": 20,
+  "replace_by_name": [
+    "main_base_deck_3mm",
+    "main_left_side_3mm",
+    "main_right_side_3mm",
+    "right_side_service_cover_2",
+    "right_service_nutclip_2_1",
+    "right_service_nutclip_2_2",
+    "rear_bulkhead_3mm",
+    "front_tool_base",
+    "front_tool_left_side",
+    "front_tool_right_side",
+    "front_tool_nose_wall",
+    "front_sloped_service_nose",
+    "right_service_nutclip_2_1_tapped_boss",
+    "right_service_nutclip_2_1_M6x20",
+    "right_service_nutclip_2_1_washer",
+    "right_service_nutclip_2_2_tapped_boss",
+    "right_service_nutclip_2_2_M6x20",
+    "right_service_nutclip_2_2_washer",
+    "controller_battery_partition",
+    "battery_tool_partition"
+  ],
+  "integration_rule": "Use this20-part body replacement package instead of the18-part SO02_E04 package. Apply electrical19-part trough/gland delta separately using its removal/replacement manifest. Keep only one copy of each named component. All40 deck bores and revisedX279 cover stacks are included unchanged.",
+  "supersedes": [
+    "SO01",
+    "SO01_E04",
+    "SO02 without E04 deck composition",
+    "SO02_E04 18-part package"
+  ],
+  "deck_bores": {
+    "preserved_R02": 28,
+    "frozen_E04_additions": 12,
+    "total": 40
+  },
+  "geometry_checks": {
+    "six_R13_towers_clear": true,
+    "guided_module_pose_count": 78,
+    "body_retention_geometry_pass": true,
+    "cover_pull_samples_mm": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200
+    ],
+    "cover_pull_q_deg": [
+      -12,
+      0,
+      12
+    ],
+    "cover_pull_pass": true,
+    "four_tool_envelopes_pass": true,
+    "STEP_GLB_roundtrip_pass": true
+  },
+  "retention_axis_overrides": [
+    {
+      "joint": "right_service_nutclip_2_1_M6x20",
+      "axis_C_mm": [
+        279,
+        -513,
+        164
+      ]
+    },
+    {
+      "joint": "right_service_nutclip_2_2_M6x20",
+      "axis_C_mm": [
+        279,
+        -513,
+        204
+      ]
+    }
+  ],
+  "nominal_clearances_mm": {
+    "new_tower_profile": 3,
+    "existing_clamp_reliefs_minimum": 2
+  },
+  "open_gates": [
+    "12 mm cover-header and body-opening strength",
+    "Welds, fatigue, tolerances and deflection",
+    "Fastener grades, torque, preload and locking",
+    "Weather sealing and ingress",
+    "Continuous motion and final whole-vehicle integrated service review"
+  ],
+  "files": {
+    "body_shock_partition_replacements_SO02_E04P.step": "1962a34d8d9104f2ec5673ec6454f587338bcb847fe8d8195dabc95941eeda8e",
+    "body_shock_partition_replacements_SO02_E04P.glb": "3776d8ff0a0223905c41ae32ed8f78d4fa67c9fead734023cdabe3c2c0f3340d",
+    "partition_trough_check_SO02_E04P.json": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c",
+    "delivery_roundtrip_SO02_E04P.json": "5a21c779c88a69ac687251e72c5bc615f1441f5da13a35c8206a313896e73edf",
+    "combined_deck_manifest_SO02_E04.json": "ef300c1c4db0f4d18329ce9be94d76a83cddce48a83e5f7bed1ba29e9157b120",
+    "replacement_manifest_SO02.json": "fac1e779de055f04d30f768b08f4b022677b95764f68d29e97020a79612dd5a2",
+    "clearance_check_SO02.json": "5a6d4007cc139ae655d01e26d58e2730e8f27b904d60ed1289f2f5be0f786d34",
+    "retention_check_SO02.json": "33b59663ee3692ced9ac3dcf271150f8c3e6757f5ff6deb1aec2dd58e01ecc85"
+  },
+  "electrical_extension": {
+    "candidate_contract_frozen": true,
+    "trough_gland_part_count": 19,
+    "motion_pair_checks": 35682,
+    "minimum_conservative_separation_mm": 22.99999999999315,
+    "gland_bores": 2,
+    "trunk_slots": 2,
+    "all_geometry_checks_pass": true
+  }
+}

@@ -1,0 +1,2 @@
+export function partQuantity(p){if(!Number.isFinite(p.quantity))return'Unknown';if(p.quantity_unit==='m_nominal_routed_length')return p.quantity.toFixed(3)+' m nominal route (cut length unreleased)';return String(p.quantity)+(p.quantity_unit==='retail pair'?' retail pairs':'');}
+export function partUnitMass(p){if(!Number.isFinite(p.unit_mass_kg))return'Unknown';return p.unit_mass_kg.toFixed(3)+(p.quantity_unit==='m_nominal_routed_length'?' kg/m':p.quantity_unit==='retail pair'?' kg/retail pair':' kg/each');}

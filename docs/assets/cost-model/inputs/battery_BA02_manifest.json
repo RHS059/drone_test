@@ -1,0 +1,1228 @@
+{
+  "revision": "BA02",
+  "state": "Original physically connected strap/tray route; prototype, not field-qualified. Factory brackets omitted; BA01 failed rigid-fit evidence preserved.",
+  "replace_names": [
+    "battery_well_floor_3mm"
+  ],
+  "remove_names": [
+    "battery_1_isolator_pad",
+    "battery_1_stop_-1",
+    "battery_1_stop_1",
+    "battery_2_isolator_pad",
+    "battery_2_stop_-1",
+    "battery_2_stop_1",
+    "battery_3_isolator_pad",
+    "battery_3_stop_-1",
+    "battery_3_stop_1",
+    "battery_4_isolator_pad",
+    "battery_4_stop_-1",
+    "battery_4_stop_1",
+    "battery_retention_crossbar_1",
+    "battery_retention_stud_1_-235",
+    "battery_retention_nut_1_-235_bottom",
+    "battery_retention_nut_1_-235_top",
+    "battery_retention_stud_1_235",
+    "battery_retention_nut_1_235_bottom",
+    "battery_retention_nut_1_235_top",
+    "battery_retention_crossbar_2",
+    "battery_retention_stud_2_-235",
+    "battery_retention_nut_2_-235_bottom",
+    "battery_retention_nut_2_-235_top",
+    "battery_retention_stud_2_235",
+    "battery_retention_nut_2_235_bottom",
+    "battery_retention_nut_2_235_top",
+    "battery_retention_washer_1_-235_bottom",
+    "battery_retention_washer_1_-235_top",
+    "battery_retention_washer_1_235_bottom",
+    "battery_retention_washer_1_235_top",
+    "battery_retention_washer_2_-235_bottom",
+    "battery_retention_washer_2_-235_top",
+    "battery_retention_washer_2_235_bottom",
+    "battery_retention_washer_2_235_top"
+  ],
+  "add_names": [
+    "BA02_pack_1_original_external_interface",
+    "BA02_pack_1_positive_M8_interface",
+    "BA02_pack_1_negative_M8_interface",
+    "BA02_pack_1_central_vent_INTERFACE",
+    "BA02_pack_1_tray_M8_1_top_washer",
+    "BA02_pack_1_tray_M8_1_screw",
+    "BA02_pack_1_tray_M8_1_bottom_washer",
+    "BA02_pack_1_tray_M8_1_nut",
+    "BA02_pack_1_tray_M8_2_top_washer",
+    "BA02_pack_1_tray_M8_2_screw",
+    "BA02_pack_1_tray_M8_2_bottom_washer",
+    "BA02_pack_1_tray_M8_2_nut",
+    "BA02_pack_1_tray_M8_3_top_washer",
+    "BA02_pack_1_tray_M8_3_screw",
+    "BA02_pack_1_tray_M8_3_bottom_washer",
+    "BA02_pack_1_tray_M8_3_nut",
+    "BA02_pack_1_tray_M8_4_top_washer",
+    "BA02_pack_1_tray_M8_4_screw",
+    "BA02_pack_1_tray_M8_4_bottom_washer",
+    "BA02_pack_1_tray_M8_4_nut",
+    "BA02_pack_1_pocketed_tray",
+    "BA02_pack_1_strap_1_webbing_route",
+    "BA02_pack_1_strap_1_purchased_buckle_APPROX_EXTERNAL",
+    "BA02_pack_1_strap_2_webbing_route",
+    "BA02_pack_1_strap_2_purchased_buckle_APPROX_EXTERNAL",
+    "BA02_pack_2_original_external_interface",
+    "BA02_pack_2_positive_M8_interface",
+    "BA02_pack_2_negative_M8_interface",
+    "BA02_pack_2_central_vent_INTERFACE",
+    "BA02_pack_2_tray_M8_1_top_washer",
+    "BA02_pack_2_tray_M8_1_screw",
+    "BA02_pack_2_tray_M8_1_bottom_washer",
+    "BA02_pack_2_tray_M8_1_nut",
+    "BA02_pack_2_tray_M8_2_top_washer",
+    "BA02_pack_2_tray_M8_2_screw",
+    "BA02_pack_2_tray_M8_2_bottom_washer",
+    "BA02_pack_2_tray_M8_2_nut",
+    "BA02_pack_2_tray_M8_3_top_washer",
+    "BA02_pack_2_tray_M8_3_screw",
+    "BA02_pack_2_tray_M8_3_bottom_washer",
+    "BA02_pack_2_tray_M8_3_nut",
+    "BA02_pack_2_tray_M8_4_top_washer",
+    "BA02_pack_2_tray_M8_4_screw",
+    "BA02_pack_2_tray_M8_4_bottom_washer",
+    "BA02_pack_2_tray_M8_4_nut",
+    "BA02_pack_2_pocketed_tray",
+    "BA02_pack_2_strap_1_webbing_route",
+    "BA02_pack_2_strap_1_purchased_buckle_APPROX_EXTERNAL",
+    "BA02_pack_2_strap_2_webbing_route",
+    "BA02_pack_2_strap_2_purchased_buckle_APPROX_EXTERNAL"
+  ],
+  "remove_external_proxy_names": [
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_1",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_2",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_3",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_4"
+  ],
+  "integration": "Apply by name onto PR01 or later body. Never overlay BA01 factory brackets or old RELiON hardware. Buckle reservations are separate nonphysical envelopes.",
+  "pack_centers_bottom_C_mm": [
+    [
+      -975,
+      0,
+      -69.0
+    ],
+    [
+      -625,
+      0,
+      -69.0
+    ]
+  ],
+  "battery_mass_kg": 74,
+  "source_casing_is_not_a_mass_model": true,
+  "terminal_top_C_z_mm": 169.6,
+  "cover_reference_C_z_mm": 152.8,
+  "strap_component": {
+    "manufacturer": "NRS",
+    "name": "1 inch HD Tie-Down Straps,4-foot size",
+    "url": "https://www.nrs.com/rescue/nrs-1-hd-tie-down-straps/p4yc",
+    "manufacturer_sku": "60027.01.112",
+    "variant": "4-foot pair,Stealth Black",
+    "retail_units_required": 2,
+    "straps_per_retail_unit": 2,
+    "quantity": 4,
+    "observed_variant_family_price_USD": [
+      12.95,
+      43.95
+    ],
+    "exact_4ft_pair_price_USD": null,
+    "price_status": "Selected-variant price unverified; do not assign range minimum.",
+    "WLL_lbf": 500,
+    "MBS_lbf": 1500,
+    "width_mm": 25.4,
+    "length_mm": 1219.2,
+    "webbing": "UV-protected polypropylene",
+    "note": "Whole strap assembly rating only; no lifting, battery-case or vehicle crash rating implied."
+  },
+  "commercial_function_boundary": {
+    "purchased_item": "NRS60027.01.112 complete cam-strap assembly",
+    "modeled": "Routed webbing with40mm closure gap; approximate external buckle with nominal surface contact; separate nonphysical service envelope",
+    "omitted": "Cam, spring, teeth, sewn termination, tail threading, release motion and actual friction/locking mechanics",
+    "geometry_contact_graph_proves": "Nominal spatial connectivity only",
+    "geometry_contact_graph_does_not_prove": "Closure action, holding load, casing approval or vehicle retention",
+    "rating_scope": "500lb WLL/1500lb MBS belongs only to purchased complete strap assembly; never custom CAD buckle"
+  },
+  "joints": [
+    {
+      "id": "BA02_pack_1_tray_M8_1",
+      "axis_C_mm": [
+        -1069,
+        -285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_1_tray_M8_2",
+      "axis_C_mm": [
+        -1069,
+        285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_1_tray_M8_3",
+      "axis_C_mm": [
+        -881,
+        -285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_1_tray_M8_4",
+      "axis_C_mm": [
+        -881,
+        285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_2_tray_M8_1",
+      "axis_C_mm": [
+        -719,
+        -285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_2_tray_M8_2",
+      "axis_C_mm": [
+        -719,
+        285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_2_tray_M8_3",
+      "axis_C_mm": [
+        -531,
+        -285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    },
+    {
+      "id": "BA02_pack_2_tray_M8_4",
+      "axis_C_mm": [
+        -531,
+        285,
+        0
+      ],
+      "bolt": "M8x30",
+      "underhead_z_mm": -63.4,
+      "tip_z_mm": -93.4,
+      "nominal_nut_engagement_mm": 6.5,
+      "tip_protrusion_mm": 5.3,
+      "clearance_mm": 8.8,
+      "head_tool_diameter_mm": 18,
+      "underfloor_socket_diameter_mm": 20
+    }
+  ],
+  "strap_routes": [
+    {
+      "pack": 1,
+      "strap": 1,
+      "center_C_y_mm": -150,
+      "width_mm": 25.4,
+      "thickness_assumption_mm": 2,
+      "geometric_inner_loop_length_mm": 827.7916951072652,
+      "selected_strap_length_mm": 1219.2,
+      "gross_length_remaining_mm": 391.4083048927348,
+      "closure_and_tail_allowance_in_length_mm": 200,
+      "strap_WLL_lbf": 500,
+      "strap_MBS_lbf": 1500,
+      "vehicle_restraint_rating_established": false,
+      "terminal_plan_clearance_mm": 102.55000000000001,
+      "known_vent_plan_clearance_mm": 72.78330000000001,
+      "case_preload_N": null,
+      "case_bearing_zone_approved": false
+    },
+    {
+      "pack": 1,
+      "strap": 2,
+      "center_C_y_mm": 150,
+      "width_mm": 25.4,
+      "thickness_assumption_mm": 2,
+      "geometric_inner_loop_length_mm": 827.7916951072652,
+      "selected_strap_length_mm": 1219.2,
+      "gross_length_remaining_mm": 391.4083048927348,
+      "closure_and_tail_allowance_in_length_mm": 200,
+      "strap_WLL_lbf": 500,
+      "strap_MBS_lbf": 1500,
+      "vehicle_restraint_rating_established": false,
+      "terminal_plan_clearance_mm": 102.55000000000001,
+      "known_vent_plan_clearance_mm": 72.78330000000001,
+      "case_preload_N": null,
+      "case_bearing_zone_approved": false
+    },
+    {
+      "pack": 2,
+      "strap": 1,
+      "center_C_y_mm": -150,
+      "width_mm": 25.4,
+      "thickness_assumption_mm": 2,
+      "geometric_inner_loop_length_mm": 827.7916951072652,
+      "selected_strap_length_mm": 1219.2,
+      "gross_length_remaining_mm": 391.4083048927348,
+      "closure_and_tail_allowance_in_length_mm": 200,
+      "strap_WLL_lbf": 500,
+      "strap_MBS_lbf": 1500,
+      "vehicle_restraint_rating_established": false,
+      "terminal_plan_clearance_mm": 102.55000000000001,
+      "known_vent_plan_clearance_mm": 72.78330000000001,
+      "case_preload_N": null,
+      "case_bearing_zone_approved": false
+    },
+    {
+      "pack": 2,
+      "strap": 2,
+      "center_C_y_mm": 150,
+      "width_mm": 25.4,
+      "thickness_assumption_mm": 2,
+      "geometric_inner_loop_length_mm": 827.7916951072652,
+      "selected_strap_length_mm": 1219.2,
+      "gross_length_remaining_mm": 391.4083048927348,
+      "closure_and_tail_allowance_in_length_mm": 200,
+      "strap_WLL_lbf": 500,
+      "strap_MBS_lbf": 1500,
+      "vehicle_restraint_rating_established": false,
+      "terminal_plan_clearance_mm": 102.55000000000001,
+      "known_vent_plan_clearance_mm": 72.78330000000001,
+      "case_preload_N": null,
+      "case_bearing_zone_approved": false
+    }
+  ],
+  "parts": [
+    {
+      "name": "BA02_pack_1_original_external_interface",
+      "group": "battery_external_dimensional_proxy",
+      "material": "battery",
+      "bounds_mm": [
+        -1055.75,
+        -323.8,
+        -69.0,
+        -894.25,
+        323.8,
+        152.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22334917.2176,
+      "note": "Original simplified external dimensional model. Cover plane221.8mm and sloped bottom ledge from numeric inspection; actual corner moulding not reproduced. Pack37kg specified separately; not a solid mass model."
+    },
+    {
+      "name": "BA02_pack_1_positive_M8_interface",
+      "group": "battery_terminal_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -1039.05,
+        -285.25,
+        152.8,
+        -1019.05,
+        -265.25,
+        169.60000000000002
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4433.415552745925,
+      "note": "M8/550.5pitch and26.7edge offset from drawing. Top169.6mm uses larger238.596mm source height. Contact recess/lug/bolt geometry unqualified; installed polarity is an orientation choice."
+    },
+    {
+      "name": "BA02_pack_1_negative_M8_interface",
+      "group": "battery_terminal_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -1039.05,
+        265.25,
+        152.8,
+        -1019.05,
+        285.25,
+        169.60000000000002
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4433.415552745925,
+      "note": "M8/550.5pitch and26.7edge offset from drawing. Top169.6mm uses larger238.596mm source height. Contact recess/lug/bolt geometry unqualified; installed polarity is an orientation choice."
+    },
+    {
+      "name": "BA02_pack_1_central_vent_INTERFACE",
+      "group": "battery_vent_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -1031.25,
+        -64.5,
+        152.8,
+        -1007.25,
+        -40.5,
+        163.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4976.282763286232,
+      "note": "Original dimensional central top fitting reservation: drawing36.5mm depth edge offset and376.3mm width edge offset; nominal diameter24/height11 from private numeric inspection. No flow/clearance qualification."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_1_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1077.0,
+        -293.0,
+        -65.0,
+        -1061.0,
+        -277.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.0307766726767,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_1_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1075.5,
+        -291.5,
+        -93.4,
+        -1062.5,
+        -278.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.1151324914895,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_1_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1077.0,
+        -293.0,
+        -81.6,
+        -1061.0,
+        -277.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267655,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_1_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1076.5055534994653,
+        -291.5,
+        -88.1,
+        -1061.4944465005347,
+        -278.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838738,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_2_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1077.0,
+        277.0,
+        -65.0,
+        -1061.0,
+        293.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.0307766726767,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_2_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1075.5,
+        278.5,
+        -93.4,
+        -1062.5,
+        291.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.1151324914895,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_2_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1077.0,
+        277.0,
+        -81.6,
+        -1061.0,
+        293.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267655,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_2_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -1076.5055534994653,
+        278.5,
+        -88.1,
+        -1061.4944465005347,
+        291.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838738,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_3_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -889.0,
+        -293.0,
+        -65.0,
+        -873.0,
+        -277.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_3_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -887.5,
+        -291.5,
+        -93.4,
+        -874.5,
+        -278.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_3_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -889.0,
+        -293.0,
+        -81.6,
+        -873.0,
+        -277.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267684,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_3_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -888.5055534994651,
+        -291.5,
+        -88.1,
+        -873.4944465005349,
+        -278.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_4_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -889.0,
+        277.0,
+        -65.0,
+        -873.0,
+        293.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_4_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -887.5,
+        278.5,
+        -93.4,
+        -874.5,
+        291.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_4_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -889.0,
+        277.0,
+        -81.6,
+        -873.0,
+        293.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267684,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_1_tray_M8_4_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -888.5055534994651,
+        278.5,
+        -88.1,
+        -873.4944465005349,
+        291.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_1_pocketed_tray",
+      "group": "battery_carrier",
+      "material": "carrier",
+      "bounds_mm": [
+        -1080.0,
+        -352.0,
+        -77.0,
+        -870.0,
+        352.0,
+        -65.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1305277.3807788726,
+      "note": "Original210x704x12machined aluminium tray. Battery seatZ-69,4mm pocketdepth,2mm side gap. Two27.4x3mm underside channels capture straps beneath tray; minimum5mm roof above channels. Radius/edge protection, material, bending and local bearing require qualification."
+    },
+    {
+      "name": "BA02_pack_1_strap_1_webbing_route",
+      "group": "battery_strap_route",
+      "material": "strap",
+      "bounds_mm": [
+        -1082.0,
+        -162.70000000000002,
+        -76.0,
+        -868.0,
+        -137.3,
+        154.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40417.30803999968,
+      "note": "Original routed-webbing equivalent for the purchased NRS1inchHD4ft assembly. A40mm closure gap is deliberate: commercial cam, spring, teeth, webbing bite and tail are NOT modeled.25.4mm width sourced;2mm thickness assumed. WLL applies only to the purchased complete strap, never to this geometry or a custom buckle."
+    },
+    {
+      "name": "BA02_pack_1_strap_1_purchased_buckle_APPROX_EXTERNAL",
+      "group": "commercial_buckle_external_proxy",
+      "material": "buckle_proxy",
+      "bounds_mm": [
+        -995.0,
+        -167.5,
+        153.8,
+        -935.0,
+        -132.5,
+        160.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13176.000000000002,
+      "note": "APPROXIMATE EXTERNAL DEPICTION ONLY:assumed60x35x7mm purchased NRS cam buckle body with nominal route contact. No internal cam, spring, teeth, sewn termination, tail or gripping/locking physics modeled. Do not manufacture or apply the500lb rating to this CAD body. Full commercial strap assembly is the functional boundary."
+    },
+    {
+      "name": "BA02_pack_1_strap_2_webbing_route",
+      "group": "battery_strap_route",
+      "material": "strap",
+      "bounds_mm": [
+        -1082.0,
+        137.29999999999998,
+        -76.0,
+        -868.0,
+        162.7,
+        154.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40417.30803999968,
+      "note": "Original routed-webbing equivalent for the purchased NRS1inchHD4ft assembly. A40mm closure gap is deliberate: commercial cam, spring, teeth, webbing bite and tail are NOT modeled.25.4mm width sourced;2mm thickness assumed. WLL applies only to the purchased complete strap, never to this geometry or a custom buckle."
+    },
+    {
+      "name": "BA02_pack_1_strap_2_purchased_buckle_APPROX_EXTERNAL",
+      "group": "commercial_buckle_external_proxy",
+      "material": "buckle_proxy",
+      "bounds_mm": [
+        -995.0,
+        132.5,
+        153.8,
+        -935.0,
+        167.5,
+        160.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13176.000000000002,
+      "note": "APPROXIMATE EXTERNAL DEPICTION ONLY:assumed60x35x7mm purchased NRS cam buckle body with nominal route contact. No internal cam, spring, teeth, sewn termination, tail or gripping/locking physics modeled. Do not manufacture or apply the500lb rating to this CAD body. Full commercial strap assembly is the functional boundary."
+    },
+    {
+      "name": "BA02_pack_2_original_external_interface",
+      "group": "battery_external_dimensional_proxy",
+      "material": "battery",
+      "bounds_mm": [
+        -705.75,
+        -323.8,
+        -69.0,
+        -544.25,
+        323.8,
+        152.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 22334917.2176,
+      "note": "Original simplified external dimensional model. Cover plane221.8mm and sloped bottom ledge from numeric inspection; actual corner moulding not reproduced. Pack37kg specified separately; not a solid mass model."
+    },
+    {
+      "name": "BA02_pack_2_positive_M8_interface",
+      "group": "battery_terminal_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -689.05,
+        -285.25,
+        152.8,
+        -669.05,
+        -265.25,
+        169.60000000000002
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4433.415552745918,
+      "note": "M8/550.5pitch and26.7edge offset from drawing. Top169.6mm uses larger238.596mm source height. Contact recess/lug/bolt geometry unqualified; installed polarity is an orientation choice."
+    },
+    {
+      "name": "BA02_pack_2_negative_M8_interface",
+      "group": "battery_terminal_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -689.05,
+        265.25,
+        152.8,
+        -669.05,
+        285.25,
+        169.60000000000002
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4433.415552745918,
+      "note": "M8/550.5pitch and26.7edge offset from drawing. Top169.6mm uses larger238.596mm source height. Contact recess/lug/bolt geometry unqualified; installed polarity is an orientation choice."
+    },
+    {
+      "name": "BA02_pack_2_central_vent_INTERFACE",
+      "group": "battery_vent_reservations",
+      "material": "terminal",
+      "bounds_mm": [
+        -681.25,
+        -64.5,
+        152.8,
+        -657.25,
+        -40.5,
+        163.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4976.282763286232,
+      "note": "Original dimensional central top fitting reservation: drawing36.5mm depth edge offset and376.3mm width edge offset; nominal diameter24/height11 from private numeric inspection. No flow/clearance qualification."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_1_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -727.0,
+        -293.0,
+        -65.0,
+        -711.0,
+        -277.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_1_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -725.5,
+        -291.5,
+        -93.4,
+        -712.5,
+        -278.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_1_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -727.0,
+        -293.0,
+        -81.6,
+        -711.0,
+        -277.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267678,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_1_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -726.5055534994651,
+        -291.5,
+        -88.1,
+        -711.4944465005349,
+        -278.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_2_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -727.0,
+        277.0,
+        -65.0,
+        -711.0,
+        293.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_2_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -725.5,
+        278.5,
+        -93.4,
+        -712.5,
+        291.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_2_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -727.0,
+        277.0,
+        -81.6,
+        -711.0,
+        293.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267678,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_2_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -726.5055534994651,
+        278.5,
+        -88.1,
+        -711.4944465005349,
+        291.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_3_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -539.0,
+        -293.0,
+        -65.0,
+        -523.0,
+        -277.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_3_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -537.5,
+        -291.5,
+        -93.4,
+        -524.5,
+        -278.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_3_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -539.0,
+        -293.0,
+        -81.6,
+        -523.0,
+        -277.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267678,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_3_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -538.5055534994651,
+        -291.5,
+        -88.1,
+        -523.4944465005349,
+        -278.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_4_top_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -539.0,
+        277.0,
+        -65.0,
+        -523.0,
+        293.0,
+        -63.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267686,
+      "note": "ISO7089 nominal M8 washer OD16/ID8.4/t1.6; grade unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_4_screw",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -537.5,
+        278.5,
+        -93.4,
+        -524.5,
+        291.5,
+        -55.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2445.115132491493,
+      "note": "Original nominal M8x30 socket screw, AF6, smooth nominal thread equivalent; strength, locking and preload unselected."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_4_bottom_washer",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -539.0,
+        277.0,
+        -81.6,
+        -523.0,
+        293.0,
+        -80.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 233.03077667267678,
+      "note": "ISO7089 nominal M8 washer, against actual well floor underside."
+    },
+    {
+      "name": "BA02_pack_2_tray_M8_4_nut",
+      "group": "battery_fasteners",
+      "material": "fastener",
+      "bounds_mm": [
+        -538.5055534994651,
+        278.5,
+        -88.1,
+        -523.4944465005349,
+        291.5,
+        -81.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 624.6032700838655,
+      "note": "ISO4032 nominal M8 nut AF13/t6.5, matching diameter8 thread-contact cylinder. Not a finished thread or tap-drill definition."
+    },
+    {
+      "name": "BA02_pack_2_pocketed_tray",
+      "group": "battery_carrier",
+      "material": "carrier",
+      "bounds_mm": [
+        -730.0,
+        -352.0,
+        -77.0,
+        -520.0,
+        352.0,
+        -65.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1305277.3807788726,
+      "note": "Original210x704x12machined aluminium tray. Battery seatZ-69,4mm pocketdepth,2mm side gap. Two27.4x3mm underside channels capture straps beneath tray; minimum5mm roof above channels. Radius/edge protection, material, bending and local bearing require qualification."
+    },
+    {
+      "name": "BA02_pack_2_strap_1_webbing_route",
+      "group": "battery_strap_route",
+      "material": "strap",
+      "bounds_mm": [
+        -732.0,
+        -162.70000000000002,
+        -76.0,
+        -518.0,
+        -137.3,
+        154.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40417.30803999965,
+      "note": "Original routed-webbing equivalent for the purchased NRS1inchHD4ft assembly. A40mm closure gap is deliberate: commercial cam, spring, teeth, webbing bite and tail are NOT modeled.25.4mm width sourced;2mm thickness assumed. WLL applies only to the purchased complete strap, never to this geometry or a custom buckle."
+    },
+    {
+      "name": "BA02_pack_2_strap_1_purchased_buckle_APPROX_EXTERNAL",
+      "group": "commercial_buckle_external_proxy",
+      "material": "buckle_proxy",
+      "bounds_mm": [
+        -645.0,
+        -167.5,
+        153.8,
+        -585.0,
+        -132.5,
+        160.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13176.000000000002,
+      "note": "APPROXIMATE EXTERNAL DEPICTION ONLY:assumed60x35x7mm purchased NRS cam buckle body with nominal route contact. No internal cam, spring, teeth, sewn termination, tail or gripping/locking physics modeled. Do not manufacture or apply the500lb rating to this CAD body. Full commercial strap assembly is the functional boundary."
+    },
+    {
+      "name": "BA02_pack_2_strap_2_webbing_route",
+      "group": "battery_strap_route",
+      "material": "strap",
+      "bounds_mm": [
+        -732.0,
+        137.29999999999998,
+        -76.0,
+        -518.0,
+        162.7,
+        154.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 40417.30803999965,
+      "note": "Original routed-webbing equivalent for the purchased NRS1inchHD4ft assembly. A40mm closure gap is deliberate: commercial cam, spring, teeth, webbing bite and tail are NOT modeled.25.4mm width sourced;2mm thickness assumed. WLL applies only to the purchased complete strap, never to this geometry or a custom buckle."
+    },
+    {
+      "name": "BA02_pack_2_strap_2_purchased_buckle_APPROX_EXTERNAL",
+      "group": "commercial_buckle_external_proxy",
+      "material": "buckle_proxy",
+      "bounds_mm": [
+        -645.0,
+        132.5,
+        153.8,
+        -585.0,
+        167.5,
+        160.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13176.000000000002,
+      "note": "APPROXIMATE EXTERNAL DEPICTION ONLY:assumed60x35x7mm purchased NRS cam buckle body with nominal route contact. No internal cam, spring, teeth, sewn termination, tail or gripping/locking physics modeled. Do not manufacture or apply the500lb rating to this CAD body. Full commercial strap assembly is the functional boundary."
+    },
+    {
+      "name": "battery_well_floor_3mm",
+      "group": "body_replacement",
+      "material": "aluminium",
+      "bounds_mm": [
+        -1125.0,
+        -360.0,
+        -80.0,
+        -475.0,
+        360.0,
+        -77.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1401810.4355841544,
+      "note": "Original well floor with4inherited holes preserved and8new\u00d88.8M8tray bores; no unused factory-bracket bores added. Old holes require sealed closure.28R02electrical deck bores untouched."
+    }
+  ],
+  "mass_accounting": {
+    "battery_mass_kg": 74,
+    "original_hardware_kg_including_replacement_floor": 11.05543301351495,
+    "original_hardware_kg_excluding_replacement_floor": 7.2705448374377335,
+    "strap_and_buckle_mass_kg": null,
+    "note": "Only original metal hardware has CAD-density mass; complete commercial strap mass not verified. Battery proxies do not contribute solid-volume mass."
+  }
+}

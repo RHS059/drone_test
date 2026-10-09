@@ -20,3 +20,7 @@ Run `node test-cad.mjs`, `node test-model.mjs` (historical estimates only), and 
 ## Licensing
 
 Preserve per-asset notices. UR geometry is subject to the complete graphical-documentation terms at `docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt`, including displayed copyright and use notice. Robotiq source, MuJoCo Menagerie assets and Three.js carry their respective notices. No blanket license replaces upstream conditions. No private/review-only coupling STEP is included.
+
+## Supported main cable pair
+
+E05 adds exactly 98 named cable/support/retention parts and replaces two partitions for four retained glands. Its graph binds 105 actual scene objects across 22 interface edges. Only the isolator-output to BMS-battery pair has modeled jacket routes; upstream battery wiring, conductor/crimp continuity and full-circuit protection remain unfinished. The 40-hole deck, BA02 parts and corrected terminal polarity are unchanged. The known modeled/catalogue subset is 1272.550107 kg; complete vehicle mass and electrical operation remain unverified. Run `node test-main-pair.mjs` for the actual-GLTFLoader composed regression.

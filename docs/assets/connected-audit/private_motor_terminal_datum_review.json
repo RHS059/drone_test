@@ -1,0 +1,19 @@
+{
+  "scope": "Read-only inspection of locally authorized private supplier drawing and generic STEP product metadata. No source image, PDF, STEP, connector topology or derived geometry copied.",
+  "private_pdf_sha256": "cd70486b3ac3179777e3775badd604890d0f71e894959434b590e27bafa59b48",
+  "private_step_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "available_pdf_pages": 1,
+  "drawing_sheet_marking": "1/3",
+  "drawing_identifies": [
+    "electromagnetic brake",
+    "RM44 SIN-COS 1 VPP encoder",
+    "temperature sensor",
+    "four-pin signal and two-pin resistance pinout sketches"
+  ],
+  "step_product_identity": "Single generically named product, 240 solids; no functionally named connector assembly metadata",
+  "usable_terminal_or_cable_exit_XYZ_datums_verified": false,
+  "phase_terminal_attachment_coordinates_verified": false,
+  "phase_encoder_brake_functions_inferred_from_shapes": false,
+  "breakout_OEM_route_attachment_approved": false,
+  "finding": "The available drawing has product/enclosure dimensions and component labels, but does not establish the required usable external cable-exit/terminal XYZ datums and electrical attachment specification. Generic STEP protrusions cannot close functional pin/connector identity."
+}

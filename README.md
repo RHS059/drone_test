@@ -2,8 +2,12 @@
 
 [Open the viewer](https://rhs059.github.io/drone_test/).
 
-Source-backed six-wheel vehicle development CAD with a faceted serviceable body, original corner hardware, two licensed UR20/Robotiq mechanisms, and a separate live MuJoCo gripper experiment. The current feature branch may contain newer geometry than deployed main.
+Source-backed six-wheel engineering viewer with original retained drive/suspension/steering interfaces, body panels and battery/electrical components, plus licensed UR20/Robotiq mechanisms and a separate live MuJoCo gripper experiment.
 
-See [the assembly record](docs/RECONSTRUCTION.md) for exact scope, source classifications and unresolved hardware. Front/rear rack geometry and an optional unloaded suspension study are interactive. The four steering corners move over the evaluated ±12° range; the middle pair stays fixed. Actuation force, duty, loads and ground contact remain unqualified. Motor/shock geometry, full mass/CG, drive/brake/electrical qualification and autonomous assembly/repair are not complete.
+See [the current assembly record](docs/RECONSTRUCTION.md) and [original source downloads](docs/assets/connected-sources/index.html). Independent front/rear steering, wheel spin and optional unloaded suspension study are executable. Purchased profiles, wheel-seat approval, load/fatigue ratings, complete wiring, UR controller mounting and vehicle operation remain open. The old workshop cradle is disabled because it intersects this revision.
 
-Run `node test-motion-study.mjs`, `node test-steering.mjs`, `node test-controls-ready.mjs`, `node test-costs.mjs`, `node test-cad.mjs`, `node test-rover.mjs`, and `node docs/contact/scripts/validate.mjs`. `test-model.mjs` is a historical estimates regression only. Per-asset source terms and original model assumptions remain with the assets. The release manifest records the exact public source package. No private review-only manufacturer geometry is distributed.
+The supported main isolator-to-BMS cable pair has its own [source and limits](docs/assets/main-pair-E05/index.html). Full electrical continuity remains unfinished.
+
+Run `node test-main-pair.mjs`, `node test-real-gltf-body.mjs`, `node test-connected-mechanics.mjs`, `node test-current-rover.mjs`, `node test-composed-body.mjs`, `node test-electrical-scene.mjs`, `node test-rigid-matrix.mjs`, `node test-controls-ready.mjs`, `node test-costs.mjs`, `node test-cad.mjs`, and `node docs/contact/scripts/validate.mjs`. Historical C03 tests and assets are retained as history, not current assembly qualification.
+
+The exact public files are listed in the release manifest. Restricted manufacturer CAD, private credentials and review-only geometry are excluded. Source-specific licenses and original modeling assumptions remain with each package.

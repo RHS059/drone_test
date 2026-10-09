@@ -1,0 +1,6003 @@
+{
+  "revision": "E04",
+  "type": "required electrical topology with explicit unclosed cable endpoints",
+  "parts": {
+    "BAT1": {
+      "kind": "battery",
+      "part": "BAT548110620",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FB1": {
+      "kind": "required_positive_pack_fuse",
+      "part": "rating\u2264100A, exact coordinated fuse/covered holder unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "QB1": {
+      "kind": "two_pole_isolator",
+      "part": "OTDC160GV11-ESS",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "BAT2": {
+      "kind": "battery",
+      "part": "BAT548110620",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FB2": {
+      "kind": "required_positive_pack_fuse",
+      "part": "rating\u2264100A, exact coordinated fuse/covered holder unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "QB2": {
+      "kind": "two_pole_isolator",
+      "part": "OTDC160GV11-ESS",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "MERGE": {
+      "kind": "required_battery_merge_bus",
+      "part": "Covered retained equal-path two-pack positive/negative bus; not selected",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FMAIN": {
+      "kind": "required_bank_positive_fuse",
+      "part": "200A proposal, coordination unverified",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "Q0": {
+      "kind": "two_pole_main_isolator",
+      "part": "OTDC250GV11-ESS",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "LYNX": {
+      "kind": "battery_management",
+      "part": "LYN034170310",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "DIST": {
+      "kind": "required_load_distribution",
+      "part": "Protected covered DC distribution, exact hardware unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD1": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD1": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV1": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M1": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD2": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD2": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV2": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M2": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD3": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD3": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV3": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M3": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD4": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD4": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV4": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M4": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD5": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD5": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV5": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M5": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "FD6": {
+      "kind": "traction_branch_protection",
+      "part": "JLLN080.V candidate; exact covered holder and coordination unresolved",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KD6": {
+      "kind": "traction_branch_contactor",
+      "part": "AlbrightSW200-20/Sevcon82857026 configuration candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "INV6": {
+      "kind": "DC_to_three_phase_inverter",
+      "part": "Gen4Size2 exact48V/sincos factory variant unresolved",
+      "installed_interface_model": true,
+      "operational": false
+    },
+    "M6": {
+      "kind": "IPM_motor_and_reduction",
+      "part": "WD220-SMAC132-050-48V-EMB-5STUDS",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "UR1": {
+      "kind": "robot_controller",
+      "part": "UR20OEMDC19..72V",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "URSOFT1": {
+      "kind": "required_UR_inrush_branch",
+      "part": "Source-required softstart, exact rated circuit not complete",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "STR1": {
+      "kind": "steering_actuator",
+      "part": "ThomsonHD48B068200COO candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KSTR1": {
+      "kind": "required_external_steering_switch",
+      "part": "Exact safety switching component not selected",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "UR2": {
+      "kind": "robot_controller",
+      "part": "UR20OEMDC19..72V",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "URSOFT2": {
+      "kind": "required_UR_inrush_branch",
+      "part": "Source-required softstart, exact rated circuit not complete",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "STR2": {
+      "kind": "steering_actuator",
+      "part": "ThomsonHD48B068200COO candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "KSTR2": {
+      "kind": "required_external_steering_switch",
+      "part": "Exact safety switching component not selected",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "CTRL": {
+      "kind": "vehicle_controller_candidate",
+      "part": "ifmCR711S",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "GX": {
+      "kind": "battery_telemetry_gateway",
+      "part": "CerboGX candidate",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS1": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS2": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS3": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS4": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS5": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS6": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS7": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS8": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS9": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS10": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    },
+    "IS11": {
+      "kind": "current_sensor_candidate",
+      "part": "LEM CAB500-C/SP7",
+      "installed_interface_model": false,
+      "operational": false
+    }
+  },
+  "ports": {
+    "BAT1:+": {
+      "device": "BAT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "BAT1:-": {
+      "device": "BAT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FB1:IN": {
+      "device": "FB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FB1:OUT": {
+      "device": "FB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "QB1:P_IN": {
+      "device": "QB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1589,
+        403.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB1:P_OUT": {
+      "device": "QB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1731,
+        403.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB1:N_IN": {
+      "device": "QB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1589,
+        326.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB1:N_OUT": {
+      "device": "QB1",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1731,
+        326.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "BAT2:+": {
+      "device": "BAT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "BAT2:-": {
+      "device": "BAT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FB2:IN": {
+      "device": "FB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FB2:OUT": {
+      "device": "FB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "QB2:P_IN": {
+      "device": "QB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1249,
+        443.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB2:P_OUT": {
+      "device": "QB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1391,
+        443.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB2:N_IN": {
+      "device": "QB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1249,
+        366.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "QB2:N_OUT": {
+      "device": "QB2",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1391,
+        366.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "MERGE:P1": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "P1",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "MERGE:P2": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "P2",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "MERGE:P": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "P",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "MERGE:N1": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "N1",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "MERGE:N2": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "N2",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "MERGE:N": {
+      "device": "MERGE",
+      "domain": "DC_power",
+      "source_pin_or_function": "N",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FMAIN:IN": {
+      "device": "FMAIN",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FMAIN:OUT": {
+      "device": "FMAIN",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "Q0:P_IN": {
+      "device": "Q0",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1489,
+        -331.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "Q0:P_OUT": {
+      "device": "Q0",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1631,
+        -331.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "Q0:N_IN": {
+      "device": "Q0",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1489,
+        -408.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "Q0:N_OUT": {
+      "device": "Q0",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        -1631,
+        -408.5,
+        176
+      ],
+      "physical_continuity_verified": false
+    },
+    "LYNX:BAT+": {
+      "device": "LYNX",
+      "domain": "DC_power",
+      "source_pin_or_function": "BAT+",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        399.9244668,
+        -104.013659,
+        181.8
+      ],
+      "physical_continuity_verified": false
+    },
+    "LYNX:BAT-": {
+      "device": "LYNX",
+      "domain": "DC_power",
+      "source_pin_or_function": "BAT-",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        486.9244668,
+        -104.013659,
+        181.8
+      ],
+      "physical_continuity_verified": false
+    },
+    "LYNX:SYS+": {
+      "device": "LYNX",
+      "domain": "DC_power",
+      "source_pin_or_function": "SYS+",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        399.9244668,
+        92.486341,
+        173.8
+      ],
+      "physical_continuity_verified": false
+    },
+    "LYNX:SYS-": {
+      "device": "LYNX",
+      "domain": "DC_power",
+      "source_pin_or_function": "SYS-",
+      "source_pinout_verified": true,
+      "source_position_verified": true,
+      "point_C_mm": [
+        486.9244668,
+        92.486341,
+        173.8
+      ],
+      "physical_continuity_verified": false
+    },
+    "LYNX:ATC_COM": {
+      "device": "LYNX",
+      "domain": "safety_permission",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "LYNX:ATC_NO": {
+      "device": "LYNX",
+      "domain": "safety_permission",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "LYNX:ATD_COM": {
+      "device": "LYNX",
+      "domain": "safety_permission",
+      "source_pin_or_function": "5",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "LYNX:ATD_NO": {
+      "device": "LYNX",
+      "domain": "safety_permission",
+      "source_pin_or_function": "6",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "LYNX:AUX+": {
+      "device": "LYNX",
+      "domain": "battery_voltage_aux",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "LYNX:AUX-": {
+      "device": "LYNX",
+      "domain": "battery_voltage_aux",
+      "source_pin_or_function": "2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P1": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P1",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P2": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P2",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P3": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P3",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P4": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P4",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P5": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P5",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P6": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P6",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P7": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P7",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P8": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P8",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P9": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P9",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P10": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P10",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:P11": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "P11",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N1": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N1",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N2": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N2",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N3": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N3",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N4": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N4",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N5": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N5",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N6": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N6",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N7": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N7",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N8": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N8",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N9": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N9",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N10": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N10",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "DIST:N11": {
+      "device": "DIST",
+      "domain": "DC_power",
+      "source_pin_or_function": "N11",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD1:IN": {
+      "device": "FD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD1:OUT": {
+      "device": "FD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD1:IN": {
+      "device": "KD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD1:OUT": {
+      "device": "KD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD1:COIL+": {
+      "device": "KD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD1:COIL-": {
+      "device": "KD1",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:B+": {
+      "device": "INV1",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:B-": {
+      "device": "INV1",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:U": {
+      "device": "INV1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:V": {
+      "device": "INV1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:W": {
+      "device": "INV1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:SIN": {
+      "device": "INV1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:COS": {
+      "device": "INV1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:SENSOR_SUPPLY": {
+      "device": "INV1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:SENSOR_RETURN": {
+      "device": "INV1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:TEMP": {
+      "device": "INV1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:KEY": {
+      "device": "INV1",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:CONTACTOR_LOW": {
+      "device": "INV1",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:CONTACTOR_SUPPLY": {
+      "device": "INV1",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:BRAKE_LOW": {
+      "device": "INV1",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:BRAKE_SUPPLY": {
+      "device": "INV1",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:CAN_H": {
+      "device": "INV1",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV1:CAN_L": {
+      "device": "INV1",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:U": {
+      "device": "M1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:V": {
+      "device": "M1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:W": {
+      "device": "M1",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:SIN": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:COS": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:SUPPLY": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:RETURN": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:KTY1": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:KTY2": {
+      "device": "M1",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:BRK+": {
+      "device": "M1",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M1:BRK-": {
+      "device": "M1",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD2:IN": {
+      "device": "FD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD2:OUT": {
+      "device": "FD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD2:IN": {
+      "device": "KD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD2:OUT": {
+      "device": "KD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD2:COIL+": {
+      "device": "KD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD2:COIL-": {
+      "device": "KD2",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:B+": {
+      "device": "INV2",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:B-": {
+      "device": "INV2",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:U": {
+      "device": "INV2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:V": {
+      "device": "INV2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:W": {
+      "device": "INV2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:SIN": {
+      "device": "INV2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:COS": {
+      "device": "INV2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:SENSOR_SUPPLY": {
+      "device": "INV2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:SENSOR_RETURN": {
+      "device": "INV2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:TEMP": {
+      "device": "INV2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:KEY": {
+      "device": "INV2",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:CONTACTOR_LOW": {
+      "device": "INV2",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:CONTACTOR_SUPPLY": {
+      "device": "INV2",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:BRAKE_LOW": {
+      "device": "INV2",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:BRAKE_SUPPLY": {
+      "device": "INV2",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:CAN_H": {
+      "device": "INV2",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV2:CAN_L": {
+      "device": "INV2",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:U": {
+      "device": "M2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:V": {
+      "device": "M2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:W": {
+      "device": "M2",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:SIN": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:COS": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:SUPPLY": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:RETURN": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:KTY1": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:KTY2": {
+      "device": "M2",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:BRK+": {
+      "device": "M2",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M2:BRK-": {
+      "device": "M2",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD3:IN": {
+      "device": "FD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD3:OUT": {
+      "device": "FD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD3:IN": {
+      "device": "KD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD3:OUT": {
+      "device": "KD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD3:COIL+": {
+      "device": "KD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD3:COIL-": {
+      "device": "KD3",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:B+": {
+      "device": "INV3",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:B-": {
+      "device": "INV3",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:U": {
+      "device": "INV3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:V": {
+      "device": "INV3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:W": {
+      "device": "INV3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:SIN": {
+      "device": "INV3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:COS": {
+      "device": "INV3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:SENSOR_SUPPLY": {
+      "device": "INV3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:SENSOR_RETURN": {
+      "device": "INV3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:TEMP": {
+      "device": "INV3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:KEY": {
+      "device": "INV3",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:CONTACTOR_LOW": {
+      "device": "INV3",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:CONTACTOR_SUPPLY": {
+      "device": "INV3",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:BRAKE_LOW": {
+      "device": "INV3",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:BRAKE_SUPPLY": {
+      "device": "INV3",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:CAN_H": {
+      "device": "INV3",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV3:CAN_L": {
+      "device": "INV3",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:U": {
+      "device": "M3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:V": {
+      "device": "M3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:W": {
+      "device": "M3",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:SIN": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:COS": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:SUPPLY": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:RETURN": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:KTY1": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:KTY2": {
+      "device": "M3",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:BRK+": {
+      "device": "M3",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M3:BRK-": {
+      "device": "M3",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD4:IN": {
+      "device": "FD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD4:OUT": {
+      "device": "FD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD4:IN": {
+      "device": "KD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD4:OUT": {
+      "device": "KD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD4:COIL+": {
+      "device": "KD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD4:COIL-": {
+      "device": "KD4",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:B+": {
+      "device": "INV4",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:B-": {
+      "device": "INV4",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:U": {
+      "device": "INV4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:V": {
+      "device": "INV4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:W": {
+      "device": "INV4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:SIN": {
+      "device": "INV4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:COS": {
+      "device": "INV4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:SENSOR_SUPPLY": {
+      "device": "INV4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:SENSOR_RETURN": {
+      "device": "INV4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:TEMP": {
+      "device": "INV4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:KEY": {
+      "device": "INV4",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:CONTACTOR_LOW": {
+      "device": "INV4",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:CONTACTOR_SUPPLY": {
+      "device": "INV4",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:BRAKE_LOW": {
+      "device": "INV4",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:BRAKE_SUPPLY": {
+      "device": "INV4",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:CAN_H": {
+      "device": "INV4",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV4:CAN_L": {
+      "device": "INV4",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:U": {
+      "device": "M4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:V": {
+      "device": "M4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:W": {
+      "device": "M4",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:SIN": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:COS": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:SUPPLY": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:RETURN": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:KTY1": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:KTY2": {
+      "device": "M4",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:BRK+": {
+      "device": "M4",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M4:BRK-": {
+      "device": "M4",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD5:IN": {
+      "device": "FD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD5:OUT": {
+      "device": "FD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD5:IN": {
+      "device": "KD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD5:OUT": {
+      "device": "KD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD5:COIL+": {
+      "device": "KD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD5:COIL-": {
+      "device": "KD5",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:B+": {
+      "device": "INV5",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:B-": {
+      "device": "INV5",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:U": {
+      "device": "INV5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:V": {
+      "device": "INV5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:W": {
+      "device": "INV5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:SIN": {
+      "device": "INV5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:COS": {
+      "device": "INV5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:SENSOR_SUPPLY": {
+      "device": "INV5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:SENSOR_RETURN": {
+      "device": "INV5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:TEMP": {
+      "device": "INV5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:KEY": {
+      "device": "INV5",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:CONTACTOR_LOW": {
+      "device": "INV5",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:CONTACTOR_SUPPLY": {
+      "device": "INV5",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:BRAKE_LOW": {
+      "device": "INV5",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:BRAKE_SUPPLY": {
+      "device": "INV5",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:CAN_H": {
+      "device": "INV5",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV5:CAN_L": {
+      "device": "INV5",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:U": {
+      "device": "M5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:V": {
+      "device": "M5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:W": {
+      "device": "M5",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:SIN": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:COS": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:SUPPLY": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:RETURN": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:KTY1": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:KTY2": {
+      "device": "M5",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:BRK+": {
+      "device": "M5",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M5:BRK-": {
+      "device": "M5",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD6:IN": {
+      "device": "FD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "FD6:OUT": {
+      "device": "FD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD6:IN": {
+      "device": "KD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD6:OUT": {
+      "device": "KD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD6:COIL+": {
+      "device": "KD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KD6:COIL-": {
+      "device": "KD6",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:B+": {
+      "device": "INV6",
+      "domain": "DC_power",
+      "source_pin_or_function": "B+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:B-": {
+      "device": "INV6",
+      "domain": "DC_power",
+      "source_pin_or_function": "B-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:U": {
+      "device": "INV6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:V": {
+      "device": "INV6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:W": {
+      "device": "INV6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:SIN": {
+      "device": "INV6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:COS": {
+      "device": "INV6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:SENSOR_SUPPLY": {
+      "device": "INV6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_SUPPLY",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:SENSOR_RETURN": {
+      "device": "INV6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SENSOR_RETURN",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:TEMP": {
+      "device": "INV6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "TEMP",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:KEY": {
+      "device": "INV6",
+      "domain": "switching_control",
+      "source_pin_or_function": "1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:CONTACTOR_LOW": {
+      "device": "INV6",
+      "domain": "switching_control",
+      "source_pin_or_function": "3",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:CONTACTOR_SUPPLY": {
+      "device": "INV6",
+      "domain": "switching_control",
+      "source_pin_or_function": "4",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:BRAKE_LOW": {
+      "device": "INV6",
+      "domain": "switching_control",
+      "source_pin_or_function": "7",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:BRAKE_SUPPLY": {
+      "device": "INV6",
+      "domain": "switching_control",
+      "source_pin_or_function": "8",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:CAN_H": {
+      "device": "INV6",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "13",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "INV6:CAN_L": {
+      "device": "INV6",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "24",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:U": {
+      "device": "M6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "U",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:V": {
+      "device": "M6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:W": {
+      "device": "M6",
+      "domain": "three_phase_motor",
+      "source_pin_or_function": "W",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:SIN": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SIN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:COS": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "COS",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:SUPPLY": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "SUPPLY",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:RETURN": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "RETURN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:KTY1": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY1",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:KTY2": {
+      "device": "M6",
+      "domain": "motor_feedback",
+      "source_pin_or_function": "KTY2",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:BRK+": {
+      "device": "M6",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "M6:BRK-": {
+      "device": "M6",
+      "domain": "parking_brake_coil",
+      "source_pin_or_function": "BRK-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "UR1:P": {
+      "device": "UR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "P",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "UR1:N": {
+      "device": "UR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "N",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT1:P_IN": {
+      "device": "URSOFT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT1:N_IN": {
+      "device": "URSOFT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT1:P_OUT": {
+      "device": "URSOFT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT1:N_OUT": {
+      "device": "URSOFT1",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR1:POWER_RED": {
+      "device": "STR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "POWER_RED",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR1:POWER_BLACK": {
+      "device": "STR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "POWER_BLACK",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR1:SIGNAL_BLUE": {
+      "device": "STR1",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "SIGNAL_BLUE",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR1:SIGNAL_BROWN": {
+      "device": "STR1",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "SIGNAL_BROWN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR1:IN": {
+      "device": "KSTR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR1:OUT": {
+      "device": "KSTR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR1:COIL+": {
+      "device": "KSTR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR1:COIL-": {
+      "device": "KSTR1",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "UR2:P": {
+      "device": "UR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "P",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "UR2:N": {
+      "device": "UR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "N",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT2:P_IN": {
+      "device": "URSOFT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT2:N_IN": {
+      "device": "URSOFT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT2:P_OUT": {
+      "device": "URSOFT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "P_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "URSOFT2:N_OUT": {
+      "device": "URSOFT2",
+      "domain": "DC_power",
+      "source_pin_or_function": "N_OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR2:POWER_RED": {
+      "device": "STR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "POWER_RED",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR2:POWER_BLACK": {
+      "device": "STR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "POWER_BLACK",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR2:SIGNAL_BLUE": {
+      "device": "STR2",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "SIGNAL_BLUE",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "STR2:SIGNAL_BROWN": {
+      "device": "STR2",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "SIGNAL_BROWN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR2:IN": {
+      "device": "KSTR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "IN",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR2:OUT": {
+      "device": "KSTR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "OUT",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR2:COIL+": {
+      "device": "KSTR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL+",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "KSTR2:COIL-": {
+      "device": "KSTR2",
+      "domain": "DC_power",
+      "source_pin_or_function": "COIL-",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:24V": {
+      "device": "CTRL",
+      "domain": "24V_aux",
+      "source_pin_or_function": "24V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:0V": {
+      "device": "CTRL",
+      "domain": "24V_aux",
+      "source_pin_or_function": "0V",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "GX:VE_CAN_H": {
+      "device": "GX",
+      "domain": "VE_Can_250k",
+      "source_pin_or_function": "VE_CAN_H",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "GX:VE_CAN_L": {
+      "device": "GX",
+      "domain": "VE_Can_250k",
+      "source_pin_or_function": "VE_CAN_L",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "GX:ETHERNET": {
+      "device": "GX",
+      "domain": "Ethernet",
+      "source_pin_or_function": "ETHERNET",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:ETHERNET": {
+      "device": "CTRL",
+      "domain": "Ethernet",
+      "source_pin_or_function": "ETHERNET",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:CAN1_H": {
+      "device": "CTRL",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "CAN1_H",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:CAN1_L": {
+      "device": "CTRL",
+      "domain": "CANopen_500k",
+      "source_pin_or_function": "CAN1_L",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:CAN2_H": {
+      "device": "CTRL",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "CAN2_H",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "CTRL:CAN2_L": {
+      "device": "CTRL",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "CAN2_L",
+      "source_pinout_verified": false,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS1:CAN_L": {
+      "device": "IS1",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS1:CAN_H": {
+      "device": "IS1",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS1:GND": {
+      "device": "IS1",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS1:UC": {
+      "device": "IS1",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS2:CAN_L": {
+      "device": "IS2",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS2:CAN_H": {
+      "device": "IS2",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS2:GND": {
+      "device": "IS2",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS2:UC": {
+      "device": "IS2",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS3:CAN_L": {
+      "device": "IS3",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS3:CAN_H": {
+      "device": "IS3",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS3:GND": {
+      "device": "IS3",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS3:UC": {
+      "device": "IS3",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS4:CAN_L": {
+      "device": "IS4",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS4:CAN_H": {
+      "device": "IS4",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS4:GND": {
+      "device": "IS4",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS4:UC": {
+      "device": "IS4",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS5:CAN_L": {
+      "device": "IS5",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS5:CAN_H": {
+      "device": "IS5",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS5:GND": {
+      "device": "IS5",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS5:UC": {
+      "device": "IS5",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS6:CAN_L": {
+      "device": "IS6",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS6:CAN_H": {
+      "device": "IS6",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS6:GND": {
+      "device": "IS6",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS6:UC": {
+      "device": "IS6",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS7:CAN_L": {
+      "device": "IS7",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS7:CAN_H": {
+      "device": "IS7",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS7:GND": {
+      "device": "IS7",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS7:UC": {
+      "device": "IS7",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS8:CAN_L": {
+      "device": "IS8",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS8:CAN_H": {
+      "device": "IS8",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS8:GND": {
+      "device": "IS8",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS8:UC": {
+      "device": "IS8",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS9:CAN_L": {
+      "device": "IS9",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS9:CAN_H": {
+      "device": "IS9",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS9:GND": {
+      "device": "IS9",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS9:UC": {
+      "device": "IS9",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS10:CAN_L": {
+      "device": "IS10",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS10:CAN_H": {
+      "device": "IS10",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS10:GND": {
+      "device": "IS10",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS10:UC": {
+      "device": "IS10",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS11:CAN_L": {
+      "device": "IS11",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "A",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS11:CAN_H": {
+      "device": "IS11",
+      "domain": "raw_CAN_500k",
+      "source_pin_or_function": "B",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS11:GND": {
+      "device": "IS11",
+      "domain": "12V_aux",
+      "source_pin_or_function": "C",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    },
+    "IS11:UC": {
+      "device": "IS11",
+      "domain": "12V_aux",
+      "source_pin_or_function": "D",
+      "source_pinout_verified": true,
+      "source_position_verified": false,
+      "point_C_mm": null,
+      "physical_continuity_verified": false
+    }
+  },
+  "cables": [
+    {
+      "id": "WIRE_000",
+      "from": "BAT1:+",
+      "to": "FB1:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_001",
+      "from": "FB1:OUT",
+      "to": "QB1:P_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_002",
+      "from": "BAT1:-",
+      "to": "QB1:N_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_003",
+      "from": "BAT2:+",
+      "to": "FB2:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_004",
+      "from": "FB2:OUT",
+      "to": "QB2:P_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_005",
+      "from": "BAT2:-",
+      "to": "QB2:N_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_006",
+      "from": "QB1:P_OUT",
+      "to": "MERGE:P1",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_007",
+      "from": "QB1:N_OUT",
+      "to": "MERGE:N1",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_008",
+      "from": "QB2:P_OUT",
+      "to": "MERGE:P2",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_009",
+      "from": "QB2:N_OUT",
+      "to": "MERGE:N2",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_010",
+      "from": "MERGE:P",
+      "to": "FMAIN:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_011",
+      "from": "FMAIN:OUT",
+      "to": "Q0:P_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_012",
+      "from": "MERGE:N",
+      "to": "Q0:N_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_013",
+      "from": "Q0:P_OUT",
+      "to": "LYNX:BAT+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_014",
+      "from": "Q0:N_OUT",
+      "to": "LYNX:BAT-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_015",
+      "from": "LYNX:SYS+",
+      "to": "DIST:P",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_016",
+      "from": "LYNX:SYS-",
+      "to": "DIST:N",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_017",
+      "from": "DIST:P1",
+      "to": "FD1:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_018",
+      "from": "FD1:OUT",
+      "to": "KD1:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_019",
+      "from": "KD1:OUT",
+      "to": "INV1:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_020",
+      "from": "DIST:N1",
+      "to": "INV1:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_021",
+      "from": "INV1:CONTACTOR_SUPPLY",
+      "to": "KD1:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_022",
+      "from": "INV1:CONTACTOR_LOW",
+      "to": "KD1:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_023",
+      "from": "INV1:U",
+      "to": "M1:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_024",
+      "from": "INV1:V",
+      "to": "M1:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_025",
+      "from": "INV1:W",
+      "to": "M1:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_026",
+      "from": "INV1:SIN",
+      "to": "M1:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_027",
+      "from": "INV1:COS",
+      "to": "M1:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_028",
+      "from": "INV1:SENSOR_SUPPLY",
+      "to": "M1:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_029",
+      "from": "INV1:SENSOR_RETURN",
+      "to": "M1:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_030",
+      "from": "INV1:TEMP",
+      "to": "M1:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_031",
+      "from": "INV1:B-",
+      "to": "M1:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_032",
+      "from": "INV1:BRAKE_SUPPLY",
+      "to": "M1:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_033",
+      "from": "INV1:BRAKE_LOW",
+      "to": "M1:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_034",
+      "from": "DIST:P2",
+      "to": "FD2:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_035",
+      "from": "FD2:OUT",
+      "to": "KD2:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_036",
+      "from": "KD2:OUT",
+      "to": "INV2:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_037",
+      "from": "DIST:N2",
+      "to": "INV2:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_038",
+      "from": "INV2:CONTACTOR_SUPPLY",
+      "to": "KD2:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_039",
+      "from": "INV2:CONTACTOR_LOW",
+      "to": "KD2:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_040",
+      "from": "INV2:U",
+      "to": "M2:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_041",
+      "from": "INV2:V",
+      "to": "M2:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_042",
+      "from": "INV2:W",
+      "to": "M2:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_043",
+      "from": "INV2:SIN",
+      "to": "M2:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_044",
+      "from": "INV2:COS",
+      "to": "M2:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_045",
+      "from": "INV2:SENSOR_SUPPLY",
+      "to": "M2:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_046",
+      "from": "INV2:SENSOR_RETURN",
+      "to": "M2:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_047",
+      "from": "INV2:TEMP",
+      "to": "M2:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_048",
+      "from": "INV2:B-",
+      "to": "M2:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_049",
+      "from": "INV2:BRAKE_SUPPLY",
+      "to": "M2:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_050",
+      "from": "INV2:BRAKE_LOW",
+      "to": "M2:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_051",
+      "from": "DIST:P3",
+      "to": "FD3:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_052",
+      "from": "FD3:OUT",
+      "to": "KD3:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_053",
+      "from": "KD3:OUT",
+      "to": "INV3:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_054",
+      "from": "DIST:N3",
+      "to": "INV3:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_055",
+      "from": "INV3:CONTACTOR_SUPPLY",
+      "to": "KD3:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_056",
+      "from": "INV3:CONTACTOR_LOW",
+      "to": "KD3:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_057",
+      "from": "INV3:U",
+      "to": "M3:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_058",
+      "from": "INV3:V",
+      "to": "M3:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_059",
+      "from": "INV3:W",
+      "to": "M3:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_060",
+      "from": "INV3:SIN",
+      "to": "M3:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_061",
+      "from": "INV3:COS",
+      "to": "M3:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_062",
+      "from": "INV3:SENSOR_SUPPLY",
+      "to": "M3:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_063",
+      "from": "INV3:SENSOR_RETURN",
+      "to": "M3:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_064",
+      "from": "INV3:TEMP",
+      "to": "M3:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_065",
+      "from": "INV3:B-",
+      "to": "M3:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_066",
+      "from": "INV3:BRAKE_SUPPLY",
+      "to": "M3:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_067",
+      "from": "INV3:BRAKE_LOW",
+      "to": "M3:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_068",
+      "from": "DIST:P4",
+      "to": "FD4:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_069",
+      "from": "FD4:OUT",
+      "to": "KD4:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_070",
+      "from": "KD4:OUT",
+      "to": "INV4:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_071",
+      "from": "DIST:N4",
+      "to": "INV4:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_072",
+      "from": "INV4:CONTACTOR_SUPPLY",
+      "to": "KD4:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_073",
+      "from": "INV4:CONTACTOR_LOW",
+      "to": "KD4:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_074",
+      "from": "INV4:U",
+      "to": "M4:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_075",
+      "from": "INV4:V",
+      "to": "M4:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_076",
+      "from": "INV4:W",
+      "to": "M4:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_077",
+      "from": "INV4:SIN",
+      "to": "M4:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_078",
+      "from": "INV4:COS",
+      "to": "M4:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_079",
+      "from": "INV4:SENSOR_SUPPLY",
+      "to": "M4:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_080",
+      "from": "INV4:SENSOR_RETURN",
+      "to": "M4:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_081",
+      "from": "INV4:TEMP",
+      "to": "M4:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_082",
+      "from": "INV4:B-",
+      "to": "M4:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_083",
+      "from": "INV4:BRAKE_SUPPLY",
+      "to": "M4:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_084",
+      "from": "INV4:BRAKE_LOW",
+      "to": "M4:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_085",
+      "from": "DIST:P5",
+      "to": "FD5:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_086",
+      "from": "FD5:OUT",
+      "to": "KD5:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_087",
+      "from": "KD5:OUT",
+      "to": "INV5:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_088",
+      "from": "DIST:N5",
+      "to": "INV5:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_089",
+      "from": "INV5:CONTACTOR_SUPPLY",
+      "to": "KD5:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_090",
+      "from": "INV5:CONTACTOR_LOW",
+      "to": "KD5:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_091",
+      "from": "INV5:U",
+      "to": "M5:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_092",
+      "from": "INV5:V",
+      "to": "M5:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_093",
+      "from": "INV5:W",
+      "to": "M5:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_094",
+      "from": "INV5:SIN",
+      "to": "M5:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_095",
+      "from": "INV5:COS",
+      "to": "M5:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_096",
+      "from": "INV5:SENSOR_SUPPLY",
+      "to": "M5:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_097",
+      "from": "INV5:SENSOR_RETURN",
+      "to": "M5:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_098",
+      "from": "INV5:TEMP",
+      "to": "M5:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_099",
+      "from": "INV5:B-",
+      "to": "M5:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_100",
+      "from": "INV5:BRAKE_SUPPLY",
+      "to": "M5:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_101",
+      "from": "INV5:BRAKE_LOW",
+      "to": "M5:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_102",
+      "from": "DIST:P6",
+      "to": "FD6:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_103",
+      "from": "FD6:OUT",
+      "to": "KD6:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_104",
+      "from": "KD6:OUT",
+      "to": "INV6:B+",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_105",
+      "from": "DIST:N6",
+      "to": "INV6:B-",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_106",
+      "from": "INV6:CONTACTOR_SUPPLY",
+      "to": "KD6:COIL+",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_107",
+      "from": "INV6:CONTACTOR_LOW",
+      "to": "KD6:COIL-",
+      "domain": "switching_control",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_108",
+      "from": "INV6:U",
+      "to": "M6:U",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_109",
+      "from": "INV6:V",
+      "to": "M6:V",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_110",
+      "from": "INV6:W",
+      "to": "M6:W",
+      "domain": "three_phase_motor",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "No labelled OEM exit XYZ/mating connector; phase routing remains unresolved at motor; phase current47Arms is not DC branch current."
+      ]
+    },
+    {
+      "id": "WIRE_111",
+      "from": "INV6:SIN",
+      "to": "M6:SIN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_112",
+      "from": "INV6:COS",
+      "to": "M6:COS",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_113",
+      "from": "INV6:SENSOR_SUPPLY",
+      "to": "M6:SUPPLY",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_114",
+      "from": "INV6:SENSOR_RETURN",
+      "to": "M6:RETURN",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_115",
+      "from": "INV6:TEMP",
+      "to": "M6:KTY1",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact RM44 encoder supply/commonmode/phasing and Gen4 sin/cos pin21-versus31 documentation conflict unresolved."
+      ]
+    },
+    {
+      "id": "WIRE_116",
+      "from": "INV6:B-",
+      "to": "M6:KTY2",
+      "domain": "motor_feedback",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Gen4 temperature return source referencesB\u2212; exact sensor wiring/isolated thermal variant approval remains open. This is a temperature lead, not a motor power DC return."
+      ]
+    },
+    {
+      "id": "WIRE_117",
+      "from": "INV6:BRAKE_SUPPLY",
+      "to": "M6:BRK+",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_118",
+      "from": "INV6:BRAKE_LOW",
+      "to": "M6:BRK-",
+      "domain": "parking_brake_coil",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_119",
+      "from": "DIST:P7",
+      "to": "URSOFT1:P_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_120",
+      "from": "DIST:N7",
+      "to": "URSOFT1:N_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_121",
+      "from": "URSOFT1:P_OUT",
+      "to": "UR1:P",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_122",
+      "from": "URSOFT1:N_OUT",
+      "to": "UR1:N",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_123",
+      "from": "DIST:P9",
+      "to": "KSTR1:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_124",
+      "from": "KSTR1:OUT",
+      "to": "STR1:POWER_RED",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_125",
+      "from": "DIST:N9",
+      "to": "STR1:POWER_BLACK",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_126",
+      "from": "DIST:P8",
+      "to": "URSOFT2:P_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_127",
+      "from": "DIST:N8",
+      "to": "URSOFT2:N_IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_128",
+      "from": "URSOFT2:P_OUT",
+      "to": "UR2:P",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_129",
+      "from": "URSOFT2:N_OUT",
+      "to": "UR2:N",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_130",
+      "from": "DIST:P10",
+      "to": "KSTR2:IN",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_131",
+      "from": "KSTR2:OUT",
+      "to": "STR2:POWER_RED",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_132",
+      "from": "DIST:N10",
+      "to": "STR2:POWER_BLACK",
+      "domain": "DC_power",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_133",
+      "from": "GX:ETHERNET",
+      "to": "CTRL:ETHERNET",
+      "domain": "Ethernet",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Battery service registers307/308/318/319 read-only; actual UnitID discovery and stale-data fail-safe remain unimplemented."
+      ]
+    },
+    {
+      "id": "WIRE_134",
+      "from": "CTRL:CAN1_H",
+      "to": "INV1:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_135",
+      "from": "CTRL:CAN1_L",
+      "to": "INV1:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_136",
+      "from": "CTRL:CAN1_H",
+      "to": "INV2:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_137",
+      "from": "CTRL:CAN1_L",
+      "to": "INV2:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_138",
+      "from": "CTRL:CAN1_H",
+      "to": "INV3:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_139",
+      "from": "CTRL:CAN1_L",
+      "to": "INV3:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_140",
+      "from": "CTRL:CAN1_H",
+      "to": "INV4:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_141",
+      "from": "CTRL:CAN1_L",
+      "to": "INV4:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_142",
+      "from": "CTRL:CAN1_H",
+      "to": "INV5:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_143",
+      "from": "CTRL:CAN1_L",
+      "to": "INV5:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_144",
+      "from": "CTRL:CAN1_H",
+      "to": "INV6:CAN_H",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_145",
+      "from": "CTRL:CAN1_L",
+      "to": "INV6:CAN_L",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Exact bus routing,120\u03a9end termination, ground/isolation and commissioned node configuration open."
+      ]
+    },
+    {
+      "id": "WIRE_146",
+      "from": "CTRL:CAN1_H",
+      "to": "STR1:SIGNAL_BLUE",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_147",
+      "from": "CTRL:CAN1_L",
+      "to": "STR1:SIGNAL_BROWN",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_148",
+      "from": "CTRL:CAN1_H",
+      "to": "STR2:SIGNAL_BLUE",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_149",
+      "from": "CTRL:CAN1_L",
+      "to": "STR2:SIGNAL_BROWN",
+      "domain": "CANopen_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "Actual selected cable, route/clamps, mating retention and finished endpoint datum incomplete."
+      ]
+    },
+    {
+      "id": "WIRE_150",
+      "from": "CTRL:CAN2_H",
+      "to": "IS1:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_151",
+      "from": "CTRL:CAN2_L",
+      "to": "IS1:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_152",
+      "from": "CTRL:CAN2_H",
+      "to": "IS2:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_153",
+      "from": "CTRL:CAN2_L",
+      "to": "IS2:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_154",
+      "from": "CTRL:CAN2_H",
+      "to": "IS3:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_155",
+      "from": "CTRL:CAN2_L",
+      "to": "IS3:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_156",
+      "from": "CTRL:CAN2_H",
+      "to": "IS4:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_157",
+      "from": "CTRL:CAN2_L",
+      "to": "IS4:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_158",
+      "from": "CTRL:CAN2_H",
+      "to": "IS5:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_159",
+      "from": "CTRL:CAN2_L",
+      "to": "IS5:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_160",
+      "from": "CTRL:CAN2_H",
+      "to": "IS6:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_161",
+      "from": "CTRL:CAN2_L",
+      "to": "IS6:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_162",
+      "from": "CTRL:CAN2_H",
+      "to": "IS7:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_163",
+      "from": "CTRL:CAN2_L",
+      "to": "IS7:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_164",
+      "from": "CTRL:CAN2_H",
+      "to": "IS8:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_165",
+      "from": "CTRL:CAN2_L",
+      "to": "IS8:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_166",
+      "from": "CTRL:CAN2_H",
+      "to": "IS9:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_167",
+      "from": "CTRL:CAN2_L",
+      "to": "IS9:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_168",
+      "from": "CTRL:CAN2_H",
+      "to": "IS10:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_169",
+      "from": "CTRL:CAN2_L",
+      "to": "IS10:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_170",
+      "from": "CTRL:CAN2_H",
+      "to": "IS11:CAN_H",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    },
+    {
+      "id": "WIRE_171",
+      "from": "CTRL:CAN2_L",
+      "to": "IS11:CAN_L",
+      "domain": "raw_CAN_500k",
+      "endpoints_physically_verified": false,
+      "retained_cable_model": false,
+      "status": "required_unclosed",
+      "gates": [
+        "LEM8..16V requires12Vsupply; unique rawCAN IDs and SP7 configuration applicability unqualified."
+      ]
+    }
+  ],
+  "internal_functional_conversions": [
+    {
+      "id": "FB1:fusing",
+      "inputs": [
+        "FB1:IN"
+      ],
+      "outputs": [
+        "FB1:OUT"
+      ],
+      "kind": "positive branch overcurrent interruption",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "QB1:switching",
+      "inputs": [
+        "QB1:P_IN",
+        "QB1:N_IN"
+      ],
+      "outputs": [
+        "QB1:P_OUT",
+        "QB1:N_OUT"
+      ],
+      "kind": "manual2pole isolation, ABB proposed DC circuit assignment requires confirmation",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FB2:fusing",
+      "inputs": [
+        "FB2:IN"
+      ],
+      "outputs": [
+        "FB2:OUT"
+      ],
+      "kind": "positive branch overcurrent interruption",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "QB2:switching",
+      "inputs": [
+        "QB2:P_IN",
+        "QB2:N_IN"
+      ],
+      "outputs": [
+        "QB2:P_OUT",
+        "QB2:N_OUT"
+      ],
+      "kind": "manual2pole isolation, ABB proposed DC circuit assignment requires confirmation",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "MERGE:parallel",
+      "inputs": [
+        "MERGE:P1",
+        "MERGE:P2",
+        "MERGE:N1",
+        "MERGE:N2"
+      ],
+      "outputs": [
+        "MERGE:P",
+        "MERGE:N"
+      ],
+      "kind": "parallel positive and negative buses; positive/negative remain isolated",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FMAIN:fusing",
+      "inputs": [
+        "FMAIN:IN"
+      ],
+      "outputs": [
+        "FMAIN:OUT"
+      ],
+      "kind": "main positive overcurrent interruption",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "Q0:switching",
+      "inputs": [
+        "Q0:P_IN",
+        "Q0:N_IN"
+      ],
+      "outputs": [
+        "Q0:P_OUT",
+        "Q0:N_OUT"
+      ],
+      "kind": "manual2pole isolation",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "LYNX:contactor_precharge",
+      "inputs": [
+        "LYNX:BAT+"
+      ],
+      "outputs": [
+        "LYNX:SYS+"
+      ],
+      "kind": "battery positive contactor/precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "LYNX:shunt",
+      "inputs": [
+        "LYNX:BAT-"
+      ],
+      "outputs": [
+        "LYNX:SYS-"
+      ],
+      "kind": "negative shunt",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD1:fusing",
+      "inputs": [
+        "FD1:IN"
+      ],
+      "outputs": [
+        "FD1:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD1:contact",
+      "inputs": [
+        "KD1:IN"
+      ],
+      "outputs": [
+        "KD1:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV1:power_stage",
+      "inputs": [
+        "INV1:B+",
+        "INV1:B-"
+      ],
+      "outputs": [
+        "INV1:U",
+        "INV1:V",
+        "INV1:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD2:fusing",
+      "inputs": [
+        "FD2:IN"
+      ],
+      "outputs": [
+        "FD2:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD2:contact",
+      "inputs": [
+        "KD2:IN"
+      ],
+      "outputs": [
+        "KD2:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV2:power_stage",
+      "inputs": [
+        "INV2:B+",
+        "INV2:B-"
+      ],
+      "outputs": [
+        "INV2:U",
+        "INV2:V",
+        "INV2:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD3:fusing",
+      "inputs": [
+        "FD3:IN"
+      ],
+      "outputs": [
+        "FD3:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD3:contact",
+      "inputs": [
+        "KD3:IN"
+      ],
+      "outputs": [
+        "KD3:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV3:power_stage",
+      "inputs": [
+        "INV3:B+",
+        "INV3:B-"
+      ],
+      "outputs": [
+        "INV3:U",
+        "INV3:V",
+        "INV3:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD4:fusing",
+      "inputs": [
+        "FD4:IN"
+      ],
+      "outputs": [
+        "FD4:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD4:contact",
+      "inputs": [
+        "KD4:IN"
+      ],
+      "outputs": [
+        "KD4:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV4:power_stage",
+      "inputs": [
+        "INV4:B+",
+        "INV4:B-"
+      ],
+      "outputs": [
+        "INV4:U",
+        "INV4:V",
+        "INV4:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD5:fusing",
+      "inputs": [
+        "FD5:IN"
+      ],
+      "outputs": [
+        "FD5:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD5:contact",
+      "inputs": [
+        "KD5:IN"
+      ],
+      "outputs": [
+        "KD5:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV5:power_stage",
+      "inputs": [
+        "INV5:B+",
+        "INV5:B-"
+      ],
+      "outputs": [
+        "INV5:U",
+        "INV5:V",
+        "INV5:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "FD6:fusing",
+      "inputs": [
+        "FD6:IN"
+      ],
+      "outputs": [
+        "FD6:OUT"
+      ],
+      "kind": "branch fuse",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "KD6:contact",
+      "inputs": [
+        "KD6:IN"
+      ],
+      "outputs": [
+        "KD6:OUT"
+      ],
+      "kind": "branch contactor; reverse regen opening unqualified",
+      "source_function_known": true,
+      "configured_qualified": false
+    },
+    {
+      "id": "INV6:power_stage",
+      "inputs": [
+        "INV6:B+",
+        "INV6:B-"
+      ],
+      "outputs": [
+        "INV6:U",
+        "INV6:V",
+        "INV6:W"
+      ],
+      "kind": "three_phase inverter with separate KEY-controlled branch precharge",
+      "source_function_known": true,
+      "configured_qualified": false
+    }
+  ],
+  "sources": {
+    "battery": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51,2_V/en/installation.html",
+    "lynx": "https://www.victronenergy.com/media/pg/Lynx_Smart_BMS_NG/en/installation.html",
+    "ifm": "https://www.ifm.com/ae/en/product/CR711S",
+    "lem": "https://www.lem.com/sites/default/files/products_datasheets/cab_500-c_spx_public_datasheet_v4.pdf",
+    "gx_registers": "https://www.victronenergy.com/upload/documents/CCGX-Modbus-TCP-register-list-3.81.xlsx",
+    "thomson": "https://www.thomsonlinear.com/downloads/actuators/Electrak_HD_Actuator_bren.pdf"
+  },
+  "all_required_cable_endpoints_closed": false,
+  "installed_full_system": false,
+  "enforced_current_limit": false,
+  "warm_bank_development_limit_A": 180,
+  "temperature_limits": "victron_candidate/temperature_limit_tests.json",
+  "ATC_regen_permission_path": {
+    "pins": [
+      "LYNX:ATC_COM",
+      "LYNX:ATC_NO"
+    ],
+    "24V_potential_free_wetting_required": true,
+    "not_connected_to_48V_AUX": true,
+    "controller_input_mapping": null,
+    "Gen4_regen_inhibit_command_mapping": null,
+    "independent_brake_or_sink_selected": false,
+    "complete": false
+  },
+  "ATD_load_permission_path": {
+    "pins": [
+      "LYNX:ATD_COM",
+      "LYNX:ATD_NO"
+    ],
+    "fast_vehicle_stop_implemented": false,
+    "BMS_delayed_violation_not_used_for_stop_timing": true
+  },
+  "required_remaining_control_functions": [
+    "Per-pack branch current and imbalance monitoring",
+    "Temperature-aware minimum of actualBMSDCL/CCL, source conservative bank envelope and180A warm ceiling",
+    "Deduct arm/aux current before traction allocation",
+    "No-regeneration demand whenATCopen or no safe charge headroom",
+    "Stale/lost telemetry inhibits drive permission; exact hardwired stop chain unqualified",
+    "DualchannelEstop/manualreset/contactorfeedback architecture and service brake validation"
+  ],
+  "source_gen4_pin_conflict": "SIN21 table/figure versus31 prose; exact configured encoder hardware unresolved",
+  "configuration_not_commissioned": true
+}

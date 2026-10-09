@@ -1,0 +1,2461 @@
+{
+  "files": [
+    {
+      "path": "cost-model-C04/BOM.csv",
+      "sha256": "9526b29d95d0ef38235e6ff275701f3645011968a0ff2bbce37fe1cc4d6f3444"
+    },
+    {
+      "path": "cost-model-C04/README.md",
+      "sha256": "7c91879e939cd27c0696a9cdbdcb1d4a8d2abcd9bdbbf2d089726095a4e094fc"
+    },
+    {
+      "path": "cost-model-C04/UI_INTEGRATION.md",
+      "sha256": "7179aa97ba289e3e3ca0272a1e02e385cf0681371d581d4829abbdad18395146"
+    },
+    {
+      "path": "cost-model-C04/body_composition.json",
+      "sha256": "8dbce749c773cb4b1f88f4c082242de423f65e35efaddc3b8f14b9d1a87cc993"
+    },
+    {
+      "path": "cost-model-C04/build_cost_model.py",
+      "sha256": "6a723a227a5bf06863d7001ebfddc503cda79e8049f25b3d9123e7174acd8d6a"
+    },
+    {
+      "path": "cost-model-C04/checksums.json",
+      "sha256": "88c35c6e0837b5bd3ec3666dc965d542ec1b76bc545caaea8728ae3ae97c8355"
+    },
+    {
+      "path": "cost-model-C04/cost_model.json",
+      "sha256": "f88bb6db3c91821508fa741fa38f44283b99b6ad5661fdeb0f22ce7c7e4d22a2"
+    },
+    {
+      "path": "cost-model-C04/electrical_mass_selection.json",
+      "sha256": "b545f1ee8e8329697ac3e5af04b376d524ff062359c26086bc1c1992f8a3cbf3"
+    },
+    {
+      "path": "cost-model-C04/freeze_inputs.py",
+      "sha256": "6bfb6b3bf1598cac274428237c45402500ee890fbc69683425982441a15e0dd6"
+    },
+    {
+      "path": "cost-model-C04/input-manifest.json",
+      "sha256": "85267ce5566403f7c351ae4e9ad79e8f27e335097f7c0a54ec75538ab5e38b88"
+    },
+    {
+      "path": "cost-model-C04/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b"
+    },
+    {
+      "path": "cost-model-C04/inputs/actuator_contract_R02.json",
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "cost-model-C04/inputs/battery_BA02_manifest.json",
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224"
+    },
+    {
+      "path": "cost-model-C04/inputs/battery_BA02_verification.json",
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+    },
+    {
+      "path": "cost-model-C04/inputs/battery_original_hardware_mass.csv",
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837"
+    },
+    {
+      "path": "cost-model-C04/inputs/battery_strap_source.json",
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_PR01_check.json",
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_PR01_manifest.json",
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_PR01_material_source.py",
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_R01_verification.json",
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_SO02_E04P_parts.json",
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c"
+    },
+    {
+      "path": "cost-model-C04/inputs/body_SO02_E04P_selected.json",
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_bom_E04.json",
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_contract_E04.json",
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_mass_ledger.json",
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_temperature_limits.json",
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_topology_E04.json",
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7"
+    },
+    {
+      "path": "cost-model-C04/inputs/electrical_trough_contract.json",
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557"
+    },
+    {
+      "path": "cost-model-C04/inputs/historical_C03_model.json",
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41"
+    },
+    {
+      "path": "cost-model-C04/inputs/historical_C03_sources.json",
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
+    },
+    {
+      "path": "cost-model-C04/inputs/mechanical_mass_BOM_C04_R01.json",
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6"
+    },
+    {
+      "path": "cost-model-C04/inputs/structural_connections_C04_R05_manifest.json",
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "cost-model-C04/inputs/victron_price_observations.json",
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a"
+    },
+    {
+      "path": "cost-model-C04/inputs/wheel_candidates.json",
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d"
+    },
+    {
+      "path": "cost-model-C04/inputs/wheel_nut_contract.json",
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119"
+    },
+    {
+      "path": "cost-model-C04/inputs/wheel_price_observations.json",
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683"
+    },
+    {
+      "path": "cost-model-C04/mass_reconciliation.json",
+      "sha256": "a5969fe9201fece172bb633c65853234045c969785c05ed436a5172356d8c23a"
+    },
+    {
+      "path": "cost-model-C04/source_reconciliation.json",
+      "sha256": "28c265d4298d813707efa9900aa7522c8fb219ad50678e6724f95ff120aa4399"
+    },
+    {
+      "path": "cost-model-C04/sources.json",
+      "sha256": "0848fee83c24e503b112f8884b97117e7bcaf5065a602714fab4eabaf2b214c1"
+    },
+    {
+      "path": "cost-model-C04/test_cost_model.py",
+      "sha256": "541fd20bc9767fff4a055a72891f4dce27b448b476d1fc368ddb8c905880e454"
+    },
+    {
+      "path": "cost-model-C04/test_run.log",
+      "sha256": "c69b387542d61381000d48f6eaff6300b069391e10dd47233894a03934dfe820"
+    },
+    {
+      "path": "cost-model-C04/validation.json",
+      "sha256": "d8bb355f06ee65912b3b73c6ff8a1739ab3f972562eb9717ac437e56bd93e250"
+    },
+    {
+      "path": "cost-model-C04/viewer_formula_validation.json",
+      "sha256": "20345bd8f939bf7e0a927948d94cb37b7c7ffce7224b1ab1aa074b209e55b360"
+    },
+    {
+      "path": "publication-C04/STATUS.json",
+      "sha256": "15f7bffb59ab51b566c7c6887c94e550c3282e274e919b88cb015dab4b0e7b98"
+    },
+    {
+      "path": "publication-C04/base-tree.json",
+      "sha256": "c91c2022f6325f5a493733081d2d3b36b952e16a4aa076cfe443abd4078f345e"
+    },
+    {
+      "path": "publication-C04/blob-receipts.json",
+      "sha256": "b6d232d3f599fe4dfc85c1b1a581281d56cad389c9cee3830178b067cc24d9fd"
+    },
+    {
+      "path": "publication-C04/expected-tree.json",
+      "sha256": "6ccdf90412951d4ca77e2e987edc00319aa8cad48d78cbd6966e82cbbab9367a"
+    },
+    {
+      "path": "publication-C04/tree-arguments.json",
+      "sha256": "239cb20103906dc64f11bc8bebb3a40a0e877d696414b9a5c2700ffd330fcff6"
+    },
+    {
+      "path": "publication-C04/tree-rejection.json",
+      "sha256": "17e29e30a150713c4ee1991a6562db1c308bd34c407541f1735263d27f466926"
+    },
+    {
+      "path": "publication-C04/tree-retry-rejection.json",
+      "sha256": "fd29e9e9453672d49a6463680d7f96137f43bdde3a3aa56cc0cc5f31047d20a8"
+    },
+    {
+      "path": "app-C04/.github/workflows/pages.yml",
+      "sha256": "c421ad0336c1b2fc0c32be17c5bb0423c158c7011a13ff0c7b498aafac978dd0"
+    },
+    {
+      "path": "app-C04/.github/workflows/validate.yml",
+      "sha256": "dd36e2ef4a7e7d07ec32d9c2cc6edc126c46e6f86844143bdeb7de1037a650ff"
+    },
+    {
+      "path": "app-C04/BASELINE.md",
+      "sha256": "e3c4dbfe274e25484b4294885eb2335254cddd4727689504cad66b81f4c1d2e9"
+    },
+    {
+      "path": "app-C04/README.md",
+      "sha256": "549b66d66148174bc9513901ce08ce40c653564602d8dd6f8d7b0246203aab98"
+    },
+    {
+      "path": "app-C04/RECONSTRUCTION.md",
+      "sha256": "10b773e2da1c5838bab0132bf63cce27b0126886cf955a5322a83ec8e367e33a"
+    },
+    {
+      "path": "app-C04/docs/.nojekyll",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "app-C04/docs/RECONSTRUCTION.md",
+      "sha256": "5623d0528ac1a850a3bce273e1913963c35303f09daca143ea1a3ee34223a199"
+    },
+    {
+      "path": "app-C04/docs/app.js",
+      "sha256": "40b6b54111e96373344519c49ee612d14576f516b50d15ecc636fb0449368744"
+    },
+    {
+      "path": "app-C04/docs/assembly.json",
+      "sha256": "50ff5d6d83ad6148d18758e5e196524c7247909d000c535949cd91f55c2cf0e4"
+    },
+    {
+      "path": "app-C04/docs/assets/actuators/actuator_fixed_interface.glb",
+      "sha256": "2ce906627b9798ab4c5a9a6c2d7e10dcc9da7e3e1aa77d197ccefa02d534d176"
+    },
+    {
+      "path": "app-C04/docs/assets/actuators/actuator_moving_interface.glb",
+      "sha256": "15b08e934a1d98e7008dfdc589a91977eb6323baef3f9b3bdfef31369b847804"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/PACKAGE_SHA256.json",
+      "sha256": "1a5a43e7c761357e145d7871952dd3c6cb6cd8d301fbfab4157a8375eaa29139"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/README.md",
+      "sha256": "ca52ac8e8015038c3e3ac2d343511cce5f8d4e30b279077c1dbd821c00b93449"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/apply-battery-polarity.mjs",
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/battery-polarity-contract.json",
+      "sha256": "bc78ee5d1f9d893171836d1ec35579373f5cb78998fbccad3588947229604c70"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/runtime-regression-results.json",
+      "sha256": "9af05d3bd7b47615a0086c932155c282d270154b73d6c702509a334e46f927f0"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/source-regression-results.json",
+      "sha256": "2156884a292ec80ce544f7ea27139bdaf532c082a542b68a1d4bc1c6392a47da"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/test-battery-polarity.mjs",
+      "sha256": "76268b55d4f8bb7edd9fca5c529cbcbb53fd9f516c7f927c2e0fcdce4d39bd97"
+    },
+    {
+      "path": "app-C04/docs/assets/battery-polarity/verify-source-polarity.py",
+      "sha256": "8aab031933eb1cdcb4ec38ed0f7d5b40047ab5d2e5b966db0a8774cfdf7e8b56"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/README.md",
+      "sha256": "a8fee3ab531ffa71756d499c805a6b353542d0a13a2812bca39d4a323cb67101"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/SHA256SUMS.json",
+      "sha256": "d8780d6bb099e0f5f970831477974205efa488ff80b1f37ecd69e4ca89518681"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/SOURCES.json",
+      "sha256": "ff9d22319f367d400606810ba7e883d78bf0c7f2e3d693b2ea2e834fda73081f"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/arm_clearance_screen.json",
+      "sha256": "7513a5aefb1db600738b2e4250c046f72df8f74639cc9dc4cf0d1a089f439ce1"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/arm_triangle_clearance_screen.json",
+      "sha256": "289f8c1f71347b567e9b8582d4252f691652acb2cd4b005dc4c46260ed6d8863"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/body_closed_qa.png",
+      "sha256": "7280c811c425c43fe858fa642b8a0e4e794f87d7d009b31657173afbe01f6efa"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/body_cutaway_qa.png",
+      "sha256": "b12d651218bed205983d92ebe7195d57251ead5a0b0b16ad161c2472f77ae053"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/body_power_R01.glb",
+      "sha256": "186dd531e2402e8ed62a9d306d7427c01ab8d863546b37c47d12c209aac07d3f"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/body_power_R01.step",
+      "sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/body_power_R01_colab.ipynb",
+      "sha256": "136b3baa322bfc2a9f6a66bdbb766da1d4e8d484381ae7911ea6f0b9f13057f6"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/build_body_power.py",
+      "sha256": "c9c74980acd3a3fc5949126d3b933705fee38e5452d6beb81fc76715c5d553e8"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/check_arm_clearance.py",
+      "sha256": "636a66d2219f1a77b4d1ffdd222b006f844f19ae7d255a64ad56f6e61bf6217a"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/check_reservations.py",
+      "sha256": "25035b26e57eab37e417a408706b31a29407b2a5cc4b0eae519466e1ce5bed8a"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/check_triangle_clearance.py",
+      "sha256": "386306eb2e783c0ae58c55458d8afbc1db2f6ce4734fb35ac2ae3bcb87b0c6da"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/cots_reservations_R01.glb",
+      "sha256": "5c47ad1ffa160436c221265870b0b80d1482da1530df5cd8863533aa707af36a"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/cots_reservations_R01.step",
+      "sha256": "729dc6ba9c397e86b97c48c9d4af96d12519c0cb52b953bc0b06dd13fbebf648"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/export_roundtrip.json",
+      "sha256": "c477080df400345ac58f80858528e7b012b1af406312ecf6cdf151da9f110624"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/finalize_body.py",
+      "sha256": "b8550b3b9cf0b73308d105bfad82f722a6a7c9db7e2ec2adbd607ee26c3c294c"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/frame_R07_body_integration.json",
+      "sha256": "02679f1fabef45760cb0e38e35f5c88ccef2870247a9298ff3a02634fc174121"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/interface_contract.json",
+      "sha256": "bc3ad4d6af75e81cd97ef0d13476f39c3e5cd7c5aa906c576943587f8dadf3f8"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/original_cutlist.csv",
+      "sha256": "12f7321eafe598824e260d315d98e62082f0e4e6d31b0cabac025a631d99ba80"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/package_release.py",
+      "sha256": "b7fc3951e761fa950abbc145bae87f9763f3e6a960ddb3a6c4979f76022cc564"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/reference_frame_R06.step",
+      "sha256": "4f31f400a6a1bdcfdcb79a962813ca3dd4fac7f6c3da46e5b73fb70bbcd1b9ab"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/requirements.txt",
+      "sha256": "9e038c84c017d85ac109b009f5e1fc32cee5352e0cb3f702ac84d6293f190016"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/reservation_checks.json",
+      "sha256": "801ea8ac5ec9183dba2a44b29bca847c65e481425ce05be90e0a02ac0e794e94"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/service_node_validation.json",
+      "sha256": "a446c23c00db30e5434bf3ea00b00e43be431b540d2431297261b53b7f49505e"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/sourced_bom.csv",
+      "sha256": "52a635d126c28801222ee0f25614132899cea6a9bf9facbe6f5be02f3728a8b3"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/tire_envelope_screen_C02.json",
+      "sha256": "f10cc105f1ac23eae3d1001a1f2aede2047902aa94f8d0be8700b765c1afdfdd"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/verification.json",
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/verify_export.py",
+      "sha256": "cf70481ec49cb5be468ff78a80d7f9620b00321d2d7020d78b5dd31fc1c8e32c"
+    },
+    {
+      "path": "app-C04/docs/assets/body-power/write_evidence.py",
+      "sha256": "3d775993edff5130dcb896b7eb34f986020aa7e5c3a8e423688f3f44f513eb38"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/actuator.json",
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/drive.glb.gz",
+      "sha256": "b17a40e2913c70606a253610d84d1c59765e49836384b3abec0275259a5a5e6f"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/drive.json",
+      "sha256": "153cbcf754da7a3c830ae7fa3ac221beb97fb2d6557057b8ac79f4d457a0ba00"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/joints.glb.gz",
+      "sha256": "a15a93d1f751b5951c68a0b4149541733acaebda2f698a9cf8929894a19de74c"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/joints.json",
+      "sha256": "945a21aea2d3a304912020ef2677732c6d664f11adcf665ca20c99de514283ae"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/mechanical-contract.json",
+      "sha256": "a49138b89926d5338b96a993fa07c616b830ddf6aab2ea4b078a4217bb2fc8b5"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/retained-graph.json",
+      "sha256": "eec5e71f23f76af841ecfe7d0dfd3c92de881f608b95e426dc0eb1962a17509d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/shock.glb.gz",
+      "sha256": "6a486b8902f5c83bfbb7e43629fbfffd8d4a961b80f0101cd1c6b73588bafeea"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/shock.json",
+      "sha256": "8d4f102c6e61f1cb9e68e7f96215d1658bcff187773e1d03548b8edf8d02cd3b"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/structure.glb.gz",
+      "sha256": "7ce4dda8c2ef9457c5718c1cba0755d75da71b57e35566b58322b2ed5d63ffe7"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/structure.json",
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/wheel.glb.gz",
+      "sha256": "4428707128dcccc0c4f3cfe7de55ee5307a66a8ed89c7083a30c02cb2b98071f"
+    },
+    {
+      "path": "app-C04/docs/assets/connected/wheel.json",
+      "sha256": "772213abb0f5dccfe95340abd31fe3000194b822039def732009be58820fa201"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/R11_lower_miter_wall_audit.json",
+      "sha256": "5a6491b3c3ce73c4e7d174c54a86e69d656b025e6c59ac91a057a9aecc2a8957"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/battery_polarity_independent_audit.json",
+      "sha256": "a1a2db72cdd85616cd97ededff5802faf14ddae93442ddaee21c0f52b867dfc9"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/guided_module_R08_interface_audit.json",
+      "sha256": "6ba81c9727a644ba6ee05e309bf1e0a3df916e8eb9db7a68ae717ba547fe42d1"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_R08_X_bound_numeric_check.json",
+      "sha256": "fcb0a891de497dd7d572e8a431b7f3586dd69cf3ef33941336c1746d2491378b"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_R11_support_numeric_check.json",
+      "sha256": "a6c49a7d88fcdc8a51a54dca585a0f96291d34142fbf622365b5718e1946485d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_R12_rack_X_numeric_check.json",
+      "sha256": "02d21032dd33423f43f855c72bb8bd5a838524afb392241cd46686e8a39dacec"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_R13_upper_numeric_check.json",
+      "sha256": "b6a21148c3f2ba2c9afe913f44437dcfb93fca24ce1d7e887a59624771652206"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_import_environment.json",
+      "sha256": "a815673580d6d7f765a30cc1f895d1ad598d382de8db9b76270027a79356b437"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_selected_carrier_numeric_check.json",
+      "sha256": "11d7c69df3a3ee33791e4f148940774e93c7ac2c6a7300e27ae25c3030eb16b4"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_shock_numeric_check.json",
+      "sha256": "c9fa7931ea7011734a0fbc3a8b16b17f796b603929040725ecea1dbfb2d4ea9d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/private_motor_terminal_datum_review.json",
+      "sha256": "83537347ecf6eeaa38d67e332a836d1de8bb0cbc5f6a19cc86ff595893dceab3"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/selected_private_fit_final_manifest_reconciliation.json",
+      "sha256": "a7342c7d2aa7428fad8e9a3f08877b4fd7892d55482561eb7b700651ada10ee2"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-audit/whitelist.json",
+      "sha256": "381ddab1b1286ff321507c3ed5670c34d315fc6c986fad1388d58e6afd287967"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-body/battery.glb.gz",
+      "sha256": "9497be6d21a27036c1c1f8207f9c1df9876eee40622f5a218ede242458cb9f2d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-body/body-contract.json",
+      "sha256": "5147b827dbe7c50c7e2ba22fb1afca7de68190f291f6d2794ebe8eb7a1779c2f"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-body/body.glb.gz",
+      "sha256": "46f8884960eb11c0992a246f83b6c3a679f8b186b922fa83c54473d6cd34d27e"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-body/openings.glb.gz",
+      "sha256": "72f8da837be7a27bfc2ff831a20e2cc77e3bbb28aa5c4019d06904a4aa96fb11"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-body/trough.glb.gz",
+      "sha256": "f56d44d6f80bf69140bff3dd85e9858682397bf6763384d1ea254c9e0c3b4846"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/breakout-fasteners.glb.gz",
+      "sha256": "2f8503bdda286eef5a1b3f6671988bd65ac04c26539b8c652452c3e63314719e"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/breakout.glb.gz",
+      "sha256": "8db4dd0c2c9459116f05d66c5721c54862646ae105c1b4ec702798a51ccbefc0"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/carriers.glb.gz",
+      "sha256": "42c507fb8044fdc51bd26bb3b2e0c57a00c960d89d87999cc89f8d187f1869b4"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/controllers.glb.gz",
+      "sha256": "bd817b5c9ad4a1c55d9a6db45dc74a96e185946569fc8db1eb6763c63128b448"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/deck-fasteners.glb.gz",
+      "sha256": "dcfab06f5d1f3aa1577bef8e97ae24e64690003d8a0efb90fb321bb582ec4673"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/electrical-contract.json",
+      "sha256": "4cba33b51081c4e92b8f134bb5d43c54683cecaf352dd14cba8f159f0b35f566"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/isolators.glb.gz",
+      "sha256": "6d5ef3419f93fa621bd0300666c8bd0e9c9f4cf2e48a163e66476b11ed5e68ae"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/lynx.glb.gz",
+      "sha256": "806a979854632523851f35c8fb9a95c5d4ba8be3830802701c09ac4dfe723a94"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-electrical/ur-cases.glb.gz",
+      "sha256": "0935e1d3b7a11c35c319a5bb3e4dd00fe6c014544408aaa9207d27bdb48a9623"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/archives.json",
+      "sha256": "a3ff8e8079fdd603a3d28b5924ecb34c5931f5fdaa96fe39c74d271b9c8d21bb"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/battery-source.zip",
+      "sha256": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/body-openings-source.zip",
+      "sha256": "7f0b807a1389f765ab53727fd13e2508e122a2f85c37609d1ddc83fcf42d23a3"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/body-retention-source.zip.part01",
+      "sha256": "45e93fabfd43fb72ce988276f712cd14429acdbc4c4cb5c72572f32b851dbb24"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/body-retention-source.zip.part02",
+      "sha256": "c9428a4dbf1d964731b018667a03117c43fe8ba9821a336d855f9cf0a319cd1c"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/electrical-source.zip",
+      "sha256": "288ea2936be26025d588983a029850d104e16ad61e191c8bec1ae1cc7405b752"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/index.html",
+      "sha256": "5f125ea8e0e0607f46446bd949ca8efbcd35835ed3faa35f83414a1687983dfb"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part01",
+      "sha256": "c46b452dda5f47ecbd705ae4337a6a034f34cb9e6e799e7b09e28adeb3b44dcf"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part02",
+      "sha256": "62d214b5546e31cd3ba50fe8f4acdeeaa20e9327e76dc4434731678e8639080a"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part03",
+      "sha256": "9d1d9ae2c0cb1bcef580c1c9859d5d57c4f2c9be9a684264a87e82bdda51865e"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part04",
+      "sha256": "0e2e44f955986241b00149303748dfb8bed18112723b6b81cee5f09012c44602"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part05",
+      "sha256": "5534035e9f2a6a6d14a507730bc2ebb24ae3203b14cc2e87d4f81f73bea01c04"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part06",
+      "sha256": "cb149aebcf68fa550b829dddbd4c802a5ba30ea433200a5fa332c595b012473d"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part07",
+      "sha256": "b5aab8d714d6a9820c1684a7bb741249398b23edebfc4a540f480a14a7711444"
+    },
+    {
+      "path": "app-C04/docs/assets/connected-sources/mechanical-source.zip.part08",
+      "sha256": "69694e8480b30048c6178304c7814bf2f51e6640ea36d3d647f1472de6c54be5"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/drive-reservation.json",
+      "sha256": "1fec15f0a65d2b5bec05c6f412e97dc4c0d69a503986b8f283508bb938245792"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/generate_interfaces.py",
+      "sha256": "52db49958af61512dafccc4f148fcb8484cffeedba3a6f5c63bd352ff9a6066f"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/inner_backing_C02_R01.glb",
+      "sha256": "930338238b04dcaeb40fd6433c1b9210c625f909b02967696005ee278dfa4a2d"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/inner_backing_C02_R01.step",
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/inner_backing_C02_R01_report.json",
+      "sha256": "ba24b8ed2e1ac430472e7df3bfa7aadcbefd902641327e3753e336ebf98f3b8e"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/interface_contract_C02_R02.json",
+      "sha256": "c965f84d9091ec334117d14ce188e87ab7d85e0bbc4336cc7d14f730be5cffa7"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/interface_contract_C02_R04.json",
+      "sha256": "221ec053ab259588f523efc19d6558993a9656fbd2d793b1151f35a4c7fd39c0"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/interface_contract_C02_R05.json",
+      "sha256": "3f65587a1d6490c39545bd49531fa610ed6ee48dbeab5ec78963d36fd46442cb"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/interface_contract_C02_R06.json",
+      "sha256": "d499bc60c0424d9aa594a301a2b9397bbc326040f2a9ba4a256cfae6d85149e8"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_bearing_envelopes_C02_R01.glb",
+      "sha256": "f3542c9b436122147e5ec380d4f753307c7b9539f20ba0f4aff48c9377699331"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_bearing_envelopes_C02_R02.glb",
+      "sha256": "f900fc29459a8059615a72a5e25fb96a799c4a3079647dc05856282a9807cc18"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_bearing_envelopes_C02_R02.step",
+      "sha256": "29eeaacc6bdacd53f81264bfb88cc172b63669ec1394bbf31b98e23d6d2cec1d"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_bearing_envelopes_C02_R02_report.json",
+      "sha256": "8a3e17dbd76dd2f15fd057b0cf70a4234b1090e5b5cc14ac68f8b33dca0600a6"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_wishbone_C02_R01.glb",
+      "sha256": "aca14b8592a6b5c674a0e70d02ba140eafdcb14f7d817b6797dbde53f57e6dfb"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_wishbone_C02_R02.glb",
+      "sha256": "003f42658bca90fc5d7acf4c2eab6b436a1a937c94e8057d04a41c1ef2eaad33"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_wishbone_C02_R02.step",
+      "sha256": "9c2d92ca7ee0e0d6ab6449fe19155cc5eb3194da1bb590a56acf7182970d7dd1"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/lower_wishbone_C02_R02_report.json",
+      "sha256": "8286dcf3192ffec1440280db060649ca95ff81f8665d193866eb9b870e02114d"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/mass_cost_ledger_C02_R05.json",
+      "sha256": "91ca249887627a0d7d257ee41935c867e78a30213a149c38d77bb6be94d6128f"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/mass_cost_ledger_C02_R06.json",
+      "sha256": "fa0fe76aed8de417da615cd19d9058186c6b4ab743f5de0a8a3a3f6fa058753c"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_clamp_C02_R01.glb",
+      "sha256": "0733f321ab185469d91576bf57e3c5ff94e738bdbca02c2a11cd5c9e0e97825a"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_clamp_C02_R01.step",
+      "sha256": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_clamp_C02_R01_report.json",
+      "sha256": "f281fe8b3c368c0f8227b47a10e75fc0cd6a735d0ca696fcc1bd45bf37abcdfd"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_hardware_C02_R01.glb",
+      "sha256": "4ea6bb8537b4f436d9f2d49140dfae25be1d0ac5a322a7c0fd9a4bff123c0edc"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_hardware_C02_R01.step",
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/stationary_hardware_C02_R01_report.json",
+      "sha256": "ee0e091b66ffda0191e39450be2adc60e2a9bf55db4a14ba35c24ac980ff3f74"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_bearing_envelopes_C02_R01.glb",
+      "sha256": "13fd7c70fd02d2dd6e69848d23dcf59a8ccb8eaeb4790c54c2f30590208c973c"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_bearing_envelopes_C02_R02.glb",
+      "sha256": "5785f405ba8a4185a2502c330a79b523f03b3eb68f2a860dfb8014728cb8ef2a"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_bearing_envelopes_C02_R02.step",
+      "sha256": "a87979599e47a826616fe1831376e516b61194b17547510f6c526414f218b4bf"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_bearing_envelopes_C02_R02_report.json",
+      "sha256": "012441b9c30773ac30e7ae57bb94a42a17bbaa57c31f0da0483ecb17b4e0920d"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_wishbone_C02_R01.glb",
+      "sha256": "6615455c6d4ecd7878a6dec84c351cd0b0af32565d4b48169ae88b7b7082b765"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_wishbone_C02_R02.glb",
+      "sha256": "37bfcbe140f49599e9b9c0fee3d7db6d0d5826591b3c54a177427d0b5d35d89e"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_wishbone_C02_R02.step",
+      "sha256": "0fc7fcf8957847f143a3e0b55314df7bac19835ea2d4a494f0544199a5dc2664"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upper_wishbone_C02_R02_report.json",
+      "sha256": "68d83ff0c1c3b4b856fa8f3140d369fc0b9c0b076525c8148702c20556726211"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R02.glb",
+      "sha256": "fa487ccaefeea44caf121e081487faa6c0e831522ca02cf0f7e25ae379555f92"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R04.glb",
+      "sha256": "8611dbb8697a1ee866d8f1ba5ad7ec4680c81e0859b1f7f91e8649676cf01181"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R04.step",
+      "sha256": "a052b8963a2bdb83ba4d4beb9130a98b704e315eeceba3519b375df27d8a4eb0"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R04_report.json",
+      "sha256": "c81496f6f6ee094a7771ba3c5c78705aefd9bfa9ad074b908de6e6a14344e3be"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R05.glb",
+      "sha256": "2cadc40cdd89096a4b39956ca4437222c6e57d29bb8ff387eabf05e81ceb29b7"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R05.step",
+      "sha256": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_WD220_C02_R05_report.json",
+      "sha256": "599cb5653e9967af7649bf39e78d7927efd13331332baee3341048ea5903e106"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_pins_C02_R01.glb",
+      "sha256": "6d85a478a3aa165a1460baff24a4a6746311947774a10396d1f89780e313ab33"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_pins_C02_R02.glb",
+      "sha256": "af742a84fa417480c90e3eb48d60c1b9b247d695900d24f9e870370e77364c39"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_pins_C02_R02.step",
+      "sha256": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/upright_pins_C02_R02_report.json",
+      "sha256": "d042402bf94f7363af8dac7d97500fa7e237b79bc4062b8ece7bf2c97e4f97b4"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R01.glb",
+      "sha256": "765d18f348e5364ef2f65a41da197b3856da8750be38f54a53c80007cc993545"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R01.step",
+      "sha256": "45c66fa931af2365e258935bb1b25057894b08e85b027504529504d45c6f28db"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R01_report.json",
+      "sha256": "c1351d20ca16a7c89b664ec0e79437ea1a9008fa6b77f21c3c76eaf7d0ca07c5"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R02.glb",
+      "sha256": "c84a8820bc83ac6f2ea1dd9dd1c1768a2f295212915636d7ef8633b3652bdd82"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f"
+    },
+    {
+      "path": "app-C04/docs/assets/corners/wheel_adapter_C02_R02_report.json",
+      "sha256": "511b0168523a557758ad8578031d69c10cd2cf7eb1d990df038f805800a4c4bb"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/BOM.csv",
+      "sha256": "9526b29d95d0ef38235e6ff275701f3645011968a0ff2bbce37fe1cc4d6f3444"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/README.md",
+      "sha256": "7c91879e939cd27c0696a9cdbdcb1d4a8d2abcd9bdbbf2d089726095a4e094fc"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/UI_INTEGRATION.md",
+      "sha256": "7179aa97ba289e3e3ca0272a1e02e385cf0681371d581d4829abbdad18395146"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/body_composition.json",
+      "sha256": "8dbce749c773cb4b1f88f4c082242de423f65e35efaddc3b8f14b9d1a87cc993"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/build_cost_model.py",
+      "sha256": "6a723a227a5bf06863d7001ebfddc503cda79e8049f25b3d9123e7174acd8d6a"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/checksums.json",
+      "sha256": "88c35c6e0837b5bd3ec3666dc965d542ec1b76bc545caaea8728ae3ae97c8355"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/cost_model.json",
+      "sha256": "f88bb6db3c91821508fa741fa38f44283b99b6ad5661fdeb0f22ce7c7e4d22a2"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/electrical_mass_selection.json",
+      "sha256": "b545f1ee8e8329697ac3e5af04b376d524ff062359c26086bc1c1992f8a3cbf3"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/freeze_inputs.py",
+      "sha256": "6bfb6b3bf1598cac274428237c45402500ee890fbc69683425982441a15e0dd6"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/input-manifest.json",
+      "sha256": "85267ce5566403f7c351ae4e9ad79e8f27e335097f7c0a54ec75538ab5e38b88"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/PUBLIC_SOURCE_FREEZE_C04_R01.json",
+      "sha256": "0cc41d854453be315558d153fd7963c1607c949b3e04359c2ee112cf253c32ee"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/actuator_contract_R02.json",
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/battery_BA02_manifest.json",
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/battery_BA02_verification.json",
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/battery_original_hardware_mass.csv",
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/battery_strap_source.json",
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_PR01_check.json",
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_PR01_manifest.json",
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_PR01_material_source.py",
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_R01_verification.json",
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_SO02_E04P_parts.json",
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/body_SO02_E04P_selected.json",
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_bom_E04.json",
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_contract_E04.json",
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_mass_ledger.json",
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_temperature_limits.json",
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_topology_E04.json",
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/electrical_trough_contract.json",
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/historical_C03_model.json",
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/historical_C03_sources.json",
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/mechanical_mass_BOM_C04_R01.json",
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/structural_connections_C04_R05_manifest.json",
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/victron_price_observations.json",
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/wheel_candidates.json",
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/wheel_nut_contract.json",
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/inputs/wheel_price_observations.json",
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/manufacturer-mass-evidence.json",
+      "sha256": "96a0ba69db97a79e885202cbbc4b301301be91b1688947f202d99a2d08d6a403"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/mass_reconciliation.json",
+      "sha256": "a5969fe9201fece172bb633c65853234045c969785c05ed436a5172356d8c23a"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/source_reconciliation.json",
+      "sha256": "28c265d4298d813707efa9900aa7522c8fb219ad50678e6724f95ff120aa4399"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/sources.json",
+      "sha256": "0848fee83c24e503b112f8884b97117e7bcaf5065a602714fab4eabaf2b214c1"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/test_cost_model.py",
+      "sha256": "541fd20bc9767fff4a055a72891f4dce27b448b476d1fc368ddb8c905880e454"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/test_run.log",
+      "sha256": "c69b387542d61381000d48f6eaff6300b069391e10dd47233894a03934dfe820"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/validation.json",
+      "sha256": "d8bb355f06ee65912b3b73c6ff8a1739ab3f972562eb9717ac437e56bd93e250"
+    },
+    {
+      "path": "app-C04/docs/assets/cost-model/viewer_formula_validation.json",
+      "sha256": "20345bd8f939bf7e0a927948d94cb37b7c7ffce7224b1ab1aa074b209e55b360"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/adapter_R04_reference.json",
+      "sha256": "85f045450615791d3cedb088fd3ce7fb0e1f4e941b3e127724b5f3ae46ddb457"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/check_flange_fastener.py",
+      "sha256": "3735ac968142f8eef734b93ce881f2c3229b5f15cc71895200f2369e7a921bfa"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/flange-fastener-contract.json",
+      "sha256": "129c1696507242f88d45d588fb52eb04ec0b60ec002aec6b111e25487adde62e"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/flange-fastener-report.json",
+      "sha256": "0d7517330e1c6c2e42bf7533f3e46808a46e2fa7b0316788f676c3259a8951ba"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/test-flange-fastener.mjs",
+      "sha256": "c2077621fdc2cd92675adbf4d8f0bde24535bf161c7d9d8c8459703adf8e490d"
+    },
+    {
+      "path": "app-C04/docs/assets/flange-regression/test_flange_fastener.py",
+      "sha256": "a08d83a64822ee906e003c260a712dc3a7f9c0e93e7b716869bc50b7da0499ca"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/DFM_ATTRIBUTION.md",
+      "sha256": "965efc3f63774286d16cb633d1ae0cf070d295e5d043462ac948abca36a02dfc"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/QUALIFICATION.md",
+      "sha256": "6f51ee64004bf9cd89734b9776b8e923e1b117492858e6db460e30d42b76274f"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R03.glb",
+      "sha256": "d33cd52a93faf5d2857e33352d8571300b583f2f0dcf9f79774bee2bb4342ee1"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R03.step",
+      "sha256": "ceef5377719aa424e4ab3e492ee66371d71051aa7c093b8681aacfbf2c33779f"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R03_verification.json",
+      "sha256": "51e7389aac066ae0ce403e9b09f70cef1b23a705cc1ef1735bd2a3714208442f"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R04.glb",
+      "sha256": "1ecc779ac3fb462b911e977a94eb28b11b1c75065ba78f501051b5be472bf172"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R04.step",
+      "sha256": "1ba113112322d1c0442bd6705456655fd9d6a1bdd6ac2f6f1edb8ba2d5167dff"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R04_dfm.json",
+      "sha256": "78dada00f19720d0eefc86ba582b304bc7706162241ec8e65b76c12c5fcd6d39"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/adapter_R04_verification.json",
+      "sha256": "85f045450615791d3cedb088fd3ce7fb0e1f4e941b3e127724b5f3ae46ddb457"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/check_export.py",
+      "sha256": "f01e8636da54a269ce50843d44eea0364a6d4f9b3c562b466cdd8f3d739d3a33"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/dfm_check.py",
+      "sha256": "d95c2323db4348b4365172cdc87566332eb4717af8c33e1b06d4ad2a1f9e6880"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/export_roundtrip_tests.json",
+      "sha256": "4994dbe1688c9ba7fe203974c338e3b4dcba849e73dc58839e231072fd5d1b55"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/finalize_frame.py",
+      "sha256": "270fdd30ff934a9052aca50b835650e1d02b4ab7343a2139c9d268619f12f9c6"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R06.glb",
+      "sha256": "65ecead08b406b454a24fb9ae7f72894d3223a46e14e3d83826e01b5a5e62bc5"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R06.step",
+      "sha256": "4f31f400a6a1bdcfdcb79a962813ca3dd4fac7f6c3da46e5b73fb70bbcd1b9ab"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R06_cutlist.csv",
+      "sha256": "fbbc7a01117e986fb06f56748a87d585fba6e6a9f560d72af14bd2bfa4454f38"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R06_verification.json",
+      "sha256": "29fcc5588957d305d0d7a681ecfb4efd7fc2f050995fd5665cfd693bc8a938df"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R07.glb",
+      "sha256": "e77aa4d42a3898414fb339e92325ebacd49331d341900c4e88aaf85569bf7a5c"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R07.step",
+      "sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R07_cutlist.csv",
+      "sha256": "3f72e73675ac2c284b907d1af6d7d0d4ea0c1386880284abb44b7b741cdc4974"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R07_dfm.json",
+      "sha256": "454cb62926c1133c7296a823640a1d74ad1bcbd455a97b4f810b19c64b22b269"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/frame_R07_verification.json",
+      "sha256": "0f27a002e81da0505ad6c7463deec7535648e7a02444b17750f9d14466d43378"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/generate_adapter_R04.py",
+      "sha256": "1eb54dad807a9284a24ae0ec8083f0595f14c9d26b837ba986ee59a81460c8e1"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/generate_cad.py",
+      "sha256": "fddfede2e7e8c0c388542ab6a9a99983cfaaf7b10b84101688f80f3d62801b10"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/generate_frame_R07.py",
+      "sha256": "3d6647b6681cf6df2ff7ae1cba90fc3bf26a0a584b78c44ff46d42c41ea5e9dd"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/index.html",
+      "sha256": "74b6bb090cc2d57c6ea80f0c833071531dad3500934ffdac731916f7e04568eb"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/interface_contract.json",
+      "sha256": "de56584933288cae1b835af6e25eeaef741ea3b085f978614977f8fd006080cf"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/mass-power-snapshot.json",
+      "sha256": "870f03bbc8bd3003b7f64c972bdea59cce52bd15a0787328620ef83cb68cb9e7"
+    },
+    {
+      "path": "app-C04/docs/assets/mechanical/test_dfm.py",
+      "sha256": "2ad61a659cda07052f05f7d10a2457178ea2be0fd033ef43a53bdeb3e17f2364"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/fk-fixtures.json",
+      "sha256": "5fad630da665dc63b1d9bd3185315e77504b32094ef11f6e35cf7d8338ec26e2"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/geometry-report.json",
+      "sha256": "80ee70f76a2ffeabffe928e572e839e287fb0761508cd57d2cb2c0b28c536221"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/licenses/ROBOTIQ-GRIPPERS-LICENSE",
+      "sha256": "a47544ef0ad645c587e46348dc10e68b89c3e74732bd124c005cfcd8ede3b3b8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/licenses/ROBOTIQ-LICENSE",
+      "sha256": "376150a80f36fc6ca750935fb74f99b6a77b9942f1c6c5bf1d51a2adc853b096"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt",
+      "sha256": "f173efc8bd4b0ffaec2280b2dd126805ff7dddee8758b3d869132afc1776daa8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/licenses/UR-ROS-DESCRIPTION-LICENSE",
+      "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robot-kinematics.json",
+      "sha256": "9c34d1364915987a6a68d4633334a6d3c7aa57d1b416250fa1b9280ce9ca9ea6"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_base_link.glb",
+      "sha256": "593d7b6092e6a79ff09eff82956354be5c9739e84d47a735197663f6d6e34870"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_left_finger_link.glb",
+      "sha256": "d3031fb26bd50ceb6e4ca37afd85a67f7d64b4a280954e503a07a5c4b3ed2237"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_left_finger_tip_link.glb",
+      "sha256": "b245ba96bc7e33947648be70aa2080ba220a8c35f9a807fdc6839ca073354518"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_left_inner_knuckle_link.glb",
+      "sha256": "8ec1f58234f7e7586ba6d534df1b8c3682bba94c8db4d56430e1a25e967e019e"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_left_knuckle_link.glb",
+      "sha256": "adf4339f503c1e865f9a00506094cb2c4f0d6679f3e029aa69182841f634da18"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_right_finger_link.glb",
+      "sha256": "2bd439d4dcb26f21b5fc1c9c2d6983d1f17ee803bc3bc4009c9a62067c834a43"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_right_finger_tip_link.glb",
+      "sha256": "5f4690538e78f9db93ae85f9afbe6437c0e2f3d6176ee2867d9f393d7fdd1aed"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_right_inner_knuckle_link.glb",
+      "sha256": "44509c7d097141fbe952aae87c753c1183e51803ffe15e0f60d9366d37c4321d"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_85_right_knuckle_link.glb",
+      "sha256": "19014a9d0031c8514c3c17d63bae75bdb54f68eaabe91e7b04b821ea43c2c7f1"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/robotiq/robotiq_coupling.glb",
+      "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/LICENSE",
+      "sha256": "376150a80f36fc6ca750935fb74f99b6a77b9942f1c6c5bf1d51a2adc853b096"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/LICENSE",
+      "sha256": "a47544ef0ad645c587e46348dc10e68b89c3e74732bd124c005cfcd8ede3b3b8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger.stl",
+      "sha256": "f39a50be121122fc1c53c588a762ad1da8a0f64d39bc6f299cbe9b0597e7257b"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl",
+      "sha256": "9d90031cd99106a8be63609f8ff78580638d91cc4167bf66c09198329f2e65cf"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl",
+      "sha256": "f250a3fea49be4d1bb2383d9980172c59fc44031193ef2293ca540f756f6c1e6"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_knuckle.stl",
+      "sha256": "b7ec787f57a7db5b2b14e64ffbedaac28739e38f14aac8afa8b575bac941feb7"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger.stl",
+      "sha256": "1d018fa2f0b50aca5941778d78810b211b1abfc8637c7953451d76d4833ba6f8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl",
+      "sha256": "126f1559f2f7dca62449a6ca926c609fbdaa93ca66df805ff7c069bb206e3d10"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl",
+      "sha256": "c936d951ede875b91c180bd41d45b22ae23f8a39d9c3e09e29066453a8e863ef"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_knuckle.stl",
+      "sha256": "d151fb38f59748f1e6e627312e2ede96f2c98ba267bf722091665b20c78e7a8d"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/robotiq_base.stl",
+      "sha256": "ede5cd7d7846c051b88645f33d6bbb5ed9b36bbef404a19a46557639bfab7060"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl",
+      "sha256": "e5b4eaba7f75c4071c9c0213281af4798098c971891808d87e948383cd2b9aa9"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl",
+      "sha256": "4281e83002a25c20dc07c68b8d77da30a13e9a8401f157f6848ed8287d7cce44"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger.dae",
+      "sha256": "5fb9e5659c735e48eb55269da431cf61b3b7a6745922c1932a7adefb1db86dc3"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae",
+      "sha256": "785ec7a83b4fc6357c211a39bb117833b1cfd4e9bccbef2efc7f35aeb2fdb92e"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae",
+      "sha256": "2df009ef28868c90a4904370f5f4995c74ec84e0b8ca1371044e0ea669edcd71"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_knuckle.dae",
+      "sha256": "1b82214363d9548f3562be70e25cd23217a304c72ccd37bc1551cf1a3a64029d"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger.dae",
+      "sha256": "3b2245b5537eb596d7f8a4c64b12e3aedea46e365fc589019184d3b4200e664f"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae",
+      "sha256": "568371d25ddbcee8e432c0610bdcc7afcd1393d48d973eed92168e353eb4edf5"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae",
+      "sha256": "4cc6de99e177773ba755805b58b67537c3af24b2fd8f3a1bf4bbced87d6240a5"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_knuckle.dae",
+      "sha256": "532b6f6f8794883ff34995701036ca392461f26127757f92003db127693bc57c"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/robotiq_base.dae",
+      "sha256": "761a79d586a48d367d60f146ca77ef7d2821ad790f7b1b1c93b061ac59799267"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae",
+      "sha256": "ed326c745df2942d2efb8dd902ecfafa84c692d360a7c03ce9276ad491614ac4"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/package.xml",
+      "sha256": "b5b28a1ab206363bf299688f95986a97ad69ea130dafc61294987a027195a536"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro",
+      "sha256": "bfa97d612cf0df29079ab1d0bdcb5f6a8d14fc1563230eb2758008d8a12dc36b"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/robotiq/grippers/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro",
+      "sha256": "3d52ae3dbe23c20cea598c816fcc745acaed55b77c9e41b92ad55f0623d3d1d7"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/LICENSE",
+      "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/config/ur20/default_kinematics.yaml",
+      "sha256": "2328a839f0cbf3e55aa420110f1f708f64f37e7f65b5d6b8994eb4860b5991bb"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/config/ur20/joint_limits.yaml",
+      "sha256": "ba2be7ecf42ee235d83aa572ca3743532c45577affef0d75b65d9f0cd40aed66"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/config/ur20/physical_parameters.yaml",
+      "sha256": "684661b845c56a6df5521b3a39fed199601bee56d6c6ae5206570636e67f3fae"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/config/ur20/visual_parameters.yaml",
+      "sha256": "a43b2b1acf30e60763fd4ef268cbedf20423f81cd83596ed26f7043050fcc81e"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/LICENSE.txt",
+      "sha256": "f173efc8bd4b0ffaec2280b2dd126805ff7dddee8758b3d869132afc1776daa8"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/base.stl",
+      "sha256": "455a01c50280f986471a86fefe1b2b3e86f7f1afd9fb32493a4febc42d0388f0"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/forearm.stl",
+      "sha256": "4bd860969e56358c6aed65be1268b13a83535541aacac746323dcff217d3a815"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/shoulder.stl",
+      "sha256": "f20bd5197388f050d5cf752ff980b4a117b8559d4dc5b0ba95a52f9c3e76d182"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/upperarm.stl",
+      "sha256": "0093cb733ea040e9ec715b9b4a5add42961ab99efab752abd0c0b1e933a578fa"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/wrist1.stl",
+      "sha256": "19bc042d09f58aa2a0646dead171955f4d6f3518ef9b4c5a99ba6b565536532e"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/wrist2.stl",
+      "sha256": "0a2972fb64f334297bc8bdd42e343f572f109bdbfd867a93785763d9b4095740"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/collision/wrist3.stl",
+      "sha256": "d985f80bc6ab8d6979e9e9267c1ac2442a804d9905022b1fd77eb1dbb7de93f4"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/UR20_DIFF_8bit_2K.png",
+      "sha256": "9c659b5115540ac6f0af94d504e04ca734afaa304dc0c1e8392741c20ca055ea"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/base.dae",
+      "sha256": "dc5673ad78ac29b3c3f6ddd7465529af5eedbd3b76fdf4d2940b0ec2ce05762c"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/forearm.dae",
+      "sha256": "1b9523f0122f7b186a0b0223636b0713e908536f4812cb7ef3ead227e310f09b"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/shoulder.dae",
+      "sha256": "4ac24b17acd73d47d6f4c213e2786abe4d491600363591790ceaa8f601474e20"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/upperarm.dae",
+      "sha256": "550f87116f6f75588ee1ab028a1413cffe45546e5bda39a7e22a56888de9a4ad"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/wrist1.dae",
+      "sha256": "40e172b209db1a89f2bc74e4120ab751ba6ca7a13b80aba4fc286280902e6483"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/wrist2.dae",
+      "sha256": "ba20b26ac45e934efc804d3376fe5bf0d2c2fda6f9563a48b60d926e76404a43"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/meshes/ur20/visual/wrist3.dae",
+      "sha256": "8440f202606a4c1325a2f31b45ae19ab439c99db0842f2ce7637dd789563ead9"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/package.xml",
+      "sha256": "fb8dc76afa1b2ac0c631295e575bc1655df6131fa82864c354e969d48260ecad"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/urdf/inc/ur_common.xacro",
+      "sha256": "91b5a8c55c3a0b04ff0d8abe74fbaf7635966e903e9e978cec473bf88234f9fd"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source/ur/urdf/ur_macro.xacro",
+      "sha256": "2683ddcc2db392116d69ac775e4d6dd1c7b3d420f9eca926bd10cf43a1ce8b35"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/source-manifest.json",
+      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/base_link_inertia.glb",
+      "sha256": "e1a94e380e1e0803d1405f95c5dbea7229f5ff89639ebc0b072a0c962a67d344"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/forearm_link.glb",
+      "sha256": "12bc13217620a21b467a0548c2a8561ef326298026b6ddd1c6b9ba75a1c0b1b2"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/shoulder_link.glb",
+      "sha256": "23ee4b44fdb268a5731e4ca73739366137fe663c78aecd819987646e1d2a8deb"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/upper_arm_link.glb",
+      "sha256": "e8409bdff71f2d03fe63a7d3a4173553809f09adec52d60c872cb38a4f47dfb3"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/wrist_1_link.glb",
+      "sha256": "de27c455a91f51296984ad742ff2509ac8bc568d7446f95c92b52c39b837d951"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/wrist_2_link.glb",
+      "sha256": "366729a7a851a3a7d4015fa2a748b680e4a9d9585a500f80af83d1a318458e48"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/ur20/wrist_3_link.glb",
+      "sha256": "988d9e53d603f8e36444436902b2eed4a0870306fe3d1b4d33c9459a138c7833"
+    },
+    {
+      "path": "app-C04/docs/assets/robots/validation-report.json",
+      "sha256": "e08edeaa850513e25c3d7c2e9809ecbfa8f2ab1fd0c6bf24cc2203cfab1f9565"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/LICENSE",
+      "sha256": "1e72e132d03bf81cd784cafe84fd5e1bf3012f1bc9e0807b188fd98ec720014f"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/README.md",
+      "sha256": "b3bde9db129c8360b2c1d99e2c01c9d5eaa71b3d348d8913176960f2533f8ad3"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/convert_assets.py",
+      "sha256": "2a45644edff416d5194763f7b12137c08baf40976fb3582417ebd575d7e7ab49"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/diff-link-zup-m.glb",
+      "sha256": "1e365f9e0b0f32eb6839a4d3a2238a4dcbdc1b243a7dfd1c64545642155de184"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/diff-link.stl",
+      "sha256": "b7843835210625e4d3c34fdfab5e19131210480df80c38496f19ac84b3b06995"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/fenders-zup-m.glb",
+      "sha256": "6be8ac917026d2153474438122e891ded528e8325946bf5973a43b9736c64853"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/fenders.stl",
+      "sha256": "fc6f76cf0e35a39d76596b2554db7656683bf0b1d7a706b72ea0bee426e6aa0c"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/geometry-report.json",
+      "sha256": "9dd33dd419a2ebf51e039f3b7af9b0bdb5fd8f1e22edc358f73bef97541ce644"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/interface-contract.json",
+      "sha256": "072b23835c5f6f6af88bf6c39b94d9938ce39c9ea89523807b9f22b9cb435288"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/package.xml",
+      "sha256": "151ae39b6c669ab39738b314b61f2621e8cdd410834536778a565404dcd6edb5"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/rocker-zup-m.glb",
+      "sha256": "d819cdb61902d53eb5d7e35f39c7ab2d052cc032f0efd55b7095348b62a352c6"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/rocker.stl",
+      "sha256": "d8cb34b80b97409813ac93d2b6897b30b9fe5c7529f0a41292910685fe424a1b"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/source-manifest.json",
+      "sha256": "ddca914a0cb5a28fbfa7503cbc7d1ad30e02ee5ae17086f6ea5ac2dcc295e318"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/susp-link-zup-m.glb",
+      "sha256": "15be09629345a8df2974004d89ad86295c2063e645eabc032e1551c4aee9512b"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/susp-link.stl",
+      "sha256": "96cfe881ee02749c193de154df0a807da6d76101d7c43ea902986e056ca357f6"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/warthog.urdf.xacro",
+      "sha256": "b6af4b7ca792efeb9938068bb158fe9808de6e7da4f11c3184bec4d9864b155b"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/wheel-zup-m.glb",
+      "sha256": "3b0a72585f4d13aff05186da68d60e9eb777365fef4816810db3087e5a27e410"
+    },
+    {
+      "path": "app-C04/docs/assets/running-gear/wheel.stl",
+      "sha256": "7507f7cde1194f6b0725e4f2d4728f6229c87a6ac9022c4fb8ca24fb429050ca"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/PACKAGING.md",
+      "sha256": "40c5a7061a20e46c702f8c962ec648a566bc1f7a1a814d2aacca24da28f2930d"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/README.md",
+      "sha256": "7cf26cb8b16c4da29b2d348a874ef9667a6054856d0cc1d6df6aaac6dea68ef7"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/SOURCES.json",
+      "sha256": "640836c01d23bdd326d820d04ac6f7378adc6987ba213411156a1a3737a30845"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/__pycache__/build_fixtures.cpython-312.pyc",
+      "sha256": "a65fe37e62657bf9d9d37df7b709e0b7bbbf927005fe9305ea8dc4fa51ed86a5"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/build_fixtures.py",
+      "sha256": "670ae2f6bb9d30f2ba017a012747b751a2596db94f30faf2034c1730d8e20a7a"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/chassis_trestles_S01.glb",
+      "sha256": "9aa19eeb6eb839ffc6100d9e4e700a5076708147a2bbe1e1d4ea7e2403b25e28"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/chassis_trestles_S01.step",
+      "sha256": "1d1cf078cf41448bc4371a8ba3633804979b29247933ce07e4c48013db13de61"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/chassis_trestles_S01_verification.json",
+      "sha256": "e42d5e0e7ae8a44d05dd712ea3e233128432acbb435d64f372216eb836a86fdc"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/check_pin_axis_tire.py",
+      "sha256": "4a7962d7d216403ad75ea9d88929efdc0f324d42bf3978cfdcf3171b5dfa6b21"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/corner_cradle_S01.glb",
+      "sha256": "9d7a25277963a2ac4f2ae719638407463f16428b760518dc8ac14e1770e84ad4"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/corner_cradle_S01.step",
+      "sha256": "a93128d2bc5a8ace3466896ae15f53c4bf4f63f78cd85ad32d5cc538089e21b5"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/corner_cradle_S01_verification.json",
+      "sha256": "12162f433c27c9a28469e3eaee65b9ea0577fa0580cbb3aa02ba4b70affd8a88"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/interface_verification_S01.json",
+      "sha256": "97f57534080a26cd7fc58b4e5670265b139d1b08a08eb9eeb05ea71bb8c5bbd7"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/package_release.py",
+      "sha256": "4a3cb4ca567e745f1ee4f04a1ec0777bf6356f6ad443818e8f0a9fddc6639759"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/parameters.json",
+      "sha256": "8f48272f378d7267ba2ab70a9499bfc78998778ab5dc2401d8f8db135e535ff9"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/parts_S01.csv",
+      "sha256": "286fda8618c10ca788d7864eae94f5b56a1a6a720b03214649f1db5b2fa439d7"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/pin_axis_tire_obstruction.json",
+      "sha256": "30467f0063a83f5d1d881dee5bebabd1580f9be0fc68a5ba94101f43a1653175"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/preview_fixtures.py",
+      "sha256": "65838bea1e3ba7f15f19b40aebea80132ce989d0ac6f5404571ffb94f61a0837"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/reference_evidence_S01.json",
+      "sha256": "2bb3bedf717b142ac6ca7ce0b09fa0d67d3f40ed14a078c918e386e6280a22ed"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/service_fixtures_S01_preview.png",
+      "sha256": "4d433d556a47d2d77b7782be14802a668da6f877021f78c91d46ccb8f047c4ca"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/service_interface_contract_S01.json",
+      "sha256": "89101b6bcc18aefadbc50d3f8099f86909ff3abbcb95c009a07e8abee007c5fb"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/verify_interfaces.py",
+      "sha256": "0466b9ed6ced121a1abd23556d0a0333f0f48b6aa2a252cca80c703ba28da876"
+    },
+    {
+      "path": "app-C04/docs/assets/service-fixtures/write_contract.py",
+      "sha256": "a4a59a9e420a02bc039c1ea94506fea5c13ae9bd1f3c532ad7ff8510c3a15dde"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_R03_assembly_glb.zip",
+      "sha256": "1eb4ca21fdf1a737c6d2107ca4769b1718f6028daef099904d3a2060785f520d"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_R03_assembly_step.zip",
+      "sha256": "d307fcd24f22679973b8ba0f530320469be2a320684f8fae8139c28300a654b4"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_R03_sources_tests.zip",
+      "sha256": "09ea9688aa3c212bef776a525f1eec74eb1753a04ff622ca62dfd840d9b02e09"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_assembly_glb.zip",
+      "sha256": "30766ad999f0c8e74475e2696ca2ce08f4e9bd235c5c1d89de77f5cfad2d4d2e"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_assembly_step.zip",
+      "sha256": "8ffd0762263bf4325be38113e9ec14d55c02e48605e31597d15a78b90b8e2d85"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/C03_sources_tests.zip",
+      "sha256": "eebd643136724f2624dbc7798af0336043503d8be022df209db476588003993b"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/PUBLIC_WHITELIST_SHA256.json",
+      "sha256": "402999d03443dec9a65594746f374e078de477457d57c91afe52a942f2eac1f6"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/PUBLIC_WHITELIST_SHA256_C03_R03.json",
+      "sha256": "378004141aba4d4c4655103afda844886b322e34e8d2b9a794b8ffb46975ca64"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/README_C03_R01.md",
+      "sha256": "a42a6e0224aaba6e2a0930d7880c853df4f6d78d2ba4b93331bc88d2f2b373f4"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/README_C03_R03.md",
+      "sha256": "f4b731eb7908241b527219908aceae8128289cbfc1437d1e19ebed69b27749d5"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/REPRODUCE.md",
+      "sha256": "65bba5c6493cfae599c2282599e85a7ed120a3bb0aa76e00f03a5b11cdfb9422"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/REPRODUCE_C03_R03.md",
+      "sha256": "f4b731eb7908241b527219908aceae8128289cbfc1437d1e19ebed69b27749d5"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/SOURCE_AND_RIGHTS.md",
+      "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/SOURCE_AND_RIGHTS_C03_R03.md",
+      "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/USAGE.txt",
+      "sha256": "4815fc8b3f25de59a5a3b2b9663a2c007adaf6607f136a699e1073dcb4d2055d"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/audit_c03.py",
+      "sha256": "5a0a35063bcb4eae777a75fe3a93f46c3d49fea64bf66ec2361c57b3c3b0b0ec"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/audit_glb.py",
+      "sha256": "9331d143476bef4101166d93ac153fb0b147bcc6fa364f557aefb9a3150bd1d3"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/audit_report.md",
+      "sha256": "fab25bdd4fb6d025939955193a8fa2fe447af5153e7c9acd7ddee023dac28418"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/audit_summary.json",
+      "sha256": "ddde71e409e51b6ce47e12a75fd5ed37fac1af98052ae8d6c1609ce5125b9e3e"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/boundary_fixtures_C03_R01.json",
+      "sha256": "c12105930b9d732bd8a44882f5463858c1279a594359733b0499627f7436b97f"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/glb_alignment_audit.json",
+      "sha256": "382672e7d59a99fa29f21608f98eaf26da02f1b7affb63ea24d1c92d319686bd"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/motor-fit-neutral-sampled.json",
+      "sha256": "c15e22c4bd087b7aceb7a010e6435be624e8739ff1bbab3e8137d94099b688ea"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/motor-fit-travel-failures.json",
+      "sha256": "fd5aa994abff35b1e1ecd50206d0109adbb589d3ada989f725180ee2a5f5d008"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/portability_receipt.json",
+      "sha256": "b19b00eabbefe0e1394e517b33a352a4a4028c5369074281358024b4c1e2dd61"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/audit/selected-revision-equivalence.json",
+      "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/C03-upperR03-lowerR04-private-arm-summary.json",
+      "sha256": "2947ca6c0c0d096de657ce7706c8f4032191db44e040c0f3397a1996d0c6d05e"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/C03-upperR06-private-arm-summary.json",
+      "sha256": "deed2df8f947e01deb654d6454211ba5a79cbcbe596606350d24e20ad000d0a5"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/C03_R03-private-composite-summary.json",
+      "sha256": "5b56161c2852756cef4ec62c2dfcddb137ad91bb83bb466478a09616661f40c6"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/C03_R03-public-safe-wheel-evidence.json",
+      "sha256": "1305c6a562b3f53b41bf8639fddee4c63549a2ec1ade595fc1bd7155c0368037"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/PUBLIC_SAFE_MANIFEST.json",
+      "sha256": "38bfbbec444b5ce5bc1086a67aab5374de8f6328bbf058635777b63b249b0612"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/R03-cross-corner-arm-bounds.json",
+      "sha256": "157ec5dd3684f2561ba8343da60a2693eebcb901d16322b95346f922c5c8582e"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/actuator_comparison_R01.json",
+      "sha256": "12c63f1f270539aa13a2acd56d77577b1879730d0e5bca3233d87cdd07f4d9ed"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/arm-inheritance-R03/numerical_audit.json",
+      "sha256": "e1275bd76d807be16ca1d779fb7309805815badaadb5a3b0be5b06552e7ffb81"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/motor-placement-numeric-contract.json",
+      "sha256": "d03b130f5f9c808d17e7c7a2b16bb0db2184b72fb11ce60b2b34f6b10c4bbbf6"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/private-C03-nominal-motor-wheel-fit.json",
+      "sha256": "13bf100d7fe553ac49e92792fba8e524350008b0695c8f3b00b2518b51d29f2d"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/private-C03-q0-12case-summary.json",
+      "sha256": "8c18569a8509810196f115cbc9f580be8a82efe46df299bbc51e51942c182a59"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/private-C03-travel-final-summary.json",
+      "sha256": "226a3c59d7a0b64112b6c0062bd7fb6e3780b011c757600f8915df30e3799ecd"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/evidence_C03_R03/selected-revision-equivalence.json",
+      "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/index.html",
+      "sha256": "f3f91ba8b8fe633dedd3a4027d9e457c0927d7e74dd1d1c8812ae8ff502df681"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/interface_contract_C03_R01.json",
+      "sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/interface_contract_C03_R03.json",
+      "sha256": "5fd47044d4385792a289c6418950ec021403569411d8a8e40f2c9339c0bc569b"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/kinematics_C03_R01.js",
+      "sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/mass_cost_ledger_C03_R01.json",
+      "sha256": "c2b160ea073de12e695e506146b2e80763c09b3a1ada0b0931d87ed2a0930d37"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/mass_cost_ledger_C03_R03.json",
+      "sha256": "47d005831fc01d3d1f4e6e5757a0cf41869316eadc25b6e5ad8778f3ba85851b"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/original_steering_C03_R01.glb.gz",
+      "sha256": "affbe8ce886013ad1df51a6ba56dc9eeab579163da76880f7a16139042b131fc"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/original_steering_C03_R01_manifest.json",
+      "sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/original_steering_C03_R03.glb.gz",
+      "sha256": "e00479aadc092d5c0d39e0c760cc29dcba3d716e84fb769315497798cd685123"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/original_steering_C03_R03_manifest.json",
+      "sha256": "4e5da71d14f5b259588b43020af275e80d5beffb71473aca0f386dc70f7a4157"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/runtime-packaging.json",
+      "sha256": "79bc55768ec9e53ef6eb6809b15143f1f29eabb70d291520d4786f00af5509e6"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/runtime-packaging_C03_R03.json",
+      "sha256": "33cab6fe3790442f48c01b05ee9dbb74ee8bd302062cd4d996639f10da2f3fae"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/source-archive-packaging.json",
+      "sha256": "c7acd17e179a76ddd8bb3d77a552d0a9cedc46ecc1c056f1c59f00b7962423f4"
+    },
+    {
+      "path": "app-C04/docs/assets/steering/source-archive-packaging_C03_R03.json",
+      "sha256": "0f30eee96ddfbff90742b357a1daedf0e89c0d6a27c5a797b574be7668f462e8"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/ASSUMPTIONS.md",
+      "sha256": "afe858ff5a6ec473862c499cca9b06d4ffe444c033175901fb70241180523b4f"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/README.md",
+      "sha256": "47ce212a2cc467dfec0bb31eb85089eadda0e49a1140afcd2d084adbd4d8934e"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/SHA256SUMS",
+      "sha256": "7fbbb5bec39e44b33f2496c08529bef25773b8aac548a35265f6a415e224dc29"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/SOURCES.json",
+      "sha256": "09880f820663414d7e28c54643013575646de3d140bb8b7bc540166acf956f1a"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/build_wheel.py",
+      "sha256": "5d148ab418abea0e7a088653f6ecb069466d68572e1a1b6684b3f6b13df43147"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/independent_verification.json",
+      "sha256": "c91159debe64d21c940312ed9bd641cf3e854c14ff692b539a1a0bc28e07d281"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/interface_contract.json",
+      "sha256": "a6fffb467706228c037eb6e846d9f88eb5875998fb96e4ae7ba90016828e3ff3"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/parameters.json",
+      "sha256": "50064b189a1ea04fd468df404bea418617512f27f70296b1314a2864b572d192"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/render_preview.py",
+      "sha256": "6e12be8a7075ce88b24aecb856b950051dcd16608dc51a291c92236eec515e05"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/rim_C01.step",
+      "sha256": "a88d8fc9192be9ff9b222a4709c4ed1b1a0777f5e53f5d0be9f55b6458f21b10"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/tire_C01.step",
+      "sha256": "a59623920b27b75258a55e123f050d828b1595e52f3a30df2910f32621082b5b"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/tire_C01_section.png",
+      "sha256": "eef18a1386827fdd11629105c1df2b8bcacf4f7d3b4d2b25f642a16370764cad"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/verification.json",
+      "sha256": "26370ed86ecf3e1502fe14c6c9997d280dea8f7b9a65bdf2a4a632a25e452832"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/verify_wheel.py",
+      "sha256": "064746299097f494e663d44dcb6fe9b5defce3c19bbd95c26d12397cae8b690a"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/wheel_C01.glb",
+      "sha256": "120fd2031706d4f1aa89a15fd9ff35ffbd90de574aab48799bfd49c8afca7cac"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/wheel_C01.step",
+      "sha256": "b98e8e2b983024b612cf7083ec386be9b89862c21d7134c376f278037b28714b"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/wheel_C01_preview.png",
+      "sha256": "42afa50a6b1214cfc9a4655e03d8daaabcc7569c9f51c9c5f1479040f094e11a"
+    },
+    {
+      "path": "app-C04/docs/assets/wheels/write_hashes.py",
+      "sha256": "5c2907d3638a9872fb9e94399ac569ad6ba1ce679e24295f218b090f4fb8bfbe"
+    },
+    {
+      "path": "app-C04/docs/cad-loading.js",
+      "sha256": "3f1917a6631350220d788990cca939344c208cb504ecdda131788455a0bff453"
+    },
+    {
+      "path": "app-C04/docs/connected/actuator-scene.mjs",
+      "sha256": "10c61f5a4170648f09f0a92413391cb16f499ee57b89a44c74dfb260c219f1ea"
+    },
+    {
+      "path": "app-C04/docs/connected/apply-battery-polarity.mjs",
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "app-C04/docs/connected/body-scene.mjs",
+      "sha256": "ce213bf22ffdd2ff532fe927ad1075e9a27fa889e3f1f05d598e6d9a3a1cd190"
+    },
+    {
+      "path": "app-C04/docs/connected/connected-mechanics.mjs",
+      "sha256": "beb9998be14e1b93ce9dc7ac27dadb8c50aa04047905af836ec5890ebd3b48d8"
+    },
+    {
+      "path": "app-C04/docs/connected/connected-motion.mjs",
+      "sha256": "387141c3aadd1d62edc44efc408cbf5677124adf4d454e1a50480cb0ce0e79dc"
+    },
+    {
+      "path": "app-C04/docs/connected/connected-transforms.mjs",
+      "sha256": "be9944cfe219c0059a4af9253013a0ba4363ab98fb4717376cb07f19cf82e03c"
+    },
+    {
+      "path": "app-C04/docs/connected/connection-registry.mjs",
+      "sha256": "6474eaafbee4f2eb07700cbfd3b512a4d8312d184074c9fc57feb5810e684127"
+    },
+    {
+      "path": "app-C04/docs/connected/drive-scene.mjs",
+      "sha256": "c063b4d2f01f3a53853ad14005928ed9c146772b39c6e041f8be2c07178c7336"
+    },
+    {
+      "path": "app-C04/docs/connected/electrical-scene.mjs",
+      "sha256": "8d138b3da55bcbf0f9a0cbd23530301fcb1842e6ede7d710b01f1d0b680de446"
+    },
+    {
+      "path": "app-C04/docs/connected/extend-actuator-graph.mjs",
+      "sha256": "a94838a9f8d948ada5a79cd1ee525eb8c4372e95e701f1cc6959a033efc4b23f"
+    },
+    {
+      "path": "app-C04/docs/connected/graph-coverage.mjs",
+      "sha256": "8392f52c45ea3034e6f9709a43fe1c2f6b4b45619dbf0be552e72fb01092c48d"
+    },
+    {
+      "path": "app-C04/docs/connected/joint-scene.mjs",
+      "sha256": "3c122ca5303536626bd784892e29064dbcf0525d038f337fc3c8a5e4a12e17c2"
+    },
+    {
+      "path": "app-C04/docs/connected/kinematics_C04_R03.mjs",
+      "sha256": "b9066e540dba1d6f9849716d2932578d48234f4352b91e25a3a9dac3a25da56e"
+    },
+    {
+      "path": "app-C04/docs/connected/named-part-patch.mjs",
+      "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
+    },
+    {
+      "path": "app-C04/docs/connected/rigid-matrix.mjs",
+      "sha256": "7c9693be24985d27ea330665fad6a0f6d22b6cfc7f87640628e7882cb99cd006"
+    },
+    {
+      "path": "app-C04/docs/connected/shock-scene.mjs",
+      "sha256": "48fbf03dd8b5444407b5fa97d290ca5d39e25fe7e4a129e6951d8fce9765350e"
+    },
+    {
+      "path": "app-C04/docs/connected/spring_profile_runtime_C04_R08.mjs",
+      "sha256": "f00efd948ba3debb91071995a4f42d9e7c7d66edb033df3750be6c439ee383b5"
+    },
+    {
+      "path": "app-C04/docs/connected/structure-scene.mjs",
+      "sha256": "796d8c4961b244741708288565c1c2e6044c029f6c15e83ae78703093d162442"
+    },
+    {
+      "path": "app-C04/docs/connected/wheel-scene.mjs",
+      "sha256": "fce24c26605150f3840975b1ab67f27465dbaed17fe9227bb00e27e00c70d728"
+    },
+    {
+      "path": "app-C04/docs/contact/README.md",
+      "sha256": "3cb5d7030caf0a723a38b673e36c0326f909e1f65450b8c3f80281584547091e"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/coupon_40x40x30_mm.step",
+      "sha256": "74754f2b63902a459801598418ba0d63fc5085de52ae46d7e58bbb2fc661e01b"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/coupon_40x40x30_mm.stl",
+      "sha256": "59bf8ecfb7d1f782d4ec03b972b9e5c7c859dd02737f4b168f6f98210aff9ed7"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/heavy.xml",
+      "sha256": "59c6029d2b963e96540d39e7e71e101627cf1d871e0da61f018819a0781036cb"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/low-friction.xml",
+      "sha256": "84899969e2820184f028f2dfb419429a1df2b28fac7532a41cffd59c88aebb0a"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/nominal.xml",
+      "sha256": "12e4ba49c9caa83e34e949d7441414ca0aeef2b91d3f6762acc83a3495e30607"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/2f85.xml",
+      "sha256": "d48aca5f9151798ffd38111ce4e8b2081f3ec2d4f525161b33643451580010de"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/CHANGELOG.md",
+      "sha256": "38082db6de93a95ef85a319c2a8cac8b1dbcff597a718d8cdf843c339e7b23a6"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/LICENSE",
+      "sha256": "3d5edd18d1e22a17666e9bb84270171ed5ac90b192d24e0177fd171708ea2316"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/README.md",
+      "sha256": "a10f34027d417f8f7b9102b74b42976031f0246f3090444728ab322bc4632aaf"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/base.stl",
+      "sha256": "1c7b9f2bd92d705fc4e897c94e905973a3c05f406845e942229433deb7041453"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/base_mount.stl",
+      "sha256": "87971dfdd6e5311b5a723e7b73c4701ebf5c2364df671500f30dfc1c53c8e61a"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/coupler.stl",
+      "sha256": "d5ee95e62f8415bf5b6e503c831a958f5fc1990bf9b2865329ec38a28932727c"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/driver.stl",
+      "sha256": "bbd6e868b1778bead60d2516c7ede581d7ad4e431744b1828757d6ea5129c112"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/follower.stl",
+      "sha256": "633793332c081641ce200df27a40643cc293b29956e3cb5cb29cb811c33ef1c7"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/pad.stl",
+      "sha256": "4af1fa8d9bb285abecbf5dfc88e74cb30f059a7a074c2030dc35e9ee4316019d"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/silicone_pad.stl",
+      "sha256": "ca20c0fa61e6d3ce7b04bed25360e048e31dfd88ace04187aa6d9e8f4ca3fd0f"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/assets/spring_link.stl",
+      "sha256": "4fb74a8a0d76c0e471cf19fd48bc676fd5b19123798e7a39eb6aa56869354283"
+    },
+    {
+      "path": "app-C04/docs/contact/assets/robotiq_2f85/scene.xml",
+      "sha256": "dbc7255f3e1a5539e59cffac3000a49f19aa3cae384061aa74ec787e6a5760ff"
+    },
+    {
+      "path": "app-C04/docs/contact/index.html",
+      "sha256": "5aaea630383910dcc5cbd37f6e2e52c27492989fc4bc82a152906fcb1ee08336"
+    },
+    {
+      "path": "app-C04/docs/contact/package.json",
+      "sha256": "ac6f80e50f0e4d4fa45c84367814bcc8a3b370ed28636283cf917e48d2cc9c58"
+    },
+    {
+      "path": "app-C04/docs/contact/requirements.txt",
+      "sha256": "e7550d4465bcfb4ff40f467b1fb3a99d2ffc10eba4ceff18fd5d12174456c044"
+    },
+    {
+      "path": "app-C04/docs/contact/results/browser-qa.json",
+      "sha256": "327e30667e325e3bef1ae106d6f5f1f0a48159e29da54f120788dbda9bab802a"
+    },
+    {
+      "path": "app-C04/docs/contact/results/native.json",
+      "sha256": "9537cb19cc62c634aa635688a415f2262a2c08e0ae25ff688906ed1de9a028b1"
+    },
+    {
+      "path": "app-C04/docs/contact/results/summary.json",
+      "sha256": "248fabeef0e8016d48c6328d96cc4642516ed6a79650ab51c8ae4c078096247f"
+    },
+    {
+      "path": "app-C04/docs/contact/results/wasm.json",
+      "sha256": "8266c10268529f4e4f16f9f1ea53d6fcae9303f941421031ae32895a98de8f19"
+    },
+    {
+      "path": "app-C04/docs/contact/scenario.json",
+      "sha256": "c6f4e12b376ae14eaebb0164f33f04830a5325285d9634fe3f7e8651b2c61ce6"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/browser_qa.py",
+      "sha256": "e28d44bcb900dd7eacf55e978ad41b7c7a5c0622858d14533692bef63ab4f64a"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/build_scenarios.py",
+      "sha256": "5d4543c6a931e8143e6d938bb495bced58f2d3ea6f6305e88f9f5a9b7fc609f5"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/fetch_sources.py",
+      "sha256": "9a5cb174be735859a5541b9ac972bb429fb1ea11d12fc35e5147b13c76f991e8"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/run_native.py",
+      "sha256": "03ca21d517902033aee03112e735ec8a12fb900514b79e6eafdbb71f92780334"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/run_wasm.mjs",
+      "sha256": "882a4033af5d268903b4ef5337cb3bfba57ceeab8c8bd2e9d96c7260cf71c185"
+    },
+    {
+      "path": "app-C04/docs/contact/scripts/validate.mjs",
+      "sha256": "f537466addb7da7112ad3b8d7e1ab64a23e8fe44f6e54c623c6d930ece48da79"
+    },
+    {
+      "path": "app-C04/docs/contact/simulation.mjs",
+      "sha256": "37f0dcf2217bc31abfccd1ae95ec0348c590aa8034150e13143289eed9aee5e0"
+    },
+    {
+      "path": "app-C04/docs/contact/sources.json",
+      "sha256": "d96475730bff407901c568f4d29680dd186ec788653d15d88b1ff66a516e11b9"
+    },
+    {
+      "path": "app-C04/docs/contact/ui.mjs",
+      "sha256": "72a05e4a5ff93fd3bea0a2e57ccfac09e8de26772ded004bbb474b91417925e3"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/LICENSE-MUJOCO",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/MUJOCO_PACKAGE.json",
+      "sha256": "6f107d346ea5c8839555467bb7dc186f664604f9e927dd3f02718999d5a3446f"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/MUJOCO_README.md",
+      "sha256": "8aac6a48315d961e9f5d06b1df254f6033ce541e4e8b7ba8d376859d6ad6b570"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/OrbitControls.js",
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/mujoco.d.ts",
+      "sha256": "fc881715deb2e0ba471d5e10809ec30df2a908d74c21f8f2e20d148096f7dea4"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/mujoco.js",
+      "sha256": "a5d5f00c4c16d327cf8275f88ddd47c857a5e9baec8ca4174d676fe299267a0c"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/mujoco.wasm",
+      "sha256": "d59c489dd521c80af6965756c5b90daff549fa281566544e4540c170d937633d"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/three.core.js",
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "path": "app-C04/docs/contact/vendor/three.webgpu.js",
+      "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
+    },
+    {
+      "path": "app-C04/docs/cost-math.js",
+      "sha256": "cc2b10dcd990c7e7ecffa66aa890678bbb33e3a4ca97a470e2c3f87af0c82027"
+    },
+    {
+      "path": "app-C04/docs/cost-ui.js",
+      "sha256": "29723ee5fa6c0b6699fd2c6baff14a2d181661c97ac2370ae028a070c3a03467"
+    },
+    {
+      "path": "app-C04/docs/costs.json",
+      "sha256": "5d759de1dfb91cb7dee728dbd4f80c9d7bfc70ce151d25e8b528394967a63507"
+    },
+    {
+      "path": "app-C04/docs/index.html",
+      "sha256": "5563f4d186645e418358db58963999fa0a5d1c0192d149714ae4e956aaa291df"
+    },
+    {
+      "path": "app-C04/docs/kinematics.js",
+      "sha256": "6a131df727f4e89501ae21fd61fb846663b64c4e9df259641e6216faac2c5993"
+    },
+    {
+      "path": "app-C04/docs/legacy-estimates.html",
+      "sha256": "9badc9cde33347aa14159fbb60c8a55b10f185f2e553cb8f874b92f1525de6be"
+    },
+    {
+      "path": "app-C04/docs/mobility.json",
+      "sha256": "468eebd54f7afc1e42fdf823423485f47d6529f74398896825eb3f456cdb1bbe"
+    },
+    {
+      "path": "app-C04/docs/model.js",
+      "sha256": "85f99f1a9f94a1efae594c0ff205cf995c783378a0f6766c8d43ba99b6cf9ebc"
+    },
+    {
+      "path": "app-C04/docs/rover.js",
+      "sha256": "6b9dd4f7c5800352c41e3f9205b61fb8cc50622ea6d4c3abffcf5f510405db50"
+    },
+    {
+      "path": "app-C04/docs/scene.js",
+      "sha256": "994164a00869afa439d5e4eec26913a8bf754a7b4e139fcdb19d90cf640384fd"
+    },
+    {
+      "path": "app-C04/docs/steering-transforms.js",
+      "sha256": "d355d1e4a535a140311f833c637be6ecb8f4497edc82cc35255c789a03200770"
+    },
+    {
+      "path": "app-C04/docs/steering.js",
+      "sha256": "dc2bcab41efcfc8032cdb78512b45f049d06f99047e4ab38fcac7309fe4228b4"
+    },
+    {
+      "path": "app-C04/docs/style.css",
+      "sha256": "5441156b066a6a0ab7a8afe95e440f455c2fe7b2e81200ec14a42c0c0c72477b"
+    },
+    {
+      "path": "app-C04/docs/suspension.js",
+      "sha256": "8446608810fcdb8c0393dc29783bcc883067034da804f0f4ba8d91ad40beb50e"
+    },
+    {
+      "path": "app-C04/docs/vendor/BufferGeometryUtils.js",
+      "sha256": "9fb63427ce6641fa14fd0baff9cc4d1b5f9c3d85fd084bf2e90e803c44ec1797"
+    },
+    {
+      "path": "app-C04/docs/vendor/GLTFLoader.js",
+      "sha256": "200cb5621236d83d241662078878de25800b152d091ac63678d74179abb0df6b"
+    },
+    {
+      "path": "app-C04/docs/vendor/OrbitControls.js",
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    {
+      "path": "app-C04/docs/vendor/SkeletonUtils.js",
+      "sha256": "b1632a703206c3d830de9fcbe515696770d04b71a15ee6b50afa6d2c3298c86f"
+    },
+    {
+      "path": "app-C04/docs/vendor/THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "app-C04/docs/vendor/three.core.js",
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "path": "app-C04/docs/vendor/three.webgpu.js",
+      "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
+    },
+    {
+      "path": "app-C04/index.html",
+      "sha256": "400a88cec339247254762dfb91d3ee0588a00fac46edb6a774d1fe7c11b94067"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/ACCEPTANCE.md",
+      "sha256": "04417f2fcfcb6ad5b6ea2eb9fd6bbdb78a81d975bc577349489f1ee0d243d81a"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/apply-battery-polarity.mjs",
+      "sha256": "6f23b85b97feec4842cc0fd73ff7322f79463a183a1fb595548f309e4aa330fb"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/body-scene.mjs",
+      "sha256": "ce213bf22ffdd2ff532fe927ad1075e9a27fa889e3f1f05d598e6d9a3a1cd190"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/check-connections.mjs",
+      "sha256": "83d1d2c687b8261a9973ba3813807e7ee370861b5913d34b565d6389f46f97f8"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/connected-mechanics.mjs",
+      "sha256": "c026ea5db06c713120a03a9b75fa8becffca27bae3f82a6cf4dfbdf08f1ed847"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/connected-motion.mjs",
+      "sha256": "387141c3aadd1d62edc44efc408cbf5677124adf4d454e1a50480cb0ce0e79dc"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/connected-transforms.mjs",
+      "sha256": "ed531305ab036b3719f3adc37204043a70573b9ea58608695023a7484d88e736"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/connection-registry.mjs",
+      "sha256": "6474eaafbee4f2eb07700cbfd3b512a4d8312d184074c9fc57feb5810e684127"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/drive-scene.mjs",
+      "sha256": "575a5093032167759d66017e1e7e313f8d7d268beefee4c0408636e9b05a4797"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/electrical-scene.mjs",
+      "sha256": "9b6f452093af6f7c8c59dde7d00269d48445c29081bc5a5eaf3b5ad3dd5250b0"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/extend-actuator-graph.mjs",
+      "sha256": "a94838a9f8d948ada5a79cd1ee525eb8c4372e95e701f1cc6959a033efc4b23f"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/graph-coverage.mjs",
+      "sha256": "8392f52c45ea3034e6f9709a43fe1c2f6b4b45619dbf0be552e72fb01092c48d"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/joint-scene.mjs",
+      "sha256": "4e88666561456379169225a1acba1fa36b39848f6257ea418e10810d3e2d5702"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/mechanical-graph-coverage-development.json",
+      "sha256": "8895dd491769ed31d8a96eff3f6d44a6f37a2857ede3e4ae682ac437c4d66f22"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/named-part-patch.mjs",
+      "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/read-original-glb.mjs",
+      "sha256": "9e5449f3c8ded843dab64429f0d58f882fb71080f870c0c8d1fd5599c215b6f1"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/rigid-matrix.mjs",
+      "sha256": "7c9693be24985d27ea330665fad6a0f6d22b6cfc7f87640628e7882cb99cd006"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/shock-scene.mjs",
+      "sha256": "d46462e57c8c66e77887164bf31c77c99a569450be3347025b8f09bf9a3691af"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/structure-scene.mjs",
+      "sha256": "90fcf2b9c2d4eb96b982356687c40f1642f99fc1ee8e72ea02069312a08606e0"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-check-connections.mjs",
+      "sha256": "5fdc024dabfb70c975ce75329fc2f425145c9c62100784cf6dec7b4c0161459e"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-composed-body.mjs",
+      "sha256": "5cc69cebb5e05ae99e5c88fd82d17838129ca2c7e9cfe19c2ee99e6f94e047bd"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-connected-mechanics.mjs",
+      "sha256": "5e610a2ba201d2e18b028ed80f460bbbdfb05e16f9a4644756273072222e0167"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-connected-motion.mjs",
+      "sha256": "60c19bbbcc333fd5eaacb6275f022c962703eae785fca9522c4ec3ce9eef19db"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-connected-transforms.mjs",
+      "sha256": "0552f5d45062150a49500a2c0398350f17dc722eeb19415fda289ffafcb12e14"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-drive-scene.mjs",
+      "sha256": "5d40471b3ddc15227d75e8ec8ef3cf4a3682da033737a1f4154f6e6ea6a141cd"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-electrical-scene.mjs",
+      "sha256": "6e9c8d7ddb1b485a4af075a823f8ceedb7ac00bb97bef1af41af29d4c0f46cc9"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-joint-scene.mjs",
+      "sha256": "5114a708fec23e949916fca7ea6cdcd0f0f4bdc897ebdb137de424f696e4aa00"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-named-part-patch.mjs",
+      "sha256": "7ce93baf19c0dd3344418cd80267bc38285bf5c674d8257f13fafc46e8efe113"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-rigid-matrix.mjs",
+      "sha256": "684010691d8fe37eedf1017e61aac1f6602bd151f2eedf3141acc4870719bd9f"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-shock-scene.mjs",
+      "sha256": "436622291e83e113749a42c5273cc34435897d9e8a8072583096dc6031b1495e"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-structure-scene.mjs",
+      "sha256": "d0b98fe038f59b5f4bf8bc5ca7339d61864f80e5e2d006c22e53d9cf2430c2ed"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/test-wheel-drive-attachment.mjs",
+      "sha256": "92ede012e7dc88d54e7c60d5f3cbaeb90151285679e4ba3d02b128f0fdbf215a"
+    },
+    {
+      "path": "app-C04/reconstruction/connected/wheel-scene.mjs",
+      "sha256": "7c054364784e6865851c37a476f4f0f69901b2798522b9aa4301e1172cb8dc5d"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/README.md",
+      "sha256": "41a104d03496b321ee27b19ac1f9ced05dd46be4e657b538d93919930356ab3c"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/requirements-build.txt",
+      "sha256": "c76bf9de2d2c07bf2799e338c79f11e64325121008ff3f8e978c7198bd33cc17"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/scripts/build_metadata.py",
+      "sha256": "8068eef59dcd38aee2c555de98afac8e6c5c4b27356b14dd9d0583b04ee3e6fa"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/scripts/convert_meshes.py",
+      "sha256": "24a6432be4c0cc5dea7ba6ed907a2069c07a308bf9678257ad09ffb1fcb6117a"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/scripts/rebuild.sh",
+      "sha256": "72ec8d173553042a6e06cc1aacbff7ad89107c232307f3e8ae46b4aa7677c5a3"
+    },
+    {
+      "path": "app-C04/reconstruction/robots/tests/validate_assets.py",
+      "sha256": "e5090252c2ecdaea8b881de63684fb2c5e3813e17079df3ed3e9ad1c1a199afe"
+    },
+    {
+      "path": "app-C04/release-manifest.json",
+      "sha256": "5327b3f821cedf6e910eb62e3910105daad5871356abc9286dd3c98f8fe55359"
+    },
+    {
+      "path": "app-C04/test-battery-polarity.mjs",
+      "sha256": "f8109abdd2bd085181cefbd2ed2f497145b6004a3f77c04966405ec7636e795d"
+    },
+    {
+      "path": "app-C04/test-cad.mjs",
+      "sha256": "5cf4acba261a30483d19555634b54adfc1fa0915a40fcd1273d055bebf566122"
+    },
+    {
+      "path": "app-C04/test-composed-body.mjs",
+      "sha256": "14a249066a3b45b3e5d13a9ef020e940b32a8d8df8e56aa9f07777240bf4710d"
+    },
+    {
+      "path": "app-C04/test-connected-mechanics.mjs",
+      "sha256": "c77663e06d736eb73d9d05bbfbfd3ad1b44c15312e18ec49b688cca64c4c63c7"
+    },
+    {
+      "path": "app-C04/test-controls-ready.mjs",
+      "sha256": "3accc49032cd2e8ba8e95d9ab1c496eefe956a2fff4fea7e144a23a39b1d7279"
+    },
+    {
+      "path": "app-C04/test-costs.mjs",
+      "sha256": "b3de0a6354ff03afdc57037459c4f8b4d819e7e5fbe6c09adfc09ae116f33d50"
+    },
+    {
+      "path": "app-C04/test-current-rover.mjs",
+      "sha256": "106f7cdbdd9728cf06e971a101a7c72c2d0bb82dcba354b2d6fac515917dd092"
+    },
+    {
+      "path": "app-C04/test-electrical-scene.mjs",
+      "sha256": "3aeaaa717bcc3315ebbc3e82cd1b5b2051845eff586ad4eb007901497fd8db2f"
+    },
+    {
+      "path": "app-C04/test-model.mjs",
+      "sha256": "0d7ae4a12e0ac0eca1d7233811f5e44960256143cfee4afffa721a2aefaee56e"
+    },
+    {
+      "path": "app-C04/test-motion-study.mjs",
+      "sha256": "cc21f61d1c112efb94f2ca18ca8ff377f844bdb110b762fbef7ba5dc09e3dbdb"
+    },
+    {
+      "path": "app-C04/test-rigid-matrix.mjs",
+      "sha256": "5bb4c4f075820f2b425e48720efe95357f1539ae52a09be2bea80816a16db1d7"
+    },
+    {
+      "path": "app-C04/test-rover.mjs",
+      "sha256": "9a8d4e5798e6e3ecb888a7d1fb1d7e297c118aaa7e70976486557c7d348d89d0"
+    },
+    {
+      "path": "app-C04/test-steering.mjs",
+      "sha256": "d26f601e33c5ea3ab2b9a597f81d883c0f9e9a307567fa89acf614a349cdcfbf"
+    },
+    {
+      "path": "app-C04/test-support/read-original-glb.mjs",
+      "sha256": "fbf37db1e24add29f490a8ea2316c227fe07635f7371c097b90e5771ce279fb7"
+    }
+  ],
+  "scope": "Read-only source snapshot; no source/app/publication writes permitted. Normal builder does not inspect outside this folder."
+}

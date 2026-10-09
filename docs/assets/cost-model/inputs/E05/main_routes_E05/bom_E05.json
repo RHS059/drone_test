@@ -1,0 +1,18 @@
+{
+  "revision": "E05",
+  "scope": "Incremental candidate only; not included in prior C04 cost freeze.",
+  "items": [
+    {"id":"MAIN_positive","manufacturer":"LAPP","article":"0060001","description":"ÖLFLEX HEAT 180 SiF, black, 70 mm²","routed_length_m":2.7697464313510465,"procurement_cut_length_released":false},
+    {"id":"MAIN_negative","manufacturer":"LAPP","article":"0060001","description":"ÖLFLEX HEAT 180 SiF, black, 70 mm²","routed_length_m":2.8582812556571024,"procurement_cut_length_released":false},
+    {"manufacturer":"LAPP","article":"53111030","description":"SKINTOP ST-M M25 × 1.5, 8–17 mm clamp range","quantity":4,"installed_IP_and_pullout_qualified":false},
+    {"manufacturer":"LAPP","article":"53119030","description":"SKINTOP GMP-GL M25 × 1.5 locknut, 6 mm thickness","quantity":4},
+    {"manufacturer":"Original project part","description":"Aluminium cable stand, material matched to deck; exact alloy and welding process pending","quantity":8,"strength_and_weld_qualified":false},
+    {"manufacturer":"Original project part","description":"Split cable clamp half, material and liner unspecified","quantity":16,"compression_and_pullout_qualified":false},
+    {"description":"Nominal M4 × 30 socket screw, 0.7 mm pitch","quantity":16,"purchased_SKU":null,"grade_locking_and_torque_released":false},
+    {"description":"Nominal M4 washer, OD 9 mm, ID 4.4 mm, 0.8 mm thick","quantity":32,"purchased_SKU":null},
+    {"description":"Nominal M4 nut, 0.7 mm pitch, 3.2 mm engagement, cylindrical thread envelope","quantity":16,"purchased_SKU":null,"grade_locking_and_torque_released":false}
+  ],
+  "additional_terminal_hardware": "Existing E04 source-positioned original lug and retained M8/M10 stacks reused. No new crimp or strip-process qualification.",
+  "complete_system_BOM": false,
+  "electrically_operational": false
+}

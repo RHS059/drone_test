@@ -1,0 +1,83 @@
+{
+  "status": "Alternate packaging candidate, not selected or fit verified",
+  "checked_utc": "2026-10-09T14:23:00Z",
+  "rim": {
+    "brand": "Jantsa",
+    "supplier_sku": "10005240",
+    "size": "9.75 x 16.5",
+    "offset_mm": -70,
+    "center_bore_mm": 94,
+    "pcd_mm": 140,
+    "holes": 5,
+    "hole_diameter_mm": 18.5,
+    "seat_design": "A1 / B14 ES28 spherical",
+    "disc_thickness_mm": 8,
+    "mass_kg_supplier": 19.5,
+    "drive_application": "Driven & Towed axle",
+    "load_speed_pairs": [
+      {
+        "kg": 3450,
+        "km_h": 25
+      },
+      {
+        "kg": 2900,
+        "km_h": 40
+      }
+    ],
+    "source": "https://onlineshop.bohnenkamp-benelux.com/en/rim-jantsa-9-75-x-16-5-10005240",
+    "full_section": null,
+    "source_warning": "Published valve hole157mm appears inconsistent; do not model until verified. Supplier technical data for exact offered SKU, manufacturer full drawing remains unavailable.",
+    "alternate_offset_search": "No verified current ET-40 version found in bounded exact-family search. Only ET-70 is sourced here; do not invent less-negative offset.",
+    "seat_standard_source": "https://www.euwa.org/wp-content/uploads/2018/05/EUWA-ES-3.15-Stud-Hole-Designation-Truck-Wheels.pdf",
+    "seat_standard_note": "B14 ES28 nominal seat18.5 throat/24mouth/R14. B14 denotes14mm stud; use with WD220M16 studs remains an application-compatibility gate despite geometric clearance."
+  },
+  "tire": {
+    "brand": "Trelleborg",
+    "model": "SK-900",
+    "size": "12-16.5",
+    "ply_rating": 12,
+    "type": "Tubeless",
+    "rim": "9.75-16.5",
+    "od_mm": 831,
+    "width_mm": 307,
+    "load_kg_at_10_kmh_5_5_bar": 2865,
+    "mass_kg": null,
+    "source": "https://www.trelleborg-tires.com/-/media/tires-tit/construction-tires-and-tracks-images-and-brochure/trelleborg-technical-manual-construction-en.pdf?hash=DFC912363B86FB3D0438024D8277159E&rev=4788d6816a9b44229171f35e2078aba1&sc_lang=it-it",
+    "source_conflict": "Manual gives20mm tread; current product webpage gives17mm. Exact SKU/revision and tread must be reconciled before detailed tread model.",
+    "speed_gate": "Selected catalogue load is skid-steer at10km/h. Do not assume safe at WD22074rpm nominal wheel speed; control limit and effective rolling radius require validation.",
+    "manual_pdf_page_1based": 12,
+    "manual_printed_pages": "22-23",
+    "manual_sha256": "72836fdb93976459255a5d0a69ba441fcc9506576654002ae292eb3d78ebabe1"
+  },
+  "nut": {
+    "brand": "RIMA",
+    "part": "22095",
+    "thread": "M16x1.5",
+    "overall_height_mm": 18,
+    "sphere_radius_mm": 14,
+    "hex_af_mm": 27,
+    "open_through_thread": true,
+    "source": "https://www.4lean.net/catalogos/vol1/fornecedores/Rima.pdf",
+    "source_type": "Manufacturer-authored catalogue hosted by distributor; printedp45,PDFp77,visually verified",
+    "source_sha256": "787fce0ecd74b811ccd09152b244d66be90002a6c248fce06c6c81d602a50741",
+    "grade": null,
+    "torque_Nm": null,
+    "current_availability_confirmed": false
+  },
+  "nominal_arithmetic": {
+    "wheel_center_y_mm": 998,
+    "inner_nominal_bead_y_mm": 874.175,
+    "nominal_bead_radius_mm": 209.55,
+    "total_tire_width_mm": 2303,
+    "scope": "Nominal dimensions only; full rim/tire/joint motion fit not checked."
+  },
+  "open_gates": [
+    "Full rim profile/seat datum and exact SKU drawing",
+    "Wheel bearing overturning moment at additional offset",
+    "Tire body and arm clearance through steering/suspension",
+    "Nut grade/torque and actual thread engagement/seat contact",
+    "Tire SKU, tread source conflict and speed/load regime",
+    "No vehicle fabrication or operating qualification",
+    "B14 seat designation versusM16 drive studs requires application approval; nominal contact model is not a declared standard-approved pairing."
+  ]
+}

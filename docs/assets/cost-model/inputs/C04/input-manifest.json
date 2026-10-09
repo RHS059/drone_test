@@ -1,0 +1,161 @@
+{
+  "selection": "C04 structure R05; PR01 + SO02_E04P + E04 + BA02",
+  "inputs": [
+    {
+      "file": "inputs/historical_C03_model.json",
+      "source": "/workspace/shared/ugv-rover-integration/cost-model/cost_model.json",
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41",
+      "bytes": 213456
+    },
+    {
+      "file": "inputs/historical_C03_sources.json",
+      "source": "/workspace/shared/ugv-rover-integration/cost-model/sources.json",
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240",
+      "bytes": 21267
+    },
+    {
+      "file": "inputs/wheel_price_observations.json",
+      "source": "/workspace/shared/ugv-rover-integration/cost-model/C04-source-observations/wheel-price-observations.json",
+      "sha256": "0284317bc7f28d4209fc26fb682598d1e11b619df6634d4d9b5822ae98fca683",
+      "bytes": 1471
+    },
+    {
+      "file": "inputs/victron_price_observations.json",
+      "source": "/workspace/shared/ugv-rover-integration/cost-model/C04-source-observations/victron-price-observations.json",
+      "sha256": "1b42e26776c6f4cabfd11fa38f9d3b8e82640b0058a50c4d23ff9d1bbcc42b8a",
+      "bytes": 1241
+    },
+    {
+      "file": "inputs/mechanical_mass_BOM_C04_R01.json",
+      "source": "/workspace/shared/ugv-reconstruction/mechanical/connection_completion_C04/mechanical_mass_BOM_C04_R01.json",
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6",
+      "bytes": 23024
+    },
+    {
+      "file": "inputs/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "source": "/workspace/shared/ugv-reconstruction/mechanical/connection_completion_C04/PUBLIC_SOURCE_FREEZE_C04_R02.json",
+      "sha256": "9dd021d2ba34a4015bad6e43b0bf05fa99aadae72c768bb98a806c31fc20576b",
+      "bytes": 126298
+    },
+    {
+      "file": "inputs/structural_connections_C04_R05_manifest.json",
+      "source": "/workspace/shared/ugv-reconstruction/mechanical/connection_completion_C04/structural_connections_C04_R05_manifest.json",
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d",
+      "bytes": 140171
+    },
+    {
+      "file": "inputs/body_R01_verification.json",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/verification.json",
+      "sha256": "8630f33123be26c3f61e189bf4edc707519ad363f8dee1e52d64ab506dceeb0d",
+      "bytes": 117473
+    },
+    {
+      "file": "inputs/body_PR01_manifest.json",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/panel-retention/replacement_addition_manifest.json",
+      "sha256": "06f91555793db8f00dddfccc8212e490e7be2908fc7919b09e03b454b432844f",
+      "bytes": 153959
+    },
+    {
+      "file": "inputs/body_PR01_check.json",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/panel-retention/retention_check.json",
+      "sha256": "7d35e7cdd40954754a6b78d3882bdc98eee1b2db8bd1b15a4eb795ab29317fd1",
+      "bytes": 186640
+    },
+    {
+      "file": "inputs/body_SO02_E04P_selected.json",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/shock-opening-study/SELECTED_PACKAGE.json",
+      "sha256": "52b3047cc9fb6121c3a3db80f1c86809aa3abfc783adc5d754d450f73402fa02",
+      "bytes": 4146
+    },
+    {
+      "file": "inputs/body_SO02_E04P_parts.json",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/shock-opening-study/partition_trough_check_SO02_E04P.json",
+      "sha256": "c7f8ac955b962d0d76522153d665c3633827d0174b11c36e1ae6645688afcc8c",
+      "bytes": 527868
+    },
+    {
+      "file": "inputs/body_PR01_material_source.py",
+      "source": "/workspace/shared/ugv-rover-integration/body-power/panel-retention/build_panel_retention.py",
+      "sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f",
+      "bytes": 16448
+    },
+    {
+      "file": "inputs/wheel_candidates.json",
+      "source": "/workspace/shared/ugv-rover-integration/wheel-drive-hardware/candidate-Jantsa16p5-Trelleborg-R01.json",
+      "sha256": "b296d97e7b2dd10413c33a458f570fe9452b85aa909ed5a7bb3f8bed63e0610d",
+      "bytes": 3804
+    },
+    {
+      "file": "inputs/actuator_contract_R02.json",
+      "source": "/workspace/shared/ugv-rover-integration/steering-actuator/actuator_interface_contract_R02.json",
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203",
+      "bytes": 3971
+    },
+    {
+      "file": "inputs/wheel_nut_contract.json",
+      "source": "/workspace/shared/ugv-reconstruction/mechanical/connection_completion_C04/drive/direct_wheel_nut_contract_C04_R01.json",
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119",
+      "bytes": 3999
+    },
+    {
+      "file": "inputs/electrical_mass_ledger.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/freeze_E04/original_mass_ledger_E04.json",
+      "sha256": "4ae998d84c18a26e2862f6230d036c9906e3fdc88eefca6f50cf02fec299e831",
+      "bytes": 563123
+    },
+    {
+      "file": "inputs/battery_strap_source.json",
+      "source": "/workspace/shared/ugv-rover-integration/battery-alternative/BA02/strap_source_and_cost_record.json",
+      "sha256": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09",
+      "bytes": 1442
+    },
+    {
+      "file": "inputs/battery_original_hardware_mass.csv",
+      "source": "/workspace/shared/ugv-rover-integration/battery-alternative/BA02/original_hardware_mass.csv",
+      "sha256": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837",
+      "bytes": 3333
+    },
+    {
+      "file": "inputs/electrical_bom_E04.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/freeze_E04/bom_E04.json",
+      "sha256": "1f4836b78b19c34234a66acc6d6adfe7cac05fea25c9b3b91b54bcb1d8e5afce",
+      "bytes": 2430
+    },
+    {
+      "file": "inputs/electrical_contract_E04.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/freeze_E04/electrical_connection_contract_E04.json",
+      "sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2",
+      "bytes": 348630
+    },
+    {
+      "file": "inputs/electrical_topology_E04.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/freeze_E04/electrical_topology_E04.json",
+      "sha256": "aa50331edc795f147160648ed197ed2f299e58827a8f660f26e2e9ef1347b9e7",
+      "bytes": 180659
+    },
+    {
+      "file": "inputs/electrical_temperature_limits.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/victron_candidate/temperature_limit_tests.json",
+      "sha256": "6cd8b3f10b23b728dca835f117de11778e3986d03d9d6268e33564ba24de31dd",
+      "bytes": 2963
+    },
+    {
+      "file": "inputs/electrical_trough_contract.json",
+      "source": "/workspace/shared/ugv-rover-integration/electrical-drive/victron_candidate/switchgear_E04/rear_trough_patch_contract.json",
+      "sha256": "54655b6c79351372a6f4fd059a058ce4afe0ea1fe4d49a3932950ecabff2d557",
+      "bytes": 13845
+    },
+    {
+      "file": "inputs/battery_BA02_manifest.json",
+      "source": "/workspace/shared/ugv-rover-integration/battery-alternative/BA02/replacement_addition_manifest.json",
+      "sha256": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224",
+      "bytes": 37675
+    },
+    {
+      "file": "inputs/battery_BA02_verification.json",
+      "source": "/workspace/shared/ugv-rover-integration/battery-alternative/BA02/verification.json",
+      "sha256": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953",
+      "bytes": 13309
+    }
+  ]
+}

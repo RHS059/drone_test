@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-09T16:05:00Z",
+  "source_url": "https://latam.victronenergy.com/wp-content/uploads/2026/04/Pricelist-Victron-2026-Q2-USD-C.pdf",
+  "source_sha256": "83275209e603872733eb06ea0761bd65820bf5b93f6068f9e5467b691862cd80",
+  "source_type": "Manufacturer LATAM USD C price list,2026Q2; not a current destination-specific dealer quote",
+  "currency": "USD",
+  "tax_basis": "ex VAT",
+  "shipping_import_taxes": null,
+  "availability": null,
+  "prices_may_change_without_notice": true,
+  "visual_pdf_verification": true,
+  "observations": [
+    {
+      "sku": "BAT548110620",
+      "unit_price": 2241.0,
+      "pdf_page": 17,
+      "quantity_candidate": 2,
+      "candidate_extended_price": 4482.0,
+      "catalog_mass_kg": 37.0
+    },
+    {
+      "sku": "LYN034170310",
+      "unit_price": 1020.0,
+      "pdf_page": 9,
+      "quantity_candidate": 1,
+      "candidate_extended_price": 1020.0,
+      "catalog_price_list_mass_kg": 2.5,
+      "mass_note": "Price-list value; exact current technical-drawing revision may differ. Use selected device datasheet for mass reconciliation."
+    }
+  ],
+  "candidate_partial_sum": 5502.0,
+  "selected_in_live_baseline": false,
+  "vendor_pdf_publication_permission_established": false
+}

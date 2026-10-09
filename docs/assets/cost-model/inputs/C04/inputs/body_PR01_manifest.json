@@ -1,0 +1,3844 @@
+{
+  "revision": "PR01",
+  "units": "STEP mm; GLB metres Z-up",
+  "integration_rule": "Either replace entire body R02 with body_power_panel_retained_PR01 OR replace listed existing named parts and add new parts. Never layer replacement parts over originals. Full-body output includes every original body part and all 28 R02 bores. Other body patches must compose by name.",
+  "base_generator_sha256": "c9c74980acd3a3fc5949126d3b933705fee38e5452d6beb81fc76715c5d553e8",
+  "baseline_R01_step_sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba",
+  "R02_step_sha256": "a3bcb815bfa0f1121fa0ad0f605f6be0775795d78eef5408bcc76361b554c924",
+  "R02_deck_holes_preserved": 28,
+  "generator_sha256": "6ff115c6354ac947365585d4bcf8560e8855b141e2b9fb603cbe23cacd1e103f",
+  "unfrozen_rear_service_enclosure_group": {
+    "status": "Optional; electrical raised-module redesign pending. Do not stack old hatch underneath an inaccessible new enclosure.",
+    "body_names_to_remove_if_replaced": [
+      "rear_controller_hatch_weld_flange",
+      "rear_controller_hatch_gasket",
+      "rear_controller_hatch_removable_lid",
+      "rear_controller_hatch_M6_1",
+      "rear_controller_hatch_M6_2",
+      "rear_controller_hatch_M6_3",
+      "rear_controller_hatch_M6_4",
+      "rear_controller_hatch_M6_5",
+      "rear_controller_hatch_M6_6",
+      "rear_controller_hatch_nutplate_1",
+      "rear_controller_hatch_nutplate_2",
+      "rear_controller_hatch_nutplate_3",
+      "rear_controller_hatch_nutplate_4",
+      "rear_controller_hatch_nutplate_5",
+      "rear_controller_hatch_nutplate_6",
+      "rear_controller_hatch_M6_washer_1",
+      "rear_controller_hatch_M6_washer_2",
+      "rear_controller_hatch_M6_washer_3",
+      "rear_controller_hatch_M6_washer_4",
+      "rear_controller_hatch_M6_washer_5",
+      "rear_controller_hatch_M6_washer_6",
+      "rear_hatch_partition_ledge"
+    ],
+    "delta_changes_to_exclude": [
+      "rear_controller_hatch_nutplate_1",
+      "rear_controller_hatch_M6_1",
+      "rear_controller_hatch_M6_washer_1",
+      "rear_controller_hatch_nutplate_2",
+      "rear_controller_hatch_M6_2",
+      "rear_controller_hatch_M6_washer_2",
+      "rear_controller_hatch_nutplate_3",
+      "rear_controller_hatch_M6_3",
+      "rear_controller_hatch_M6_washer_3",
+      "rear_controller_hatch_nutplate_4",
+      "rear_controller_hatch_M6_4",
+      "rear_controller_hatch_M6_washer_4",
+      "rear_controller_hatch_nutplate_5",
+      "rear_controller_hatch_M6_5",
+      "rear_controller_hatch_M6_washer_5",
+      "rear_controller_hatch_nutplate_6",
+      "rear_controller_hatch_M6_6",
+      "rear_controller_hatch_M6_washer_6",
+      "rear_hatch_partition_ledge"
+    ]
+  },
+  "changes": [
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_1",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_1",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_1",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_2",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_2",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_2",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_3",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_3",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_3",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_4",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_4",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_4",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_5",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_5",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_5",
+      "new_volume_mm3": 129.48388281035758,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_nutplate_6",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "rear_controller_hatch_M6_6",
+      "old_volume_mm3": 595.8673908050397,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "rear_controller_hatch_M6_washer_6",
+      "new_volume_mm3": 129.48388281035758,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_1",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_1",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_1",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_2",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.256661176919,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_2",
+      "old_volume_mm3": 595.8673908050391,
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_2",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_3",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_3",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007998,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_3",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_4",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.256661176919,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_4",
+      "old_volume_mm3": 595.8673908050391,
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_4",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_5",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769175,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_5",
+      "old_volume_mm3": 595.8673908050407,
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_5",
+      "new_volume_mm3": 129.48388281035693,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_nutplate_6",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769175,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "battery_hatch_M6_6",
+      "old_volume_mm3": 595.8673908050407,
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "battery_hatch_M6_washer_6",
+      "new_volume_mm3": 129.48388281035693,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_1",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.256661176919,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_1",
+      "old_volume_mm3": 595.867390805039,
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_1",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_2",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769175,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_2",
+      "old_volume_mm3": 595.8673908050406,
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_2",
+      "new_volume_mm3": 129.48388281035693,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_3",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.256661176919,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_3",
+      "old_volume_mm3": 595.867390805039,
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_3",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_4",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769175,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_4",
+      "old_volume_mm3": 595.8673908050406,
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_4",
+      "new_volume_mm3": 129.48388281035693,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_5",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769184,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_5",
+      "old_volume_mm3": 595.8673908050391,
+      "new_volume_mm3": 971.7736704007989,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_5",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_nutplate_6",
+      "old_volume_mm3": 1159.1522240096283,
+      "new_volume_mm3": 2957.2566611769184,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "payload_tool_hatch_M6_6",
+      "old_volume_mm3": 595.8673908050391,
+      "new_volume_mm3": 971.7736704007989,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_tool_hatch_M6_washer_6",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_1",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_1",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_1",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_2",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_2",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_2",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_3",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_3",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_3",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_4",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_4",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_4",
+      "new_volume_mm3": 129.4838828103576,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_5",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_5",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_5",
+      "new_volume_mm3": 129.48388281035758,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_nutplate_6",
+      "old_volume_mm3": 1159.1522240096285,
+      "new_volume_mm3": 2957.256661176918,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. 18x18x10 same-alloy weld-in tapped boss replaces clearance-bored steel placeholder."
+    },
+    {
+      "action": "replace",
+      "name": "front_tool_hatch_M6_6",
+      "old_volume_mm3": 595.8673908050398,
+      "new_volume_mm3": 971.7736704007996,
+      "reason": "Original M6x20 ISO 4762 nominal envelope: head diameter 10, height 6, socket AF5. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_tool_hatch_M6_washer_6",
+      "new_volume_mm3": 129.48388281035758,
+      "reason": "M6 ISO 7089 nominal washer: OD12 ID6.4 thickness1.6 mm."
+    },
+    {
+      "action": "add",
+      "name": "rear_hatch_partition_ledge",
+      "new_volume_mm3": 51348.0,
+      "reason": "Original 3 mm ledge abuts vertical partition and supports hatch flange underside. Same-alloy welded joint, unqualified."
+    },
+    {
+      "action": "add",
+      "name": "payload_hatch_partition_ledge",
+      "new_volume_mm3": 51348.0,
+      "reason": "Original 3 mm ledge abuts vertical partition and supports hatch flange underside. Same-alloy welded joint, unqualified."
+    },
+    {
+      "action": "add",
+      "name": "front_hatch_left_support_ledge",
+      "new_volume_mm3": 27210.0,
+      "reason": "20x3 mm continuous ledge welded to front tool side; supports existing flange."
+    },
+    {
+      "action": "add",
+      "name": "front_hatch_right_support_ledge",
+      "new_volume_mm3": 27210.0,
+      "reason": "20x3 mm continuous ledge welded to front tool side; supports existing flange."
+    },
+    {
+      "action": "add",
+      "name": "front_hatch_rear_support_ledge",
+      "new_volume_mm3": 58890.0,
+      "reason": "Original under-flange support cross strip; nose end fitted by subtracting actual sloped nose, no positive-volume clash."
+    },
+    {
+      "action": "add",
+      "name": "front_hatch_nose_support_ledge",
+      "new_volume_mm3": 74219.56901849304,
+      "reason": "Original under-flange support cross strip; nose end fitted by subtracting actual sloped nose, no positive-volume clash."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_1_1",
+      "old_volume_mm3": 4697.3641680072205,
+      "new_volume_mm3": 4697.3641680072205,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_1_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_1_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_1_washer",
+      "new_volume_mm3": 129.48388281035622,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_1_2",
+      "old_volume_mm3": 4697.3641680072205,
+      "new_volume_mm3": 4697.3641680072205,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_2_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_2_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_2_washer",
+      "new_volume_mm3": 129.48388281035622,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_1_3",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_3_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_3_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_3_washer",
+      "new_volume_mm3": 129.48388281035636,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_1_4",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_4_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_4_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_1_4_washer",
+      "new_volume_mm3": 129.48388281035636,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_2_1",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_1_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_1_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_1_washer",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_2_2",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_2_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_2_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_2_washer",
+      "new_volume_mm3": 129.4838828103571,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_2_3",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_3_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_3_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_3_washer",
+      "new_volume_mm3": 129.48388281035716,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "left_service_nutclip_2_4",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_4_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_4_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "left_service_nutclip_2_4_washer",
+      "new_volume_mm3": 129.48388281035716,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_1_1",
+      "old_volume_mm3": 4697.3641680072205,
+      "new_volume_mm3": 4697.3641680072205,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_1_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_1_M6x20",
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_1_washer",
+      "new_volume_mm3": 129.4838828103562,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_1_2",
+      "old_volume_mm3": 4697.3641680072205,
+      "new_volume_mm3": 4697.3641680072205,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_2_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_2_M6x20",
+      "new_volume_mm3": 971.7736704008012,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_2_washer",
+      "new_volume_mm3": 129.4838828103562,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_1_3",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_3_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_3_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_3_washer",
+      "new_volume_mm3": 129.48388281035633,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_1_4",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_4_tapped_boss",
+      "new_volume_mm3": 3844.433659529993,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_4_M6x20",
+      "new_volume_mm3": 971.7736704008009,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_1_4_washer",
+      "new_volume_mm3": 129.48388281035633,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_2_1",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_1_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_1_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_1_washer",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_2_2",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_2_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_2_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_2_washer",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_2_3",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_3_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_3_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_3_washer",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "right_service_nutclip_2_4",
+      "old_volume_mm3": 4697.364168007221,
+      "new_volume_mm3": 4697.364168007221,
+      "reason": "Original 40x40x3 same-alloy backing clip; actual \u00d86.6 clearance bore, supported beyond cutout edges. Replaces unweldable steel-to-aluminium placeholder."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_4_tapped_boss",
+      "new_volume_mm3": 3844.433659529994,
+      "reason": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified. Original 18x18x13 tapped backing block, welded to clip inner face."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_4_M6x20",
+      "new_volume_mm3": 971.7736704007984,
+      "reason": "ISO 4762 nominal M6x20 screw installed from outside. M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified."
+    },
+    {
+      "action": "add",
+      "name": "right_service_nutclip_2_4_washer",
+      "new_volume_mm3": 129.48388281035713,
+      "reason": "ISO 7089 nominal M6 washer OD12 ID6.4 t1.6."
+    },
+    {
+      "action": "replace",
+      "name": "battery_1_stop_-1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_1_stop_1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_2_stop_-1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_2_stop_1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_3_stop_-1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_3_stop_1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_4_stop_-1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "replace",
+      "name": "battery_4_stop_1",
+      "old_volume_mm3": 21840.0,
+      "new_volume_mm3": 24960.0,
+      "reason": "Bottom extended from Z-73 to Z-77 to bear on well floor; 4 mm gap removed. Original 260x3x32 stop, same-alloy welded to well floor. Load qualification pending."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_1_rear_welded_support",
+      "new_volume_mm3": 16638.0,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_1_front_welded_support",
+      "new_volume_mm3": 15509.999999999998,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_2_rear_welded_support",
+      "new_volume_mm3": 11280.0,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_2_front_welded_support",
+      "new_volume_mm3": 11280.0,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_3_rear_welded_support",
+      "new_volume_mm3": 11843.999999999998,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_3_front_welded_support",
+      "new_volume_mm3": 14663.999999999996,
+      "reason": "Original 3 mm shelf with two 24 mm-deep triangular gussets; 25 mm bearing overlap under duct floor, broad end seam to named partition. Weld strength and duct span deflection unqualified."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_stud_1_-235",
+      "old_volume_mm3": 15733.0960091777,
+      "new_volume_mm3": 16336.28179866694,
+      "reason": "Original cut-to-length M8x1.25 threaded-rod nominal cylinder, 325 mm long Z-93..232. No helix/grade/preload/terminal insulation qualification."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_1_-235_bottom",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_1_-235_bottom",
+      "new_volume_mm3": 233.0307766726769,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_1_-235_top",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_1_-235_top",
+      "new_volume_mm3": 233.0307766726769,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_stud_1_235",
+      "old_volume_mm3": 15733.0960091777,
+      "new_volume_mm3": 16336.28179866694,
+      "reason": "Original cut-to-length M8x1.25 threaded-rod nominal cylinder, 325 mm long Z-93..232. No helix/grade/preload/terminal insulation qualification."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_1_235_bottom",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_1_235_bottom",
+      "new_volume_mm3": 233.0307766726769,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_1_235_top",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_1_235_top",
+      "new_volume_mm3": 233.0307766726769,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_stud_2_-235",
+      "old_volume_mm3": 15733.0960091777,
+      "new_volume_mm3": 16336.28179866694,
+      "reason": "Original cut-to-length M8x1.25 threaded-rod nominal cylinder, 325 mm long Z-93..232. No helix/grade/preload/terminal insulation qualification."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_2_-235_bottom",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_2_-235_bottom",
+      "new_volume_mm3": 233.03077667267695,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_2_-235_top",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_2_-235_top",
+      "new_volume_mm3": 233.03077667267695,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_stud_2_235",
+      "old_volume_mm3": 15733.0960091777,
+      "new_volume_mm3": 16336.28179866694,
+      "reason": "Original cut-to-length M8x1.25 threaded-rod nominal cylinder, 325 mm long Z-93..232. No helix/grade/preload/terminal insulation qualification."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_2_235_bottom",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_2_235_bottom",
+      "new_volume_mm3": 233.03077667267695,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    },
+    {
+      "action": "replace",
+      "name": "battery_retention_nut_2_235_top",
+      "old_volume_mm3": 625.77738708211,
+      "new_volume_mm3": 624.6032700838655,
+      "reason": "ISO 4032 nominal M8 nut AF13 height6.5; matching diameter8 cylindrical nominal thread interface, coarse pitch1.25 metadata. No helix or finished-thread tolerance claim."
+    },
+    {
+      "action": "add",
+      "name": "battery_retention_washer_2_235_top",
+      "new_volume_mm3": 233.03077667267695,
+      "reason": "ISO 7089 M8 nominal washer OD16 ID8.4 thickness1.6. Bears against actual well-floor underside or crossbar top; no local panel strength claim."
+    }
+  ],
+  "retained_service_groups": [
+    {
+      "name": "rear_controller_hatch",
+      "removable": [
+        "rear_controller_hatch_removable_lid",
+        "rear_controller_hatch_gasket",
+        "rear_controller_hatch_M6_1",
+        "rear_controller_hatch_M6_washer_1",
+        "rear_controller_hatch_M6_2",
+        "rear_controller_hatch_M6_washer_2",
+        "rear_controller_hatch_M6_3",
+        "rear_controller_hatch_M6_washer_3",
+        "rear_controller_hatch_M6_4",
+        "rear_controller_hatch_M6_washer_4",
+        "rear_controller_hatch_M6_5",
+        "rear_controller_hatch_M6_washer_5",
+        "rear_controller_hatch_M6_6",
+        "rear_controller_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "rear_controller_hatch_weld_flange",
+        "rear_controller_hatch_nutplate_1",
+        "rear_controller_hatch_nutplate_2",
+        "rear_controller_hatch_nutplate_3",
+        "rear_controller_hatch_nutplate_4",
+        "rear_controller_hatch_nutplate_5",
+        "rear_controller_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "battery_hatch",
+      "removable": [
+        "battery_hatch_removable_lid",
+        "battery_hatch_gasket",
+        "battery_hatch_M6_1",
+        "battery_hatch_M6_washer_1",
+        "battery_hatch_M6_2",
+        "battery_hatch_M6_washer_2",
+        "battery_hatch_M6_3",
+        "battery_hatch_M6_washer_3",
+        "battery_hatch_M6_4",
+        "battery_hatch_M6_washer_4",
+        "battery_hatch_M6_5",
+        "battery_hatch_M6_washer_5",
+        "battery_hatch_M6_6",
+        "battery_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "battery_hatch_weld_flange",
+        "battery_hatch_nutplate_1",
+        "battery_hatch_nutplate_2",
+        "battery_hatch_nutplate_3",
+        "battery_hatch_nutplate_4",
+        "battery_hatch_nutplate_5",
+        "battery_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "payload_tool_hatch",
+      "removable": [
+        "payload_tool_hatch_removable_lid",
+        "payload_tool_hatch_gasket",
+        "payload_tool_hatch_M6_1",
+        "payload_tool_hatch_M6_washer_1",
+        "payload_tool_hatch_M6_2",
+        "payload_tool_hatch_M6_washer_2",
+        "payload_tool_hatch_M6_3",
+        "payload_tool_hatch_M6_washer_3",
+        "payload_tool_hatch_M6_4",
+        "payload_tool_hatch_M6_washer_4",
+        "payload_tool_hatch_M6_5",
+        "payload_tool_hatch_M6_washer_5",
+        "payload_tool_hatch_M6_6",
+        "payload_tool_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "payload_tool_hatch_weld_flange",
+        "payload_tool_hatch_nutplate_1",
+        "payload_tool_hatch_nutplate_2",
+        "payload_tool_hatch_nutplate_3",
+        "payload_tool_hatch_nutplate_4",
+        "payload_tool_hatch_nutplate_5",
+        "payload_tool_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "front_tool_hatch",
+      "removable": [
+        "front_tool_hatch_removable_lid",
+        "front_tool_hatch_gasket",
+        "front_tool_hatch_M6_1",
+        "front_tool_hatch_M6_washer_1",
+        "front_tool_hatch_M6_2",
+        "front_tool_hatch_M6_washer_2",
+        "front_tool_hatch_M6_3",
+        "front_tool_hatch_M6_washer_3",
+        "front_tool_hatch_M6_4",
+        "front_tool_hatch_M6_washer_4",
+        "front_tool_hatch_M6_5",
+        "front_tool_hatch_M6_washer_5",
+        "front_tool_hatch_M6_6",
+        "front_tool_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "front_tool_hatch_weld_flange",
+        "front_tool_hatch_nutplate_1",
+        "front_tool_hatch_nutplate_2",
+        "front_tool_hatch_nutplate_3",
+        "front_tool_hatch_nutplate_4",
+        "front_tool_hatch_nutplate_5",
+        "front_tool_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "left_side_service_cover_1",
+      "removable": [
+        "left_side_service_cover_1",
+        "left_service_nutclip_1_1_M6x20",
+        "left_service_nutclip_1_1_washer",
+        "left_service_nutclip_1_2_M6x20",
+        "left_service_nutclip_1_2_washer",
+        "left_service_nutclip_1_3_M6x20",
+        "left_service_nutclip_1_3_washer",
+        "left_service_nutclip_1_4_M6x20",
+        "left_service_nutclip_1_4_washer"
+      ],
+      "retained_on_body": [
+        "left_service_nutclip_1_1",
+        "left_service_nutclip_1_1_tapped_boss",
+        "left_service_nutclip_1_2",
+        "left_service_nutclip_1_2_tapped_boss",
+        "left_service_nutclip_1_3",
+        "left_service_nutclip_1_3_tapped_boss",
+        "left_service_nutclip_1_4",
+        "left_service_nutclip_1_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "left_side_service_cover_2",
+      "removable": [
+        "left_side_service_cover_2",
+        "left_service_nutclip_2_1_M6x20",
+        "left_service_nutclip_2_1_washer",
+        "left_service_nutclip_2_2_M6x20",
+        "left_service_nutclip_2_2_washer",
+        "left_service_nutclip_2_3_M6x20",
+        "left_service_nutclip_2_3_washer",
+        "left_service_nutclip_2_4_M6x20",
+        "left_service_nutclip_2_4_washer"
+      ],
+      "retained_on_body": [
+        "left_service_nutclip_2_1",
+        "left_service_nutclip_2_1_tapped_boss",
+        "left_service_nutclip_2_2",
+        "left_service_nutclip_2_2_tapped_boss",
+        "left_service_nutclip_2_3",
+        "left_service_nutclip_2_3_tapped_boss",
+        "left_service_nutclip_2_4",
+        "left_service_nutclip_2_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "right_side_service_cover_1",
+      "removable": [
+        "right_side_service_cover_1",
+        "right_service_nutclip_1_1_M6x20",
+        "right_service_nutclip_1_1_washer",
+        "right_service_nutclip_1_2_M6x20",
+        "right_service_nutclip_1_2_washer",
+        "right_service_nutclip_1_3_M6x20",
+        "right_service_nutclip_1_3_washer",
+        "right_service_nutclip_1_4_M6x20",
+        "right_service_nutclip_1_4_washer"
+      ],
+      "retained_on_body": [
+        "right_service_nutclip_1_1",
+        "right_service_nutclip_1_1_tapped_boss",
+        "right_service_nutclip_1_2",
+        "right_service_nutclip_1_2_tapped_boss",
+        "right_service_nutclip_1_3",
+        "right_service_nutclip_1_3_tapped_boss",
+        "right_service_nutclip_1_4",
+        "right_service_nutclip_1_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "right_side_service_cover_2",
+      "removable": [
+        "right_side_service_cover_2",
+        "right_service_nutclip_2_1_M6x20",
+        "right_service_nutclip_2_1_washer",
+        "right_service_nutclip_2_2_M6x20",
+        "right_service_nutclip_2_2_washer",
+        "right_service_nutclip_2_3_M6x20",
+        "right_service_nutclip_2_3_washer",
+        "right_service_nutclip_2_4_M6x20",
+        "right_service_nutclip_2_4_washer"
+      ],
+      "retained_on_body": [
+        "right_service_nutclip_2_1",
+        "right_service_nutclip_2_1_tapped_boss",
+        "right_service_nutclip_2_2",
+        "right_service_nutclip_2_2_tapped_boss",
+        "right_service_nutclip_2_3",
+        "right_service_nutclip_2_3_tapped_boss",
+        "right_service_nutclip_2_4",
+        "right_service_nutclip_2_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    }
+  ],
+  "joints": [
+    {
+      "id": "rear_controller_hatch_M6_1",
+      "screw": "rear_controller_hatch_M6_1",
+      "holder": "rear_controller_hatch_nutplate_1",
+      "washer": "rear_controller_hatch_M6_washer_1",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1886,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rear_controller_hatch_M6_2",
+      "screw": "rear_controller_hatch_M6_2",
+      "holder": "rear_controller_hatch_nutplate_2",
+      "washer": "rear_controller_hatch_M6_washer_2",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1158,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rear_controller_hatch_M6_3",
+      "screw": "rear_controller_hatch_M6_3",
+      "holder": "rear_controller_hatch_nutplate_3",
+      "washer": "rear_controller_hatch_M6_washer_3",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1886,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rear_controller_hatch_M6_4",
+      "screw": "rear_controller_hatch_M6_4",
+      "holder": "rear_controller_hatch_nutplate_4",
+      "washer": "rear_controller_hatch_M6_washer_4",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1158,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rear_controller_hatch_M6_5",
+      "screw": "rear_controller_hatch_M6_5",
+      "holder": "rear_controller_hatch_nutplate_5",
+      "washer": "rear_controller_hatch_M6_washer_5",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1522.0,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rear_controller_hatch_M6_6",
+      "screw": "rear_controller_hatch_M6_6",
+      "holder": "rear_controller_hatch_nutplate_6",
+      "washer": "rear_controller_hatch_M6_washer_6",
+      "cover": "rear_controller_hatch_removable_lid",
+      "gasket": "rear_controller_hatch_gasket",
+      "flange": "rear_controller_hatch_weld_flange",
+      "axis_C_mm": [
+        -1522.0,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_1",
+      "screw": "battery_hatch_M6_1",
+      "holder": "battery_hatch_nutplate_1",
+      "washer": "battery_hatch_M6_washer_1",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -1111,
+        -346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_2",
+      "screw": "battery_hatch_M6_2",
+      "holder": "battery_hatch_nutplate_2",
+      "washer": "battery_hatch_M6_washer_2",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -489,
+        -346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_3",
+      "screw": "battery_hatch_M6_3",
+      "holder": "battery_hatch_nutplate_3",
+      "washer": "battery_hatch_M6_washer_3",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -1111,
+        346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_4",
+      "screw": "battery_hatch_M6_4",
+      "holder": "battery_hatch_nutplate_4",
+      "washer": "battery_hatch_M6_washer_4",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -489,
+        346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_5",
+      "screw": "battery_hatch_M6_5",
+      "holder": "battery_hatch_nutplate_5",
+      "washer": "battery_hatch_M6_washer_5",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -800.0,
+        -346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "battery_hatch_M6_6",
+      "screw": "battery_hatch_M6_6",
+      "holder": "battery_hatch_nutplate_6",
+      "washer": "battery_hatch_M6_washer_6",
+      "cover": "battery_hatch_removable_lid",
+      "gasket": "battery_hatch_gasket",
+      "flange": "battery_hatch_weld_flange",
+      "axis_C_mm": [
+        -800.0,
+        346,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_1",
+      "screw": "payload_tool_hatch_M6_1",
+      "holder": "payload_tool_hatch_nutplate_1",
+      "washer": "payload_tool_hatch_M6_washer_1",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        -442,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_2",
+      "screw": "payload_tool_hatch_M6_2",
+      "holder": "payload_tool_hatch_nutplate_2",
+      "washer": "payload_tool_hatch_M6_washer_2",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        536,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_3",
+      "screw": "payload_tool_hatch_M6_3",
+      "holder": "payload_tool_hatch_nutplate_3",
+      "washer": "payload_tool_hatch_M6_washer_3",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        -442,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_4",
+      "screw": "payload_tool_hatch_M6_4",
+      "holder": "payload_tool_hatch_nutplate_4",
+      "washer": "payload_tool_hatch_M6_washer_4",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        536,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_5",
+      "screw": "payload_tool_hatch_M6_5",
+      "holder": "payload_tool_hatch_nutplate_5",
+      "washer": "payload_tool_hatch_M6_washer_5",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        47.0,
+        -436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "payload_tool_hatch_M6_6",
+      "screw": "payload_tool_hatch_M6_6",
+      "holder": "payload_tool_hatch_nutplate_6",
+      "washer": "payload_tool_hatch_M6_washer_6",
+      "cover": "payload_tool_hatch_removable_lid",
+      "gasket": "payload_tool_hatch_gasket",
+      "flange": "payload_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        47.0,
+        436,
+        337
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 346.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_1",
+      "screw": "front_tool_hatch_M6_1",
+      "holder": "front_tool_hatch_nutplate_1",
+      "washer": "front_tool_hatch_M6_washer_1",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1217,
+        -499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_2",
+      "screw": "front_tool_hatch_M6_2",
+      "holder": "front_tool_hatch_nutplate_2",
+      "washer": "front_tool_hatch_M6_washer_2",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1683,
+        -499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_3",
+      "screw": "front_tool_hatch_M6_3",
+      "holder": "front_tool_hatch_nutplate_3",
+      "washer": "front_tool_hatch_M6_washer_3",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1217,
+        499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_4",
+      "screw": "front_tool_hatch_M6_4",
+      "holder": "front_tool_hatch_nutplate_4",
+      "washer": "front_tool_hatch_M6_washer_4",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1683,
+        499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_5",
+      "screw": "front_tool_hatch_M6_5",
+      "holder": "front_tool_hatch_nutplate_5",
+      "washer": "front_tool_hatch_M6_washer_5",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1450.0,
+        -499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "front_tool_hatch_M6_6",
+      "screw": "front_tool_hatch_M6_6",
+      "holder": "front_tool_hatch_nutplate_6",
+      "washer": "front_tool_hatch_M6_washer_6",
+      "cover": "front_tool_hatch_removable_lid",
+      "gasket": "front_tool_hatch_gasket",
+      "flange": "front_tool_hatch_weld_flange",
+      "axis_C_mm": [
+        1450.0,
+        499,
+        297
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 306.6,
+      "grip_mm": 9.6,
+      "nominal_thread_engagement_mm": 10,
+      "tip_protrusion_mm": 0.4,
+      "female_thread_callout": "M6x1 through 10 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter 12 for 60 mm above head",
+      "service_axis": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "left_service_nutclip_1_1_M6x20",
+      "screw": "left_service_nutclip_1_1_M6x20",
+      "holder": "left_service_nutclip_1_1_tapped_boss",
+      "washer": "left_service_nutclip_1_1_washer",
+      "cover": "left_side_service_cover_1",
+      "flange": "left_service_nutclip_1_1",
+      "axis_C_mm": [
+        -1022.0,
+        513,
+        164
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_1_2_M6x20",
+      "screw": "left_service_nutclip_1_2_M6x20",
+      "holder": "left_service_nutclip_1_2_tapped_boss",
+      "washer": "left_service_nutclip_1_2_washer",
+      "cover": "left_side_service_cover_1",
+      "flange": "left_service_nutclip_1_2",
+      "axis_C_mm": [
+        -1022.0,
+        513,
+        204
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_1_3_M6x20",
+      "screw": "left_service_nutclip_1_3_M6x20",
+      "holder": "left_service_nutclip_1_3_tapped_boss",
+      "washer": "left_service_nutclip_1_3_washer",
+      "cover": "left_side_service_cover_1",
+      "flange": "left_service_nutclip_1_3",
+      "axis_C_mm": [
+        -578.0,
+        513,
+        164
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_1_4_M6x20",
+      "screw": "left_service_nutclip_1_4_M6x20",
+      "holder": "left_service_nutclip_1_4_tapped_boss",
+      "washer": "left_service_nutclip_1_4_washer",
+      "cover": "left_side_service_cover_1",
+      "flange": "left_service_nutclip_1_4",
+      "axis_C_mm": [
+        -578.0,
+        513,
+        204
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_2_1_M6x20",
+      "screw": "left_service_nutclip_2_1_M6x20",
+      "holder": "left_service_nutclip_2_1_tapped_boss",
+      "washer": "left_service_nutclip_2_1_washer",
+      "cover": "left_side_service_cover_2",
+      "flange": "left_service_nutclip_2_1",
+      "axis_C_mm": [
+        283.0,
+        513,
+        164
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_2_2_M6x20",
+      "screw": "left_service_nutclip_2_2_M6x20",
+      "holder": "left_service_nutclip_2_2_tapped_boss",
+      "washer": "left_service_nutclip_2_2_washer",
+      "cover": "left_side_service_cover_2",
+      "flange": "left_service_nutclip_2_2",
+      "axis_C_mm": [
+        283.0,
+        513,
+        204
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_2_3_M6x20",
+      "screw": "left_service_nutclip_2_3_M6x20",
+      "holder": "left_service_nutclip_2_3_tapped_boss",
+      "washer": "left_service_nutclip_2_3_washer",
+      "cover": "left_side_service_cover_2",
+      "flange": "left_service_nutclip_2_3",
+      "axis_C_mm": [
+        497.0,
+        513,
+        164
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "left_service_nutclip_2_4_M6x20",
+      "screw": "left_service_nutclip_2_4_M6x20",
+      "holder": "left_service_nutclip_2_4_tapped_boss",
+      "washer": "left_service_nutclip_2_4_washer",
+      "cover": "left_side_service_cover_2",
+      "flange": "left_service_nutclip_2_4",
+      "axis_C_mm": [
+        497.0,
+        513,
+        204
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_1_1_M6x20",
+      "screw": "right_service_nutclip_1_1_M6x20",
+      "holder": "right_service_nutclip_1_1_tapped_boss",
+      "washer": "right_service_nutclip_1_1_washer",
+      "cover": "right_side_service_cover_1",
+      "flange": "right_service_nutclip_1_1",
+      "axis_C_mm": [
+        -1022.0,
+        -513,
+        164
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_1_2_M6x20",
+      "screw": "right_service_nutclip_1_2_M6x20",
+      "holder": "right_service_nutclip_1_2_tapped_boss",
+      "washer": "right_service_nutclip_1_2_washer",
+      "cover": "right_side_service_cover_1",
+      "flange": "right_service_nutclip_1_2",
+      "axis_C_mm": [
+        -1022.0,
+        -513,
+        204
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_1_3_M6x20",
+      "screw": "right_service_nutclip_1_3_M6x20",
+      "holder": "right_service_nutclip_1_3_tapped_boss",
+      "washer": "right_service_nutclip_1_3_washer",
+      "cover": "right_side_service_cover_1",
+      "flange": "right_service_nutclip_1_3",
+      "axis_C_mm": [
+        -578.0,
+        -513,
+        164
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_1_4_M6x20",
+      "screw": "right_service_nutclip_1_4_M6x20",
+      "holder": "right_service_nutclip_1_4_tapped_boss",
+      "washer": "right_service_nutclip_1_4_washer",
+      "cover": "right_side_service_cover_1",
+      "flange": "right_service_nutclip_1_4",
+      "axis_C_mm": [
+        -578.0,
+        -513,
+        204
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_2_1_M6x20",
+      "screw": "right_service_nutclip_2_1_M6x20",
+      "holder": "right_service_nutclip_2_1_tapped_boss",
+      "washer": "right_service_nutclip_2_1_washer",
+      "cover": "right_side_service_cover_2",
+      "flange": "right_service_nutclip_2_1",
+      "axis_C_mm": [
+        283.0,
+        -513,
+        164
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_2_2_M6x20",
+      "screw": "right_service_nutclip_2_2_M6x20",
+      "holder": "right_service_nutclip_2_2_tapped_boss",
+      "washer": "right_service_nutclip_2_2_washer",
+      "cover": "right_side_service_cover_2",
+      "flange": "right_service_nutclip_2_2",
+      "axis_C_mm": [
+        283.0,
+        -513,
+        204
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_2_3_M6x20",
+      "screw": "right_service_nutclip_2_3_M6x20",
+      "holder": "right_service_nutclip_2_3_tapped_boss",
+      "washer": "right_service_nutclip_2_3_washer",
+      "cover": "right_side_service_cover_2",
+      "flange": "right_service_nutclip_2_3",
+      "axis_C_mm": [
+        497.0,
+        -513,
+        164
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "right_service_nutclip_2_4_M6x20",
+      "screw": "right_service_nutclip_2_4_M6x20",
+      "holder": "right_service_nutclip_2_4_tapped_boss",
+      "washer": "right_service_nutclip_2_4_washer",
+      "cover": "right_side_service_cover_2",
+      "flange": "right_service_nutclip_2_4",
+      "axis_C_mm": [
+        497.0,
+        -513,
+        204
+      ],
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "bolt_nominal": "ISO 4762 M6x20",
+      "length_mm": 20,
+      "underhead_mm": 517.6,
+      "grip_mm": 7.6,
+      "nominal_thread_engagement_mm": 12.4,
+      "tip_recess_mm": 0.6,
+      "female_thread_callout": "M6x1 through 13 mm",
+      "clearance_diameter_mm": 6.6,
+      "thread_equivalent_diameter_mm": 6,
+      "washer_mm": [
+        12,
+        6.4,
+        1.6
+      ],
+      "tool": "5 mm AF hex key; axial access cylinder diameter12 for60 mm outward",
+      "service_axis": [
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "battery_tie_rods": [
+    {
+      "id": "battery_retention_stud_1_-235",
+      "rod": "battery_retention_stud_1_-235",
+      "axis_C_mm": [
+        -950,
+        -235,
+        0
+      ],
+      "length_mm": 325,
+      "pitch_mm": 1.25,
+      "nominal_diameter_mm": 8,
+      "nut_engagement_mm": 6.5,
+      "end_protrusion_mm": 4.9,
+      "crossbar": "battery_retention_crossbar_1",
+      "floor": "battery_well_floor_3mm",
+      "battery_envelope_to_crossbar_gap_mm": 12,
+      "battery_restraint_qualified": false,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_1_-235_bottom",
+          "washer": "battery_retention_washer_1_-235_bottom",
+          "bearing_part": "battery_well_floor_3mm",
+          "nut_z_mm": [
+            -88.1,
+            -81.6
+          ],
+          "washer_z_mm": [
+            -81.6,
+            -80.0
+          ]
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_1_-235_top",
+          "washer": "battery_retention_washer_1_-235_top",
+          "bearing_part": "battery_retention_crossbar_1",
+          "nut_z_mm": [
+            220.6,
+            227.1
+          ],
+          "washer_z_mm": [
+            219,
+            220.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battery_retention_stud_1_235",
+      "rod": "battery_retention_stud_1_235",
+      "axis_C_mm": [
+        -950,
+        235,
+        0
+      ],
+      "length_mm": 325,
+      "pitch_mm": 1.25,
+      "nominal_diameter_mm": 8,
+      "nut_engagement_mm": 6.5,
+      "end_protrusion_mm": 4.9,
+      "crossbar": "battery_retention_crossbar_1",
+      "floor": "battery_well_floor_3mm",
+      "battery_envelope_to_crossbar_gap_mm": 12,
+      "battery_restraint_qualified": false,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_1_235_bottom",
+          "washer": "battery_retention_washer_1_235_bottom",
+          "bearing_part": "battery_well_floor_3mm",
+          "nut_z_mm": [
+            -88.1,
+            -81.6
+          ],
+          "washer_z_mm": [
+            -81.6,
+            -80.0
+          ]
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_1_235_top",
+          "washer": "battery_retention_washer_1_235_top",
+          "bearing_part": "battery_retention_crossbar_1",
+          "nut_z_mm": [
+            220.6,
+            227.1
+          ],
+          "washer_z_mm": [
+            219,
+            220.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battery_retention_stud_2_-235",
+      "rod": "battery_retention_stud_2_-235",
+      "axis_C_mm": [
+        -650,
+        -235,
+        0
+      ],
+      "length_mm": 325,
+      "pitch_mm": 1.25,
+      "nominal_diameter_mm": 8,
+      "nut_engagement_mm": 6.5,
+      "end_protrusion_mm": 4.9,
+      "crossbar": "battery_retention_crossbar_2",
+      "floor": "battery_well_floor_3mm",
+      "battery_envelope_to_crossbar_gap_mm": 12,
+      "battery_restraint_qualified": false,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_2_-235_bottom",
+          "washer": "battery_retention_washer_2_-235_bottom",
+          "bearing_part": "battery_well_floor_3mm",
+          "nut_z_mm": [
+            -88.1,
+            -81.6
+          ],
+          "washer_z_mm": [
+            -81.6,
+            -80.0
+          ]
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_2_-235_top",
+          "washer": "battery_retention_washer_2_-235_top",
+          "bearing_part": "battery_retention_crossbar_2",
+          "nut_z_mm": [
+            220.6,
+            227.1
+          ],
+          "washer_z_mm": [
+            219,
+            220.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battery_retention_stud_2_235",
+      "rod": "battery_retention_stud_2_235",
+      "axis_C_mm": [
+        -650,
+        235,
+        0
+      ],
+      "length_mm": 325,
+      "pitch_mm": 1.25,
+      "nominal_diameter_mm": 8,
+      "nut_engagement_mm": 6.5,
+      "end_protrusion_mm": 4.9,
+      "crossbar": "battery_retention_crossbar_2",
+      "floor": "battery_well_floor_3mm",
+      "battery_envelope_to_crossbar_gap_mm": 12,
+      "battery_restraint_qualified": false,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_2_235_bottom",
+          "washer": "battery_retention_washer_2_235_bottom",
+          "bearing_part": "battery_well_floor_3mm",
+          "nut_z_mm": [
+            -88.1,
+            -81.6
+          ],
+          "washer_z_mm": [
+            -81.6,
+            -80.0
+          ]
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_2_235_top",
+          "washer": "battery_retention_washer_2_235_top",
+          "bearing_part": "battery_retention_crossbar_2",
+          "nut_z_mm": [
+            220.6,
+            227.1
+          ],
+          "washer_z_mm": [
+            219,
+            220.6
+          ]
+        }
+      ]
+    }
+  ],
+  "welded_connections": [
+    {
+      "a": "rear_controller_hatch_nutplate_1",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_2",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_3",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_4",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_5",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_6",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_1",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_2",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_3",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_4",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_5",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_hatch_nutplate_6",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_1",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_2",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_3",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_4",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_5",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_6",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_1",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_2",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_3",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_4",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_5",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_tool_hatch_nutplate_6",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_hatch_partition_ledge",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "860 mm butt seam at partition face; qualification pending.",
+      "strength_qualified": false
+    },
+    {
+      "a": "rear_hatch_partition_ledge",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Flange bears over 19 mm ledge; same-alloy weld/fit detail.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_hatch_partition_ledge",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "860 mm butt seam at partition face; qualification pending.",
+      "strength_qualified": false
+    },
+    {
+      "a": "payload_hatch_partition_ledge",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Flange bears over 19 mm ledge; same-alloy weld/fit detail.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_left_support_ledge",
+      "b": "front_tool_left_side",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "494 mm edge seam to side wall.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_left_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "20 mm bearing band under flange.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_right_support_ledge",
+      "b": "front_tool_right_side",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "494 mm edge seam to side wall.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_right_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "20 mm bearing band under flange.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_rear_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Broad flange bearing contact.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_rear_support_ledge",
+      "b": "front_tool_rear_wall",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Rear butt seam / fitted nose seam, unqualified.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_nose_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Broad flange bearing contact.",
+      "strength_qualified": false
+    },
+    {
+      "a": "front_hatch_nose_support_ledge",
+      "b": "front_sloped_service_nose",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Rear butt seam / fitted nose seam, unqualified.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_1",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_1_tapped_boss",
+      "b": "left_service_nutclip_1_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_2",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_2_tapped_boss",
+      "b": "left_service_nutclip_1_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_3",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_3_tapped_boss",
+      "b": "left_service_nutclip_1_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_4",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_1_4_tapped_boss",
+      "b": "left_service_nutclip_1_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_1",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_1_tapped_boss",
+      "b": "left_service_nutclip_2_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_2",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_2_tapped_boss",
+      "b": "left_service_nutclip_2_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_3",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_3_tapped_boss",
+      "b": "left_service_nutclip_2_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_4",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "left_service_nutclip_2_4_tapped_boss",
+      "b": "left_service_nutclip_2_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_1",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_1_tapped_boss",
+      "b": "right_service_nutclip_1_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_2",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_2_tapped_boss",
+      "b": "right_service_nutclip_1_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_3",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_3_tapped_boss",
+      "b": "right_service_nutclip_1_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_4",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_1_4_tapped_boss",
+      "b": "right_service_nutclip_1_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_1",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_1_tapped_boss",
+      "b": "right_service_nutclip_2_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_2",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_2_tapped_boss",
+      "b": "right_service_nutclip_2_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_3",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_3_tapped_boss",
+      "b": "right_service_nutclip_2_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_4",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false
+    },
+    {
+      "a": "right_service_nutclip_2_4_tapped_boss",
+      "b": "right_service_nutclip_2_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_1_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_1_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_2_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_2_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_3_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_3_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_4_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "battery_4_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "rear_bulkhead_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "cable_duct_floor_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "cable_duct_floor_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "cable_duct_floor_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "cable_duct_floor_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "cable_duct_floor_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "arm_facing_bulkhead_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "cable_duct_floor_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false
+    }
+  ],
+  "thread_representation": "M6x1 nominal cylindrical thread-contact equivalent, diameter 6 mm; helical flanks/runout/tolerances omitted. Manufacturing callout: tap M6x1 through; this 6 mm CAD bore is NOT a clearance hole and is NOT a tap-drill diameter. Alloy, thread stripping, fastener grade, locking, preload and corrosion unqualified.",
+  "qualification": "Development geometry only. No structural, fatigue, ingress, tolerance, weld, corrosion, torque or operational qualification.",
+  "outputs": {
+    "body_power_panel_retained_PR01.step": "58639dc48849cb7a37c86bac127550207b29721e3804d731c3a735489eaec2ca",
+    "body_power_panel_retained_PR01.glb": "33d1e32f9a2d213618e33d99e75f522016eceb6f65b5906e13f056429740330b",
+    "body_retention_delta_PR01.step": "18d80dca1e323687e8bac5044b7aef35319ddfa8a939ba4969dc0e18cf2aaf16",
+    "body_retention_delta_PR01.glb": "5d44e3cead2ede3615d4f4bd07844d965b4a5cf259e5f4f1c451b2be9f712e23",
+    "body_retention_delta_nonrear_PR01.step": "5ed1fbc0d6b81485b288e96ae5681a9d680d165561cbb6ded9381bb9cbf363ba",
+    "body_retention_delta_nonrear_PR01.glb": "82493ba0ac0467184c3a9361ca1da062296598214c0b8e3f1ab72828f3b3b6ae"
+  }
+}

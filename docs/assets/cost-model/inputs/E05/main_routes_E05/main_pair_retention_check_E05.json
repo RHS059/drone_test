@@ -1,0 +1,603 @@
+{
+  "revision": "E05",
+  "retained_stack_contacts": [
+    {
+      "support": "MAIN_positive_support0",
+      "contacts": [
+        {
+          "from": "MAIN_positive_support0_M4x30_0",
+          "to": "MAIN_positive_support0_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_positive_support0_lower_washer_0",
+          "to": "MAIN_positive_support0_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_positive_support0_upper_washer_0",
+          "to": "MAIN_positive_support0_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_positive_support0_lower_washer_0",
+          "to": "MAIN_positive_support0_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279191108
+        },
+        {
+          "from": "MAIN_positive_support0_M4x30_1",
+          "to": "MAIN_positive_support0_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_positive_support0_lower_washer_1",
+          "to": "MAIN_positive_support0_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_positive_support0_upper_washer_1",
+          "to": "MAIN_positive_support0_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_positive_support0_lower_washer_1",
+          "to": "MAIN_positive_support0_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279191108
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_positive_support1",
+      "contacts": [
+        {
+          "from": "MAIN_positive_support1_M4x30_0",
+          "to": "MAIN_positive_support1_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_positive_support1_lower_washer_0",
+          "to": "MAIN_positive_support1_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_positive_support1_upper_washer_0",
+          "to": "MAIN_positive_support1_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_positive_support1_lower_washer_0",
+          "to": "MAIN_positive_support1_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279191108
+        },
+        {
+          "from": "MAIN_positive_support1_M4x30_1",
+          "to": "MAIN_positive_support1_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_positive_support1_lower_washer_1",
+          "to": "MAIN_positive_support1_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_positive_support1_upper_washer_1",
+          "to": "MAIN_positive_support1_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_positive_support1_lower_washer_1",
+          "to": "MAIN_positive_support1_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279191108
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_positive_support2",
+      "contacts": [
+        {
+          "from": "MAIN_positive_support2_M4x30_0",
+          "to": "MAIN_positive_support2_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_positive_support2_lower_washer_0",
+          "to": "MAIN_positive_support2_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.22993634231057
+        },
+        {
+          "from": "MAIN_positive_support2_upper_washer_0",
+          "to": "MAIN_positive_support2_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_positive_support2_lower_washer_0",
+          "to": "MAIN_positive_support2_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279168593
+        },
+        {
+          "from": "MAIN_positive_support2_M4x30_1",
+          "to": "MAIN_positive_support2_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_positive_support2_lower_washer_1",
+          "to": "MAIN_positive_support2_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.22993634231057
+        },
+        {
+          "from": "MAIN_positive_support2_upper_washer_1",
+          "to": "MAIN_positive_support2_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_positive_support2_lower_washer_1",
+          "to": "MAIN_positive_support2_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279168593
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_positive_support3",
+      "contacts": [
+        {
+          "from": "MAIN_positive_support3_M4x30_0",
+          "to": "MAIN_positive_support3_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_positive_support3_lower_washer_0",
+          "to": "MAIN_positive_support3_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342030598
+        },
+        {
+          "from": "MAIN_positive_support3_upper_washer_0",
+          "to": "MAIN_positive_support3_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_positive_support3_lower_washer_0",
+          "to": "MAIN_positive_support3_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279168599
+        },
+        {
+          "from": "MAIN_positive_support3_M4x30_1",
+          "to": "MAIN_positive_support3_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_positive_support3_lower_washer_1",
+          "to": "MAIN_positive_support3_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342030598
+        },
+        {
+          "from": "MAIN_positive_support3_upper_washer_1",
+          "to": "MAIN_positive_support3_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_positive_support3_lower_washer_1",
+          "to": "MAIN_positive_support3_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791911585
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_negative_support0",
+      "contacts": [
+        {
+          "from": "MAIN_negative_support0_M4x30_0",
+          "to": "MAIN_negative_support0_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_negative_support0_lower_washer_0",
+          "to": "MAIN_negative_support0_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_negative_support0_upper_washer_0",
+          "to": "MAIN_negative_support0_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_negative_support0_lower_washer_0",
+          "to": "MAIN_negative_support0_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181807
+        },
+        {
+          "from": "MAIN_negative_support0_M4x30_1",
+          "to": "MAIN_negative_support0_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_negative_support0_lower_washer_1",
+          "to": "MAIN_negative_support0_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_negative_support0_upper_washer_1",
+          "to": "MAIN_negative_support0_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_negative_support0_lower_washer_1",
+          "to": "MAIN_negative_support0_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_negative_support1",
+      "contacts": [
+        {
+          "from": "MAIN_negative_support1_M4x30_0",
+          "to": "MAIN_negative_support1_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_negative_support1_lower_washer_0",
+          "to": "MAIN_negative_support1_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_negative_support1_upper_washer_0",
+          "to": "MAIN_negative_support1_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_negative_support1_lower_washer_0",
+          "to": "MAIN_negative_support1_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181807
+        },
+        {
+          "from": "MAIN_negative_support1_M4x30_1",
+          "to": "MAIN_negative_support1_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.279201563099736
+        },
+        {
+          "from": "MAIN_negative_support1_lower_washer_1",
+          "to": "MAIN_negative_support1_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342309685
+        },
+        {
+          "from": "MAIN_negative_support1_upper_washer_1",
+          "to": "MAIN_negative_support1_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        },
+        {
+          "from": "MAIN_negative_support1_lower_washer_1",
+          "to": "MAIN_negative_support1_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181808
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_negative_support2",
+      "contacts": [
+        {
+          "from": "MAIN_negative_support2_M4x30_0",
+          "to": "MAIN_negative_support2_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_negative_support2_lower_washer_0",
+          "to": "MAIN_negative_support2_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.22993634231057
+        },
+        {
+          "from": "MAIN_negative_support2_upper_washer_0",
+          "to": "MAIN_negative_support2_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_negative_support2_lower_washer_0",
+          "to": "MAIN_negative_support2_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181884
+        },
+        {
+          "from": "MAIN_negative_support2_M4x30_1",
+          "to": "MAIN_negative_support2_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_negative_support2_lower_washer_1",
+          "to": "MAIN_negative_support2_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.22993634231057
+        },
+        {
+          "from": "MAIN_negative_support2_upper_washer_1",
+          "to": "MAIN_negative_support2_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_negative_support2_lower_washer_1",
+          "to": "MAIN_negative_support2_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818916
+        }
+      ],
+      "pass": true
+    },
+    {
+      "support": "MAIN_negative_support3",
+      "contacts": [
+        {
+          "from": "MAIN_negative_support3_M4x30_0",
+          "to": "MAIN_negative_support3_upper_washer_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_negative_support3_lower_washer_0",
+          "to": "MAIN_negative_support3_M4nut_0",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342030598
+        },
+        {
+          "from": "MAIN_negative_support3_upper_washer_0",
+          "to": "MAIN_negative_support3_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_negative_support3_lower_washer_0",
+          "to": "MAIN_negative_support3_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.41194279181884
+        },
+        {
+          "from": "MAIN_negative_support3_M4x30_1",
+          "to": "MAIN_negative_support3_upper_washer_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 23.27920156310052
+        },
+        {
+          "from": "MAIN_negative_support3_lower_washer_1",
+          "to": "MAIN_negative_support3_M4nut_1",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 27.229936342030598
+        },
+        {
+          "from": "MAIN_negative_support3_upper_washer_1",
+          "to": "MAIN_negative_support3_upper_clamp",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818866
+        },
+        {
+          "from": "MAIN_negative_support3_lower_washer_1",
+          "to": "MAIN_negative_support3_welded_stand",
+          "gap_mm": 0.0,
+          "shared_surface_area_mm2": 48.411942791818916
+        }
+      ],
+      "pass": true
+    },
+    {
+      "from": "MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "to": "MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "gap_mm": 0.0,
+      "shared_surface_area_mm2": 471.2388980385001,
+      "kind": "nominal_M25_cylindrical_thread_contact",
+      "thread_pitch_mm": 1.5,
+      "engagement_mm": 6,
+      "pass_": true
+    },
+    {
+      "from": "MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "to": "MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "gap_mm": 0.0,
+      "shared_surface_area_mm2": 471.2388980385001,
+      "kind": "nominal_M25_cylindrical_thread_contact",
+      "thread_pitch_mm": 1.5,
+      "engagement_mm": 6,
+      "pass_": true
+    },
+    {
+      "from": "MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "to": "MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "gap_mm": 0.0,
+      "shared_surface_area_mm2": 471.2388980385001,
+      "kind": "nominal_M25_cylindrical_thread_contact",
+      "thread_pitch_mm": 1.5,
+      "engagement_mm": 6,
+      "pass_": true
+    },
+    {
+      "from": "MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "to": "MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "gap_mm": 0.0,
+      "shared_surface_area_mm2": 471.2388980385001,
+      "kind": "nominal_M25_cylindrical_thread_contact",
+      "thread_pitch_mm": 1.5,
+      "engagement_mm": 6,
+      "pass_": true
+    }
+  ],
+  "full_foot_bearing_checks": [
+    {
+      "id": "MAIN_positive_support0",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_positive_support1",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_positive_support2",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_positive_support3",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_negative_support0",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_negative_support1",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_negative_support2",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    },
+    {
+      "id": "MAIN_negative_support3",
+      "method": "Actual coplanar exported STEP face common area; solid boolean omits zero-thickness contact",
+      "area_mm2": 1500.0,
+      "pass": true
+    }
+  ],
+  "exact_CAD_radius_checks": [
+    {
+      "id": "MAIN_positive",
+      "actual_CAD_circle_R_mm": 85.2,
+      "source_nominal_limit_mm": 85.2,
+      "pass": true
+    },
+    {
+      "id": "MAIN_negative",
+      "actual_CAD_circle_R_mm": 85.2,
+      "source_nominal_limit_mm": 85.2,
+      "pass": true
+    }
+  ],
+  "gland_panel_face_checks": [
+    {
+      "node": "MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "panel": "controller_battery_partition",
+      "face_common_contact_area_mm2": 277.75404213594294,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "panel": "controller_battery_partition",
+      "face_common_contact_area_mm2": 492.8728533160995,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "panel": "controller_battery_partition",
+      "face_common_contact_area_mm2": 277.7540421359425,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "panel": "controller_battery_partition",
+      "face_common_contact_area_mm2": 492.8728533160988,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "panel": "battery_tool_partition",
+      "face_common_contact_area_mm2": 277.75404213594294,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "panel": "battery_tool_partition",
+      "face_common_contact_area_mm2": 492.8728533160995,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "panel": "battery_tool_partition",
+      "face_common_contact_area_mm2": 277.7540421359425,
+      "gap_mm": 0.0,
+      "pass": true
+    },
+    {
+      "node": "MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "panel": "battery_tool_partition",
+      "face_common_contact_area_mm2": 492.8728533160988,
+      "gap_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "source_geometry_SHA256": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+  "pass": true,
+  "nominal_threads_only": true,
+  "weld_strength_grade_torque_locking_pullout_qualified": false
+}

@@ -1,0 +1,137 @@
+{
+  "revision": "C04 direct wheel nut R01 development exterior",
+  "units": "mm",
+  "coordinate": "drive wheel face z0,+Zoutboard; leftRx-90 thenC(0,928,-250), rightproperRzpi; rotates with wheel",
+  "source_dimensions": {
+    "RIMA22095": {
+      "thread": "M16x1.5",
+      "overall_height_mm": 18,
+      "seat_radius_mm": 14,
+      "across_flats_mm": 27,
+      "closed": false,
+      "source": "https://www.4lean.net/catalogos/vol1/fornecedores/Rima.pdf",
+      "printed_page": 45,
+      "PDF_page_1based": 77
+    },
+    "EUWA_B14ES28": {
+      "throat_diameter_mm": 18.5,
+      "mouth_diameter_mm": 24,
+      "radius_mm": 14,
+      "source": "https://www.euwa.org/wp-content/uploads/2018/05/EUWA-ES-3.15-Stud-Hole-Designation-Truck-Wheels.pdf",
+      "page": 3
+    }
+  },
+  "nominal_stack": {
+    "disc_back": 0,
+    "disc_front": 8,
+    "spherical_center": 15.21110255092798,
+    "countersink_depth_mm": 3.2978222275638727,
+    "nut_bottom": 3.721977257851922,
+    "nut_top": 21.721977257851922,
+    "stud_tip": 30,
+    "nominal_stud_projection": 8.278022742148078,
+    "nominal_major_cylinder_thread_overlap": 18,
+    "pilot_engagement": 4.7
+  },
+  "source_gates": [
+    "EUWA B14 denotes14mm stud; M16 application with this exact wheel and RIMA nut requires supplier approval despite geometric fit",
+    "Nut spherical patch extent, end chamfers and thread runout absent from RIMA drawing; modeled exterior is original and nominal",
+    "Grade, torque, fatigue, bearing offset load and exact rim section remain unqualified",
+    "8mm disc nominal assumes local mounting pad thickness; actual supplier section still required"
+  ],
+  "parts": [
+    {
+      "node": "direct_wheel_RIMA22095_external_0_C04_R01",
+      "bounds_mm": [
+        54.411542731880104,
+        -13.500000000000005,
+        3.721977257851922,
+        85.5884572681199,
+        13.5,
+        21.721977257851922
+      ],
+      "mass_kg": null,
+      "valid": true
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_1_C04_R01",
+      "bounds_mm": [
+        6.0427323381264255,
+        53.073956140660734,
+        3.721977257851922,
+        37.21964687436622,
+        80.07395614066074,
+        21.721977257851922
+      ],
+      "mass_kg": null,
+      "valid": true
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_2_C04_R01",
+      "bounds_mm": [
+        -72.2196468743662,
+        27.64496766047312,
+        3.721977257851922,
+        -41.04273233812642,
+        54.64496766047313,
+        21.721977257851922
+      ],
+      "mass_kg": null,
+      "valid": true
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_3_C04_R01",
+      "bounds_mm": [
+        -72.21964687436622,
+        -54.64496766047312,
+        3.721977257851922,
+        -41.042732338126434,
+        -27.644967660473114,
+        21.721977257851922
+      ],
+      "mass_kg": null,
+      "valid": true
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_4_C04_R01",
+      "bounds_mm": [
+        6.042732338126408,
+        -80.07395614066077,
+        3.721977257851922,
+        37.2196468743662,
+        -53.073956140660755,
+        21.721977257851922
+      ],
+      "mass_kg": null,
+      "valid": true
+    }
+  ],
+  "checks": [
+    {
+      "node": "direct_wheel_RIMA22095_external_0_C04_R01",
+      "disc_overlap_mm3": 0.0,
+      "disc_distance_mm": 1.1546319456101628e-14
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_1_C04_R01",
+      "disc_overlap_mm3": 0.0,
+      "disc_distance_mm": 1.3557455178480058e-14
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_2_C04_R01",
+      "disc_overlap_mm3": 0.0,
+      "disc_distance_mm": 1.3557455178480058e-14
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_3_C04_R01",
+      "disc_overlap_mm3": 0.0,
+      "disc_distance_mm": 1.3557455178480058e-14
+    },
+    {
+      "node": "direct_wheel_RIMA22095_external_4_C04_R01",
+      "disc_overlap_mm3": 0.0,
+      "disc_distance_mm": 1.3557455178480058e-14
+    }
+  ],
+  "fabrication_released": false
+}

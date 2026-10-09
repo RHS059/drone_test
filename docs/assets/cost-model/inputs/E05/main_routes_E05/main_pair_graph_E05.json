@@ -1,0 +1,1065 @@
+{
+  "revision": "E05",
+  "nodes": {
+    "MAIN_positive_70mm2_routed_jacket": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_70mm2_routed_jacket",
+      "actual_material": "source cable insulation envelope"
+    },
+    "MAIN_positive_support0_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support0_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_positive_support0_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support0_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support0_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support1_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support1_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_positive_support1_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support1_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support1_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support2_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support2_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_positive_support2_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support2_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support2_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support3_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_positive_support3_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_positive_support3_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_support3_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_support3_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_70mm2_routed_jacket": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_70mm2_routed_jacket",
+      "actual_material": "source cable insulation envelope"
+    },
+    "MAIN_negative_support0_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support0_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_negative_support0_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support0_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support0_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support1_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support1_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_negative_support1_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support1_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support1_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support2_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support2_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_negative_support2_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support2_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support2_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support3_M4x30_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_M4x30_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_upper_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_upper_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_lower_washer_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_lower_washer_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_M4nut_0": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_M4nut_0",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_M4x30_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_M4x30_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_upper_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_upper_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_lower_washer_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_lower_washer_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_M4nut_1": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_M4nut_1",
+      "actual_material": "nominal steel hardware; grade and locking unspecified"
+    },
+    "MAIN_negative_support3_welded_stand": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_welded_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending"
+    },
+    "MAIN_negative_support3_lower_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_lower_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_negative_support3_upper_clamp": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_support3_upper_clamp",
+      "actual_material": "original clamp polymer/liner unspecified"
+    },
+    "MAIN_positive_controller_battery_partition_gland_LAPP53111030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_positive_controller_battery_partition_gland_LAPP53119030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_negative_controller_battery_partition_gland_LAPP53111030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_negative_controller_battery_partition_gland_LAPP53119030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_positive_battery_tool_partition_gland_LAPP53111030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_positive_battery_tool_partition_gland_LAPP53119030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_negative_battery_tool_partition_gland_LAPP53111030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "actual_material": "purchased gland/locknut representation"
+    },
+    "MAIN_negative_battery_tool_partition_gland_LAPP53119030": {
+      "module": "main_pair_E05",
+      "source_node": "MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "actual_material": "purchased gland/locknut representation"
+    }
+  },
+  "edges": [
+    {
+      "id": "E05_000",
+      "kind": "source_anchored_continuous_DC_cable_jacket",
+      "from_nodes": [
+        "MAIN_positive_70mm2_routed_jacket"
+      ],
+      "to_nodes": [
+        "Q0:P_OUT",
+        "LYNX:BAT+"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Lug crimp/conductor contact and exact strip/tool process unqualified",
+        "Cable thermal rating, voltage drop, environment and positive marking unqualified",
+        "Upstream fuse/merge hardware remains missing; system must not be energized"
+      ],
+      "jacket_endface_coordinates_verified": true,
+      "conductive_contact_and_operational_circuit_verified": false,
+      "domain": "DC_power"
+    },
+    {
+      "id": "E05_001",
+      "kind": "source_anchored_continuous_DC_cable_jacket",
+      "from_nodes": [
+        "MAIN_negative_70mm2_routed_jacket"
+      ],
+      "to_nodes": [
+        "Q0:N_OUT",
+        "LYNX:BAT-"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Lug crimp/conductor contact and exact strip/tool process unqualified",
+        "Cable thermal rating, voltage drop, environment and positive marking unqualified",
+        "Upstream fuse/merge hardware remains missing; system must not be energized"
+      ],
+      "jacket_endface_coordinates_verified": true,
+      "conductive_contact_and_operational_circuit_verified": false,
+      "domain": "DC_power"
+    },
+    {
+      "id": "E05_002",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_positive_support0_lower_clamp",
+        "MAIN_positive_support0_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_positive_70mm2_routed_jacket",
+        "MAIN_positive_support0_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_support0_M4x30_0",
+        "MAIN_positive_support0_upper_washer_0",
+        "MAIN_positive_support0_lower_washer_0",
+        "MAIN_positive_support0_M4nut_0",
+        "MAIN_positive_support0_M4x30_1",
+        "MAIN_positive_support0_upper_washer_1",
+        "MAIN_positive_support0_lower_washer_1",
+        "MAIN_positive_support0_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_003",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_positive_support0_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_004",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_positive_support1_lower_clamp",
+        "MAIN_positive_support1_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_positive_70mm2_routed_jacket",
+        "MAIN_positive_support1_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_support1_M4x30_0",
+        "MAIN_positive_support1_upper_washer_0",
+        "MAIN_positive_support1_lower_washer_0",
+        "MAIN_positive_support1_M4nut_0",
+        "MAIN_positive_support1_M4x30_1",
+        "MAIN_positive_support1_upper_washer_1",
+        "MAIN_positive_support1_lower_washer_1",
+        "MAIN_positive_support1_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_005",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_positive_support1_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_006",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_positive_support2_lower_clamp",
+        "MAIN_positive_support2_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_positive_70mm2_routed_jacket",
+        "MAIN_positive_support2_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_support2_M4x30_0",
+        "MAIN_positive_support2_upper_washer_0",
+        "MAIN_positive_support2_lower_washer_0",
+        "MAIN_positive_support2_M4nut_0",
+        "MAIN_positive_support2_M4x30_1",
+        "MAIN_positive_support2_upper_washer_1",
+        "MAIN_positive_support2_lower_washer_1",
+        "MAIN_positive_support2_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_007",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_positive_support2_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_008",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_positive_support3_lower_clamp",
+        "MAIN_positive_support3_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_positive_70mm2_routed_jacket",
+        "MAIN_positive_support3_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_support3_M4x30_0",
+        "MAIN_positive_support3_upper_washer_0",
+        "MAIN_positive_support3_lower_washer_0",
+        "MAIN_positive_support3_M4nut_0",
+        "MAIN_positive_support3_M4x30_1",
+        "MAIN_positive_support3_upper_washer_1",
+        "MAIN_positive_support3_lower_washer_1",
+        "MAIN_positive_support3_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_009",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_positive_support3_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_010",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_negative_support0_lower_clamp",
+        "MAIN_negative_support0_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_negative_70mm2_routed_jacket",
+        "MAIN_negative_support0_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_support0_M4x30_0",
+        "MAIN_negative_support0_upper_washer_0",
+        "MAIN_negative_support0_lower_washer_0",
+        "MAIN_negative_support0_M4nut_0",
+        "MAIN_negative_support0_M4x30_1",
+        "MAIN_negative_support0_upper_washer_1",
+        "MAIN_negative_support0_lower_washer_1",
+        "MAIN_negative_support0_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_011",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_negative_support0_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_012",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_negative_support1_lower_clamp",
+        "MAIN_negative_support1_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_negative_70mm2_routed_jacket",
+        "MAIN_negative_support1_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_support1_M4x30_0",
+        "MAIN_negative_support1_upper_washer_0",
+        "MAIN_negative_support1_lower_washer_0",
+        "MAIN_negative_support1_M4nut_0",
+        "MAIN_negative_support1_M4x30_1",
+        "MAIN_negative_support1_upper_washer_1",
+        "MAIN_negative_support1_lower_washer_1",
+        "MAIN_negative_support1_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_013",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_negative_support1_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_014",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_negative_support2_lower_clamp",
+        "MAIN_negative_support2_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_negative_70mm2_routed_jacket",
+        "MAIN_negative_support2_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_support2_M4x30_0",
+        "MAIN_negative_support2_upper_washer_0",
+        "MAIN_negative_support2_lower_washer_0",
+        "MAIN_negative_support2_M4nut_0",
+        "MAIN_negative_support2_M4x30_1",
+        "MAIN_negative_support2_upper_washer_1",
+        "MAIN_negative_support2_lower_washer_1",
+        "MAIN_negative_support2_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_015",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_negative_support2_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_016",
+      "kind": "split_clamp_retains_jacket",
+      "from_nodes": [
+        "MAIN_negative_support3_lower_clamp",
+        "MAIN_negative_support3_upper_clamp"
+      ],
+      "to_nodes": [
+        "MAIN_negative_70mm2_routed_jacket",
+        "MAIN_negative_support3_welded_stand"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_support3_M4x30_0",
+        "MAIN_negative_support3_upper_washer_0",
+        "MAIN_negative_support3_lower_washer_0",
+        "MAIN_negative_support3_M4nut_0",
+        "MAIN_negative_support3_M4x30_1",
+        "MAIN_negative_support3_upper_washer_1",
+        "MAIN_negative_support3_lower_washer_1",
+        "MAIN_negative_support3_M4nut_1"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json"
+      ],
+      "open_gates": [
+        "Clamp polymer/liner, torque, pullout, abrasion and vibration qualification open",
+        "M4nominal cylindrical threads, nohelix/grade/locking claim"
+      ],
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_017",
+      "kind": "proposed_matched_aluminium_weld_contact",
+      "from_nodes": [
+        "MAIN_negative_support3_welded_stand"
+      ],
+      "to_nodes": [
+        "body/main_base_deck_3mm"
+      ],
+      "retaining_nodes": [],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "main_pair_retention_check_E05.json"
+      ],
+      "open_gates": [
+        "Deck aluminium has only a 5083-like density assumption. Exact matching alloy/temper, weld filler/process/size, heat-affected-zone effects, thin-deck fatigue and stand strength are unqualified"
+      ],
+      "foot_plane_Z_mm": 103,
+      "foot_contact_mm2": 1500,
+      "nominal_geometric_contact_verified": true,
+      "welded_load_path_qualified": false,
+      "stand_and_deck_intended_material_family": "aluminium matched pair"
+    },
+    {
+      "id": "E05_018",
+      "kind": "retained_source_M25_gland",
+      "from_nodes": [
+        "MAIN_positive_controller_battery_partition_gland_LAPP53111030"
+      ],
+      "to_nodes": [
+        "body/controller_battery_partition",
+        "MAIN_positive_70mm2_routed_jacket"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_controller_battery_partition_gland_LAPP53119030"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "partition_patch_E05.json"
+      ],
+      "open_gates": [
+        "Installed sealing/IP, cable clamp pullout, tightening torque and thermal environment not released"
+      ],
+      "source_thread_engagement_mm": 6,
+      "thread_protrusion_mm": 1,
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_019",
+      "kind": "retained_source_M25_gland",
+      "from_nodes": [
+        "MAIN_negative_controller_battery_partition_gland_LAPP53111030"
+      ],
+      "to_nodes": [
+        "body/controller_battery_partition",
+        "MAIN_negative_70mm2_routed_jacket"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_controller_battery_partition_gland_LAPP53119030"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "partition_patch_E05.json"
+      ],
+      "open_gates": [
+        "Installed sealing/IP, cable clamp pullout, tightening torque and thermal environment not released"
+      ],
+      "source_thread_engagement_mm": 6,
+      "thread_protrusion_mm": 1,
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_020",
+      "kind": "retained_source_M25_gland",
+      "from_nodes": [
+        "MAIN_positive_battery_tool_partition_gland_LAPP53111030"
+      ],
+      "to_nodes": [
+        "body/battery_tool_partition",
+        "MAIN_positive_70mm2_routed_jacket"
+      ],
+      "retaining_nodes": [
+        "MAIN_positive_battery_tool_partition_gland_LAPP53119030"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "partition_patch_E05.json"
+      ],
+      "open_gates": [
+        "Installed sealing/IP, cable clamp pullout, tightening torque and thermal environment not released"
+      ],
+      "source_thread_engagement_mm": 6,
+      "thread_protrusion_mm": 1,
+      "nominal_geometric_contact_verified": true
+    },
+    {
+      "id": "E05_021",
+      "kind": "retained_source_M25_gland",
+      "from_nodes": [
+        "MAIN_negative_battery_tool_partition_gland_LAPP53111030"
+      ],
+      "to_nodes": [
+        "body/battery_tool_partition",
+        "MAIN_negative_70mm2_routed_jacket"
+      ],
+      "retaining_nodes": [
+        "MAIN_negative_battery_tool_partition_gland_LAPP53119030"
+      ],
+      "evidence": [
+        "main_pair_geometry_check_E05.json",
+        "partition_patch_E05.json"
+      ],
+      "open_gates": [
+        "Installed sealing/IP, cable clamp pullout, tightening torque and thermal environment not released"
+      ],
+      "source_thread_engagement_mm": 6,
+      "thread_protrusion_mm": 1,
+      "nominal_geometric_contact_verified": true
+    }
+  ],
+  "all98_rendered_nodes_accounted": true,
+  "complete_upstream_or_operating_electrical_system": false
+}

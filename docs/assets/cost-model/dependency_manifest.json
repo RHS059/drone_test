@@ -1,0 +1,139 @@
+{
+  "revision": "C04+E05_R01",
+  "baseline_model_sha256": "f88bb6db3c91821508fa741fa38f44283b99b6ad5661fdeb0f22ce7c7e4d22a2",
+  "E05_contract_sha256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d",
+  "E05_public_allowlist_sha256": "49db3e7bc2e46399615c24f7a35053ad732b373a7b7675731ba7af04ddf68814",
+  "E05_zip_sha256_reference": "ba9c96ef4ff2f06199055eec714ebbcfd78250c395f720b5ce19f34b9a6af1b6",
+  "E05_bundled_sources": {
+    "build_main_pair_E05.py": "a68cf6a8ce79cf4bce75c554ce35d480f491ba006d6c7ee5bda66d6286e8bb8c",
+    "cad_export_E05.py": "57bcafb791a147d45c62c696331d578086676fb858ed5d4705a5f154e94c08df",
+    "check_main_pair_E05.py": "4c96a4e8082c4449afdf0c2484b5a5547643afa823345e2642b88e470b28b3e7",
+    "check_main_pair_mechanical_E05.py": "a0d1ec591099c1778871029b78d4b3a640670292200c3f0c568961b27a6fdf72",
+    "freeze_main_pair_E05.py": "1f24d12d37971765853d156a21090beb45306a9cd0cc3b8d22a6cc06c3932d07",
+    "check_main_pair_retention_E05.py": "5909feb685f18f2fcd9dfa94cca691448574bb18a748b07efea5d976a3ec6769",
+    "align_main_pair_visual_E05.py": "56d7940210b6b987c3c55e7d20f3ef2c99cc09d2a41fc564597695301c8e096f",
+    "main_routes_E05/main_pair_supported_E05.step": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+    "main_routes_E05/main_pair_supported_E05.glb": "8b24f5116e278d8b02a474eeaea88cf0162e6e998461a5f816fb54ec69cf2756",
+    "main_routes_E05/main_pair_contract_E05.json": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d",
+    "main_routes_E05/main_pair_geometry_check_E05.json": "0e585ce5499246e583d957bcd2a822e3e312fa502bb5afd2b5dc4a9a0e6a9224",
+    "main_routes_E05/main_pair_mechanical_check_E05.json": "ba0a5350a8454e9aa714eb7e5bc0c8c5530ef1be72ebb80024bc552b160ad720",
+    "main_routes_E05/partition_main_glands_E05.step": "c0e812cfb328b30b1e4b23abfdaa0dae923e479321ce609cc0552a58205a4b57",
+    "main_routes_E05/partition_main_glands_E05.glb": "37154f8ead92cae9f4684d2b6b90e00c373850e4a3b54429c1aef2b49385c29e",
+    "main_routes_E05/partition_patch_E05.json": "e0f995c6af3930aaeb51a686491f4e5a835f8e2c7f32b8aafa712a2624c16321",
+    "main_routes_E05/main_pair_graph_E05.json": "77f8ed5fda1a54c696e784d36cb06a00b03c4c8da4ee0a3727f1e423dcfb44fc",
+    "main_routes_E05/battery_polarity_regression_E05.py": "f83f5b7b3bcd4a517c08826a876f93b16600309595660a644a8c604b838a9574",
+    "main_routes_E05/battery_polarity_regression_E05.json": "3691a13f6cd1b575001980aa12c48d085005c5f8766a4c2bdd30d36379b89d96",
+    "main_routes_E05/cable_separation_screen_E05.json": "565c61984885f7e48bb630c217511ecdccdabc150db2e1c0a23f77bca6f4bea8",
+    "main_routes_E05/main_pair_retention_check_E05.json": "783266faa63622621ab4d5b071c693932ec9a731c1f4256ec829f120e64e0070",
+    "main_routes_E05/cable_source_and_scenario_E05.json": "f80d184e9820c45f483d697c4cf3e30cda6f8b213da7ded665c9e3bb0dc2d251",
+    "main_routes_E05/README_E05.md": "80b692a2c3d906c368f9dfb1a640e77b93a020bc07a843265bb1f266ab6e49a1",
+    "main_routes_E05/INPUT_HASHES_E05.json": "656fddcf8d3843fb278c14ee69fa2af8d03e601f0c0b30b735bd66175869bb79",
+    "main_routes_E05/bom_E05.json": "b9aca5ec8b8fdbfff80e14df426299ccbd7cda1401f59f8f0de1dbed51a8037a",
+    "main_routes_E05/visual_endplane_check_E05.json": "628ca8a373fa9646a20936014d424207d7f4b79c734f3fd310659781a483c8b5"
+  },
+  "upstream_separately_supplied": {
+    "as_of": "2026-10-09",
+    "dependencies": [
+      {
+        "path": "carrier_freeze_E02/original_electrical_carriers_E02.step",
+        "source_relative_to_integration": "electrical-drive/carrier_freeze_E02/original_electrical_carriers_E02.step",
+        "sha256": "1a23b78b7a7a3ef420b7e4f40443ede14cbdb10774ae70d1a0cb022fd715e06a",
+        "verified_sha256": "1a23b78b7a7a3ef420b7e4f40443ede14cbdb10774ae70d1a0cb022fd715e06a",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/switchgear_E04/installed_isolators_E04.step",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/switchgear_E04/installed_isolators_E04.step",
+        "sha256": "431fa69dfc626a2bc14f0d17895143af4c9a08a96731853da6c5aade87ab88b7",
+        "verified_sha256": "431fa69dfc626a2bc14f0d17895143af4c9a08a96731853da6c5aade87ab88b7",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/switchgear_E04/isolator_placement_contract.json",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/switchgear_E04/isolator_placement_contract.json",
+        "sha256": "e395179fb2dc202273db42e9ccffd856c4c219ff7ae45e451821f354af49b20f",
+        "verified_sha256": "e395179fb2dc202273db42e9ccffd856c4c219ff7ae45e451821f354af49b20f",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/lynx_E04/lynx1000_mounted_E04.step",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/lynx_E04/lynx1000_mounted_E04.step",
+        "sha256": "f5057f9be0e1be420a726e5fc9d2af462da1f7beefb35ed402046285f4e6d664",
+        "verified_sha256": "f5057f9be0e1be420a726e5fc9d2af462da1f7beefb35ed402046285f4e6d664",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/lynx_E04/lynx_mounted_contract.json",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/lynx_E04/lynx_mounted_contract.json",
+        "sha256": "9193ecf1f8fa1e543483590ae65362ac0db1afa78701392fa624f0ae6ba1f33c",
+        "verified_sha256": "9193ecf1f8fa1e543483590ae65362ac0db1afa78701392fa624f0ae6ba1f33c",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/controllers_E04/controller_housing_interfaces_E04.step",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/controllers_E04/controller_housing_interfaces_E04.step",
+        "sha256": "2dbed6c5058f93f7436d79308d9c5f82bae93eb85b409901bac6ff4316683770",
+        "verified_sha256": "2dbed6c5058f93f7436d79308d9c5f82bae93eb85b409901bac6ff4316683770",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/controllers_E04/UR_OEMDC_cases_UNRETAINED_E04.step",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/controllers_E04/UR_OEMDC_cases_UNRETAINED_E04.step",
+        "sha256": "39fd9c51529e044032e7af6bf0d1a72ce8ba34863ad7c7e43413ea53988beb1c",
+        "verified_sha256": "39fd9c51529e044032e7af6bf0d1a72ce8ba34863ad7c7e43413ea53988beb1c",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "victron_candidate/switchgear_E04/aligned_trough_and_glands_E04.step",
+        "source_relative_to_integration": "electrical-drive/victron_candidate/switchgear_E04/aligned_trough_and_glands_E04.step",
+        "sha256": "98f1584c0d7d2a4e48c26c6215782e8ba7e95a23107b59b08ae8780d620df770",
+        "verified_sha256": "98f1584c0d7d2a4e48c26c6215782e8ba7e95a23107b59b08ae8780d620df770",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "../body-power/panel-retention/body_power_panel_retained_PR01.step",
+        "source_relative_to_integration": "body-power/panel-retention/body_power_panel_retained_PR01.step",
+        "sha256": "58639dc48849cb7a37c86bac127550207b29721e3804d731c3a735489eaec2ca",
+        "verified_sha256": "58639dc48849cb7a37c86bac127550207b29721e3804d731c3a735489eaec2ca",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "../body-power/shock-opening-study/body_shock_partition_replacements_SO02_E04P.step",
+        "source_relative_to_integration": "body-power/shock-opening-study/body_shock_partition_replacements_SO02_E04P.step",
+        "sha256": "1962a34d8d9104f2ec5673ec6454f587338bcb847fe8d8195dabc95941eeda8e",
+        "verified_sha256": "1962a34d8d9104f2ec5673ec6454f587338bcb847fe8d8195dabc95941eeda8e",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "../body-power/shock-opening-study/body_deck_SO02_E04_40holes.step",
+        "source_relative_to_integration": "body-power/shock-opening-study/body_deck_SO02_E04_40holes.step",
+        "sha256": "9677e54c7f8d301731cc3a01bfc4776daac68291e794f2b2f005ce551d7fd7e1",
+        "verified_sha256": "9677e54c7f8d301731cc3a01bfc4776daac68291e794f2b2f005ce551d7fd7e1",
+        "bundled": false,
+        "required_for_mass_replay": false
+      },
+      {
+        "path": "../battery-alternative/polarity-correction-R01/battery-polarity-contract.json",
+        "source_relative_to_integration": "battery-alternative/polarity-correction-R01/battery-polarity-contract.json",
+        "sha256": "bc78ee5d1f9d893171836d1ec35579373f5cb78998fbccad3588947229604c70",
+        "verified_sha256": "bc78ee5d1f9d893171836d1ec35579373f5cb78998fbccad3588947229604c70",
+        "bundled": false,
+        "required_for_mass_replay": false
+      }
+    ],
+    "note": "Original upstream CAD stays separately supplied; hashes verified at freeze. Normal mass replay uses bundled source ledgers and does not rebuild CAD."
+  },
+  "all_bundled_inputs_manifest": "input-manifest.json",
+  "normal_build_requires_network": false,
+  "normal_build_requires_CAD_kernel": false
+}

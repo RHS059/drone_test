@@ -1,0 +1,10 @@
+{
+  "source_geometry_SHA256": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+  "revision": "E05_candidate",
+  "sampled_corner_poses": 78,
+  "pairs": 191100,
+  "exact_AABB_candidates": 117,
+  "overlaps": [],
+  "pass": true,
+  "continuous_motion_or_flexible_cable_dynamics_qualified": false
+}

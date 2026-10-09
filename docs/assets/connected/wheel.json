@@ -1,0 +1,117 @@
+{
+  "revision": "W16-R01",
+  "asset": "wheel_W16_R01.glb",
+  "native_cad": "build_wheel_16p5.py",
+  "step": "wheel_W16_R01.step",
+  "named_components": [
+    "rim",
+    "tire"
+  ],
+  "units": {
+    "native_and_step": "millimetres",
+    "glb": "metres"
+  },
+  "axes": {
+    "X": "forward",
+    "Y": "axle/outboard",
+    "Z": "up"
+  },
+  "origin": "wheel/tire center at axle",
+  "nominal_radius_m": 0.4155,
+  "section_width_m": 0.307,
+  "mount_face_center_m": [
+    0,
+    -0.07,
+    0
+  ],
+  "disc_outboard_face_y_m": -0.062,
+  "bead_seat_diameter_m": 0.4191,
+  "bead_seat_width_m": 0.24765,
+  "rim_pcd_m": 0.14,
+  "rim_hole_count": 5,
+  "rim_bore_diameter_m": 0.094,
+  "hole_diameter_m": 0.0185,
+  "lug_phase_deg": 0,
+  "lug_phase_convention": "XZ angle from+X toward+Z",
+  "lug_centers_mount_face_m": [
+    [
+      0.07,
+      -0.07,
+      0.0
+    ],
+    [
+      0.021631189606246323,
+      -0.07,
+      0.06657395614066074
+    ],
+    [
+      -0.056631189606246315,
+      -0.07,
+      0.041144967660473125
+    ],
+    [
+      -0.05663118960624633,
+      -0.07,
+      -0.04114496766047311
+    ],
+    [
+      0.021631189606246305,
+      -0.07,
+      -0.06657395614066075
+    ]
+  ],
+  "left_instance": "translation only; local+Y outward; wheel centerY+0.998m, mountY+0.928m",
+  "right_instance": "Rz(pi), then translation; determinant+1; wheel centerY\u22120.998m,mountY\u22120.928m; no reflection",
+  "installed_center_z_m": -0.25,
+  "drive_adapter_required": false,
+  "do_not_scale": true,
+  "seat_contact_contract": "seat_contact_contract.json",
+  "mass_kg": {
+    "rim_supplier_catalogue": 19.5,
+    "tire": null,
+    "assembled_wheel": null,
+    "modeled_geometry_mass": null
+  },
+  "conservative_tire_collision": "tire_conservative_envelope_W16_R01.step",
+  "conservative_tire_collision_shape": "full annulusR209.55..415.5,Y\u00b1153.5mm; deliberately solid surrogate",
+  "manufacturer_CAD": false,
+  "fit_or_manufacture_approved": false,
+  "full_rim_profile_sourced": false,
+  "tire_inner_profile_sourced": false,
+  "bounds_m": {
+    "rim": {
+      "vertices": 104460,
+      "triangles": 34820,
+      "bounds_m": [
+        [
+          -0.22754999995231628,
+          -0.13182500004768372,
+          -0.227524533867836
+        ],
+        [
+          0.22754999995231628,
+          0.13182500004768372,
+          0.227524533867836
+        ]
+      ]
+    },
+    "tire": {
+      "vertices": 130848,
+      "triangles": 43616,
+      "bounds_m": [
+        [
+          -0.4154999256134033,
+          -0.1535000056028366,
+          -0.4154999256134033
+        ],
+        [
+          0.4154999256134033,
+          0.1535000056028366,
+          0.4154999256134033
+        ]
+      ]
+    }
+  },
+  "source_file": "SOURCES.json",
+  "assumptions_file": "ASSUMPTIONS.md"
+}
