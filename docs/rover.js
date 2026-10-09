@@ -28,7 +28,7 @@ export async function loadRover(root,asset){
   setSuspension(v){if(v!==0&&!motionStudy)throw Error('Enable unloaded motion study first');applyMotion({q:v,frontRack,rearRack,wheelAngle});q=v;},
   homeSteering(){q=0;frontRack=0;rearRack=0;wheelAngle=0;motionStudy=false;update();},
   setWorkshop(v){if(v)throw Error('Revised workshop support placement has not been checked for this assembly');},
-  setCradle(){},showBody(v){body.visible=v;},showCorners(v){rig.assembly.visible=v;},openService(v){serviceOpen=v;connectedBody.setServiceOpen(v);},
+  setCradle(){},showBody(v){connectedBody.setPanelsVisible(v);},showCorners(v){rig.assembly.visible=v;},openService(v){serviceOpen=v;connectedBody.setServiceOpen(v);},
   snapshot(){return{mainPairGraph:mainPairGraph.snapshot(),electrical:electrical.snapshot(),body:connectedBody.snapshot(),assemblyRevision:'C04 connected development',wheelAngleRad:wheelAngle,workshop:false,workshopAvailable:false,motionStudy,chassisDisplayOffsetM:motionStudy?.2:0,cradleStation:'left_1',fixtureLoadRating:null,nominalWheelCentersC:[...rig.wheels.instances].map(i=>[i.x,i.side*.998,-.25]),wheelCentersC:Object.values(rig.snapshot().wheelCenters),wheelDiameter:.831,groundLift:root.position.z,cornerCount:6,serviceOpen,removableNodes:removable.length,steering:steering.snapshot(),suspensionTravel:motionStudy?'four steering corners: unloaded kinematic study; middle pair held neutral':'held at neutral',physicalOperationQualified:false};}
  };
 }

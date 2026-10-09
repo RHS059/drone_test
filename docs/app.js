@@ -1,6 +1,6 @@
 import{initCosts}from'./cost-ui.js?v=main-pair-costs-05';
 initCosts();
-import{createScene}from'./scene.js?v=main-pair-05';
+import{createScene}from'./scene.js?v=panel-visibility-01';
 const $=s=>document.querySelector(s);let api=null;const error=$('#scene-error');
 function setModelControlsDisabled(value){document.querySelectorAll('aside input, aside select, .view-tools button').forEach(control=>control.disabled=value);}
 setModelControlsDisabled(true);

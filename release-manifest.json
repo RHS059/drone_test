@@ -1,18 +1,18 @@
 {
-  "release": "six-wheel-connected-components-C04-main-pair-E05",
+  "release": "six-wheel-E05-panel-inspection",
   "whole_robot_qualified": false,
   "full_electrical_continuity_verified": false,
-  "rendered_QA_status": "C04 f82123e inspected; E05 exact candidate review pending",
+  "rendered_QA_status": "E05 a072861c inspected; narrow panel visibility review pending",
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 1417,
-      "sha256": "31f425166b640220f2ea62da21679e69e81b17e52577b6df4cc01ae707f1ca6d"
+      "bytes": 1451,
+      "sha256": "d61089d07165d3f581ccbb0b078d3dc05f3302868a721c4bb67c015b65f3e172"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 1207,
-      "sha256": "12c4285ff6225290fdb89f80c5c79fd4a282b670f52f3b44159809f6137417d3"
+      "bytes": 1241,
+      "sha256": "5a03216ae6e9e622cd1c8567040257e84592a37989253d953af12116fb5b4b3a"
     },
     {
       "path": "BASELINE.md",
@@ -26,8 +26,8 @@
     },
     {
       "path": "RECONSTRUCTION.md",
-      "bytes": 2897,
-      "sha256": "3f13544252a9e3f05c0894b0097d815ca43d3ba7e27b15a200271a8daad6b7b1"
+      "bytes": 3484,
+      "sha256": "28829f80b2da39cd3ce1a18d05210975ce78e0f3e5591c612963d31bfc47548c"
     },
     {
       "path": "docs/.nojekyll",
@@ -36,13 +36,13 @@
     },
     {
       "path": "docs/RECONSTRUCTION.md",
-      "bytes": 4721,
-      "sha256": "3c803a97c65436e14c59ac53d2416d2ede80808967c3b0a9afd4e34a98cfd697"
+      "bytes": 5308,
+      "sha256": "de1dff9da8e0ba04d4996a7e2b6976798c14c9d3ad2cde85f7c9d52b0462e9d7"
     },
     {
       "path": "docs/app.js",
-      "bytes": 5878,
-      "sha256": "dadfa9a779b5faa33c059efb40ece142281f5f5cb912a275a366b77d1f50bc00"
+      "bytes": 5885,
+      "sha256": "f033033e730e0633294d7e51c4102eaa3e39fea4de34cecfdb63edbbca763a1d"
     },
     {
       "path": "docs/assembly.json",
@@ -326,8 +326,8 @@
     },
     {
       "path": "docs/assets/connected-body/body-contract.json",
-      "bytes": 32902,
-      "sha256": "b099d705b9c400cd69d66927a94fa33e19cd67aff2a17fc442d543e69b7e8167"
+      "bytes": 33547,
+      "sha256": "a5ed33bbfba414aaf35e1220fb106a7d3f9508a06b7063adda87da9a69684d7c"
     },
     {
       "path": "docs/assets/connected-body/body.glb.gz",
@@ -2676,8 +2676,8 @@
     },
     {
       "path": "docs/connected/body-scene.mjs",
-      "bytes": 1290,
-      "sha256": "ce213bf22ffdd2ff532fe927ad1075e9a27fa889e3f1f05d598e6d9a3a1cd190"
+      "bytes": 1369,
+      "sha256": "0f570af3bb675979d3994337f518284c13eb1c94c137f4703663583904eadeae"
     },
     {
       "path": "docs/connected/connected-mechanics.mjs",
@@ -2736,8 +2736,8 @@
     },
     {
       "path": "docs/connected/named-part-patch.mjs",
-      "bytes": 2731,
-      "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
+      "bytes": 3132,
+      "sha256": "57c57c40c8abfc49f49d7f6be7655d11f0af82ecadc04cc9e3217168391cfb09"
     },
     {
       "path": "docs/connected/restore-cad-names.mjs",
@@ -3021,8 +3021,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 15081,
-      "sha256": "60edd0588786322cc80ed763d9eb98ab1f6a48195f2734ada83b1f04bbc2242f"
+      "bytes": 15216,
+      "sha256": "8578f3c4a718d488e93733ec913b5eebbe23df191c03fd1ff4b591816f6eee31"
     },
     {
       "path": "docs/kinematics.js",
@@ -3046,13 +3046,13 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 4769,
-      "sha256": "5ae77bf01f316eb2818d2d44720201d4ce782e9df27edc7e856d616f206dbd4f"
+      "bytes": 4788,
+      "sha256": "db402404d71f0ab3d3dd3eda4e8d38bdf856d2e6684331c00dec6c905890b560"
     },
     {
       "path": "docs/scene.js",
-      "bytes": 7530,
-      "sha256": "3bbc981a2513721207631dd8a41ec2d66eb3e11782eac96d0c5af9388b7430e7"
+      "bytes": 7537,
+      "sha256": "1bf64d2d8945c77112a6a09d7b4717b5d97bcbb447ea8e76b3d24eae3cccc447"
     },
     {
       "path": "docs/steering-transforms.js",
@@ -3341,8 +3341,8 @@
     },
     {
       "path": "test-current-rover.mjs",
-      "bytes": 1906,
-      "sha256": "4788350d81b6b65436ca7086401a74a5a36b9fd276f1167ab7345d013cb66f3f"
+      "bytes": 1978,
+      "sha256": "fd66c3f01bfebd08427f48172e9018e7643ffee2ab7c3cb05f19b69146a89a4c"
     },
     {
       "path": "test-electrical-scene.mjs",
@@ -3363,6 +3363,11 @@
       "path": "test-motion-study.mjs",
       "bytes": 3580,
       "sha256": "cc21f61d1c112efb94f2ca18ca8ff377f844bdb110b762fbef7ba5dc09e3dbdb"
+    },
+    {
+      "path": "test-panel-visibility.mjs",
+      "bytes": 1859,
+      "sha256": "ed007f058695ddf429977694cacb5c9448ad9d1ad4539fc0c032a019135fca6b"
     },
     {
       "path": "test-real-gltf-body.mjs",
