@@ -1,0 +1,688 @@
+{
+  "title": "Six-Wheel Builder UGV: transparent cost framework",
+  "as_of": "2026-10-09",
+  "currency": "USD",
+  "version": "0.1 engineering planning, not quotation",
+  "global_exclusions": [
+    "tax",
+    "shipping",
+    "import duties",
+    "site lease",
+    "insurance",
+    "financing",
+    "offboard facilities unless shown separately",
+    "spare peer/parts inventory",
+    "NRE unless explicitly added",
+    "product certification and regulatory approval",
+    "commercial robot profit/warranty/support markup"
+  ],
+  "new_vs_used": "All line assumptions new; no speculative used discounts. Used arms require inspection and could increase refurbishment/integration.",
+  "sources": {
+    "battery": {
+      "url": "https://www.relionbattery.com/products/lithium/insight-48v-30ah-lt",
+      "kind": "manufacturer_public_price",
+      "observed": "2026-10-09",
+      "currency": "USD",
+      "price": 1249.95,
+      "unit": "one new 1.536 kWh battery",
+      "tax_shipping": "Not established; excluded",
+      "facts": "51.2 V, 30 Ah, 15.6 kg; maximum 10 in parallel, no series; manufacturer lists >3500 cycles at 80% DOD, not a mission-life guarantee"
+    },
+    "camera": {
+      "url": "https://www.stereolabs.com/store/products/zed-x-stereo-camera",
+      "kind": "manufacturer_public_price",
+      "observed": "2026-10-09",
+      "currency": "USD",
+      "price": 599,
+      "unit": "one new ZED X without polarizer or cable",
+      "tax_shipping": "Not established; excluded",
+      "facts": "Polarizer +$50; 1.5 m cable +$25; GMSL2 capture hardware required"
+    },
+    "compute": {
+      "url": "https://marketplace.nvidia.com/en-us/enterprise/robotics-edge/jetson-agx-orin-developer-kit/",
+      "kind": "manufacturer_public_price",
+      "observed": "2026-10-09",
+      "currency": "USD",
+      "price": 3499,
+      "unit": "one new developer kit",
+      "tax_shipping": "Not established; excluded",
+      "facts": "Out of stock when checked; reference price only, not production computer selection"
+    },
+    "compute_limits": {
+      "url": "https://developer.nvidia.com/embedded/faq",
+      "kind": "manufacturer_documentation",
+      "observed": "2026-10-09",
+      "facts": "Developer kits warranted for development use only. Module price tiers do not include carrier, enclosure, storage and integration."
+    },
+    "arm": {
+      "url": "https://www.universal-robots.com/products/ur20/",
+      "kind": "manufacturer_quote_required",
+      "observed": "2026-10-09",
+      "price": null,
+      "facts": "UR20 20 kg, 25 kg conditional, 1750 mm reach. Page requests pricing; allowance is analyst assumption, not vendor quote."
+    },
+    "screwdriver": {
+      "url": "https://robotiq.com/solutions/screwdriving",
+      "kind": "manufacturer_quote_required",
+      "observed": "2026-10-09",
+      "price": null,
+      "facts": "SD-100 0.3\u20134 Nm, M2.5\u2013M5, 65 L/min air; insufficient for structural fasteners."
+    },
+    "compatibility": {
+      "url": "https://robotiq.com/faq",
+      "kind": "manufacturer_documentation",
+      "observed": "2026-10-09",
+      "facts": "FAQ lists screwdriver compatibility UR3\u2013UR16 CB/E series, so UR20 compatibility must be confirmed."
+    },
+    "printer": {
+      "url": "https://www.prusa3d.com/product/original-prusa-mk4s-3d-printer-kit/",
+      "kind": "manufacturer_comparison_table_price",
+      "observed": "2026-10-09",
+      "currency": "USD",
+      "price": 729,
+      "unit": "new MK4S kit reference; assembled reference $999",
+      "tax_shipping": "Comparison table associates VAT inclusion with EUR. USD tax, duties and destination shipping unverified; do not treat as checkout total.",
+      "facts": "MK4S kit is a human-oriented assembly benchmark; no robotic assembly claim."
+    },
+    "drive_catalog": {
+      "url": "https://www.bonfiglioli.com/_default_upload_bucket/TR_CAT_RAMOB_STD_ENG_R04_1_4.pdf",
+      "kind": "manufacturer_catalog_not_price",
+      "observed": "2026-10-09",
+      "facts": "Candidate reduction drive specifications only. Exact 51.2 V motor/inverter and regen compatibility unverified."
+    },
+    "tire_catalog": {
+      "url": "https://commercial.bkt-tires.com/pattern/skid-power-hd-a/",
+      "kind": "manufacturer_catalog_not_price",
+      "observed": "2026-10-09",
+      "facts": "Reference tire; load/pressure-specific qualification and price remain unverified."
+    }
+  },
+  "robot_bom": [
+    {
+      "id": "frame",
+      "name": "Custom welded/machined chassis and arm mounts",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 15000,
+        "base": 24000,
+        "high": 40000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Includes purchased fabrication, excludes engineering design labor; structural validation pending"
+    },
+    {
+      "id": "drive",
+      "name": "Motor + reduction + brake corner drive assembly",
+      "quantity": 6,
+      "unit_cost_usd": {
+        "low": 3000,
+        "base": 5000,
+        "high": 8000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Bonfiglioli 600WE/602WE reference architecture, exact compatible motor/inverter not selected; no vendor price"
+    },
+    {
+      "id": "steer",
+      "name": "Steering bearing/actuator/encoder corner assembly",
+      "quantity": 6,
+      "unit_cost_usd": {
+        "low": 1200,
+        "base": 2200,
+        "high": 3500
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Six-wheel steering provisional; includes mounting mechanisms, not control engineering"
+    },
+    {
+      "id": "tires",
+      "name": "Industrial wheel/rim/tire",
+      "quantity": 6,
+      "unit_cost_usd": {
+        "low": 350,
+        "base": 650,
+        "high": 1000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "10-16.5 class; selected BKT assembly price unverified"
+    },
+    {
+      "id": "suspension",
+      "name": "Suspension, pivots and mechanical travel limits",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 4000,
+        "base": 8000,
+        "high": 14000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": ""
+    },
+    {
+      "id": "battery",
+      "name": "RELiON 48V-LT battery",
+      "quantity": 8,
+      "unit_cost_usd": {
+        "low": 1249.95,
+        "base": 1249.95,
+        "high": 1249.95
+      },
+      "source_id": "battery",
+      "scope": "robot",
+      "basis": "public_price",
+      "condition": "new",
+      "notes": "Workshop qty8; field qty10; rack and distribution elsewhere"
+    },
+    {
+      "id": "power",
+      "name": "HV/LV distribution, protection, charger, DC/DC and inverter",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 6000,
+        "base": 10000,
+        "high": 16000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "51.2 V pack nominal; arm controller AC conversion to be engineered; includes battery rack/harness"
+    },
+    {
+      "id": "arms",
+      "name": "UR20-class arm and controller package",
+      "quantity": 2,
+      "unit_cost_usd": {
+        "low": 50000,
+        "base": 65000,
+        "high": 85000
+      },
+      "source_id": "arm",
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Budget allowance only; vendor quote required. Controller/cables included in allowance; no gripper"
+    },
+    {
+      "id": "tooling",
+      "name": "Grippers, automatic tool-change docks, fastening tooling",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 25000,
+        "base": 42000,
+        "high": 70000
+      },
+      "source_id": "screwdriver",
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Includes two grippers, module-specific fingers, small screw feeder/driver, structural nutrunner/reaction fixture, docks; exact compatible packages unverified"
+    },
+    {
+      "id": "cameras",
+      "name": "ZED X stereo camera",
+      "quantity": 4,
+      "unit_cost_usd": {
+        "low": 599,
+        "base": 599,
+        "high": 599
+      },
+      "source_id": "camera",
+      "scope": "robot",
+      "basis": "public_price",
+      "condition": "new",
+      "notes": "Example four-camera reference; layout awaits occlusion/safety review"
+    },
+    {
+      "id": "compute",
+      "name": "Production compute, storage, network, capture, rugged enclosure",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 5000,
+        "base": 8000,
+        "high": 14000
+      },
+      "source_id": "compute",
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Whole-system allowance; developer-kit reference is NOT added on top"
+    },
+    {
+      "id": "perception",
+      "name": "Lidar, GNSS/IMU, wrist metrology and cabling",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 6000,
+        "base": 13000,
+        "high": 24000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Quote-required industrial selections; not safety certification"
+    },
+    {
+      "id": "safety",
+      "name": "Safety PLC, scanners, E-stops, STO interfaces",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 5000,
+        "base": 10000,
+        "high": 18000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Hardware allowance only; validation/NRE excluded"
+    },
+    {
+      "id": "misc",
+      "name": "Fasteners, connectors, harnesses, covers and assembly aids",
+      "quantity": 1,
+      "unit_cost_usd": {
+        "low": 4000,
+        "base": 7000,
+        "high": 12000
+      },
+      "source_id": null,
+      "scope": "robot",
+      "basis": "analyst_planning_allowance_not_quote",
+      "condition": "new",
+      "notes": "Avoids omitting secondary hardware; excludes spare inventory and fabrication already counted"
+    }
+  ],
+  "field_increment": [
+    {
+      "id": "battery_extra",
+      "name": "Two additional identical battery modules",
+      "quantity": 1,
+      "incremental_cost_usd": {
+        "low": 2499.9,
+        "base": 2499.9,
+        "high": 2499.9
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "sealing",
+      "name": "Field sealing, thermal management and environmental hardening",
+      "quantity": 1,
+      "incremental_cost_usd": {
+        "low": 10000,
+        "base": 20000,
+        "high": 40000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "field_stabilizers",
+      "name": "Onboard field self-leveling support system and ground mats",
+      "quantity": 1,
+      "incremental_cost_usd": {
+        "low": 5000,
+        "base": 12000,
+        "high": 22000
+      },
+      "basis": "analyst_planning_allowance_not_quote",
+      "notes": "Full field support allowance; workshop external shop supports are not included in robot. Mobility reserves 120 kg onboard for field support."
+    },
+    {
+      "id": "field_tools",
+      "name": "Deployable goods-rated lift, storage, compressor and field power",
+      "quantity": 1,
+      "incremental_cost_usd": {
+        "low": 10000,
+        "base": 22000,
+        "high": 40000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "field_runninggear",
+      "name": "Stronger running gear/armor/recovery provisions incremental",
+      "quantity": 1,
+      "incremental_cost_usd": {
+        "low": 6000,
+        "base": 15000,
+        "high": 30000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    }
+  ],
+  "offboard_workcell": [
+    {
+      "id": "lift",
+      "name": "500\u20131000 kg goods-rated gantry/hoist plus fixtures",
+      "cost_usd": {
+        "low": 5000,
+        "base": 10000,
+        "high": 20000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "table",
+      "name": "Indexed assembly tables, nests and module stands",
+      "cost_usd": {
+        "low": 8000,
+        "base": 16000,
+        "high": 30000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "guard",
+      "name": "Physical cell guarding, interlocks and floor preparation",
+      "cost_usd": {
+        "low": 5000,
+        "base": 12000,
+        "high": 25000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "air",
+      "name": "Offboard air/power/charging services",
+      "cost_usd": {
+        "low": 4000,
+        "base": 9000,
+        "high": 18000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "metrology",
+      "name": "Inspection, calibration and test instruments",
+      "cost_usd": {
+        "low": 4000,
+        "base": 10000,
+        "high": 20000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "print",
+      "name": "Two enclosed FFF printers plus drying/extraction/tooling",
+      "cost_usd": {
+        "low": 2500,
+        "base": 5000,
+        "high": 10000
+      },
+      "basis": "analyst_planning_allowance_not_quote"
+    },
+    {
+      "id": "shop_support",
+      "name": "External workshop support stands, jacking fixture and indexed docking",
+      "cost_usd": {
+        "low": 4000,
+        "base": 7000,
+        "high": 12000
+      },
+      "basis": "analyst_planning_allowance_not_quote",
+      "notes": "Offboard only. No onboard jack mass assumed in workshop vehicle. Distinct from assembly table and goods-rated lift."
+    }
+  ],
+  "totals_usd": {
+    "workshop_robot_hardware": {
+      "low": 209695.6,
+      "base": 311495.6,
+      "high": 465395.6
+    },
+    "field_robot_hardware": {
+      "low": 243195.5,
+      "base": 382995.5,
+      "high": 599895.5
+    },
+    "offboard_workcell": {
+      "low": 32500,
+      "base": 69000,
+      "high": 135000
+    }
+  },
+  "contingency": {
+    "fraction": 0.25,
+    "basis": "Planning allowance on hardware and cell totals, not a statistical confidence interval; does not replace NRE"
+  },
+  "engineering_nre": {
+    "hours": {
+      "low": 4000,
+      "base": 8000,
+      "high": 16000
+    },
+    "loaded_usd_per_h": {
+      "low": 100,
+      "base": 125,
+      "high": 175
+    },
+    "range_usd": {
+      "low": 400000,
+      "base": 1000000,
+      "high": 2800000
+    },
+    "basis": "Analyst scenario, not estimate backed by a work breakdown/schedule. Includes controls, mechanical/electrical integration, perception, task programming and validation. Broader unstructured autonomy can exceed this.",
+    "prototype_build_labor": "Separately allow 300\u2013700 technician hours per robot at $75\u2013125/h ($22,500\u201387,500); not included in hardware or NRE; tailor after assembly process trial.",
+    "boundary": "NRE is engineering/design/software/integration validation effort; routine technician fabrication/assembly/rework of each physical robot is in separate direct-build labor. Supplier fabrication labor already embedded in purchased frame allowance must not be charged twice."
+  },
+  "operating_assumptions": {
+    "electricity_usd_kwh": 0.15,
+    "charging_efficiency": 0.9,
+    "soc_window": 0.8,
+    "aging_temperature_factor": 0.85,
+    "battery_planning_cycles_at_80pct_dod": 2000,
+    "battery_calendar_years": 5,
+    "maintenance_parts_fraction_nonbattery_capital_per_year": 0.04,
+    "supervision_h_per_robot_h": 0.25,
+    "supervision_usd_h": 50,
+    "maintenance_labor_h_per_robot_h": 0.1,
+    "maintenance_labor_usd_h": 100,
+    "warning": "All operating/lifetime/utilization values are explicit scenario inputs, not validated performance or local tariffs. Supervision is unproven and may be 1:1 or greater."
+  },
+  "operating_scenarios": [
+    {
+      "name": "workshop",
+      "robot_capital_usd": 311495.6,
+      "annual_operating_hours": 1500,
+      "years": 5,
+      "residual_value_usd": 0,
+      "nominal_battery_kwh": 12.288,
+      "usable_energy_kwh": 8.35584,
+      "average_battery_power_kw": 4,
+      "runtime_h": 2.08896,
+      "energy_usd_per_h": 0.6666666666666666,
+      "nonbattery_capital_usd_per_h": 40.199466666666666,
+      "battery_reserve_usd_per_h": 2.0344238281249996,
+      "battery_cycle_reserve_usd_per_h": 2.0344238281249996,
+      "battery_calendar_reserve_usd_per_h": 1.33328,
+      "nonbattery_maintenance_parts_usd_per_h": 8.039893333333334,
+      "supervision_and_maintenance_labor_usd_per_h": 22.5,
+      "consumables_usd_per_h": 3,
+      "total_usd_per_h": 76.44045049479166,
+      "one_hour_run_usd": 76.44045049479166,
+      "display_guidance": "Round to whole dollars or ~nearest $5/h; decimals are calculation traceability, not estimate precision."
+    },
+    {
+      "name": "field",
+      "robot_capital_usd": 382995.5,
+      "annual_operating_hours": 1000,
+      "years": 5,
+      "residual_value_usd": 0,
+      "nominal_battery_kwh": 15.36,
+      "usable_energy_kwh": 10.4448,
+      "average_battery_power_kw": 6,
+      "runtime_h": 1.7408000000000001,
+      "energy_usd_per_h": 0.9999999999999999,
+      "nonbattery_capital_usd_per_h": 74.0992,
+      "battery_reserve_usd_per_h": 3.0516357421875,
+      "battery_cycle_reserve_usd_per_h": 3.0516357421875,
+      "battery_calendar_reserve_usd_per_h": 2.4999,
+      "nonbattery_maintenance_parts_usd_per_h": 14.819840000000001,
+      "supervision_and_maintenance_labor_usd_per_h": 22.5,
+      "consumables_usd_per_h": 6,
+      "total_usd_per_h": 121.4706757421875,
+      "one_hour_run_usd": 121.4706757421875,
+      "display_guidance": "Round to whole dollars or ~nearest $5/h; decimals are calculation traceability, not estimate precision."
+    }
+  ],
+  "formulas": {
+    "mass": "m = dry_mass + payload + consumables; do not add payload twice if gross_mass used",
+    "wheel_power_kw": "max(0,m*9.81*(Crr*cos(atan(grade_pct/100))+sin(atan(grade_pct/100)))*speed_mps + m*accel_mps2*speed_mps)/1000",
+    "battery_power_kw": "wheel_power_kw/drive_efficiency + aux_kw + arm_kw + compressor_kw + thermal_kw + terrain_scrub_kw; duty-cycle by mission segment; no regenerative credit assumed",
+    "mission_kwh": "sum(segment_power_kw * segment_hours)",
+    "available_kwh": "nominal_kwh * soc_window * aging_temperature_factor",
+    "runtime_h": "available_kwh / mean_battery_power_kw; invalid when peak current/thermal or traction constraints fail",
+    "grid_kwh": "mission_kwh/charging_efficiency + parked_grid_kwh",
+    "energy_cost": "grid_kwh * local_tariff",
+    "battery_reserve_per_h": "max(pack_cost*mean_power_kw/(nominal_kwh*0.8*planning_cycles), pack_cost/(calendar_years*annual_operating_hours))",
+    "capital_per_h": "(hardware_cost - battery_cost - residual_value)/(service_years*annual_operating_hours)",
+    "maintenance_parts_per_h": "nonbattery_capital*annual_parts_fraction/annual_operating_hours",
+    "human_per_h": "supervision_h_per_robot_h*supervisor_rate + maintenance_h_per_robot_h*technician_rate",
+    "run_cost": "run_h*(capital_per_h+battery_reserve_per_h+maintenance_parts_per_h+human_per_h+consumables_per_h)+grid_kwh*tariff+setup_labor+transport+run_specific_parts",
+    "nre_per_h": "NRE/(fleet_size*service_years*annual_operating_hours), optional and shown separately",
+    "replicated_peer_cost": "purchased_BOM + direct_human_assembly_labor + occupied_robot_hours*machine_rate + workcell_allocation + QA/rework/scrap + procurement/logistics; never assume robot assembly makes purchased parts free",
+    "printed_part_cost": "(net_part_kg+support/purge_kg)*filament_usd_per_kg/(1-scrap_fraction)+printer_hours*printer_machine_rate+postprocess_labor+inspection; no zero-cost replication"
+  },
+  "kit_scenarios": {
+    "module_kit": "Assemble procured pretested wheel/steer, battery, arm/controller, electronics and structural modules. Cost reduction is assembly time hypothesis requiring a trial, not hardware discount. Requires lift, fixtures, robot-compatible interfaces and precrimped harnesses.",
+    "loose_parts": "Includes individual purchased bearings, motors, reducers, fasteners and wire; more fixtures/feeders, fastening/termination tooling, QA and human interventions. No default cost saving or automatic assembly time assumed. Cells/electronics/precision reducers remain purchased.",
+    "field_module_kit": "Adds transport, site preparation, setup/teardown, contamination controls and weather/ground downtime. Cannot reuse workshop productivity assumption.",
+    "field_loose_parts": "Research scenario; no credible production cost or throughput estimate until demonstrated."
+  },
+  "secondary_bom": {
+    "printer_benchmark": {
+      "item": "Original Prusa MK4S kit",
+      "quantity": 1,
+      "hardware_reference_usd": 729,
+      "source_id": "printer",
+      "status": "EXTERNAL PRICE BENCHMARK ONLY. MK4S 250\u00d7210\u00d7220 mm is smaller than required 300 mm-class envelope; NOT the selected baseline printer, NOT a valid cost substitute.",
+      "extra_categories": [
+        "indexed trays and fixtures",
+        "gripper fingers",
+        "bits and feeders",
+        "preterminated harness adaptations",
+        "inspection/calibration",
+        "robot occupied time",
+        "human rescue",
+        "filament and waste",
+        "packaging and logistics"
+      ],
+      "selected_printer": "300 mm-class printer must be separately selected and quoted; offboard print-package allowance remains unquoted $2.5k/$5k/$10k for two machines and supporting services."
+    },
+    "printed_items": [
+      "nonstructural covers",
+      "cable guides",
+      "assembly nests",
+      "protective sensor shrouds",
+      "tool organization"
+    ],
+    "not_printed_in_baseline": [
+      "motors",
+      "battery cells",
+      "electronics",
+      "safety sensors",
+      "precision reducers",
+      "structural load-bearing chassis",
+      "tires",
+      "cables",
+      "certified lifting hardware"
+    ]
+  },
+  "uncertainty": "Most dollars are unquoted planning allowances; precise public-price anchors do not make the integrated machine estimate precise. Verify final supplier BOM, compatibility, payload/reach, current/thermal limits and process acceptance tests before procurement.",
+  "battery_electrical_validation": {
+    "source_id": "battery",
+    "architecture": "51.2 V nominal; modules connected in parallel only; never series",
+    "workshop": {
+      "module_quantity": 8,
+      "capacity_Ah": 240,
+      "nominal_kWh": 12.288,
+      "usable_kWh_assumption": 8.35584
+    },
+    "field": {
+      "module_quantity": 10,
+      "capacity_Ah": 300,
+      "nominal_kWh": 15.36,
+      "usable_kWh_assumption": 10.4448
+    },
+    "per_module": {
+      "recommended_continuous_A": 45,
+      "maximum_continuous_A": 100,
+      "peak_charge_V": 57,
+      "published_overvoltage_protection_V": 58.4
+    },
+    "warning": "Do not multiply module maximum current into a guaranteed system rating: current sharing, harnesses, fuses, contactors, busbars, thermal limits and worst-case module dropout need validation. Exact traction motor/inverter voltage range, regenerative-bus behavior and arm-controller power conversion remain design gates; costs do not establish compatibility."
+  },
+  "hardware_readiness": "Engineering baseline only, no purchasable complete qualified BOM. Public prices are reference observations, availability unconfirmed except NVIDIA marked out-of-stock; commercial packages require quotes.",
+  "utilization_sensitivity": [
+    {
+      "scenario": "workshop",
+      "annual_operating_hours": 500,
+      "cost_usd_per_h": 174.88,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "workshop",
+      "annual_operating_hours": 1000,
+      "cost_usd_per_h": 100.56,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "workshop",
+      "annual_operating_hours": 1500,
+      "cost_usd_per_h": 76.44,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "workshop",
+      "annual_operating_hours": 2500,
+      "cost_usd_per_h": 57.14,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "field",
+      "annual_operating_hours": 500,
+      "cost_usd_per_h": 212.34,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "field",
+      "annual_operating_hours": 1000,
+      "cost_usd_per_h": 121.47,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "field",
+      "annual_operating_hours": 1500,
+      "cost_usd_per_h": 91.83,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    },
+    {
+      "scenario": "field",
+      "annual_operating_hours": 2500,
+      "cost_usd_per_h": 68.12,
+      "basis": "Same lifetime,power,labor and material assumptions; no claim utilization achievable"
+    }
+  ],
+  "audit_corrections": [
+    "Workshop support $4k/$7k/$12k moved from vehicle BOM to external workcell; no workshop onboard jack mass implied.",
+    "Field support $5k/$12k/$22k is its full onboard allowance, separate from workshop shop fixtures.",
+    "MK4S $729 is a smaller-envelope external benchmark only; selected 300 mm-class printer remains unquoted.",
+    "JSON hourly decimals retained for calculation audit only; display coarse approximations."
+  ]
+}

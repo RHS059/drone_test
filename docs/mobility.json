@@ -1,0 +1,401 @@
+{
+  "schema_version": "mobility-baseline-0.1",
+  "checked_utc": "2026-10-09",
+  "status": "Preliminary engineering screening only. No terrain validation, FEA, certified load chart or manufacturing release.",
+  "units": "SI unless suffix says otherwise; coordinates x forward,y left,z up.",
+  "geometry": {
+    "transport_length_m": 4,
+    "transport_width_m": 1.8,
+    "track_center_m": 1.52,
+    "axle_x_m": [
+      -1.35,
+      0,
+      1.35
+    ],
+    "wheel_outer_diameter_m": 0.78,
+    "wheel_width_m": 0.267,
+    "wheel_static_loaded_radius_m": 0.362,
+    "wheel_effective_rolling_radius_m": 0.37401411626595404,
+    "ground_clearance_target_m": 0.3,
+    "suspension_total_wheel_travel_target_m": 0.3,
+    "deck_top_target_m": 0.9,
+    "central_frame_width_target_m": 1.0,
+    "architecture": "Six driven, independently steerable wheel pods on passive spring-damper suspension; steering/suspension hardware unselected. No skid-steer zero-radius promise.",
+    "steering_angle_target_deg": 45,
+    "steered_max_width_at_45deg_m": 2.260340799902315,
+    "outrigger_support_points_m": [
+      [
+        -1.45,
+        -1.4,
+        0
+      ],
+      [
+        -1.45,
+        1.4,
+        0
+      ],
+      [
+        1.45,
+        -1.4,
+        0
+      ],
+      [
+        1.45,
+        1.4,
+        0
+      ]
+    ],
+    "geometry_warnings": [
+      "1.8m is straight-wheel transport envelope only; steering sweep exceeds it.",
+      "Motor inboard projection and full suspension/steering sweep can collide with battery/frame; packaging interference not solved.",
+      "Ground clearance, travel and compact deck targets require actual suspension geometry, not visual overlap.",
+      "Wheel radius alone does not prove step-climb ability."
+    ]
+  },
+  "variants": {
+    "workshop": {
+      "gross_mass_kg": 2200,
+      "mass_uncertainty_stress_factor": 1.2,
+      "mass_budget_kg": {
+        "frame_deck": 330,
+        "suspension_steering": 300,
+        "six_wheel_tire_assemblies": 240,
+        "six_drive_motor_brake_modules": 420,
+        "battery_pack_enclosure_bus": 175,
+        "control_sensing_power": 100,
+        "installed_manipulators": 250,
+        "tools_printer_fixtures": 160,
+        "guards_cabling_misc": 125,
+        "outrigger_jack_system": 0,
+        "portable_gantry_hoist": 0,
+        "spares_recovery": 0,
+        "unallocated_mass": 100
+      },
+      "mass_budget_status": "Planning allowances, not supplier-certified assembly masses; unallocated reserve is too small to cover present uncertainty. Evaluate +20% mass separately.",
+      "cg_stowed_m": [
+        0,
+        0,
+        0.65
+      ],
+      "cg_status": "Assumed, recompute from actual links, tools and payload; not measured.",
+      "battery_modules": 8,
+      "battery_nominal_kwh": 12.288,
+      "battery_mission_kwh": 8.35584,
+      "battery_module_mass_kg": 15.6,
+      "battery_voltage_nominal_v": 51.2,
+      "battery_recommended_total_current_a": 360,
+      "battery_max_catalog_total_current_a": 800,
+      "battery_status": "Summed module limits only. Actual current limited by interconnects, unequal sharing, BMS coordination, contactors, fuses, inverter and thermal design.",
+      "drive_candidate": "Bonfiglioli 600WE",
+      "drive_count": 6,
+      "gear_ratio_assumed": 58.7,
+      "gear_efficiency_assumed": 0.9,
+      "wheel_torque_continuous_design_assumption_nm": 450,
+      "wheel_torque_peak_design_assumption_nm": 900,
+      "continuous_torque_verified": false,
+      "traction_motor_continuous_kw_target_each": 3,
+      "peak_torque_duration_s": null,
+      "drive_status": "Design assumptions ONLY; actual torque-speed/thermal envelope and permissible peak duration not verified. Catalog gearbox torque is not continuous wheel motor rating.",
+      "speed_operating_cap_m_s": 2,
+      "base_auxiliary_kw": 0.5,
+      "drive_efficiency_assumed": 0.75,
+      "scenario_examples": [
+        {
+          "name": "level_firm",
+          "grade_deg": 0,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 1,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 863.3,
+          "required_torque_per_loaded_wheel_nm": 53.8,
+          "assumed_continuous_torque_margin": 8.362,
+          "traction_margin": 15.0,
+          "electrical_power_kw": 1.651,
+          "energy_only_runtime_h": 5.061,
+          "energy_only_range_km": 18.219,
+          "result": "screening margins pass; not hardware validation"
+        },
+        {
+          "name": "grade20_firm",
+          "grade_deg": 20,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 8192.7,
+          "required_torque_per_loaded_wheel_nm": 510.7,
+          "assumed_continuous_torque_margin": 0.881,
+          "traction_margin": 1.485,
+          "electrical_power_kw": 5.962,
+          "energy_only_runtime_h": 1.402,
+          "energy_only_range_km": 2.523,
+          "result": "unvalidated; infeasible"
+        },
+        {
+          "name": "grade30_firm",
+          "grade_deg": 30,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 11538.6,
+          "required_torque_per_loaded_wheel_nm": 719.3,
+          "assumed_continuous_torque_margin": 0.626,
+          "traction_margin": 0.972,
+          "electrical_power_kw": 8.192,
+          "energy_only_runtime_h": 1.02,
+          "energy_only_range_km": 1.836,
+          "result": "unvalidated; infeasible"
+        },
+        {
+          "name": "grade15_mud",
+          "grade_deg": 15,
+          "mu_assumed": 0.25,
+          "Crr_assumed": 0.12,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 8087.4,
+          "required_torque_per_loaded_wheel_nm": 504.1,
+          "assumed_continuous_torque_margin": 0.893,
+          "traction_margin": 0.644,
+          "electrical_power_kw": 5.892,
+          "energy_only_runtime_h": 1.418,
+          "energy_only_range_km": 2.553,
+          "result": "unvalidated; infeasible"
+        },
+        {
+          "name": "grade20_four_contacts",
+          "grade_deg": 20,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 4,
+          "required_force_n": 8192.7,
+          "required_torque_per_loaded_wheel_nm": 766.0,
+          "assumed_continuous_torque_margin": 0.587,
+          "traction_margin": 1.485,
+          "electrical_power_kw": 5.962,
+          "energy_only_runtime_h": 1.402,
+          "energy_only_range_km": 2.523,
+          "result": "unvalidated; infeasible"
+        }
+      ],
+      "static_lateral_tip_deg_assumed": 49.46084825851656,
+      "static_fore_aft_tip_deg_assumed": 64.29004621918874,
+      "park30deg_required_wheel_brake_nm_with_1p5_factor": 1008.9965821564775,
+      "flat_stop_from_2m_s_distance_m_assumed": 2.5,
+      "wheel_plus_drive_handling_mass_kg": 110,
+      "full_corner_handling_mass_kg": 160,
+      "handling_mass_status": "Estimated. Full corner includes1/6 suspension/steering allowance; actual interfaces and offboard brackets unknown. Split tasks must use actual module boundaries.",
+      "support_boundary": "Workshop stands/jacks/gantry are external facility equipment, excluded from onboard mass. If onboard supports are required, add their mass and recompute gross mass/CG."
+    },
+    "field": {
+      "gross_mass_kg": 3100,
+      "mass_uncertainty_stress_factor": 1.2,
+      "mass_budget_kg": {
+        "frame_deck": 380,
+        "suspension_steering": 360,
+        "six_wheel_tire_assemblies": 270,
+        "six_drive_motor_brake_modules": 540,
+        "battery_pack_enclosure_bus": 205,
+        "control_sensing_power": 130,
+        "installed_manipulators": 300,
+        "tools_printer_fixtures": 250,
+        "guards_cabling_misc": 180,
+        "outrigger_jack_system": 120,
+        "portable_gantry_hoist": 150,
+        "spares_recovery": 165,
+        "unallocated_mass": 50
+      },
+      "mass_budget_status": "Planning allowances, not supplier-certified assembly masses; unallocated reserve is too small to cover present uncertainty. Evaluate +20% mass separately.",
+      "cg_stowed_m": [
+        0,
+        0,
+        0.8
+      ],
+      "cg_status": "Assumed, recompute from actual links, tools and payload; not measured.",
+      "battery_modules": 10,
+      "battery_nominal_kwh": 15.36,
+      "battery_mission_kwh": 10.4448,
+      "battery_module_mass_kg": 15.6,
+      "battery_voltage_nominal_v": 51.2,
+      "battery_recommended_total_current_a": 450,
+      "battery_max_catalog_total_current_a": 1000,
+      "battery_status": "Summed module limits only. Actual current limited by interconnects, unequal sharing, BMS coordination, contactors, fuses, inverter and thermal design.",
+      "drive_candidate": "Bonfiglioli 602WE",
+      "drive_count": 6,
+      "gear_ratio_assumed": 80,
+      "gear_efficiency_assumed": 0.9,
+      "wheel_torque_continuous_design_assumption_nm": 900,
+      "wheel_torque_peak_design_assumption_nm": 1800,
+      "continuous_torque_verified": false,
+      "traction_motor_continuous_kw_target_each": 5,
+      "peak_torque_duration_s": null,
+      "drive_status": "Design assumptions ONLY; actual torque-speed/thermal envelope and permissible peak duration not verified. Catalog gearbox torque is not continuous wheel motor rating.",
+      "speed_operating_cap_m_s": 1.5,
+      "base_auxiliary_kw": 0.5,
+      "drive_efficiency_assumed": 0.75,
+      "scenario_examples": [
+        {
+          "name": "level_firm",
+          "grade_deg": 0,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 1,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 1216.4,
+          "required_torque_per_loaded_wheel_nm": 75.8,
+          "assumed_continuous_torque_margin": 11.869,
+          "traction_margin": 15.0,
+          "electrical_power_kw": 2.122,
+          "energy_only_runtime_h": 4.922,
+          "energy_only_range_km": 17.72,
+          "result": "screening margins pass; not hardware validation"
+        },
+        {
+          "name": "grade20_firm",
+          "grade_deg": 20,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 11544.3,
+          "required_torque_per_loaded_wheel_nm": 719.6,
+          "assumed_continuous_torque_margin": 1.251,
+          "traction_margin": 1.485,
+          "electrical_power_kw": 8.196,
+          "energy_only_runtime_h": 1.274,
+          "energy_only_range_km": 2.294,
+          "result": "unvalidated; misses proposed1.5 torque or1.25 traction reserve"
+        },
+        {
+          "name": "grade30_firm",
+          "grade_deg": 30,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 16259.0,
+          "required_torque_per_loaded_wheel_nm": 1013.5,
+          "assumed_continuous_torque_margin": 0.888,
+          "traction_margin": 0.972,
+          "electrical_power_kw": 11.339,
+          "energy_only_runtime_h": 0.921,
+          "energy_only_range_km": 1.658,
+          "result": "unvalidated; infeasible"
+        },
+        {
+          "name": "grade15_mud",
+          "grade_deg": 15,
+          "mu_assumed": 0.25,
+          "Crr_assumed": 0.12,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 6,
+          "required_force_n": 11395.9,
+          "required_torque_per_loaded_wheel_nm": 710.4,
+          "assumed_continuous_torque_margin": 1.267,
+          "traction_margin": 0.644,
+          "electrical_power_kw": 8.097,
+          "energy_only_runtime_h": 1.29,
+          "energy_only_range_km": 2.322,
+          "result": "unvalidated; infeasible"
+        },
+        {
+          "name": "grade20_four_contacts",
+          "grade_deg": 20,
+          "mu_assumed": 0.6,
+          "Crr_assumed": 0.04,
+          "speed_m_s": 0.5,
+          "loaded_driven_wheels": 4,
+          "required_force_n": 11544.3,
+          "required_torque_per_loaded_wheel_nm": 1079.4,
+          "assumed_continuous_torque_margin": 0.834,
+          "traction_margin": 1.485,
+          "electrical_power_kw": 8.196,
+          "energy_only_runtime_h": 1.274,
+          "energy_only_range_km": 2.294,
+          "result": "unvalidated; infeasible"
+        }
+      ],
+      "static_lateral_tip_deg_assumed": 43.53119928561418,
+      "static_fore_aft_tip_deg_assumed": 59.34933204294713,
+      "park30deg_required_wheel_brake_nm_with_1p5_factor": 1421.7679112204912,
+      "flat_stop_from_2m_s_distance_m_assumed": 2.5,
+      "wheel_plus_drive_handling_mass_kg": 135,
+      "full_corner_handling_mass_kg": 195,
+      "handling_mass_status": "Estimated. Full corner includes1/6 suspension/steering allowance; actual interfaces and offboard brackets unknown. Split tasks must use actual module boundaries.",
+      "gantry_deployment_status": "BLOCKED:150kg installed allowance does not engineer autonomous deployment. Candidate gantry components may exceed20kg arm payload, require manual/lift-assisted staging or redesigned robot-deployable interfaces."
+    }
+  },
+  "terrain_presets": [
+    {
+      "name": "firm_compacted",
+      "mu": 0.6,
+      "Crr": 0.04
+    },
+    {
+      "name": "loose_gravel",
+      "mu": 0.45,
+      "Crr": 0.08
+    },
+    {
+      "name": "mud_screening",
+      "mu": 0.25,
+      "Crr": 0.12
+    },
+    {
+      "name": "soft_sand_screening",
+      "mu": 0.3,
+      "Crr": 0.2
+    }
+  ],
+  "terrain_status": "All coefficients are deliberately editable engineering assumptions, not measurements or guaranteed terrain behavior. Sinkage, soil shear, bulldozing and water require dedicated model/tests.",
+  "margin_policy": {
+    "traction_min": 1.25,
+    "wheel_torque_min": 1.5,
+    "static_overturning_moment_min": 1.5,
+    "cg_projection_min_edge_distance_m": 0.2,
+    "preliminary_cross_slope_operating_cap_deg": 15,
+    "preliminary_longitudinal_operating_cap_deg": 20,
+    "proof_status": "Proposed design screening thresholds only; not legal/safety certification. Unknown ratings must display UNKNOWN rather than pass."
+  },
+  "sources": [
+    {
+      "id": "BKT",
+      "url": "https://commercial.bkt-tires.com/pattern/skid-power-hd-a/",
+      "type": "manufacturer",
+      "facts": "10-16.5 STANDARD: OD780mm, static loaded radius362mm, rolling circumference2350mm, recommended rim8.25in. Width267mm from manufacturer imperial data. Exact load-pressure-speed chart must be obtained.",
+      "cad": "No freely redistributable STEP/DWG verified; create original dimension-based envelope, not proprietary tread copy."
+    },
+    {
+      "id": "BON",
+      "url": "https://www.bonfiglioli.com/_default_upload_bucket/TR_CAT_RAMOB_STD_ENG_R04_1_4.pdf",
+      "type": "manufacturer catalog",
+      "facts": "600WE catalog torque900Nm, ratio48\u201358.7, max input6000rpm, listed weight35kg; 602WE4500Nm, ratio20\u2013145,6000rpm,45kg. Motor powers labeled S2-60min. Exact complete assembly mass, continuous torque, radial/axial bearing loads and brake rating require supplier sizing.",
+      "cad": "Public dimensioned PDF, no unrestricted STEP/DWG download verified."
+    },
+    {
+      "id": "BAT",
+      "url": "https://www.relionbattery.com/products/lithium/insight-48v-30ah-lt",
+      "type": "manufacturer",
+      "facts": "51.2V,30Ah,1536Wh,15.6kg,260x180x276mm; maximum10 parallel, series prohibited; recommended discharge45A, maximum continuous100A; IP67.",
+      "cad": "Original rectangular envelope from dimensions; no open CAD redistribution license verified."
+    },
+    {
+      "id": "FRAME",
+      "url": "https://www.ssab.com/en/brands-and-products/strenx/product-offer/tube/700-mlh",
+      "type": "manufacturer",
+      "facts": "Strenx Tube700MLH minimum yield700MPa;100x100x4mm11.7kg/m and150x100x4mm14.9kg/m. Weld/fatigue/local-buckling behavior not determined by yield alone.",
+      "cad": "Standard hollow-section dimensions support original parametric model; no manufacturer CAD copied."
+    },
+    {
+      "id": "JACK",
+      "url": "https://www.thomsonlinear.com/en/products/linear-actuators/electrak-hd/",
+      "type": "manufacturer",
+      "facts": "HDxx-B160 dynamic16kN, full-load5mm/s,48V option; current product table15% full-load duty at25C;18kN static at fully retracted subject manual. Component is not a qualified chassis jack or dynamic suspension.",
+      "cad": "Manufacturer offers3D-model selector https://www.thomsonlinear.com/micro/electrakhd_eng/3d-models.html ; current link redirects to product page. No downloadable STEP/DWG file or redistribution license verified; do not claim acquired CAD."
+    }
+  ],
+  "prices": "No costs asserted here; see cost research. Commercial parts subject quote and compatibility checks."
+}
