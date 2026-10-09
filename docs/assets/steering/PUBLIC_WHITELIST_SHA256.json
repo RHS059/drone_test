@@ -1,0 +1,1157 @@
+{
+  "package": "C03_R01 original development checkpoint",
+  "proprietary_geometry_included": false,
+  "entries": [
+    {
+      "path": "body-power/body_power_R01.step",
+      "bytes": 6825896,
+      "sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba",
+      "native_sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/frame_R07.step",
+      "bytes": 1447972,
+      "sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+      "native_sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/frame_R07_verification.json",
+      "bytes": 16070,
+      "sha256": "0f27a002e81da0505ad6c7463deec7535648e7a02444b17750f9d14466d43378",
+      "native_sha256": "0f27a002e81da0505ad6c7463deec7535648e7a02444b17750f9d14466d43378",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/generate_cad.py",
+      "bytes": 11452,
+      "sha256": "fddfede2e7e8c0c388542ab6a9a99983cfaaf7b10b84101688f80f3d62801b10",
+      "native_sha256": "fddfede2e7e8c0c388542ab6a9a99983cfaaf7b10b84101688f80f3d62801b10",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/generate_frame_R07.py",
+      "bytes": 3452,
+      "sha256": "3d6647b6681cf6df2ff7ae1cba90fc3bf26a0a584b78c44ff46d42c41ea5e9dd",
+      "native_sha256": "3d6647b6681cf6df2ff7ae1cba90fc3bf26a0a584b78c44ff46d42c41ea5e9dd",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/generate_interfaces.py",
+      "bytes": 10575,
+      "sha256": "22510dff8054a7f68744ffc8e89e0e1cf046d0e8318cc3f19d0bdd841606101f",
+      "native_sha256": "22510dff8054a7f68744ffc8e89e0e1cf046d0e8318cc3f19d0bdd841606101f",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/inner_backing_C02_R01.glb",
+      "bytes": 172836,
+      "sha256": "930338238b04dcaeb40fd6433c1b9210c625f909b02967696005ee278dfa4a2d",
+      "native_sha256": "930338238b04dcaeb40fd6433c1b9210c625f909b02967696005ee278dfa4a2d",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/inner_backing_C02_R01.step",
+      "bytes": 34678,
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09",
+      "native_sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/inner_backing_C02_R01_report.json",
+      "bytes": 1109,
+      "sha256": "ba24b8ed2e1ac430472e7df3bfa7aadcbefd902641327e3753e336ebf98f3b8e",
+      "native_sha256": "ba24b8ed2e1ac430472e7df3bfa7aadcbefd902641327e3753e336ebf98f3b8e",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/interface_contract_C02_R06.json",
+      "bytes": 7083,
+      "sha256": "d499bc60c0424d9aa594a301a2b9397bbc326040f2a9ba4a256cfae6d85149e8",
+      "native_sha256": "d499bc60c0424d9aa594a301a2b9397bbc326040f2a9ba4a256cfae6d85149e8",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/lower_bearing_envelopes_C02_R02.step",
+      "bytes": 58931,
+      "sha256": "29eeaacc6bdacd53f81264bfb88cc172b63669ec1394bbf31b98e23d6d2cec1d",
+      "native_sha256": "29eeaacc6bdacd53f81264bfb88cc172b63669ec1394bbf31b98e23d6d2cec1d",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/lower_wishbone_C02_R02.step",
+      "bytes": 887542,
+      "sha256": "9c2d92ca7ee0e0d6ab6449fe19155cc5eb3194da1bb590a56acf7182970d7dd1",
+      "native_sha256": "9c2d92ca7ee0e0d6ab6449fe19155cc5eb3194da1bb590a56acf7182970d7dd1",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/mass_cost_ledger_C02_R06.json",
+      "bytes": 4553,
+      "sha256": "84d60b2102e37da6dc629c9706075da37e092aab967307a0f07d69216241a9a3",
+      "native_sha256": "84d60b2102e37da6dc629c9706075da37e092aab967307a0f07d69216241a9a3",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_clamp_C02_R01.step",
+      "bytes": 296231,
+      "sha256": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec",
+      "native_sha256": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_hardware_C02_R01.glb",
+      "bytes": 1275588,
+      "sha256": "4ea6bb8537b4f436d9f2d49140dfae25be1d0ac5a322a7c0fd9a4bff123c0edc",
+      "native_sha256": "4ea6bb8537b4f436d9f2d49140dfae25be1d0ac5a322a7c0fd9a4bff123c0edc",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_hardware_C02_R01.step",
+      "bytes": 417842,
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f",
+      "native_sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_hardware_C02_R01_report.json",
+      "bytes": 882,
+      "sha256": "ee0e091b66ffda0191e39450be2adc60e2a9bf55db4a14ba35c24ac980ff3f74",
+      "native_sha256": "ee0e091b66ffda0191e39450be2adc60e2a9bf55db4a14ba35c24ac980ff3f74",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C02/upper_bearing_envelopes_C02_R02.step",
+      "bytes": 59059,
+      "sha256": "a87979599e47a826616fe1831376e516b61194b17547510f6c526414f218b4bf",
+      "native_sha256": "a87979599e47a826616fe1831376e516b61194b17547510f6c526414f218b4bf",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/upper_wishbone_C02_R02.step",
+      "bytes": 503283,
+      "sha256": "0fc7fcf8957847f143a3e0b55314df7bac19835ea2d4a494f0544199a5dc2664",
+      "native_sha256": "0fc7fcf8957847f143a3e0b55314df7bac19835ea2d4a494f0544199a5dc2664",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/upright_WD220_C02_R05.step",
+      "bytes": 192301,
+      "sha256": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a",
+      "native_sha256": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/upright_pins_C02_R02.step",
+      "bytes": 74149,
+      "sha256": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62",
+      "native_sha256": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/wheel_adapter_C02_R02.glb",
+      "bytes": 755972,
+      "sha256": "c84a8820bc83ac6f2ea1dd9dd1c1768a2f295212915636d7ef8633b3652bdd82",
+      "native_sha256": "c84a8820bc83ac6f2ea1dd9dd1c1768a2f295212915636d7ef8633b3652bdd82",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/wheel_adapter_C02_R02.step",
+      "bytes": 123972,
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f",
+      "native_sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C02/wheel_adapter_C02_R02_report.json",
+      "bytes": 2388,
+      "sha256": "511b0168523a557758ad8578031d69c10cd2cf7eb1d990df038f805800a4c4bb",
+      "native_sha256": "511b0168523a557758ad8578031d69c10cd2cf7eb1d990df038f805800a4c4bb",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/README_C03_R01.md",
+      "bytes": 5625,
+      "sha256": "a42a6e0224aaba6e2a0930d7880c853df4f6d78d2ba4b93331bc88d2f2b373f4",
+      "native_sha256": "a42a6e0224aaba6e2a0930d7880c853df4f6d78d2ba4b93331bc88d2f2b373f4",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/SHA256_C03_R01.json",
+      "bytes": 5726,
+      "sha256": "8afc19122399b35d56f15c0b4b97ceb5922572283ba27507c02ec3e9a2226575",
+      "native_sha256": "8afc19122399b35d56f15c0b4b97ceb5922572283ba27507c02ec3e9a2226575",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_front_pin_C03_R11.glb",
+      "bytes": 137580,
+      "sha256": "8c842dd015c3357b300aaf72f311afa473676859f5a62d5340365a0d40e765fb",
+      "native_sha256": "8c842dd015c3357b300aaf72f311afa473676859f5a62d5340365a0d40e765fb",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_front_pin_C03_R11.step",
+      "bytes": 39415,
+      "sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904",
+      "native_sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_rear_pin_C03_R11.glb",
+      "bytes": 137576,
+      "sha256": "eec66093e9c70226e0f5ea6b4d84c54930667e72594773c0b0e8556712c254ac",
+      "native_sha256": "eec66093e9c70226e0f5ea6b4d84c54930667e72594773c0b0e8556712c254ac",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_rear_pin_C03_R11.step",
+      "bytes": 39417,
+      "sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c",
+      "native_sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_reservation_C03_R01.json",
+      "bytes": 8676,
+      "sha256": "e983aea552f9dc46780e10b06aa08d26f5a7c96d84bb7e17719a2275c213fb1d",
+      "native_sha256": "e983aea552f9dc46780e10b06aa08d26f5a7c96d84bb7e17719a2275c213fb1d",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/add_steering_lever.py",
+      "bytes": 2051,
+      "sha256": "0f1db6ef6c2ab77deb1c5959dd44b21a7201af4194cacbf67db2bac296891e2c",
+      "native_sha256": "0f1db6ef6c2ab77deb1c5959dd44b21a7201af4194cacbf67db2bac296891e2c",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/bake_rear_steering_parts.py",
+      "bytes": 913,
+      "sha256": "b186c0aba112c129c99c2f85bc57861b975765c7604c6a2a9cf64590510aa2f2",
+      "native_sha256": "b186c0aba112c129c99c2f85bc57861b975765c7604c6a2a9cf64590510aa2f2",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/build_original_steering_assembly.py",
+      "bytes": 4413,
+      "sha256": "ee82354401cfa77c477fa859b8d77f4717e3b04be7adba2c80f4bfae145b369e",
+      "native_sha256": "ee82354401cfa77c477fa859b8d77f4717e3b04be7adba2c80f4bfae145b369e",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_actuator_reservations.py",
+      "bytes": 2237,
+      "sha256": "c38656cdd9f1b945377435a2a7f0fb2d14740493d327ba817cf4eba9fa2d7a27",
+      "native_sha256": "4bf6572a650a2f6479ad6c63d3f843c8c62ce7090c3c7e811b103b3801b59176",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_corner_steering_R05.py",
+      "bytes": 1775,
+      "sha256": "7ee785c4b126b39c9bf7f92037bbf75aca5e1c2a3e2cee34c454a03a66c67ab3",
+      "native_sha256": "5241be1822aefc3a4dee5ebe2cd9f2adcab2cf31c0185784b9bfd4f42a7555d9",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_full_wheel_sweep.py",
+      "bytes": 1719,
+      "sha256": "7770d61c2f1e29a28b49ea01d68761116ff0b2b4b960d88e31dfded3b4df1eb3",
+      "native_sha256": "05726a8cc42962eb668edeaa397c19551e54925e98befe6aaa65c9a819622abd",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_rack_assembly_R11.py",
+      "bytes": 2048,
+      "sha256": "7a2939ce7736731bbee0ae53d1d97cb29ea8b030500265e2e584fa4833f29e29",
+      "native_sha256": "4e153d6c9ae0f847ce2034a9015da485443b25ffb513c969517578d5d7c938cf",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_rack_force_screen.py",
+      "bytes": 2151,
+      "sha256": "b82aa63572f0f3d30eecee61a37710139e0b6621d22fe6ee66dfd8d34c8cb636",
+      "native_sha256": "b82aa63572f0f3d30eecee61a37710139e0b6621d22fe6ee66dfd8d34c8cb636",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_reserved_tire_sweep.py",
+      "bytes": 1740,
+      "sha256": "f9fe10b6cf7dd08d4d9646a8cadc7d332b78f6cd1026b53cf2fa0c684d9111d9",
+      "native_sha256": "f9f62e64c99d3a2f446b31a4669ebd3427d9ebf05f2b128ec5f923e4ee607c4c",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/coilover_source_candidates.json",
+      "bytes": 14338,
+      "sha256": "a6df588ecd9e0f47e62d5f9bd89afe0c68eb56bae1a89b5ab8f8cbdc6d0096b2",
+      "native_sha256": "a6df588ecd9e0f47e62d5f9bd89afe0c68eb56bae1a89b5ab8f8cbdc6d0096b2",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/corner_steering_C03_R05_check.json",
+      "bytes": 10480,
+      "sha256": "9524ba8829695ec5ecee9d148689050e80cf92e0ba432e646535244e0c7847c0",
+      "native_sha256": "9524ba8829695ec5ecee9d148689050e80cf92e0ba432e646535244e0c7847c0",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/electrak_HD48_B045_150_MM_envelope_C03_R01.json",
+      "bytes": 5687,
+      "sha256": "c15c4b4ced278d4a00e8ecacb018a73f6db2d02c54d53c6e9aa325dc301834e3",
+      "native_sha256": "c15c4b4ced278d4a00e8ecacb018a73f6db2d02c54d53c6e9aa325dc301834e3",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/full_wheel_sweep_C03_R01.json",
+      "bytes": 626,
+      "sha256": "79a57f143f4f901bb678ea6955dcc89a188cfccedd7256694ce75680a17fd59d",
+      "native_sha256": "79a57f143f4f901bb678ea6955dcc89a188cfccedd7256694ce75680a17fd59d",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_outer_pins.py",
+      "bytes": 1051,
+      "sha256": "77738715cd582a5f9db0864697698091ad61cd685fe2b3eeb812a92d345e171a",
+      "native_sha256": "77738715cd582a5f9db0864697698091ad61cd685fe2b3eeb812a92d345e171a",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_rack_R11.py",
+      "bytes": 5407,
+      "sha256": "2698ec32d1d55ca2d9f67cb21c071d77cde13e209f3f154a93af09235ab5c473",
+      "native_sha256": "2698ec32d1d55ca2d9f67cb21c071d77cde13e209f3f154a93af09235ab5c473",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_rack_mount_interfaces.py",
+      "bytes": 2463,
+      "sha256": "ec14e46334935fedd973e029a538373e5ea5f5e0e077d7ac7b35639478335347",
+      "native_sha256": "ec14e46334935fedd973e029a538373e5ea5f5e0e077d7ac7b35639478335347",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_spherical_housing.py",
+      "bytes": 2665,
+      "sha256": "e2d70cd349476b125271fa9c4b8ab9fd5fd3276d071e0a8e8eb52de4cc60bba2",
+      "native_sha256": "e2d70cd349476b125271fa9c4b8ab9fd5fd3276d071e0a8e8eb52de4cc60bba2",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_steering_corner.py",
+      "bytes": 3988,
+      "sha256": "927be2acb3f43de9097eb4b1e5941171b370673daa6d52881cccb715da3405a3",
+      "native_sha256": "927be2acb3f43de9097eb4b1e5941171b370673daa6d52881cccb715da3405a3",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_tie_link.py",
+      "bytes": 2153,
+      "sha256": "27d35492dbf0c67d26b61254f305e852c3c2011f244ee895700202d58b87523a",
+      "native_sha256": "27d35492dbf0c67d26b61254f305e852c3c2011f244ee895700202d58b87523a",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_tie_pins.py",
+      "bytes": 949,
+      "sha256": "0dcc2f26f384800c535232ed8c87d46a99e384a93aa494fbfb1e3972e2039da5",
+      "native_sha256": "0dcc2f26f384800c535232ed8c87d46a99e384a93aa494fbfb1e3972e2039da5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/guide_liner_-1_C03_R11.glb",
+      "bytes": 3800,
+      "sha256": "ac2121efd0f1423e28136e8484895909b2d9194165220412044edaadc84a31cc",
+      "native_sha256": "ac2121efd0f1423e28136e8484895909b2d9194165220412044edaadc84a31cc",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/guide_liner_-1_C03_R11.step",
+      "bytes": 30674,
+      "sha256": "71d2057081e508bcc4c20395bc8e05fe58672ae4f31132708400aca203360316",
+      "native_sha256": "71d2057081e508bcc4c20395bc8e05fe58672ae4f31132708400aca203360316",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/guide_liner_1_C03_R11.glb",
+      "bytes": 3796,
+      "sha256": "15fdccdf649967420d0123501d934a8ecb519debcf9e1cfc29dc03db4e5411b6",
+      "native_sha256": "15fdccdf649967420d0123501d934a8ecb519debcf9e1cfc29dc03db4e5411b6",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/guide_liner_1_C03_R11.step",
+      "bytes": 30624,
+      "sha256": "52c9fa2fe2d395a60f83322110bc94921bbfe64d48fbda8777245083f1c743c5",
+      "native_sha256": "52c9fa2fe2d395a60f83322110bc94921bbfe64d48fbda8777245083f1c743c5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/housing_body_C03_R01.step",
+      "bytes": 35751,
+      "sha256": "da631329bc46a6ff2697a6cbccd4031589ceb53ec47ae03d334a20343e50f52a",
+      "native_sha256": "da631329bc46a6ff2697a6cbccd4031589ceb53ec47ae03d334a20343e50f52a",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/housing_retainer_C03_R01.glb",
+      "bytes": 256540,
+      "sha256": "9782214449045e411c5f4d60185f43e6de46b611d80e9073e8f382dd2fba6a11",
+      "native_sha256": "9782214449045e411c5f4d60185f43e6de46b611d80e9073e8f382dd2fba6a11",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/housing_retainer_C03_R01.step",
+      "bytes": 31132,
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911",
+      "native_sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/interface_contract_C03_R01.json",
+      "bytes": 16477,
+      "sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+      "native_sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/kinematics_C03_R01.js",
+      "bytes": 2494,
+      "sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+      "native_sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/kinematics_JS_C03_R01_check.json",
+      "bytes": 54169,
+      "sha256": "61e4b9147f758bb8158b1e5342349cc0c29eda68a6438e4beb4c0f9d0773cdfd",
+      "native_sha256": "61e4b9147f758bb8158b1e5342349cc0c29eda68a6438e4beb4c0f9d0773cdfd",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/kinematics_input_guards_C03_R01.json",
+      "bytes": 773,
+      "sha256": "ca8fe61f2084ced45a49809c4186d9e473411fe1d4f2ad6a046b8aa462b7f06a",
+      "native_sha256": "ca8fe61f2084ced45a49809c4186d9e473411fe1d4f2ad6a046b8aa462b7f06a",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/lower_wishbone_C03_R03.glb",
+      "bytes": 2008248,
+      "sha256": "fb2bb33dd75999bfb50fef1973990c85ac2f915cab9de9185bd24b77e3d0b7ba",
+      "native_sha256": "fb2bb33dd75999bfb50fef1973990c85ac2f915cab9de9185bd24b77e3d0b7ba",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/lower_wishbone_C03_R03.step",
+      "bytes": 2571930,
+      "sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6",
+      "native_sha256": "96de911a6e53c7cb4b47e43dc58a1d56bd7efe42de5d20dbecfeb6947f4ae3d6",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/lower_wishbone_C03_R03_report.json",
+      "bytes": 855,
+      "sha256": "088957df8352d2e04efcc57a7018e2c08e1e92d5aee41c0dfce5d5fe0ae5caa5",
+      "native_sha256": "088957df8352d2e04efcc57a7018e2c08e1e92d5aee41c0dfce5d5fe0ae5caa5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/mass_cost_ledger_C03_R01.json",
+      "bytes": 37611,
+      "sha256": "c2b160ea073de12e695e506146b2e80763c09b3a1ada0b0931d87ed2a0930d37",
+      "native_sha256": "c2b160ea073de12e695e506146b2e80763c09b3a1ada0b0931d87ed2a0930d37",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/original_parts_C03_R01.csv",
+      "bytes": 20199,
+      "sha256": "1146e229db8ce269f5e14c89719937a8d2434eadc3984778ed8c8fdd357bb359",
+      "native_sha256": "1146e229db8ce269f5e14c89719937a8d2434eadc3984778ed8c8fdd357bb359",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/original_steering_C03_R01.glb",
+      "bytes": 38820348,
+      "sha256": "7d57a2c5f0007436ea3e4ddeaf17c7ea9a2b01a92dcc9d257571aafa2c38dfa5",
+      "native_sha256": "7d57a2c5f0007436ea3e4ddeaf17c7ea9a2b01a92dcc9d257571aafa2c38dfa5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/original_steering_C03_R01.step",
+      "bytes": 23503908,
+      "sha256": "b7eb95d4b64d83060c40b5e74dfcef70e4c17a927c6c659d3b5fe86705320442",
+      "native_sha256": "b7eb95d4b64d83060c40b5e74dfcef70e4c17a927c6c659d3b5fe86705320442",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/original_steering_C03_R01_export_check.json",
+      "bytes": 398,
+      "sha256": "5e994b5eb982970e7983424553c141908144f3309e78b7226c465fc3a4675e3a",
+      "native_sha256": "5e994b5eb982970e7983424553c141908144f3309e78b7226c465fc3a4675e3a",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/original_steering_C03_R01_manifest.json",
+      "bytes": 60352,
+      "sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+      "native_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/outer_pins_left_C03_R01.glb",
+      "bytes": 273980,
+      "sha256": "b6ba1fd87d87736bb1f0ce4efbd9494cfd16c075c8b600c0a002d1f17946ca7e",
+      "native_sha256": "b6ba1fd87d87736bb1f0ce4efbd9494cfd16c075c8b600c0a002d1f17946ca7e",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/outer_pins_left_C03_R01.step",
+      "bytes": 80158,
+      "sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5",
+      "native_sha256": "b67a8b24e6254c207443617a949d7189d325f83d3ac6c9abdf801972667640d5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/outer_pins_left_C03_R01_report.json",
+      "bytes": 801,
+      "sha256": "b7fcc8b994c8794ceca1de7d9a54cf31dc3c435c73d31429043b10dc81ff6e76",
+      "native_sha256": "b7fcc8b994c8794ceca1de7d9a54cf31dc3c435c73d31429043b10dc81ff6e76",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_C03_R11_report.json",
+      "bytes": 7436,
+      "sha256": "9591220bdd90fc7cfcd9ef658494f90ac9c9df06f1453628d4b0d8bffbf90874",
+      "native_sha256": "9591220bdd90fc7cfcd9ef658494f90ac9c9df06f1453628d4b0d8bffbf90874",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_assembly_C03_R11_check.json",
+      "bytes": 5971,
+      "sha256": "90748a98437dd186dde11ca94f25adc14059e1fe1eb4130fa7c589072e130915",
+      "native_sha256": "90748a98437dd186dde11ca94f25adc14059e1fe1eb4130fa7c589072e130915",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_carriage_C03_R11.glb",
+      "bytes": 560232,
+      "sha256": "d095b88863f148cf509e8c11d5571e9ee581a49600480b0fbd4d0feb53710627",
+      "native_sha256": "d095b88863f148cf509e8c11d5571e9ee581a49600480b0fbd4d0feb53710627",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_carriage_C03_R11.step",
+      "bytes": 480090,
+      "sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c",
+      "native_sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_crossbeam_C03_R11.glb",
+      "bytes": 489672,
+      "sha256": "2f69356250943daaf036be1c317233eb5eff6fc5e52088ad46f6dd62af3b6fae",
+      "native_sha256": "2f69356250943daaf036be1c317233eb5eff6fc5e52088ad46f6dd62af3b6fae",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_crossbeam_C03_R11.step",
+      "bytes": 269965,
+      "sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e",
+      "native_sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_force_screen_C03_R01.json",
+      "bytes": 1481,
+      "sha256": "1536cd22d3e81030f09498777df101bf4058dcfe67ad09c5f47050af4376666b",
+      "native_sha256": "1536cd22d3e81030f09498777df101bf4058dcfe67ad09c5f47050af4376666b",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_guide_C03_R11.glb",
+      "bytes": 11188,
+      "sha256": "b4424a790354aac8f5680bfd15d5ababccce8afaa5a3171557c006a9eed4e6ac",
+      "native_sha256": "b4424a790354aac8f5680bfd15d5ababccce8afaa5a3171557c006a9eed4e6ac",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_guide_C03_R11.step",
+      "bytes": 100835,
+      "sha256": "d339047aec152c6275d5477bfcb5f1b2b6e1b25855b9e8832eef240d01fffbfd",
+      "native_sha256": "d339047aec152c6275d5477bfcb5f1b2b6e1b25855b9e8832eef240d01fffbfd",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_mount_hardware_C03_R03.glb",
+      "bytes": 2085192,
+      "sha256": "b128eaaa6d71372936f87d09e67a66551cc91ed4ccef76d129147b3e4853a629",
+      "native_sha256": "b128eaaa6d71372936f87d09e67a66551cc91ed4ccef76d129147b3e4853a629",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_mount_hardware_C03_R03.step",
+      "bytes": 627442,
+      "sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957",
+      "native_sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_mount_hardware_C03_R03_report.json",
+      "bytes": 657,
+      "sha256": "da7a6e56c310bfe032d9b791e2ee368e3b111367063f3605279bc0c3ca0b27e5",
+      "native_sha256": "da7a6e56c310bfe032d9b791e2ee368e3b111367063f3605279bc0c3ca0b27e5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/reserved_tire_sweep_C03_R01.json",
+      "bytes": 1400,
+      "sha256": "d8dc75157d275b859a4bf772629c18558a7d50be01b9762b36d1c009f96f8003",
+      "native_sha256": "d8dc75157d275b859a4bf772629c18558a7d50be01b9762b36d1c009f96f8003",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/source_joint_selection.json",
+      "bytes": 2971,
+      "sha256": "9f7dd3d7900f5b40cd40d6f26b6afa688503406f65e3986e27eb062a7176b53f",
+      "native_sha256": "9f7dd3d7900f5b40cd40d6f26b6afa688503406f65e3986e27eb062a7176b53f",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/spherical_housing_C03_R01_report.json",
+      "bytes": 2760,
+      "sha256": "fb8780b739ea94e1dcfafa8398fcd1922df113d6310e629f39e72538ac5f25bb",
+      "native_sha256": "fb8780b739ea94e1dcfafa8398fcd1922df113d6310e629f39e72538ac5f25bb",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_left_C03_R03.glb",
+      "bytes": 790436,
+      "sha256": "1ee99e446cd1ceee131bd1273a80b39a093e8063ab1fff0ac3f97d041eda200b",
+      "native_sha256": "1ee99e446cd1ceee131bd1273a80b39a093e8063ab1fff0ac3f97d041eda200b",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_left_C03_R03.step",
+      "bytes": 308952,
+      "sha256": "4a2cf4b57f1e1ee32a47bd45d383487d1414a7d14280b256a60e42514ec62fa5",
+      "native_sha256": "4a2cf4b57f1e1ee32a47bd45d383487d1414a7d14280b256a60e42514ec62fa5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_left_C03_R03_report.json",
+      "bytes": 1330,
+      "sha256": "148dbc7275f535614f9a96c91d90e96632293d1c79c05f1b65d7e64e8770d16f",
+      "native_sha256": "148dbc7275f535614f9a96c91d90e96632293d1c79c05f1b65d7e64e8770d16f",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_right_C03_R03.glb",
+      "bytes": 790440,
+      "sha256": "c67fc2d7630e248ff3d5dc5c4b6c03622da003ff6d65dc79166dc2719d44b407",
+      "native_sha256": "c67fc2d7630e248ff3d5dc5c4b6c03622da003ff6d65dc79166dc2719d44b407",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_right_C03_R03.step",
+      "bytes": 309552,
+      "sha256": "d1101faea8741ba4a896c42635ee0de1a7a3ca1a6246cd661c4fb299e0dc338d",
+      "native_sha256": "d1101faea8741ba4a896c42635ee0de1a7a3ca1a6246cd661c4fb299e0dc338d",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_right_C03_R03_report.json",
+      "bytes": 1334,
+      "sha256": "2ababb0700b6a7208eb7bbf7ed02bbbb68389bc0c65b772b21fb526320121762",
+      "native_sha256": "2ababb0700b6a7208eb7bbf7ed02bbbb68389bc0c65b772b21fb526320121762",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_left_C03_R03.glb",
+      "bytes": 790436,
+      "sha256": "38f3841c99c34fa9a23f641e5b49af1cec5c7ec147fe038cbfb9ba9516edb0aa",
+      "native_sha256": "38f3841c99c34fa9a23f641e5b49af1cec5c7ec147fe038cbfb9ba9516edb0aa",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_left_C03_R03.step",
+      "bytes": 309218,
+      "sha256": "13752d447f94cd9cd5e2babf28cf19cb80718ddb8e30a18ee1ebfd54ca27b95a",
+      "native_sha256": "13752d447f94cd9cd5e2babf28cf19cb80718ddb8e30a18ee1ebfd54ca27b95a",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_left_C03_R03_report.json",
+      "bytes": 1175,
+      "sha256": "4e2510eb8df47e636965eb0e87b58b6f0410ab8c5ce840590f6ddc0641ec8a35",
+      "native_sha256": "4e2510eb8df47e636965eb0e87b58b6f0410ab8c5ce840590f6ddc0641ec8a35",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_right_C03_R03.glb",
+      "bytes": 790440,
+      "sha256": "2c42a44ef367ea9eb816f9cf18f699aba9404355006d9eee4807d4e80924ff8f",
+      "native_sha256": "2c42a44ef367ea9eb816f9cf18f699aba9404355006d9eee4807d4e80924ff8f",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_right_C03_R03.step",
+      "bytes": 310582,
+      "sha256": "3d67bdf8caa1c51133528d1d7cdd5c9f9254dd06a2c541f1e40503389f22b8fb",
+      "native_sha256": "3d67bdf8caa1c51133528d1d7cdd5c9f9254dd06a2c541f1e40503389f22b8fb",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_right_C03_R03_report.json",
+      "bytes": 1173,
+      "sha256": "f8f7396d8d9de60eec1d7a01e5ab186005b06fe9feefbeffe620da4f4fde0796",
+      "native_sha256": "f8f7396d8d9de60eec1d7a01e5ab186005b06fe9feefbeffe620da4f4fde0796",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_actuator_joint_sources_C03_R01.json",
+      "bytes": 26760,
+      "sha256": "6009f5bcd2171e8bcb0a1981aac72630f6a08a8a81e22f9ec1ba2dda6fc19378",
+      "native_sha256": "6009f5bcd2171e8bcb0a1981aac72630f6a08a8a81e22f9ec1ba2dda6fc19378",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_closure_C03_R05.json",
+      "bytes": 7659569,
+      "sha256": "cf6a5afccb90c8480d7641a8ca62d94719aa11ce57b06a347c17be6e4abba996",
+      "native_sha256": "cf6a5afccb90c8480d7641a8ca62d94719aa11ce57b06a347c17be6e4abba996",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/FINAL_RECOMMENDATION.json",
+      "bytes": 6643,
+      "sha256": "9ba53a9611860beccf24ac48fef4d15fab10003182a1918aa316c2a50c07607c",
+      "native_sha256": "9ba53a9611860beccf24ac48fef4d15fab10003182a1918aa316c2a50c07607c",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/README.md",
+      "bytes": 9119,
+      "sha256": "2496f0c0e45b69122a1b6b93a63cd3fd385d6b5a3cbbc72b6fd9f4c22aa588e5",
+      "native_sha256": "2496f0c0e45b69122a1b6b93a63cd3fd385d6b5a3cbbc72b6fd9f4c22aa588e5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/S01_C03_baked_assembly_compatibility.json",
+      "bytes": 52885,
+      "sha256": "f68ef8927893305285d2be3a464abd48feb815d2f416331633b708f554260919",
+      "native_sha256": "f68ef8927893305285d2be3a464abd48feb815d2f416331633b708f554260919",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/carriage_R10_interference.json",
+      "bytes": 4369,
+      "sha256": "066e5ab3a2524cada782fc805bbdb1318574c8a7563af3adb04da7c8851e3755",
+      "native_sha256": "066e5ab3a2524cada782fc805bbdb1318574c8a7563af3adb04da7c8851e3755",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_S01_baked_assembly.py",
+      "bytes": 5741,
+      "sha256": "0ca8d48da174f945102c1e28a55e42e9e72daf97a2c89a2faaf2ef3048e841fb",
+      "native_sha256": "28eee4c8c069a0aacad41cd8ba0e055c7af0f2ed8df05645962aa9e355ee6df6",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_carriage_R10.py",
+      "bytes": 1700,
+      "sha256": "af67e1f22ff7c2bbcf960620104013d360d78b26875c361ca028f69589826305",
+      "native_sha256": "cb5e3ae241125988f5dbd9178e31471e3c7b44bb5cff686c7ba6a0e904923b40",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_root_and_wheel.py",
+      "bytes": 1632,
+      "sha256": "3a7490e768a78e2bda8af6c5034cc78fafcd4554b56b610667b4f08982b1c2e0",
+      "native_sha256": "5593369d670f48eb75b34e46b6e4bba6d16acfb49e4167da788c6b124dc51490",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/recommended_75_exact.json",
+      "bytes": 20317,
+      "sha256": "ac3ba08bfab87a2b704bbf2d204d02229e767c82f69feb928db4440cdcf2df4a",
+      "native_sha256": "ac3ba08bfab87a2b704bbf2d204d02229e767c82f69feb928db4440cdcf2df4a",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/recommended_75_final_exact.json",
+      "bytes": 20759,
+      "sha256": "b735bbfd348855fc8c1f6d4e8a2b9457fefdd58e3e395445413cb0058d2b9ee3",
+      "native_sha256": "b735bbfd348855fc8c1f6d4e8a2b9457fefdd58e3e395445413cb0058d2b9ee3",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/recommended_dense_screen.json",
+      "bytes": 53418,
+      "sha256": "1b3ad81680ad6c8a275864a51d402c6ff178c9f482a1e625cf3e99e4dbe91774",
+      "native_sha256": "1b3ad81680ad6c8a275864a51d402c6ff178c9f482a1e625cf3e99e4dbe91774",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/recommended_root_and_wheel.json",
+      "bytes": 1268,
+      "sha256": "20083ab3b25f9589044dd2028bfe803918b9536ba1d55c3bf3fb805c26ac2e40",
+      "native_sha256": "20083ab3b25f9589044dd2028bfe803918b9536ba1d55c3bf3fb805c26ac2e40",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/recommended_screen.py",
+      "bytes": 2941,
+      "sha256": "c72d2d11c51114dd828c208d567e7ec603fef55bc0832ae6a695223722e14f49",
+      "native_sha256": "c72d2d11c51114dd828c208d567e7ec603fef55bc0832ae6a695223722e14f49",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/search.py",
+      "bytes": 5286,
+      "sha256": "8252abcf6e06ebaf45ef3622cb992a3b160acd1d35a7dcfd03a44497b0fbd701",
+      "native_sha256": "8252abcf6e06ebaf45ef3622cb992a3b160acd1d35a7dcfd03a44497b0fbd701",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/search_packageable_75.py",
+      "bytes": 5610,
+      "sha256": "1f74c4212811dc9076914fc4699072f2f77f6ec370f079baf2b275e23438d675",
+      "native_sha256": "1f74c4212811dc9076914fc4699072f2f77f6ec370f079baf2b275e23438d675",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/verify_exact.py",
+      "bytes": 5265,
+      "sha256": "da58c1780ac6fe894a34ada7009f95cfca7ce849818d7cccb126909269d7f3d5",
+      "native_sha256": "da58c1780ac6fe894a34ada7009f95cfca7ce849818d7cccb126909269d7f3d5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/verify_final_lever.py",
+      "bytes": 2280,
+      "sha256": "c626aaab7bd71f8d27c0e8abd97b6884f5ddf2d1d6a935c3d3508fb8377aecf5",
+      "native_sha256": "f326940ba95275bc560ffc425cbdfb05b417eb58e01c9706751164b973cfa780",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_topology_study.py",
+      "bytes": 2193,
+      "sha256": "dbd5283cc6ea7f6d5b795701ba7e1ff817e1c3b1359b0def21bedf93bbb0a276",
+      "native_sha256": "dbd5283cc6ea7f6d5b795701ba7e1ff817e1c3b1359b0def21bedf93bbb0a276",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_C03_R03.step",
+      "bytes": 359680,
+      "sha256": "b8723e22bdf3143bd70b434842f5f05a07562379a40d221fb77e962141678643",
+      "native_sha256": "b8723e22bdf3143bd70b434842f5f05a07562379a40d221fb77e962141678643",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_left_C03_R05.glb",
+      "bytes": 805716,
+      "sha256": "95ff0e8d7c7b55c86b0d3b0ce026e6f6ab585d8517a7c68805add1336325d25c",
+      "native_sha256": "95ff0e8d7c7b55c86b0d3b0ce026e6f6ab585d8517a7c68805add1336325d25c",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_left_C03_R05.step",
+      "bytes": 426155,
+      "sha256": "98a971f13dc85d9ea67025a9d8d12f541da0078b149e759d4f1e30fc8a44d8ce",
+      "native_sha256": "98a971f13dc85d9ea67025a9d8d12f541da0078b149e759d4f1e30fc8a44d8ce",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_left_C03_R05_report.json",
+      "bytes": 1498,
+      "sha256": "d6866f7a33d828bd0d4d8a4d170e3a4a2051dbd6cd885f23ef83c574fc9e0ee5",
+      "native_sha256": "d6866f7a33d828bd0d4d8a4d170e3a4a2051dbd6cd885f23ef83c574fc9e0ee5",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_left_C03_R05.glb",
+      "bytes": 805724,
+      "sha256": "6a3147e30218ac0a021e25ad6062da5ffd3a0a4214372605025e611a583e664f",
+      "native_sha256": "6a3147e30218ac0a021e25ad6062da5ffd3a0a4214372605025e611a583e664f",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_left_C03_R05.step",
+      "bytes": 440040,
+      "sha256": "7d43b85020592064657ca5308482394ef29c3960c48c7f65a039ca44fe11b19d",
+      "native_sha256": "7d43b85020592064657ca5308482394ef29c3960c48c7f65a039ca44fe11b19d",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_left_C03_R05_report.json",
+      "bytes": 1178,
+      "sha256": "bd7d388e8bedd79cee915608bab4dad463248b026026fd4161b07755af99d690",
+      "native_sha256": "bd7d388e8bedd79cee915608bab4dad463248b026026fd4161b07755af99d690",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_right_C03_R05.glb",
+      "bytes": 805728,
+      "sha256": "3661cb448bb681b252b022c5718ec6d630ce9796da6d45ef35ea6ca5a4e813c5",
+      "native_sha256": "3661cb448bb681b252b022c5718ec6d630ce9796da6d45ef35ea6ca5a4e813c5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_right_C03_R05.step",
+      "bytes": 425487,
+      "sha256": "7a85968a193ce2979d29ad3e42527f85aa07b925fcd6d909257228dc603c2f90",
+      "native_sha256": "7a85968a193ce2979d29ad3e42527f85aa07b925fcd6d909257228dc603c2f90",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_rear_right_C03_R05_report.json",
+      "bytes": 1189,
+      "sha256": "a65119ea6d0d9019e03a6f1ee637f13590fe240d4ff853bb984c3dff8721c661",
+      "native_sha256": "a65119ea6d0d9019e03a6f1ee637f13590fe240d4ff853bb984c3dff8721c661",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_right_C03_R05.glb",
+      "bytes": 805720,
+      "sha256": "614e4dccd947891fc563f0777c29b7684656f1e485e4b92cfbf7640684d3609b",
+      "native_sha256": "614e4dccd947891fc563f0777c29b7684656f1e485e4b92cfbf7640684d3609b",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_right_C03_R05.step",
+      "bytes": 439635,
+      "sha256": "d5e92536a0c04b85eb55e187b516d29750067db25677a96542e8e8ac73d15023",
+      "native_sha256": "d5e92536a0c04b85eb55e187b516d29750067db25677a96542e8e8ac73d15023",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_upright_right_C03_R05_report.json",
+      "bytes": 1501,
+      "sha256": "d82c555f3fe5c5108c793e2f9ca6ef1de4b0fdbebf93115fdc6af3ff7418feca",
+      "native_sha256": "d82c555f3fe5c5108c793e2f9ca6ef1de4b0fdbebf93115fdc6af3ff7418feca",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_clevis_pin_C03_R01.glb",
+      "bytes": 141120,
+      "sha256": "17b8d919ed5c0f6047ef3d269cd59db648db69bedfea00c54de63546df54d483",
+      "native_sha256": "17b8d919ed5c0f6047ef3d269cd59db648db69bedfea00c54de63546df54d483",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "bytes": 41722,
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb",
+      "native_sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_clevis_pin_C03_R01_report.json",
+      "bytes": 1293,
+      "sha256": "cf9c2534dbcf68772b33b9248159e4e0489e6e987e6719946b3e9d4852127291",
+      "native_sha256": "cf9c2534dbcf68772b33b9248159e4e0489e6e987e6719946b3e9d4852127291",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_insert_LH_C03_R02.glb",
+      "bytes": 85844,
+      "sha256": "a67482bde7bcdb9ca44fd229761701065908143504e8806255afe4c11d275f21",
+      "native_sha256": "a67482bde7bcdb9ca44fd229761701065908143504e8806255afe4c11d275f21",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_insert_LH_C03_R02.step",
+      "bytes": 9804,
+      "sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04",
+      "native_sha256": "f1b6f8436dbb0f0c148cc5565d8438a0dd950d59d75e6ed262ce52c4ae679f04",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_insert_RH_C03_R02.glb",
+      "bytes": 85844,
+      "sha256": "e4fa5b97674b6229d90c7c5940fa994a4a1e900a1e6ccd6f4c212c81692f8c03",
+      "native_sha256": "e4fa5b97674b6229d90c7c5940fa994a4a1e900a1e6ccd6f4c212c81692f8c03",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_insert_RH_C03_R02.step",
+      "bytes": 9668,
+      "sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5",
+      "native_sha256": "9346f07d276692b2d60985b9f3e3fcb690914b567017d4292359d54109c3bde5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_link_C03_R02_report.json",
+      "bytes": 3770,
+      "sha256": "3b17abd8bdc91207cc54920116aa777de317eb62fcc0d2d9cc57d495ce4a2f7d",
+      "native_sha256": "3b17abd8bdc91207cc54920116aa777de317eb62fcc0d2d9cc57d495ce4a2f7d",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_tube_C03_R02.glb",
+      "bytes": 85832,
+      "sha256": "4000e6a01c1feb1af5d513b2ea8d8455a27e415576915d85c9fcbff208f20371",
+      "native_sha256": "4000e6a01c1feb1af5d513b2ea8d8455a27e415576915d85c9fcbff208f20371",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_tube_C03_R02.step",
+      "bytes": 9713,
+      "sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110",
+      "native_sha256": "114e98370766307f92b6be442668e39aa1fab8a237247660fd0ef7e0761b4110",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/upper_wishbone_C03_R02.glb",
+      "bytes": 885500,
+      "sha256": "c7b75ad9e0e8f655c2a55f565657995e36639fa8cbc013d255b0c9a937ae59b5",
+      "native_sha256": "c7b75ad9e0e8f655c2a55f565657995e36639fa8cbc013d255b0c9a937ae59b5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/upper_wishbone_C03_R02.step",
+      "bytes": 639570,
+      "sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c",
+      "native_sha256": "1b2a6b989f80b57188c46fb8a258ca479abf1d7dd586df782fb849ef37ae825c",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "mechanical/running_gear_C03/upper_wishbone_C03_R02_report.json",
+      "bytes": 849,
+      "sha256": "faf1ba3be6ea9df76b7d991fc5036a4f955d56b31577ac19d245a874b901f961",
+      "native_sha256": "faf1ba3be6ea9df76b7d991fc5036a4f955d56b31577ac19d245a874b901f961",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/verify_steering_closure.py",
+      "bytes": 2417,
+      "sha256": "b0fa1d1815871a7ce5c387362db3145d2c413ef0afa63d6205a044d3ee7b144e",
+      "native_sha256": "b0fa1d1815871a7ce5c387362db3145d2c413ef0afa63d6205a044d3ee7b144e",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/write_contract_C03_R01.py",
+      "bytes": 9917,
+      "sha256": "091e26922237243a25c95a6265689c368cc28b35331dee594c83354d972b0717",
+      "native_sha256": "091e26922237243a25c95a6265689c368cc28b35331dee594c83354d972b0717",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "mechanical/running_gear_C03/write_mass_ledger_C03_R01.py",
+      "bytes": 3056,
+      "sha256": "6a1467ce2132b353654bf6ce83e7dcd97135c36b4f266c3cad2103be80231d6c",
+      "native_sha256": "6a1467ce2132b353654bf6ce83e7dcd97135c36b4f266c3cad2103be80231d6c",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "service-fixtures/chassis_trestles_S01.step",
+      "bytes": 1348744,
+      "sha256": "1d1cf078cf41448bc4371a8ba3633804979b29247933ce07e4c48013db13de61",
+      "native_sha256": "1d1cf078cf41448bc4371a8ba3633804979b29247933ce07e4c48013db13de61",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "service-fixtures/chassis_trestles_S01_verification.json",
+      "bytes": 31880,
+      "sha256": "e42d5e0e7ae8a44d05dd712ea3e233128432acbb435d64f372216eb836a86fdc",
+      "native_sha256": "e42d5e0e7ae8a44d05dd712ea3e233128432acbb435d64f372216eb836a86fdc",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "service-fixtures/corner_cradle_S01.step",
+      "bytes": 1713041,
+      "sha256": "a93128d2bc5a8ace3466896ae15f53c4bf4f63f78cd85ad32d5cc538089e21b5",
+      "native_sha256": "a93128d2bc5a8ace3466896ae15f53c4bf4f63f78cd85ad32d5cc538089e21b5",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "service-fixtures/corner_cradle_S01_verification.json",
+      "bytes": 35372,
+      "sha256": "12162f433c27c9a28469e3eaee65b9ea0577fa0580cbb3aa02ba4b70affd8a88",
+      "native_sha256": "12162f433c27c9a28469e3eaee65b9ea0577fa0580cbb3aa02ba4b70affd8a88",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "service-fixtures/service_interface_contract_S01.json",
+      "bytes": 6133,
+      "sha256": "b76ee125a9dd73d120a84b5e9be991491a5191d2c565d715f04a6777134e6c03",
+      "native_sha256": "b76ee125a9dd73d120a84b5e9be991491a5191d2c565d715f04a6777134e6c03",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "wheels/interface_contract.json",
+      "bytes": 2862,
+      "sha256": "a6fffb467706228c037eb6e846d9f88eb5875998fb96e4ae7ba90016828e3ff3",
+      "native_sha256": "a6fffb467706228c037eb6e846d9f88eb5875998fb96e4ae7ba90016828e3ff3",
+      "geometry_bytes_unchanged": false
+    },
+    {
+      "path": "wheels/wheel_C01.step",
+      "bytes": 3477365,
+      "sha256": "b98e8e2b983024b612cf7083ec386be9b89862c21d7134c376f278037b28714b",
+      "native_sha256": "b98e8e2b983024b612cf7083ec386be9b89862c21d7134c376f278037b28714b",
+      "geometry_bytes_unchanged": true
+    },
+    {
+      "path": "SOURCE_AND_RIGHTS.md",
+      "bytes": 653,
+      "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 1716,
+      "sha256": "65bba5c6493cfae599c2282599e85a7ed120a3bb0aa76e00f03a5b11cdfb9422"
+    }
+  ],
+  "source_path_normalizations": [
+    {
+      "path": "mechanical/running_gear_C03/check_actuator_reservations.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "4bf6572a650a2f6479ad6c63d3f843c8c62ce7090c3c7e811b103b3801b59176"
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_corner_steering_R05.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "5241be1822aefc3a4dee5ebe2cd9f2adcab2cf31c0185784b9bfd4f42a7555d9"
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_full_wheel_sweep.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "05726a8cc42962eb668edeaa397c19551e54925e98befe6aaa65c9a819622abd"
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_rack_assembly_R11.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "4e153d6c9ae0f847ce2034a9015da485443b25ffb513c969517578d5d7c938cf"
+    },
+    {
+      "path": "mechanical/running_gear_C03/check_reserved_tire_sweep.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "f9f62e64c99d3a2f446b31a4669ebd3427d9ebf05f2b128ec5f923e4ee607c4c"
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_S01_baked_assembly.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "28eee4c8c069a0aacad41cd8ba0e055c7af0f2ed8df05645962aa9e355ee6df6"
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_carriage_R10.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "cb5e3ae241125988f5dbd9178e31471e3c7b44bb5cff686c7ba6a0e904923b40"
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/check_root_and_wheel.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "5593369d670f48eb75b34e46b6e4bba6d16acfb49e4167da788c6b124dc51490"
+    },
+    {
+      "path": "mechanical/running_gear_C03/steering_optimization/verify_final_lever.py",
+      "edits": "Portable project-root asset paths; carriage checker uses identical R11 carriage where applicable",
+      "native_sha256": "f326940ba95275bc560ffc425cbdfb05b417eb58e01c9706751164b973cfa780"
+    }
+  ],
+  "geometry_source_root": "mechanical/running_gear_C03",
+  "file_count": 158
+}

@@ -1,0 +1,27 @@
+{
+  "complete_original_sha256": "d0d3638bf635b7078fc2122a319a9e5d3d4b1b7c4abfbae709d62fc0e010bb5c",
+  "instructions": "Extract all three ordinary ZIP archives into the same empty directory. Their paths do not overlap; the complete 159-file set and byte hashes match the original full archive. Verify PUBLIC_WHITELIST_SHA256.json.",
+  "archives": [
+    {
+      "file": "C03_assembly_glb.zip",
+      "bytes": 7436763,
+      "sha256": "30766ad999f0c8e74475e2696ca2ce08f4e9bd235c5c1d89de77f5cfad2d4d2e",
+      "git_blob_sha": "4b2ebf5173b797f995f45e7d6376b7908f75aa86",
+      "entries": 1
+    },
+    {
+      "file": "C03_assembly_step.zip",
+      "bytes": 5341463,
+      "sha256": "8ffd0762263bf4325be38113e9ec14d55c02e48605e31597d15a78b90b8e2d85",
+      "git_blob_sha": "de66686b196855672a8f7ca0affe0f7a9f29e82c",
+      "entries": 1
+    },
+    {
+      "file": "C03_sources_tests.zip",
+      "bytes": 9251060,
+      "sha256": "eebd643136724f2624dbc7798af0336043503d8be022df209db476588003993b",
+      "git_blob_sha": "1c3beaa9b4868b705e9242e0b5a7ab48836172cb",
+      "entries": 157
+    }
+  ]
+}

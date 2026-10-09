@@ -1,0 +1,50 @@
+{
+  "retrieved_utc": "2026-10-09T10:50:59Z",
+  "rim_api": {
+    "code": "SE5240060141",
+    "peso_netto": "15.1",
+    "peso_lordo": "17.3",
+    "peso_unitario": "16.5"
+  },
+  "base_rim_api": {
+    "code": "SE5240060",
+    "peso_netto": "14.96",
+    "peso_lordo": "0",
+    "peso_unitario": "0"
+  },
+  "nut_api": {
+    "code": "CM0750180040",
+    "peso_netto": "0",
+    "peso_lordo": "0",
+    "peso_unitario": "0.217"
+  },
+  "rim_units_evidence": {
+    "source": "https://evocorse.com/wp-content/themes/evocorse/public/js/app.520957.js",
+    "description": "The manufacturer product script reads data-weight-api-base, requests the chosen SKU, selects response peso_netto and formats it to two decimals followed by kg."
+  },
+  "rim_variant_mapping": {
+    "source": "https://evocorse.com/en/product/dakarzero-8-5x18-se5240060/?attribute_pa_color=glossy-black",
+    "sku": "SE5240060141",
+    "attribute_pa_color": "glossy-black",
+    "variation_id": 31076,
+    "weight": "16.5",
+    "weight_html": "16.5 kg"
+  },
+  "nut_json_ld": {
+    "source": "https://evocorse.com/en/product/end-nut-lug-for-land-rover-m16x1-5-black-zinc-plated/",
+    "sku": "CM0750180040",
+    "weight": {
+      "@type": "QuantitativeValue",
+      "unitCode": "KGM",
+      "value": "0.217"
+    },
+    "additional_property": {
+      "name": "pa_peso",
+      "value": "212"
+    }
+  },
+  "source_page_sha256": {
+    "evocorse-rim-source.html": "e793af6835cb24c886e857370599dfac5bf39074c39505ca4fcd450024ab462b",
+    "evocorse-nut-source.html": "ea9c2253689a1896b524f4169af9ee9a72a30007f2c9181c2845cba21ed9b1d3"
+  }
+}

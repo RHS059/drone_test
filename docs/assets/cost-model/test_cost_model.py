@@ -55,12 +55,55 @@ class CostModelChecks(unittest.TestCase):
             self.assertNotIn(a['id'],P)
         self.assertFalse(S['drive_rejected_price']['exact_sku_match'])
     def test_mass_pinning(self):
-        self.assertEqual(M['configuration']['corner_revision'],'C02_R06')
+        self.assertEqual(M['configuration']['corner_revision'],'C03_R01')
+        self.assertEqual(M['configuration']['middle_corner_revision'],'C02_R06')
         known=sum(p['unit_mass_kg']*p['quantity'] for p in M['parts'] if p['included_in_pinned_mass_subtotal'])
-        self.assertAlmostEqual(known,976.3493556219631,places=8)
+        self.assertAlmostEqual(known,1123.7891292028824,places=8)
         self.assertAlmostEqual(known,M['mass_context']['pinned_known_subset_kg'],places=8)
         self.assertIsNone(M['mass_context']['whole_vehicle_mass_kg'])
         self.assertFalse(P['wheel_nuts']['included_in_pinned_mass_subtotal'])
+    def test_exact_c03_original_ledger(self):
+        ledger_path=Path('/workspace/shared/ugv-reconstruction/mechanical/running_gear_C03/mass_cost_ledger_C03_R01.json') if (HERE.parent/'app').is_dir() else HERE.parent/'steering/mass_cost_ledger_C03_R01.json'
+        ledger=json.loads(ledger_path.read_text())
+        nodes=ledger['original_items']
+        self.assertEqual(len(nodes),84)
+        for n in nodes:
+            row=P[n['node']]
+            self.assertEqual(row['quantity'],n['quantity'])
+            self.assertEqual(row['unit_mass_kg'],n['unit_mass_kg'])
+            self.assertEqual(row['source_step_sha256'],n['sha256'])
+            self.assertEqual(row['source_step'],n['source'])
+            self.assertIsNone(row['unit_price'])
+        selected=[r for r in M['parts'] if r.get('ledger_node') is not None]
+        self.assertEqual(len(selected),84)
+        self.assertAlmostEqual(sum(r['unit_mass_kg']*r['quantity'] for r in selected),328.8875082972988,places=10)
+        self.assertEqual(sum(r['quantity'] for r in selected if r['assembly_group']=='middle_C02_R06'),16)
+        self.assertEqual(len([r for r in selected if r['assembly_group']=='steering_C03_R01']),76)
+        for obsolete in ['stationary_clamp_C02_R01','inner_backing_C02_R01','upper_wishbone_C02_R02','lower_wishbone_C02_R02','upright_WD220_C02_R05','wheel_adapter_C02_R02','stationary_hardware_C02_R01','upright_pins_C02_R02']:
+            self.assertNotIn(obsolete,P)
+    def test_c03_purchased_quantities_and_unknowns(self):
+        required={'spherical_bearings':56,'outer_spherical_bearings':8,'outer_misalignment_spacers':16,'tie_rod_end_RH':4,'tie_rod_end_LH':4,'tie_misalignment_spacers':16,'housing_retainer_screws':32,'steering_actuators':2,'coilovers':6,'wheel_studs':60}
+        for id,quantity in required.items():
+            self.assertEqual(P[id]['quantity'],quantity)
+            self.assertIsNone(P[id]['unit_price'])
+            self.assertIsNone(P[id]['unit_mass_kg'])
+        self.assertEqual(P['steering_actuators']['stroke_mm'],200)
+        self.assertEqual(P['upper_bearing_envelopes_C02_R02']['quantity'],2)
+        self.assertEqual(P['lower_bearing_envelopes_C02_R02']['quantity'],2)
+        self.assertEqual(P['upper_bearing_envelopes_C02_R02']['scope'],'reference_only')
+        self.assertIsNone(M['electrical_context']['steering_power_budget_kw'])
+        self.assertFalse(M['electrical_context']['steering_duty_qualified'])
+        self.assertIsNone(M['operating_cost']['actual_inputs']['measured_steering_kwh_per_operating_hour'])
+    def test_exact_rim_net_mass_not_package_mass(self):
+        self.assertEqual(P['rims']['unit_mass_kg'],15.1)
+        self.assertTrue(P['rims']['included_in_pinned_mass_subtotal'])
+        self.assertEqual(M['mass_context']['accepted_rim_net_mass_kg'],90.6)
+        self.assertEqual(S['rim_net_mass']['sku'],'SE5240060141')
+        evidence=json.loads((HERE/'manufacturer-mass-evidence.json').read_text())
+        self.assertEqual(float(evidence['rim_api']['peso_netto']),15.1)
+        self.assertIsNone(P['tires']['unit_mass_kg'])
+        self.assertIsNone(P['wheel_nuts']['unit_mass_kg'])
+        self.assertIsNone(M['mass_context']['additional_catalog_nuts_kg'])
     def test_recall_is_serial_specific(self):
         s=S['battery_recall']
         self.assertEqual(s['affected_model'],'48V030-GC2')

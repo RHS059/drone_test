@@ -1,6 +1,6 @@
-# Six-wheel UGV cost model · C02_R06
+# Six-wheel UGV cost model · C03_R01
 
-Observed 9 October 2026. Configuration: frame R07, body R01, corners C02_R06 and original tool adapter R04. Public listing references are not supplier quotations, live inventory commitments or landed checkout totals. No orders or vendor contacts were made.
+Observed 9 October 2026. Configuration: frame R07, body R01, four C03_R01 steering corners, two retained C02_R06 middle corners, two rack assemblies and original tool adapter R04. Public listing references are not supplier quotations, live inventory commitments or landed checkout totals. No orders or vendor contacts were made.
 
 ## Primary results
 
@@ -9,7 +9,7 @@ Observed 9 October 2026. Configuration: frame R07, body R01, corners C02_R06 and
 - **Measured operating cost: unknown.** No representative rover energy measurement, tariff or maintenance record was supplied.
 - **Illustrative partial operating scenarios: about USD 61, 63 or 66 per operating hour**, using explicitly assumed mean battery draw of 2, 4 or 8 kW, USD 0.15/kWh, 90% charging efficiency, one supervisor-hour at USD 50 plus 0.1 maintenance-hour at USD 100 per robot-hour, and a module-only replacement reserve. Energy alone is about USD 0.33, 0.67 or 1.33/h. These figures exclude capital recovery, maintenance parts, installed battery replacement labor, taxes/freight, insurance, consumables, connectivity, transport, parked energy and downtime. They are neither measured costs nor a promise of uninterrupted operation.
 
-The model has 41 rows, including reference-only geometry and unresolved cost categories. Five rows have public component prices. Thirty-three required or unresolved rows/categories remain unpriced; this is a gap count, not an assertion that the manufacturing BOM is complete.
+The model has 124 rows, including reference-only geometry and unresolved cost categories. Five rows have public component prices. One hundred sixteen required or unresolved rows/categories remain unpriced; this is a gap count, not an assertion that the manufacturing BOM is complete.
 
 ## Exact priced subset
 
@@ -69,7 +69,7 @@ To establish an actual operating rate, record grid charging energy and tariff, m
 
 UI: show `build_summary.complete_build_cost` as unknown. Show `public_price_baskets` with the explicit label “Priced subset only.” Show `operating_cost.actual_cost_per_operating_hour` as unknown and scenario `modeled_partial_usd_per_operating_hour` as assumptions-only and incomplete. Round scenario display; retained decimals serve arithmetic checks.
 
-The pinned modeled-mass subtotal is **976.3493556219631 kg**, not whole-rover mass. The manufacturer page displays a nut weight field of 212 without units, while Product JSON-LD specifies 0.217 kg. These fields require reconciliation. Nut mass remains unknown and is excluded from that snapshot; no mass is inferred from an undocumented raw page field or shipping weight.
+The pinned modeled-mass subtotal is **1123.7891292028824 kg**, not whole-rover mass. This includes six exact-SKU EVO rims at 15.1 kg net each (90.6 kg total), verified by the manufacturer API field and its product-script kg formatter. It excludes tire and nut masses. Do not substitute base-SKU 14.96 kg, unit/package 16.5 kg or gross 17.3 kg values. The manufacturer page displays a nut weight field of 212 without units, while Product JSON-LD specifies 0.217 kg. These fields require reconciliation. Nut mass remains unknown and is excluded from that snapshot; no mass is inferred from an undocumented raw page field or shipping weight.
 
 ## Historical estimates and updates
 
@@ -77,6 +77,27 @@ The old `docs/costs.json` workshop base of USD 311,495.60 is a superseded planni
 
 To roll to a later approved corner revision, update the builder's `REV`, inspect the new ledger and integrated mass snapshot, and deliberately update the expected snapshot mass and test pin. Do not silently follow the newest file in the directory. Re-run builder and tests after source or quantity changes. Reconfirm supplier price, package scope, stock, destination tax/freight and recall serial clearance before procurement.
 
-### R06 revision reconciliation
+### C03 revision reconciliation
 
-C02_R06 uses upright_WD220_C02_R05: a 1 mm × 45° pilot-entry relief changes each original upright mass to 8.853733428185155 kg. The six-corner modeled subtotal becomes 272.0477347163794 kg. Replacing that portion of the older R05 snapshot yields 976.3493556219631 kg; other masses, component quantities, prices and operating scenarios are unchanged. The model records both the supplied snapshot revision and this approved ledger reconciliation, so an older snapshot is not misrepresented as an R06 measurement. The R06 contract and ledger hashes are recorded in evidence.
+All 84 original rows are preserved node-by-node from mass_cost_ledger_C03_R01.json: 76 steering-corner/rack rows at quantity one and eight middle-corner rows at quantity two. Their original modeled subtotal is 328.8875082972988 kg. They replace the eight old fabrication rows that each represented six C02 corners, without retaining or duplicating those rows. The two C02 bearing-envelope rows remain reference-only at quantity two each.
+
+The independent snapshot and cost model agree on 1123.7891292028824 kg known subset. Prices, battery architecture and the three numerical operating scenarios are unchanged. Those generic assumed battery draws do not validate the new steering energy demand. Measured steering energy, actual actuator input power and qualified steering duty remain null/unknown.
+
+New purchased candidates, all with unknown accepted installed mass and price:
+
+| Candidate | Quantity | Scope |
+|---|---:|---|
+| GE20ES root/middle bearings | 56 | Replaces old all-C02 count of 72 |
+| FK AIN16 outer spherical bearings | 8 | One per outer joint |
+| FK 16-12HB misalignment spacers | 16 | Two per outer joint |
+| FK JMX12 right-hand tie ends | 4 | Right-hand threaded candidates |
+| FK JMXL12 left-hand tie ends | 4 | Left-hand threaded candidates |
+| FK 12-10HB tie-joint spacers | 16 | Two per tie end |
+| Housing retainer M5 screws | 32 | Grade and length unselected |
+| Thomson HD48-B045, 200 mm stroke, M/M | 2 | Packaging candidates; supersedes 150 mm study; complete order code and force/duty suitability unresolved |
+| King RS2008 Pure Race coilovers | 6 | Exact configuration and springs unselected |
+| Wheel output studs/input nuts | 60 aggregate | Mixed hardware count, not 60 identical selected SKUs |
+
+The residual steering row covers controls, wiring, sensing, commissioning, safety and service integration; it excludes separately itemized geometry, actuators, bearings and rod ends. Offboard service fixtures remain an unpriced external-workcell category and do not enter vehicle mass.
+
+The builder works in the local cost-model staging folder or the published docs/assets/cost-model layout. It reads the pinned steering ledger and contract, the retained C02 middle ledger, body evidence and independently audited mass snapshot. `manufacturer-mass-evidence.json` is included so the exact net-mass evidence remains reproducible. No vendor CAD or full webpage content is included.

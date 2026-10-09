@@ -1,10 +1,14 @@
 {
-  "tests_run": 13,
+  "tests_run": 16,
   "failures": 0,
   "errors": 0,
   "passed": true,
   "configuration": {
-    "corner_revision": "C02_R06",
+    "corner_revision": "C03_R01",
+    "middle_corner_revision": "C02_R06",
+    "steering_corner_count": 4,
+    "middle_corner_count": 2,
+    "rack_count": 2,
     "frame_revision": "R07",
     "body_revision": "R01",
     "tool_adapter_revision": "R04",

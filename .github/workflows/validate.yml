@@ -16,6 +16,7 @@ jobs:
       - run: node --check docs/app.js && node --check docs/scene.js && node --check docs/model.js && node --check docs/rover.js
       - run: node test-model.mjs
       - run: node test-cad.mjs
+      - run: node test-steering.mjs
       - run: node test-rover.mjs
       - run: node test-costs.mjs
       - run: node test-controls-ready.mjs
