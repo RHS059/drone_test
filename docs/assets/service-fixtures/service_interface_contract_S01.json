@@ -1,0 +1,174 @@
+{
+  "revision": "S01",
+  "corner_contract_revision": "C02_R05",
+  "wheel_adapter_revision": "C02_R02",
+  "status": "ORIGINAL STATIC WORKHOLDING DEVELOPMENT; NOT FABRICATION RELEASED",
+  "safe_working_load_kg": null,
+  "not_lifting_equipment": true,
+  "commercial_stand_ratings_apply": false,
+  "axes": "C: X forward, Y left, Z up",
+  "units": {
+    "STEP": "mm",
+    "GLB": "m"
+  },
+  "assets": [
+    {
+      "file": "chassis_trestles_S01.glb",
+      "group": "chassis_support",
+      "transform": "Already C, no scaling or repositioning relative to frame R07"
+    },
+    {
+      "file": "corner_cradle_S01.glb",
+      "group": "corner_cradle",
+      "transform": "Already C left-middle C02 q=0; right side proper Rz(pi); then translate station X \u22121.35/0/+1.35 m"
+    }
+  ],
+  "illustrative_floor_Z_C_m": -0.78815,
+  "illustrative_chassis_raise_from_C01_nominal_m": 0.1,
+  "static_pose_only": true,
+  "end_station_floor_foot_nominal_Y_gap_mm": 5,
+  "end_station_foot_clearance_status": "Nominal geometry only; placement tolerance and load deflection are not cleared.",
+  "chassis_bearing_points_C_m": [
+    [
+      -1.775,
+      -0.46,
+      -0.1
+    ],
+    [
+      -1.775,
+      0.46,
+      -0.1
+    ],
+    [
+      1.775,
+      -0.46,
+      -0.1
+    ],
+    [
+      1.775,
+      0.46,
+      -0.1
+    ]
+  ],
+  "saddle_dimensions_mm": [
+    160,
+    220,
+    16
+  ],
+  "R07_bottom_flat_contact_width_mm": 76,
+  "crossbeam_plate_built_box_dimensions_mm": [
+    200,
+    1300,
+    100,
+    6
+  ],
+  "chassis_load_path": "R07 main-rail bottom flat \u2192 original saddle \u2192 transverse box \u2192 two vertical boxes \u2192 floor plates \u2192 qualified floor. Side locator friction is NOT the gravity path or an uplift restraint.",
+  "corner_load_path": "Tire tread \u2192 replaceable liners \u2192 original contour-shoe weldments \u2192 cross/longitudinal members \u2192 four floor plates. Full corner retention and tipping are NOT qualified.",
+  "C02_removable_boundary": [
+    "wheel_C01 tire/rim",
+    "wheel_adapter_C02_R02",
+    "drive representation (no private geometry bundled)",
+    "upright_WD220_C02_R04"
+  ],
+  "pin_nodes_remove_first": [
+    "outer_upper_hinge_pin",
+    "outer_lower_hinge_pin"
+  ],
+  "C02_retained_assets": [
+    "stationary_clamp_C02_R01",
+    "inner_backing_C02_R01",
+    "stationary_hardware_C02_R01",
+    "upper_wishbone_C02_R02",
+    "lower_wishbone_C02_R02",
+    "upper_bearing_envelopes_C02_R02",
+    "lower_bearing_envelopes_C02_R02"
+  ],
+  "C02_retained_on_chassis": [
+    "stationary rail clamps/backing/tie bolts",
+    "upper wishbone",
+    "lower wishbone",
+    "planned coilover"
+  ],
+  "pin_removal_interfaces": [
+    {
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "center_C_m": [
+        0,
+        0.812,
+        -0.08
+      ]
+    },
+    {
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "center_C_m": [
+        0,
+        0.812,
+        -0.42
+      ]
+    }
+  ],
+  "checked_pin_extraction_corridor": {
+    "radius_m": 0.014,
+    "X_span_C_m": [
+      -0.26,
+      0.26
+    ],
+    "warning": "Clearance envelope only; pin retention and actual extraction tool not selected."
+  },
+  "cradle_insertion_configuration": {
+    "remove_first": [
+      "four capture-post weldments including base plates, upper caps and upper captive nuts",
+      "two removable upper crossbars",
+      "eight M10-style post-base bolts and washers",
+      "four M12-style upper bolts and washers"
+    ],
+    "retain": [
+      "lower floor frame",
+      "contour shoes and liners",
+      "eight lower rail captive nuts"
+    ],
+    "reason": "Tall posts cannot pass laterally through tire during insertion; install them after unloaded cradle is positioned and module is supported."
+  },
+  "service_sequence_file": "README.md#bounded-c02-removal-and-inspection-sequence",
+  "blocked_operations": [
+    "Initial lifting: no qualified frame lift points, hoist attachment, jack pick-up or lift-height path.",
+    "Pin withdrawal: both wishbones lack positive support fixtures; spring/coilover control and pin retainers unresolved.",
+    "Detached corner transport: stationary cradle has no casters, lifting lugs or approved lifting fixture.",
+    "Arm-only full-corner manipulation: known original hardware already exceeds one UR20 payload; total module mass/CG unknown.",
+    "Rear fixed-arm service: base X0.9 to rear station X\u22121.35 gives 2.25 m longitudinal separation, exceeding1.75 m nominal reach.",
+    "Operation at any support load: no safe working load, structural analysis, load sharing/stability/floor approval or proof test."
+  ],
+  "display_rules": [
+    "Show as separate optional original development fixtures.",
+    "Label no assigned load rating and no lifting function in fixture mode.",
+    "Do not place proprietary gantry/stand/hoist meshes or infer OEM geometry.",
+    "Do not animate unsupported lifting, pin withdrawal, automatic fixture placement or loaded translation.",
+    "Do not call C02 q=0 support pose a qualified maintenance state.",
+    "Do not carry C02 two-pin boundary into steering revisions without revising links."
+  ],
+  "private_source_policy": "Only original fixture solids are exported. No OEM drive STEP/PDF, extracted proprietary meshes, user photographs, credentials or OEM fixture details are included.",
+  "qualification_gates": [
+    "Fixture handling/positioning method: trestles and cradle exceed UR20 payload",
+    "Measured full vehicle and corner mass/CG",
+    "All intermediate support reactions and stability",
+    "Rail wall local bearing/crushing/buckling",
+    "Trestle/cradle stress,buckling,welds,fatigue and proof load",
+    "Material/plate stock and corrosion choices",
+    "Qualified floor/slab/anchors",
+    "Liner attachment/contact/tire condition",
+    "Locator screw threads/preload/retention",
+    "Capture bolt grade/engagement/torque and moment capacity",
+    "Selected lift gear and designated load-bearing lifting points",
+    "Actual suspension droop and insertion/extraction swept volume",
+    "Wishbone props and spring energy control",
+    "Connectors,brake isolation and pin retention"
+  ]
+}

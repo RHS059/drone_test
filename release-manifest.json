@@ -1,16 +1,16 @@
 {
-  "release": "six-wheel-assembly-development-01",
+  "release": "six-wheel-costs-workshop-development-02",
   "whole_robot_qualified": false,
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 908,
-      "sha256": "5cf54b3db309c14d0bb4ed684709985b0714e2435b2ba93247a80eff4d1eca5f"
+      "bytes": 931,
+      "sha256": "f78612119de8006e3694e970c732b1e9787f8c285c1a32f5087e4eb3a7824884"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 658,
-      "sha256": "3a1055cad69543a77ba30786921f34c5512e9e33da96605ccb81e3061c38d615"
+      "bytes": 691,
+      "sha256": "f6df6242f4e7cd87290c8399b63774170a97952ece5568bba455d9b5ed5482fd"
     },
     {
       "path": "BASELINE.md",
@@ -34,13 +34,13 @@
     },
     {
       "path": "docs/RECONSTRUCTION.md",
-      "bytes": 3382,
-      "sha256": "cf14484ae6e12ef1fd23a1b58c6f5b6f374998eeb6e18cc021a9d4d1d8d280a1"
+      "bytes": 4591,
+      "sha256": "86420f4f748907538a19dc5567d2c99f1fcc92890cae641740cf57d0271d301f"
     },
     {
       "path": "docs/app.js",
-      "bytes": 2409,
-      "sha256": "74742d7486ecc2de1c39faf7fa1d6226321f33b380e925e667cfdcaa2f3dac7c"
+      "bytes": 2730,
+      "sha256": "1c10891770d30289ee2cd82fbdcfca346a0624692b001be570c4fe42eaa35447"
     },
     {
       "path": "docs/assembly.json",
@@ -203,9 +203,14 @@
       "sha256": "3d775993edff5130dcb896b7eb34f986020aa7e5c3a8e423688f3f44f513eb38"
     },
     {
+      "path": "docs/assets/corners/drive-reservation.json",
+      "bytes": 846,
+      "sha256": "1fec15f0a65d2b5bec05c6f412e97dc4c0d69a503986b8f283508bb938245792"
+    },
+    {
       "path": "docs/assets/corners/generate_interfaces.py",
-      "bytes": 10331,
-      "sha256": "c72a44c6e29a73766ec25d95ea567aa3f5848460987012128aacc4b7c3f981d4"
+      "bytes": 10590,
+      "sha256": "52db49958af61512dafccc4f148fcb8484cffeedba3a6f5c63bd352ff9a6066f"
     },
     {
       "path": "docs/assets/corners/inner_backing_C02_R01.glb",
@@ -231,6 +236,11 @@
       "path": "docs/assets/corners/interface_contract_C02_R05.json",
       "bytes": 5958,
       "sha256": "3f65587a1d6490c39545bd49531fa610ed6ee48dbeab5ec78963d36fd46442cb"
+    },
+    {
+      "path": "docs/assets/corners/interface_contract_C02_R06.json",
+      "bytes": 7083,
+      "sha256": "d499bc60c0424d9aa594a301a2b9397bbc326040f2a9ba4a256cfae6d85149e8"
     },
     {
       "path": "docs/assets/corners/lower_bearing_envelopes_C02_R02.glb",
@@ -266,6 +276,11 @@
       "path": "docs/assets/corners/mass_cost_ledger_C02_R05.json",
       "bytes": 4328,
       "sha256": "437caf06d3be72621134b57a1617b933f2fdc78ca947fbc404d26e90ceb200a2"
+    },
+    {
+      "path": "docs/assets/corners/mass_cost_ledger_C02_R06.json",
+      "bytes": 4328,
+      "sha256": "91c57f9638d88cb3f82fd17619e260c0b519b586ebd9d41b3a3b315429c54748"
     },
     {
       "path": "docs/assets/corners/stationary_clamp_C02_R01.glb",
@@ -343,6 +358,21 @@
       "sha256": "c81496f6f6ee094a7771ba3c5c78705aefd9bfa9ad074b908de6e6a14344e3be"
     },
     {
+      "path": "docs/assets/corners/upright_WD220_C02_R05.glb",
+      "bytes": 592844,
+      "sha256": "2cadc40cdd89096a4b39956ca4437222c6e57d29bb8ff387eabf05e81ceb29b7"
+    },
+    {
+      "path": "docs/assets/corners/upright_WD220_C02_R05.step",
+      "bytes": 192301,
+      "sha256": "6d65bd9444440aac46f6a63c033ebfff087ec0a8839273b2be3e459482cbbf1a"
+    },
+    {
+      "path": "docs/assets/corners/upright_WD220_C02_R05_report.json",
+      "bytes": 2072,
+      "sha256": "599cb5653e9967af7649bf39e78d7927efd13331332baee3341048ea5903e106"
+    },
+    {
       "path": "docs/assets/corners/upright_pins_C02_R02.glb",
       "bytes": 287492,
       "sha256": "af742a84fa417480c90e3eb48d60c1b9b247d695900d24f9e870370e77364c39"
@@ -386,6 +416,46 @@
       "path": "docs/assets/corners/wheel_adapter_C02_R02_report.json",
       "bytes": 2388,
       "sha256": "511b0168523a557758ad8578031d69c10cd2cf7eb1d990df038f805800a4c4bb"
+    },
+    {
+      "path": "docs/assets/cost-model/BOM.csv",
+      "bytes": 18928,
+      "sha256": "7c82c7abd991d465749d16084953a4f193749c489bd3b84dc1ca8322204671c4"
+    },
+    {
+      "path": "docs/assets/cost-model/README.md",
+      "bytes": 9985,
+      "sha256": "751381ad962e5aca539665432f3bd42d86b60b2077bafffa134a550379c3cf03"
+    },
+    {
+      "path": "docs/assets/cost-model/build_cost_model.py",
+      "bytes": 40206,
+      "sha256": "c51d0a09fb9307c2c4e68125db48f1ff47d2b2e533863bd098780f1b1eacd249"
+    },
+    {
+      "path": "docs/assets/cost-model/checksums.json",
+      "bytes": 616,
+      "sha256": "7e3c52d69f3eb48212e0a23c9cd1322a64808df14e75138f55b017dc4927b1c1"
+    },
+    {
+      "path": "docs/assets/cost-model/cost_model.json",
+      "bytes": 68140,
+      "sha256": "4e1ea55fc54d83e6048f7671021d700fc35886e88cc2b7036a69ed8736b71c5f"
+    },
+    {
+      "path": "docs/assets/cost-model/sources.json",
+      "bytes": 18113,
+      "sha256": "19959d392970450ed3199a8002affc96286975717bd17e65d24fc1ce1b4e8579"
+    },
+    {
+      "path": "docs/assets/cost-model/test_cost_model.py",
+      "bytes": 6930,
+      "sha256": "7a04f508d5419c453ad124bdc14e4ab343793b9a3804a4221d4ea63f1abffab9"
+    },
+    {
+      "path": "docs/assets/cost-model/validation.json",
+      "bytes": 489,
+      "sha256": "e4c96c110f7cbaba58344c5f3a6e0a08bb6bbe52dedba6af5f45461e2f38a770"
     },
     {
       "path": "docs/assets/mechanical/DFM_ATTRIBUTION.md",
@@ -524,8 +594,8 @@
     },
     {
       "path": "docs/assets/mechanical/mass-power-snapshot.json",
-      "bytes": 5832,
-      "sha256": "3bb739e6a1eabe969740e4cd49818789363f53cae90507919aa8a0cac7e3ac14"
+      "bytes": 5831,
+      "sha256": "7381f30ac6d0087f4f40bcd244471722af897f218134afbe82035d25c01a62ea"
     },
     {
       "path": "docs/assets/mechanical/test_dfm.py",
@@ -1003,6 +1073,106 @@
       "sha256": "7507f7cde1194f6b0725e4f2d4728f6229c87a6ac9022c4fb8ca24fb429050ca"
     },
     {
+      "path": "docs/assets/service-fixtures/PACKAGING.md",
+      "bytes": 490,
+      "sha256": "40c5a7061a20e46c702f8c962ec648a566bc1f7a1a814d2aacca24da28f2930d"
+    },
+    {
+      "path": "docs/assets/service-fixtures/README.md",
+      "bytes": 10286,
+      "sha256": "9e49f9a4048c3913c5f02cfa210967bd76f99d18fa068ed2f6fe828ccd6b2d2a"
+    },
+    {
+      "path": "docs/assets/service-fixtures/SOURCES.json",
+      "bytes": 2257,
+      "sha256": "640836c01d23bdd326d820d04ac6f7378adc6987ba213411156a1a3737a30845"
+    },
+    {
+      "path": "docs/assets/service-fixtures/build_fixtures.py",
+      "bytes": 11660,
+      "sha256": "670ae2f6bb9d30f2ba017a012747b751a2596db94f30faf2034c1730d8e20a7a"
+    },
+    {
+      "path": "docs/assets/service-fixtures/chassis_trestles_S01.glb",
+      "bytes": 2832540,
+      "sha256": "9aa19eeb6eb839ffc6100d9e4e700a5076708147a2bbe1e1d4ea7e2403b25e28"
+    },
+    {
+      "path": "docs/assets/service-fixtures/chassis_trestles_S01.step",
+      "bytes": 1348744,
+      "sha256": "1d1cf078cf41448bc4371a8ba3633804979b29247933ce07e4c48013db13de61"
+    },
+    {
+      "path": "docs/assets/service-fixtures/chassis_trestles_S01_verification.json",
+      "bytes": 31880,
+      "sha256": "e42d5e0e7ae8a44d05dd712ea3e233128432acbb435d64f372216eb836a86fdc"
+    },
+    {
+      "path": "docs/assets/service-fixtures/corner_cradle_S01.glb",
+      "bytes": 2778472,
+      "sha256": "9d7a25277963a2ac4f2ae719638407463f16428b760518dc8ac14e1770e84ad4"
+    },
+    {
+      "path": "docs/assets/service-fixtures/corner_cradle_S01.step",
+      "bytes": 1713041,
+      "sha256": "a93128d2bc5a8ace3466896ae15f53c4bf4f63f78cd85ad32d5cc538089e21b5"
+    },
+    {
+      "path": "docs/assets/service-fixtures/corner_cradle_S01_verification.json",
+      "bytes": 35372,
+      "sha256": "12162f433c27c9a28469e3eaee65b9ea0577fa0580cbb3aa02ba4b70affd8a88"
+    },
+    {
+      "path": "docs/assets/service-fixtures/interface_verification_S01.json",
+      "bytes": 7290,
+      "sha256": "b2370bb78bacd4e255f58306f46ad69e4b44b6a520375a24312e479bd3820fad"
+    },
+    {
+      "path": "docs/assets/service-fixtures/package_release.py",
+      "bytes": 2141,
+      "sha256": "4a3cb4ca567e745f1ee4f04a1ec0777bf6356f6ad443818e8f0a9fddc6639759"
+    },
+    {
+      "path": "docs/assets/service-fixtures/parameters.json",
+      "bytes": 508,
+      "sha256": "8f48272f378d7267ba2ab70a9499bfc78998778ab5dc2401d8f8db135e535ff9"
+    },
+    {
+      "path": "docs/assets/service-fixtures/parts_S01.csv",
+      "bytes": 20527,
+      "sha256": "286fda8618c10ca788d7864eae94f5b56a1a6a720b03214649f1db5b2fa439d7"
+    },
+    {
+      "path": "docs/assets/service-fixtures/preview_fixtures.py",
+      "bytes": 1996,
+      "sha256": "65838bea1e3ba7f15f19b40aebea80132ce989d0ac6f5404571ffb94f61a0837"
+    },
+    {
+      "path": "docs/assets/service-fixtures/reference_evidence_S01.json",
+      "bytes": 1497,
+      "sha256": "2bb3bedf717b142ac6ca7ce0b09fa0d67d3f40ed14a078c918e386e6280a22ed"
+    },
+    {
+      "path": "docs/assets/service-fixtures/service_fixtures_S01_preview.png",
+      "bytes": 361665,
+      "sha256": "4d433d556a47d2d77b7782be14802a668da6f877021f78c91d46ccb8f047c4ca"
+    },
+    {
+      "path": "docs/assets/service-fixtures/service_interface_contract_S01.json",
+      "bytes": 6133,
+      "sha256": "b76ee125a9dd73d120a84b5e9be991491a5191d2c565d715f04a6777134e6c03"
+    },
+    {
+      "path": "docs/assets/service-fixtures/verify_interfaces.py",
+      "bytes": 4910,
+      "sha256": "16e55c35a85dd4989e2fdf1efd65d10f8546ce7a5c9347c0e2eae7bac7c12698"
+    },
+    {
+      "path": "docs/assets/service-fixtures/write_contract.py",
+      "bytes": 7483,
+      "sha256": "ce62344a79edf23765124d847f06fd626a23c1e5f2b4456cf4d886155eebd706"
+    },
+    {
       "path": "docs/assets/wheels/ASSUMPTIONS.md",
       "bytes": 4283,
       "sha256": "afe858ff5a6ec473862c499cca9b06d4ffe444c033175901fb70241180523b4f"
@@ -1323,14 +1493,24 @@
       "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
     },
     {
+      "path": "docs/cost-math.js",
+      "bytes": 1104,
+      "sha256": "cc2b10dcd990c7e7ecffa66aa890678bbb33e3a4ca97a470e2c3f87af0c82027"
+    },
+    {
+      "path": "docs/cost-ui.js",
+      "bytes": 5154,
+      "sha256": "27377f947660cda65f485b165ed2fbbeeec367faecd1dd868b3fdb7e1a4aa588"
+    },
+    {
       "path": "docs/costs.json",
       "bytes": 26216,
       "sha256": "5d759de1dfb91cb7dee728dbd4f80c9d7bfc70ce151d25e8b528394967a63507"
     },
     {
       "path": "docs/index.html",
-      "bytes": 6774,
-      "sha256": "ca6a0ebd21d7784044e850c20567fb55db477e2d6431efb84b401c52032e666c"
+      "bytes": 12055,
+      "sha256": "8fad4bf387b637dbf4094e85c4212b8356dd0a9e0cc8a9bc2af743fd452809b8"
     },
     {
       "path": "docs/kinematics.js",
@@ -1354,18 +1534,18 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 3136,
-      "sha256": "bdb6ce59d9e177c0953c8a90e59e24060cb286cfdcc12389464a9028ace9ec35"
+      "bytes": 4772,
+      "sha256": "385e08163c1e0ce00bc83789d006fa3c90de30f7d7573cdf51c6cc7b15255363"
     },
     {
       "path": "docs/scene.js",
-      "bytes": 6624,
-      "sha256": "a516de077e4db46f989b4a2eb4eb07897c7da8970c4d6468b1e6b80cd5b8eaed"
+      "bytes": 6694,
+      "sha256": "5d7c455a84159ce4368efa7e982315f8af04cd29e5db831c64cd73e96d1724fd"
     },
     {
       "path": "docs/style.css",
-      "bytes": 6308,
-      "sha256": "cb3b09cf16e4627e809f2ce48bca54138ea6d96b043e3830d843039d181454b0"
+      "bytes": 8348,
+      "sha256": "5441156b066a6a0ab7a8afe95e440f455c2fe7b2e81200ec14a42c0c0c72477b"
     },
     {
       "path": "docs/vendor/BufferGeometryUtils.js",
@@ -1443,14 +1623,19 @@
       "sha256": "5cf4acba261a30483d19555634b54adfc1fa0915a40fcd1273d055bebf566122"
     },
     {
+      "path": "test-costs.mjs",
+      "bytes": 2367,
+      "sha256": "636eb18d722f7f77c501073ae3b5daf296803c3bbdfd21e84b4e1256728070ef"
+    },
+    {
       "path": "test-model.mjs",
       "bytes": 1682,
       "sha256": "0d7ae4a12e0ac0eca1d7233811f5e44960256143cfee4afffa721a2aefaee56e"
     },
     {
       "path": "test-rover.mjs",
-      "bytes": 1999,
-      "sha256": "cc972e4b828b8ccc997efc1aa4592b2acfbc5f04b2c3bf2c4a251f4c3776ffc8"
+      "bytes": 2641,
+      "sha256": "9a8d4e5798e6e3ecb888a7d1fb1d7e297c118aaa7e70976486557c7d348d89d0"
     }
   ]
 }

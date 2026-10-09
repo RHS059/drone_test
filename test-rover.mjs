@@ -19,3 +19,11 @@ for(const m of c.meshes){const model=glb(root+'corners/'+m.file);assert(model.me
 assert(source.includes('Math.PI : 0'),'Right corners must use proper rotation');
 assert(!source.includes('scale.set'),'No wheel or corner rescaling');
 console.log(`PASS: six nominal wheel centers and unloaded ground contacts, ${serviceCount} service nodes, 175 body solids, source GLB contracts. No dynamic, structural or collision qualification.`);
+
+const fixture=read(root+'service-fixtures/service_interface_contract_S01.json');
+assert.equal(fixture.safe_working_load_kg,null);assert.equal(fixture.static_pose_only,true);
+assert(Math.abs(-fixture.illustrative_floor_Z_C_m-.78815)<1e-10);
+assert(Math.abs(.78815-.25-.8763/2-.1)<1e-10);
+let fixtureMeshes=0;for(const spec of fixture.assets)fixtureMeshes+=glb(root+'service-fixtures/'+spec.file).meshes.length;
+assert.equal(fixtureMeshes,116);assert.equal(fixture.chassis_bearing_points_C_m.length,4);
+console.log('PASS:116 original fixture meshes and declared static floor/support datum. No load rating or lifting sequence qualification.');

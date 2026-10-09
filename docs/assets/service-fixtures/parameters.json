@@ -1,0 +1,26 @@
+{
+  "revision": "S01",
+  "frame_revision": "R07",
+  "corner_revision": "C02_R05",
+  "rail_centers_Y_mm": [
+    -460,
+    460
+  ],
+  "support_stations_X_mm": [
+    -1775,
+    1775
+  ],
+  "rail_bottom_Z_mm": -100,
+  "service_raise_mm": 100,
+  "nominal_tire_ground_Z_mm": -688.15,
+  "service_floor_Z_mm": -788.15,
+  "tire_radius_mm": 438.15,
+  "tire_section_width_mm": 317.5,
+  "wheel_center_mm": [
+    0,
+    940,
+    -250
+  ],
+  "assumed_steel_density_kg_m3": 7850,
+  "assumed_elastomer_density_kg_m3": 1200
+}

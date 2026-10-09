@@ -4,19 +4,30 @@ import * as T from 'three/webgpu';
 // never a reflected or resized copy. This release keeps suspension travel locked.
 export async function loadRover(root, asset) {
   const get = async p => { const r = await fetch(p); if (!r.ok) throw Error(`Missing assembly contract: ${p}`); return r.json(); };
-  const [corner, bodyContract] = await Promise.all([
-    get('./assets/corners/interface_contract_C02_R05.json'),
-    get('./assets/body-power/interface_contract.json')
+  const [corner, bodyContract, fixtureContract, driveReservation] = await Promise.all([
+    get('./assets/corners/interface_contract_C02_R06.json'),
+    get('./assets/body-power/interface_contract.json'),
+    get('./assets/service-fixtures/service_interface_contract_S01.json'),
+    get('./assets/corners/drive-reservation.json')
   ]);
   const body = await asset('./assets/body-power/body_power_R01.glb', 'Original faceted body and service hardware · source-backed design');
   root.add(body);
   const reservations = await asset('./assets/body-power/cots_reservations_R01.glb', 'Battery/controller dimensional reservation · manufacturer shape and wiring not modeled');
   reservations.visible = false; root.add(reservations);
+  const fixtures = new T.Group(); fixtures.visible = false; root.add(fixtures);
+  fixtures.add(await asset('./assets/service-fixtures/chassis_trestles_S01.glb', 'Original chassis support trestles · static fit study, no load rating'));
+  const cradle = new T.Group(); fixtures.add(cradle);
+  cradle.add(await asset('./assets/service-fixtures/corner_cradle_S01.glb', 'Original wheel-module cradle · support and restraint unqualified'));
+  let workshop = false, cradleStation = 'left_1';
+  const motorReservations = new T.Group(); motorReservations.visible = false; root.add(motorReservations);
   const corners = [], wheelSpinners = [];
   for (const station of corner.wheel_stations_m) {
     const group = new T.Group(); group.name = station.id;
     group.position.x = station.x; group.rotation.z = station.side < 0 ? Math.PI : 0;
     root.add(group); corners.push(group);
+    const reserved = new T.Group(); reserved.position.x=station.x; reserved.rotation.z=station.side<0?Math.PI:0;
+    const box = new T.Mesh(new T.BoxGeometry(...driveReservation.size_m),new T.MeshBasicMaterial({color:0x83c6d0,wireframe:true,transparent:true,opacity:.35}));
+    box.position.set(...driveReservation.center_m);box.userData.label='Wheel-drive reserved space · bounding box only, not motor CAD';reserved.add(box);motorReservations.add(reserved);
     for (const spec of corner.meshes) {
       // Bearing fit shells are evidence envelopes, not authentic bearing internals.
       if (spec.file.includes('bearing_envelopes')) continue;
@@ -35,9 +46,11 @@ export async function loadRover(root, asset) {
   let serviceOpen = false;
   return {
     corner, bodyContract, corners,
+    setWorkshop(v) { workshop=v; fixtures.visible=v; root.position.z=v?-fixtureContract.illustrative_floor_Z_C_m:.68815; },
+    setCradle(id) { const station=corner.wheel_stations_m.find(s=>s.id===id);if(!station)throw Error('Unknown cradle station');cradleStation=id;cradle.position.x=station.x;cradle.rotation.z=station.side<0?Math.PI:0; },
     showBody(v) { body.visible = v; },
     showCorners(v) { corners.forEach(c => c.visible = v); },
-    openService(v) { serviceOpen = v; removable.forEach(o => o.visible = !v); reservations.visible = v; },
-    snapshot() { return { assemblyRevision: corner.configuration, wheelCentersC: corner.wheel_stations_m.map(s => s.wheel_center), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: 'locked', suspensionTravel: 'locked pending clearance' }; }
+    openService(v) { serviceOpen = v; removable.forEach(o => o.visible = !v); reservations.visible = v; motorReservations.visible=v; },
+    snapshot() { return { assemblyRevision: corner.configuration, workshop, cradleStation, fixtureLoadRating:null, wheelCentersC: corner.wheel_stations_m.map(s => s.wheel_center), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: 'locked', suspensionTravel: 'locked pending clearance' }; }
   };
 }

@@ -1,0 +1,52 @@
+{
+  "checked_date": "2026-10-09",
+  "source_geometry_included": false,
+  "official_sources": [
+    {
+      "title": "ESCO 10498-PAIR manufacturer product page",
+      "url": "https://esco.net/product/3-ton-performance-jack-stand-pair/",
+      "use": "335\u2013546 mm height; manufacturer rated stand only, not fixture rating."
+    },
+    {
+      "title": "ESCO 10497/10498/10499 operating instructions, April2025",
+      "url": "https://esco.net/wp-content/uploads/2025/05/10497_10498_10498_Instructions-04.25.A.pdf",
+      "use": "Center load; hard level floor; no added material for height; manufacturer-supplied attachments only; no unapproved modifications."
+    },
+    {
+      "title": "US Jack garage stand specification sheet2023",
+      "url": "https://www.usjack.com/wp-content/uploads/Garage-Stands-23.pdf",
+      "use": "Taller candidate range and per-pair ratings only; dimensions vary against older manual, ordered version must be checked."
+    },
+    {
+      "title": "US Jack garage stand manual2021",
+      "url": "https://www.usjack.com/wp-content/uploads/GARAGE-STANDS-2021-1.pdf",
+      "use": "Matched pair at one vehicle end only; simultaneous support of both ends prohibited; not used in S01."
+    },
+    {
+      "title": "Vestil AHA aluminum gantry",
+      "url": "https://www.vestil.com/product.php?FID=522",
+      "use": "Separate procurement candidate only; no gantry model or capacity transfer."
+    },
+    {
+      "title": "Vestil AHA manual",
+      "url": "https://vestildocs.com/manuals/AHA,%20MANUAL.pdf",
+      "use": "Parent-sourced restrictions; full lift/rigging compatibility unresolved."
+    },
+    {
+      "title": "Harrington electric chain hoist catalog",
+      "url": "https://www.harringtonhoists.com/download/2021/02/09/1ftfuxzghb_Electric_Chain_Hoist_Catalog.pdf",
+      "use": "Parent-sourced candidate NERP020C; no source CAD or lifting interface copied."
+    }
+  ],
+  "original_geometry_references": [
+    "R07 frame verification and STEP",
+    "C02_R05 interface contract, original R04 upright and R02 wheel adapter STEP geometry",
+    "C01 original wheel contract/STEP",
+    "R01 original body STEP"
+  ],
+  "not_read": [
+    "private OEM drive STEP",
+    "private OEM drive PDF",
+    "user photographs"
+  ]
+}

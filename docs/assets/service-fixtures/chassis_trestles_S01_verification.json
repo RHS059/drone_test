@@ -1,0 +1,1130 @@
+{
+  "revision": "chassis_trestles_S01",
+  "parts": [
+    {
+      "name": "trestle_1_transverse_box_200x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Original plate-built closed section; welds and section strength not qualified.",
+      "volume_mm3": 4492799.999999998,
+      "assumed_mass_kg": 35.26847999999999,
+      "bounds_mm": [
+        -1875.0,
+        -650.0,
+        -216.0,
+        -1675.0,
+        650.0,
+        -116.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_foot_plate",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Four \u00d818 optional engineered floor-anchor holes. No anchor or slab capacity selected; not asserted anchored.",
+      "volume_mm3": 1943713.9836837908,
+      "assumed_mass_kg": 15.258154771917757,
+      "bounds_mm": [
+        -1950.0,
+        285.0,
+        -788.15,
+        -1600.0,
+        635.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_post_box_100x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1254674.4000000004,
+      "assumed_mass_kg": 9.849194040000004,
+      "bounds_mm": [
+        -1825.0,
+        410.0,
+        -772.15,
+        -1725.0,
+        510.0,
+        -216.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_rail_bearing_pad",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Top face Z\u2212100 bears directly on R07 bottom rail flats. Welded to crossbeam; no lifting point.",
+      "volume_mm3": 563200.0,
+      "assumed_mass_kg": 4.42112,
+      "bounds_mm": [
+        -1855.0,
+        350.0,
+        -116.0,
+        -1695.0,
+        570.0,
+        -100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_cheek_-1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        -1845.0,
+        396.0,
+        -100.0,
+        -1705.0,
+        402.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_-1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1832.0,
+        382.0,
+        -67.0,
+        -1808.0,
+        396.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_-1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        -1829.0,
+        360.0,
+        -65.39230484541326,
+        -1811.0,
+        410.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_-1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1742.0,
+        382.0,
+        -67.0,
+        -1718.0,
+        396.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_-1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        -1739.0,
+        360.0,
+        -65.39230484541326,
+        -1721.0,
+        410.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_cheek_1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        -1845.0,
+        518.0,
+        -100.0,
+        -1705.0,
+        524.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1832.0,
+        524.0,
+        -67.0,
+        -1808.0,
+        538.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        -1829.0,
+        510.0,
+        -65.39230484541326,
+        -1811.0,
+        560.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1742.0,
+        524.0,
+        -67.0,
+        -1718.0,
+        538.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_left_locator_1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        -1739.0,
+        510.0,
+        -65.39230484541326,
+        -1721.0,
+        560.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_foot_plate",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Four \u00d818 optional engineered floor-anchor holes. No anchor or slab capacity selected; not asserted anchored.",
+      "volume_mm3": 1943713.9836837908,
+      "assumed_mass_kg": 15.258154771917757,
+      "bounds_mm": [
+        -1950.0,
+        -635.0,
+        -788.15,
+        -1600.0,
+        -285.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_post_box_100x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1254674.4000000004,
+      "assumed_mass_kg": 9.849194040000004,
+      "bounds_mm": [
+        -1825.0,
+        -510.0,
+        -772.15,
+        -1725.0,
+        -410.0,
+        -216.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_rail_bearing_pad",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Top face Z\u2212100 bears directly on R07 bottom rail flats. Welded to crossbeam; no lifting point.",
+      "volume_mm3": 563200.0,
+      "assumed_mass_kg": 4.42112,
+      "bounds_mm": [
+        -1855.0,
+        -570.0,
+        -116.0,
+        -1695.0,
+        -350.0,
+        -100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_cheek_-1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        -1845.0,
+        -524.0,
+        -100.0,
+        -1705.0,
+        -518.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_-1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1832.0,
+        -538.0,
+        -67.0,
+        -1808.0,
+        -524.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_-1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        -1829.0,
+        -560.0,
+        -65.39230484541326,
+        -1811.0,
+        -510.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_-1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1742.0,
+        -538.0,
+        -67.0,
+        -1718.0,
+        -524.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_-1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        -1739.0,
+        -560.0,
+        -65.39230484541326,
+        -1721.0,
+        -510.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_cheek_1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        -1845.0,
+        -402.0,
+        -100.0,
+        -1705.0,
+        -396.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1832.0,
+        -396.0,
+        -67.0,
+        -1808.0,
+        -382.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        -1829.0,
+        -410.0,
+        -65.39230484541326,
+        -1811.0,
+        -360.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        -1742.0,
+        -396.0,
+        -67.0,
+        -1718.0,
+        -382.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_1_right_locator_1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        -1739.0,
+        -410.0,
+        -65.39230484541326,
+        -1721.0,
+        -360.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_transverse_box_200x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Original plate-built closed section; welds and section strength not qualified.",
+      "volume_mm3": 4492799.999999998,
+      "assumed_mass_kg": 35.26847999999999,
+      "bounds_mm": [
+        1675.0,
+        -650.0,
+        -216.0,
+        1875.0,
+        650.0,
+        -116.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_foot_plate",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Four \u00d818 optional engineered floor-anchor holes. No anchor or slab capacity selected; not asserted anchored.",
+      "volume_mm3": 1943713.9836837908,
+      "assumed_mass_kg": 15.258154771917757,
+      "bounds_mm": [
+        1600.0,
+        285.0,
+        -788.15,
+        1950.0,
+        635.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_post_box_100x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1254674.4000000004,
+      "assumed_mass_kg": 9.849194040000004,
+      "bounds_mm": [
+        1725.0,
+        410.0,
+        -772.15,
+        1825.0,
+        510.0,
+        -216.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_rail_bearing_pad",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Top face Z\u2212100 bears directly on R07 bottom rail flats. Welded to crossbeam; no lifting point.",
+      "volume_mm3": 563200.0,
+      "assumed_mass_kg": 4.42112,
+      "bounds_mm": [
+        1695.0,
+        350.0,
+        -116.0,
+        1855.0,
+        570.0,
+        -100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_cheek_-1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        1705.0,
+        396.0,
+        -100.0,
+        1845.0,
+        402.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_-1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1718.0,
+        382.0,
+        -67.0,
+        1742.0,
+        396.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_-1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        1721.0,
+        360.0,
+        -65.39230484541326,
+        1739.0,
+        410.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_-1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1808.0,
+        382.0,
+        -67.0,
+        1832.0,
+        396.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_-1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        1811.0,
+        360.0,
+        -65.39230484541326,
+        1829.0,
+        410.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_cheek_1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        1705.0,
+        518.0,
+        -100.0,
+        1845.0,
+        524.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1718.0,
+        524.0,
+        -67.0,
+        1742.0,
+        538.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        1721.0,
+        510.0,
+        -65.39230484541326,
+        1739.0,
+        560.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1808.0,
+        524.0,
+        -67.0,
+        1832.0,
+        538.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_left_locator_1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        1811.0,
+        510.0,
+        -65.39230484541326,
+        1829.0,
+        560.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_foot_plate",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Four \u00d818 optional engineered floor-anchor holes. No anchor or slab capacity selected; not asserted anchored.",
+      "volume_mm3": 1943713.9836837908,
+      "assumed_mass_kg": 15.258154771917757,
+      "bounds_mm": [
+        1600.0,
+        -635.0,
+        -788.15,
+        1950.0,
+        -285.0,
+        -772.15
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_post_box_100x100x6",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "",
+      "volume_mm3": 1254674.4000000004,
+      "assumed_mass_kg": 9.849194040000004,
+      "bounds_mm": [
+        1725.0,
+        -510.0,
+        -772.15,
+        1825.0,
+        -410.0,
+        -216.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_rail_bearing_pad",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Top face Z\u2212100 bears directly on R07 bottom rail flats. Welded to crossbeam; no lifting point.",
+      "volume_mm3": 563200.0,
+      "assumed_mass_kg": 4.42112,
+      "bounds_mm": [
+        1695.0,
+        -570.0,
+        -116.0,
+        1855.0,
+        -350.0,
+        -100.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_cheek_-1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        1705.0,
+        -524.0,
+        -100.0,
+        1845.0,
+        -518.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_-1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1718.0,
+        -538.0,
+        -67.0,
+        1742.0,
+        -524.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_-1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        1721.0,
+        -560.0,
+        -65.39230484541326,
+        1739.0,
+        -510.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_-1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1808.0,
+        -538.0,
+        -67.0,
+        1832.0,
+        -524.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_-1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.312616483192,
+      "assumed_mass_kg": 0.05934845403939307,
+      "bounds_mm": [
+        1811.0,
+        -560.0,
+        -65.39230484541326,
+        1829.0,
+        -510.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_cheek_1",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "8 mm clear of nominal rail side; locates only, not the gravity load path.",
+      "volume_mm3": 57207.21252462997,
+      "assumed_mass_kg": 0.4490766183183453,
+      "bounds_mm": [
+        1705.0,
+        -402.0,
+        -100.0,
+        1845.0,
+        -396.0,
+        -30.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_1_1_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1718.0,
+        -396.0,
+        -67.0,
+        1742.0,
+        -382.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_1_1_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        1721.0,
+        -410.0,
+        -65.39230484541326,
+        1739.0,
+        -360.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_1_2_thread_boss",
+      "group": "chassis_support",
+      "material": "steel",
+      "note": "Smooth \u00d813 bore represents omitted thread detail. M12 mating thread/engagement and weld must be designed before use.",
+      "volume_mm3": 4475.198735038673,
+      "assumed_mass_kg": 0.03513031007005358,
+      "bounds_mm": [
+        1808.0,
+        -396.0,
+        -67.0,
+        1832.0,
+        -382.0,
+        -43.0
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "trestle_2_right_locator_1_2_screw_and_flat_tip",
+      "group": "fastener",
+      "material": "steel",
+      "note": "Original smooth-shank nominal M12 locator. Rail side contact at \u00b150 mm. Do not use clamp friction for suspension, uplift, or rated restraint.",
+      "volume_mm3": 7560.31261648319,
+      "assumed_mass_kg": 0.059348454039393046,
+      "bounds_mm": [
+        1811.0,
+        -410.0,
+        -65.39230484541326,
+        1829.0,
+        -360.0,
+        -44.607695154586736
+      ],
+      "BRep_valid": true,
+      "solid_count": 1
+    }
+  ],
+  "count": 54,
+  "all_single_valid_solids": true,
+  "total_assumed_mass_kg": 193.75510841996893,
+  "positive_volume_intersections_mm3": [],
+  "zero_gap_contacts": [
+    [
+      "trestle_1_transverse_box_200x100x6",
+      "trestle_1_left_post_box_100x100x6"
+    ],
+    [
+      "trestle_1_transverse_box_200x100x6",
+      "trestle_1_left_rail_bearing_pad"
+    ],
+    [
+      "trestle_1_transverse_box_200x100x6",
+      "trestle_1_right_post_box_100x100x6"
+    ],
+    [
+      "trestle_1_transverse_box_200x100x6",
+      "trestle_1_right_rail_bearing_pad"
+    ],
+    [
+      "trestle_1_left_foot_plate",
+      "trestle_1_left_post_box_100x100x6"
+    ],
+    [
+      "trestle_1_left_rail_bearing_pad",
+      "trestle_1_left_locator_cheek_-1"
+    ],
+    [
+      "trestle_1_left_rail_bearing_pad",
+      "trestle_1_left_locator_cheek_1"
+    ],
+    [
+      "trestle_1_left_locator_cheek_-1",
+      "trestle_1_left_locator_-1_1_thread_boss"
+    ],
+    [
+      "trestle_1_left_locator_cheek_-1",
+      "trestle_1_left_locator_-1_2_thread_boss"
+    ],
+    [
+      "trestle_1_left_locator_cheek_1",
+      "trestle_1_left_locator_1_1_thread_boss"
+    ],
+    [
+      "trestle_1_left_locator_cheek_1",
+      "trestle_1_left_locator_1_2_thread_boss"
+    ],
+    [
+      "trestle_1_right_foot_plate",
+      "trestle_1_right_post_box_100x100x6"
+    ],
+    [
+      "trestle_1_right_rail_bearing_pad",
+      "trestle_1_right_locator_cheek_-1"
+    ],
+    [
+      "trestle_1_right_rail_bearing_pad",
+      "trestle_1_right_locator_cheek_1"
+    ],
+    [
+      "trestle_1_right_locator_cheek_-1",
+      "trestle_1_right_locator_-1_1_thread_boss"
+    ],
+    [
+      "trestle_1_right_locator_cheek_-1",
+      "trestle_1_right_locator_-1_2_thread_boss"
+    ],
+    [
+      "trestle_1_right_locator_cheek_1",
+      "trestle_1_right_locator_1_1_thread_boss"
+    ],
+    [
+      "trestle_1_right_locator_cheek_1",
+      "trestle_1_right_locator_1_2_thread_boss"
+    ],
+    [
+      "trestle_2_transverse_box_200x100x6",
+      "trestle_2_left_post_box_100x100x6"
+    ],
+    [
+      "trestle_2_transverse_box_200x100x6",
+      "trestle_2_left_rail_bearing_pad"
+    ],
+    [
+      "trestle_2_transverse_box_200x100x6",
+      "trestle_2_right_post_box_100x100x6"
+    ],
+    [
+      "trestle_2_transverse_box_200x100x6",
+      "trestle_2_right_rail_bearing_pad"
+    ],
+    [
+      "trestle_2_left_foot_plate",
+      "trestle_2_left_post_box_100x100x6"
+    ],
+    [
+      "trestle_2_left_rail_bearing_pad",
+      "trestle_2_left_locator_cheek_-1"
+    ],
+    [
+      "trestle_2_left_rail_bearing_pad",
+      "trestle_2_left_locator_cheek_1"
+    ],
+    [
+      "trestle_2_left_locator_cheek_-1",
+      "trestle_2_left_locator_-1_1_thread_boss"
+    ],
+    [
+      "trestle_2_left_locator_cheek_-1",
+      "trestle_2_left_locator_-1_2_thread_boss"
+    ],
+    [
+      "trestle_2_left_locator_cheek_1",
+      "trestle_2_left_locator_1_1_thread_boss"
+    ],
+    [
+      "trestle_2_left_locator_cheek_1",
+      "trestle_2_left_locator_1_2_thread_boss"
+    ],
+    [
+      "trestle_2_right_foot_plate",
+      "trestle_2_right_post_box_100x100x6"
+    ],
+    [
+      "trestle_2_right_rail_bearing_pad",
+      "trestle_2_right_locator_cheek_-1"
+    ],
+    [
+      "trestle_2_right_rail_bearing_pad",
+      "trestle_2_right_locator_cheek_1"
+    ],
+    [
+      "trestle_2_right_locator_cheek_-1",
+      "trestle_2_right_locator_-1_1_thread_boss"
+    ],
+    [
+      "trestle_2_right_locator_cheek_-1",
+      "trestle_2_right_locator_-1_2_thread_boss"
+    ],
+    [
+      "trestle_2_right_locator_cheek_1",
+      "trestle_2_right_locator_1_1_thread_boss"
+    ],
+    [
+      "trestle_2_right_locator_cheek_1",
+      "trestle_2_right_locator_1_2_thread_boss"
+    ]
+  ],
+  "fabrication_release": false,
+  "rated_load_kg": null,
+  "source_safety_class": "original static workholding development only"
+}

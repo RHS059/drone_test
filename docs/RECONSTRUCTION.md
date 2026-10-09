@@ -7,9 +7,15 @@ This is a new source-backed reconstruction. The earlier missing local package an
 - Six original source-backed wheel models using published BFGoodrich KM3 MSPN 72204 and EVO Corse SE5240060141 dimensions. The file's C01 suffix is its component revision; it is not the earlier Warthog assembly configuration or its test evidence.
 - Original faceted body, 175 CAD solids, eight removable service-cover groups, and separate battery/controller dimensional reservations.
 - Original R07 lighter frame candidate, 386.953 kg at assumed steel density. Geometric validity, connected interfaces and machining-access checks do not establish structural strength.
-- Original independent corner interfaces. Steering and suspension travel remain locked while geometry/hardware checks continue. Selected motor solids are excluded because their redistribution is restricted; no substitute shape is claimed as authentic motor CAD.
+- Original independent corner interfaces, with the fine-thread adapter pilots and motor-pilot entry relief corrected in the selected C02_R06 contract. Steering and suspension travel remain locked while geometry/hardware checks continue. Selected motor solids are excluded because their redistribution is restricted; no substitute shape is claimed as authentic motor CAD.
 - Licensed UR20 and Robotiq source meshes and joint graphs; two independently adjustable arms and mimic-driven grippers.
 - Separate executable MuJoCo gripper experiment. Newly reconstructed nominal/heavy cases pass the strict 10 mm screen; low-friction fails. This does not qualify vehicle manipulation or reuse lost experiment results.
+
+## Costs and workshop inspection
+
+The main page includes dated native-currency public-price subsets, explicit missing quotes, a matched mass/BOM disclosure and editable operating-cost assumptions. Complete build cost, measured hourly cost and whole-vehicle runtime remain unknown. Prices are not supplier quotations or destination totals. Battery procurement requires serial-specific recall screening; coupling electrical routes and arm/controller bundle scope are kept separate.
+
+An optional workshop study displays two original chassis trestles and a corner cradle at a static100mm-raised vehicle pose. The supports have no assigned load rating. No lifting animation, unsupported module removal, pin-release operation or autonomous repair is implied. Both wishbones, spring energy, module retention, floor reactions and lifting setup still need an engineered procedure. The service view's wireframe drive volumes are numerical space reservations, not motor CAD.
 
 ## Verification boundaries
 
@@ -19,7 +25,7 @@ Nominal unloaded tire geometry is tangent to the flat ground plane. Loaded tire 
 
 ## Reproduce bounded software checks
 
-Run `node test-cad.mjs` for source FK, mimic joints, limits and robot source hashes. `node docs/contact/scripts/validate.mjs` reads saved contact results without rewriting them. Original CAD generators and source/dimensional assumptions accompany the assets. The historical `test-model.mjs` tests the legacy cost model only.
+Run `node test-costs.mjs` for currency, unknown-value and scenario arithmetic; `node test-rover.mjs` for nominal scene/fixture interfaces; `node test-cad.mjs` for source FK, mimic joints, limits and robot source hashes. `node docs/contact/scripts/validate.mjs` reads saved contact results without rewriting them. Original CAD generators and source/dimensional assumptions accompany the assets. The historical `test-model.mjs` tests the legacy cost model only.
 
 ## Sources and permissions
 

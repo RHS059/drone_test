@@ -24,6 +24,8 @@ def upright():
  outline=[(-145,-130),(-90,-150),(-75,-205),(75,-205),(90,-150),(145,-130),(145,130),(90,150),(75,205),(-75,205),(-90,150),(-145,130)]
  p=cq.Workplane('XY').polyline(outline).close().extrude(18)
  p=p.cut(cq.Workplane('XY').circle(86).extrude(20))
+ # Entry relief clears verified motor pilot-root R0.8 torus; cylindrical fit remains nominal.
+ p=p.cut(cq.Solid.makeCone(87,86,1,cq.Vector(0,0,0),cq.Vector(0,0,1)))
  for x,y in HOLES:p=p.cut(cq.Workplane('XY').center(x,y).circle(4.25).extrude(20))
  # Original clevis ears: axis X, y +/-170, z=-15, original joint geometry.
  for sign in [-1,1]:
@@ -35,7 +37,7 @@ def upright():
  for sign in [-1,1]:
   pocket=cq.Workplane('YZ').center(sign*170,-15).circle(60).extrude(55,both=True)
   p=p.cut(pocket)
- return export(p.val(),'upright_WD220_C02_R04',{'mount_pattern_mm':HOLES,'pattern_source':'verified asymmetric commercial STEP hole axes; drawing checked separately','motor_socket_diameter_mm':172,'motor_socket_fit':'nominal only, finished fit unselected','eight_holes':'Ø8.5 pilots intended M10x1.5; not finished threads','plate_mm':18,'outer_joint_centers_local_mm':[[0,170,-15],[0,-170,-15]],'joint_pin_axis_local':[1,0,0],'clevis_bore_mm':20.5,'no_steering':'upright held by parallel links; steering mechanism unimplemented','manufacturing':'welded/finish-machined original carrier; welds/fillets/grade/fasteners unqualified'})
+ return export(p.val(),'upright_WD220_C02_R05',{'mount_pattern_mm':HOLES,'pattern_source':'verified asymmetric commercial STEP hole axes; drawing checked separately','motor_socket_diameter_mm':172,'pilot_entry_relief':'1x45deg; mouth174mm to172mm atdepth1mm; clears source R0.8 root fillet','motor_socket_fit':'nominal only, finished fit unselected','eight_holes':'Ø8.5 pilots intended M10x1.5; not finished threads','plate_mm':18,'outer_joint_centers_local_mm':[[0,170,-15],[0,-170,-15]],'joint_pin_axis_local':[1,0,0],'clevis_bore_mm':20.5,'no_steering':'upright held by parallel links; steering mechanism unimplemented','manufacturing':'welded/finish-machined original carrier; welds/fillets/grade/fasteners unqualified'})
 
 def adapter():
  p=cq.Workplane('XY').circle(110).circle(47).extrude(30)

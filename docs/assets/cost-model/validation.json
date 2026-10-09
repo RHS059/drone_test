@@ -1,0 +1,15 @@
+{
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "configuration": {
+    "corner_revision": "C02_R06",
+    "frame_revision": "R07",
+    "body_revision": "R01",
+    "tool_adapter_revision": "R04",
+    "public_feature_commit_at_assignment": "82ce94f27dd37db02015ecf62f48a54884a4a75a",
+    "not_fabrication_released": true
+  },
+  "scope": "Cost arithmetic,CSV/JSON agreement,quantity/source/null/bundle/revision safeguards;not supplier or engineering qualification."
+}

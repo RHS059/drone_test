@@ -1,0 +1,41 @@
+{
+  "references_only_not_bundled": true,
+  "all_geometry_references_original_development_CAD": true,
+  "files": [
+    {
+      "path": "ugv-reconstruction/mechanical/frame_R07.step",
+      "sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+      "bytes": 1447972
+    },
+    {
+      "path": "ugv-reconstruction/mechanical/frame_R07_verification.json",
+      "sha256": "0f27a002e81da0505ad6c7463deec7535648e7a02444b17750f9d14466d43378",
+      "bytes": 16070
+    },
+    {
+      "path": "ugv-reconstruction/mechanical/running_gear_C02/interface_contract_C02_R05.json",
+      "sha256": "3f65587a1d6490c39545bd49531fa610ed6ee48dbeab5ec78963d36fd46442cb",
+      "bytes": 5958
+    },
+    {
+      "path": "ugv-reconstruction/mechanical/running_gear_C02/upright_WD220_C02_R04.step",
+      "sha256": "a052b8963a2bdb83ba4d4beb9130a98b704e315eeceba3519b375df27d8a4eb0",
+      "bytes": 189698
+    },
+    {
+      "path": "ugv-reconstruction/mechanical/running_gear_C02/wheel_adapter_C02_R02.step",
+      "sha256": "5f91580e72dbd906703ff49a9479e58f269be05cba453f9f264943eb61a03b1f",
+      "bytes": 123972
+    },
+    {
+      "path": "ugv-rover-integration/body-power/body_power_R01.step",
+      "sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba",
+      "bytes": 6825896
+    },
+    {
+      "path": "ugv-rover-integration/wheels/wheel_C01.step",
+      "sha256": "b98e8e2b983024b612cf7083ec386be9b89862c21d7134c376f278037b28714b",
+      "bytes": 3477365
+    }
+  ]
+}

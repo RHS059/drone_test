@@ -1,9 +1,9 @@
 {
-  "snapshot_at": "2026-10-09T09:38:16.217083+00:00",
+  "snapshot_at": "2026-10-09T09:57:22.004896+00:00",
   "not_qualification": true,
-  "corner_contract": "/workspace/shared/ugv-reconstruction/mechanical/running_gear_C02/interface_contract_C02_R05.json",
+  "corner_contract": "/workspace/shared/ugv-reconstruction/mechanical/running_gear_C02/interface_contract_C02_R06.json",
   "mass_is_nominal_model_subtotal_not_weighed_vehicle": true,
-  "mass_known_subset_kg": 976.3621302801703,
+  "mass_known_subset_kg": 976.349355621963,
   "whole_vehicle_mass_kg": null,
   "whole_vehicle_CG": null,
   "mass_ledger_known": [
@@ -36,8 +36,8 @@
       "classification": "original chosen geometry"
     },
     {
-      "part": "upright_WD220_C02_R04_report",
-      "kg_each": 8.855862537886368,
+      "part": "upright_WD220_C02_R05_report",
+      "kg_each": 8.853733428185155,
       "quantity": 6,
       "basis": "CAD volume \u00d7 assumed density; nominal model mass, not measured hardware",
       "classification": "original chosen geometry"
@@ -145,7 +145,7 @@
     "steering": "locked, no implemented mechanism; skid-steer not validated",
     "suspension": "parallel-link kinematic study, springs/damping/load qualification unknown",
     "repair": "service-access visualization, no validated autonomous removal/replacement sequence",
-    "corner_known_original_hardware_kg": 45.34341822909777,
+    "corner_known_original_hardware_kg": 45.34128911939656,
     "complete_corner_arm_only_lift_supported": false
   },
   "public_license_gate": [

@@ -1,0 +1,104 @@
+{
+  "part": "upright_WD220_C02_R05",
+  "original_geometry": true,
+  "not_vendor_CAD": true,
+  "not_fabrication_released": true,
+  "bounds_mm": [
+    -145.0,
+    -205.0,
+    -35.0,
+    145.0,
+    205.0,
+    18.000000000000007
+  ],
+  "solid_count": 1,
+  "BRep_valid": true,
+  "density_kg_m3": 7850,
+  "density_assumed": true,
+  "volume_m3": 0.0011278641309790006,
+  "mass_kg": 8.853733428185155,
+  "com_m": [
+    -6.683333463004131e-18,
+    -0.00016482187134661994,
+    0.007689699589047221
+  ],
+  "inertia_com_kg_m2": [
+    [
+      0.10042988817574414,
+      -5.020088403331937e-19,
+      4.55186448541023e-19
+    ],
+    [
+      -5.020088403331937e-19,
+      0.07961765575726366,
+      1.9121068611433977e-06
+    ],
+    [
+      4.55186448541023e-19,
+      1.9121068611433977e-06,
+      0.17887492724321338
+    ]
+  ],
+  "notes": {
+    "mount_pattern_mm": [
+      [
+        -113,
+        0
+      ],
+      [
+        113,
+        0
+      ],
+      [
+        -101.823376,
+        -49
+      ],
+      [
+        101.823376,
+        -49
+      ],
+      [
+        -101.823376,
+        49
+      ],
+      [
+        101.823376,
+        49
+      ],
+      [
+        -66.992537,
+        91
+      ],
+      [
+        66.992537,
+        91
+      ]
+    ],
+    "pattern_source": "verified asymmetric commercial STEP hole axes; drawing checked separately",
+    "motor_socket_diameter_mm": 172,
+    "pilot_entry_relief": "1x45deg; mouth174mm to172mm atdepth1mm; clears source R0.8 root fillet",
+    "motor_socket_fit": "nominal only, finished fit unselected",
+    "eight_holes": "\u00d88.5 pilots intended M10x1.5; not finished threads",
+    "plate_mm": 18,
+    "outer_joint_centers_local_mm": [
+      [
+        0,
+        170,
+        -15
+      ],
+      [
+        0,
+        -170,
+        -15
+      ]
+    ],
+    "joint_pin_axis_local": [
+      1,
+      0,
+      0
+    ],
+    "clevis_bore_mm": 20.5,
+    "no_steering": "upright held by parallel links; steering mechanism unimplemented",
+    "manufacturing": "welded/finish-machined original carrier; welds/fillets/grade/fasteners unqualified"
+  }
+}
