@@ -39,8 +39,8 @@
     },
     {
       "path": "docs/app.js",
-      "bytes": 2362,
-      "sha256": "7b97643e78452399493efa875ce49c272c20764ae42527d09dbee209ad387ccc"
+      "bytes": 2383,
+      "sha256": "0944c0bc9ab286abc548b3b6d8b2d28a566bac20ad4cfe39c18783f42ee1e1b9"
     },
     {
       "path": "docs/assembly.json",
@@ -499,8 +499,8 @@
     },
     {
       "path": "docs/contact/README.md",
-      "bytes": 6288,
-      "sha256": "4812c2d62c442f9ea36e1bf3ca591ac58ec464759f817085f9c748f18a6d6212"
+      "bytes": 6430,
+      "sha256": "3cb5d7030caf0a723a38b673e36c0326f909e1f65450b8c3f80281584547091e"
     },
     {
       "path": "docs/contact/assets/coupon_40x40x30_mm.step",
@@ -594,8 +594,8 @@
     },
     {
       "path": "docs/contact/index.html",
-      "bytes": 3032,
-      "sha256": "3a627d9181aa6ce4c4a4da64cff38d4e5d8303b735c4971cf61c2e4e9661aebb"
+      "bytes": 3053,
+      "sha256": "5aaea630383910dcc5cbd37f6e2e52c27492989fc4bc82a152906fcb1ee08336"
     },
     {
       "path": "docs/contact/package.json",
@@ -659,8 +659,8 @@
     },
     {
       "path": "docs/contact/scripts/validate.mjs",
-      "bytes": 3654,
-      "sha256": "8073dcfa1495e7fee8fc1838d2d7a4b595133d7a3197e1a86ab51c1a8c78151c"
+      "bytes": 3690,
+      "sha256": "f537466addb7da7112ad3b8d7e1ab64a23e8fe44f6e54c623c6d930ece48da79"
     },
     {
       "path": "docs/contact/simulation.mjs",
@@ -735,7 +735,7 @@
     {
       "path": "docs/index.html",
       "bytes": 6927,
-      "sha256": "82eaf937d3cc2e7e5a6bed39bd8f216ded478a62b806d6ed720502b7cd59cee3"
+      "sha256": "5d9405c6cf1d083b34e2ee7430cc0a404ab577aa0bb94ee905230541771a079f"
     },
     {
       "path": "docs/kinematics.js",

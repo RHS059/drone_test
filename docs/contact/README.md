@@ -51,3 +51,5 @@ Live Node execution of the same WASM module passed. Browser launch in this execu
 ## Attribution
 
 Menagerie Robotiq model:BSD-2-Clause, retained `assets/robotiq_2f85/LICENSE`. Official MuJoCo3.15.0 JavaScript/WASM:Apache-2.0, retained `vendor/LICENSE-MUJOCO`, package README and metadata. Three.js renderer:MIT, retained `vendor/THREE-LICENSE.txt`. Original scenario, scripts, UI and coupon are new work for this reconstruction. No private soldier assets or external CAD are involved.
+
+Validation is read-only by default. To intentionally regenerate the summary after new native/WASM runs: `node scripts/validate.mjs --write`.
