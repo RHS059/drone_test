@@ -1,0 +1,182 @@
+{
+  "file": "adapter_R03.step",
+  "solids": 1,
+  "issues": [
+    "solid_00 \u00d814.00 at (20.0,34.6,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind",
+    "solid_00 \u00d814.00 at (-20.0,34.6,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind",
+    "solid_00 \u00d814.00 at (-40.0,0.0,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind",
+    "solid_00 \u00d814.00 at (-20.0,-34.6,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind",
+    "solid_00 \u00d814.00 at (20.0,-34.6,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind",
+    "solid_00 \u00d814.00 at (40.0,0.0,17.5): M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0; ISO 4762 head may bind"
+  ],
+  "parts": [
+    {
+      "part": "solid_00",
+      "stock": "turned from round bar >= \u00d8100+stock allowance, L=26.0",
+      "stock_standard": true,
+      "holes": [
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -20.0,
+            -34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            20.0,
+            -34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -40.0,
+            0.0,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            -20.0,
+            34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            40.0,
+            0.0,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 8.5,
+          "center_mm": [
+            20.0,
+            34.6,
+            5.8
+          ],
+          "class": "M8 clearance",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            20.0,
+            34.6,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            -20.0,
+            34.6,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            -40.0,
+            0.0,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            -20.0,
+            -34.6,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            20.0,
+            -34.6,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 14.0,
+          "center_mm": [
+            40.0,
+            0.0,
+            17.5
+          ],
+          "class": "M8 counterbore \u00d814.0 != DIN 974-1 \u00d815.0",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            -17.7,
+            -17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            17.7,
+            -17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            -17.7,
+            17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        },
+        {
+          "d_mm": 5.0,
+          "center_mm": [
+            17.7,
+            17.7,
+            17.5
+          ],
+          "class": "M6 tap drill",
+          "blocked_by": []
+        }
+      ]
+    }
+  ],
+  "pass": false
+}
