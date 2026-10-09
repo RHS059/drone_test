@@ -18,4 +18,5 @@ jobs:
       - run: node test-cad.mjs
       - run: node test-rover.mjs
       - run: node test-costs.mjs
+      - run: node test-controls-ready.mjs
       - run: node docs/contact/scripts/validate.mjs

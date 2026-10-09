@@ -1,16 +1,16 @@
 {
-  "release": "six-wheel-service-access-correction-03",
+  "release": "six-wheel-controls-ready-fix-04",
   "whole_robot_qualified": false,
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 931,
-      "sha256": "f78612119de8006e3694e970c732b1e9787f8c285c1a32f5087e4eb3a7824884"
+      "bytes": 963,
+      "sha256": "e6835607cca625f2df158a0666ca27d9f60f32e9c023e0badd07b2c5ab2f4731"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 691,
-      "sha256": "f6df6242f4e7cd87290c8399b63774170a97952ece5568bba455d9b5ed5482fd"
+      "bytes": 733,
+      "sha256": "de598b9fa7339f663b96d15d42c5aa258d978226b0b26a52b683e5deb25b8954"
     },
     {
       "path": "BASELINE.md",
@@ -39,8 +39,8 @@
     },
     {
       "path": "docs/app.js",
-      "bytes": 2730,
-      "sha256": "304959a22d83f65a128d989111e016d00842c80314d28a6661b7897fc7622650"
+      "bytes": 3583,
+      "sha256": "528cb7608db89c74e386a53746a166957bc2982283a2862ced2084c194356373"
     },
     {
       "path": "docs/assembly.json",
@@ -1519,8 +1519,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 12138,
-      "sha256": "f322450a4d46f160180f57ba495026ea0d9badf0f8ae9c8f232341693a8255ff"
+      "bytes": 12274,
+      "sha256": "c22d6dd6e2d18c233d6bcc4083f646013b3e1328ea3a6028edfa8c735cfaf4a9"
     },
     {
       "path": "docs/kinematics.js",
@@ -1631,6 +1631,11 @@
       "path": "test-cad.mjs",
       "bytes": 1943,
       "sha256": "5cf4acba261a30483d19555634b54adfc1fa0915a40fcd1273d055bebf566122"
+    },
+    {
+      "path": "test-controls-ready.mjs",
+      "bytes": 4026,
+      "sha256": "d00423f3a99b3c952a06c1ede4fd417d4d7e839582f8d3610fceef5ed5f21522"
     },
     {
       "path": "test-costs.mjs",
