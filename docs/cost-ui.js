@@ -1,10 +1,10 @@
-import {operatingScenario} from './cost-math.js?v=costs-01';
+import {operatingScenario} from './cost-math.js?v=costs-02';
 export async function initCosts(){
  const host=document.querySelector('#cost-panel');
  if(!host)return;
  const read=async p=>{const r=await fetch(p);if(!r.ok)throw Error('Cost evidence unavailable');return r.json()};
  try{
-  const [model,sources]=await Promise.all([read('./assets/cost-model/cost_model.json?v=costs-01'),read('./assets/cost-model/sources.json?v=costs-01')]);
+  const [model,sources]=await Promise.all([read('./assets/cost-model/cost_model.json?v=costs-02'),read('./assets/cost-model/sources.json?v=costs-02')]);
   const money=(n,c='USD')=>n===null?'Unknown':new Intl.NumberFormat('en-US',{style:'currency',currency:c}).format(n);
   const $=s=>host.querySelector(s);
   $('#priced-subtotal').textContent=model.build_summary.public_price_baskets.map(b=>`${b.currency} ${money(b.reference_subtotal,b.currency)}`).join(' · ');

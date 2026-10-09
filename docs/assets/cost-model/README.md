@@ -69,7 +69,7 @@ To establish an actual operating rate, record grid charging energy and tariff, m
 
 UI: show `build_summary.complete_build_cost` as unknown. Show `public_price_baskets` with the explicit label “Priced subset only.” Show `operating_cost.actual_cost_per_operating_hour` as unknown and scenario `modeled_partial_usd_per_operating_hour` as assumptions-only and incomplete. Round scenario display; retained decimals serve arithmetic checks.
 
-The pinned modeled-mass subtotal is **976.3493556219631 kg**, not whole-rover mass. Thirty catalog nuts add 6.36 kg outside that snapshot; no other unknown mass is inferred from a retailer's shipping weight or an undocumented raw page field.
+The pinned modeled-mass subtotal is **976.3493556219631 kg**, not whole-rover mass. The manufacturer page displays a nut weight field of 212 without units, while Product JSON-LD specifies 0.217 kg. These fields require reconciliation. Nut mass remains unknown and is excluded from that snapshot; no mass is inferred from an undocumented raw page field or shipping weight.
 
 ## Historical estimates and updates
 

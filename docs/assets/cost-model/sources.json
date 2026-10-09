@@ -68,7 +68,7 @@
       "kind": "manufacturer_documentation",
       "retrieved_on": "2026-10-09",
       "retrieval": "Public web page text; may be search-provider cached. No checkout or vendor confirmation.",
-      "facts": "CM0750180040 flat-seat M16x1.5 nut with washer; catalogue mass212g. Thirty nuts are covered by six rendered five-nut rim bundles; do not add independent nut prices to that bundle.",
+      "facts": "CM0750180040 flat-seat M16x1.5 nut with washer; visible weight212 without units conflicts with Product JSON-LD weight0.217 kg; installed mass unknown pending reconciliation. Thirty nuts are covered by six rendered five-nut rim bundles; do not add independent nut prices to that bundle.",
       "not_price": true
     },
     {

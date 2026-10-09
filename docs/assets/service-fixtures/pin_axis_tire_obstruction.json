@@ -1,0 +1,38 @@
+{
+  "scope": "Original modeled tire only, hidden profile assumptions remain. A centerline point 220 mm in either X direction from either outer pin center lies within the declared \u00b1260 mm straight extraction corridor. Positive containment rejects a straight full-length cylinder clearance claim through the installed modeled wheel, even with zero tool radius. Does not rule out shorter extraction, offset tooling or wheel-first service.",
+  "tire_step_sha256": "a59623920b27b75258a55e123f050d828b1595e52f3a30df2910f32621082b5b",
+  "points": [
+    {
+      "tire_local_mm": [
+        -220,
+        -128,
+        -170
+      ],
+      "strictly_inside": true
+    },
+    {
+      "tire_local_mm": [
+        -220,
+        -128,
+        170
+      ],
+      "strictly_inside": true
+    },
+    {
+      "tire_local_mm": [
+        220,
+        -128,
+        -170
+      ],
+      "strictly_inside": true
+    },
+    {
+      "tire_local_mm": [
+        220,
+        -128,
+        170
+      ],
+      "strictly_inside": true
+    }
+  ]
+}

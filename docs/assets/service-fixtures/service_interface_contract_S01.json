@@ -121,7 +121,7 @@
       -0.26,
       0.26
     ],
-    "warning": "Clearance envelope only; pin retention and actual extraction tool not selected."
+    "warning": "Fixture-only clearance screen. The installed modeled tire obstructs the full corridor at \u00b1220 mm; actual tool/pin access is not established. See pin_axis_tire_obstruction.json."
   },
   "cradle_insertion_configuration": {
     "remove_first": [
@@ -139,6 +139,7 @@
   },
   "service_sequence_file": "README.md#bounded-c02-removal-and-inspection-sequence",
   "blocked_operations": [
+    "Straight full-length pin extraction corridor intersects the installed modeled tire. A verified wheel-first or alternative-access procedure is required before pin withdrawal.",
     "Initial lifting: no qualified frame lift points, hoist attachment, jack pick-up or lift-height path.",
     "Pin withdrawal: both wishbones lack positive support fixtures; spring/coilover control and pin retainers unresolved.",
     "Detached corner transport: stationary cradle has no casters, lifting lugs or approved lifting fixture.",

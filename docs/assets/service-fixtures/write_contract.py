@@ -18,10 +18,10 @@ contract={
  'C02_retained_assets':['stationary_clamp_C02_R01','inner_backing_C02_R01','stationary_hardware_C02_R01','upper_wishbone_C02_R02','lower_wishbone_C02_R02','upper_bearing_envelopes_C02_R02','lower_bearing_envelopes_C02_R02'],
  'C02_retained_on_chassis':['stationary rail clamps/backing/tie bolts','upper wishbone','lower wishbone','planned coilover'],
  'pin_removal_interfaces':[{'axis_C':[1,0,0],'center_C_m':[0,.812,-.08]},{'axis_C':[1,0,0],'center_C_m':[0,.812,-.42]}],
- 'checked_pin_extraction_corridor':{'radius_m':.014,'X_span_C_m':[-.26,.26],'warning':'Clearance envelope only; pin retention and actual extraction tool not selected.'},
+ 'checked_pin_extraction_corridor':{'radius_m':.014,'X_span_C_m':[-.26,.26],'warning':'Fixture-only clearance screen. The installed modeled tire obstructs the full corridor at ±220 mm; actual tool/pin access is not established. See pin_axis_tire_obstruction.json.'},
  'cradle_insertion_configuration':{'remove_first':['four capture-post weldments including base plates, upper caps and upper captive nuts','two removable upper crossbars','eight M10-style post-base bolts and washers','four M12-style upper bolts and washers'],'retain':['lower floor frame','contour shoes and liners','eight lower rail captive nuts'],'reason':'Tall posts cannot pass laterally through tire during insertion; install them after unloaded cradle is positioned and module is supported.'},
  'service_sequence_file':'README.md#bounded-c02-removal-and-inspection-sequence',
- 'blocked_operations':[
+ 'blocked_operations':['Straight full-length pin extraction corridor intersects the installed modeled tire; a verified wheel-first or alternative-access procedure is required.',
   'Initial lifting: no qualified frame lift points, hoist attachment, jack pick-up or lift-height path.',
   'Pin withdrawal: both wishbones lack positive support fixtures; spring/coilover control and pin retainers unresolved.',
   'Detached corner transport: stationary cradle has no casters, lifting lugs or approved lifting fixture.',

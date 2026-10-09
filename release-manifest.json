@@ -1,5 +1,5 @@
 {
-  "release": "six-wheel-costs-workshop-development-02",
+  "release": "six-wheel-service-access-correction-03",
   "whole_robot_qualified": false,
   "files": [
     {
@@ -40,7 +40,7 @@
     {
       "path": "docs/app.js",
       "bytes": 2730,
-      "sha256": "1c10891770d30289ee2cd82fbdcfca346a0624692b001be570c4fe42eaa35447"
+      "sha256": "304959a22d83f65a128d989111e016d00842c80314d28a6661b7897fc7622650"
     },
     {
       "path": "docs/assembly.json",
@@ -274,13 +274,13 @@
     },
     {
       "path": "docs/assets/corners/mass_cost_ledger_C02_R05.json",
-      "bytes": 4328,
-      "sha256": "437caf06d3be72621134b57a1617b933f2fdc78ca947fbc404d26e90ceb200a2"
+      "bytes": 4553,
+      "sha256": "91ca249887627a0d7d257ee41935c867e78a30213a149c38d77bb6be94d6128f"
     },
     {
       "path": "docs/assets/corners/mass_cost_ledger_C02_R06.json",
-      "bytes": 4328,
-      "sha256": "91c57f9638d88cb3f82fd17619e260c0b519b586ebd9d41b3a3b315429c54748"
+      "bytes": 4553,
+      "sha256": "fa0fe76aed8de417da615cd19d9058186c6b4ab743f5de0a8a3a3f6fa058753c"
     },
     {
       "path": "docs/assets/corners/stationary_clamp_C02_R01.glb",
@@ -419,43 +419,43 @@
     },
     {
       "path": "docs/assets/cost-model/BOM.csv",
-      "bytes": 18928,
-      "sha256": "7c82c7abd991d465749d16084953a4f193749c489bd3b84dc1ca8322204671c4"
+      "bytes": 19015,
+      "sha256": "1cc48ec97cc8075a809038d2ac32be01cb6812e469aa5e7f3c62cbaecc99d592"
     },
     {
       "path": "docs/assets/cost-model/README.md",
-      "bytes": 9985,
-      "sha256": "751381ad962e5aca539665432f3bd42d86b60b2077bafffa134a550379c3cf03"
+      "bytes": 10115,
+      "sha256": "eee9860bb63bc1da1fc167c128cd01154f87f014e693d0eebc8c272ffef5f337"
     },
     {
       "path": "docs/assets/cost-model/build_cost_model.py",
-      "bytes": 40206,
-      "sha256": "c51d0a09fb9307c2c4e68125db48f1ff47d2b2e533863bd098780f1b1eacd249"
+      "bytes": 40432,
+      "sha256": "3b01ea09884f015ef016c79fbb879aeaf6de22b71bdbc6885075ed6883d2fc90"
     },
     {
       "path": "docs/assets/cost-model/checksums.json",
       "bytes": 616,
-      "sha256": "7e3c52d69f3eb48212e0a23c9cd1322a64808df14e75138f55b017dc4927b1c1"
+      "sha256": "7be0391e8f3afead98c4ecd4af469405fe8f6f9768b65c731f71195c958a7076"
     },
     {
       "path": "docs/assets/cost-model/cost_model.json",
-      "bytes": 68140,
-      "sha256": "4e1ea55fc54d83e6048f7671021d700fc35886e88cc2b7036a69ed8736b71c5f"
+      "bytes": 68227,
+      "sha256": "247f1bba234e29f3d0c90ac0ba25e0939347039cfa422296dec9c1c309dcd194"
     },
     {
       "path": "docs/assets/cost-model/sources.json",
-      "bytes": 18113,
-      "sha256": "19959d392970450ed3199a8002affc96286975717bd17e65d24fc1ce1b4e8579"
+      "bytes": 18219,
+      "sha256": "986ceb34e06e0567af09474de43f5b36f996e97609ad97d663cd8527283bbb24"
     },
     {
       "path": "docs/assets/cost-model/test_cost_model.py",
-      "bytes": 6930,
-      "sha256": "7a04f508d5419c453ad124bdc14e4ab343793b9a3804a4221d4ea63f1abffab9"
+      "bytes": 7121,
+      "sha256": "3981444deebcccd2ffbf01f89674c8076eaaafd8a9805c7206f62b43996d572b"
     },
     {
       "path": "docs/assets/cost-model/validation.json",
       "bytes": 489,
-      "sha256": "e4c96c110f7cbaba58344c5f3a6e0a08bb6bbe52dedba6af5f45461e2f38a770"
+      "sha256": "4c2f7c31357ca433d91c2e849eb355a4494b29e656082a3da9370826d0427586"
     },
     {
       "path": "docs/assets/mechanical/DFM_ATTRIBUTION.md",
@@ -1079,8 +1079,8 @@
     },
     {
       "path": "docs/assets/service-fixtures/README.md",
-      "bytes": 10286,
-      "sha256": "9e49f9a4048c3913c5f02cfa210967bd76f99d18fa068ed2f6fe828ccd6b2d2a"
+      "bytes": 10520,
+      "sha256": "7cf26cb8b16c4da29b2d348a874ef9667a6054856d0cc1d6df6aaac6dea68ef7"
     },
     {
       "path": "docs/assets/service-fixtures/SOURCES.json",
@@ -1108,6 +1108,11 @@
       "sha256": "e42d5e0e7ae8a44d05dd712ea3e233128432acbb435d64f372216eb836a86fdc"
     },
     {
+      "path": "docs/assets/service-fixtures/check_pin_axis_tire.py",
+      "bytes": 1601,
+      "sha256": "4a7962d7d216403ad75ea9d88929efdc0f324d42bf3978cfdcf3171b5dfa6b21"
+    },
+    {
       "path": "docs/assets/service-fixtures/corner_cradle_S01.glb",
       "bytes": 2778472,
       "sha256": "9d7a25277963a2ac4f2ae719638407463f16428b760518dc8ac14e1770e84ad4"
@@ -1124,8 +1129,8 @@
     },
     {
       "path": "docs/assets/service-fixtures/interface_verification_S01.json",
-      "bytes": 7290,
-      "sha256": "b2370bb78bacd4e255f58306f46ad69e4b44b6a520375a24312e479bd3820fad"
+      "bytes": 8070,
+      "sha256": "97f57534080a26cd7fc58b4e5670265b139d1b08a08eb9eeb05ea71bb8c5bbd7"
     },
     {
       "path": "docs/assets/service-fixtures/package_release.py",
@@ -1141,6 +1146,11 @@
       "path": "docs/assets/service-fixtures/parts_S01.csv",
       "bytes": 20527,
       "sha256": "286fda8618c10ca788d7864eae94f5b56a1a6a720b03214649f1db5b2fa439d7"
+    },
+    {
+      "path": "docs/assets/service-fixtures/pin_axis_tire_obstruction.json",
+      "bytes": 1020,
+      "sha256": "30467f0063a83f5d1d881dee5bebabd1580f9be0fc68a5ba94101f43a1653175"
     },
     {
       "path": "docs/assets/service-fixtures/preview_fixtures.py",
@@ -1159,18 +1169,18 @@
     },
     {
       "path": "docs/assets/service-fixtures/service_interface_contract_S01.json",
-      "bytes": 6133,
-      "sha256": "b76ee125a9dd73d120a84b5e9be991491a5191d2c565d715f04a6777134e6c03"
+      "bytes": 6417,
+      "sha256": "89101b6bcc18aefadbc50d3f8099f86909ff3abbcb95c009a07e8abee007c5fb"
     },
     {
       "path": "docs/assets/service-fixtures/verify_interfaces.py",
-      "bytes": 4910,
-      "sha256": "16e55c35a85dd4989e2fdf1efd65d10f8546ce7a5c9347c0e2eae7bac7c12698"
+      "bytes": 5059,
+      "sha256": "0466b9ed6ced121a1abd23556d0a0333f0f48b6aa2a252cca80c703ba28da876"
     },
     {
       "path": "docs/assets/service-fixtures/write_contract.py",
-      "bytes": 7483,
-      "sha256": "ce62344a79edf23765124d847f06fd626a23c1e5f2b4456cf4d886155eebd706"
+      "bytes": 7735,
+      "sha256": "a4a59a9e420a02bc039c1ea94506fea5c13ae9bd1f3c532ad7ff8510c3a15dde"
     },
     {
       "path": "docs/assets/wheels/ASSUMPTIONS.md",
@@ -1185,12 +1195,12 @@
     {
       "path": "docs/assets/wheels/SHA256SUMS",
       "bytes": 1330,
-      "sha256": "543e46cc1b9ad5f9ea32386c66f5f81295637e5bbfb48377b397b7f3dd2ee47b"
+      "sha256": "7fbbb5bec39e44b33f2496c08529bef25773b8aac548a35265f6a415e224dc29"
     },
     {
       "path": "docs/assets/wheels/SOURCES.json",
-      "bytes": 2151,
-      "sha256": "0c54730f70fe086ecd5c3e955317a9697ea8f841737c5a8f2d418cda35fd84d8"
+      "bytes": 2699,
+      "sha256": "09880f820663414d7e28c54643013575646de3d140bb8b7bc540166acf956f1a"
     },
     {
       "path": "docs/assets/wheels/build_wheel.py",
@@ -1500,7 +1510,7 @@
     {
       "path": "docs/cost-ui.js",
       "bytes": 5154,
-      "sha256": "27377f947660cda65f485b165ed2fbbeeec367faecd1dd868b3fdb7e1a4aa588"
+      "sha256": "204576bf9c958b49b7bf8231fae5a0002494d40435979a5abfb50bc9c00e786d"
     },
     {
       "path": "docs/costs.json",
@@ -1509,8 +1519,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 12055,
-      "sha256": "8fad4bf387b637dbf4094e85c4212b8356dd0a9e0cc8a9bc2af743fd452809b8"
+      "bytes": 12138,
+      "sha256": "f322450a4d46f160180f57ba495026ea0d9badf0f8ae9c8f232341693a8255ff"
     },
     {
       "path": "docs/kinematics.js",
@@ -1624,8 +1634,8 @@
     },
     {
       "path": "test-costs.mjs",
-      "bytes": 2367,
-      "sha256": "636eb18d722f7f77c501073ae3b5daf296803c3bbdfd21e84b4e1256728070ef"
+      "bytes": 2628,
+      "sha256": "b3de0a6354ff03afdc57037459c4f8b4d819e7e5fbe6c09adfc09ae116f33d50"
     },
     {
       "path": "test-model.mjs",

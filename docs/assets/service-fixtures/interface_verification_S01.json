@@ -2,7 +2,7 @@
   "revision": "S01",
   "fabrication_release": false,
   "rated_load_kg": null,
-  "test_scope": "Nominal exported B-rep geometry only, not strength, stability, tolerances, floor capacity or an approved lifting/removal sequence.",
+  "test_scope": "Nominal exported B-rep geometry only, not strength, stability, tolerances, floor capacity or an approved lifting/removal sequence. Pin extraction cylinder checks below compare only the S01 cradle against the nominal cylinder; they do not establish installed-wheel or tool access.",
   "chassis_trestles_vs_frame_R07": {
     "positive_volume_intersections_mm3": [],
     "zero_gap_solid_contacts": [
@@ -261,7 +261,8 @@
         260
       ],
       "positive_volume_intersections_mm3": [],
-      "zero_gap_solid_contacts": []
+      "zero_gap_solid_contacts": [],
+      "tested_pair": "S01 cradle versus nominal pin extraction cylinder ONLY; wheel and tool excluded"
     },
     {
       "axis": "X",
@@ -272,7 +273,8 @@
         260
       ],
       "positive_volume_intersections_mm3": [],
-      "zero_gap_solid_contacts": []
+      "zero_gap_solid_contacts": [],
+      "tested_pair": "S01 cradle versus nominal pin extraction cylinder ONLY; wheel and tool excluded"
     }
   ],
   "important_not_tested": [
@@ -331,5 +333,10 @@
         150.00000596046448
       ]
     }
-  ]
+  ],
+  "known_installed_wheel_obstruction": {
+    "evidence_file": "pin_axis_tire_obstruction.json",
+    "result": "The installed original tire model contains points on both pin axes at X offsets \u00b1220 mm; the full \u00b1260 mm extraction corridor is obstructed.",
+    "scope": "Original tire hidden profile assumptions remain; shorter extraction, offset tooling and wheel-first service are unqualified alternatives."
+  }
 }

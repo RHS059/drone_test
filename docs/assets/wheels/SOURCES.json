@@ -10,7 +10,19 @@
       "page_pdf_zero_index": 28,
       "page_printed": 27,
       "row": "MSPN 72204; 35x12.50R18/E 123Q",
-      "dimensional_facts": {"diameter_in": 34.5, "section_width_in": 12.5, "measuring_rim_in": 10, "approved_rim_width_in": [8.5, 11], "tread_depth_32nds_in": 18, "revolutions_per_mile_at45mph": 602, "max_single_load_lb": 3415, "pressure_for_catalog_load_psi": 75},
+      "dimensional_facts": {
+        "diameter_in": 34.5,
+        "section_width_in": 12.5,
+        "measuring_rim_in": 10,
+        "approved_rim_width_in": [
+          8.5,
+          11
+        ],
+        "tread_depth_32nds_in": 18,
+        "revolutions_per_mile_at45mph": 602,
+        "max_single_load_lb": 3415,
+        "pressure_for_catalog_load_psi": 75
+      },
       "limits": "Dimensions measured on 10in rim; actual dimensions on selected 8.5in rim unverified. No detailed geometry or deformed radius supplied."
     },
     {
@@ -19,7 +31,18 @@
       "publisher": "EVO Corse official shop",
       "part": "SE5240060141",
       "rendered_kit": "CM0750180040-5",
-      "facts": {"diameter_in": 18, "width_in": 8.5, "offset_mm": 18, "lug_count": 5, "pcd_mm": 165.1, "center_bore_mm": 114.1, "nut_seat": "flat (Piatto)", "steel_insert": false, "centering_ring": false, "published_load_kg_per_wheel": 1400},
+      "facts": {
+        "diameter_in": 18,
+        "width_in": 8.5,
+        "offset_mm": 18,
+        "lug_count": 5,
+        "pcd_mm": 165.1,
+        "center_bore_mm": 114.1,
+        "nut_seat": "flat (Piatto)",
+        "steel_insert": false,
+        "centering_ring": false,
+        "published_load_kg_per_wheel": 1400
+      },
       "limits": "No detailed rim cross-section, lug bore diameter, pad thickness, finished fits or STEP obtained. URL query differs from rendered kit; rendered SKU and product data used. Catalog load does not qualify the original model."
     },
     {
@@ -27,8 +50,18 @@
       "url": "https://evocorse.com/en/product/end-nut-lug-for-land-rover-m16x1-5-black-zinc-plated/",
       "publisher": "EVO Corse",
       "part": "CM0750180040",
-      "facts": {"thread": "M16x1.5", "seat": "flat with washer", "hex_mm": 27, "length_mm": 51.5, "exterior_diameter_mm": 38.5, "mass_g": 212},
-      "limits": "Nuts omitted from this model. Overall length does not establish thread depth, projection or engagement."
+      "facts": {
+        "thread": "M16x1.5",
+        "seat": "flat with washer",
+        "hex_mm": 27,
+        "length_mm": 51.5,
+        "exterior_diameter_mm": 38.5,
+        "mass_g": null,
+        "raw_weight_field": 212,
+        "weight_unit_verified": false,
+        "structured_product_mass_kg": 0.217
+      },
+      "limits": "Nuts omitted from this model. Overall length does not establish thread depth, projection or engagement. Weight field units are unverified; no nut mass is inferred. Product JSON-LD specifies0.217kg, conflicting with an assumed grams reading of212; exact installed mass remains unresolved."
     }
   ]
 }

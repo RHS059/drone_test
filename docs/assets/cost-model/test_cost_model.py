@@ -86,6 +86,10 @@ class CostModelChecks(unittest.TestCase):
             self.assertIsNone(o['complete_operating_cost_usd_per_hour'])
             self.assertIsNone(o['fully_burdened_cost_usd_per_hour'])
             self.assertIsNone(o['whole_rover_runtime_hours'])
+    def test_unitless_nut_weight_remains_unknown(self):
+        self.assertIsNone(P['wheel_nuts']['unit_mass_kg'])
+        self.assertIsNone(M['mass_context']['additional_catalog_nuts_kg'])
+
     def test_csv_matches_json(self):
         with (HERE/'BOM.csv').open(newline='') as f:
             rows=list(csv.DictReader(f))

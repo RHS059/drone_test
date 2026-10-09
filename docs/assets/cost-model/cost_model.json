@@ -502,14 +502,14 @@
       "pricing_status": "included_in_bundle_no_separate_allocation",
       "price_source_id": null,
       "included_in_cost_of": "rims",
-      "unit_mass_kg": 0.212,
-      "mass_basis": "source_snapshot_or_catalogue_not_weighed",
+      "unit_mass_kg": null,
+      "mass_basis": "unknown",
       "included_in_pinned_mass_subtotal": false,
       "source_ids": [
         "wheel_nuts",
         "rim_price"
       ],
-      "notes": "Thirty nuts included in six priced rim bundles; no independently allocated unit cost.6.36 kg is published additional mass outside the pinned976.36 kg snapshot. Stud thread/engagement remain unqualified.",
+      "notes": "Thirty nuts included in six priced rim bundles; no independently allocated unit cost.The displayed weight212 has no units while Product JSON-LD states0.217 kg; reconcile manufacturer fields before assigning nut mass. It remains unknown and excluded from the pinned model subtotal. Stud thread/engagement remain unqualified.",
       "quote_date": null,
       "is_supplier_quote": false,
       "price_observed_on": null,
@@ -1424,7 +1424,7 @@
     "source_snapshot_mass_kg": 976.349355621963,
     "source_snapshot_corner_revision": "C02_R06",
     "revision_reconciliation": "Approved C02_R06 replaces the six R04 uprights with R05 uprights at8.853733428185155kg each. Other included masses and attachment poses unchanged. Reconciled subtotal976.3493556219631kg; source snapshot may still be R05.",
-    "additional_catalog_nuts_kg": 6.36,
+    "additional_catalog_nuts_kg": null,
     "additional_catalog_nuts_in_pinned_subset": false,
     "no_recomputed_complete_mass": true,
     "warning": "Pinned subtotal combines nominal CAD masses and known catalogue components. Many physical parts remain unknown. The extra nuts do not complete the mass model."
@@ -1705,7 +1705,7 @@
       },
       {
         "artifact": "mass_cost_ledger_C02_R06.json",
-        "sha256": "91c57f9638d88cb3f82fd17619e260c0b519b586ebd9d41b3a3b315429c54748"
+        "sha256": "fa0fe76aed8de417da615cd19d9058186c6b4ab743f5de0a8a3a3f6fa058753c"
       },
       {
         "artifact": "interface_contract_C02_R06.json",
@@ -1721,7 +1721,7 @@
       },
       {
         "artifact": "wheels/SOURCES.json",
-        "sha256": "0c54730f70fe086ecd5c3e955317a9697ea8f841737c5a8f2d418cda35fd84d8"
+        "sha256": "09880f820663414d7e28c54643013575646de3d140bb8b7bc540166acf956f1a"
       },
       {
         "artifact": "legacy:docs/costs.json",

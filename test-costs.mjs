@@ -13,3 +13,5 @@ assert.throws(()=>operatingScenario({...example,power:NaN},6.144),RangeError);
 assert.throws(()=>operatingScenario({...example,tariff:-1},6.144),RangeError);
 assert.throws(()=>operatingScenario({...example,depth:2},6.144),RangeError);
 console.log('PASS: exact-currency source baskets, null unknowns, three declared scenario fixtures and invalid-input gates. No actual operating-cost or full-build claim.');
+
+const correctedMassModel=JSON.parse(fs.readFileSync('docs/assets/cost-model/cost_model.json'));assert.equal(correctedMassModel.parts.find(p=>p.id==='wheel_nuts').unit_mass_kg,null);assert.equal(correctedMassModel.mass_context.additional_catalog_nuts_kg,null);

@@ -113,10 +113,10 @@
     "wheeloutputstuds,inputnuts,axialretainers/cotters",
     "steeringactuators/tierods(notmodeled)"
   ],
-  "published_extra_known_mass_kg": {
-    "30EVOflatnuts_at_212g": 6.36
-  },
+  "published_extra_known_mass_kg": {},
   "not_total_vehicle_mass": true,
   "cost_currency": null,
-  "all_costs_quote_required": true
+  "all_costs_quote_required": true,
+  "wheel_nut_mass_kg": null,
+  "wheel_nut_mass_note": "Visible manufacturer weight212 has no units; Product JSON-LD specifies0.217kg. Fields require reconciliation. Previous6.36kg arithmetic is withdrawn; nut mass was never in the corner or vehicle subtotal."
 }

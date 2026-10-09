@@ -53,11 +53,11 @@ parts['original_upright_C02_R04']=u
 a=load(gear/'wheel_adapter_C02_R02.step').rotate((0,0,0),(1,0,0),-90).translate((0,928,-250))
 parts['original_wheel_adapter_C02_R02']=a
 report['cradle_vs_C02_original_corner']={n:screen(c,s,n)for n,s in parts.items()}
-# Extraction is symmetric ±X up to 180 mm beyond nominal pin envelope.
+# Fixture-only extraction-cylinder screen. This does NOT test the wheel or tool; the installed tire obstructs the full corridor.
 report['pin_extraction_screens']=[]
 for z in [-80,-420]:
  e=cyl(14,520,(-260,812,z),(1,0,0))
- report['pin_extraction_screens'].append({'axis':'X','pin_Z_mm':z,'envelope_radius_mm':14,'X_span_mm':[-260,260],**screen(c,e,f'pin {z}')})
+ report['pin_extraction_screens'].append({'tested_pair':'S01 cradle versus nominal extraction cylinder ONLY; wheel and tool excluded','axis':'X','pin_Z_mm':z,'envelope_radius_mm':14,'X_span_mm':[-260,260],**screen(c,e,f'pin {z}')})
 report['important_not_tested']=['Proprietary drive geometry is not read or redistributed; its envelope/mass/CG and lifting method are unqualified.','Wishbone support fixtures and coilover energy control are absent: no permission to withdraw the pins.','All suspension sweep and lowered/raised load-transfer states: only C02 q=0 static fit screened.','Human/tool clearance beyond the stated pin extraction cylinder.','Cradle insertion beneath vehicle, actual jack/hoist lift points and equipment path.','Body-frame service connectors/brake isolation.','Whole-vehicle CG, support reactions and floor loading.']
 # File roundtrip checks, including named GLB node count matching STEP solid count.
 report['export_roundtrip']=[]
