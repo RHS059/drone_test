@@ -15,6 +15,8 @@ def export(s,name,notes):
  # Interface-local model uses CAD X/Y/Z; assembly conversion supplied in contract.
  glb([(name,s)],P/(name+'.glb'))
  r={'part':name,'original_geometry':True,'not_vendor_CAD':True,'not_fabrication_released':True,'bounds_mm':exact_bounds(s),'solid_count':len(s.Solids()),'BRep_valid':s.isValid(),'density_kg_m3':7850,'density_assumed':True,**properties(s),'notes':notes}
+ if notes.get('NOT_physical_bearing_model'):
+  r['filled_fit_envelope_mass_NOT_product_kg']=r['mass_kg'];r['mass_kg']=None;r['inertia_com_kg_m2']=None
  (P/(name+'_report.json')).write_text(json.dumps(r,indent=2));print(name,r['mass_kg'],flush=True)
  return r
 
@@ -120,6 +122,8 @@ def export_group(parts,name,notes):
  for n,s in parts:ass.add(s,name=n)
  ass.export(str(P/(name+'.step')));glb(parts,P/(name+'.glb'))
  comp=cq.Compound.makeCompound([s for _,s in parts]);r={'group':name,'count':len(parts),'all_BRep_valid':True,'bounds_mm':exact_bounds(comp),'density_assumption_kg_m3':7850,**properties(comp),'notes':notes}
+ if notes.get('NOT_physical_bearing_model'):
+  r['filled_fit_envelope_mass_NOT_product_kg']=r['mass_kg'];r['mass_kg']=None;r['inertia_com_kg_m2']=None
  (P/(name+'_report.json')).write_text(json.dumps(r,indent=2));print(name,r['mass_kg'],flush=True)
 
 def pin_x(x,y,z,length=130,head_radius=16):

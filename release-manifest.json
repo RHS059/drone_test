@@ -4,13 +4,13 @@
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 885,
-      "sha256": "ff5497776577b38abf8aa8f70866e2a9501e1f0496fd62ed74ce3b7a4abb618c"
+      "bytes": 908,
+      "sha256": "5cf54b3db309c14d0bb4ed684709985b0714e2435b2ba93247a80eff4d1eca5f"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 558,
-      "sha256": "82bd31bc0f7d8afb5707b0abb8b4a8e1ca6696786c5078b7ec5cb8efae4783d4"
+      "bytes": 658,
+      "sha256": "3a1055cad69543a77ba30786921f34c5512e9e33da96605ccb81e3061c38d615"
     },
     {
       "path": "BASELINE.md",
@@ -204,8 +204,8 @@
     },
     {
       "path": "docs/assets/corners/generate_interfaces.py",
-      "bytes": 10024,
-      "sha256": "39e8f1244b079ac4560a0202aef614ac39b1f54ddaa64ec8ab8aec0e340cad1f"
+      "bytes": 10326,
+      "sha256": "5ddcf141de25a0695e8f3e75c4846640369a9de243b561e4efc0ffb7fc8938b3"
     },
     {
       "path": "docs/assets/corners/inner_backing_C02_R01.glb",

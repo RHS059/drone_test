@@ -1,7 +1,7 @@
 name: Validate CAD reconstruction
 on:
   push:
-    branches: [main, 'aella/six-wheel-baseline-01', 'aella/actual-cad-mechanisms']
+    branches: [main, 'aella/six-wheel-baseline-01', 'aella/actual-cad-mechanisms', 'aella/six-wheel-rover-integration']
   pull_request:
 permissions:
   contents: read
@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --check docs/app.js && node --check docs/scene.js && node --check docs/model.js
+      - run: node --check docs/app.js && node --check docs/scene.js && node --check docs/model.js && node --check docs/rover.js
       - run: node test-model.mjs
       - run: node test-cad.mjs
+      - run: node test-rover.mjs
       - run: node docs/contact/scripts/validate.mjs
