@@ -2676,8 +2676,8 @@
     },
     {
       "path": "docs/connected/body-scene.mjs",
-      "bytes": 1369,
-      "sha256": "0f570af3bb675979d3994337f518284c13eb1c94c137f4703663583904eadeae"
+      "bytes": 1391,
+      "sha256": "2af4f8e18669be2fce0e0a50548872b544626dc46b1a0ad78199a0bc13b10bdb"
     },
     {
       "path": "docs/connected/connected-mechanics.mjs",
@@ -3046,8 +3046,8 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 4788,
-      "sha256": "db402404d71f0ab3d3dd3eda4e8d38bdf856d2e6684331c00dec6c905890b560"
+      "bytes": 4832,
+      "sha256": "de95159eb35063819f711f65c0547c8996764bf771c199f52f63aaa71d580bb7"
     },
     {
       "path": "docs/scene.js",
@@ -3341,8 +3341,8 @@
     },
     {
       "path": "test-current-rover.mjs",
-      "bytes": 1978,
-      "sha256": "fd66c3f01bfebd08427f48172e9018e7643ffee2ab7c3cb05f19b69146a89a4c"
+      "bytes": 1992,
+      "sha256": "c2e1e15409516fff78607af785cb8a2827535fa8edb1a4fc7957ac8f277a5830"
     },
     {
       "path": "test-electrical-scene.mjs",
@@ -3351,8 +3351,8 @@
     },
     {
       "path": "test-main-pair.mjs",
-      "bytes": 2382,
-      "sha256": "446f546f9ee70fc9be036d9c3d7cf3fcd80607ae9756d87572c36387a09324d7"
+      "bytes": 2396,
+      "sha256": "aa00c17bffed7329ba454f1e010f26d4fea39a1449e48bbf76d2d6e6ec35a73d"
     },
     {
       "path": "test-model.mjs",
@@ -3366,8 +3366,8 @@
     },
     {
       "path": "test-panel-visibility.mjs",
-      "bytes": 1859,
-      "sha256": "ed007f058695ddf429977694cacb5c9448ad9d1ad4539fc0c032a019135fca6b"
+      "bytes": 1873,
+      "sha256": "ca2b53b6d99edfda2d6683b8557c1f1383849789fd50a3f83050fded4707d7d8"
     },
     {
       "path": "test-real-gltf-body.mjs",

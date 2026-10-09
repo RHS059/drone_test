@@ -1,5 +1,5 @@
 import{applyBatteryPolarity}from'./apply-battery-polarity.mjs';
-import{applyNamedPartPatch,bindServiceVisibility}from'./named-part-patch.mjs';
+import{applyNamedPartPatch,bindServiceVisibility}from'./named-part-patch.mjs?v=panel-visibility-01';
 export async function loadConnectedBody(root,asset,{contract,basePath='./assets/connected-body/'}={}){
  if(!contract?.patches||!contract.service_groups)throw Error('Missing retained body contract');
  const [body,...deltas]=await Promise.all(['body.glb.gz',...contract.patches.map(p=>p.file)].map(f=>asset(basePath+f,'Original retained body or battery interface')));

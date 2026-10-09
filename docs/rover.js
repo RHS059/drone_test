@@ -1,7 +1,7 @@
 import{bindMainPairGraph}from'./connected/main-pair-graph.mjs';
 import{loadConnectedElectrical}from'./connected/electrical-scene.mjs';
 import{solveConnectedMotion}from'./connected/connected-motion.mjs';
-import{loadConnectedBody}from'./connected/body-scene.mjs';
+import{loadConnectedBody}from'./connected/body-scene.mjs?v=panel-visibility-01';
 import{loadConnectedMechanics}from'./connected/connected-mechanics.mjs';
 import{cornerPose,middlePose}from'./connected/kinematics_C04_R03.mjs';
 import{makeSpringProfile}from'./connected/spring_profile_runtime_C04_R08.mjs';
@@ -10,7 +10,7 @@ export async function loadRover(root,asset){
  const get=async p=>{const r=await fetch(p);if(!r.ok)throw Error('Missing connected component contract: '+p);return r.json();},P='./assets/connected/';
  const [structuralManifest,jointManifest,driveContract,wheelContract,shockAnchors,actuatorContract]=await Promise.all(['structure.json','joints.json','drive.json','wheel.json','shock.json','actuator.json'].map(n=>get(P+n)));
  const rig=await loadConnectedMechanics(root,asset,{cornerPose,middlePose,makeSpringProfile,structuralManifest,jointManifest,driveContract,wheelContract,shockAnchors,actuatorContract,files:{structure:P+'structure.glb.gz',joints:P+'joints.glb.gz',drive:P+'drive.glb.gz',wheel:P+'wheel.glb.gz',shock:P+'shock.glb.gz'}});
- const bodyContract=await get('./assets/connected-body/body-contract.json');
+ const bodyContract=await get('./assets/connected-body/body-contract.json?v=panel-visibility-01');
  const connectedBody=await loadConnectedBody(root,asset,{contract:bodyContract});const body=connectedBody.assembly;
  const removable=connectedBody.snapshot().service.removable;
  const electricalContract=await get('./assets/connected-electrical/electrical-contract.json');const electrical=await loadConnectedElectrical(root,asset,{contract:electricalContract});
