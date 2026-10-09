@@ -1,16 +1,16 @@
 {
-  "release": "six-wheel-steering-geometry-C03-02",
+  "release": "six-wheel-motion-study-C03-R03",
   "whole_robot_qualified": false,
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 989,
-      "sha256": "6a911ddd152b41de87b1ec22d5da454f43b0262f051b810f9a54b03a43ea629d"
+      "bytes": 1019,
+      "sha256": "0e40dc6ae50583ba784d961347cca822ea783c5f05454ad24cad8de790370e3c"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 769,
-      "sha256": "39d2bf5e30acf77eaebcb2d5f61156b814082970561840fda92051193e120f1c"
+      "bytes": 809,
+      "sha256": "f72a6a95eb920df58fb2dc743b6a421c7b1be13e7222c5c52d72df5c696d057d"
     },
     {
       "path": "BASELINE.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1142,
-      "sha256": "f744bc4b247fd02796c1c1244285976a84ce20d29c3138eead9e6d09f7f5abe5"
+      "bytes": 1295,
+      "sha256": "b434b61aea30c6cca49531ad0d457f53860df2e2c498d5975580333183ded7d4"
     },
     {
       "path": "RECONSTRUCTION.md",
@@ -34,13 +34,13 @@
     },
     {
       "path": "docs/RECONSTRUCTION.md",
-      "bytes": 6510,
-      "sha256": "ccafe034bbf9fd03bef7b1d9ecd004e0f7ef3f8f1edf0a75683f3cb334b39855"
+      "bytes": 7675,
+      "sha256": "d522ba354d39f5eaf18891bd204932cbe72de2896e53ce56e2cf9c47bb803c8e"
     },
     {
       "path": "docs/app.js",
-      "bytes": 4185,
-      "sha256": "529f72e7c16895fd69b76552d8d45b4c937eb6f5b50ad4201acb535d59b729ed"
+      "bytes": 5282,
+      "sha256": "543b00ba2fa2af606765b407ab99cf538258b0bf839f9abbf2c4a3baf36aae6a"
     },
     {
       "path": "docs/assembly.json",
@@ -419,28 +419,28 @@
     },
     {
       "path": "docs/assets/cost-model/BOM.csv",
-      "bytes": 84073,
-      "sha256": "0a5f11cc3ab63c84b35f2e0ab1a6e1466b04c3141fa360250e693771ab572b62"
+      "bytes": 84163,
+      "sha256": "7041d4e5479e02a88012579e014f2be56edb2afc9067b53338d734b61c5ce396"
     },
     {
       "path": "docs/assets/cost-model/README.md",
-      "bytes": 12297,
-      "sha256": "ccbb207de6183d428ad779147941df3567276cb71513e36ca346627ea9aa2718"
+      "bytes": 12749,
+      "sha256": "41a40a918cdc284548c2fa17fdf55025856047ce4b6c5b5452ecf3be20e3fae8"
     },
     {
       "path": "docs/assets/cost-model/build_cost_model.py",
-      "bytes": 48044,
-      "sha256": "87b07b6fde8c8eff2f84af469357e7b1044e11c567503abeef382a78bc824763"
+      "bytes": 48263,
+      "sha256": "7e13e4128a371166a20ed9bc812a4994feeb5fac5a39bb9f1c3b57eb7aa41d77"
     },
     {
       "path": "docs/assets/cost-model/checksums.json",
       "bytes": 721,
-      "sha256": "10290c0dd7dd2011693e5ef94ebfe63ab1575e1409a33d876b4fbbf329644b47"
+      "sha256": "061944df0f27004492ced184ebece567c98359058d3f39e8b549ce17745a68d7"
     },
     {
       "path": "docs/assets/cost-model/cost_model.json",
-      "bytes": 213220,
-      "sha256": "d596223ada50657b57a8b7d7bcdf99cf991d8dcfce6ef48e7d5d0e8d4cdede74"
+      "bytes": 213456,
+      "sha256": "6436208c2da69a38fc2b31fcf2cf385c298baf6c0585f881f8a1dbe962f68e41"
     },
     {
       "path": "docs/assets/cost-model/manufacturer-mass-evidence.json",
@@ -450,17 +450,17 @@
     {
       "path": "docs/assets/cost-model/sources.json",
       "bytes": 21267,
-      "sha256": "3fd7b59e551e86002a94329210432043db4946f49abbb57c29f454ec1f415e9b"
+      "sha256": "dd31fffeaec03e30586672690fc3ef127eee68a8c664cc27bf80f23a9b77a240"
     },
     {
       "path": "docs/assets/cost-model/test_cost_model.py",
-      "bytes": 10424,
-      "sha256": "a7c74b37f9f0461e517e0bfdc4c4f0d9efb0e48dae26cf996e077b7bb09c5cb4"
+      "bytes": 11403,
+      "sha256": "ebb6796f9a3270f50d2f7ba2ba7913d35e68e3e7b59b9356a66a3c467b4f5ec3"
     },
     {
       "path": "docs/assets/cost-model/validation.json",
-      "bytes": 613,
-      "sha256": "ff85e34fe45040a66b358a74fe3a94d1754ace5f7d64a17172559dc9a9d4c152"
+      "bytes": 733,
+      "sha256": "52a921f4575f3e342e74b6b5116da3f4ce90717cc0b9cb49bc2fd7b1146b8c65"
     },
     {
       "path": "docs/assets/mechanical/DFM_ATTRIBUTION.md",
@@ -599,8 +599,8 @@
     },
     {
       "path": "docs/assets/mechanical/mass-power-snapshot.json",
-      "bytes": 35204,
-      "sha256": "1894efc059927a0dc6a7795c75c1531bf6af72d524630e3c6beada2ba5956618"
+      "bytes": 35856,
+      "sha256": "870f03bbc8bd3003b7f64c972bdea59cce52bd15a0787328620ef83cb68cb9e7"
     },
     {
       "path": "docs/assets/mechanical/test_dfm.py",
@@ -1188,6 +1188,21 @@
       "sha256": "a4a59a9e420a02bc039c1ea94506fea5c13ae9bd1f3c532ad7ff8510c3a15dde"
     },
     {
+      "path": "docs/assets/steering/C03_R03_assembly_glb.zip",
+      "bytes": 8463719,
+      "sha256": "1eb4ca21fdf1a737c6d2107ca4769b1718f6028daef099904d3a2060785f520d"
+    },
+    {
+      "path": "docs/assets/steering/C03_R03_assembly_step.zip",
+      "bytes": 4610068,
+      "sha256": "d307fcd24f22679973b8ba0f530320469be2a320684f8fae8139c28300a654b4"
+    },
+    {
+      "path": "docs/assets/steering/C03_R03_sources_tests.zip",
+      "bytes": 11620032,
+      "sha256": "09ea9688aa3c212bef776a525f1eec74eb1753a04ff622ca62dfd840d9b02e09"
+    },
+    {
       "path": "docs/assets/steering/C03_assembly_glb.zip",
       "bytes": 7436763,
       "sha256": "30766ad999f0c8e74475e2696ca2ce08f4e9bd235c5c1d89de77f5cfad2d4d2e"
@@ -1208,9 +1223,19 @@
       "sha256": "402999d03443dec9a65594746f374e078de477457d57c91afe52a942f2eac1f6"
     },
     {
+      "path": "docs/assets/steering/PUBLIC_WHITELIST_SHA256_C03_R03.json",
+      "bytes": 62520,
+      "sha256": "378004141aba4d4c4655103afda844886b322e34e8d2b9a794b8ffb46975ca64"
+    },
+    {
       "path": "docs/assets/steering/README_C03_R01.md",
       "bytes": 5625,
       "sha256": "a42a6e0224aaba6e2a0930d7880c853df4f6d78d2ba4b93331bc88d2f2b373f4"
+    },
+    {
+      "path": "docs/assets/steering/README_C03_R03.md",
+      "bytes": 3605,
+      "sha256": "f4b731eb7908241b527219908aceae8128289cbfc1437d1e19ebed69b27749d5"
     },
     {
       "path": "docs/assets/steering/REPRODUCE.md",
@@ -1218,7 +1243,17 @@
       "sha256": "65bba5c6493cfae599c2282599e85a7ed120a3bb0aa76e00f03a5b11cdfb9422"
     },
     {
+      "path": "docs/assets/steering/REPRODUCE_C03_R03.md",
+      "bytes": 3605,
+      "sha256": "f4b731eb7908241b527219908aceae8128289cbfc1437d1e19ebed69b27749d5"
+    },
+    {
       "path": "docs/assets/steering/SOURCE_AND_RIGHTS.md",
+      "bytes": 653,
+      "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
+    },
+    {
+      "path": "docs/assets/steering/SOURCE_AND_RIGHTS_C03_R03.md",
       "bytes": 653,
       "sha256": "b3dc4ffc3ccac86adf56a18c04f2cbee2f33e8583bf230aa2d6a082da7c27079"
     },
@@ -1278,14 +1313,84 @@
       "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
     },
     {
+      "path": "docs/assets/steering/evidence_C03_R03/C03-upperR03-lowerR04-private-arm-summary.json",
+      "bytes": 11398,
+      "sha256": "2947ca6c0c0d096de657ce7706c8f4032191db44e040c0f3397a1996d0c6d05e"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/C03-upperR06-private-arm-summary.json",
+      "bytes": 11169,
+      "sha256": "deed2df8f947e01deb654d6454211ba5a79cbcbe596606350d24e20ad000d0a5"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/C03_R03-private-composite-summary.json",
+      "bytes": 5449,
+      "sha256": "5b56161c2852756cef4ec62c2dfcddb137ad91bb83bb466478a09616661f40c6"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/C03_R03-public-safe-wheel-evidence.json",
+      "bytes": 610,
+      "sha256": "1305c6a562b3f53b41bf8639fddee4c63549a2ec1ade595fc1bd7155c0368037"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/PUBLIC_SAFE_MANIFEST.json",
+      "bytes": 1551,
+      "sha256": "38bfbbec444b5ce5bc1086a67aab5374de8f6328bbf058635777b63b249b0612"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/R03-cross-corner-arm-bounds.json",
+      "bytes": 44337,
+      "sha256": "157ec5dd3684f2561ba8343da60a2693eebcb901d16322b95346f922c5c8582e"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/actuator_comparison_R01.json",
+      "bytes": 4930,
+      "sha256": "12c63f1f270539aa13a2acd56d77577b1879730d0e5bca3233d87cdd07f4d9ed"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/arm-inheritance-R03/numerical_audit.json",
+      "bytes": 599831,
+      "sha256": "e1275bd76d807be16ca1d779fb7309805815badaadb5a3b0be5b06552e7ffb81"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/motor-placement-numeric-contract.json",
+      "bytes": 3054,
+      "sha256": "d03b130f5f9c808d17e7c7a2b16bb0db2184b72fb11ce60b2b34f6b10c4bbbf6"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/private-C03-nominal-motor-wheel-fit.json",
+      "bytes": 10098,
+      "sha256": "13bf100d7fe553ac49e92792fba8e524350008b0695c8f3b00b2518b51d29f2d"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/private-C03-q0-12case-summary.json",
+      "bytes": 10856,
+      "sha256": "8c18569a8509810196f115cbc9f580be8a82efe46df299bbc51e51942c182a59"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/private-C03-travel-final-summary.json",
+      "bytes": 19159,
+      "sha256": "226a3c59d7a0b64112b6c0062bd7fb6e3780b011c757600f8915df30e3799ecd"
+    },
+    {
+      "path": "docs/assets/steering/evidence_C03_R03/selected-revision-equivalence.json",
+      "bytes": 880,
+      "sha256": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed"
+    },
+    {
       "path": "docs/assets/steering/index.html",
-      "bytes": 2661,
-      "sha256": "3f7873325140db915124be0b775e4657b2a30216cab53e56a0ed93d4f0a80391"
+      "bytes": 3674,
+      "sha256": "f3f91ba8b8fe633dedd3a4027d9e457c0927d7e74dd1d1c8812ae8ff502df681"
     },
     {
       "path": "docs/assets/steering/interface_contract_C03_R01.json",
       "bytes": 16477,
       "sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b"
+    },
+    {
+      "path": "docs/assets/steering/interface_contract_C03_R03.json",
+      "bytes": 20217,
+      "sha256": "5fd47044d4385792a289c6418950ec021403569411d8a8e40f2c9339c0bc569b"
     },
     {
       "path": "docs/assets/steering/kinematics_C03_R01.js",
@@ -1298,6 +1403,11 @@
       "sha256": "c2b160ea073de12e695e506146b2e80763c09b3a1ada0b0931d87ed2a0930d37"
     },
     {
+      "path": "docs/assets/steering/mass_cost_ledger_C03_R03.json",
+      "bytes": 37613,
+      "sha256": "47d005831fc01d3d1f4e6e5757a0cf41869316eadc25b6e5ad8778f3ba85851b"
+    },
+    {
       "path": "docs/assets/steering/original_steering_C03_R01.glb.gz",
       "bytes": 7385842,
       "sha256": "affbe8ce886013ad1df51a6ba56dc9eeab579163da76880f7a16139042b131fc"
@@ -1308,14 +1418,34 @@
       "sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
     },
     {
+      "path": "docs/assets/steering/original_steering_C03_R03.glb.gz",
+      "bytes": 8424492,
+      "sha256": "e00479aadc092d5c0d39e0c760cc29dcba3d716e84fb769315497798cd685123"
+    },
+    {
+      "path": "docs/assets/steering/original_steering_C03_R03_manifest.json",
+      "bytes": 60361,
+      "sha256": "4e5da71d14f5b259588b43020af275e80d5beffb71473aca0f386dc70f7a4157"
+    },
+    {
       "path": "docs/assets/steering/runtime-packaging.json",
       "bytes": 474,
       "sha256": "79bc55768ec9e53ef6eb6809b15143f1f29eabb70d291520d4786f00af5509e6"
     },
     {
+      "path": "docs/assets/steering/runtime-packaging_C03_R03.json",
+      "bytes": 474,
+      "sha256": "33cab6fe3790442f48c01b05ee9dbb74ee8bd302062cd4d996639f10da2f3fae"
+    },
+    {
       "path": "docs/assets/steering/source-archive-packaging.json",
       "bytes": 1089,
       "sha256": "c7acd17e179a76ddd8bb3d77a552d0a9cedc46ecc1c056f1c59f00b7962423f4"
+    },
+    {
+      "path": "docs/assets/steering/source-archive-packaging_C03_R03.json",
+      "bytes": 1067,
+      "sha256": "0f30eee96ddfbff90742b357a1daedf0e89c0d6a27c5a797b574be7668f462e8"
     },
     {
       "path": "docs/assets/wheels/ASSUMPTIONS.md",
@@ -1649,8 +1779,8 @@
     },
     {
       "path": "docs/cost-ui.js",
-      "bytes": 5172,
-      "sha256": "e1e506772c01603d18639df3b009430abc1a27a771ca3a08e3e6d655bc1cf5ca"
+      "bytes": 5168,
+      "sha256": "ed82027cd02252e15250f6e14c7f02b12d1fd91ac5f79d62192faaf2f6a54561"
     },
     {
       "path": "docs/costs.json",
@@ -1659,8 +1789,8 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 13060,
-      "sha256": "f13fc6daf2f5cd5a650440f950af3846697ed0fa2f66523da23e9aa3db085158"
+      "bytes": 13770,
+      "sha256": "681893fc32aaeee1706b7c4cd4607d342aabfb6b7ed4b9f30a88a0281c57e632"
     },
     {
       "path": "docs/kinematics.js",
@@ -1684,13 +1814,13 @@
     },
     {
       "path": "docs/rover.js",
-      "bytes": 5487,
-      "sha256": "33332d0220c0a1d4962e3274422d4c7df74d0a6cee3465351ede6e770c6a954a"
+      "bytes": 6306,
+      "sha256": "95a81df6393838fea949b122f23a5c5abb434289874eafe236595fe01008578f"
     },
     {
       "path": "docs/scene.js",
-      "bytes": 7073,
-      "sha256": "c9950d78db751f6bd46fd0cea87c479e689424c2dba64942806c69aaa019433c"
+      "bytes": 7151,
+      "sha256": "eec944f52ea501efe8bd350308bcc0c3db8b55b3cd1fa15699010b166c03db00"
     },
     {
       "path": "docs/steering-transforms.js",
@@ -1699,8 +1829,8 @@
     },
     {
       "path": "docs/steering.js",
-      "bytes": 2289,
-      "sha256": "393d2991cca391d2631d76ed4abbad5bae13ea8657e2b5e397efadfd0254777a"
+      "bytes": 2562,
+      "sha256": "dc2bcab41efcfc8032cdb78512b45f049d06f99047e4ab38fcac7309fe4228b4"
     },
     {
       "path": "docs/style.css",
@@ -1784,8 +1914,8 @@
     },
     {
       "path": "test-controls-ready.mjs",
-      "bytes": 4522,
-      "sha256": "85f0c030e2eeddd11dc756930245997ed8c71c2675e19de284eae43753730ae6"
+      "bytes": 6461,
+      "sha256": "3accc49032cd2e8ba8e95d9ab1c496eefe956a2fff4fea7e144a23a39b1d7279"
     },
     {
       "path": "test-costs.mjs",
@@ -1798,14 +1928,19 @@
       "sha256": "0d7ae4a12e0ac0eca1d7233811f5e44960256143cfee4afffa721a2aefaee56e"
     },
     {
+      "path": "test-motion-study.mjs",
+      "bytes": 3580,
+      "sha256": "cc21f61d1c112efb94f2ca18ca8ff377f844bdb110b762fbef7ba5dc09e3dbdb"
+    },
+    {
       "path": "test-rover.mjs",
       "bytes": 2641,
       "sha256": "9a8d4e5798e6e3ecb888a7d1fb1d7e297c118aaa7e70976486557c7d348d89d0"
     },
     {
       "path": "test-steering.mjs",
-      "bytes": 3572,
-      "sha256": "63231fa4295d99fca87051f0b5196f50cdaf57a18a8edc84f6952a1ac4d77b25"
+      "bytes": 5074,
+      "sha256": "d26f601e33c5ea3ab2b9a597f81d883c0f9e9a307567fa89acf614a349cdcfbf"
     }
   ]
 }

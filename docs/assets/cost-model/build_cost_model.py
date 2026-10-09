@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the C03_R01 plus two C02_R06 middle-corner cost reference model. Public observations, never quotations."""
+"""Build the C03_R03 plus two C02_R06 middle-corner cost reference model. Public observations, never quotations."""
 from pathlib import Path
 from decimal import Decimal
 import csv, hashlib, json, re
@@ -10,11 +10,11 @@ BASE=HERE.parent
 APP=BASE/'app' if STAGING else HERE.parents[2]
 ASSETS=APP/'docs/assets'
 OBSERVED='2026-10-09'
-REV='C03_R01'
+REV='C03_R03'
 MECHANICAL=Path('/workspace/shared/ugv-reconstruction/mechanical')
 LEDGER=(MECHANICAL/'running_gear_C03' if STAGING else ASSETS/'steering')/f'mass_cost_ledger_{REV}.json'
 MIDDLE_LEDGER=(MECHANICAL/'running_gear_C02' if STAGING else ASSETS/'corners')/'mass_cost_ledger_C02_R06.json'
-SNAPSHOT=BASE/'audit/mass-power-snapshot-C03_R01.json' if STAGING else ASSETS/'mechanical/mass-power-snapshot.json'
+SNAPSHOT=BASE/'audit/mass-power-snapshot-C03_R03.json' if STAGING else ASSETS/'mechanical/mass-power-snapshot.json'
 BODY=ASSETS/'body-power/verification.json'
 CONTRACT=LEDGER.with_name(f'interface_contract_{REV}.json')
 RIM_MASS_EVIDENCE=HERE/'manufacturer-mass-evidence.json'
@@ -89,8 +89,8 @@ source('c03_joint_interfaces','https://www.fkrodends.com/wp-content/uploads/2026
        'C03 engineering evidence uses AIN16 with two 16-12HB spacers per outer joint, and JMX12/JMXL12 tie ends with two 12-10HB spacers per tie joint. The authoritative assembly ledger fixes quantities. Exact installed masses, prices, load limits, fits and qualification remain unresolved.',
        not_price=True,retrieval='Existing C03 source_joint_selection.json and steering_actuator_joint_sources_C03_R01.json; no new vendor contact or price research.')
 source('c03_actuator_candidate','https://www.thomsonlinear.com/downloads/actuators/Linear_Actuators_G_ctuk.pdf','Thomson','manufacturer_family_candidate',
-       'Current C03_R01 contract reserves two HD48-B045, 200 mm stroke, M/M actuator candidates. This supersedes earlier 150 mm packaging research. No complete order code, exact mass, price, force/duty suitability or installed steering power is established.',
-       not_price=True,retrieval='C03_R01 contract and existing manufacturer-source research; source-only reconciliation.')
+       'Current C03_R03 contract reserves two HD48-B045, 200 mm stroke, M/M actuator candidates. This supersedes earlier 150 mm packaging research. No complete order code, exact mass, price, force/duty suitability or installed steering power is established.',
+       not_price=True,retrieval='C03_R03 contract and existing manufacturer-source research; source-only reconciliation.')
 source('c03_coilover_candidate','https://kingshocks.com/i-30504370-rs2008-cohr-2-0-rs-coil-over-shock-w-remote-res-8-stroke.html','King Shocks','manufacturer_family_candidate',
        'Six RS2008 Pure Race coilover candidates remain unqualified. Exact order configuration, springs, mass and price are unknown. Existing research records conflicting current and legacy dimensions; generic family data is not installed-hardware qualification.',
        not_price=True,retrieval='Existing C03 coilover_source_candidates.json; no new price or mass accepted.')
@@ -103,8 +103,8 @@ middle_ledger=json.loads(MIDDLE_LEDGER.read_text())
 rim_mass_evidence=json.loads(RIM_MASS_EVIDENCE.read_text())
 assert rim_mass_evidence['rim_api']['code']=='SE5240060141'
 assert float(rim_mass_evidence['rim_api']['peso_netto'])==15.1
-assert abs(snapshot['mass_known_subset_kg']-1123.7891292028824)<1e-8, 'C03 known-subset snapshot changed; review before updating.'
-assert Path(snapshot['corner_contract']).stem=='interface_contract_C03_R01'
+assert abs(snapshot['mass_known_subset_kg']-1127.4662815201427)<1e-8, 'C03 known-subset snapshot changed; review before updating.'
+assert Path(snapshot['corner_contract']).stem=='interface_contract_C03_R03'
 assert len(ledger['original_items'])==84
 
 parts=[]
@@ -127,9 +127,9 @@ for item in ledger['original_items']:
     row=part(item['node'],item['node'].replace('_',' '),'original:'+Path(item['source']).stem,item['quantity'],
         kind='original_fabrication',selection='modeled_original_development',
         mass=item['unit_mass_kg'],mass_snapshot=True,
-        notes='C03_R01 source ledger node. Four steering corners and two racks plus two C02_R06 middle corners only. Material, machining, finish, inspection and fastening require a fabrication quote. Not physically qualified.',
+        notes='C03_R03 source ledger node. Four steering corners and two racks plus two C02_R06 middle corners only. Material, machining, finish, inspection and fastening require a fabrication quote. Not physically qualified.',
         source_step_sha256=item['sha256'],source_step=item['source'],ledger_node=item['node'],
-        ledger_quantity=item['quantity'],assembly_group='middle_C02_R06' if item['node'].startswith('two_middle_') else 'steering_C03_R01')
+        ledger_quantity=item['quantity'],assembly_group='middle_C02_R06' if item['node'].startswith('two_middle_') else 'steering_C03_R03')
     row['mass_basis']=item['basis']
 for item in middle_ledger['items']:
     if item['mass_kg_per_corner'] is not None:
@@ -149,7 +149,7 @@ part('grippers','Robotiq2F-85 basic gripper','AGC-GRP-2F85',2,price=5205,currenc
 part('couplings','Robotiq controller-connected coupling (current CAD reference)','GRP-CPL-062',2,price=644,currency='USD',price_source='coupling_price',sources=['coupling_price','coupling_routes','coupling_external_route'],notes='Separate purchased electronics-containing coupling;original adapter cannot replace it. GRP-ES-CPL-062 and GRP-ES-CPL-077 are different SKUs. Current visual mesh remains a licensed reference;electrical route and exact cable/interface unresolved.')
 part('gripper_cable_interface','Gripper device cables,RS485/controller interface and required integration hardware',None,None,selection='required_unresolved',notes='Two grippers require validated power/communications. Counts and exact cable/USB/interface SKUs remain unknown;do not assume bare coupling price includes full route.',sources=['coupling_external_route','coupling_routes'])
 part('gripper_fingertips','Any additional approved gripper fingertips',None,None,selection='required_scope_unresolved',notes='Whether separately needed depends on confirmed AGC-GRP-2F85 package contents and task. Do not count included fingertips twice.',sources=['gripper_price'])
-part('spherical_bearings','Root and middle suspension bearing candidates','GE20ES candidate specification, manufacturer unresolved',56,selection='research_candidate',notes='C03_R01 ledger count: 56 root/middle GE20ES candidates. Replaces the old all-C02 count of 72. Eight outer AIN16 bearings are separate. Reference envelope rows do not add bearings.')
+part('spherical_bearings','Root and middle suspension bearing candidates','GE20ES candidate specification, manufacturer unresolved',56,selection='research_candidate',notes='C03_R03 ledger count: 56 root/middle GE20ES candidates. Replaces the old all-C02 count of 72. Eight outer AIN16 bearings are separate. Reference envelope rows do not add bearings.')
 part('coilovers','King Pure Race coilover and unselected spring candidates','King RS2008 candidate; exact configuration unresolved',6,selection='research_candidate',sources=['c03_coilover_candidate'],notes='Six candidates only. Exact spring selection, bearing/spacer package, damping, load and dimensions are unresolved. No price or installed mass.')
 for id,name,sku,qty in [
  ('outer_spherical_bearings','FK outer spherical bearing candidates','AIN16',8),
@@ -159,10 +159,10 @@ for id,name,sku,qty in [
  ('tie_misalignment_spacers','FK tie rod misalignment spacer candidates','12-10HB',16),
  ]:
     part(id,name,sku,qty,selection='research_candidate',sources=['c03_joint_interfaces'],
-         notes='Exact C03_R01 ledger quantity. Purchased configuration, finished fits, retention and operating loads require review. Unit price and accepted installed mass remain unknown; no catalogue-family mass is substituted.')
-part('housing_retainer_screws','AIN housing retainer screw candidates','M5; grade and length unresolved',32,selection='required_unresolved',notes='32 screws from C03_R01 ledger, separate from original housing retainer geometry. Grade, length, locking, preload, price and mass unknown.')
+         notes='Exact C03_R03 ledger quantity. Purchased configuration, finished fits, retention and operating loads require review. Unit price and accepted installed mass remain unknown; no catalogue-family mass is substituted.')
+part('housing_retainer_screws','AIN housing retainer screw candidates','M5; grade and length unresolved',32,selection='required_unresolved',notes='32 screws from C03_R03 ledger, separate from original housing retainer geometry. Grade, length, locking, preload, price and mass unknown.')
 part('steering_actuators','Thomson Electrak HD steering packaging candidates','HD48-B045, 200 mm stroke, M rear/M front; complete order code unresolved',2,selection='research_candidate',sources=['c03_actuator_candidate'],stroke_mm=200,
-     notes='Current 200 mm candidate supersedes earlier 150 mm study. No exact order, unit mass or price. Candidate force/duty and installed steering power are unqualified; it must not be presented as a released steering solution.')
+     notes='Current B045 200 mm candidate supersedes earlier 150 mm study. B068/B100 comparisons are unselected alternatives and add no baseline price or mass. No exact order, unit mass or price. Candidate force/duty and installed steering power are unqualified; it must not be presented as a released steering solution.')
 for id,name,qty,note in [
  ('suspension_fasteners','Residual suspension cotters, axial retainers, jam nuts, seals and lubrication',None,'Excludes original nominal hardware and the separately listed 32 M5 housing screws. Residual exact purchased schedule, retention and lubrication remain unresolved.'),
  ('wheel_studs','Wheel output studs and input nuts, aggregate ledger quantity',60,'60 is the aggregate C03 ledger quantity of output studs/input nuts, not 60 identical selected parts. Split into exact SKUs after thread, length, grade, seat and engagement are finalized. The 30 rim-bundle flat nuts are separately tracked and must not be duplicated.'),
@@ -248,7 +248,7 @@ for label,path in [('mass-power-snapshot.json',SNAPSHOT),(f'mass_cost_ledger_{RE
     local_inputs.append(dict(artifact=label,sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
 legacy=json.loads((APP/'docs/costs.json').read_text())
 model=dict(schema_version='1.0.0',title='Six-wheel UGV build and operating cost reference',as_of=OBSERVED,
- configuration=dict(corner_revision=REV,middle_corner_revision='C02_R06',steering_corner_count=4,middle_corner_count=2,rack_count=2,frame_revision='R07',body_revision='R01',tool_adapter_revision='R04',public_feature_commit_at_assignment='82ce94f27dd37db02015ecf62f48a54884a4a75a',not_fabrication_released=True),
+ configuration=dict(corner_revision=REV,middle_corner_revision='C02_R06',steering_corner_count=4,middle_corner_count=2,rack_count=2,selected_upper_source='upper_wishbone_C03_R06.step',selected_lower_source='lower_wishbone_C03_R04.step',frame_revision='R07',body_revision='R01',tool_adapter_revision='R04',public_feature_commit_at_assignment='82ce94f27dd37db02015ecf62f48a54884a4a75a',not_fabrication_released=True),
  policy=dict(unknown_numeric='null,never zero',csv_null='literal null',purchased_part_meaning='Must be sourced from a supplier;does not assert purchased or owned.',public_prices='Public dated reference observations;not firm quotes or confirmed destination totals.',source_currency='Native currency kept;no FX conversion.',research_candidates='Excluded from baseline public-price baskets;never silently substitute.',bundle_accounting='Nuts included in rim bundle;controller-inclusive UR arm packages replace separate controller allowance;alternative coupling/adapter replaces baseline item.'),
  parts=parts,alternatives=alternatives,build_summary=dict(status='incomplete_essential_items_unpriced',complete_build_cost=None,currency=None,
    public_price_baskets=baskets,essential_unpriced_line_ids=[p['id'] for p in parts if p['essential'] and p['unit_price'] is None and p['included_in_cost_of'] is None],
@@ -256,7 +256,7 @@ model=dict(schema_version='1.0.0',title='Six-wheel UGV build and operating cost 
    new_vs_used='No used/refurbished substitution. Seller catalogue condition and eligible battery serials must be confirmed.'),
  mass_context=dict(pinned_known_subset_kg=sum(p['unit_mass_kg']*p['quantity'] for p in parts if p['included_in_pinned_mass_subtotal']),whole_vehicle_mass_kg=None,
    source_snapshot_mass_kg=snapshot['mass_known_subset_kg'],source_snapshot_corner_revision=Path(snapshot['corner_contract']).stem.replace('interface_contract_',''),
-   revision_reconciliation='C03_R01 includes four steering corners and two racks plus two C02_R06 middle corners. The 84 original ledger rows sum to 328.8875082972988 kg. Six exact-SKU net rims add 90.6 kg. Total known subset agrees with independently audited snapshot 1123.7891292028824 kg; complete vehicle mass remains unknown.',original_running_gear_subtotal_kg=ledger['six_corner_running_gear_original_subtotal_kg'],accepted_rim_net_mass_kg=90.6,
+   revision_reconciliation='C03_R03 uses upper R06 and lower R04 in four steering corners, plus two racks and two C02_R06 middle corners. The 84 original ledger rows sum to 332.56466061455905 kg. Six exact-SKU net rims add 90.6 kg. Total known subset agrees with independently audited snapshot 1127.4662815201427 kg; complete vehicle mass remains unknown.',original_running_gear_subtotal_kg=ledger['six_corner_running_gear_original_subtotal_kg'],accepted_rim_net_mass_kg=90.6,
    additional_catalog_nuts_kg=None,additional_catalog_nuts_in_pinned_subset=False,
    no_recomputed_complete_mass=True,warning='Pinned subtotal combines nominal CAD masses and known catalogue components. Many physical parts remain unknown, including tires, nuts, motors and new steering purchased candidates. No physical vehicle was weighed.'),
  electrical_context=dict(nominal_bank_kwh=6.144,battery_count=4,nominal_voltage=51.2,drive_count=6,
@@ -277,7 +277,7 @@ model=dict(schema_version='1.0.0',title='Six-wheel UGV build and operating cost 
  historical_model=dict(path='legacy docs/costs.json',version=legacy['version'],as_of=legacy['as_of'],status='historical_configuration_not_current_quote',
     old_workshop_hardware_base_usd=legacy['totals_usd']['workshop_robot_hardware']['base'],
     reasons_not_current=['Eight workshop and ten field LT batteries instead of four non-LT modules.','Different tire/drive candidates and presumed steering architecture.','Generic fabrication/arm/tool allowances,not exactSKU quotes.','Legacy runtime and hourly totals depend on that superseded architecture and must not be shown as current.']),
- evidence=dict(source_file='sources.json',bom_file='BOM.csv',local_inputs=local_inputs,assembly_ledger='mass_cost_ledger_C03_R01.json',original_rows_preserved=84),
+ evidence=dict(source_file='sources.json',bom_file='BOM.csv',local_inputs=local_inputs,assembly_ledger='mass_cost_ledger_C03_R03.json',original_rows_preserved=84),
  ui_contract=dict(build_headline='Complete build cost: unknown',basket_label='Priced subset only;native currencies;not a full build quote',operating_headline='Measured operating cost: unknown',scenario_label='Assumptions-only partial operating scenario',do_not_display=['old311495.6USD as current build price','old8/10-battery runtime as current rover runtime','null as0','combinedUSD/EUR subtotal without explicitFX','S2 rating as continuous','any reference price as a completed order']))
 
 # Keep human-facing prose readable without altering identifiers,SKUs or URLs.

@@ -55,15 +55,15 @@ class CostModelChecks(unittest.TestCase):
             self.assertNotIn(a['id'],P)
         self.assertFalse(S['drive_rejected_price']['exact_sku_match'])
     def test_mass_pinning(self):
-        self.assertEqual(M['configuration']['corner_revision'],'C03_R01')
+        self.assertEqual(M['configuration']['corner_revision'],'C03_R03')
         self.assertEqual(M['configuration']['middle_corner_revision'],'C02_R06')
         known=sum(p['unit_mass_kg']*p['quantity'] for p in M['parts'] if p['included_in_pinned_mass_subtotal'])
-        self.assertAlmostEqual(known,1123.7891292028824,places=8)
+        self.assertAlmostEqual(known,1127.4662815201427,places=8)
         self.assertAlmostEqual(known,M['mass_context']['pinned_known_subset_kg'],places=8)
         self.assertIsNone(M['mass_context']['whole_vehicle_mass_kg'])
         self.assertFalse(P['wheel_nuts']['included_in_pinned_mass_subtotal'])
     def test_exact_c03_original_ledger(self):
-        ledger_path=Path('/workspace/shared/ugv-reconstruction/mechanical/running_gear_C03/mass_cost_ledger_C03_R01.json') if (HERE.parent/'app').is_dir() else HERE.parent/'steering/mass_cost_ledger_C03_R01.json'
+        ledger_path=Path('/workspace/shared/ugv-reconstruction/mechanical/running_gear_C03/mass_cost_ledger_C03_R03.json') if (HERE.parent/'app').is_dir() else HERE.parent/'steering/mass_cost_ledger_C03_R03.json'
         ledger=json.loads(ledger_path.read_text())
         nodes=ledger['original_items']
         self.assertEqual(len(nodes),84)
@@ -76,9 +76,9 @@ class CostModelChecks(unittest.TestCase):
             self.assertIsNone(row['unit_price'])
         selected=[r for r in M['parts'] if r.get('ledger_node') is not None]
         self.assertEqual(len(selected),84)
-        self.assertAlmostEqual(sum(r['unit_mass_kg']*r['quantity'] for r in selected),328.8875082972988,places=10)
+        self.assertAlmostEqual(sum(r['unit_mass_kg']*r['quantity'] for r in selected),332.56466061455905,places=10)
         self.assertEqual(sum(r['quantity'] for r in selected if r['assembly_group']=='middle_C02_R06'),16)
-        self.assertEqual(len([r for r in selected if r['assembly_group']=='steering_C03_R01']),76)
+        self.assertEqual(len([r for r in selected if r['assembly_group']=='steering_C03_R03']),76)
         for obsolete in ['stationary_clamp_C02_R01','inner_backing_C02_R01','upper_wishbone_C02_R02','lower_wishbone_C02_R02','upright_WD220_C02_R05','wheel_adapter_C02_R02','stationary_hardware_C02_R01','upright_pins_C02_R02']:
             self.assertNotIn(obsolete,P)
     def test_c03_purchased_quantities_and_unknowns(self):
@@ -94,6 +94,18 @@ class CostModelChecks(unittest.TestCase):
         self.assertIsNone(M['electrical_context']['steering_power_budget_kw'])
         self.assertFalse(M['electrical_context']['steering_duty_qualified'])
         self.assertIsNone(M['operating_cost']['actual_inputs']['measured_steering_kwh_per_operating_hour'])
+    def test_r03_selected_arms_and_unselected_actuator_alternatives(self):
+        originals=[r for r in M['parts'] if r.get('ledger_node')]
+        upper=[r for r in originals if r['source_step']=='running_gear_C03/upper_wishbone_C03_R06.step']
+        lower=[r for r in originals if r['source_step']=='running_gear_C03/lower_wishbone_C03_R04.step']
+        self.assertEqual(sum(r['quantity'] for r in upper),4)
+        self.assertEqual(sum(r['quantity'] for r in lower),4)
+        for obsolete in ['running_gear_C03/upper_wishbone_C03_R02.step','running_gear_C03/lower_wishbone_C03_R03.step']:
+            self.assertFalse(any(r['source_step']==obsolete for r in originals))
+        self.assertIn('B045',P['steering_actuators']['sku'])
+        self.assertFalse(any('B068' in (r['sku'] or '') or 'B100' in (r['sku'] or '') for r in M['parts']))
+        self.assertIsNone(P['steering_actuators']['unit_price'])
+        self.assertIsNone(P['steering_actuators']['unit_mass_kg'])
     def test_exact_rim_net_mass_not_package_mass(self):
         self.assertEqual(P['rims']['unit_mass_kg'],15.1)
         self.assertTrue(P['rims']['included_in_pinned_mass_subtotal'])

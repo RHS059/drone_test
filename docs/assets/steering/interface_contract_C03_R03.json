@@ -1,0 +1,593 @@
+{
+  "configuration": "C03_R03 original front/rear steering candidate",
+  "status": "GEOMETRIC DEVELOPMENT CHECKPOINT; fabrication, operation and autonomous service NOT released",
+  "units": {
+    "STEP": "millimetres",
+    "GLB": "metres",
+    "contract": "metres and radians unless field says otherwise"
+  },
+  "axes": "VehicleC: Xforward,Yleft,Zup",
+  "ground_nominal_translation_m": [
+    0,
+    0,
+    0.68815
+  ],
+  "ground_note": "Unloaded OD876.3mm and nominal centerZ\u2212250mm; no tire deflection/equilibrium model",
+  "baseline_frame": "frame_R07",
+  "baseline_body": "body_power_R01",
+  "baseline_wheels": "Original wheel_C01 component, source dimensions KM3MSPN72204/EVO18x8.5;317.5mm section measured on10in rim, actual on8.5in unknown",
+  "assembly_step": "original_steering_C03_R03.step",
+  "assembly_glb": "original_steering_C03_R03.glb",
+  "assembly_manifest": "original_steering_C03_R03_manifest.json",
+  "assembly_scope": "Four original steering corners plus two racks only; middleC02 fixed corners/frame/body/wheels and purchased internals separate",
+  "corners": [
+    {
+      "id": "front_left",
+      "steerable": true,
+      "station_m": 1.35,
+      "side": 1,
+      "fore": 1,
+      "nominal_upper_pivot_m": [
+        1.35,
+        0.55,
+        0.07
+      ],
+      "nominal_lower_pivot_m": [
+        1.35,
+        0.55,
+        -0.27
+      ],
+      "nominal_kingpin_m": [
+        1.35,
+        0.812,
+        -0.25
+      ],
+      "kingpin_axis": [
+        0,
+        0,
+        1
+      ],
+      "nominal_wheel_center_m": [
+        1.35,
+        0.94,
+        -0.25
+      ],
+      "nominal_tie_inner_m": [
+        0.989,
+        0.46,
+        -0.185
+      ],
+      "nominal_tie_outer_m": [
+        1.061,
+        0.722,
+        -0.335
+      ],
+      "inner_pin_axis": [
+        0,
+        0.4968521996651735,
+        0.8678351754151697
+      ],
+      "upright_mesh": "steering_upright_left_C03_R05.glb",
+      "upright_native_transform": {
+        "translation_m": [
+          1.35,
+          0,
+          0
+        ],
+        "rotation": "identity; handed original geometry is baked"
+      },
+      "clamp_mesh": "stationary_clamp_front_left_C03_R03.glb",
+      "common_arm_meshes": [
+        "upper_wishbone_C03_R06.glb",
+        "lower_wishbone_C03_R04.glb"
+      ],
+      "arm_native_transform": {
+        "rotation_z_rad": 0,
+        "then_translation_m": [
+          1.35,
+          0,
+          0
+        ]
+      },
+      "source_wheel_transform": "Original wheel center/axle model; right uses properRz(pi), then translation to center. Steering is about the actual upright kingpin."
+    },
+    {
+      "id": "front_right",
+      "steerable": true,
+      "station_m": 1.35,
+      "side": -1,
+      "fore": 1,
+      "nominal_upper_pivot_m": [
+        1.35,
+        -0.55,
+        0.07
+      ],
+      "nominal_lower_pivot_m": [
+        1.35,
+        -0.55,
+        -0.27
+      ],
+      "nominal_kingpin_m": [
+        1.35,
+        -0.812,
+        -0.25
+      ],
+      "kingpin_axis": [
+        0,
+        0,
+        1
+      ],
+      "nominal_wheel_center_m": [
+        1.35,
+        -0.94,
+        -0.25
+      ],
+      "nominal_tie_inner_m": [
+        0.989,
+        -0.46,
+        -0.185
+      ],
+      "nominal_tie_outer_m": [
+        1.061,
+        -0.722,
+        -0.335
+      ],
+      "inner_pin_axis": [
+        0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ],
+      "upright_mesh": "steering_upright_right_C03_R05.glb",
+      "upright_native_transform": {
+        "translation_m": [
+          1.35,
+          0,
+          0
+        ],
+        "rotation": "identity; handed original geometry is baked"
+      },
+      "clamp_mesh": "stationary_clamp_front_right_C03_R03.glb",
+      "common_arm_meshes": [
+        "upper_wishbone_C03_R06.glb",
+        "lower_wishbone_C03_R04.glb"
+      ],
+      "arm_native_transform": {
+        "rotation_z_rad": 3.141592653589793,
+        "then_translation_m": [
+          1.35,
+          0,
+          0
+        ]
+      },
+      "source_wheel_transform": "Original wheel center/axle model; right uses properRz(pi), then translation to center. Steering is about the actual upright kingpin."
+    },
+    {
+      "id": "rear_left",
+      "steerable": true,
+      "station_m": -1.35,
+      "side": 1,
+      "fore": -1,
+      "nominal_upper_pivot_m": [
+        -1.35,
+        0.55,
+        0.07
+      ],
+      "nominal_lower_pivot_m": [
+        -1.35,
+        0.55,
+        -0.27
+      ],
+      "nominal_kingpin_m": [
+        -1.35,
+        0.812,
+        -0.25
+      ],
+      "kingpin_axis": [
+        0,
+        0,
+        1
+      ],
+      "nominal_wheel_center_m": [
+        -1.35,
+        0.94,
+        -0.25
+      ],
+      "nominal_tie_inner_m": [
+        -0.989,
+        0.46,
+        -0.185
+      ],
+      "nominal_tie_outer_m": [
+        -1.061,
+        0.722,
+        -0.335
+      ],
+      "inner_pin_axis": [
+        0,
+        0.4968521996651735,
+        0.8678351754151697
+      ],
+      "upright_mesh": "steering_upright_rear_left_C03_R05.glb",
+      "upright_native_transform": {
+        "translation_m": [
+          -1.35,
+          0,
+          0
+        ],
+        "rotation": "identity; handed original geometry is baked"
+      },
+      "clamp_mesh": "stationary_clamp_rear_left_C03_R03.glb",
+      "common_arm_meshes": [
+        "upper_wishbone_C03_R06.glb",
+        "lower_wishbone_C03_R04.glb"
+      ],
+      "arm_native_transform": {
+        "rotation_z_rad": 0,
+        "then_translation_m": [
+          -1.35,
+          0,
+          0
+        ]
+      },
+      "source_wheel_transform": "Original wheel center/axle model; right uses properRz(pi), then translation to center. Steering is about the actual upright kingpin."
+    },
+    {
+      "id": "rear_right",
+      "steerable": true,
+      "station_m": -1.35,
+      "side": -1,
+      "fore": -1,
+      "nominal_upper_pivot_m": [
+        -1.35,
+        -0.55,
+        0.07
+      ],
+      "nominal_lower_pivot_m": [
+        -1.35,
+        -0.55,
+        -0.27
+      ],
+      "nominal_kingpin_m": [
+        -1.35,
+        -0.812,
+        -0.25
+      ],
+      "kingpin_axis": [
+        0,
+        0,
+        1
+      ],
+      "nominal_wheel_center_m": [
+        -1.35,
+        -0.94,
+        -0.25
+      ],
+      "nominal_tie_inner_m": [
+        -0.989,
+        -0.46,
+        -0.185
+      ],
+      "nominal_tie_outer_m": [
+        -1.061,
+        -0.722,
+        -0.335
+      ],
+      "inner_pin_axis": [
+        0,
+        -0.4968521996651735,
+        0.8678351754151697
+      ],
+      "upright_mesh": "steering_upright_rear_right_C03_R05.glb",
+      "upright_native_transform": {
+        "translation_m": [
+          -1.35,
+          0,
+          0
+        ],
+        "rotation": "identity; handed original geometry is baked"
+      },
+      "clamp_mesh": "stationary_clamp_rear_right_C03_R03.glb",
+      "common_arm_meshes": [
+        "upper_wishbone_C03_R06.glb",
+        "lower_wishbone_C03_R04.glb"
+      ],
+      "arm_native_transform": {
+        "rotation_z_rad": 3.141592653589793,
+        "then_translation_m": [
+          -1.35,
+          0,
+          0
+        ]
+      },
+      "source_wheel_transform": "Original wheel center/axle model; right uses properRz(pi), then translation to center. Steering is about the actual upright kingpin."
+    }
+  ],
+  "middle_corners": {
+    "configuration": "C02_R06 fixed corners",
+    "stations_m": [
+      [
+        0,
+        0.94,
+        -0.25
+      ],
+      [
+        0,
+        -0.94,
+        -0.25
+      ]
+    ],
+    "steering": "fixed0; suspension C02 closure retained",
+    "do_not_replace_with": "C03steerable upright or rack"
+  },
+  "kinematics": {
+    "javascript": "kinematics_C03_R01.js",
+    "python": "steering_topology_study.py",
+    "suspension_q_rad": [
+      -0.20943951023931956,
+      0.20943951023931956
+    ],
+    "rack_translation_m": [
+      -0.075,
+      0.075
+    ],
+    "coupling": "Same signed front/rear rack translation produces opposite rear steering through baked fore/aft geometry. Per-corner suspension q may differ; use solver separately.",
+    "steering_max_sampled_rad": 0.3746701502394152,
+    "steering_not_independent_input": "Solve fixed tie length from rack and suspension; do not yaw wheels independently.",
+    "tie_center_length_m": 0.310367524074282,
+    "neutral_tie_vector_front_left_m": [
+      0.072,
+      0.262,
+      -0.15
+    ],
+    "zero_rack_bump_steer": "Analytically cancels in ideal parallel-arm geometry",
+    "nominal_Ackermann": "Approximate;0.901degree maximum screen error, no tire-slip/dynamics validation",
+    "rotation_order": {
+      "arms": "Apply native side properRz(pi) ifright, station translation; rotateworldRx(side*q) about each fixed upper/lower pivot.",
+      "upright": "Baked native handed mesh plusstationtranslation. Rotate about nominal vertical kingpin by solver steer, then translate suspension delta.",
+      "outer_pins": "Follow upright yaw and translation; source proper side orientation retained.",
+      "retainers": "Follow their upper/lower arms, not steering yaw.",
+      "wheel_adapter_and_wheel": "Follow upright yaw/translation; spin about resulting wheel axle. Do not scale source wheel.",
+      "rack": "Front native C. Rear originalparts mirroredX in assembly. Moving groups translate globalY by rack r.",
+      "tie": "Align its nominal centerline to the current inner\u2192outer vector and translate to current inner eye. Tubes are axisymmetric; joint pin axes remain defined separately.",
+      "tie_inner_pin": "Translate with rack; fixed inclined pin axis.",
+      "tie_outer_pin": "Rotate with upright; inclined axis yawed by steer."
+    }
+  },
+  "rack": {
+    "source_report": "rack_C03_R11_report.json",
+    "guide_length_m": 0.6,
+    "liner_centers_y_m": [
+      -0.27,
+      0.27
+    ],
+    "front_zero_native": "C atX.989/Z\u2212.25; do not add station translation to rack meshes",
+    "rear_geometry": "Mirror only original rack partsX\u2192\u2212X, or use baked original assembly nodes; do not reflect commercial meshes",
+    "moving_groups": [
+      "front_rack",
+      "rear_rack"
+    ],
+    "physical_stops": {
+      "travel_m": [
+        -0.075,
+        0.075
+      ],
+      "fixed_inside_faces_y_m": [
+        -0.085,
+        0.085
+      ],
+      "moving_lug_half_length_m": 0.01,
+      "qualification": "Nominal geometry only; impact and actuator overload/fault control unqualified"
+    }
+  },
+  "actuator": {
+    "candidate": "Thomson ElectrakHD48V B045200mm M/M",
+    "selection_state": "NOT selected or qualified for steering",
+    "quantity": 2,
+    "front_fixed_pin_m": [
+      1.084,
+      -0.34,
+      -0.25
+    ],
+    "front_moving_pin_zero_m": [
+      1.084,
+      0.15,
+      -0.25
+    ],
+    "rear_fixed_pin_m": [
+      -1.084,
+      -0.34,
+      -0.25
+    ],
+    "rear_moving_pin_zero_m": [
+      -1.084,
+      0.15,
+      -0.25
+    ],
+    "pin_axis": [
+      1,
+      0,
+      0
+    ],
+    "nominal_pin_distance_range_m": [
+      0.415,
+      0.565
+    ],
+    "nominal_extension_range_m": [
+      0.025,
+      0.175
+    ],
+    "full_source_pin_distance_range_m": [
+      0.39,
+      0.59
+    ],
+    "pins_m": 0.012,
+    "source_eye_bore_mm": "12.2E9",
+    "rear_eye_span_m": 0.0254,
+    "front_eye_span_m": 0.0302,
+    "dimensional_reservation_only": "Exact body/eye transitions, connector and cable-bend geometry unresolved; no proprietary CAD included",
+    "force_screen": "rack_force_screen_C03_R01.json",
+    "critical_gate": "4500N candidate vs6677.9N illustrative3g friction screen;25%duty and7.9s rated-speed lock-to-lock need application review",
+    "motor_orientation": "Downward; rear purchased actuator requires a proper orientation, never a reflected OEM mesh"
+  },
+  "coilovers": {
+    "quantity": 6,
+    "selected": false,
+    "source_candidates": "coilover_source_candidates.json",
+    "candidate": "King PureRaceRS2008-COHR, SKU/table length conflict documented",
+    "required_eye_length_m": [
+      0.530319,
+      0.586827
+    ],
+    "required_stroke_m": 0.056508,
+    "eye_mounts": "Exact SKU bore/span unresolved. Existing original14.5mm holes and32mm gap are provisional and may require new revision.",
+    "visual_motion": "Fixedeye(0,side*.56,.17)+station; lower eye follows lower pivot+.65*rotated linkvector. Any shown telescopic geometry must follow both eyes.",
+    "gates": [
+      "Exact mounting drawing",
+      "Spring rate/free length/coil bind",
+      "Damper force/thermal duty",
+      "Reservoir/hose routing",
+      "Bump stops/limit straps and static sag"
+    ]
+  },
+  "commercial_joint_interfaces": {
+    "upper_lower_outer": "FK AIN16 with16-12HB;69.977mm nominal span in70mm fork,19.05mm pin. Finished fits/stack/preload unqualified.",
+    "tie_ends": "FK JMX12/JMXL12 with12-10HB both ends;46.355mm nominal span in46.6mm fork,15.875mm pin.",
+    "catalogue_angular_screen_deg": {
+      "outer_spherical_assumed_half_total": 30,
+      "tie_assumed_half_total": 24,
+      "calculated_inner_max": 14.039916282845555,
+      "calculated_outer_max": 21.192444366636806
+    },
+    "actual_profiles": "Catalogue interface dimensions/angular ratings are not a full physical bearing/spacer interference model; omitted purchased parts have no fabricated mass."
+  },
+  "wheel_adapter_gate": "C02_R02 finepitch adapter retained. WD220input studtip reachesrimseat at30mm, leaving zero nominal stand-off; finished studs/nuts/tools/stack/pilot and fatigue unresolved.",
+  "tests": [
+    {
+      "scope": "Analytical closure and catalogue angular screen",
+      "report": "steering_closure_C03_R05.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Actual carrier/pins/retainers",
+      "report": "corner_steering_C03_R05_check.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Original rack/frame/body/clamps",
+      "report": "rack_assembly_C03_R11_check.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Original317.5mm wheel/body/frame",
+      "report": "full_wheel_sweep_C03_R01.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Reserved340mm annular tire/body/frame",
+      "report": "reserved_tire_sweep_C03_R01.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Tie/carriage/pin envelopes",
+      "report": "steering_optimization/carriage_R10_interference.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Tie/root-pin and lever/tire checks",
+      "report": "steering_optimization/FINAL_RECOMMENDATION.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Actuator dimensional reservations",
+      "report": "actuator_reservation_C03_R01.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    },
+    {
+      "scope": "Independent S01 neutral static fixture compatibility",
+      "report": "steering_optimization/S01_C03_baked_assembly_compatibility.json",
+      "present": true,
+      "revision_scope": "Inherited unchanged-component or kinematic result; changed-arm scope is in new_revision_tests"
+    }
+  ],
+  "independent_private_motor_review": "Composite 36-pose sampled fit evidence bound to the selected R03 export: unchanged R01 component checks plus fresh upper R06/lower R04 arm checks. See audit_evidence_C03_R03/C03_R03-private-composite-summary.json. No vendor geometry included.",
+  "service": {
+    "pose": "q0,rack0 only for static fixture checks",
+    "fixtures": "Exact baked R03 q0/rack0: 88 component checks (76 original nodes plus 12 reservations) against 302 fixture solids, no overlap/contact. Minimum 8.062146 mm. This does not qualify pin extraction or lifting.",
+    "removal_release": false,
+    "sequence_gates": [
+      "Independent stable chassis and corner support",
+      "Isolate power and stored spring energy",
+      "Positive support of wishbones before joint release",
+      "Disconnect steering tie through a verified accessible tool path",
+      "Verify wheel-first versus whole-corner access before choosing sequence",
+      "Release upper/lower3/4in pins only with restrained bearing/spacer stack",
+      "S01old\u00b1260mm corridor clearsfixtures only; installedtire/tool collision evidence remains relevant"
+    ],
+    "robot_tool_access": "No successful collision-free UR20/Robotiq repair sequence established"
+  },
+  "mass": "See mass_cost_ledger_C03_R03.json. Original material-density estimates only; purchased unknown masses excluded.",
+  "qualification_gates": [
+    "Actuator load/speed/duty/failsafe selection",
+    "Bearing loads, fits, retention and lubrication",
+    "Finished stud/nut/tool stacks and thread engagement",
+    "Structural static/buckling/fatigue/weld analysis",
+    "Tire/rim actual envelope and loaded radius",
+    "Braking, power distribution and environmental protection",
+    "Service tool reach/collision and lifting/support approval"
+  ],
+  "proprietary_geometry_included": false,
+  "revision_changes": {
+    "baseline": "Frozen C03_R01",
+    "changed_geometry": [
+      "Four upper arm instances use upper_wishbone_C03_R06",
+      "Four lower arm instances use lower_wishbone_C03_R04"
+    ],
+    "unchanged": "All joint hardpoints, purchased interface dimensions, steering solver, rack, carrier and other original assembly components",
+    "history": "C03_R02 upper R03 passed motor checks but failed tire clearance. Intermediate upper R04 failed conservative tire reservation; upper R05 failed root-clevis clearance. Their evidence is preserved separately."
+  },
+  "viewer_domain": {
+    "default_suspension_q_rad": [
+      0,
+      0
+    ],
+    "rack_translation_m": [
+      -0.075,
+      0.075
+    ],
+    "optional_motion_study": {
+      "suspension_q_rad": [
+        -0.20943951023931956,
+        0.20943951023931956
+      ],
+      "enabled_only_after_final_export_binding": true,
+      "label": "Unqualified kinematic study; sampled clearance only",
+      "limitations": [
+        "No continuous swept-clearance proof",
+        "Approximately 3 mm nominal margins; tolerances and deflection unqualified",
+        "No shock, spring, tire deflection or loaded ground-contact equilibrium",
+        "No physical operation or fabrication release"
+      ]
+    },
+    "workshop_pose": "q0 and both racks0"
+  },
+  "new_revision_tests": {
+    "status": "Selected original geometry sampled tests complete; detailed reports control scope",
+    "upper_step_sha256": "cea5bba0af9ab4a41abd9957f143350cff1a7bc74f3a1f3fc3fe20f103347a6f",
+    "lower_step_sha256": "d08551d2b34fb49c493e7be7ac75c6e2ccd8ab5e694dcef657fae0f2b5945bc0",
+    "original_part_motion": "steering_optimization/travel_arm_U06_L04/new_arms_motion_check.json",
+    "original_part_environment": "steering_optimization/travel_arm_U06_L04/new_arms_environment_check.json",
+    "dense_tire_screen": "steering_optimization/travel_arm_U06_L04/upper_annulus_dense_check.json",
+    "nominal_tire_reservation_minimum_mm": 3.011783908581865,
+    "nominal_clamp_minimum_mm": 3.0,
+    "clearance_limitations": "Nominal unloaded CAD only. Approximately 3 mm local margins are unqualified for tolerance stack, weld distortion, tire variation, mud or elastic deflection. Discrete checks and locally refined analytic screens do not prove continuous swept clearance."
+  },
+  "actuator_followup": "actuator_followup/actuator_comparison_R01.json; alternative ratings and dimensional comparison only, no changed actuator selection."
+}

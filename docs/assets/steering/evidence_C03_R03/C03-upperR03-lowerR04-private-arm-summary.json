@@ -1,0 +1,436 @@
+{
+  "status": "PASS",
+  "scope": "Actual private motor against candidate upperR03/lowerR04 original arms only, four properly oriented corners, q\u221212/0/+12 degrees and rack\u221275/0/+75 mm. Does not supersede current R01 full-assembly failure report.",
+  "checked_at_utc": "2026-10-09T11:49:25.901754+00:00",
+  "complete": true,
+  "planned_case_count": 36,
+  "completed_case_count": 36,
+  "original_inputs": [
+    {
+      "kind": "upper",
+      "file": "upper_wishbone_C03_R03.step",
+      "sha256": "de911ad9fbba0666a060d54212eddca83f25a57716e8ae339dd4e589e750b3f5",
+      "solid_count": 1,
+      "valid": true
+    },
+    {
+      "kind": "lower",
+      "file": "lower_wishbone_C03_R04.step",
+      "sha256": "d08551d2b34fb49c493e7be7ac75c6e2ccd8ab5e694dcef657fae0f2b5945bc0",
+      "solid_count": 1,
+      "valid": true
+    }
+  ],
+  "source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "selected_solver_bridge": {
+    "checked_at_utc": "2026-10-09T11:37:32.659Z",
+    "audited_solver_sha256": "c154342c1ddda9ffc2b286ad028aa95b57f8e0dacbe58575db78d22245af3817",
+    "current_solver_sha256": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+    "audited_contract_sha256": "f3df7c28efc57ce8d6abea051cc0e1f6390d601d2d4c0d5de6713c2f33cc9911",
+    "current_contract_sha256": "d5207268a39f9337429408f6de6bb877a703936550a89688e726639588c4694b",
+    "all_36_poses_identical": true,
+    "audited_pose_fixture_identical": true,
+    "pose_count": 36,
+    "q0_pose_count": 12,
+    "current_contract_changed_top_level_keys": [
+      "tests",
+      "service"
+    ],
+    "contract_changes_limited_to_tests_service": true,
+    "current_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115",
+    "audited_manifest_sha256": "d1c9c31a9eb83da7b53c77769a022c9e022ff31d34a6fad58e0914d8e5909115"
+  },
+  "exact_boolean_pairs": 3360,
+  "positive_overlap_threshold_mm3": 0.0001,
+  "failure_witnesses": [],
+  "errors": [],
+  "workers": [
+    {
+      "corner": "front_left",
+      "complete": true,
+      "samples": 9
+    },
+    {
+      "corner": "front_right",
+      "complete": true,
+      "samples": 9
+    },
+    {
+      "corner": "rear_left",
+      "complete": true,
+      "samples": 9
+    },
+    {
+      "corner": "rear_right",
+      "complete": true,
+      "samples": 9
+    }
+  ],
+  "samples": [
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": 21.46701831825096,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 74.33824896812439
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": 19.35599911601513,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 13.664845943450928
+    },
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": -15.19148472906597,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 35.2074830532074
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": -15.032839660175508,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 23.311685800552368
+    },
+    {
+      "corner": "front_left",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "steer_deg": 0.0,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 44.13104200363159
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "steer_deg": -2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 21.365450620651245
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "steer_deg": -2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 28.800113201141357
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "steer_deg": 19.965366355281194,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 28.237258434295654
+    },
+    {
+      "corner": "front_left",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "steer_deg": -15.08858928065428,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 54.66854548454285
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": 15.19148472906597,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 66.14884066581726
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": 15.032839660175508,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 23.737714529037476
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": -21.46701831825096,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 24.58189630508423
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": -19.35599911601513,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 14.420162439346313
+    },
+    {
+      "corner": "front_right",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "steer_deg": 0.0,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 41.68236994743347
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "steer_deg": 2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 18.783698558807373
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "steer_deg": 2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 29.321873426437378
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "steer_deg": 15.08858928065428,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 28.714290618896484
+    },
+    {
+      "corner": "front_right",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "steer_deg": -19.965366355281194,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 25.273447513580322
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": -21.46701831825096,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 63.24055218696594
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": -19.35599911601513,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 27.663328170776367
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": 15.19148472906597,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 51.112813234329224
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": 15.032839660175508,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 31.031485557556152
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "steer_deg": 0.0,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 35.0721960067749
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "steer_deg": 2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 19.392481327056885
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "steer_deg": 2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 31.35342812538147
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "steer_deg": -19.965366355281194,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 35.81830072402954
+    },
+    {
+      "corner": "rear_left",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "steer_deg": 15.08858928065428,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 50.44076609611511
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": -75.0,
+      "steer_deg": -15.19148472906597,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 45.80786752700806
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 12,
+      "rack_mm": -75.0,
+      "steer_deg": -15.032839660175508,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 15.128456354141235
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": 75.0,
+      "steer_deg": 21.46701831825096,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 32.648109436035156
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 12,
+      "rack_mm": 75.0,
+      "steer_deg": 19.35599911601513,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 16.846039533615112
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": -12,
+      "rack_mm": 0,
+      "steer_deg": 0.0,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 140,
+      "elapsed_s": 54.6820650100708
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 12,
+      "rack_mm": 0,
+      "steer_deg": -2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 40,
+      "elapsed_s": 17.13467764854431
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 0,
+      "rack_mm": 0,
+      "steer_deg": -2.5444437451708134e-14,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 29.37106680870056
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 0,
+      "rack_mm": -75.0,
+      "steer_deg": -15.08858928065428,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 37.174710273742676
+    },
+    {
+      "corner": "rear_right",
+      "q_deg": 0,
+      "rack_mm": 75.0,
+      "steer_deg": 19.965366355281194,
+      "interferences": [],
+      "errors": [],
+      "exact_boolean_pairs": 100,
+      "elapsed_s": 30.92429518699646
+    }
+  ],
+  "limits": [
+    "Only the two changed arms are rechecked against the private motor. Frame/body/wheel/rack and other original-part clearances require their separate checks.",
+    "A sampled no-overlap result is not a continuous-motion clearance proof, tolerance allowance or physical/load qualification.",
+    "No OEM geometry or OEM-derived mesh is included."
+  ]
+}

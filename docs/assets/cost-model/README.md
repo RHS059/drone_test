@@ -1,6 +1,6 @@
-# Six-wheel UGV cost model · C03_R01
+# Six-wheel UGV cost model · C03_R03
 
-Observed 9 October 2026. Configuration: frame R07, body R01, four C03_R01 steering corners, two retained C02_R06 middle corners, two rack assemblies and original tool adapter R04. Public listing references are not supplier quotations, live inventory commitments or landed checkout totals. No orders or vendor contacts were made.
+Observed 9 October 2026. Configuration: frame R07, body R01, four C03_R03 steering corners, two retained C02_R06 middle corners, two rack assemblies and original tool adapter R04. Public listing references are not supplier quotations, live inventory commitments or landed checkout totals. No orders or vendor contacts were made.
 
 ## Primary results
 
@@ -69,7 +69,7 @@ To establish an actual operating rate, record grid charging energy and tariff, m
 
 UI: show `build_summary.complete_build_cost` as unknown. Show `public_price_baskets` with the explicit label “Priced subset only.” Show `operating_cost.actual_cost_per_operating_hour` as unknown and scenario `modeled_partial_usd_per_operating_hour` as assumptions-only and incomplete. Round scenario display; retained decimals serve arithmetic checks.
 
-The pinned modeled-mass subtotal is **1123.7891292028824 kg**, not whole-rover mass. This includes six exact-SKU EVO rims at 15.1 kg net each (90.6 kg total), verified by the manufacturer API field and its product-script kg formatter. It excludes tire and nut masses. Do not substitute base-SKU 14.96 kg, unit/package 16.5 kg or gross 17.3 kg values. The manufacturer page displays a nut weight field of 212 without units, while Product JSON-LD specifies 0.217 kg. These fields require reconciliation. Nut mass remains unknown and is excluded from that snapshot; no mass is inferred from an undocumented raw page field or shipping weight.
+The pinned modeled-mass subtotal is **1127.4662815201427 kg**, not whole-rover mass. This includes six exact-SKU EVO rims at 15.1 kg net each (90.6 kg total), verified by the manufacturer API field and its product-script kg formatter. It excludes tire and nut masses. Do not substitute base-SKU 14.96 kg, unit/package 16.5 kg or gross 17.3 kg values. The manufacturer page displays a nut weight field of 212 without units, while Product JSON-LD specifies 0.217 kg. These fields require reconciliation. Nut mass remains unknown and is excluded from that snapshot; no mass is inferred from an undocumented raw page field or shipping weight.
 
 ## Historical estimates and updates
 
@@ -79,9 +79,9 @@ To roll to a later approved corner revision, update the builder's `REV`, inspect
 
 ### C03 revision reconciliation
 
-All 84 original rows are preserved node-by-node from mass_cost_ledger_C03_R01.json: 76 steering-corner/rack rows at quantity one and eight middle-corner rows at quantity two. Their original modeled subtotal is 328.8875082972988 kg. They replace the eight old fabrication rows that each represented six C02 corners, without retaining or duplicating those rows. The two C02 bearing-envelope rows remain reference-only at quantity two each.
+All 84 original rows are preserved node-by-node from mass_cost_ledger_C03_R03.json: 76 steering-corner/rack rows at quantity one and eight middle-corner rows at quantity two. Their original modeled subtotal is 332.56466061455905 kg. They replace the eight old fabrication rows that each represented six C02 corners, without retaining or duplicating those rows. The two C02 bearing-envelope rows remain reference-only at quantity two each.
 
-The independent snapshot and cost model agree on 1123.7891292028824 kg known subset. Prices, battery architecture and the three numerical operating scenarios are unchanged. Those generic assumed battery draws do not validate the new steering energy demand. Measured steering energy, actual actuator input power and qualified steering duty remain null/unknown.
+The independent snapshot and cost model agree on 1127.4662815201427 kg known subset. Prices, battery architecture and the three numerical operating scenarios are unchanged. Those generic assumed battery draws do not validate the new steering energy demand. Measured steering energy, actual actuator input power and qualified steering duty remain null/unknown.
 
 New purchased candidates, all with unknown accepted installed mass and price:
 
@@ -101,3 +101,7 @@ New purchased candidates, all with unknown accepted installed mass and price:
 The residual steering row covers controls, wiring, sensing, commissioning, safety and service integration; it excludes separately itemized geometry, actuators, bearings and rod ends. Offboard service fixtures remain an unpriced external-workcell category and do not enter vehicle mass.
 
 The builder works in the local cost-model staging folder or the published docs/assets/cost-model layout. It reads the pinned steering ledger and contract, the retained C02 middle ledger, body evidence and independently audited mass snapshot. `manufacturer-mass-evidence.json` is included so the exact net-mass evidence remains reproducible. No vendor CAD or full webpage content is included.
+
+### R03 selection and delta
+
+The selected C03_R03 revision replaces four upper arms with upper_wishbone_C03_R06 and four lower arms with lower_wishbone_C03_R04. Original running gear increases by 3.6771523172603 kg versus C03_R01; other original geometry and purchased requirements are unchanged. The separate B068/B100 actuator comparison is research only. It has not replaced the B045 200 mm packaging candidate and adds no baseline price or mass.

@@ -1,0 +1,55 @@
+{
+  "status": "Source-backed candidates only; no actuator selected or approved for steering",
+  "checked_UTC": "2026-10-09",
+  "sources": {
+    "HD_catalogue": "https://www.thomsonlinear.com/downloads/actuators/Electrak_HD_Actuator_bren.pdf",
+    "HD_web": "https://www.thomsonlinear.com/en/products/linear-actuators/electrak-hd/",
+    "HD_manual": "https://www.thomsonlinear.com/downloads/actuators/Electrak_HD_Installation_Operation_mnen.pdf",
+    "XD_catalogue": "https://www.thomsonlinear.com/downloads/actuators/Electrak_XD_Actuator_bruk.pdf",
+    "steering_family": "https://www.alliedmotion.com/vehicle-steering-traction/electric-steering/",
+    "EPS_48V_application": "https://www.alliedmotion.com/next-gen-electric-power-steering-systems/",
+    "EPS_datasheet": "https://www.alliedmotion.com/wp-content/uploads/datasheets/EPS-leaflet-16-04.pdf"
+  },
+  "HD_200mm_M_M_catalogue_pages": [19, 22, 23],
+  "HD_candidates": [
+    {"family": "HD48B045", "dynamic_N": 4500, "rated_speed_mm_s": 19, "duty_percent_25C": 25, "retracted_pin_mm": 390, "extended_pin_mm": 590, "catalogue_nominal_mass_kg": 7.0},
+    {"family": "HD48B068", "dynamic_N": 6800, "rated_speed_mm_s": 14, "duty_percent_25C": 25, "retracted_pin_mm": 390, "extended_pin_mm": 590, "catalogue_nominal_mass_kg": 7.0},
+    {"family": "HD48B100", "dynamic_N": 10000, "rated_speed_mm_s": 9, "duty_percent_25C": null, "duty_conflict": {"manufacturer_web": 25, "catalogue_page19_footnote4": 15, "July2026_manual": "see product label"}, "retracted_pin_mm": 420, "extended_pin_mm": 620, "catalogue_nominal_mass_kg": 7.2}
+  ],
+  "shared_M_M_interfaces_mm": {"rear_span": 25.4, "front_span_at200mm": 30.2, "pin_hole": 12.2, "maximum_endplay": 1.2},
+  "derived_comparison": {
+    "baseline_used_pin_lengths_mm": [415,565],
+    "B068": "Closest dimensional substitution; exact order code, body details and new force/stop loads still need review.",
+    "B100": "Current415mm minimum is5mm shorter than nominal420mm retracted length. It is not a direct replacement.",
+    "B100_possible_redesign": "Moving the fixed eye30mm farther from the moving eye restores25..175mm extension. This is an untested mounting proposal, not approved CAD.",
+    "150mm_lock_to_lock_seconds_at_rated_speed": {"B045": 7.894737, "B068": 10.714286, "B100": 16.666667},
+    "load_screen": "The previous1500kg/friction/3g calculation is illustrative, not established steering demand. B068 is only1.018 times that6677.9N screen; no design margin or qualification follows."
+  },
+  "control_and_safety": {
+    "source": "July2026 HD manual, sections4.6.15,5.2 and8.1",
+    "48V_options": "CNO/COO support36..64V; exact control configuration must be selected.",
+    "feedback": "0.1mm CAN resolution is not mechanical position accuracy; internal deadband, tolerances and play remain.",
+    "protections": "Overload, temperature and voltage monitoring protect the actuator; system-level steering fault handling remains separate.",
+    "manual_override": "A6mm socket input is documented. Access, loaded behavior and a safe vehicle-service procedure are unverified.",
+    "application_approval": "No steering-specific approval found for the HD candidates. Industrial/utility-vehicle marketing is not such approval."
+  },
+  "larger_linear_alternative": {
+    "family": "ThomsonXD48B080 orB160",
+    "catalogue_ratings": [{"family":"B080","dynamic_N":8000,"rated_speed_mm_s":50},{"family":"B160","dynamic_N":16000,"rated_speed_mm_s":25}],
+    "full_load_duty_catalogue_percent_25C": 50,
+    "web_duty_conflict": "Some manufacturer regional pages state45%; confirm current configured product. Up to100% is load-dependent, not full-load universal.",
+    "packaging": "Larger body and mounting interfaces; not evaluated as a replacement for the HD clevises/rack.",
+    "steering_approval": "Not established"
+  },
+  "steering_specific_lead": {
+    "family": "Allied Motion/AllientEPS electric steering systems",
+    "source_supported": "Manufacturer explicitly describes steer-by-wire AGV/lift-truck applications with24/36/48V variants.",
+    "integration_gap": "Rotary geared steering output requires a new pinion/rack or other transmission and exact vendor mounting/output drawings. No ratio or shaft geometry has been invented.",
+    "rating_gate": "Published peak5second, S2two-minute and S2sixty-minute torque columns are different ratings; none is a general continuous steering approval.",
+    "recommendation": "Keep as a steering-oriented architecture lead, not a selected drop-in unit."
+  },
+  "next_decision_inputs": ["Actual gross mass and front/rear tire loads", "Required steering time and travel speed", "Standstill versus rolling steering duty", "Tire/contact-patch and ground conditions", "Allowed fault behavior and required feedback redundancy", "Measured or validated steering-force envelope"],
+  "geometry_changed": false,
+  "vendor_contact_made": false,
+  "proprietary_CAD_included": false
+}

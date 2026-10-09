@@ -1,8 +1,8 @@
 import * as T from 'three/webgpu';
-import {loadSteering} from './steering.js?v=steering-01';
+import {loadSteering} from './steering.js?v=motion-03';
 
 // All imported geometry is metres, Z-up. Right corners use a proper rotation,
-// never a reflected or resized copy. This release keeps suspension travel locked.
+// never a reflected or resized copy. Optional four-corner motion study is unloaded and held above the ground reference.
 export async function loadRover(root, asset) {
   const get = async p => { const r = await fetch(p); if (!r.ok) throw Error(`Missing assembly contract: ${p}`); return r.json(); };
   const [corner, bodyContract, fixtureContract, driveReservation] = await Promise.all([
@@ -19,7 +19,7 @@ export async function loadRover(root, asset) {
   fixtures.add(await asset('./assets/service-fixtures/chassis_trestles_S01.glb', 'Original chassis support trestles · static fit study, no load rating'));
   const cradle = new T.Group(); fixtures.add(cradle);
   cradle.add(await asset('./assets/service-fixtures/corner_cradle_S01.glb', 'Original wheel-module cradle · support and restraint unqualified'));
-  let workshop = false, cradleStation = 'left_1';
+  let workshop = false, motionStudy = false, cradleStation = 'left_1';
   const motorReservations = new T.Group(); motorReservations.visible = false; root.add(motorReservations);
   const corners = [], wheelSpinners = [];
   const steering = await loadSteering(root,asset,get);
@@ -50,12 +50,14 @@ export async function loadRover(root, asset) {
   return {
     corner, bodyContract, corners, steering,
     setRack(end,value){if(workshop && value!==0)throw Error('Workshop placement is checked only with centered steering');steering.setRack(end,value);},
-    homeSteering(){steering.home();},
-    setWorkshop(v) { workshop=v; if(v)steering.home(); fixtures.visible=v; root.position.z=v?-fixtureContract.illustrative_floor_Z_C_m:.68815; },
+    setMotionStudy(v){if(v&&workshop)throw Error('Exit workshop support study before moving suspension');motionStudy=Boolean(v);if(!v)steering.setSuspension(0);root.position.z=workshop?.78815:motionStudy?.88815:.68815;},
+    setSuspension(q){if(q!==0&&(!motionStudy||workshop))throw Error('Enable unloaded motion study before changing suspension');steering.setSuspension(q);},
+    homeSteering(){steering.home();motionStudy=false;root.position.z=workshop?.78815:.68815;},
+    setWorkshop(v) { workshop=v; if(v){steering.home();motionStudy=false;} fixtures.visible=v; root.position.z=v?-fixtureContract.illustrative_floor_Z_C_m:motionStudy?.88815:.68815; },
     setCradle(id) { const station=corner.wheel_stations_m.find(s=>s.id===id);if(!station)throw Error('Unknown cradle station');cradleStation=id;cradle.position.x=station.x;cradle.rotation.z=station.side<0?Math.PI:0; },
     showBody(v) { body.visible = v; },
     showCorners(v) { corners.forEach(c => c.visible = v);wheelSpinners.forEach(w=>w.visible=v);steering.assembly.visible=v; },
     openService(v) { serviceOpen = v; removable.forEach(o => o.visible = !v); reservations.visible = v; motorReservations.visible=v; },
-    snapshot() { return { assemblyRevision: steering.contract.configuration, workshop, cradleStation, fixtureLoadRating:null, wheelCentersC: corner.wheel_stations_m.map(s => s.wheel_center), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: steering.snapshot(), suspensionTravel: 'held at neutral; load and ground-contact response unqualified' }; }
+    snapshot() { const state=steering.snapshot(); return { assemblyRevision: steering.contract.configuration, workshop, motionStudy, chassisDisplayOffsetM:motionStudy?.2:workshop?.1:0, cradleStation, fixtureLoadRating:null, nominalWheelCentersC: corner.wheel_stations_m.map(s=>s.wheel_center), wheelCentersC: corner.wheel_stations_m.map(s=>s.x===0?s.wheel_center:state.corners[(s.x>0?'front':'rear')+'_'+(s.side>0?'left':'right')].wheelCenterM), wheelDiameter: corner.wheel_interface.diameter_source_m, groundLift: root.position.z, cornerCount: corners.length, serviceOpen, removableNodes: removable.length, steering: state, suspensionTravel: motionStudy?'four steering corners: unloaded kinematic study ±12 degrees; middle pair fixed':'held at neutral' }; }
   };
 }

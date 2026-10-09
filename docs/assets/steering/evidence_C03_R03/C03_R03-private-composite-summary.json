@@ -1,0 +1,58 @@
+{
+  "scope": "Final selected C03_R03 sampled private-motor fit by explicit evidence inheritance; selected upperR06/lowerR04 only.",
+  "motor_fit_status": "PASS at36 sampled q/r/corner poses by composition",
+  "whole_vehicle_qualification": "Not established by this motor-fit report. Original-part collision checks, fitted purchased hardware, tolerances, load paths and dynamics have separate gates.",
+  "created_at_utc": "2026-10-09T12:25:01.635197+00:00",
+  "source_model": "WD220 99220041A339 private STEP",
+  "source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "source_solid_count_in_this_runtime": 240,
+  "selected_export_and_source_hashes": {
+    "upper_wishbone_C03_R06.step": "cea5bba0af9ab4a41abd9957f143350cff1a7bc74f3a1f3fc3fe20f103347a6f",
+    "lower_wishbone_C03_R04.step": "d08551d2b34fb49c493e7be7ac75c6e2ccd8ab5e694dcef657fae0f2b5945bc0",
+    "kinematics_C03_R01.js": "7ae81b3b4b71d2d522aa6983eafd3c9aecf7b3bbb732908cd4a25b5ecb165941",
+    "original_steering_C03_R03.step": "9868908f2dbe770e0b253eba1aa46af7a386c04e6f004c475db5015f864966db",
+    "original_steering_C03_R03.glb": "d5d30b548613a690cf0b9cebfe5995dc517183bd99743e05db1fad73931d0ac7",
+    "original_steering_C03_R03_manifest.json": "4e5da71d14f5b259588b43020af275e80d5beffb71473aca0f386dc70f7a4157",
+    "build_original_steering_assembly_R03.py": "3f5a47f7d9a29aa5be69586ecb1395156901e39e4462edf7253e017190665d6f"
+  },
+  "frame_sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+  "body_sha256": "2ca9f497b429e0cf66b8d11a1f9680f3bac75cc26a0e5975cde5fbeadbd53fba",
+  "solver_byte_hash_note": "The old audit-snapshot solver and current finite-input-guard revision differ bytewise. The36-pose equivalence bridge independently verifies identical outputs; byte equality is not claimed.",
+  "proof_steps": [
+    "The baseline R01 motor audit covers36 sampled poses against included C03 components, frame R07 and body R01. All18 positive pairs were confined to the removed upperR02/lowerR03 arm families.",
+    "Actual R03 export/source mapping confirms exactly eight changed arm instances. All other included original geometry, placements and motion groups are unchanged. Current solver output is identical for all36 poses.",
+    "Selected lowerR04 independently passed at all36 poses in the prior joint arm-replacement test. That report also contains superseded upperR03; only its lowerR04 evidence is inherited here.",
+    "Selected upperR06 independently passed at all36 same poses in its own hash-bound test.",
+    "The six non-local replacement arm instances are disjoint from each checked motor by216 conservative AABB checks. Their minimum separation lower bound is1006.612960 mm; local arm pairs use the exact B-rep tests.",
+    "The actual selected R03 STEP solids and GLB meshes correspond to reconstructed source placements, including the eight changed instances. See the independently hash-bound export report for its detailed tolerances and mapping."
+  ],
+  "counts_kept_separate": {
+    "baseline_R01_exact_pairs_executed": 5398,
+    "baseline_identical_relative_pose_pair_reuses": 5332,
+    "baseline_failure_cases_retained_as_history": 14,
+    "baseline_positive_pairs_removed": 18,
+    "prior_upperR03_lowerR04_joint_test_exact_pairs": 3360,
+    "selected_upperR06_exact_pairs": 108,
+    "replacement_nonlocal_arm_AABB_pairs": 216,
+    "composed_sampled_motor_cases": 36
+  },
+  "positive_overlap_reporting_threshold_mm3": 0.0001,
+  "exact_minimum_motor_gap": "Not established. Exact-distance attempts produced no completed measurements and are not counted as passes.",
+  "evidence_artifact_sha256": {
+    "private-C03-q0-12case-summary.json": "8c18569a8509810196f115cbc9f580be8a82efe46df299bbc51e51942c182a59",
+    "private-C03-travel-final-summary.json": "226a3c59d7a0b64112b6c0062bd7fb6e3780b011c757600f8915df30e3799ecd",
+    "C03-upperR03-lowerR04-private-arm-summary.json": "2947ca6c0c0d096de657ce7706c8f4032191db44e040c0f3397a1996d0c6d05e",
+    "C03-upperR06-private-arm-summary.json": "deed2df8f947e01deb654d6454211ba5a79cbcbe596606350d24e20ad000d0a5",
+    "arm-inheritance-R03/numerical_audit.json": "e1275bd76d807be16ca1d779fb7309805815badaadb5a3b0be5b06552e7ffb81",
+    "R03-cross-corner-arm-bounds.json": "157ec5dd3684f2561ba8343da60a2693eebcb901d16322b95346f922c5c8582e",
+    "selected-revision-equivalence.json": "d465501fbb281d4a1c969a12a5643a27d682fba22e851bd008d354ff6cd373ed",
+    "motor-placement-numeric-contract.json": "d03b130f5f9c808d17e7c7a2b16bb0db2184b72fb11ce60b2b34f6b10c4bbbf6"
+  },
+  "limits": [
+    "These are sampled CAD interference checks, not a continuous collision-free steering/suspension interval or physical qualification.",
+    "No tolerance/deflection margin, bearing angular capacity, actuator force/duty, fastener retention, fatigue or ground-load equilibrium is established.",
+    "Direct motor-to-wheel/rim solids, adapters/output-rotor clocking, physical purchased bearing/rod-end bodies, actuator body and coilover selection remain outside this private motor-fit report. Separate original-part wheel tests do not substitute for those excluded private interfaces.",
+    "Older R01 failed witnesses remain included and are not relabeled as successes. Superseded arm/export reports do not authorize an unverified geometry substitution.",
+    "Only numerical source facts and hashes are included; no vendor geometry or vendor-derived mesh is exported."
+  ]
+}
