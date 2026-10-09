@@ -1,0 +1,16 @@
+{
+  "activeCount": 1240,
+  "declaredCount": 1240,
+  "missingNodes": [],
+  "missingEdges": [],
+  "inactiveDeclarations": [],
+  "complete": true,
+  "rootedGraph": {
+    "root": "frame/main_rail_right",
+    "rootModule": "frame",
+    "rootedCount": 1240,
+    "unreachable": [],
+    "topologicallyConnected": true,
+    "qualification": "Graph connectivity preserves edge kinds and open gates; it is not proof of physical strength, fit or safety."
+  }
+}

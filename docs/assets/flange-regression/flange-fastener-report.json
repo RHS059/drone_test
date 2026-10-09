@@ -1,0 +1,81 @@
+{
+  "adapter_sha256": "1ba113112322d1c0442bd6705456655fd9d6a1bdd6ac2f6f1edb8ba2d5167dff",
+  "actual_ur_face": {
+    "z_mm": 0.0,
+    "area_mm2": 5550.016121648068
+  },
+  "actual_counterbore_floors": [
+    {
+      "center_mm": [
+        -19.999999999999996,
+        -34.64101615137,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    },
+    {
+      "center_mm": [
+        20.000000000000004,
+        -34.64101615137,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    },
+    {
+      "center_mm": [
+        -39.99999999999999,
+        3.651357926371803e-15,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    },
+    {
+      "center_mm": [
+        -19.999999999999996,
+        34.641016151378,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    },
+    {
+      "center_mm": [
+        40.00000000000001,
+        -3.6341179202132773e-16,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    },
+    {
+      "center_mm": [
+        20.000000000000004,
+        34.641016151378,
+        11.5
+      ],
+      "z_mm": 11.5,
+      "inner_diameter_mm": 8.5,
+      "outer_diameter_mm": 15
+    }
+  ],
+  "actual_nominal_grip_mm": 11.5,
+  "candidate_underhead_length_mm": 18,
+  "nominal_protrusion_mm": 6.5,
+  "manufacturer_maximum_screen_pass": true,
+  "project_minimum_screen_pass": true,
+  "nominal_screen_pass": true,
+  "manufacturer_source": "https://www.universal-robots.com/articles/ur/application-installation/end-effector-mounting-on-tool-output-flange/",
+  "proposed_minimum_is_manufacturer_requirement": false,
+  "effective_thread_engagement_verified": false,
+  "tolerance_stack_verified": false,
+  "fabrication_approved": false,
+  "limits": "This checks nominal protrusion only. Incomplete tip threads, chamfers, thread depth, exact fastener tolerance, adapter tolerance and effective engagement remain unresolved."
+}

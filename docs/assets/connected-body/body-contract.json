@@ -1,0 +1,975 @@
+{
+  "revision": "PR01+SO02_E04P+BA02+E04",
+  "patches": [
+    {
+      "file": "openings.glb.gz",
+      "changes": [
+        {
+          "name": "main_base_deck_3mm",
+          "action": "replace"
+        },
+        {
+          "name": "main_left_side_3mm",
+          "action": "replace"
+        },
+        {
+          "name": "main_right_side_3mm",
+          "action": "replace"
+        },
+        {
+          "name": "right_side_service_cover_2",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_1",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_2",
+          "action": "replace"
+        },
+        {
+          "name": "rear_bulkhead_3mm",
+          "action": "replace"
+        },
+        {
+          "name": "front_tool_base",
+          "action": "replace"
+        },
+        {
+          "name": "front_tool_left_side",
+          "action": "replace"
+        },
+        {
+          "name": "front_tool_right_side",
+          "action": "replace"
+        },
+        {
+          "name": "front_tool_nose_wall",
+          "action": "replace"
+        },
+        {
+          "name": "front_sloped_service_nose",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_1_tapped_boss",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_1_M6x20",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_1_washer",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_2_tapped_boss",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_2_M6x20",
+          "action": "replace"
+        },
+        {
+          "name": "right_service_nutclip_2_2_washer",
+          "action": "replace"
+        },
+        {
+          "name": "controller_battery_partition",
+          "action": "replace"
+        },
+        {
+          "name": "battery_tool_partition",
+          "action": "replace"
+        }
+      ]
+    },
+    {
+      "file": "battery.glb.gz",
+      "changes": [
+        {
+          "name": "battery_well_floor_3mm",
+          "action": "replace"
+        },
+        {
+          "name": "battery_1_isolator_pad",
+          "action": "remove"
+        },
+        {
+          "name": "battery_1_stop_-1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_1_stop_1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_2_isolator_pad",
+          "action": "remove"
+        },
+        {
+          "name": "battery_2_stop_-1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_2_stop_1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_3_isolator_pad",
+          "action": "remove"
+        },
+        {
+          "name": "battery_3_stop_-1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_3_stop_1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_4_isolator_pad",
+          "action": "remove"
+        },
+        {
+          "name": "battery_4_stop_-1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_4_stop_1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_crossbar_1",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_stud_1_-235",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_1_-235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_1_-235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_stud_1_235",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_1_235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_1_235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_crossbar_2",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_stud_2_-235",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_2_-235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_2_-235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_stud_2_235",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_2_235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_nut_2_235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_1_-235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_1_-235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_1_235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_1_235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_2_-235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_2_-235_top",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_2_235_bottom",
+          "action": "remove"
+        },
+        {
+          "name": "battery_retention_washer_2_235_top",
+          "action": "remove"
+        },
+        {
+          "name": "BA02_pack_1_original_external_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_positive_M8_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_negative_M8_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_central_vent_INTERFACE",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_1_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_1_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_1_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_1_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_2_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_2_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_2_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_2_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_3_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_3_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_3_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_3_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_4_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_4_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_4_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_tray_M8_4_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_pocketed_tray",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_strap_1_webbing_route",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_strap_1_purchased_buckle_APPROX_EXTERNAL",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_strap_2_webbing_route",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_1_strap_2_purchased_buckle_APPROX_EXTERNAL",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_original_external_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_positive_M8_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_negative_M8_interface",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_central_vent_INTERFACE",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_1_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_1_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_1_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_1_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_2_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_2_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_2_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_2_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_3_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_3_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_3_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_3_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_4_top_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_4_screw",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_4_bottom_washer",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_tray_M8_4_nut",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_pocketed_tray",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_strap_1_webbing_route",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_strap_1_purchased_buckle_APPROX_EXTERNAL",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_strap_2_webbing_route",
+          "action": "add"
+        },
+        {
+          "name": "BA02_pack_2_strap_2_purchased_buckle_APPROX_EXTERNAL",
+          "action": "add"
+        }
+      ]
+    },
+    {
+      "file": "trough.glb.gz",
+      "changes": [
+        {
+          "action": "replace",
+          "name": "cable_duct_floor_1"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_1_400"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_1_484"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_1_470"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_1_546"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_1_rear_welded_support"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_1_front_welded_support"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_floor_2"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_2_400"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_2_484"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_2_470"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_2_546"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_2_rear_welded_support"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_2_front_welded_support"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_floor_3"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_3_400"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_3_484"
+        },
+        {
+          "action": "remove",
+          "name": "cable_duct_side_3_470"
+        },
+        {
+          "action": "add",
+          "name": "cable_duct_side_3_546"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_3_rear_welded_support"
+        },
+        {
+          "action": "replace",
+          "name": "cable_duct_3_front_welded_support"
+        },
+        {
+          "action": "add",
+          "name": "QB2_partition_gland_366.5_53111020_body"
+        },
+        {
+          "action": "add",
+          "name": "QB2_partition_gland_366.5_53119020_locknut"
+        },
+        {
+          "action": "add",
+          "name": "QB2_partition_gland_443.5_53111020_body"
+        },
+        {
+          "action": "add",
+          "name": "QB2_partition_gland_443.5_53119020_locknut"
+        }
+      ]
+    }
+  ],
+  "service_groups": [
+    {
+      "name": "rear_controller_hatch",
+      "removable": [
+        "rear_controller_hatch_removable_lid",
+        "rear_controller_hatch_gasket",
+        "rear_controller_hatch_M6_1",
+        "rear_controller_hatch_M6_washer_1",
+        "rear_controller_hatch_M6_2",
+        "rear_controller_hatch_M6_washer_2",
+        "rear_controller_hatch_M6_3",
+        "rear_controller_hatch_M6_washer_3",
+        "rear_controller_hatch_M6_4",
+        "rear_controller_hatch_M6_washer_4",
+        "rear_controller_hatch_M6_5",
+        "rear_controller_hatch_M6_washer_5",
+        "rear_controller_hatch_M6_6",
+        "rear_controller_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "rear_controller_hatch_weld_flange",
+        "rear_controller_hatch_nutplate_1",
+        "rear_controller_hatch_nutplate_2",
+        "rear_controller_hatch_nutplate_3",
+        "rear_controller_hatch_nutplate_4",
+        "rear_controller_hatch_nutplate_5",
+        "rear_controller_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "battery_hatch",
+      "removable": [
+        "battery_hatch_removable_lid",
+        "battery_hatch_gasket",
+        "battery_hatch_M6_1",
+        "battery_hatch_M6_washer_1",
+        "battery_hatch_M6_2",
+        "battery_hatch_M6_washer_2",
+        "battery_hatch_M6_3",
+        "battery_hatch_M6_washer_3",
+        "battery_hatch_M6_4",
+        "battery_hatch_M6_washer_4",
+        "battery_hatch_M6_5",
+        "battery_hatch_M6_washer_5",
+        "battery_hatch_M6_6",
+        "battery_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "battery_hatch_weld_flange",
+        "battery_hatch_nutplate_1",
+        "battery_hatch_nutplate_2",
+        "battery_hatch_nutplate_3",
+        "battery_hatch_nutplate_4",
+        "battery_hatch_nutplate_5",
+        "battery_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "payload_tool_hatch",
+      "removable": [
+        "payload_tool_hatch_removable_lid",
+        "payload_tool_hatch_gasket",
+        "payload_tool_hatch_M6_1",
+        "payload_tool_hatch_M6_washer_1",
+        "payload_tool_hatch_M6_2",
+        "payload_tool_hatch_M6_washer_2",
+        "payload_tool_hatch_M6_3",
+        "payload_tool_hatch_M6_washer_3",
+        "payload_tool_hatch_M6_4",
+        "payload_tool_hatch_M6_washer_4",
+        "payload_tool_hatch_M6_5",
+        "payload_tool_hatch_M6_washer_5",
+        "payload_tool_hatch_M6_6",
+        "payload_tool_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "payload_tool_hatch_weld_flange",
+        "payload_tool_hatch_nutplate_1",
+        "payload_tool_hatch_nutplate_2",
+        "payload_tool_hatch_nutplate_3",
+        "payload_tool_hatch_nutplate_4",
+        "payload_tool_hatch_nutplate_5",
+        "payload_tool_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "front_tool_hatch",
+      "removable": [
+        "front_tool_hatch_removable_lid",
+        "front_tool_hatch_gasket",
+        "front_tool_hatch_M6_1",
+        "front_tool_hatch_M6_washer_1",
+        "front_tool_hatch_M6_2",
+        "front_tool_hatch_M6_washer_2",
+        "front_tool_hatch_M6_3",
+        "front_tool_hatch_M6_washer_3",
+        "front_tool_hatch_M6_4",
+        "front_tool_hatch_M6_washer_4",
+        "front_tool_hatch_M6_5",
+        "front_tool_hatch_M6_washer_5",
+        "front_tool_hatch_M6_6",
+        "front_tool_hatch_M6_washer_6"
+      ],
+      "retained_on_body": [
+        "front_tool_hatch_weld_flange",
+        "front_tool_hatch_nutplate_1",
+        "front_tool_hatch_nutplate_2",
+        "front_tool_hatch_nutplate_3",
+        "front_tool_hatch_nutplate_4",
+        "front_tool_hatch_nutplate_5",
+        "front_tool_hatch_nutplate_6"
+      ],
+      "procedure": "Remove six M6 screws and washers from above; lift lid vertically; gasket remains separable. Tapped bosses stay welded to flange. Screw/washer retention during removal is not captive.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "left_side_service_cover_1",
+      "removable": [
+        "left_side_service_cover_1",
+        "left_service_nutclip_1_1_M6x20",
+        "left_service_nutclip_1_1_washer",
+        "left_service_nutclip_1_2_M6x20",
+        "left_service_nutclip_1_2_washer",
+        "left_service_nutclip_1_3_M6x20",
+        "left_service_nutclip_1_3_washer",
+        "left_service_nutclip_1_4_M6x20",
+        "left_service_nutclip_1_4_washer"
+      ],
+      "retained_on_body": [
+        "left_service_nutclip_1_1",
+        "left_service_nutclip_1_1_tapped_boss",
+        "left_service_nutclip_1_2",
+        "left_service_nutclip_1_2_tapped_boss",
+        "left_service_nutclip_1_3",
+        "left_service_nutclip_1_3_tapped_boss",
+        "left_service_nutclip_1_4",
+        "left_service_nutclip_1_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "left_side_service_cover_2",
+      "removable": [
+        "left_side_service_cover_2",
+        "left_service_nutclip_2_1_M6x20",
+        "left_service_nutclip_2_1_washer",
+        "left_service_nutclip_2_2_M6x20",
+        "left_service_nutclip_2_2_washer",
+        "left_service_nutclip_2_3_M6x20",
+        "left_service_nutclip_2_3_washer",
+        "left_service_nutclip_2_4_M6x20",
+        "left_service_nutclip_2_4_washer"
+      ],
+      "retained_on_body": [
+        "left_service_nutclip_2_1",
+        "left_service_nutclip_2_1_tapped_boss",
+        "left_service_nutclip_2_2",
+        "left_service_nutclip_2_2_tapped_boss",
+        "left_service_nutclip_2_3",
+        "left_service_nutclip_2_3_tapped_boss",
+        "left_service_nutclip_2_4",
+        "left_service_nutclip_2_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "right_side_service_cover_1",
+      "removable": [
+        "right_side_service_cover_1",
+        "right_service_nutclip_1_1_M6x20",
+        "right_service_nutclip_1_1_washer",
+        "right_service_nutclip_1_2_M6x20",
+        "right_service_nutclip_1_2_washer",
+        "right_service_nutclip_1_3_M6x20",
+        "right_service_nutclip_1_3_washer",
+        "right_service_nutclip_1_4_M6x20",
+        "right_service_nutclip_1_4_washer"
+      ],
+      "retained_on_body": [
+        "right_service_nutclip_1_1",
+        "right_service_nutclip_1_1_tapped_boss",
+        "right_service_nutclip_1_2",
+        "right_service_nutclip_1_2_tapped_boss",
+        "right_service_nutclip_1_3",
+        "right_service_nutclip_1_3_tapped_boss",
+        "right_service_nutclip_1_4",
+        "right_service_nutclip_1_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    },
+    {
+      "name": "right_side_service_cover_2",
+      "removable": [
+        "right_side_service_cover_2",
+        "right_service_nutclip_2_1_M6x20",
+        "right_service_nutclip_2_1_washer",
+        "right_service_nutclip_2_2_M6x20",
+        "right_service_nutclip_2_2_washer",
+        "right_service_nutclip_2_3_M6x20",
+        "right_service_nutclip_2_3_washer",
+        "right_service_nutclip_2_4_M6x20",
+        "right_service_nutclip_2_4_washer"
+      ],
+      "retained_on_body": [
+        "right_service_nutclip_2_1",
+        "right_service_nutclip_2_1_tapped_boss",
+        "right_service_nutclip_2_2",
+        "right_service_nutclip_2_2_tapped_boss",
+        "right_service_nutclip_2_3",
+        "right_service_nutclip_2_3_tapped_boss",
+        "right_service_nutclip_2_4",
+        "right_service_nutclip_2_4_tapped_boss"
+      ],
+      "procedure": "Remove four M6 screws and washers from outside, translate panel outward 20 mm, then lift. Clips and tapped blocks remain welded to side wall.",
+      "required_tool": "5 mm AF hex key",
+      "weatherproof": false
+    }
+  ],
+  "unused_legacy_battery_proxies": [
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_1",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_2",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_3",
+    "DIMENSION_ONLY_RELiON_InSight_48V_battery_4"
+  ],
+  "files": [
+    {
+      "source": "body-power/panel-retention/body_power_panel_retained_PR01.glb",
+      "file": "body.glb.gz",
+      "source_sha256": "33d1e32f9a2d213618e33d99e75f522016eceb6f65b5906e13f056429740330b",
+      "sha256": "46f8884960eb11c0992a246f83b6c3a679f8b186b922fa83c54473d6cd34d27e",
+      "bytes": 2494179
+    },
+    {
+      "source": "body-power/shock-opening-study/body_shock_partition_replacements_SO02_E04P.glb",
+      "file": "openings.glb.gz",
+      "source_sha256": "3776d8ff0a0223905c41ae32ed8f78d4fa67c9fead734023cdabe3c2c0f3340d",
+      "sha256": "72f8da837be7a27bfc2ff831a20e2cc77e3bbb28aa5c4019d06904a4aa96fb11",
+      "bytes": 378243
+    },
+    {
+      "source": "battery-alternative/BA02/battery_strap_tray_BA02.glb",
+      "file": "battery.glb.gz",
+      "source_sha256": "c702c13bf4c6067997a4f0415338709a83d2ceb39a73f565e10512bab958b1f6",
+      "sha256": "9497be6d21a27036c1c1f8207f9c1df9876eee40622f5a218ede242458cb9f2d",
+      "bytes": 500241
+    },
+    {
+      "source": "electrical-drive/victron_candidate/switchgear_E04/aligned_trough_and_glands_E04.glb",
+      "file": "trough.glb.gz",
+      "source_sha256": "ee27d31374157fbf4926e0a9adba1b80d22b78a7aebd93e3326e0a98bacef106",
+      "sha256": "f56d44d6f80bf69140bff3dd85e9858682397bf6763384d1ea254c9e0c3b4846",
+      "bytes": 25617
+    }
+  ],
+  "battery_polarity": {
+    "schema_version": 1,
+    "revision": "BA02_POLARITY_R01",
+    "created_utc": "2026-10-09",
+    "scope": "Source-verified functional polarity and viewer semantics only. Frozen BA02 geometry, archive, source names and placement are unchanged.",
+    "source": {
+      "manufacturer": "Victron Energy",
+      "model": "LiFePO4 Battery 51.2 V / 100 Ah NG",
+      "part_number": "BAT548110620",
+      "document_title": "Dimension Drawing - LiFePO4 (NG)",
+      "url": "https://www.victronenergy.com/upload/documents/LiFePO4-Battery-51.2V100Ah-NG.pdf",
+      "sha256": "d153636d0bb1cb84ea4c3c339746618c97fd02859398404febbc8a92a2a27d4b",
+      "page": 1,
+      "view": "Top plan view, positive mark at drawing-left and negative mark at drawing-right.",
+      "inspection": "Official PDF hash checked and rendered marks visually inspected on 2026-10-09. Vendor document/image is not included in this package.",
+      "drawing_width_mm": 647.6,
+      "fitting_from_drawing_left_mm": 376.3,
+      "terminal_pitch_mm": 550.5,
+      "depth_mm": 161.5,
+      "terminal_from_depth_edge_mm": 26.7,
+      "drawing_terminal_marks": {
+        "left": "positive",
+        "right": "negative"
+      }
+    },
+    "datum": {
+      "frame": "BA02 source CAD frame C, millimetres, Z up; GLB stores metres.",
+      "pack_centers_C_x_mm": [
+        -975,
+        -625
+      ],
+      "pack_center_C_y_mm": 0,
+      "installed_fitting_C_y_mm": -52.5,
+      "drawing_right_to_C_y_sign": -1,
+      "terminal_x_relative_to_pack_center_mm": -54.05,
+      "terminal_axis_abs_C_y_mm": 275.25,
+      "terminal_top_C_z_mm": 169.6,
+      "terminal_top_z_scope": "Preserved frozen BA02 conservative reservation height, not a new source-hardware or current-drawing height qualification.",
+      "terminal_position_note": "Use frozen symmetric 550.5 mm pitch / 2 = 275.25 mm. The source 48.5 mm end offset is rounded, differing by 0.05 mm; this correction does not rebuild geometry."
+    },
+    "derivation": [
+      "Drawing fitting offset from center = 376.3 - 647.6 / 2 = +52.5 mm, toward drawing-right.",
+      "Frozen BA02 fitting center is Y -52.5 mm. Therefore drawing-right maps to CAD -Y.",
+      "Positive mark is on drawing-left, so installed positive is Y +275.25 mm. Negative mark is on drawing-right, so installed negative is Y -275.25 mm.",
+      "Terminal depth offset gives X = cx - (161.5 / 2 - 26.7) = cx - 54.05 mm. Z 169.6 mm is preserved from frozen BA02.",
+      "Legacy node names assigned the opposite polarity. Resolve source aliases and use this source-verified functional map; cable continuity is not polarity evidence."
+    ],
+    "viewer_colors": {
+      "positive": "#e53935",
+      "negative": "#20252b",
+      "scope": "Semantic visualization colors selected for this correction; no assertion about physical terminal coating or insulation color."
+    },
+    "runtime_policy": {
+      "retain_source_node_names": true,
+      "label_field": "userData.label",
+      "display_label_field": "userData.displayLabel",
+      "functional_name_field": "userData.batteryPolarity.functionalName",
+      "source_alias_field": "userData.batteryPolarity.sourceNodeName",
+      "material_isolation": "Clone every corrected mesh material. Never recolor a shared original metal material.",
+      "geometry_change": false,
+      "transform_change": false
+    },
+    "terminals": [
+      {
+        "pack": 1,
+        "source_node_name": "BA02_pack_1_negative_M8_interface",
+        "legacy_name_polarity": "negative",
+        "functional_polarity": "positive",
+        "functional_name": "BA02_pack_1_positive_M8_interface_VERIFIED_R01",
+        "drawing_side": "left",
+        "symbol": "+",
+        "axis_top_C_mm": [
+          -1029.05,
+          275.25,
+          169.6
+        ],
+        "display_label": "Battery 1 positive (+) terminal interface; source-verified polarity, hardware/lug unqualified",
+        "color": "#e53935"
+      },
+      {
+        "pack": 1,
+        "source_node_name": "BA02_pack_1_positive_M8_interface",
+        "legacy_name_polarity": "positive",
+        "functional_polarity": "negative",
+        "functional_name": "BA02_pack_1_negative_M8_interface_VERIFIED_R01",
+        "drawing_side": "right",
+        "symbol": "-",
+        "axis_top_C_mm": [
+          -1029.05,
+          -275.25,
+          169.6
+        ],
+        "display_label": "Battery 1 negative (-) terminal interface; source-verified polarity, hardware/lug unqualified",
+        "color": "#20252b"
+      },
+      {
+        "pack": 2,
+        "source_node_name": "BA02_pack_2_negative_M8_interface",
+        "legacy_name_polarity": "negative",
+        "functional_polarity": "positive",
+        "functional_name": "BA02_pack_2_positive_M8_interface_VERIFIED_R01",
+        "drawing_side": "left",
+        "symbol": "+",
+        "axis_top_C_mm": [
+          -679.05,
+          275.25,
+          169.6
+        ],
+        "display_label": "Battery 2 positive (+) terminal interface; source-verified polarity, hardware/lug unqualified",
+        "color": "#e53935"
+      },
+      {
+        "pack": 2,
+        "source_node_name": "BA02_pack_2_positive_M8_interface",
+        "legacy_name_polarity": "positive",
+        "functional_polarity": "negative",
+        "functional_name": "BA02_pack_2_negative_M8_interface_VERIFIED_R01",
+        "drawing_side": "right",
+        "symbol": "-",
+        "axis_top_C_mm": [
+          -679.05,
+          -275.25,
+          169.6
+        ],
+        "display_label": "Battery 2 negative (-) terminal interface; source-verified polarity, hardware/lug unqualified",
+        "color": "#20252b"
+      }
+    ],
+    "fitting_source_nodes": [
+      "BA02_pack_1_central_vent_INTERFACE",
+      "BA02_pack_2_central_vent_INTERFACE"
+    ],
+    "not_closed": [
+      "Source terminal, recess, bolt and lug geometry/qualification",
+      "Electrical current paths or cable continuity",
+      "Fuses, BMS, isolation, controls, conductor selection and full harness",
+      "Battery height discrepancy and source geometry reconstruction",
+      "Vehicle operational or electrical safety qualification"
+    ],
+    "frozen_inputs_sha256": {
+      "build_strap_tray_BA02.py": "5dff0965a54a0d2ca701dbbdfa58cd7e968e629ae06576fb91bc72a137bb954c",
+      "original_battery_strap_tray_BA02_source_and_evidence.zip": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da",
+      "BA02/CHECKPOINT.json": "407fe3cbc234e0b3e5a16e48733155bd0c4ed90df14a5261c174137a773bd52b",
+      "BA02/README.md": "27b7e0bf1520a4e627e83a2e22a6e4807cb2508333d4c82b80f9d56145024861",
+      "BA02/battery_strap_tray_BA02.glb": "c702c13bf4c6067997a4f0415338709a83d2ceb39a73f565e10512bab958b1f6",
+      "BA02/battery_strap_tray_BA02.step": "b50cd237244c16cea9a1c0ba74af51bb8d4d876e3ae1587e2686fed07ae478c6",
+      "BA02/buckle_service_reservations_BA02.glb": "deca221d29e8e4aa318ad50b2a2cad185d536adbd0edde47d7e1dc715693a1d4",
+      "BA02/buckle_service_reservations_BA02.step": "8d82c033d853a0f4c9cdba6a3b511e3ded9c9dad0cfc82fadd6bb8a79d44c371",
+      "BA02/original_hardware_mass.csv": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837",
+      "BA02/replacement_addition_manifest.json": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224",
+      "BA02/representation_metadata_check.json": "7940df05ecd6f403bd6400430b7bef10d8514dcdefe6ca9798fcea396688ffb5",
+      "BA02/strap_captures_tray_section.png": "058cbd31f6f41496085f05990cd5c89bba69daff6c0764ef3d4680108163c2e9",
+      "BA02/strap_channel_closeup.png": "9a988a8e549636d774ae1cd5cf1e09ab260312fd2d1770eff880d5a7bc75e85b",
+      "BA02/strap_source_and_cost_record.json": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09",
+      "BA02/strap_terminal_route_plan.png": "22b133576516b8fc1e08e34cb75252faea14590e8379bf3e7c72012fcf78c03d",
+      "BA02/tray_M8_retention_section.png": "477b80c6d1c14899c4d08f20cd3fa3164e972488801d2fecd56273ac3d2e8c6e",
+      "BA02/verification.json": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+    },
+    "gates": {
+      "polarity_source_verified": true,
+      "terminal_hardware_qualified": false,
+      "full_harness_complete": false,
+      "physical_electrical_continuity_verified": false
+    }
+  }
+}

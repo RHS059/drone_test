@@ -1,0 +1,390 @@
+{
+  "scope": "Actual private motor versus frozen R13 stationary upper clamps/towers. Each already-handed right source is inverse-proper-Rz(pi) mapped to source-left frame; motor yaw \u00b122 degrees and suspension translation vary while clamp stays fixed. Middle uses zero yaw and its proper right rotation is equivalent. Conservative component AABB rejection precedes exact B-rep common volume. Sampled fit only; no continuous-motion or structural/retention/operation approval. No private geometry saved.",
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "source_hashes": {
+    "front_left": "b54645122213e251b098091650994dec0aad4f9db37d3efc4f7735078eeba423",
+    "front_right": "be0991f00e5e55bf40125efdf97f2e20f73132eb46b1b39745fed25777efa382",
+    "rear_left": "b2b72ef8f61aa482573e4ee1e0b3b17b64517d31563d5e3f1586dcf96fd1ef77",
+    "rear_right": "896b1dedf9912a0cf18872c55c6c46eca7f89ea136e3379be13831024127125f",
+    "middle_left": "2d824012eeef05fe849f4930b47eb33ee9eab106b5a010210157b0727ac3f02e"
+  },
+  "rows": [
+    {
+      "clamp": "front_left",
+      "q_deg": -12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": -12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 230,
+      "exact_tested_private_solids": 10,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": -12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 0.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 0.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 0.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_left",
+      "q_deg": 12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": -12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": -12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 230,
+      "exact_tested_private_solids": 10,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": -12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 0.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 0.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 0.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "front_right",
+      "q_deg": 12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": -12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": -12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 230,
+      "exact_tested_private_solids": 10,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": -12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 0.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 0.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 0.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_left",
+      "q_deg": 12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": -12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": -12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 230,
+      "exact_tested_private_solids": 10,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": -12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 237,
+      "exact_tested_private_solids": 3,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 0.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 0.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 0.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 12.0,
+      "yaw_deg": -22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "rear_right",
+      "q_deg": 12.0,
+      "yaw_deg": 22.0,
+      "aabb_rejected_private_solids": 239,
+      "exact_tested_private_solids": 1,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "middle_left",
+      "q_deg": -12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 230,
+      "exact_tested_private_solids": 10,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "middle_left",
+      "q_deg": 0.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    },
+    {
+      "clamp": "middle_left",
+      "q_deg": 12.0,
+      "yaw_deg": 0.0,
+      "aabb_rejected_private_solids": 240,
+      "exact_tested_private_solids": 0,
+      "overlap_sum_mm3": 0.0,
+      "positive_pairs": []
+    }
+  ],
+  "positive_overlap_witnesses": [],
+  "complete": true,
+  "fabrication_or_operation_approved": false,
+  "no_positive_overlap_in_sampled_cases": true,
+  "import_environment": {
+    "cadquery_version": "2.7.0",
+    "ocp_version": "7.8.1.1",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "imported_solid_count": 240,
+    "orientation_counts": {
+      "TopAbs_Orientation.TopAbs_FORWARD": 240
+    },
+    "negative_volume_solids": 0,
+    "source_product_count_is_not_imported_solid_count": true,
+    "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+    "source_product_count": 1,
+    "source_manifold_solid_brep_entities": 12,
+    "source_brep_with_voids_entities": 1,
+    "source_closed_shell_entities": 244,
+    "vendor_part_count_inferred": false,
+    "count_note": "Kernel-imported solid decomposition, not unique vendor parts. The preserved final Colab output independently records the same source SHA, CadQuery2.7.0 and240 valid solids. Earlier unsupported verbal30 count is superseded; no duplication explanation is inferred.",
+    "reconciled_prior_numeric_report_sha256": "13000ecd41dd7a0ed304b880a326c7ab1e702a0c0f26f3599603c6d7dcf76386",
+    "prior_CadQuery_version": "2.7.0",
+    "prior_all_solids_valid": true
+  },
+  "fit_count_scope": "Private source solid-decomposition tests, not OEM part enumeration; volume sums are sums across imported components."
+}

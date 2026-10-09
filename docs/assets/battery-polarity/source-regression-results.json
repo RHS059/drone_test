@@ -1,0 +1,109 @@
+{
+  "pass": true,
+  "revision": "BA02_POLARITY_R01",
+  "source_pdf": {
+    "status": "verified_local_file",
+    "sha256_verified": true,
+    "sha256": "d153636d0bb1cb84ea4c3c339746618c97fd02859398404febbc8a92a2a27d4b",
+    "included_in_package": false
+  },
+  "frozen_inputs_unchanged_count": 17,
+  "frozen_inputs_unchanged": [
+    "build_strap_tray_BA02.py",
+    "original_battery_strap_tray_BA02_source_and_evidence.zip",
+    "BA02/CHECKPOINT.json",
+    "BA02/README.md",
+    "BA02/battery_strap_tray_BA02.glb",
+    "BA02/battery_strap_tray_BA02.step",
+    "BA02/buckle_service_reservations_BA02.glb",
+    "BA02/buckle_service_reservations_BA02.step",
+    "BA02/original_hardware_mass.csv",
+    "BA02/replacement_addition_manifest.json",
+    "BA02/representation_metadata_check.json",
+    "BA02/strap_captures_tray_section.png",
+    "BA02/strap_channel_closeup.png",
+    "BA02/strap_source_and_cost_record.json",
+    "BA02/strap_terminal_route_plan.png",
+    "BA02/tray_M8_retention_section.png",
+    "BA02/verification.json"
+  ],
+  "actual_glb_vertices_checked": true,
+  "mesh_tolerance_mm": 0.01,
+  "source_fitting_offset_from_drawing_center_mm": 52.5,
+  "fittings": [
+    {
+      "source_node_name": "BA02_pack_1_central_vent_INTERFACE",
+      "installed_C_y_mm": -52.5,
+      "drawing_right_to_C_y_sign": -1.0
+    },
+    {
+      "source_node_name": "BA02_pack_2_central_vent_INTERFACE",
+      "installed_C_y_mm": -52.5,
+      "drawing_right_to_C_y_sign": -1.0
+    }
+  ],
+  "terminals": [
+    {
+      "source_node_name": "BA02_pack_1_negative_M8_interface",
+      "functional_polarity": "positive",
+      "axis_top_C_mm": [
+        -1029.05,
+        275.25,
+        169.60000000000002
+      ],
+      "mesh_bounds_axis_top_C_mm": [
+        -1029.0477871894836,
+        275.25000274181366,
+        169.5999950170517
+      ]
+    },
+    {
+      "source_node_name": "BA02_pack_1_positive_M8_interface",
+      "functional_polarity": "negative",
+      "axis_top_C_mm": [
+        -1029.05,
+        -275.25,
+        169.60000000000002
+      ],
+      "mesh_bounds_axis_top_C_mm": [
+        -1029.0477871894836,
+        -275.25000274181366,
+        169.5999950170517
+      ]
+    },
+    {
+      "source_node_name": "BA02_pack_2_negative_M8_interface",
+      "functional_polarity": "positive",
+      "axis_top_C_mm": [
+        -679.05,
+        275.25,
+        169.60000000000002
+      ],
+      "mesh_bounds_axis_top_C_mm": [
+        -679.0477633476257,
+        275.25000274181366,
+        169.5999950170517
+      ]
+    },
+    {
+      "source_node_name": "BA02_pack_2_positive_M8_interface",
+      "functional_polarity": "negative",
+      "axis_top_C_mm": [
+        -679.05,
+        -275.25,
+        169.60000000000002
+      ],
+      "mesh_bounds_axis_top_C_mm": [
+        -679.0477633476257,
+        -275.25000274181366,
+        169.5999950170517
+      ]
+    }
+  ],
+  "polarity_based_on_source_marks_and_asymmetric_fitting": true,
+  "cable_continuity_used_as_polarity_evidence": false,
+  "terminal_hardware_qualified": false,
+  "full_harness_complete": false,
+  "physical_electrical_continuity_verified": false,
+  "vendor_assets_included": false
+}

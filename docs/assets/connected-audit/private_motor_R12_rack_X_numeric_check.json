@@ -1,0 +1,347 @@
+{
+  "structural_manifest_sha256": "0e925530affc29562a8c165fe87f6e6421f18098d3edfca5f010ddb0c4876dca",
+  "verified_rack_placements": 38,
+  "scope": "Actual19 retained R12 rack STEP X bounds versus prior numeric private motor continuous \u00b122 degree yaw bounds, including both proper handed motor orientations at all three axle stations. Rear original rack uses the declared manufactured YZ mirror, giving sign-reversed X; this does not reflect the private motor. Rack Y translation and suspension Y/Z translation do not change these X intervals. Only motor/rack longitudinal separation is established; no rack retention, other collisions or load qualification implied. No private geometry imported or saved by this script.",
+  "contract_sha256": "5cebccc193872c0a2a45a88886303eb0c0f3a9c497d33d4e8bc94fbd3946a426",
+  "source_parts": [
+    {
+      "part": "rack_guide_retained_C04_R12",
+      "sha256": "a649a7e5166134bccfe6c89d94772c3316ef2eefd7905c713f89918de7ed323c",
+      "X_bounds_mm": [
+        929.0,
+        1029.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_liner_-1_captured_C04_R12",
+      "sha256": "7a9730bb08c91e31a197f64f5b78c5009401ed21aca8a4276a34dd1090de92c5",
+      "X_bounds_mm": [
+        955.0,
+        1023.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_end_cap_-1_C04_R12",
+      "sha256": "b5a73cae9b0b6e5d95cd2d181ab38bc60a69dcc8d59ab985c41bc63c594e7d4a",
+      "X_bounds_mm": [
+        949.0,
+        1029.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_-1_0_C04_R12",
+      "sha256": "dc67a7b0328157e61e2dcd6f67ac546a74b31ee6e5deace16261ff1b6da23702",
+      "X_bounds_mm": [
+        950.25,
+        955.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_-1_1_C04_R12",
+      "sha256": "39b378ff22dd2b48c1dac823b6ae317bbdf43b6ac34e9f5b139525daa8ec2e05",
+      "X_bounds_mm": [
+        950.25,
+        955.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_-1_2_C04_R12",
+      "sha256": "63b8839708ae340f5259bee7382959f4ee28b4c9ad7dab14a0d5d204faf5ae9d",
+      "X_bounds_mm": [
+        1022.25,
+        1027.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_-1_3_C04_R12",
+      "sha256": "36c7c25c8ec37fc5f240dec7194d77dcf35b7e8e693f5d358a4bc2ac40008e53",
+      "X_bounds_mm": [
+        1022.25,
+        1027.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_inner_stop_M4x90_-1_C04_R12",
+      "sha256": "307c2d60a0e181351b9b6f1f05880f9ca99dd5251fc2b7e3b397c8f0270182aa",
+      "X_bounds_mm": [
+        945.0,
+        1039.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_stop_washer_-1_C04_R12",
+      "sha256": "1f312b4061268e3536f1092bed8f5b3a606c5ab56fca7a0011bfc8d858db7e2b",
+      "X_bounds_mm": [
+        1029.0,
+        1029.8
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_stop_nut_-1_C04_R12",
+      "sha256": "c4110c188dc72f8560f8eefe862652419b4745a23a09c9ee24b4eec8412d17c5",
+      "X_bounds_mm": [
+        1029.8,
+        1033.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_liner_1_captured_C04_R12",
+      "sha256": "7ea840c88cede51a3e31c19e035642ce459f5fef256e6067c7a6d32c85f1d467",
+      "X_bounds_mm": [
+        955.0,
+        1023.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_end_cap_1_C04_R12",
+      "sha256": "7e8f3b4aa7f813494cfb03ac342ed0361796461984fc03652c4a204a648d8908",
+      "X_bounds_mm": [
+        949.0,
+        1029.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_1_0_C04_R12",
+      "sha256": "7dad7fafb38ca8639ef0bbce1ddf5cce0f12429b4468417631145d3e8bdab300",
+      "X_bounds_mm": [
+        950.25,
+        955.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_1_1_C04_R12",
+      "sha256": "e84162b9829b11536b14cddf13fda542d342603634ce58ed5c5781a8e380ce5a",
+      "X_bounds_mm": [
+        950.25,
+        955.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_1_2_C04_R12",
+      "sha256": "58445cf381be3dd3d013abde798c9312a2b2246e321db9e17fe905c67407895a",
+      "X_bounds_mm": [
+        1022.25,
+        1027.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_cap_M3x10_1_3_C04_R12",
+      "sha256": "05eae528bf1fb44032686845546d6bf8c5e45d545ffa8f639f552e684d458c33",
+      "X_bounds_mm": [
+        1022.25,
+        1027.75
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_inner_stop_M4x90_1_C04_R12",
+      "sha256": "aebdc4d650e9bcb75456700e2d2b0a22604484563e64753e64242188399aff43",
+      "X_bounds_mm": [
+        945.0,
+        1039.0
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_stop_washer_1_C04_R12",
+      "sha256": "8e5060bf989f41fc35d2f5858e66ea8b69dfae961132782a93ad136a5dd47c7d",
+      "X_bounds_mm": [
+        1029.0,
+        1029.8
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "liner_stop_nut_1_C04_R12",
+      "sha256": "24cc9068f2ed7ae36935792569663eb80993f43fbdab3c1f9869cb08a8ae7d07",
+      "X_bounds_mm": [
+        1029.8,
+        1033.0
+      ],
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "front_rack_X_bounds_mm": [
+    929.0,
+    1039.0
+  ],
+  "rear_rack_X_bounds_mm": [
+    -1039.0,
+    -929.0
+  ],
+  "private_numeric_evidence_sha256": "fcb0a891de497dd7d572e8a431b7f3586dd69cf3ef33941336c1746d2491378b",
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "motor_intervals": [
+    {
+      "station_mm": -1350,
+      "side": -1,
+      "X_bounds_mm": [
+        -1539.543422754441,
+        -1210.6112763972576
+      ]
+    },
+    {
+      "station_mm": -1350,
+      "side": 1,
+      "X_bounds_mm": [
+        -1489.3887236027424,
+        -1160.456577245559
+      ]
+    },
+    {
+      "station_mm": 0,
+      "side": -1,
+      "X_bounds_mm": [
+        -189.54342275444117,
+        139.38872360274235
+      ]
+    },
+    {
+      "station_mm": 0,
+      "side": 1,
+      "X_bounds_mm": [
+        -139.38872360274235,
+        189.54342275444117
+      ]
+    },
+    {
+      "station_mm": 1350,
+      "side": -1,
+      "X_bounds_mm": [
+        1160.456577245559,
+        1489.3887236027424
+      ]
+    },
+    {
+      "station_mm": 1350,
+      "side": 1,
+      "X_bounds_mm": [
+        1210.6112763972576,
+        1539.543422754441
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "rack": "front",
+      "motor_station_mm": -1350,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 2139.611276397258,
+      "separated": true
+    },
+    {
+      "rack": "front",
+      "motor_station_mm": -1350,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 2089.456577245559,
+      "separated": true
+    },
+    {
+      "rack": "front",
+      "motor_station_mm": 0,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 789.6112763972576,
+      "separated": true
+    },
+    {
+      "rack": "front",
+      "motor_station_mm": 0,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 739.4565772455588,
+      "separated": true
+    },
+    {
+      "rack": "front",
+      "motor_station_mm": 1350,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 121.45657724555895,
+      "separated": true
+    },
+    {
+      "rack": "front",
+      "motor_station_mm": 1350,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 171.6112763972576,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": -1350,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 171.6112763972576,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": -1350,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 121.45657724555895,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": 0,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 739.4565772455588,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": 0,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 789.6112763972576,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": 1350,
+      "motor_side": -1,
+      "X_gap_lower_bound_mm": 2089.456577245559,
+      "separated": true
+    },
+    {
+      "rack": "rear",
+      "motor_station_mm": 1350,
+      "motor_side": 1,
+      "X_gap_lower_bound_mm": 2139.611276397258,
+      "separated": true
+    }
+  ],
+  "minimum_gap_lower_bound_mm": 121.45657724555895,
+  "pass": true,
+  "physical_or_operation_approval": false
+}

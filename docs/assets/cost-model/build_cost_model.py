@@ -1,343 +1,197 @@
 #!/usr/bin/env python3
-"""Build the C03_R03 plus two C02_R06 middle-corner cost reference model. Public observations, never quotations."""
+"""Rebuild C04 costs from frozen JSON inputs, using only Python's standard library.
+No network, app changes, vendor assets, purchases or currency conversions.
+"""
 from pathlib import Path
 from decimal import Decimal
-import csv, hashlib, json, re
-
+from collections import defaultdict
+import copy,csv,hashlib,json,re
 HERE=Path(__file__).resolve().parent
-STAGING=(HERE.parent/'app').is_dir()
-BASE=HERE.parent
-APP=BASE/'app' if STAGING else HERE.parents[2]
-ASSETS=APP/'docs/assets'
 OBSERVED='2026-10-09'
-REV='C03_R03'
-MECHANICAL=Path('/workspace/shared/ugv-reconstruction/mechanical')
-LEDGER=(MECHANICAL/'running_gear_C03' if STAGING else ASSETS/'steering')/f'mass_cost_ledger_{REV}.json'
-MIDDLE_LEDGER=(MECHANICAL/'running_gear_C02' if STAGING else ASSETS/'corners')/'mass_cost_ledger_C02_R06.json'
-SNAPSHOT=BASE/'audit/mass-power-snapshot-C03_R03.json' if STAGING else ASSETS/'mechanical/mass-power-snapshot.json'
-BODY=ASSETS/'body-power/verification.json'
-CONTRACT=LEDGER.with_name(f'interface_contract_{REV}.json')
-RIM_MASS_EVIDENCE=HERE/'manufacturer-mass-evidence.json'
-source_rows=[]
+def load(name):return json.loads((HERE/'inputs'/name).read_text())
+def write(name,value):(HERE/name).write_text(json.dumps(value,indent=2,ensure_ascii=False)+'\n')
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+def close(a,b):assert abs(a-b)<1e-7,(a,b)
 
-def source(id,url,publisher,kind,facts,**kw):
-    row=dict(id=id,url=url,publisher=publisher,kind=kind,retrieved_on=OBSERVED,
-             retrieval=kw.pop('retrieval','Public web page text; may be search-provider cached. No checkout or vendor confirmation.'),facts=facts,**kw)
-    source_rows.append(row)
-    return id
+def select_electrical_mass():
+    raw=load('electrical_mass_ledger.json'); rows=[]; trough=[]
+    for r in raw['parts']:
+        x=copy.deepcopy(r); basis=r['material_basis'] or ''
+        purchased_proxy=(('dimensioned copper lug' in basis) or ('approximate copper contact' in basis) or r['name']=='LYNX1000_original_max_housing_and_mount_interface')
+        accepted=r['selected_after_overlay'] and r['estimated_mass_kg_each'] is not None and not purchased_proxy
+        x['accepted_into_C04_known_subset']=accepted
+        x['accepted_mass_kg']=r['estimated_mass_kg_each']*r['instance_quantity'] if accepted else None
+        x['exclusion_reason']=None if accepted else ('superseded named geometry' if not r['selected_after_overlay'] else 'purchased representation or unknown original material; no accepted installed mass')
+        rows.append(x)
+        if r['asset'].endswith('aligned_trough_and_glands_E04'):
+            assert r['instance_quantity']==1
+            trough.append(dict(name=r['name'],material=basis or 'purchased representation',density_kg_m3=r['density_kg_m3_assumed'] if accepted else None,volume_mm3=r['volume_mm3_each'],mass_kg=x['accepted_mass_kg'],mass_basis='original material-volume estimate' if accepted else 'unknown purchased mass'))
+    assert len(trough)==19
+    return dict(raw_estimated_subtotal_kg=raw['selected_original_estimated_subtotal_kg'],trough_parts=trough,parts=rows,selected_nonbody_original_mass_kg=sum(r['accepted_mass_kg'] for r in rows if r['accepted_mass_kg'] is not None and not r['asset'].endswith('aligned_trough_and_glands_E04')),purchased_proxy_density_policy='Catalogue or verified installed masses only for purchased components. Exclude all copper-lug/contact approximations and full Lynx housing even if source classifier gives a numeric density.',whole_electrical_mass_kg=None)
 
-source('tire_price','https://www.vividracing.com/bfgoodrich-mudterrain-km3-35x1250r18-p-152504463.html','Vivid Racing','supplier_own_public_listing',
-       'MSPN72204,35x12.50R18 KM3 is listed at486.99USD per tire; page indicates stock and a10USD promotional ground-shipping amount. Six-unit destination freight,tax and stock are unconfirmed.',
-       price=486.99,currency='USD',sku='72204',seller_region='United States',tax_basis='not established',shipping_basis='10USD promotional page amount; quantity/destination applicability unknown, not included',availability='Page says in stock; six-unit allocation not verified',condition='standard retail listing; no used/refurbished condition indicated',exact_sku_match=True)
-source('tire_alternate_price','https://ntwonline.com/35x12-50r18e-blk-mud-terrain-km3-bfgoodrich-tires/','National Tire & Wheel','supplier_own_public_listing',
-       'Same72204 tire lists491.99USD. Page also contains zero-valued set placeholders; these are not free prices and are not used. Freight and taxes unconfirmed.',
-       price=491.99,currency='USD',sku='BFKM3 72204',seller_region='United States',exact_sku_match=True)
-source('tire_specs','https://www.usautoforce.com/wp-content/uploads/2025/03/BFGoodrich_PCLT_Databook.pdf.pdf','BFGoodrich databook hosted by U.S. AutoForce','manufacturer_documentation',
-       'Printed page27,MSPN72204:35x12.50R18/E123Q;34.5in(876.3mm)diameter measured on10in rim; approved rim width8.5–11in. Actual size on selected8.5in rim is unverified.',page_printed=27,not_price=True)
-source('rim_price','https://shop.evocorse.com/en/catalog/catalog_item/dakarzero-85x18-se5240060141.aspx?k=cm0752170010-5','EVO Corse','manufacturer_own_public_listing',
-       'Rendered bundle SE5240060141+CM0750180040-5 lists481.89EUR VAT included:18x8.5,5x165.1,ET18,114.1mm bore. Opened text says zero stock; search index says two available in15days. Current stock is unresolved. The URL query kit differs from rendered kit.',
-       price=481.89,currency='EUR',sku='SE5240060141 + CM0750180040-5',seller_region='Italy',tax_basis='VAT included; rate and destination treatment unconfirmed',shipping_basis='not established',availability='conflicting cached stock statements; unconfirmed',exact_sku_match=True)
-source('wheel_nuts','https://evocorse.com/en/product/end-nut-lug-for-land-rover-m16x1-5-black-zinc-plated/','EVO Corse','manufacturer_documentation',
-       'CM0750180040 flat-seat M16x1.5 nut with washer; visible weight212 without units conflicts with Product JSON-LD weight0.217kg; installed mass unknown pending reconciliation. Thirty nuts are covered by six rendered five-nut rim bundles; do not add independent nut prices to that bundle.',not_price=True)
-source('battery_price','https://www.westmarine.com/relion-48v030-gc2-lithium-iron-phosphate-deep-cycle-battery-48v-30ah-20659967.html','West Marine','supplier_own_public_listing',
-       'Manufacturer SKU48V030-GC2,retailer20659967:1349.99USD each. Product page says out of stock. This is the non-LT candidate; destination tax,freight and eligible post-recall serials remain unconfirmed.',
-       price=1349.99,currency='USD',sku='48V030-GC2',seller_sku='20659967',seller_region='United States',tax_basis='not established',shipping_basis='not established',availability='out of stock in retrieved product page',condition='standard retail listing; no used/refurbished condition indicated',exact_sku_match=True)
-source('battery_specs','https://www.relionbattery.com/products/lithium/insight-gc2-48v','RELiON','manufacturer_documentation',
-       'Per module:51.2V,30Ah,1536Wh,15.6kg;45A recommended and100A maximum continuous discharge; parallel allowed up to10,series prohibited. Catalogue cycle-life claims are not rover mission validation.',not_price=True)
-source('battery_recall','https://www.relionbattery.com/product-recall-us','RELiON','manufacturer_safety_recall',
-       'Certain48V030-GC2 serial ranges are recalled for overheating/fire risk. U.S. remedy is repair. Manufacturer instructs affected owners to stop use and coordinate return. No serials or purchases exist in the evidence for this candidate BOM.',
-       affected_model='48V030-GC2',affected_serial_ranges=[['RB48300020210314057','RB48300020210314729'],['RB48300020210330001','RB48300020210330715'],['RB48300020210507012','RB48300020221016550']],region='United States')
-source('ur20_quote','https://www.universal-robots.com/products/ur20-1750/','Universal Robots','manufacturer_quote_required',
-       'Manufacturer product page requests pricing and lists64kg arm weight. No exact arm-only commercial SKU,software/controller bundle or usable public arm-only price was established; legacy UR20 CAD is not automatically a new product revision.',price=None,currency=None)
-source('ur20_bundles','https://automationdistribution.com/universal-robots-ur20-collaborative-robot/','Automation Distribution','supplier_configuration_documentation',
-       'UR20 commercial packages can include OEM DC control boxes,e.g.200129(PolyScope5)and200170/200376(PolyScopeX). Do not add a separate controller price if quoting a controller-inclusive arm package.',not_price=True)
-source('oem_dc_specs','https://www.universal-robots.com/manuals/EN/HTML/SW5_25/Content/prod_oem_cb_all/oem_cb_all_specs_root.htm','Universal Robots','manufacturer_documentation',
-       'OEM DC envelope451x150x168mm,mass4.3kg,input19–72V with24–48V typical; maximum inrush400A. Two-dimensional reservations do not settle exact controller revision or arm compatibility.',not_price=True)
-source('oem_dc_candidate_price','https://automationdistribution.com/universal-robots-controller-box-oem-dc-cb5-5/','Automation Distribution','supplier_own_public_listing',
-       'Standalone CB5.5 OEM DC controller SKU200143 lists8217USD,new,factory stock,tariff surcharge included. Exact baseline controller revision remains unselected; tax,freight and any arm-package inclusion are unresolved.',price=8217,currency='USD',sku='200143',seller_region='United States',tax_basis='tariff surcharge included; sales tax not established',shipping_basis='not established',availability='factory stock per page; allocation unverified',exact_sku_match=False)
-source('gripper_price','https://www.logic-control.com/robotiq-agc-grp-2f85','Logic, Inc.','supplier_own_public_listing',
-       'AGC-GRP-2F85 basic gripper lists5205USD each; lead time requires confirmation. Seller lists fingertips,locking pins and screw kit; manufacturer ordering descriptions differ on fingertip inclusion,so confirm package contents. No coupling is included in this price.',
-       price=5205,currency='USD',sku='AGC-GRP-2F85',seller_region='United States',tax_basis='not established',shipping_basis='not established',availability='contact for lead time; no contact made',condition='standard distributor listing; no used/refurbished condition indicated',currency_basis='US seller dollar price; no destination checkout',exact_sku_match=True)
-source('coupling_price','https://www.kingbarcode.com/GRP-CPL-062','King Barcode','supplier_own_public_listing',
-       'Exact modeled GRP-CPL-062 controller-connected coupling lists644USD each,quantity1 standard price. Backorder and pricing confirmation are requested on the page. External cable and controller/RS485 interface are not priced by this listing.',
-       price=644,currency='USD',sku='GRP-CPL-062',seller_region='United States (Henderson,Nevada)',tax_basis='not established',shipping_basis='not established',availability='backorder; price and lead time need supplier confirmation',condition='standard distributor listing; no used/refurbished condition indicated',currency_basis='US seller dollar price; no destination checkout',exact_sku_match=True)
-source('coupling_routes','https://robotiq.zendesk.com/hc/en-us/articles/360060115033-Couplings-and-cables-UR','Robotiq','manufacturer_documentation',
-       'GRP-CPL-062 is the controller-connected coupling. GRP-ES-CPL-062 is a different wrist-connected coupling; these part numbers must not be conflated.',not_price=True)
-source('coupling_wrist_gate','https://blog.robotiq.com/knowledge/how-to-identify-the-type-of-connector-at-the-flange-of-universal-robots-e-series-robot-5-1736280763712','Robotiq','manufacturer_documentation',
-       'Updated2026-09-21:UR20 has a female wrist connector. For direct wrist connection Robotiq lists GRP-ES-CPL-077 and CBL-COM-2077-01. Both e-Series coupling routes list ISO50-4-M6; matching bolt pattern does not prove identical body geometry. No baseline mesh substitution is authorized by this finding.',source_updated_on='2026-09-21',not_price=True)
-source('coupling_external_route','https://blog.robotiq.com/knowledge/longer-e-series-cable','Robotiq','manufacturer_documentation',
-       'Robotiq supports a CB-series coupling with10m external cable as an alternative to unsupported wrist-cable extensions. This is source support for a route,not completed integration of the present rover.',not_price=True)
-source('coupling_alt_price','https://www.logic-control.com/robotiq-grp-es-cpl-077','Logic, Inc.','supplier_own_public_listing',
-       'GRP-ES-CPL-077 lists680USD; kit includes mechanical coupling,screws,CBL-COM-2077-01 cable and protector. Alternative wrist-connected route only; not an addition to current GRP-CPL-062 baseline.',price=680,currency='USD',sku='GRP-ES-CPL-077',seller_region='United States',tax_basis='not established',shipping_basis='not established',availability='contact for lead time',exact_sku_match=False)
-source('ur20_adapter_gate','https://blog.robotiq.com/knowledge/plug-and-play-on-ur20-5-1736280730313','Robotiq','manufacturer_documentation',
-       'Robotiq states UR supplies an adapter converting the UR20 flange to50mmPCD/4xM6. If missing,ACC-APL-UR20 is a replacement option. The present original adapter_R04 is a different,unqualified fabrication design; do not double-count a replacement plate as baseline.',not_price=True)
-source('adapter_alt_price','https://automationdistribution.com/robotiq-acc-apl-ur20/','Automation Distribution','supplier_own_public_listing',
-       'ACC-APL-UR20 plate kit lists667.97USD. Replacement/reference alternative only; do not add to original adapter_R04 or assume omission from purchased UR packages.',price=667.97,currency='USD',sku='ACC-APL-UR20',seller_region='United States',tax_basis='not established',shipping_basis='not established',availability='contact for availability and lead time',exact_sku_match=False)
-source('drive_reference','https://www.e-comer.com/en/?Itemid=461','e-comer/Benevelli','manufacturer_reference_from_existing_source_ledger',
-       'Exact WD220-SMAC132-050-48V-EMB-5STUDS candidate price and mass remain unknown. Existing source ledger records2.2kW,S2-60min,47A motor rating; not verified DC-bus current. This page could not be opened during this cost refresh. Restricted supplier geometry is not redistributed.',price=None,currency=None,retrieval='Existing source ledger and rating evidence; public-page refresh unavailable')
-source('drive_rejected_price','https://evshop.it/en/products/motor-wheel-wd220-48v-3kw','EVSHOP/EVSAFE','supplier_own_public_listing_nonmatching_variant',
-       '2499EUR WD220 listing is3.0kW S2-60min and a4-bolt BMW flange. It is not the2.2kW5-stud baseline. Price is deliberately rejected as a substitute;16-week estimated delivery appears on the page.',price=2499,currency='EUR',sku='WD220-48V 3.0kW four-bolt variant',seller_region='Italy',tax_basis='not established',shipping_basis='calculated at checkout',availability='estimated16weeks',exact_sku_match=False)
-source('aux_research','https://www.victronenergy.com/media/pricelist/Pricelist_Victron_EUR_C_2026-Q2_web.pdf','Victron Energy','existing_manufacturer_reference_research_only',
-       'Orion-Tr48/12-30 is an unselected research candidate from the existing body-power ledger. No quantity,cost or electrical compatibility is accepted into baseline.',not_price=True,retrieval='Existing body-power source ledger; not a new price observation')
+def compose_body():
+    base=load('body_R01_verification.json'); original={r['name']:r for r in base['parts']}
+    density={k:v['density'] for k,v in base['material_assumptions'].items()}
+    selected={};history=[]
+    for r in load('body_PR01_check.json')['parts']:
+        n=r['name']
+        if n in original: material=original[n]['material']
+        elif '_washer' in n or '_M6x20' in n:material='fastener'
+        elif n.endswith(('_tapped_boss','_ledge','_welded_support')):material='aluminium'
+        else:raise ValueError('Unmapped PR01 material: '+n)
+        # These source-script replacements deliberately change steel placeholders to aluminium.
+        if '_nutplate_' in n or re.fullmatch(r'(left|right)_service_nutclip_\d_\d',n):material='aluminium'
+        selected[n]=dict(name=n,material=material,density_kg_m3=density[material],volume_mm3=r['volume_mm3'],mass_kg=r['volume_mm3']*density[material]/1e9,source='body_PR01_check.json + body_PR01_material_source.py',mass_basis='original nominal material-volume estimate')
+    def state(label):history.append(dict(stage=label,part_count=len(selected),known_original_mass_kg=sum(r['mass_kg'] for r in selected.values() if r['mass_kg'] is not None)))
+    state('PR01 baseline, R02 holes already included')
+    patch=load('body_SO02_E04P_parts.json'); spec=load('body_SO02_E04P_selected.json')
+    assert set(spec['replace_by_name'])=={r['name'] for r in patch['parts']} and len(patch['parts'])==20
+    for r in patch['parts']:
+        x=selected[r['name']];x.update(volume_mm3=r['volume_mm3'],mass_kg=r['volume_mm3']*x['density_kg_m3']/1e9,source='body_SO02_E04P_parts.json')
+    state('SO02_E04P replaces exactly 20 named parts')
+    electrical=select_electrical_mass()
+    trough={r['name']:r for r in electrical['trough_parts']}
+    changes=load('electrical_trough_contract.json')['changes']
+    for change in changes:
+        action,n=change['action'],change['name']
+        if action in ('remove','replace'):assert n in selected,('trough missing old',n)
+        if action=='remove':selected.pop(n)
+        else:
+            if action=='add':assert n not in selected,('trough duplicate',n)
+            r=trough[n]
+            selected[n]=dict(r,source='electrical_mass_ledger.json:trough_parts')
+    assert {c['name'] for c in changes if c['action']!='remove'}==set(trough)
+    state('E04 19-part trough/glands named delta; 15 original parts and 4 unknown-mass purchased representations')
+    battery=load('battery_BA02_manifest.json'); assert len(battery['remove_names'])==34 and len(battery['remove_external_proxy_names'])==4
+    removed=[]
+    for n in battery['remove_names']:removed.append(selected.pop(n))
+    rows={r['name']:r for r in battery['parts']}
+    for n in battery['replace_names']:
+        assert n in selected
+        r=rows[n];v=r['volume_mm3'];selected[n].update(volume_mm3=v,mass_kg=v*selected[n]['density_kg_m3']/1e9,source='battery_BA02_manifest.json:replacement floor')
+    state('BA02 removes 34 RELiON restraint parts and replaces battery well floor')
+    return dict(schema_version='1.0',composition_order=['PR01','SO02_E04P','E04 trough','BA02'],material_policy='PR01 materials follow its source generator, including aluminium bosses/clips. No density is applied to purchased representations.',history=history,removed_battery_restraint_parts=removed,removed_external_battery_proxy_names=battery['remove_external_proxy_names'],parts=list(selected.values()),modeled_original_mass_kg=sum(r['mass_kg'] for r in selected.values() if r['mass_kg'] is not None),whole_body_installed_mass_kg=None,warning='Battery additions are separately counted in the BA02 original metal row. Battery catalogue mass is separate. Four LAPP gland/nut representations have unknown mass; do not treat this known subtotal as complete.')
 
-source('rim_net_mass','https://evocorse.com/en/product/dakarzero-8-5x18-se5240060/?attribute_pa_color=glossy-black','EVO Corse','manufacturer_exact_sku_net_mass',
-       'The exact selected SKU SE5240060141 has peso_netto 15.1. Manufacturer product JavaScript selects that field and formats it in kg. Use 15.1 kg rim-only net mass, not base-SKU 14.96, unit/package 16.5 or gross 17.3. Nut mass remains unresolved.',
-       sku='SE5240060141',net_mass_kg=15.1,mass_scope='rim only; excludes separately counted nuts',
-       units_source_url='https://evocorse.com/wp-content/themes/evocorse/public/js/app.520957.js',
-       evidence_file='manufacturer-mass-evidence.json',retrieval='Manufacturer page/API/JavaScript evidence captured by independent source review at 2026-10-09T10:50:59Z; price observation unchanged.')
-source('c03_joint_interfaces','https://www.fkrodends.com/wp-content/uploads/2026/03/FK-2017-Industrial-Catalog.pdf','FK Bearings','manufacturer_interface_candidates',
-       'C03 engineering evidence uses AIN16 with two 16-12HB spacers per outer joint, and JMX12/JMXL12 tie ends with two 12-10HB spacers per tie joint. The authoritative assembly ledger fixes quantities. Exact installed masses, prices, load limits, fits and qualification remain unresolved.',
-       not_price=True,retrieval='Existing C03 source_joint_selection.json and steering_actuator_joint_sources_C03_R01.json; no new vendor contact or price research.')
-source('c03_actuator_candidate','https://www.thomsonlinear.com/downloads/actuators/Linear_Actuators_G_ctuk.pdf','Thomson','manufacturer_family_candidate',
-       'Current C03_R03 contract reserves two HD48-B045, 200 mm stroke, M/M actuator candidates. This supersedes earlier 150 mm packaging research. No complete order code, exact mass, price, force/duty suitability or installed steering power is established.',
-       not_price=True,retrieval='C03_R03 contract and existing manufacturer-source research; source-only reconciliation.')
-source('c03_coilover_candidate','https://kingshocks.com/i-30504370-rs2008-cohr-2-0-rs-coil-over-shock-w-remote-res-8-stroke.html','King Shocks','manufacturer_family_candidate',
-       'Six RS2008 Pure Race coilover candidates remain unqualified. Exact order configuration, springs, mass and price are unknown. Existing research records conflicting current and legacy dimensions; generic family data is not installed-hardware qualification.',
-       not_price=True,retrieval='Existing C03 coilover_source_candidates.json; no new price or mass accepted.')
-
-# Supplied, version-pinned mechanical evidence is read; no source CAD is changed.
-ledger=json.loads(LEDGER.read_text())
-snapshot=json.loads(SNAPSHOT.read_text())
-body=json.loads(BODY.read_text())
-middle_ledger=json.loads(MIDDLE_LEDGER.read_text())
-rim_mass_evidence=json.loads(RIM_MASS_EVIDENCE.read_text())
-assert rim_mass_evidence['rim_api']['code']=='SE5240060141'
-assert float(rim_mass_evidence['rim_api']['peso_netto'])==15.1
-assert abs(snapshot['mass_known_subset_kg']-1127.4662815201427)<1e-8, 'C03 known-subset snapshot changed; review before updating.'
-assert Path(snapshot['corner_contract']).stem=='interface_contract_C03_R03'
-assert len(ledger['original_items'])==84
-
-parts=[]
-def part(id,name,sku,qty,kind='purchased_part',selection='baseline_candidate',essential=True,price=None,currency=None,price_source=None,mass=None,mass_snapshot=False,notes='',scope='vehicle',included_in=None,sources=(),**extra):
-    p=dict(id=id,name=name,sku=sku,quantity=qty,quantity_unit='each',scope=scope,supply_kind=kind,selection_status=selection,
-      acquisition_status='no_purchase_or_owned_hardware_evidence',essential=essential,unit_price=price,currency=currency,
-      extended_price=(float(Decimal(str(price))*Decimal(str(qty))) if price is not None and qty is not None else None),
-      pricing_status=('public_reference_not_quote' if price is not None else ('included_in_bundle_no_separate_allocation' if included_in else 'unpriced')),
-      price_source_id=price_source,included_in_cost_of=included_in,unit_mass_kg=mass,
-      mass_basis=('source_snapshot_or_catalogue_not_weighed' if mass is not None else 'unknown'),
-      included_in_pinned_mass_subtotal=mass_snapshot,source_ids=list(sources),notes=notes,**extra)
-    parts.append(p)
-    return p
-
-part('frame_R07','Original welded frame R07','original:frame_R07',1,'original_fabrication',selection='modeled_original_development',mass=386.9529671773959,mass_snapshot=True,notes='Quote required:stock,welds,post-weld machining,finishing,inspection and scrap. Geometry is not fabrication released.')
-part('body_R01','Original body,trays,restraints and modeled hardware R01','original:body_power_R01',1,'original_fabrication',selection='modeled_original_development',mass=body['body_hardware_mass_kg'],mass_snapshot=True,notes='175 original CAD parts aggregated; quote against original_cutlist.csv. Excludes four batteries and two controllers,which are separate rows. Material densities assumed.')
-part('adapter_R04','Original tool-flange adapter R04','original:adapter_R04',2,'original_fabrication',selection='modeled_original_development',mass=1.316846623,mass_snapshot=True,notes='Unqualified original adapter; mandatory Robotiq coupling remains separately purchased. Do not add alternative ACC-APL-UR20 plate on top.')
-for item in ledger['original_items']:
-    # Preserve each original ledger node and mass exactly, including mirrored-source differences.
-    row=part(item['node'],item['node'].replace('_',' '),'original:'+Path(item['source']).stem,item['quantity'],
-        kind='original_fabrication',selection='modeled_original_development',
-        mass=item['unit_mass_kg'],mass_snapshot=True,
-        notes='C03_R03 source ledger node. Four steering corners and two racks plus two C02_R06 middle corners only. Material, machining, finish, inspection and fastening require a fabrication quote. Not physically qualified.',
-        source_step_sha256=item['sha256'],source_step=item['source'],ledger_node=item['node'],
-        ledger_quantity=item['quantity'],assembly_group='middle_C02_R06' if item['node'].startswith('two_middle_') else 'steering_C03_R03')
-    row['mass_basis']=item['basis']
-for item in middle_ledger['items']:
-    if item['mass_kg_per_corner'] is not None:
-        continue
-    part(item['part'],item['part'].replace('_',' '),'reference:'+item['part'],2,
-        kind='reference_geometry',selection='reference_envelope',essential=False,scope='reference_only',
-        notes='Two middle-corner reference envelopes only. No purchased mass or independent bearing cost. GE20ES row already includes root and middle bearing candidates.',
-        source_step_sha256=item['sha256_STEP'])
-part('tires','BFGoodrich Mud-Terrain T/A KM3 35x12.50R18/E123Q','72204',6,price=486.99,currency='USD',price_source='tire_price',sources=['tire_price','tire_specs'],notes='Exact size/SKU reference;not OEM CAD.876.3mm catalog diameter on10in measuring rim;actual size on8.5in rim unverified. Mount/balance,valves,tax and six-tire freight unpriced.')
-part('rims','EVO Corse DakarZero 18x8.5 ET18 + required five-nut road kit','SE5240060141 + CM0750180040-5',6,price=481.89,currency='EUR',price_source='rim_price',mass=15.1,mass_snapshot=True,sources=['rim_price','rim_net_mass'],mass_scope='rim only, excludes nut kit',notes='5x165.1, CB114.1, flat-seat. Price includes VAT and five-nut kit each. Stock and destination tax/freight unresolved. Exact-SKU manufacturer net rim mass is 15.1 kg each (90.6 kg for six), excluding nuts; do not use base-SKU, unit/package or gross mass.').update(mass_basis='exact_SKU_manufacturer_net_mass; units verified by product JavaScript')
-part('wheel_nuts','EVO flat-seat M16x1.5 nuts','CM0750180040',30,included_in='rims',mass=None,sources=['wheel_nuts','rim_price'],notes='Thirty nuts included in six priced rim bundles;no independently allocated unit cost.The displayed weight212 has no units while Product JSON-LD states0.217kg; reconcile manufacturer fields before assigning nut mass. It remains unknown and excluded from the pinned model subtotal. Stud thread/engagement remain unqualified.')
-part('drives','e-comer WD220 drive with EM brake and5studs','WD220-SMAC132-050-48V-EMB-5STUDS',6,sources=['drive_reference'],notes='2.2kW S2-60min,not continuous.47A is a motor rating,not verifiedDC-bus input. Exact mass and price unknown;do not use four-bolt3kW price.')
-part('batteries','RELiON InSight non-LT battery','48V030-GC2',4,price=1349.99,currency='USD',price_source='battery_price',mass=15.6,mass_snapshot=True,sources=['battery_price','battery_specs','battery_recall'],notes='Proposed parallel bank:6.144kWh nominal. Price listing is out of stock. Serial-specific recall clearance required before purchase/use;no battery serials are known. Not the-LT model.')
-part('arms','Universal Robots UR20 arm','UR20 exact arm-only ordering SKU unresolved',2,mass=64,mass_snapshot=True,sources=['ur20_quote','ur20_bundles'],notes='Purchased-part requirement with unknown price;no evidence of an actual purchase. Exact revision,software,cables,pendant and OEMDC package scope require quote. Controller-inclusive package must replace,not duplicate,the two controller rows.')
-part('arm_controllers','Universal Robots OEM DC controller','exact CB revision unresolved',2,mass=4.3,mass_snapshot=True,sources=['oem_dc_specs','oem_dc_candidate_price','ur20_bundles'],notes='Two dimensional reservations.200143CB5.5 price is shown only as a separate candidate reference because controller revision and package inclusion are unresolved.')
-part('grippers','Robotiq2F-85 basic gripper','AGC-GRP-2F85',2,price=5205,currency='USD',price_source='gripper_price',sources=['gripper_price'],notes='Manufacturer source ordering text and seller disagree on fingertip inclusion;confirm exact kit. Coupling,cable/interface and any additional fingertips are separately tracked. No gripper mass accepted into pinned subtotal.')
-part('couplings','Robotiq controller-connected coupling (current CAD reference)','GRP-CPL-062',2,price=644,currency='USD',price_source='coupling_price',sources=['coupling_price','coupling_routes','coupling_external_route'],notes='Separate purchased electronics-containing coupling;original adapter cannot replace it. GRP-ES-CPL-062 and GRP-ES-CPL-077 are different SKUs. Current visual mesh remains a licensed reference;electrical route and exact cable/interface unresolved.')
-part('gripper_cable_interface','Gripper device cables,RS485/controller interface and required integration hardware',None,None,selection='required_unresolved',notes='Two grippers require validated power/communications. Counts and exact cable/USB/interface SKUs remain unknown;do not assume bare coupling price includes full route.',sources=['coupling_external_route','coupling_routes'])
-part('gripper_fingertips','Any additional approved gripper fingertips',None,None,selection='required_scope_unresolved',notes='Whether separately needed depends on confirmed AGC-GRP-2F85 package contents and task. Do not count included fingertips twice.',sources=['gripper_price'])
-part('spherical_bearings','Root and middle suspension bearing candidates','GE20ES candidate specification, manufacturer unresolved',56,selection='research_candidate',notes='C03_R03 ledger count: 56 root/middle GE20ES candidates. Replaces the old all-C02 count of 72. Eight outer AIN16 bearings are separate. Reference envelope rows do not add bearings.')
-part('coilovers','King Pure Race coilover and unselected spring candidates','King RS2008 candidate; exact configuration unresolved',6,selection='research_candidate',sources=['c03_coilover_candidate'],notes='Six candidates only. Exact spring selection, bearing/spacer package, damping, load and dimensions are unresolved. No price or installed mass.')
-for id,name,sku,qty in [
- ('outer_spherical_bearings','FK outer spherical bearing candidates','AIN16',8),
- ('outer_misalignment_spacers','FK outer bearing misalignment spacer candidates','16-12HB',16),
- ('tie_rod_end_RH','FK right-hand tie rod end candidates','JMX12',4),
- ('tie_rod_end_LH','FK left-hand tie rod end candidates','JMXL12',4),
- ('tie_misalignment_spacers','FK tie rod misalignment spacer candidates','12-10HB',16),
- ]:
-    part(id,name,sku,qty,selection='research_candidate',sources=['c03_joint_interfaces'],
-         notes='Exact C03_R03 ledger quantity. Purchased configuration, finished fits, retention and operating loads require review. Unit price and accepted installed mass remain unknown; no catalogue-family mass is substituted.')
-part('housing_retainer_screws','AIN housing retainer screw candidates','M5; grade and length unresolved',32,selection='required_unresolved',notes='32 screws from C03_R03 ledger, separate from original housing retainer geometry. Grade, length, locking, preload, price and mass unknown.')
-part('steering_actuators','Thomson Electrak HD steering packaging candidates','HD48-B045, 200 mm stroke, M rear/M front; complete order code unresolved',2,selection='research_candidate',sources=['c03_actuator_candidate'],stroke_mm=200,
-     notes='Current B045 200 mm candidate supersedes earlier 150 mm study. B068/B100 comparisons are unselected alternatives and add no baseline price or mass. No exact order, unit mass or price. Candidate force/duty and installed steering power are unqualified; it must not be presented as a released steering solution.')
-for id,name,qty,note in [
- ('suspension_fasteners','Residual suspension cotters, axial retainers, jam nuts, seals and lubrication',None,'Excludes original nominal hardware and the separately listed 32 M5 housing screws. Residual exact purchased schedule, retention and lubrication remain unresolved.'),
- ('wheel_studs','Wheel output studs and input nuts, aggregate ledger quantity',60,'60 is the aggregate C03 ledger quantity of output studs/input nuts, not 60 identical selected parts. Split into exact SKUs after thread, length, grade, seat and engagement are finalized. The 30 rim-bundle flat nuts are separately tracked and must not be duplicated.'),
- ('traction_inverters','Traction inverters/controllers and tuning',None,'Six motors do not prove six inverter packages;architecture and quantity unresolved.'),
- ('power_distribution','Harness,busbars,fuses,contactors,precharge and electrical protection',None,'Current-sharing,module-dropout,inrush and regeneration remain unqualified.'),
- ('charger','Qualified battery charger and charging connections',None,'Exact output,grid connection and charging workflow unresolved.'),
- ('aux_converter','Selected auxiliary DC/DC conversion',None,'Victron research alternative is not an approved baseline selection.'),
- ('cooling','Cooling and thermal-management hardware',None,'Two UR20 controller reservations do not establish complete cooling cost.'),
- ('safety_controls','Safety control,e-stop,sensors,compute and communication hardware',None,'No complete safe operational controller/sensor BOM.'),
- ('tire_services','Valve,mounting,balancing and tire-service work',None,'Not included in bare tire listing or inferred from rim mounting-nut kit.'),
- ('steering','Residual steering controls, commissioning and safety integration',None,'C03 steering geometry, two actuator candidates, bearings and rod ends are separately itemized. This residual row excludes those items and covers unresolved controls, wiring, sensing, qualification and service integration only.'),
- ('task_tools','Required task-specific tools and fixtures',None,'No autonomous repair/replication process demonstrated;tools,payload and offboard fixtures separately quoted.'),
- ]:
-    part(id,name,None,qty,selection='required_unresolved',notes=note)
-for id,name in [('build_labor','Direct assembly,wiring,commissioning and rework labor'),('engineering_nre','Engineering,software,integration and safety qualification'),('logistics_tax','Destination taxes,duties,freight and procurement'),('external_workcell','Offboard lifting,service fixtures and workcell')]:
-    part(id,name,None,None,kind='service_or_cost_category',selection='required_unresolved',scope='external_workcell' if id=='external_workcell' else 'build_cost',notes='No current work breakdown or quote. Costs embedded in supplier fabrication quotes must not be added again as direct labor.')
-
-alternatives=[
- dict(id='oem_dc_200143',replaces_id='arm_controllers',sku='200143',quantity_if_selected=2,unit_price=8217,currency='USD',source_id='oem_dc_candidate_price',status='unselected_controller_revision',baseline_included=False),
- dict(id='wrist_coupling_077',replaces_id='couplings',sku='GRP-ES-CPL-077',quantity_if_selected=2,unit_price=680,currency='USD',source_id='coupling_alt_price',status='alternative_electrical_route_requires_geometry_and_wiring_review',baseline_included=False),
- dict(id='purchased_ur20_adapter',replaces_id='adapter_R04',sku='ACC-APL-UR20',quantity_if_selected=2,unit_price=667.97,currency='USD',source_id='adapter_alt_price',status='alternative_plate_may_already_be_in_arm_package',baseline_included=False),
- dict(id='aux_victron',replaces_id='aux_converter',sku='Orion-Tr48/12-30',quantity_if_selected=None,unit_price=None,currency=None,source_id='aux_research',status='research_only',baseline_included=False),
-]
-
-# Currency groups are reference baskets, not a combined landed total.
-baskets=[]
-for currency in sorted({p['currency'] for p in parts if p['unit_price'] is not None}):
-    chosen=[p for p in parts if p['currency']==currency and p['unit_price'] is not None]
-    baskets.append(dict(currency=currency,reference_subtotal=float(sum((Decimal(str(p['extended_price'])) for p in chosen),Decimal(0))),
-       line_ids=[p['id'] for p in chosen],line_count=len(chosen),complete_build_total=False,
-       tax_basis='VAT included in rim listing only' if currency=='EUR' else 'destination sales tax not established',shipping_total=None))
-
-actual_inputs={
- 'currency':None,'site_tariff_per_kwh':None,'measured_grid_kwh_per_operating_hour':None,
- 'measured_battery_kwh_per_operating_hour':None,'measured_steering_kwh_per_operating_hour':None,'charge_efficiency':None,'parked_grid_kwh_per_year':None,
- 'annual_operating_hours':None,'supervision_hours_per_operating_hour':None,'supervisor_rate_per_hour':None,
- 'maintenance_labor_hours_per_operating_hour':None,'technician_rate_per_hour':None,
- 'maintenance_parts_per_year':None,'battery_installed_replacement_cost':None,'validated_cycle_life':None,
- 'validated_discharge_fraction':None,'calendar_life_years':None,'insurance_per_year':None,
- 'software_connectivity_per_year':None,'transport_per_year':None,'consumables_per_operating_hour':None,
- 'complete_build_cost':None,'service_years':None,'residual_value':None,'nre_amortization':None}
-
-scenarios=[]
-for power in [2,4,8]:
-    assumptions=dict(currency='USD',assumed_mean_battery_kw=power,assumed_charging_efficiency=0.9,
-       assumed_tariff_usd_per_kwh=0.15,assumed_annual_operating_hours=1000,
-       assumed_supervision_hours_per_robot_hour=1.0,assumed_supervisor_usd_per_hour=50,
-       assumed_maintenance_labor_hours_per_robot_hour=0.1,assumed_technician_usd_per_hour=100,
-       module_replacement_public_reference_usd=5399.96,assumed_cycle_life=2000,
-       assumed_cycle_depth=0.8,assumed_calendar_life_years=5)
-    energy=power/0.9*0.15
-    cycle=5399.96*power/(6.144*0.8*2000)
-    calendar=5399.96/(5*1000)
-    reserve=max(cycle,calendar)
-    outputs=dict(energy_only_usd_per_operating_hour=energy,
-       assumed_supervision_usd_per_operating_hour=50,assumed_maintenance_labor_usd_per_operating_hour=10,
-       battery_module_cycle_reserve_usd_per_operating_hour=cycle,battery_module_calendar_reserve_usd_per_operating_hour=calendar,
-       battery_module_reserve_usd_per_operating_hour=reserve,
-       modeled_partial_usd_per_operating_hour=energy+50+10+reserve,
-       modeled_partial_usd_per_assumed_year=(energy+50+10+reserve)*1000,
-       complete_operating_cost_usd_per_hour=None,fully_burdened_cost_usd_per_hour=None,whole_rover_runtime_hours=None)
-    scenarios.append(dict(id=f'assumed_{power}kw',label=f'Illustrative {power}kW battery draw;not measured or qualified',
-       inputs=assumptions,outputs=outputs,exclusions=['maintenance parts','installed battery replacement labor/freight/tax','capital recovery','NRE','consumables','insurance','software/connectivity','transport','parked energy','demand charges','downtime'],
-       limits='Mean battery draw is an analyst scenario,not a mission measurement. An operating hour may span charging sessions. No continuous-drive feasibility or uninterrupted runtime is implied. Battery reserve uses public module prices only;cycle/calendar assumptions are not validated life.'))
-
-formulas={
- 'electricity_with_meter':'energy_cost_per_h = measured_grid_kWh_per_h * tariff_per_kWh',
- 'electricity_without_meter_scenario':'grid_kWh_per_h = assumed_mean_battery_kW / assumed_charging_efficiency;energy_cost_per_h = grid_kWh_per_h * assumed_tariff',
- 'mission_energy':'mission_grid_kWh = sum(measured_or_explicitly_assumed_segment_battery_kW * segment_hours) / charge_efficiency + parked_grid_kWh',
- 'labor':'labor_per_h = supervision_h_per_robot_h * supervisor_rate + maintenance_h_per_robot_h * technician_rate',
- 'battery_cycle_reserve':'module_cost * assumed_battery_kWh_per_h / (nominal_bank_kWh * assumed_cycle_depth * assumed_cycle_life)',
- 'battery_calendar_reserve':'module_cost / (assumed_calendar_life_years * assumed_annual_operating_hours)',
- 'battery_reserve':'max(cycle_reserve,calendar_reserve);not sum,to avoid charging twice for the same replacement mechanism',
- 'parts':'maintenance_parts_per_h = annual_maintenance_parts / annual_operating_hours',
- 'capital':'capital_recovery_per_h = (complete_nonbattery_installed_cost - nonbattery_residual) / (service_years * annual_operating_hours);exclude battery capital only if battery replacement reserve already amortizes it',
- 'complete_opex':'energy + labor + maintenance_parts + battery_replacement + consumables + insurance + connectivity + transport + parked_energy + other_operating_costs;result=null while any required input is unknown',
- 'fully_burdened':'complete_opex + capital_recovery + separately_selected_NRE_amortization;result=null while any required input is unknown',
- 'price_extension':'quantity * unit_price;null if either operand unknown. Do not coerce null to zero.',
- 'fx':'No automatic FX. Preserve native-currency groups until a dated exchange-rate assumption and destination are explicitly chosen.'}
-
-local_inputs=[]
-for label,path in [('mass-power-snapshot.json',SNAPSHOT),(f'mass_cost_ledger_{REV}.json',LEDGER),(f'interface_contract_{REV}.json',CONTRACT),('body-power/verification.json',BODY),('body-power/sourced_bom.csv',ASSETS/'body-power/sourced_bom.csv'),('wheels/SOURCES.json',ASSETS/'wheels/SOURCES.json'),('manufacturer-mass-evidence.json',RIM_MASS_EVIDENCE),('mass_cost_ledger_C02_R06.json',MIDDLE_LEDGER),('legacy:docs/costs.json',APP/'docs/costs.json')]:
-    local_inputs.append(dict(artifact=label,sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
-legacy=json.loads((APP/'docs/costs.json').read_text())
-model=dict(schema_version='1.0.0',title='Six-wheel UGV build and operating cost reference',as_of=OBSERVED,
- configuration=dict(corner_revision=REV,middle_corner_revision='C02_R06',steering_corner_count=4,middle_corner_count=2,rack_count=2,selected_upper_source='upper_wishbone_C03_R06.step',selected_lower_source='lower_wishbone_C03_R04.step',frame_revision='R07',body_revision='R01',tool_adapter_revision='R04',public_feature_commit_at_assignment='82ce94f27dd37db02015ecf62f48a54884a4a75a',not_fabrication_released=True),
- policy=dict(unknown_numeric='null,never zero',csv_null='literal null',purchased_part_meaning='Must be sourced from a supplier;does not assert purchased or owned.',public_prices='Public dated reference observations;not firm quotes or confirmed destination totals.',source_currency='Native currency kept;no FX conversion.',research_candidates='Excluded from baseline public-price baskets;never silently substitute.',bundle_accounting='Nuts included in rim bundle;controller-inclusive UR arm packages replace separate controller allowance;alternative coupling/adapter replaces baseline item.'),
- parts=parts,alternatives=alternatives,build_summary=dict(status='incomplete_essential_items_unpriced',complete_build_cost=None,currency=None,
-   public_price_baskets=baskets,essential_unpriced_line_ids=[p['id'] for p in parts if p['essential'] and p['unit_price'] is None and p['included_in_cost_of'] is None],
-   excluded_from_public_baskets=['all original fabrication','WD220 drives','UR20 arms','exact OEM DC controller revision','unresolved integration hardware/services','taxes except rim listing VAT','shipping','alternative/research parts'],
-   new_vs_used='No used/refurbished substitution. Seller catalogue condition and eligible battery serials must be confirmed.'),
- mass_context=dict(pinned_known_subset_kg=sum(p['unit_mass_kg']*p['quantity'] for p in parts if p['included_in_pinned_mass_subtotal']),whole_vehicle_mass_kg=None,
-   source_snapshot_mass_kg=snapshot['mass_known_subset_kg'],source_snapshot_corner_revision=Path(snapshot['corner_contract']).stem.replace('interface_contract_',''),
-   revision_reconciliation='C03_R03 uses upper R06 and lower R04 in four steering corners, plus two racks and two C02_R06 middle corners. The 84 original ledger rows sum to 332.56466061455905 kg. Six exact-SKU net rims add 90.6 kg. Total known subset agrees with independently audited snapshot 1127.4662815201427 kg; complete vehicle mass remains unknown.',original_running_gear_subtotal_kg=ledger['six_corner_running_gear_original_subtotal_kg'],accepted_rim_net_mass_kg=90.6,
-   additional_catalog_nuts_kg=None,additional_catalog_nuts_in_pinned_subset=False,
-   no_recomputed_complete_mass=True,warning='Pinned subtotal combines nominal CAD masses and known catalogue components. Many physical parts remain unknown, including tires, nuts, motors and new steering purchased candidates. No physical vehicle was weighed.'),
- electrical_context=dict(nominal_bank_kwh=6.144,battery_count=4,nominal_voltage=51.2,drive_count=6,
-   steering_actuator_count=2,steering_actuator_order_released=False,measured_steering_power_kw=None,steering_power_budget_kw=None,steering_duty_qualified=False,
-    drive_rating_kw_each=2.2,drive_rating_duty='S2 60min;S1 unknown',motor_current_A_each=47,DC_bus_current_basis_verified=False,
-   arithmetic_recommended_battery_current_A=180,arithmetic_maximum_battery_current_A=400,system_current_rating_A=None,
-   simultaneous_mechanical_rating_kw=13.2,ideal_minimum_DC_current_A_at_nominal_voltage=257.8125,
-   warning='13.2kW/51.2V assumes motor mechanical output and ideal conversion,excludes arms/auxiliaries. It exceeds individually recommended battery-current sum. Neither sum is a qualified pack rating. Added steering actuator power and mission duty are unresolved and are not covered by drive-only arithmetic. No continuous capability or runtime established.'),
- procurement_gates=[dict(id='battery_serial_recall',severity='safety',status='unresolved_no_serials',source_id='battery_recall',message='Require traceable,unaffected or manufacturer-remedied48V030-GC2 serials. If an owned unit falls within recalled ranges,stop use and follow manufacturer remedy. No claim any candidate unit is affected.'),
-   dict(id='coupling_electrical_route',severity='integration',status='unresolved',source_id='coupling_wrist_gate',message='Current GRP-CPL-062 uses controller-connected route. GRP-ES-CPL-077 is a separate wrist-connected candidate for UR20 female connector. Do not relabel current mesh or add both prices.'),
-   dict(id='arm_controller_package',severity='double_counting',status='unresolved',source_id='ur20_bundles',message='Obtain exact arm/controller/cable/pendant/software scope. Count packaged controllers once.'),
-   dict(id='original_manufacturing',severity='qualification',status='quote_and_release_required',source_id=None,message='Geometry validation is not manufacturing or safety release;grade,tolerances,welds,fasteners,testing and quote required.'),
-   dict(id='battery_current_and_drive_duty',severity='qualification',status='unqualified',source_id='battery_specs',message='No approved mission/duty,inverter,BMS-sharing,inrush,regen,thermal or charge design.'),
-   dict(id='steering_force_duty',severity='qualification',status='unqualified',source_id='c03_actuator_candidate',message='Two 200 mm actuator candidates require complete ordering, force/duty, mounting, endplay, controls and electrical review. Their mass, price and installed power remain unknown.'),
-   dict(id='rim_stock',severity='availability',status='unconfirmed_conflicting_cached_stock',source_id='rim_price',message='Exact old-shop listing retains price;cached stock statements conflict. Confirm current price,kit and six-unit stock before procurement.')],
- operating_cost=dict(status='actual_unknown_scenarios_only',actual_inputs=actual_inputs,actual_cost_per_operating_hour=None,whole_rover_runtime_hours=None,
-   formulas=formulas,scenarios=scenarios,measurement_plan=['Log grid charging kWh and paid tariff for a representative mission,including parked energy.','Log battery DC energy,current peaks and per-module temperatures across drive,arm,idle and charging segments.','Record operator time,setup,recovery,downtime,maintenance parts and labor separately.','Obtain installed battery replacement cost and validated cycle/calendar assumptions.','Measure annual utilization before allocating fixed costs;do not divide by optimistic autonomous uptime.']),
- historical_model=dict(path='legacy docs/costs.json',version=legacy['version'],as_of=legacy['as_of'],status='historical_configuration_not_current_quote',
-    old_workshop_hardware_base_usd=legacy['totals_usd']['workshop_robot_hardware']['base'],
-    reasons_not_current=['Eight workshop and ten field LT batteries instead of four non-LT modules.','Different tire/drive candidates and presumed steering architecture.','Generic fabrication/arm/tool allowances,not exactSKU quotes.','Legacy runtime and hourly totals depend on that superseded architecture and must not be shown as current.']),
- evidence=dict(source_file='sources.json',bom_file='BOM.csv',local_inputs=local_inputs,assembly_ledger='mass_cost_ledger_C03_R03.json',original_rows_preserved=84),
- ui_contract=dict(build_headline='Complete build cost: unknown',basket_label='Priced subset only;native currencies;not a full build quote',operating_headline='Measured operating cost: unknown',scenario_label='Assumptions-only partial operating scenario',do_not_display=['old311495.6USD as current build price','old8/10-battery runtime as current rover runtime','null as0','combinedUSD/EUR subtotal without explicitFX','S2 rating as continuous','any reference price as a completed order']))
-
-# Keep human-facing prose readable without altering identifiers,SKUs or URLs.
-prose_keys={'facts','notes','name','message','warning','limits','label','public_prices','unknown_numeric','purchased_part_meaning','research_candidates','bundle_accounting','new_vs_used','retrieval'}
-replacements={
- 'MSPN72204':'MSPN 72204','Model48V030':'Model 48V030','model48V030':'model 48V030','Certain48V030':'Certain 48V030',
- 'SKU48V030':'SKU 48V030','retailer20659967':'retailer 20659967','SKU200143':'SKU 200143',
- 'Robotiq2F-85':'Robotiq 2F-85','with5studs':'with 5 studs','with10m':'with 10 m','with24–48V':'with 24–48 V',
- 'page27':'page 27','up to10':'up to 10','to50mmPCD':'to 50 mm PCD','provisional72units':'provisional 72 units',
- 'two grippers':'two grippers','notDC':'not DC','not OEMDC':'not OEM DC','OEMDC':'OEM DC',
- '20143CB5.5':'20143 CB5.5','200143CB5.5':'200143 CB5.5','14USD':'14 USD',
- 'zero-valued':'zero-valued','individually recommended180A':'individually recommended 180 A',
- 'no10':'no 10','the2.2':'the 2.2','is3.0':'is 3.0','4-bolt':'4-bolt','million+':'million+',
- 'updated2026':'updated 2026','Updated2026':'Updated 2026','subtotal976':'subtotal 976',
- 'the-LT':'the -LT','as0':'as 0','old311495.6USD':'old 311495.6 USD','old8/10':'old 8/10',
-}
-def readable(obj):
-    if isinstance(obj,list):
-        return [readable(x) for x in obj]
-    if isinstance(obj,dict):
-        out={}
-        for k,v in obj.items():
-            if k in prose_keys and isinstance(v,str):
-                for a,b in replacements.items(): v=v.replace(a,b)
-                v=re.sub(r'[,;](?=\S)',lambda m:m.group(0)+' ',v)
-                v=re.sub(r'(?<=\d)(USD|EUR|kWh|kW|kg|mm|weeks|days|units)(?![A-Za-z0-9])',r' \1',v)
-                v=re.sub(r'(?<=[A-Za-z])(?=\d(?:\.\d+)?(?:USD|EUR|kWh|kW|kg|mm)\b)', ' ', v)
-            out[k]=readable(v)
-        return out
-    return obj
-model=readable(model)
-source_rows=readable(source_rows)
-parts=model['parts']
-source_lookup={s['id']:s for s in source_rows}
-for p in parts:
-    for field in ['source_step','source_step_sha256','ledger_node','assembly_group','stroke_mm','mass_scope']:
-        p.setdefault(field,None)
-    p['quote_date']=None
-    p['is_supplier_quote']=False
-    p['price_observed_on']=OBSERVED if p['unit_price'] is not None else None
-    if p['price_source_id']:
-        src=source_lookup[p['price_source_id']]
-        p['price_source_url']=src['url']
-        p['availability']=src.get('availability')
-        p['tax_basis']=src.get('tax_basis')
-        p['shipping_basis']=src.get('shipping_basis')
-    else:
-        p['price_source_url']=None
-        p['availability']=None
-        p['tax_basis']=None
-        p['shipping_basis']=None
-model['build_summary']['essential_unpriced_line_count']=len(model['build_summary']['essential_unpriced_line_ids'])
-
-(HERE/'cost_model.json').write_text(json.dumps(model,indent=2,ensure_ascii=False)+'\n')
-(HERE/'sources.json').write_text(json.dumps(dict(as_of=OBSERVED,observations=source_rows,restrictions='Links and short factual summaries only;no vendor CAD,drawings,images or full webpages redistributed.'),indent=2,ensure_ascii=False)+'\n')
-fields=['id','name','sku','quantity','quantity_unit','scope','supply_kind','selection_status','acquisition_status','essential','unit_price','currency','extended_price','pricing_status','price_source_id','included_in_cost_of','unit_mass_kg','mass_basis','included_in_pinned_mass_subtotal','source_ids','notes','source_step','source_step_sha256','ledger_node','assembly_group','stroke_mm','mass_scope','quote_date','is_supplier_quote','price_observed_on','price_source_url','availability','tax_basis','shipping_basis']
-with (HERE/'BOM.csv').open('w',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+def build():
+    for r in json.loads((HERE/'input-manifest.json').read_text())['inputs']:
+        assert sha(HERE/r['file'])==r['sha256'],'Frozen input changed: '+r['file']
+    old=load('historical_C03_model.json'); oldparts={p['id']:p for p in old['parts']}
+    mech=load('mechanical_mass_BOM_C04_R01.json');structure=load('structural_connections_C04_R05_manifest.json')
+    assert len(structure['assembly_nodes'])==126
+    freeze=load('PUBLIC_SOURCE_FREEZE_C04_R02.json'); frozen={r['path']:r['sha256'] for r in freeze['files']}
+    for filename in ['mechanical_mass_BOM_C04_R01.json','structural_connections_C04_R05_manifest.json']:
+        assert sha(HERE/'inputs'/filename)==frozen['mechanical/connection_completion_C04/'+filename]
+    close(sum(x['mass_kg'] for x in structure['assembly_nodes']),mech['structural_geometric_mass_kg'])
+    body=compose_body();battery=load('battery_BA02_manifest.json');electrical=select_electrical_mass()
+    topology=load('electrical_topology_E04.json');contract=load('electrical_contract_E04.json')
+    sources=[];parts=[]
+    def source(id,url,publisher,kind,facts,**extra):
+        sources.append(dict(id=id,url=url,publisher=publisher,kind=kind,retrieved_on=OBSERVED,facts=facts,is_supplier_quote=False,**extra));return id
+    keep_sources={'ur20_quote','ur20_bundles','oem_dc_specs','oem_dc_candidate_price','gripper_price','coupling_price','coupling_routes','coupling_wrist_gate','coupling_external_route','coupling_alt_price','adapter_alt_price','drive_reference'}
+    for s in load('historical_C03_sources.json')['observations']:
+        if s['id'] in keep_sources:sources.append(copy.deepcopy(s))
+    wheel=load('wheel_price_observations.json');victron=load('victron_price_observations.json');wc=load('wheel_candidates.json')
+    source('c04_tire_price',wheel['tire']['url'],'TyreTrade','supplier_public_listing','Selected Trelleborg SK-900 12-16.5 12PR, seller SKU 35546. Manufacturer article identifier remains unverified.',**{k:wheel['tire'][k] for k in ['unit_price','currency','tax_basis','availability']},sku='seller:35546',seller_region='Poland',shipping_basis='Destination freight/import charges unquoted')
+    source('c04_rim_specs',wheel['rim']['url'],'Bohnenkamp Benelux','supplier_technical_listing','Jantsa 10005240: 9.75 x 16.5, ET -70, 5 x 140, 94 mm center bore, 19.5 kg. No public numeric price.',sku='10005240',unit_price=None,currency=None)
+    source('c04_tire_specs',wc['tire']['source'],'Trelleborg','manufacturer_documentation','SK-900 12-16.5 12PR TL uses 9.75-16.5 rim; catalogue diameter 831 mm, width 307 mm. Mass unknown. Tread-source revision and approved speed/load envelope unresolved.',page_1based=12)
+    source('c04_nut_specs',wc['nut']['source'],'RIMA via distributor','manufacturer_authored_catalogue','RIMA 22095: M16x1.5 open nut, R14 sphere, 18 mm height, 27 mm AF. Price and installed mass unknown.',page_1based=77,sku='22095')
+    source('c04_actuator_specs',load('actuator_contract_R02.json')['source'],'Thomson','manufacturer_documentation','Two Electrak HD48 B068, 200 mm, M/M COO development candidates; ledger accepts 7 kg catalogue configuration mass each. Exact order options, load, duty and installed power unqualified.')
+    source('c04_spring_specs','https://eibach.com/product/1800.300.0200S','Eibach','manufacturer_documentation','Selected 1800.300.0200S spring is 3.54 kg each, six required. Original exterior spring geometry is excluded from mass; no price accepted.',sku='1800.300.0200S')
+    for obs in victron['observations']:
+        source('victron_'+obs['sku'],victron['source_url'],'Victron Energy LATAM','dated_manufacturer_price_list','2026 Q2 LATAM USD-C ex-VAT reference, checked 2026-10-09. Not a current US or destination-specific dealer quotation; stock, freight and import tax unknown.',sku=obs['sku'],price=obs['unit_price'],currency='USD',price_period='2026 Q2',seller_region='LATAM',tax_basis='ex VAT',shipping_basis='unknown',availability='unknown; price-list reference only',page_1based=obs['pdf_page'],source_document_sha256=victron['source_sha256'])
+    source('victron_battery_specs','https://www.victronenergy.com/media/pg/Lithium_NG_battery_51,2_V/en/technical-data.html','Victron Energy','manufacturer_documentation','BAT548110620: 51.2 V, 100 Ah, 5.12 kWh and 37 kg per module. Two parallel modules provide 10.24 kWh nominal. Dry indoor location, ventilation, temperature, restraint and electrical gates remain open.',sku='BAT548110620')
+    source('victron_bms_current_specs','https://www.victronenergy.com/media/pg/Lynx_Smart_BMS_NG/en/technical-specifications.html','Victron Energy','manufacturer_documentation','Lynx Smart BMS NG 1000 A unit mass is 2.7 kg in current technical specifications. Supersedes conflicting 2.5 kg in dated price list for mass accounting; maximum device rating does not qualify rover current.',sku='LYN034170310',mass_kg=2.7,conflicting_price_list_mass_kg=2.5)
+    source('nrs_strap_sku','https://dh36nblqpps8a.cloudfront.net/assets/downloads/workbooks/2025_NRS_Rescue_Book.pdf','NRS','manufacturer_catalogue','NRS 60027.01.112 identifies 1-inch HD tie-down straps, 4-foot pair, Stealth Black. Two retail pairs supply four straps. SKU returned in manufacturer workbook search excerpt; full PDF fetch was size-limited. Reconfirm current ordering SKU.',sku='60027.01.112',retrieval='Manufacturer workbook indexed excerpt; current product page does not print exact selected SKU')
+    source('nrs_strap_rating','https://www.nrs.com/rescue/nrs-1-hd-tie-down-straps/p4yc','NRS','manufacturer_public_listing','Purchased strap assembly WLL 500 lb and MBS 1,500 lb. Exact selected-pair price and mass unknown; price range minimum is not used. Catalogue rating does not qualify approximate buckle geometry, battery case or vehicle restraint.',unit_price=None,currency=None)
+    def add(id,name,sku,quantity,kind='purchased_part',mass=None,group=None,price=None,currency=None,price_source=None,source_ids=(),notes='',essential=True,included_in=None,quantity_unit='each',**extra):
+        p=dict(id=id,name=name,sku=sku,quantity=quantity,quantity_unit=quantity_unit,scope='vehicle',supply_kind=kind,selection_status='development_candidate_not_released',acquisition_status='no_purchase_or_owned_hardware_evidence',essential=essential,unit_price=price,currency=currency,extended_price=float(Decimal(str(price))*Decimal(str(quantity))) if price is not None and quantity is not None else None,pricing_status='public_reference_not_quote' if price is not None else ('included_in_bundle_no_separate_allocation' if included_in else 'unpriced'),price_source_id=price_source,included_in_cost_of=included_in,unit_mass_kg=mass,mass_basis='unknown' if mass is None else ('original material-volume estimate; not weighed' if kind=='original_fabrication' else 'catalogue mass; not weighed'),included_in_pinned_mass_subtotal=mass is not None and quantity is not None,source_ids=list(source_ids),notes=notes,mass_group=group,**extra)
+        parts.append(p);return p
+    for id in ['frame_R07','adapter_R04','arms','arm_controllers','grippers','couplings','gripper_cable_interface','gripper_fingertips']:
+        p=copy.deepcopy(oldparts[id]);p['mass_group']='frame' if id=='frame_R07' else 'tools_and_arms';parts.append(p)
+    for r in structure['assembly_nodes']:
+        add('structure:'+r['node'],r['node'].replace('_',' '),'original:'+r['node'],1,'original_fabrication',r['mass_kg'],'structure',notes=mech['structural_mass_basis'],source_step=r['source_step'],source_step_sha256=r['source_sha256'],ledger_node=r['node'])
+    for scope,key,qkey in [('joint_details','joint_original_and_proxy_breakdown','quantity'),('shock_details','shock_original_and_proxy_breakdown','quantity_all_six')]:
+        for r in mech[key]:
+            if not r['class'].startswith('original'):continue
+            add(scope+':'+r['part'],r['part'].replace('_',' '),'original:'+r['part'],r[qkey],'original_fabrication',r['geometric_mass_each_kg'],scope,notes='Original detail estimate only. Purchased representations excluded. Material/grade and manufacturing qualification remain open.',density_kg_m3_assumption=r['density_kg_m3_assumption'])
+    mappings=[('drives','WD220-SMAC132-050-48V-EMB-5STUDS'),('rims','10005240'),('tires','Trelleborg SK-900 12-16.5 12PR; seller 35546'),('wheel_nuts','22095'),('dampers','FOX 980-02-005'),('springs','1800.300.0200S'),('steering_actuators','HD48 B068, 200 mm, M/M, COO; remaining options unresolved'),('spherical_bearings','SKF GE20ES'),('outer_spherical_bearings','FK AIN16'),('outer_spacers','FK 16-12HB'),('tie_spacers','FK 12-10HB'),('tie_ends','FK JMX12 / JMXL12'),('tie_jam_nuts','FK SJNR12 / SJNL12'),('motor_mount_screws','M10x25'),('joint_retaining_screws','M3x10'),('bearing_retaining_screws','M5x12'),('guide_retaining_screws','M4x10'),('rack_cap_screws','M3x10'),('rack_stop_screws','M4x90 with washers/nuts')]
+    assert len(mappings)==len(mech['purchased_BOM'])
+    mech_ids=[]
+    for (id,sku),r in zip(mappings,mech['purchased_BOM']):
+        assert (id!='rims' or r['published_mass_each_kg']==19.5)
+        price=1015 if id=='tires' else None
+        src={'rims':['c04_rim_specs'],'tires':['c04_tire_price','c04_tire_specs'],'wheel_nuts':['c04_nut_specs'],'springs':['c04_spring_specs'],'steering_actuators':['c04_actuator_specs'],'drives':['drive_reference']}.get(id,[])
+        note=r.get('includes',r.get('qualification','Exact hardware price, installed configuration and operating qualification remain unresolved.'))
+        if id=='guide_retaining_screws':note+=' Nominal screw geometry is already included in original shock-detail mass; do not add a second mass allowance.'
+        if id=='tires':note+=' Seller SKU matches size/model/ply description; exact manufacturer article identifier remains unverified.'
+        if id=='wheel_nuts':note+=' Not bundled with the unpriced rims. B14-seat/M16-stud application approval, torque and grade remain open.'
+        p=add(id,r['part'],sku,r['quantity'],mass=r['published_mass_each_kg'],group='mechanical_purchased',price=price,currency='PLN' if price is not None else None,price_source='c04_tire_price' if price else None,source_ids=src,notes=note)
+        if 'handed_quantities' in r:p['handed_quantities']=r['handed_quantities']
+        mech_ids.append(id)
+    add('body_composed','Original body PR01 + SO02_E04P + E04 trough + BA02 floor','original:composed_body_C04',1,'original_fabrication',body['modeled_original_mass_kg'],'body',notes='Computed once per final named part in body_composition.json. Removed 34 RELiON restraints. Purchased gland representations and battery/strap geometry excluded. BA02 new metal separately counted.')
+    ba_mass=battery['mass_accounting']['original_hardware_kg_excluding_replacement_floor']
+    add('battery_mount_BA02','Original BA02 two trays and retention metal, excluding replacement floor','original:BA02_metal',1,'original_fabrication',ba_mass,'battery_mount',notes='Original aluminium trays plus nominal steel hardware only. Replacement well floor is in composed body. Batteries, webbing, buckles and terminal/vent proxies excluded.')
+    add('batteries','Victron Lithium NG battery 51.2 V 100 Ah','BAT548110620',2,mass=37,group='battery_catalogue',price=2241,currency='USD',price_source='victron_BAT548110620',source_ids=['victron_BAT548110620','victron_battery_specs'],notes='Two parallel batteries; 10.24 kWh nominal. 2026 Q2 LATAM USD-C ex-VAT price is a dated reference, not a current destination quote. BA02 restraint, dry-location, thermal and electrical gates remain open.')
+    add('battery_strap_pairs','NRS 1-inch HD tie-down straps, 4-foot pair, Stealth Black','60027.01.112',2,quantity_unit='retail pair',source_ids=['nrs_strap_sku','nrs_strap_rating'],notes='Two retail pairs supply four complete straps including buckles. Unit mass and exact pair price unknown. Four approximate buckle depictions are not four additional purchased items; strap rating does not validate vehicle restraint.',physical_strap_count=4)
+    electrical_bom=load('electrical_bom_E04.json')
+    for r in electrical_bom['items']:
+        if r['ref']=='BAT1/BAT2':continue
+        if r['ref']=='LYNX':
+            add('battery_bms','Victron Lynx Smart BMS NG 1000 A M10',r['part'],r['quantity'],mass=2.7,group='electrical_catalogue',price=1020,currency='USD',price_source='victron_LYN034170310',source_ids=['victron_LYN034170310','victron_bms_current_specs'],notes='Current technical mass 2.7 kg; dated price-list 2.5 kg rejected for mass. 1000 A device rating does not expand the 180 A conditional warm-bank development ceiling.')
+        elif r['ref']=='breakout_cases':
+            add('electrical:'+r['ref'],r['part'],r['part'],r['quantity'],'original_fabrication',notes='Original external enclosure, not OEM connectors. Fabrication cost is within electrical original-fabrication quote scope below; no second mass counted.',included_in='electrical_original')
+        else:
+            add('electrical:'+r['ref'],r['part'],r['part'],r['quantity'],notes=r['status']+'. '+r.get('qualification','Exact price, purchased mass and configured application not established.'))
+    # Required topology devices are grouped by their exact recorded selection; covered devices are not repeated.
+    skip={'battery','two_pole_isolator','two_pole_main_isolator','battery_management','IPM_motor_and_reduction','robot_controller','steering_actuator'}
+    groups=defaultdict(list)
+    for ref,r in topology['parts'].items():
+        if r['kind'] not in skip:groups[(r['kind'],r['part'])].append(ref)
+    for (kind,sku),refs in groups.items():
+        add('required:'+kind,kind.replace('_',' '),sku,len(refs),notes='E04 topology requirement: '+', '.join(refs)+'. Not a complete installed/commissioned component or qualified current path.',topology_refs=refs)
+    add('electrical_original','Original selected E02/E04 supports, carriers and breakout detail','original:E02_E04_selected',1,'original_fabrication',electrical['selected_nonbody_original_mass_kg'],'electrical_original',notes='Original-only named mass ledger in inputs/electrical_mass_ledger.json, excluding trough parts counted in body and every purchased-component proxy. Complete electrical mass is unknown.')
+    # Residual categories are explicitly scoped to avoid re-counting selected named devices.
+    residual=[('remaining_harness','Remaining complete power/signal harness, connector kits, clamps and testing','Excludes separately listed lugs and glands; lengths/terminal kits and continuous routes unresolved.'),('charger','Qualified battery charger and charging connections','Exact grid connection, ATC-compatible charge workflow and SKU unresolved.'),('aux_converter','24/12 V auxiliary conversion and branch protection','Exact load/thermal-qualified converter quantities unresolved.'),('cooling','Remaining cooling and environmental sealing','Includes dry, ventilated battery location; installed weather/heat rejection solution unresolved.'),('safety_controls','Residual safety, e-stop and commissioning hardware','Excludes named topology controller/sensors; wiring, braking or energy sink and controls qualification unresolved.'),('tire_services','Valves, mounting, balancing and tire-service work','Not included in bare tire price.'),('steering','Residual steering controls, calibration and qualification','Excludes actuators, linkage, switches and purchased joints already itemized.'),('task_tools','Task-specific tools and workholding','No autonomous repair, replication or printer-building process demonstrated.'),('residual_mechanical_hardware','Remaining exact mechanical fastener/retainer/lubrication schedule','No blanket second allowance for hardware already represented in original detail estimates; final itemized purchase schedule incomplete.')]
+    for id,name,note in residual:add(id,name,None,None,notes=note)
+    for id in ['build_labor','engineering_nre','logistics_tax','external_workcell']:
+        p=copy.deepcopy(oldparts[id]);p['mass_group']=None;parts.append(p)
+    sources_by_id={s['id']:s for s in sources}
     for p in parts:
-        row={k:p.get(k) for k in fields}
-        row={k:('null' if v is None else ('|'.join(v) if isinstance(v,list) else str(v).lower() if isinstance(v,bool) else v)) for k,v in row.items()}
-        w.writerow(row)
-print(json.dumps(dict(parts=len(parts),baskets=baskets,essential_unpriced=len(model['build_summary']['essential_unpriced_line_ids']))))
+        p['quote_date']=None;p['is_supplier_quote']=False
+        p['price_observed_on']=OBSERVED if p['unit_price'] is not None else None
+        for k in ['source_step','source_step_sha256','ledger_node','assembly_group','stroke_mm','mass_scope']:p.setdefault(k,None)
+        s=sources_by_id.get(p['price_source_id'],{})
+        for k in ['availability','tax_basis','shipping_basis']:p[k]=s.get(k)
+        p['price_source_url']=s.get('url');p['price_reference_period']=s.get('price_period')
+    baskets=[]
+    for currency in sorted({p['currency'] for p in parts if p['unit_price'] is not None}):
+        chosen=[p for p in parts if p['currency']==currency and p['unit_price'] is not None]
+        baskets.append(dict(currency=currency,reference_subtotal=float(sum((Decimal(str(p['extended_price'])) for p in chosen),Decimal(0))),line_ids=[p['id'] for p in chosen],line_count=len(chosen),complete_build_total=False,tax_basis='PLN tire listing gross/brutto' if currency=='PLN' else 'Mixed references: US gripper/coupling tax basis unresolved; LATAM battery/BMS ex VAT',shipping_total=None,price_scope='Dated reference subtotal only; no common destination, supplier quote, FX or checkout total'))
+    old_operating=copy.deepcopy(old['operating_cost']);scenarios=[]
+    for prior in old_operating['scenarios']:
+        scenario=copy.deepcopy(prior);i=scenario['inputs'];i['module_replacement_public_reference_usd']=4482;i['module_price_basis']='2026 Q2 LATAM USD-C ex-VAT reference for two BAT548110620; not a current installed replacement quote'
+        power=i['assumed_mean_battery_kw'];energy=power/i['assumed_charging_efficiency']*i['assumed_tariff_usd_per_kwh'];cycle=4482*power/(10.24*i['assumed_cycle_depth']*i['assumed_cycle_life']);calendar=4482/(i['assumed_calendar_life_years']*i['assumed_annual_operating_hours']);reserve=max(cycle,calendar);labor=i['assumed_supervision_hours_per_robot_hour']*i['assumed_supervisor_usd_per_hour']+i['assumed_maintenance_labor_hours_per_robot_hour']*i['assumed_technician_usd_per_hour']
+        scenario['outputs'].update(energy_only_usd_per_operating_hour=energy,battery_module_cycle_reserve_usd_per_operating_hour=cycle,battery_module_calendar_reserve_usd_per_operating_hour=calendar,battery_module_reserve_usd_per_operating_hour=reserve,modeled_partial_usd_per_operating_hour=energy+labor+reserve,modeled_partial_usd_per_assumed_year=(energy+labor+reserve)*i['assumed_annual_operating_hours'])
+        scenario['limits']='Analyst scenario only. Mean demand, charging efficiency, labor, 2,000 cycles, 80% depth, five years and utilization remain assumptions. Battery price is dated LATAM module-only reference. Nominal 10.24 kWh is not usable energy. Neither 180 A warm ceiling nor scenario draw validates motor/arm duty, temperature, regen, uninterrupted runtime or operating safety.'
+        scenarios.append(scenario)
+    old_operating['scenarios']=scenarios
+    known=sum(p['quantity']*p['unit_mass_kg'] for p in parts if p['included_in_pinned_mass_subtotal'])
+    mass_groups=defaultdict(float)
+    for p in parts:
+        if p['included_in_pinned_mass_subtotal']:mass_groups[p['mass_group']]+=p['quantity']*p['unit_mass_kg']
+    close(mass_groups['mechanical_purchased'],152.24)
+    close(mass_groups['structure'],mech['structural_geometric_mass_kg']);close(mass_groups['joint_details'],mech['joint_original_geometric_mass_kg']);close(mass_groups['shock_details'],mech['shock_original_steel_geometric_mass_kg'])
+    gates=[dict(id='c04_wheel_interface',severity='qualification',status='unqualified',source_id='c04_rim_specs',message='B14-seat/M16-stud application approval, bearing offset load, full rim section, tire speed/load and stud/nut grade/torque remain open.'),dict(id='battery_restraint_and_environment',severity='safety',status='unqualified',source_id='victron_battery_specs',message='BA02 nominal contact and extraction geometry do not establish case preload, restraint loads, dry indoor battery location, thermal control or safe lifting of 37 kg modules.'),dict(id='battery_current_and_controls',severity='safety',status='not_enforced',source_id=None,message='180 A is a conditional warm-bank development ceiling, not a commissioned rating. Derate by both pack temperatures and actual BMS DCL/CCL. Pack loss requires validated stop; ATC/ATD, regen inhibition, independent brake/sink, branch protection and current sharing remain incomplete.'),dict(id='steering_force_duty',severity='qualification',status='unqualified',source_id='c04_actuator_specs',message='B068 exact order options, force/duty, motor-supply power and six-corner steering response are unqualified.'),dict(id='source_prices',severity='procurement',status='references_only',source_id='victron_BAT548110620',message='No supplier quotes or stock allocations. Reconfirm exact SKUs, package contents, destination taxes, import costs and freight. LATAM 2026 Q2 prices are not current US quotes.')]
+    gates += [copy.deepcopy(g) for g in old['procurement_gates'] if g['id'] in ['coupling_electrical_route','arm_controller_package','original_manufacturing']]
+    model=dict(schema_version='2.0.0',title='C04 six-wheel UGV matched build and operating cost reference',as_of=OBSERVED,configuration=dict(revision='C04_R01',structural_revision='C04_R05',mechanical_public_freeze='C04_R02',steering_corner_count=4,middle_corner_count=2,rack_count=2,frame_revision='R07',body_revision='PR01 + SO02_E04P + E04 trough + BA02',battery_revision='BA02',electrical_revision='E04',tool_adapter_revision='R04',not_fabrication_released=True),policy=dict(unknown_numeric='null, never zero',csv_null='literal null',public_prices='Dated reference observations, never quotes or landed totals',source_currency='Native currency baskets; no FX',proxy_mass='Purchased external proxy volumes never supply installed component mass',bundle_accounting='Two NRS pairs supply four straps including buckles; arm/controller packages count once; repeated topology references do not add duplicate purchased devices'),parts=parts,alternatives=[copy.deepcopy(x) for x in old['alternatives'] if x['id'] in ['oem_dc_200143','wrist_coupling_077','purchased_ur20_adapter']],build_summary=dict(status='incomplete_essential_items_unpriced',complete_build_cost=None,currency=None,public_price_baskets=baskets,essential_unpriced_line_ids=[p['id'] for p in parts if p['essential'] and p['unit_price'] is None and p['included_in_cost_of'] is None],excluded_from_public_baskets=['original fabrication','six exact WD220 drives','two UR20 arms and exact controller package','Jantsa rims','NRS straps','essential electrical integration, harness and services','destination tax/import/freight','unselected alternatives'],new_vs_used='No used/refurbished substitution; exact condition and package scope must be confirmed.'),mass_context=dict(pinned_known_subset_kg=known,whole_vehicle_mass_kg=None,source_snapshot_mass_kg=None,source_snapshot_corner_revision='C04 structural R05',reconciliation_method='Recomputed from frozen named ledgers; no claim that this calculation is an independent weighed or audited source snapshot',mass_groups_kg=dict(mass_groups),original_running_gear_subtotal_kg=mass_groups['structure']+mass_groups['joint_details']+mass_groups['shock_details'],accepted_rim_net_mass_kg=117,additional_catalog_nuts_kg=None,additional_catalog_nuts_in_pinned_subset=False,no_recomputed_complete_mass=True,warning='Known modeled/catalogue subtotal, not weighed or complete. Drives, tires, nuts, straps/buckles, dampers, bearings and most installed electrical components remain unknown. Named patches replace prior geometry; density is never applied to purchased representations.'),electrical_context=dict(nominal_bank_kwh=10.24,battery_count=2,battery_nominal_ah_each=100,nominal_voltage=51.2,drive_count=6,steering_actuator_count=2,steering_actuator_order_released=False,measured_steering_power_kw=None,steering_power_budget_kw=None,steering_duty_qualified=False,drive_rating_kw_each=2.2,drive_rating_duty='S2 60 min; S1 unknown',motor_current_A_each=47,motor_current_basis='motor phase/nameplate rating; not established DC bus demand',DC_bus_current_basis_verified=False,development_current_cap_A=180,cap_enforced=False,cap_condition='Two online warm packs, temperature/current-sharing/BMS DCL/CCL constraints satisfied; enforcement and braking not commissioned',system_current_rating_A=None,simultaneous_mechanical_rating_kw=13.2,ideal_minimum_DC_current_A_at_nominal_voltage=13.2*1000/51.2,full_nameplate_traction_min_bus_A_at44p8V_eta80=contract['full_nameplate_traction_min_bus_A_at44p8V_eta80'],temperature_limits_file='inputs/electrical_temperature_limits.json',regen_permission_path=topology['ATC_regen_permission_path'],load_permission_path=topology['ATD_load_permission_path'],electrical_end_to_end_complete=False,warning='10.24 kWh is nominal energy only. 180 A is conditional warm-bank development ceiling, not rated full-six-motor capability. 47 A motor phase rating is not DC demand. Cold/hot limits, pack loss, auxiliaries, UR inrush, regen and ATC/ATD control gates can further reduce or disable operation.'),procurement_gates=gates,operating_cost=old_operating,historical_model=dict(status='superseded_C03_R03_not_selected',file='inputs/historical_C03_model.json',source_file='inputs/historical_C03_sources.json',removed=['Six EVO rims and their EUR 2,891.34 basket','Six BFGoodrich tires','Four RELiON batteries and their active recall procurement gate','Six old wheel-pattern adapters/proposed output studs','Old C03/C02 structures and B045 steering candidate','Old 6.144 kWh capacity and battery reserve price'],baseline_included=False),evidence=dict(source_file='sources.json',bom_file='BOM.csv',mass_file='mass_reconciliation.json',body_file='body_composition.json',input_manifest='input-manifest.json'),ui_contract=dict(build_headline='Complete build cost: unknown',basket_label='Priced subset only; native currencies; mixed dated reference markets',operating_headline='Measured operating cost: unknown',scenario_label='Assumptions-only partial operating scenario',must_replace_old_static_text=['EUR rim VAT notice','RELiON recall notice as current selection','EVO/BFG descriptions','4-battery/6.144 kWh references'],do_not_display=['historical price baskets as current','null as zero','any combined USD/PLN or FX total','180 A as commissioned bank rating','47 A phase current as DC demand','S2 as continuous duty','whole-rover runtime prediction']))
+    model['build_summary']['essential_unpriced_line_count']=len(model['build_summary']['essential_unpriced_line_ids'])
+    write('cost_model.json',model);write('sources.json',dict(as_of=OBSERVED,observations=sources,restrictions='Factual summaries and links only. No raw vendor CAD, PDFs or fetched webpages.'))
+    write('body_composition.json',body);write('electrical_mass_selection.json',electrical)
+    write('mass_reconciliation.json',dict(configuration=model['configuration'],known_subset_kg=known,whole_vehicle_mass_kg=None,groups_kg=dict(mass_groups),body_stages=body['history'],mechanical_purchased_mass_kg=152.24,rows=[dict(id=p['id'],quantity=p['quantity'],unit_mass_kg=p['unit_mass_kg'],extended_mass_kg=p['unit_mass_kg']*p['quantity'] if p['included_in_pinned_mass_subtotal'] else None,mass_group=p.get('mass_group'),basis=p['mass_basis']) for p in parts],exclusions=model['mass_context']['warning']))
+    fields=['id','name','sku','quantity','quantity_unit','scope','supply_kind','selection_status','essential','unit_price','currency','extended_price','pricing_status','price_source_id','included_in_cost_of','unit_mass_kg','mass_basis','included_in_pinned_mass_subtotal','mass_group','source_ids','notes','quote_date','is_supplier_quote','price_observed_on','price_reference_period','price_source_url','availability','tax_basis','shipping_basis']
+    with (HERE/'BOM.csv').open('w',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+        for p in parts:w.writerow({k:'null' if p.get(k) is None else '|'.join(p[k]) if isinstance(p[k],list) else str(p[k]).lower() if isinstance(p[k],bool) else p[k] for k in fields})
+    print(json.dumps(dict(rows=len(parts),baskets=baskets,known_mass_kg=known,scenarios=[s['outputs']['modeled_partial_usd_per_operating_hour'] for s in scenarios]),indent=2))
+    return model
+if __name__=='__main__':build()

@@ -1,0 +1,262 @@
+{
+  "scope": "Actual private motor optimal X bounds versus component-frozen original R08 guided spring module. Local X is pin axis; all listed offsets are station-local in left source frame. Under fixed-X mounting, X-only suspension tilt and unchanged bounded radial profile, Y/Z suspension translation does not affect X separation. Proper right Rz(pi) maps these bounds with sign reversal. The -260 installation was rejected independently for tie-linkage collision. All other placements are reservations only. New support parts, tie linkage, chassis/body, tire, hardware strength, manufacturing tolerances and operation are NOT qualified.",
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "original_R08_module_sha256": "f666fb2293d506dca05b4d8132668e94a3b612f71ab088c2057e6b9a2a8393ef",
+  "original_module_solids": 24,
+  "module_local_X_bounds_mm": [
+    -64.5,
+    69.5000001
+  ],
+  "private_motor_yaw_bound_samples": [
+    {
+      "motor_yaw_deg": -22,
+      "private_motor_X_min_mm": -134.8793814697678,
+      "private_motor_X_max_mm": 128.935842043633
+    },
+    {
+      "motor_yaw_deg": -20,
+      "private_motor_X_min_mm": -129.66784622824883,
+      "private_motor_X_max_mm": 125.17984672806111
+    },
+    {
+      "motor_yaw_deg": -18,
+      "private_motor_X_min_mm": -124.29833068990123,
+      "private_motor_X_max_mm": 121.27133905185009
+    },
+    {
+      "motor_yaw_deg": -16,
+      "private_motor_X_min_mm": -123.19319205569803,
+      "private_motor_X_max_mm": 119.88554378589404
+    },
+    {
+      "motor_yaw_deg": -14,
+      "private_motor_X_min_mm": -123.82453764441874,
+      "private_motor_X_max_mm": 120.92147489722272
+    },
+    {
+      "motor_yaw_deg": -12,
+      "private_motor_X_min_mm": -124.3050221078494,
+      "private_motor_X_max_mm": 121.81008181803631
+    },
+    {
+      "motor_yaw_deg": -10,
+      "private_motor_X_min_mm": -124.63406004968428,
+      "private_motor_X_max_mm": 122.5502819176811
+    },
+    {
+      "motor_yaw_deg": -8,
+      "private_motor_X_min_mm": -124.81125058787569,
+      "private_motor_X_max_mm": 123.14117337635487
+    },
+    {
+      "motor_yaw_deg": -6,
+      "private_motor_X_min_mm": -124.83637784304686,
+      "private_motor_X_max_mm": 123.582036283835
+    },
+    {
+      "motor_yaw_deg": -4,
+      "private_motor_X_min_mm": -124.70941120150803,
+      "private_motor_X_max_mm": 123.87233351657852
+    },
+    {
+      "motor_yaw_deg": -2,
+      "private_motor_X_min_mm": -124.43050535255412,
+      "private_motor_X_max_mm": 128.82589624518494
+    },
+    {
+      "motor_yaw_deg": 0,
+      "private_motor_X_min_mm": -124.0000001,
+      "private_motor_X_max_mm": 134.5069527135882
+    },
+    {
+      "motor_yaw_deg": 2,
+      "private_motor_X_min_mm": -124.01171139212411,
+      "private_motor_X_max_mm": 140.04363574554486
+    },
+    {
+      "motor_yaw_deg": 4,
+      "private_motor_X_min_mm": -123.87233351657851,
+      "private_motor_X_max_mm": 145.41086757513273
+    },
+    {
+      "motor_yaw_deg": 6,
+      "private_motor_X_min_mm": -123.58203628383501,
+      "private_motor_X_max_mm": 150.60097149116064
+    },
+    {
+      "motor_yaw_deg": 8,
+      "private_motor_X_min_mm": -123.14117337635487,
+      "private_motor_X_max_mm": 155.60759962726144
+    },
+    {
+      "motor_yaw_deg": 10,
+      "private_motor_X_min_mm": -122.5502819176811,
+      "private_motor_X_max_mm": 160.4246472164753
+    },
+    {
+      "motor_yaw_deg": 12,
+      "private_motor_X_min_mm": -121.81008181803631,
+      "private_motor_X_max_mm": 165.04624376717754
+    },
+    {
+      "motor_yaw_deg": 14,
+      "private_motor_X_min_mm": -120.92147489722272,
+      "private_motor_X_max_mm": 169.46675786169118
+    },
+    {
+      "motor_yaw_deg": 16,
+      "private_motor_X_min_mm": -119.88554378589404,
+      "private_motor_X_max_mm": 173.68080342635955
+    },
+    {
+      "motor_yaw_deg": 18,
+      "private_motor_X_min_mm": -122.86734728994047,
+      "private_motor_X_max_mm": 177.68324609619117
+    },
+    {
+      "motor_yaw_deg": 20,
+      "private_motor_X_min_mm": -126.72008922915958,
+      "private_motor_X_max_mm": 181.46920939116856
+    },
+    {
+      "motor_yaw_deg": 22,
+      "private_motor_X_min_mm": -130.41844225950825,
+      "private_motor_X_max_mm": 185.03408062146661
+    }
+  ],
+  "private_motor_sampled_X_bounds_mm": [
+    -134.8793814697678,
+    185.03408062146661
+  ],
+  "between_sample_padding_mm": 4.509342132974565,
+  "private_motor_conditional_continuous_X_bounds_mm": [
+    -139.38872360274235,
+    189.54342275444117
+  ],
+  "continuous_yaw_degrees": [
+    -22,
+    22
+  ],
+  "reservations": [
+    {
+      "station_local_X_offset_mm": -550,
+      "module_X_bounds_mm": [
+        -614.5,
+        -480.49999990000003
+      ],
+      "sampled_X_gap_mm": 345.62061843023224,
+      "conditional_continuous_X_gap_lower_bound_mm": 341.1112762972577,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": -450,
+      "module_X_bounds_mm": [
+        -514.5,
+        -380.49999990000003
+      ],
+      "sampled_X_gap_mm": 245.62061843023224,
+      "conditional_continuous_X_gap_lower_bound_mm": 241.1112762972577,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": -350,
+      "module_X_bounds_mm": [
+        -414.5,
+        -280.49999990000003
+      ],
+      "sampled_X_gap_mm": 145.62061843023224,
+      "conditional_continuous_X_gap_lower_bound_mm": 141.1112762972577,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": -260,
+      "module_X_bounds_mm": [
+        -324.5,
+        -190.4999999
+      ],
+      "sampled_X_gap_mm": 55.62061843023221,
+      "conditional_continuous_X_gap_lower_bound_mm": 51.111276297257646,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "REJECTED: confirmed tie linkage / guide interference in R08 -260 installation"
+    },
+    {
+      "station_local_X_offset_mm": 260,
+      "module_X_bounds_mm": [
+        195.5,
+        329.50000009999997
+      ],
+      "sampled_X_gap_mm": 10.465919378533385,
+      "conditional_continuous_X_gap_lower_bound_mm": 5.956577245558821,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": 350,
+      "module_X_bounds_mm": [
+        285.5,
+        419.50000009999997
+      ],
+      "sampled_X_gap_mm": 100.46591937853339,
+      "conditional_continuous_X_gap_lower_bound_mm": 95.95657724555882,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": 450,
+      "module_X_bounds_mm": [
+        385.5,
+        519.5000001
+      ],
+      "sampled_X_gap_mm": 200.46591937853339,
+      "conditional_continuous_X_gap_lower_bound_mm": 195.95657724555883,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    },
+    {
+      "station_local_X_offset_mm": 550,
+      "module_X_bounds_mm": [
+        485.5,
+        619.5000001
+      ],
+      "sampled_X_gap_mm": 300.4659193785334,
+      "conditional_continuous_X_gap_lower_bound_mm": 295.95657724555883,
+      "motor_module_X_separated": true,
+      "installation_approved": false,
+      "installation_status": "reservation only; exact original supports, tire, linkage and body checks required"
+    }
+  ],
+  "new_supports_or_tie_linkage_checked": false,
+  "fabrication_or_operation_approved": false,
+  "import_environment": {
+    "cadquery_version": "2.7.0",
+    "ocp_version": "7.8.1.1",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "imported_solid_count": 240,
+    "orientation_counts": {
+      "TopAbs_Orientation.TopAbs_FORWARD": 240
+    },
+    "negative_volume_solids": 0,
+    "source_product_count_is_not_imported_solid_count": true,
+    "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+    "source_product_count": 1,
+    "source_manifold_solid_brep_entities": 12,
+    "source_brep_with_voids_entities": 1,
+    "source_closed_shell_entities": 244,
+    "vendor_part_count_inferred": false,
+    "count_note": "Kernel-imported solid decomposition, not unique vendor parts. The preserved final Colab output independently records the same source SHA, CadQuery2.7.0 and240 valid solids. Earlier unsupported verbal30 count is superseded; no duplication explanation is inferred.",
+    "reconciled_prior_numeric_report_sha256": "13000ecd41dd7a0ed304b880a326c7ab1e702a0c0f26f3599603c6d7dcf76386",
+    "prior_CadQuery_version": "2.7.0",
+    "prior_all_solids_valid": true
+  },
+  "fit_count_scope": "Private source solid-decomposition tests, not OEM part enumeration; volume sums are sums across imported components."
+}

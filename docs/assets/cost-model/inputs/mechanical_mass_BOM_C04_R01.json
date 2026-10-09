@@ -1,0 +1,681 @@
+{
+  "revision": "C04 mechanical ledger R01",
+  "scope": "Selected connected mechanical additions only. Frame, body, arms/grippers, battery/electronics, fixtures and cables are separate integration ledgers.",
+  "selected_structure_manifest": "structural_connections_C04_R05_manifest.json",
+  "structure_sha256": "d140e9e64f1777a1b43c551539f276cb8b48f2337b20db9721c2c717aab3a24e",
+  "structural_geometric_mass_kg": 347.91233280933164,
+  "structural_mass_basis": "Original CAD material-volume estimate using each source density assumption; includes nominal custom/generic fastener geometry, not measured purchased mass.",
+  "joint_original_and_proxy_breakdown": [
+    {
+      "part": "AIN16_ball_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "AIN16_race_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20ES_ball_C04_R01",
+      "quantity": 56,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20ES_race_C04_R01",
+      "quantity": 56,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_cheek_spacer_100_C04_R01",
+      "quantity": 8,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.005425530512749573,
+      "mass_total_kg": 0.043404244101996586,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_cheek_spacer_80_C04_R01",
+      "quantity": 48,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.005425530512749574,
+      "mass_total_kg": 0.2604254646119796,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_inner_ring_spacer_100_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.07378721497339422,
+      "mass_total_kg": 0.29514885989357686,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_inner_ring_spacer_80_C04_R01",
+      "quantity": 24,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0520850929223959,
+      "mass_total_kg": 1.2500422301375016,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_outer_race_spacer_100_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.1957630055009369,
+      "mass_total_kg": 0.7830520220037476,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_outer_race_spacer_80_C04_R01",
+      "quantity": 24,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.14138439286178775,
+      "mass_total_kg": 3.393225428682906,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_retainer_100_positive_C04_R01",
+      "quantity": 8,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.02480651196438427,
+      "mass_total_kg": 0.19845209571507416,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "GE20_retainer_80_positive_C04_R01",
+      "quantity": 48,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.024806511964384267,
+      "mass_total_kg": 1.1907125742904447,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "HB12_10_positive_C04_R01",
+      "quantity": 16,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "HB16_12_positive_C04_R01",
+      "quantity": 16,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "JMX12_ball_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "JMX12_body_thread_envelope_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "M3x10_button_head_C04_R01",
+      "quantity": 224,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "M5x12_socket_head_C04_R01",
+      "quantity": 32,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "SJNR12_jam_nut_LH_C04_R01",
+      "quantity": 4,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "SJNR12_jam_nut_RH_C04_R01",
+      "quantity": 4,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "actuator_front_external_washer_C04_R01",
+      "quantity": 2,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.009598333774295389,
+      "mass_total_kg": 0.019196667548590778,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "actuator_rear_external_washer_C04_R01",
+      "quantity": 2,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0197018430103958,
+      "mass_total_kg": 0.0394036860207916,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "middle_outer_pin_cotter_washer_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.012655974727325783,
+      "mass_total_kg": 0.05062389890930313,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "middle_outer_pin_head_takeup_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.018921537663214128,
+      "mass_total_kg": 0.07568615065285651,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_pin_cotter_washer_C04_R02",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_pin_fork72_C04_R02",
+      "quantity": 8,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.25378391376026976,
+      "mass_total_kg": 2.030271310082158,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_shim_layer_0_C04_R02",
+      "quantity": 16,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0012685568530122592,
+      "mass_total_kg": 0.020296909648196148,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_shim_layer_1_C04_R02",
+      "quantity": 16,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0005074227412049061,
+      "mass_total_kg": 0.008118763859278498,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_shim_layer_2_C04_R02",
+      "quantity": 16,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0002537113706024531,
+      "mass_total_kg": 0.004059381929639249,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "outer_shim_layer_3_C04_R02",
+      "quantity": 16,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0002537113706024531,
+      "mass_total_kg": 0.004059381929639249,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "root_pin_cotter_washer_C04_R01",
+      "quantity": 24,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.012655974727325776,
+      "mass_total_kg": 0.30374339345581863,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "root_pin_head_takeup_C04_R01",
+      "quantity": 24,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.04466814609644392,
+      "mass_total_kg": 1.072035506314654,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "split_pin_2p5_actuator_C04_R01",
+      "quantity": 4,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "split_pin_2p5_outer_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "split_pin_2p5_tie_C04_R01",
+      "quantity": 8,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "split_pin_3p2_root_C04_R01",
+      "quantity": 28,
+      "class": "source-dimensioned purchased-component representation",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "tie_insert_LH_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.05255304492912053,
+      "mass_total_kg": 0.21021217971648212,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "tie_insert_RH_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.05255304492912053,
+      "mass_total_kg": 0.21021217971648212,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "tie_pin_cotter_washer_C04_R01",
+      "quantity": 8,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.02228047127290624,
+      "mass_total_kg": 0.1782437701832499,
+      "published_purchased_mass_kg": null
+    },
+    {
+      "part": "tie_tube_C04_R01",
+      "quantity": 4,
+      "class": "original fabricated detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.5941735879887423,
+      "mass_total_kg": 2.3766943519549693,
+      "published_purchased_mass_kg": null
+    }
+  ],
+  "joint_original_geometric_mass_kg": 14.017320451359337,
+  "shock_original_and_proxy_breakdown": [
+    {
+      "part": "shock_upper_eye_interface_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 41266.991879028385,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_body_topcap_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 34353.31566700441,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_body_barrel_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 625991.3959598123,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_body_gland_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 28802.00363838673,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "guided_upper_carrier_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 235304.4018688892,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 1.84713955467078,
+      "mass_total_kg": 11.08283732802468
+    },
+    {
+      "part": "shock_chromed_rod_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 54431.46748117655,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_lower_eye_interface_C04_R01",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 51826.991879028385,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "guided_lower_carrier_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 92285.5729692387,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.7244417478085237,
+      "mass_total_kg": 4.346650486851142
+    },
+    {
+      "part": "spring_Eibach1800_300_0200S_original_profile_C04_R08",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 288403.2503412203,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_clevis_reducer_sleeve_C04_R01",
+      "quantity_all_six": 24,
+      "volume_each_mm3": 275.4548438667531,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0021623205243540117,
+      "mass_total_kg": 0.05189569258449628
+    },
+    {
+      "part": "shock_spring_shared_pin_C04_R03",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 10906.89210515503,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.08561910302546698,
+      "mass_total_kg": 0.5137146181528018
+    },
+    {
+      "part": "shock_spring_external_washer_C04_R03",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 589.6376711706346,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.004628655718689481,
+      "mass_total_kg": 0.027771934312136884
+    },
+    {
+      "part": "shock_spring_split_pin_C04_R03",
+      "quantity_all_six": 12,
+      "volume_each_mm3": 159.472177907261,
+      "class": "purchased profile proxy",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "shock_lower_service_pin_C04_R05",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 17810.782389758824,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.13981464175960676,
+      "mass_total_kg": 0.8388878505576405
+    },
+    {
+      "part": "shock_lower_service_washer_C04_R05",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 589.6376711706343,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.004628655718689479,
+      "mass_total_kg": 0.027771934312136877
+    },
+    {
+      "part": "bronze_telescoping_guide_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 153545.21448557673,
+      "class": "original guide with material grade unselected",
+      "density_kg_m3_assumption": null,
+      "geometric_mass_each_kg": null,
+      "mass_total_kg": null
+    },
+    {
+      "part": "guide_retaining_M4x10_0_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 264.01328890137194,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0020725043178757697,
+      "mass_total_kg": 0.012435025907254618
+    },
+    {
+      "part": "guide_retaining_M4x10_1_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 264.01328890137194,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0020725043178757697,
+      "mass_total_kg": 0.012435025907254618
+    },
+    {
+      "part": "guide_retaining_M4x10_2_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 264.01328890137194,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0020725043178757697,
+      "mass_total_kg": 0.012435025907254618
+    },
+    {
+      "part": "guide_retaining_M4x10_3_C04_R07",
+      "quantity_all_six": 6,
+      "volume_each_mm3": 264.01328890137194,
+      "class": "original carrier/retention detail",
+      "density_kg_m3_assumption": 7850,
+      "geometric_mass_each_kg": 0.0020725043178757697,
+      "mass_total_kg": 0.012435025907254618
+    }
+  ],
+  "shock_original_steel_geometric_mass_kg": 16.939269948424055,
+  "purchased_BOM": [
+    {
+      "part": "WD220SMAC132-05048V2.2kW",
+      "quantity": 6,
+      "published_mass_each_kg": null,
+      "includes": "Purchased motor, reduction gear, bearings, output hub/studs and brake; no proxy-volume mass used"
+    },
+    {
+      "part": "Jantsa10005240 9.75x16.5 ET-70",
+      "quantity": 6,
+      "published_mass_each_kg": 19.5,
+      "source": "external: wheel-drive-hardware/candidate-Jantsa16p5-Trelleborg-R01.json"
+    },
+    {
+      "part": "Trelleborg SK-90012-16.5 12PR",
+      "quantity": 6,
+      "published_mass_each_kg": null,
+      "source": "external: wheel-drive-hardware/candidate-Jantsa16p5-Trelleborg-R01.json"
+    },
+    {
+      "part": "RIMA22095 M16x1.5 R14 open nut",
+      "quantity": 30,
+      "published_mass_each_kg": null,
+      "source": "drive/direct_wheel_nut_contract_C04_R01.json"
+    },
+    {
+      "part": "FOX980-02-005 damper mounting candidate",
+      "quantity": 6,
+      "published_mass_each_kg": null,
+      "source": "shocks/shock_component_registry_C04_R01.json"
+    },
+    {
+      "part": "Eibach1800.300.0200S spring",
+      "quantity": 6,
+      "published_mass_each_kg": 3.54,
+      "source": "https://eibach.com/product/1800.300.0200S"
+    },
+    {
+      "part": "Thomson Electrak HD48 B068 200mm M/M candidate",
+      "quantity": 2,
+      "published_mass_each_kg": 7.0,
+      "source": "external: steering-actuator/actuator_interface_contract_R02.json",
+      "qualification": "Catalogue configuration mass; exact ordered configuration and load/duty remain unqualified"
+    },
+    {
+      "part": "SKF GE20ES",
+      "quantity": 56,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "FK AIN16",
+      "quantity": 8,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "FK16-12HB spacer",
+      "quantity": 16,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "FK12-10HB spacer",
+      "quantity": 16,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "FK JMX12 / JMXL12",
+      "quantity": 8,
+      "handed_quantities": {
+        "RH": 4,
+        "LH": 4
+      },
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "FK SJNR12 / SJNL12 jam nuts",
+      "quantity": 8,
+      "handed_quantities": {
+        "RH": 4,
+        "LH": 4
+      },
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "M10x25 motor mounting screws",
+      "quantity": 48,
+      "published_mass_each_kg": null,
+      "grade_preload_unqualified": true
+    },
+    {
+      "part": "M3x10 joint retaining screws",
+      "quantity": 224,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "M5x12 outer bearing retaining screws",
+      "quantity": 32,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "M4x10 guided-carrier screws",
+      "quantity": 24,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "M3x10 rack end-cap screws",
+      "quantity": 16,
+      "published_mass_each_kg": null
+    },
+    {
+      "part": "M4x90 rack inner-stop screws with washers/nuts",
+      "quantity": 4,
+      "published_mass_each_kg": null
+    }
+  ],
+  "published_purchased_mass_subtotal_kg": 152.24,
+  "purchased_total_mass_complete": false,
+  "vehicle_total_mass_kg": null,
+  "replaced_parts": [
+    "Six EVO SE5240060141 rims",
+    "Six BFGoodrich KM3MSPN72204 tire candidates",
+    "Six ISO wheel-pattern adapters and proposed output studs",
+    "Old 2.5-inch-ID Eibach spring candidate",
+    "Unretained rack liners",
+    "Old shock centerline reservations and disconnected tie/bearing placeholders"
+  ],
+  "no_double_counting": "Purchased drive/damper/tire/bearing proxies are excluded from geometric mass totals. Six spring masses are counted once by catalogue mass; bronze guide mass remains unknown until material selection. Hardware source quantities are not an additional mass term when already represented in an original-geometry subtotal.",
+  "fabrication_released": false
+}

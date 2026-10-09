@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "revision": "BA02_POLARITY_R01",
+  "tests": 14,
+  "checks": [
+    "Source-mark and asymmetric-fitting contract validation",
+    "Real BA02 GLB terminal/fitting positions agree with source-derived polarity",
+    "Four corrected labels/colors preserve all names, geometry and matrices",
+    "Missing fourth source node fails atomically before all mutation",
+    "Duplicate source name fails atomically",
+    "Late material preparation failure leaves entire scene unchanged",
+    "Clone with shared color is rejected before source color mutation",
+    "Reversed drawing marks rejected",
+    "Opposite installed fitting sign rejected",
+    "Legacy incorrect terminal polarity rejected",
+    "Incorrect terminal location rejected",
+    "Unverified drawing hash rejected",
+    "Unjustified harness-complete gate rejected",
+    "Repeated application keeps functional metadata and geometry stable"
+  ],
+  "realFrozenBA02GlbUsed": true,
+  "geometryAndMatricesUnchanged": true,
+  "missingNodeFailureAtomic": true,
+  "sharedMaterialsUnchanged": true,
+  "fullHarnessComplete": false,
+  "terminalHardwareQualified": false
+}

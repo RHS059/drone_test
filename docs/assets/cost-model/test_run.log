@@ -1,0 +1,29 @@
+test_battery_mass_separate_from_floor (__main__.Costs.test_battery_mass_separate_from_floor) ... ok
+test_body_composition (__main__.Costs.test_body_composition) ... ok
+test_body_densities_and_replacement (__main__.Costs.test_body_densities_and_replacement) ... ok
+test_complete_and_actual_unknown (__main__.Costs.test_complete_and_actual_unknown) ... ok
+test_csv_matches (__main__.Costs.test_csv_matches) ... ok
+test_currency_baskets (__main__.Costs.test_currency_baskets) ... ok
+test_electrical_proxy_exclusion (__main__.Costs.test_electrical_proxy_exclusion) ... ok
+test_frozen_inputs (__main__.Costs.test_frozen_inputs) ... ok
+test_ids_are_unique (__main__.Costs.test_ids_are_unique) ... ok
+test_mass_arithmetic (__main__.Costs.test_mass_arithmetic) ... ok
+test_mechanical_freeze_binding (__main__.Costs.test_mechanical_freeze_binding) ... ok
+test_mechanical_subtotals (__main__.Costs.test_mechanical_subtotals) ... ok
+test_no_electrical_trough_double_count (__main__.Costs.test_no_electrical_trough_double_count) ... ok
+test_no_invented_quote (__main__.Costs.test_no_invented_quote) ... ok
+test_operating_model (__main__.Costs.test_operating_model) ... ok
+test_price_extensions (__main__.Costs.test_price_extensions) ... ok
+test_price_source_links (__main__.Costs.test_price_source_links) ... ok
+test_quantities (__main__.Costs.test_quantities) ... ok
+test_replacement_skus (__main__.Costs.test_replacement_skus) ... ok
+test_reproducible (__main__.Costs.test_reproducible) ... ok
+test_spring_count_once (__main__.Costs.test_spring_count_once) ... ok
+test_straps_are_two_pairs (__main__.Costs.test_straps_are_two_pairs) ... ok
+test_thermal_regen_gates (__main__.Costs.test_thermal_regen_gates) ... ok
+test_unknown_purchased_masses (__main__.Costs.test_unknown_purchased_masses) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.284s
+
+OK

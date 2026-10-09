@@ -1,0 +1,82 @@
+{
+  "scope": "Compatibility reconciliation after corrected assembly metadata selected canonical local R08 shocks plus R03 solver. Prior fit reports retain their original manifest hashes. Every tested carrier source/hash and all38 retained rack placements are checked against the final manifest here. No claim that untested files were identical.",
+  "final_structural_manifest_sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d",
+  "prior_carrier_input_manifest_sha256": "0e925530affc29562a8c165fe87f6e6421f18098d3edfca5f010ddb0c4876dca",
+  "prior_rack_input_manifest_sha256": "0e925530affc29562a8c165fe87f6e6421f18098d3edfca5f010ddb0c4876dca",
+  "selected_carriers": [
+    {
+      "node": "front_left_upright",
+      "source_hash_and_path_match": true,
+      "final_placement": {
+        "proper_Rz_deg": 0,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      }
+    },
+    {
+      "node": "front_right_upright",
+      "source_hash_and_path_match": true,
+      "final_placement": {
+        "proper_Rz_deg": 0,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      }
+    },
+    {
+      "node": "rear_left_upright",
+      "source_hash_and_path_match": true,
+      "final_placement": {
+        "proper_Rz_deg": 0,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      }
+    },
+    {
+      "node": "rear_right_upright",
+      "source_hash_and_path_match": true,
+      "final_placement": {
+        "proper_Rz_deg": 0,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      }
+    },
+    {
+      "node": "middle_left_upright",
+      "source_hash_and_path_match": true,
+      "final_placement": {
+        "proper_Rz_deg": 0,
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "source_already_handed": false
+      }
+    }
+  ],
+  "rack_placements_verified": 38,
+  "selected_local_shock_dependency": [
+    "joints/JOINT_INTERFACE_CONTRACT_C04_R02.json: all816 nodes; actuator runtime retentionOwner=joints suppresses its8 duplicates",
+    "drive/direct_drive_contract_C04_R03.json at all six corners",
+    "shocks/guided_spring_module_local_C04_R08_anchors.json at solved eyes from kinematics_C04_R03.mjs and connected_mechanical_contract_C04_R01.json",
+    "publisher actuator_interface_contract_R02.json",
+    "publisher wheel W16_R01 and electrical E02 contracts"
+  ],
+  "pass": true
+}

@@ -1,0 +1,19 @@
+{
+  "electrical_contract_E04": {
+    "previous_sha256": "44239b9678525eb18710d3481d7b7d6c63e34ddd45b0297724904060747adeda",
+    "selected_sha256": "4a1e48243a60843ce3d9ead737ee798964180c62ed46c1965e8500d7d4a51df2",
+    "change": "Adds twelve open local service-lead depictions and two explicitly unretained UR controller source-dimension reservations to connection accounting. Existing five geometry groups unchanged; no purchased quantity, accepted mass or price changes.",
+    "previous_connection_count": 167,
+    "selected_connection_count": 181,
+    "additional_geometry_modules": [
+      "UR_unretained_E04"
+    ],
+    "mass_or_cost_change": false
+  },
+  "mechanical_freeze": {
+    "selected": "PUBLIC_SOURCE_FREEZE_C04_R02.json",
+    "file_count": 575,
+    "unchanged_mechanical_mass_ledger_sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6",
+    "note": "Structural manifest in original cost snapshot already matched R02; mechanical geometry and all accepted mass values unchanged."
+  }
+}

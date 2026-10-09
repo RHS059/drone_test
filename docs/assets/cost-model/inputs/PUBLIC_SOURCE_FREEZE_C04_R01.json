@@ -1,0 +1,2870 @@
+{
+  "revision": "C04 mechanical public source freeze R01",
+  "status": "Selected original component and assembly snapshot; independent body/private fit evidence supplied separately; fabrication not released",
+  "no_private_vendor_geometry": true,
+  "excluded": [
+    "Restricted WD220 STEP/PDF and any derived vendor meshes",
+    "Downloaded source drawing PDFs/images",
+    "Rejected assembled previews; numerical failure witnesses are retained",
+    "Unselected EVO pattern-adapter assets"
+  ],
+  "selected_assembly": "mechanical/connection_completion_C04/structural_connections_C04_R05.step",
+  "file_count": 571,
+  "files": [
+    {
+      "path": "mechanical/connection_completion_C04/README_CONNECTED_C04.md",
+      "bytes": 5268,
+      "sha256": "667372930705954afa8ffa38e22504bcd9d4f04e0c8d2d1485ab3e540ed687c3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/build_connection_graph_C04_R01.py",
+      "bytes": 13889,
+      "sha256": "264b4066cc921a79b2e995fb98a753d419731ade894b5462e97841f38d33fde6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/build_mechanical_ledger_C04_R01.py",
+      "bytes": 6475,
+      "sha256": "9b1fe3f0b9c89776621e6bb4c2b70ff7889eb1296275b64989efcc3d42a7243e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/build_structural_assembly_C04_R05.py",
+      "bytes": 6372,
+      "sha256": "1f8b1a701d2ee83eea92df760dadd4938957fd92463f327d7901192cd700a1fb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/connected_mechanical_contract_C04_R01.json",
+      "bytes": 9530,
+      "sha256": "a49138b89926d5338b96a993fa07c616b830ddf6aab2ea4b078a4217bb2fc8b5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/assemble_direct_drive_R03.py",
+      "bytes": 2341,
+      "sha256": "05259e8fa8a21c802512c5bd29485ab50d9e6c5d8a4becc6c98e6d395811447f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_bracket_left_C04_R01.glb",
+      "bytes": 172836,
+      "sha256": "6f765969018a8b1ce886cf269cc9ea99cccc87b3c41728599ebb4b10964bd0b4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_bracket_left_C04_R01.step",
+      "bytes": 34744,
+      "sha256": "92407acdb5ca8b8e8c00c765188170e716a9a9700027af2c7ed2a8dd73316a7c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_carrier_fasteners_C04_R01.glb",
+      "bytes": 435572,
+      "sha256": "2ae5377a3a5c3eb566e0e875345d2f5d03aad19475d611dea92fc779d2713dc5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_carrier_fasteners_C04_R01.step",
+      "bytes": 146775,
+      "sha256": "8aa97201bb22060adefab0f846404ade7872c5809f780a1ddcd756ff23023187"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_fastener_stack_C04_R01.json",
+      "bytes": 4164,
+      "sha256": "4e417ec36f54e2c7b0aac88b328206a161720897a9cc0dda845337e7a2a1c0c5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_mount_contract_C04_R01.json",
+      "bytes": 7887,
+      "sha256": "8d7d738d1138fe8815b331c56b664644e42f50f0e7850489e567e664ebde51ab"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_standoff_0_C04_R01.glb",
+      "bytes": 85852,
+      "sha256": "54fd4265782c5c3dc5ec585a20117dc8ef4eec87aa108180e5cad1748bd51ddc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_standoff_0_C04_R01.step",
+      "bytes": 9417,
+      "sha256": "95e9cdaa2ef5ad3fa01f2bc94491aea23923235003acbae4954613e1bd36e87c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_standoff_1_C04_R01.glb",
+      "bytes": 85852,
+      "sha256": "cbbe2a14fad6334080df8d736cf947cac9796babde2aa0f297c71526a1bb2510"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/breakout_standoff_1_C04_R01.step",
+      "bytes": 9387,
+      "sha256": "71ade0bcb8c3ed3169b4d6747e68bb965b6ee5df550e5c51ab491f1009ef3b19"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_eight_mounts_C04_R04.json",
+      "bytes": 2604,
+      "sha256": "aab0e0c21c25724099738f3ec804f21f96d6d631672748cd3d18e70675315869"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_finished_threads_C04_R03.json",
+      "bytes": 3600,
+      "sha256": "225abe6e34230c9e67c366828163ccc729113b2eac662be1726ab09e8c27784b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_left_eight_mounts_C04_R04.glb",
+      "bytes": 1069160,
+      "sha256": "1394f74e5264cf6b466c4190d80ba6cbafc10f83fad38f0fd2bba83fffa2ba7a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_left_eight_mounts_C04_R04.step",
+      "bytes": 558800,
+      "sha256": "6fe1f455483fc36051d70ac276c61c358dd91e23d84de97aec6a1fcadc57a998"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_left_finished_thread_envelope_C04_R03.glb",
+      "bytes": 908912,
+      "sha256": "0daa247eeab2d10f61aa5c1d00bb54cb9dd4c8d595fa6814a6ceb683edf945b2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_left_finished_thread_envelope_C04_R03.step",
+      "bytes": 455846,
+      "sha256": "85587c0ad2e1006841fb24a61c8aaf199c4b95d2cfd133f83411fd23ec932303"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_right_eight_mounts_C04_R04.glb",
+      "bytes": 1068492,
+      "sha256": "fa647e4dd82a8c7b13d4111ee5e0505979c556d24bb6283f185f9785e47682d0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_right_eight_mounts_C04_R04.step",
+      "bytes": 581299,
+      "sha256": "cb19cbf7e09e925649ca9a944779b2f4e32842f0faf231479f769ca8b899cfd2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_right_finished_thread_envelope_C04_R03.glb",
+      "bytes": 908916,
+      "sha256": "b4c05a2799394ed5ffa7cb621c41d839bb6d9ad101e076000fe9abb06ce80a9b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_front_right_finished_thread_envelope_C04_R03.step",
+      "bytes": 473543,
+      "sha256": "8ffc281efb0381f878be458a9a4bcfb6acd4a9af73370e2689c2f00d5217bee6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_middle_left_finished_thread_envelope_C04_R03.glb",
+      "bytes": 678248,
+      "sha256": "1e78907341e9939ecd070e0c13b22871fa5c1666d0f1697e1ced88e222d8c2a0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_middle_left_finished_thread_envelope_C04_R03.step",
+      "bytes": 204891,
+      "sha256": "16d46576749f757ed5cde9e84b9190f6e7dd792db4fe13fec1668f032f50bcfc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_left_eight_mounts_C04_R04.glb",
+      "bytes": 1069156,
+      "sha256": "546a000b5574081f95c27425d4e256e7e01b56b0118b412fa44f22e10031d677"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_left_eight_mounts_C04_R04.step",
+      "bytes": 571227,
+      "sha256": "3f7c7d385d2806de8bb6511afae557b505fc2dbbf5b04a2f23e882414c13c2d7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_left_finished_thread_envelope_C04_R03.glb",
+      "bytes": 908908,
+      "sha256": "f9325a1264dc3ccb79cc83a7d2dc48d6e77f3a258e42158b9437e6fb0ff58d5e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_left_finished_thread_envelope_C04_R03.step",
+      "bytes": 466004,
+      "sha256": "93192c4d058377d08a69c39b34d535be0ed97a2384dc5771eab419616a75d816"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_right_eight_mounts_C04_R04.glb",
+      "bytes": 1068488,
+      "sha256": "91f6b27e4e210a564c39750643243854b2811f79c64d05c2dbb333d0ab2ca8cc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_right_eight_mounts_C04_R04.step",
+      "bytes": 573104,
+      "sha256": "49dda1166c6c133d9b309bb083dc112b3f6cda0c2f1e0071c3f5de6782084aea"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_right_finished_thread_envelope_C04_R03.glb",
+      "bytes": 908912,
+      "sha256": "4cd694c88866baf2e74c3781ea7be7ace3619f024552b680ce8656cf86f8175d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/carrier_rear_right_finished_thread_envelope_C04_R03.step",
+      "bytes": 463452,
+      "sha256": "74eaa94a99bef7543686b7cff2f79191b371d4f5c95ec9f8d7dc13aacea593ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/check_direct_mount_connections.py",
+      "bytes": 1340,
+      "sha256": "88ca905a467fd3e03332a0010b4a9af4fdcdcd7484d1c59c6bbd0186cc3fc0ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/check_direct_wheel_fit.py",
+      "bytes": 1340,
+      "sha256": "c5d85031e5ed5b6d0f2458a1e362f9ea742b9e128359d1f94fe21e2ebfe5c76d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/check_drive_connections.py",
+      "bytes": 2661,
+      "sha256": "74da795289ae330d8160103c370dff7124db5bec4ef05a123e4f3201be59bb60"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/check_rack_force_C04.py",
+      "bytes": 2867,
+      "sha256": "57bb9395f0ed2de849b2bdffc82529bd8cfa3189543f9d1d377942dc01420f44"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_drive_connections_C04_R03.glb",
+      "bytes": 3198848,
+      "sha256": "e86b56849121ffded3c0607e838f3648c25fbe580a85d10e93ef650014e9a2b9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_drive_connections_C04_R03.step",
+      "bytes": 863691,
+      "sha256": "d2566f8d3ecc6d36458e54b7c96a9ab74fc435f126eceb533ef1a5e07f93e42d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_drive_contract_C04_R03.json",
+      "bytes": 10966,
+      "sha256": "153cbcf754da7a3c830ae7fa3ac221beb97fb2d6557057b8ac79f4d457a0ba00"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_mount_connections_C04_R01.json",
+      "bytes": 2926,
+      "sha256": "1bac06dd82b70e16a9792d8f51afb04302fea52e5a793aa9bb0bd5b4c97e8ab7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_wheel_change_screen.json",
+      "bytes": 1454,
+      "sha256": "64e867676e48571e3924f0f8e9cdb6455e402754bece5fb875c9d500703835ee"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_wheel_fit_check_C04_R01.json",
+      "bytes": 1457,
+      "sha256": "7723574b1ea79df8be1645f80fb05a5ad05835f92c1a15bb802be0bbdba3a6ee"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_wheel_nut_contract_C04_R01.json",
+      "bytes": 3999,
+      "sha256": "f8f9b6eb40c6b35a58bf85bf06897cb0cb954c8664f7befe3c3043c70fe4d119"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_wheel_nuts_C04_R01.glb",
+      "bytes": 1020680,
+      "sha256": "c729de40657896ee5811b0e0bbd338e4b808e377e429ddf69c02994a9d8d7265"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/direct_wheel_nuts_C04_R01.step",
+      "bytes": 243159,
+      "sha256": "e499e2b17ed56bf016242eb27052c841566be0f2392a85b8be20faa3db9a4c1f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_connection_check_C04_R02.json",
+      "bytes": 9865,
+      "sha256": "3535429f05de97b3f332190283c3928dae1e5d257f65f9fece53c83df4fecb2a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_connection_contract_C04_R01.json",
+      "bytes": 16626,
+      "sha256": "a6e2b8b7a46d4a0cfb17eb32c2f3206f6a04ad865408b775c97e2ba8826bdff9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_connection_contract_C04_R02.json",
+      "bytes": 16660,
+      "sha256": "b50c0d870fd40f2c21d80c10ad051e65f0970d90de054e8f551a562b5fdab662"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_0_C04_R02.glb",
+      "bytes": 43164,
+      "sha256": "fa7203e500b01ff1c274319be17e369944bd2e2b298e9548427afea5666e5467"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_0_C04_R02.step",
+      "bytes": 5727,
+      "sha256": "d1a87794b161b84c92b09c28df0fd71bcfc3fa9925ac35a301888e729fc99fb7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_1_C04_R02.glb",
+      "bytes": 43164,
+      "sha256": "4fb3277614276cb0f553b9cd671554e22ccbdf3e3005065431c4e1a0f29d131d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_1_C04_R02.step",
+      "bytes": 5912,
+      "sha256": "6c8e3ccc78e2034640c14be441805d84c18bfa66c3d6207e0887e8411d3a3f03"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_2_C04_R02.glb",
+      "bytes": 43164,
+      "sha256": "e5efae6a4b6b539db1da79e8c5e74c388d6200cada66b9b4ba22461ce2b80d5a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_2_C04_R02.step",
+      "bytes": 5882,
+      "sha256": "7166721fa50363cb38ca3ce51f24d34a7e8d70664a4b812d7ccacaaa6018a25c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_3_C04_R02.glb",
+      "bytes": 43168,
+      "sha256": "dfc391f0d65549bd1fc20cfc058c3706b2fc0a22c43b1595bff8c1be640946d0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_3_C04_R02.step",
+      "bytes": 5884,
+      "sha256": "2cca507fdef13d9b327289da5f51146ac6bac95f10cc886ff39126e149ab2e35"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_4_C04_R02.glb",
+      "bytes": 43168,
+      "sha256": "340c262d5ca99e5544a4ffb1b43c00ec87bb71f40c03ada75f5c9fc22f72f9f4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_input_stud_4_C04_R02.step",
+      "bytes": 5915,
+      "sha256": "b4e88aa10672a2300b0e709a1afec698a22455b7addb78d2dcf288276a216e15"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_0_C04_R02.glb",
+      "bytes": 87540,
+      "sha256": "284e3be31b3abe5f1d7a96d2dc25db873c8a16aa5d91810d9e3e34457c73b292"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_0_C04_R02.step",
+      "bytes": 32763,
+      "sha256": "d15281396a187ac2854374aa6a1facb6c1448d92b891c842a3d8f5ae4c35fd4e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_1_C04_R02.glb",
+      "bytes": 87536,
+      "sha256": "5847e288c852ebeaea0bf32f60f3dec507f7507c776600cda9ee1c4c19989bd1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_1_C04_R02.step",
+      "bytes": 32793,
+      "sha256": "5484033a4deadd0dc0f973e2896fbcaf899e1ab685ebea019ddcfea0d9157dcf"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_2_C04_R02.glb",
+      "bytes": 87536,
+      "sha256": "7f040a741153d4663ce114adc54c5a08017b3dd043a5aa9c674e2db417436db7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_2_C04_R02.step",
+      "bytes": 32726,
+      "sha256": "3ff0a33a08d3a23466f3c0b910d54bd3561f752ee15f666be22d0da92e86e01d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_3_C04_R02.glb",
+      "bytes": 87536,
+      "sha256": "31a0530eb21c3e713f3e577b3ea1ab6b2b850d7ac1d7db86833a6707337e9fa2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_3_C04_R02.step",
+      "bytes": 32716,
+      "sha256": "402c1a506ebef0d1a379df0212652d443edbc591a9084ac9258dcbc4ff0048fe"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_4_C04_R02.glb",
+      "bytes": 87536,
+      "sha256": "61ca56e510652599fa1a0e65b44d573fa748b86cf449c4365d8ac2c1b9a3626f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_4_C04_R02.step",
+      "bytes": 32671,
+      "sha256": "9bbd5b215e80827f50ea338ccdc7594a084c9c64a0f83e495fc86b6b60c93985"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_5_C04_R02.glb",
+      "bytes": 87532,
+      "sha256": "ad1cdb9efc298a3dc74fdb1afdc1386638e0f60597eb30e5651be4cff5ad4f69"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_5_C04_R02.step",
+      "bytes": 32660,
+      "sha256": "8a78d166b10b273ef484fbf99fe03dfddc8b2d4b8ecd5d420543e0eee594a689"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_6_C04_R02.glb",
+      "bytes": 87536,
+      "sha256": "27cc53ae56f6b5471614e9179d366dc28b46793e9a25b1b6f330f44d97e18643"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_6_C04_R02.step",
+      "bytes": 32676,
+      "sha256": "c555edd9f5c80fcb305a548f48c2e0d7781ae20e3356a39151279f603478f683"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_7_C04_R02.glb",
+      "bytes": 87532,
+      "sha256": "140f49abe534cc4799884d5f1726ebe262292685acfb7aa3b0ac639a7610cc8b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_mount_M10x25_7_C04_R02.step",
+      "bytes": 32644,
+      "sha256": "43a44c6aa1832ad47e2ff78b638d522a8ecb8b38ffdb227888159accb6a6961e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_output_hub_C04_R02.glb",
+      "bytes": 85516,
+      "sha256": "5f118af0b1aefca836dee1e632072dd2bb49b9a8535ebc6aa32cba09d28502c2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_output_hub_C04_R02.step",
+      "bytes": 9694,
+      "sha256": "cd5af41c6fe8ac2603d37789e86c62c9ae27d0f6e7905c62c90df11724fb255f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_stator_external_C04_R02.glb",
+      "bytes": 1183232,
+      "sha256": "546dd1c69f6fce9c7829e7b513e85192a172411be6ca3ae70cb0dc049329d0d5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/drive_stator_external_C04_R02.step",
+      "bytes": 290560,
+      "sha256": "42df38247a514dcc70e286a8343f5680d072b270dafa51c9b70a51bb7a515e8a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/finish_carrier_thread_envelopes.py",
+      "bytes": 1781,
+      "sha256": "2b41e66266ad98610f63699cc7e1ee7770e6c40cde856fbf5a94bbb2086db74a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/fixed_middle_upright_left_C04_R01.glb",
+      "bytes": 678212,
+      "sha256": "e3adcc79f13056b41741f6ee49855d79ca482a633b1c807312bf53f1a37c9aaa"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/fixed_middle_upright_left_C04_R01.step",
+      "bytes": 201141,
+      "sha256": "727432f80bc4e96462cf52cbc53107700aec7236d2da125a6d47692c2acba832"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/generate_breakout_fasteners.py",
+      "bytes": 1573,
+      "sha256": "a478b2d30f68833464f0e81bd3e4d30cf0dc716cb64900a4e60b31f11f2b7593"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/generate_breakout_mounts.py",
+      "bytes": 3209,
+      "sha256": "86a6f9338672bca30e63220471f0253496aac4f88cd64928c77159d025eb0bc3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/generate_direct_wheel_nuts.py",
+      "bytes": 3316,
+      "sha256": "24d6d2e54a7c32d7bdd588dd9db32780b079a654b846f3814d2418eb88a9b45b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/generate_drive_connections.py",
+      "bytes": 6862,
+      "sha256": "9530bb28c10d17d5a5209fc68a719c7b16b51dc25237455e9608357dd680dba7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/generate_drive_connections_R02.py",
+      "bytes": 6950,
+      "sha256": "804eda92cdeed3bfb1bb6a945f3cbf32ae7470ddfc5bbbc882a5ed6e8ad5a2c8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/rack_force_screen_C04_R01.json",
+      "bytes": 1875,
+      "sha256": "dcf3415fd2b0389a796d83783396f2cea8fa156f41e1619fe0e60927356c850c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/restore_motor_mount_tabs_R04.py",
+      "bytes": 1669,
+      "sha256": "284d1bed900167871b9be98edcbedd5e07b92cc64f494ed28af3fba68bc08ebd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_front_left_C04_R01.glb",
+      "bytes": 891072,
+      "sha256": "3be0eceb41d77c324cec49e7f6e1c7a8911ceb989501b758dd5660810256213a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_front_left_C04_R01.step",
+      "bytes": 432126,
+      "sha256": "ce32015e7440244ad71c411b0f9195a607a0146d902ee9eef0b6b5851a7a1578"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_front_right_C04_R01.glb",
+      "bytes": 891076,
+      "sha256": "3b5ba77d20793b9653802a9d506d83a3f6244f9e95594567990842228d36615e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_front_right_C04_R01.step",
+      "bytes": 447052,
+      "sha256": "935a166cf5db85739ce415c28cc55f106b6f6a51bcdd41d39bbf911aece4d285"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_rear_left_C04_R01.glb",
+      "bytes": 891068,
+      "sha256": "cee80458590d85a878a0f45f9b37588bae3015154ecd51461d7737b44aad1378"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_rear_left_C04_R01.step",
+      "bytes": 447216,
+      "sha256": "bd103ee7d9e811d4ea2c2fe2e0b2e24fa0f1699cdf500c04527d8d207621081f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_rear_right_C04_R01.glb",
+      "bytes": 891072,
+      "sha256": "9deac780daa74e5509375247029049845786e60cddbc4d17230e98b56ea2a720"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/steering_upright_rear_right_C04_R01.step",
+      "bytes": 432477,
+      "sha256": "7a639f19ece0ec8025848badc86299592e3372c9bc042ef8f20ae9bc6260771b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/thread_support_corrected_point_screen.json",
+      "bytes": 2542,
+      "sha256": "65a733faf6070218f33f7cf04733b75c3461a8df4f535bcb10e7d9b8e07fed6c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/drive/thread_support_point_screen.json",
+      "bytes": 2542,
+      "sha256": "01822e935174b50345c592fc70071e1f3ea9174c1e472e8153785b7043ad717e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/generate_middle_mitered_arms.py",
+      "bytes": 2182,
+      "sha256": "90d705dca621a3c4cf357907fdeca48d231cc587906fdb12889bb0964051c7fb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/generate_mitered_arms.py",
+      "bytes": 3123,
+      "sha256": "8a38494c359425f4f63c7206ae4e9e04d34cddc9997f69aa08d757bb570690f0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/generate_offset_supports_C04_R11.py",
+      "bytes": 6175,
+      "sha256": "6e4bf6a2b7540a286ebd8632e9c3b13bbf6d3c4e327fb9d06cc50727fc5288fd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/generate_retained_rack_C04_R12.py",
+      "bytes": 3967,
+      "sha256": "4cd1067f7b5b71ac14fc1fe3c8e53265d79698913e05e42658222199bc31ce3e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/CURRENT_ARTIFACT_WHITELIST_C04_R02.json",
+      "bytes": 32655,
+      "sha256": "eb4ed9aa10605e66b0a631477a3b4143941f64aa13530b70d9082d0f60ca9604"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/JOINT_INTERFACE_CONTRACT_C04_R02.json",
+      "bytes": 4761,
+      "sha256": "14200bc403d658cfadde7a3a7880340b6c944d4f857407baab32f881c70175ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/README_C04_JOINTS.md",
+      "bytes": 6085,
+      "sha256": "d2ea66bd66e80b9c9f8304a417237effcdc7219dc8f2cabcdfdd45a10b438571"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/actual_ball_bore_axis_checks_C04_R02.json",
+      "bytes": 956,
+      "sha256": "e28930b4d1b49bc771dcea3181fd108f48322ea4b21a354530d711387b701f35"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/actual_outer_tie_fork_faces_C04_R01.json",
+      "bytes": 495,
+      "sha256": "f146102412c29d2b2c41cfd699a17fc3d6b67d2135b5129934ffed56c0bda111"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/all_four_arm_source_hashes_C04_R02.json",
+      "bytes": 1569,
+      "sha256": "5df201b4790a15b60fe76da34837bddee5d6a72566ad0de30df67250ae98b380"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/apply_retainer_seats.py",
+      "bytes": 3193,
+      "sha256": "494bc33e252640ee0afd21816c13996e3267e1638d0867d792576db5a1c1c6a9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/build_final_hardware_C04_R02.py",
+      "bytes": 4823,
+      "sha256": "89bae4cfea12e505b5923d2bb70ab99c8ec7b2a88ba3843832713a74060d4078"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/build_rover_joint_manifest_C04_R01.py",
+      "bytes": 8305,
+      "sha256": "0d53d9f5290785764bbd281379662d303941c8dfe7d9a58b4f1149f5dec71734"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/check_fork_revision_C04_R02.py",
+      "bytes": 2387,
+      "sha256": "ebd463461265ce8893544c13ccefcfe8c205a8c9f710f3c83608f6c14b77217b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/check_joint_geometry_C04_R01.py",
+      "bytes": 2943,
+      "sha256": "8cc04f99a0ee2edb7ed1ad0caa15ffbff5c2205b9c75a288a3f710b50786b782"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/check_joint_motion_C04_R01.py",
+      "bytes": 2732,
+      "sha256": "a9266b02157982191424beb8a3bfd046308bdaa9633852d333bdad0e1068bbec"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/check_miter_port_geometry.py",
+      "bytes": 1957,
+      "sha256": "0c21b6c82caf7739b754e581f5692f101ad608e707ec1d448790836945f58359"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/check_pin_retention_C04_R01.py",
+      "bytes": 2715,
+      "sha256": "df0db35005b2394d9847b6a19607f852bcce347c35a8667f0e0dbbefc79dbf84"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/component_registry_C04_R02.json",
+      "bytes": 83060,
+      "sha256": "166d13aa654a281f7f812747f4a9b83ddeb90c81eb1f41faf8b4d2e88901ae26"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/export_final_step_C04_R02.py",
+      "bytes": 716,
+      "sha256": "bc75ea1ef37c675f226aa653c65968405fe83b6c8b1c4be6cf783e6b6771c9c7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/finalize_package.py",
+      "bytes": 3001,
+      "sha256": "5ad83d5813d0d613445c32c3e1496e9c4bddeb536ddb39c5232c0dda04926d83"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/fork_and_pin_revision_C04_R02.json",
+      "bytes": 12656,
+      "sha256": "65346dd512d1623b1d512e9cc8b8de569e9033c58d9e515e78d33cdce5bd4de4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/fork_revision_checks_C04_R02.json",
+      "bytes": 2502,
+      "sha256": "ed6dcbf2adcf96eefefc533613371e652eff1104fb44f7b313c2bf2b7450d5a1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/generate_connections_C04_R01.py",
+      "bytes": 20078,
+      "sha256": "166b9f5beeaaa3e398bc45b08b4f74a68c2493d0fc609abc4e593abe3abb6b14"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/generate_retention_C04_R01.py",
+      "bytes": 2111,
+      "sha256": "0e8fa1d68b16c0dca42c0081da6c3ca420f5d2557d4b3dc907c5435ced2dc3b3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/glb_anchor_bounds_C04_R02.json",
+      "bytes": 331,
+      "sha256": "c54aadc0cdcc56435c7363a9c198389536f21060141374146dec73bb76bdb1e0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/instanced_glb_verification_C04_R02.json",
+      "bytes": 208,
+      "sha256": "3b19b6889934c3430483f120ccdd12b72cd01f73469c491b470cb353f373f377"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/joint_geometry_checks_C04_R01.json",
+      "bytes": 9415,
+      "sha256": "93622b651606c50a5541da6bc0c7eec2848bac773a966d8e66bcb00eba49bb22"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/joint_motion_checks_C04_R01.json",
+      "bytes": 8250,
+      "sha256": "b29c4b97791134ce7075ea363307f1b13b02c11886d39765744d4dc7878fd7ae"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/joint_pose_C04_R02.py",
+      "bytes": 4982,
+      "sha256": "d8841f610e7192b7019e9982e2b70de9733f2dce625acac28417c7888aba1af5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/joint_pose_verification_C04_R02.json",
+      "bytes": 440,
+      "sha256": "3a60285394314c7d780cc24c3ef29ad6ffcf8375944dd7444151f66311baa169"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/joint_quantities_C04_R02.json",
+      "bytes": 2415,
+      "sha256": "f64c3503db3c373aa3d33d0b2c70fa5a2eb14c87eb42c36462b0ad5ca1d5261f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/lower_middle_miter_joint_seats_C04_R01_seat_report.json",
+      "bytes": 6516,
+      "sha256": "b9aea37c8b41f2e46f0a573db011fb474904c75de5a8c015e00e16bd8d42becd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/lower_middle_negative_offset_joint_seats_C04_R11_seat_report.json",
+      "bytes": 6482,
+      "sha256": "4dd68d5a2f2c428c1e74baf45fb01d3b1ef1f6428b6610a6b6c391170690794f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/lower_steering_miter_joint_seats_C04_R03_seat_report.json",
+      "bytes": 5354,
+      "sha256": "21a2937b35d21c7dd69aa44ef86b998845d81729474ae5f3994143d8d855b734"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/lower_steering_negative_offset_joint_seats_C04_R11_seat_report.json",
+      "bytes": 5584,
+      "sha256": "bde30edeadebd69e60cc8a3977456cd39d450c35e81a57a1b1db9398622dabcf"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/lower_steering_positive_offset_joint_seats_C04_R11_seat_report.json",
+      "bytes": 5584,
+      "sha256": "8dab91d719a9c35ca9b394268b11845ceaad006abbacdc823c4f3c05b2f4aec3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/miter_port_geometry_checks_C04_R02.json",
+      "bytes": 48694,
+      "sha256": "50fff43cc8f82e805bfafb3ec165427cae89097b1102acd17f70853de830ca5e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_ball_C04_R01.brep",
+      "bytes": 12227,
+      "sha256": "b2fac591c6f6d0d725196fe2ab31c37670a17706ed8133ab895196f4c362c478"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_ball_C04_R01.glb",
+      "bytes": 627140,
+      "sha256": "45951bee597240ca2620eec389a120998416a081ef69604137761ec3698cb51c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_ball_C04_R01.step",
+      "bytes": 26757,
+      "sha256": "56d25f7c308354bdbcb3350f52a1fb4b365454ac68a91bf23caaf00d73febd41"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_race_C04_R01.brep",
+      "bytes": 14488,
+      "sha256": "d52da00d15a04b2f9ed346f11de269599391f3e6cf919f57bdaa62b72a081f9e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_race_C04_R01.glb",
+      "bytes": 520296,
+      "sha256": "9b64d70800012519a4c6cc39a63ea87d1f58b9f8a0b3909c033e6a86a33118ae"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/AIN16_race_C04_R01.step",
+      "bytes": 29357,
+      "sha256": "2725391a09bf78f031b6836b78506829ee888ef07cb84bc52ae295ef2eb26c6b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_ball_C04_R01.brep",
+      "bytes": 14320,
+      "sha256": "c6b84bb8bf0eb9318cfed8f63d2cd20ea4064a419154bd837eb31537c7d1d413"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_ball_C04_R01.glb",
+      "bytes": 528196,
+      "sha256": "974ab4b4c284b8af3dbee051250052873fcadb558812d2cb0e199b9ebe595701"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_ball_C04_R01.step",
+      "bytes": 30425,
+      "sha256": "9903581db5a95960e5da231b11a78e6168161ef6bd4ff8e997621e8c5552248e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_race_C04_R01.brep",
+      "bytes": 15726,
+      "sha256": "25b8273fbe5cb6d7016036962bfbb4c3e608fe3123dd583ba58bfd9d2ecf6be9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_race_C04_R01.glb",
+      "bytes": 443524,
+      "sha256": "f7d5fbc83c79cd78e522b55f1759a893768553345c339fa43f2bb9f7ffa64ed8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20ES_race_C04_R01.step",
+      "bytes": 31671,
+      "sha256": "67c2a2487d43dfa5c74150cfed7adbf21bcb0cb137e8e6e24f38f3a35054df35"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_100_C04_R01.brep",
+      "bytes": 2252,
+      "sha256": "f125649f58958dc93e9cfb787ac5d9434e9e55aa78e135acc9ccece2119e8020"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_100_C04_R01.glb",
+      "bytes": 85864,
+      "sha256": "d746ca6a01e12a2c11b9b9023864a806bb866c36dc8aeae5280c2c965656da53"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_100_C04_R01.step",
+      "bytes": 9587,
+      "sha256": "757887a54b1f7f2d92b6f6f6612311cb733edfde65dbc5f8a1d4c6f37371c2f7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_80_C04_R01.brep",
+      "bytes": 2284,
+      "sha256": "e73de6ba50ea7186351bb4200d0e3e52f802a11f473500c7e1e884c6c2287371"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_80_C04_R01.glb",
+      "bytes": 85860,
+      "sha256": "5dbc4ee6eb3e8ad2b05d9733864f7f093937ff1dcd46fb82098fbfd8e77cc67a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_cheek_spacer_80_C04_R01.step",
+      "bytes": 9587,
+      "sha256": "30c078b435b37ac39fea16962a651259273d3295185db0053a388f4e447ee0ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_100_C04_R01.brep",
+      "bytes": 2299,
+      "sha256": "92da1cd4cc9ccc5889e8ec493dd08e396e5af780fbd183bb639db46fdd33d65a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_100_C04_R01.glb",
+      "bytes": 85872,
+      "sha256": "d0939c8db23867f12fd47a6a3647ae5a311e584123224f1647553769697763dd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_100_C04_R01.step",
+      "bytes": 9598,
+      "sha256": "a8ea6ea013f53404cff05a64d8beba8e7ee81b05e6abd116164d8ef17420d36e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_80_C04_R01.brep",
+      "bytes": 2267,
+      "sha256": "ab1559eef22100b65005b08ac10edde5c6b8951f5224bc3111358f6cb39bfc15"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_80_C04_R01.glb",
+      "bytes": 85872,
+      "sha256": "5aecaad026ab03e1eda176a320b3d438462d42c5783f3df5e458b427194320d9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_inner_ring_spacer_80_C04_R01.step",
+      "bytes": 9598,
+      "sha256": "3e034c892717e443917cc6be63b16231a47031e000f08c38cadb9088edc1e55c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_100_C04_R01.brep",
+      "bytes": 2317,
+      "sha256": "b0c9d67fcecebd330cf9e85c08fbfba2c2e698484ffdbd9635fa042f3048e78a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_100_C04_R01.glb",
+      "bytes": 85872,
+      "sha256": "520fb5dc60de6038b9134c14592da741fe4156022f66ab077b394b89cc1c6f7e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_100_C04_R01.step",
+      "bytes": 9606,
+      "sha256": "a7ee634a4957b967f488a5f797f0222525b5f1a6a6f70da77bcfedd8f5005d81"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_80_C04_R01.brep",
+      "bytes": 2317,
+      "sha256": "21f8577bfddd637bc1fe8c2cf9fb3f3af019ff665ef05c90c3ba6126f5ccd777"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_80_C04_R01.glb",
+      "bytes": 85872,
+      "sha256": "1f40d35cb2cca7565650c45d55e961fe5010c8649bcff965289c145aeb48181d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_outer_race_spacer_80_C04_R01.step",
+      "bytes": 9606,
+      "sha256": "ed205099ed8200e7f41f329f2e516d4aa41b970147b1ee8697d355e4c1f0047d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_100_positive_C04_R01.brep",
+      "bytes": 8342,
+      "sha256": "4079812e5d7d041dc6fe0090bf3f5290d193838cfe8dfa13b7e1a38a25612f6c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_100_positive_C04_R01.glb",
+      "bytes": 320072,
+      "sha256": "3ac4afd00aa2bf89b577a8d5f460b98e38e4979d9a72adb8e55db3e6fc16de44"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_100_positive_C04_R01.step",
+      "bytes": 36595,
+      "sha256": "0881cd6194c075da1524349bbb0c51a272dd327de1837474cfc297f12f22d8b4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_80_positive_C04_R01.brep",
+      "bytes": 8888,
+      "sha256": "8dfa70c8616591200df8874a1af45c2e46012fc5b5e73132fb6a72e65621b589"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_80_positive_C04_R01.glb",
+      "bytes": 320068,
+      "sha256": "a89fa19be9a632de76a89d76860453a4a64a01a3eff9c598b82c903d71116143"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/GE20_retainer_80_positive_C04_R01.step",
+      "bytes": 36595,
+      "sha256": "5ffacd3cacfb10174891ddb1cd9dae9298ca176ab788194a27349d25cb88d82e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB12_10_positive_C04_R01.brep",
+      "bytes": 6315,
+      "sha256": "e479ceceba27be0eb33026a54ebad5a22d954a7ef9468a157d9325df08d232fd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB12_10_positive_C04_R01.glb",
+      "bytes": 276372,
+      "sha256": "b51c4bff393ac353dcaffcd7e5b365a9732cb707a08b5db8a891f3ee07fc0641"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB12_10_positive_C04_R01.step",
+      "bytes": 23064,
+      "sha256": "535361ecec9249682f33e06c1b6ac6d04c8137e5e3e007ef3d2bbf7d85a1251c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB16_12_positive_C04_R01.brep",
+      "bytes": 6418,
+      "sha256": "58489789fd543080d0a6832d16336b038d01a3f5745895ab8dd9c810a9251e60"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB16_12_positive_C04_R01.glb",
+      "bytes": 308124,
+      "sha256": "04db86c9111fcecd81c373c659c55d5b92cf925b5ec289c047fcd8b6050de773"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/HB16_12_positive_C04_R01.step",
+      "bytes": 23076,
+      "sha256": "dc03b81739a4899a5d61cff5af8b164123e0555d4483e04bc8bce9eca63bf2f1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_ball_C04_R01.brep",
+      "bytes": 12238,
+      "sha256": "b999d88bad964ca6aa92b714c359cc16c2d0af087f22880f47fa5c0961ed5b2d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_ball_C04_R01.glb",
+      "bytes": 592704,
+      "sha256": "a82927937aeafba9848f4fa3ea33b1f6e4cb0c18cd951dc1b411e00b10116038"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_ball_C04_R01.step",
+      "bytes": 26757,
+      "sha256": "55453e210720f1df12e1d9000c3be0fc477454821b736b18a59c50d0d0ec7668"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_body_thread_envelope_C04_R01.brep",
+      "bytes": 30747,
+      "sha256": "a3c0d3b8ceae19f1aaec83e3755f9915c4d68d411e4c38cd2f404776dff50eb7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_body_thread_envelope_C04_R01.glb",
+      "bytes": 558772,
+      "sha256": "8894c19f5026cb346ce784d5bbd8bf55dc8a18ac6fd498847aef964669d6fbf6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/JMX12_body_thread_envelope_C04_R01.step",
+      "bytes": 88278,
+      "sha256": "1713af7d2b04a5d86962d0033525de0c3dc4580262ca0e19a81619fe1b2f8c22"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M3x10_button_head_C04_R01.brep",
+      "bytes": 10830,
+      "sha256": "f7b871e73d930bc713a1269bdedabb49672c9fe7402d19d3f27565e198e26710"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M3x10_button_head_C04_R01.glb",
+      "bytes": 87536,
+      "sha256": "0fba420355a7c26aad2de69a305867fb74aaf48309efe7204b9d557ad8613087"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M3x10_button_head_C04_R01.step",
+      "bytes": 32675,
+      "sha256": "5d44854e6e49c1c8d259daea7634d2b717daff95e218ec630fed1a7efb70bf77"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M5x12_socket_head_C04_R01.brep",
+      "bytes": 9879,
+      "sha256": "378bad507327a68e8aa5d7c6a7a5fdf9bc1f5ae59689dc9d07b1f7e6f619b621"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M5x12_socket_head_C04_R01.glb",
+      "bytes": 87540,
+      "sha256": "28555243454493aa47330a7a97e5b204bc193f8385c97fe62e8d804f4d1561fd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/M5x12_socket_head_C04_R01.step",
+      "bytes": 32522,
+      "sha256": "6c574540dade53774bf4fb189638d8a56ed10c583a25b3b1af22f334deff065f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_LH_C04_R01.brep",
+      "bytes": 7657,
+      "sha256": "ebd452b9793c5fb78700eea0937bd359db978921665a5eaec7004a5fa05c59f6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_LH_C04_R01.glb",
+      "bytes": 45532,
+      "sha256": "1fe4102e53bfbee0657f667b278836c6c5321e20eb56efe77349e4d4fd18c0bd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_LH_C04_R01.step",
+      "bytes": 27694,
+      "sha256": "35824aa7371dd088d8e6e036836fee7a09828ed52ea8e631c694498406f745d5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_RH_C04_R01.brep",
+      "bytes": 7657,
+      "sha256": "ebd452b9793c5fb78700eea0937bd359db978921665a5eaec7004a5fa05c59f6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_RH_C04_R01.glb",
+      "bytes": 45532,
+      "sha256": "472869a5f6f462a5489aca75ada125b4b49ddd7ac8357e76a0125a744c2c8d4e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/SJNR12_jam_nut_RH_C04_R01.step",
+      "bytes": 27694,
+      "sha256": "af18f1997f7e0dba19c0c52a9ef03a6b9d3615aa647220d61d3c2b898fb01d39"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_front_external_washer_C04_R01.brep",
+      "bytes": 2324,
+      "sha256": "ac8f566bf9c2b1fd860339f7b5f584d1d357c8655b12485c66547c0bc3d5ba03"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_front_external_washer_C04_R01.glb",
+      "bytes": 85880,
+      "sha256": "d4e42a9eca37b2f80dc3b4607521c2d7376548a68a41e9a7589557591250e46a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_front_external_washer_C04_R01.step",
+      "bytes": 9617,
+      "sha256": "af6275405f92355bf2cb72e3e53ac99bf70b449195c4404cd619032a3bff03d0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_rear_external_washer_C04_R01.brep",
+      "bytes": 2313,
+      "sha256": "2a1cd5a7d4f9939efc72f223aa64db59d07589bb586cf97e5b0d29b896f27eff"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_rear_external_washer_C04_R01.glb",
+      "bytes": 85864,
+      "sha256": "f3cf8c1d0faa31c505eb159b8b7355d7e28357234c3f0c5e3b802f5771cb732c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/actuator_rear_external_washer_C04_R01.step",
+      "bytes": 9629,
+      "sha256": "49ee16d1ca825aeaaa6cea283192f3d6fc7644b31470543c4422fdb446ecf554"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_miter_joint_seats_C04_R01.brep",
+      "bytes": 1428505,
+      "sha256": "f9edfe5c3154f1bffc2fb312ab7bf03486633fd082324a761b05df1c381d2820"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_miter_joint_seats_C04_R01.glb",
+      "bytes": 2565872,
+      "sha256": "86bf4e8ffa06ff2f04d9fd12b967d7796579c996e3f441208017e54060a27e2a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_miter_joint_seats_C04_R01.step",
+      "bytes": 2614188,
+      "sha256": "f7db9c9afe263d2f21a3e714a5ae7657c7909b1953bb60483526deb3b7a19b62"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_negative_offset_joint_seats_C04_R11.brep",
+      "bytes": 1005087,
+      "sha256": "afb9efe089ceae9376168b2099aef07aecddbdee95e6e1fa3b51a8f7551e6ac7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_negative_offset_joint_seats_C04_R11.glb",
+      "bytes": 3315848,
+      "sha256": "947915dff448fcb7449a93a9761fc631bf0756245f3a9a8a1754a6dfd6ab91ac"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_middle_negative_offset_joint_seats_C04_R11.step",
+      "bytes": 2053281,
+      "sha256": "525f595a9bde7b042e6ff18bcea2955ecc570f979f047a71a7d10d7f45b91ceb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_miter_joint_seats_C04_R03.brep",
+      "bytes": 778150,
+      "sha256": "372e24c28a99e32ddb82828718c1a7f2211722718a643a2c410fa00e9b97c5ae"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_miter_joint_seats_C04_R03.glb",
+      "bytes": 2840896,
+      "sha256": "650b55961737e4a98b41a1b577a0ee6c29b8535440280a733538465794965526"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_miter_joint_seats_C04_R03.step",
+      "bytes": 1516364,
+      "sha256": "297c3a5892d8086d752a659d029b02db140b05cd5cd9216a83d314a7e986c4ea"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_negative_offset_joint_seats_C04_R11.brep",
+      "bytes": 1023881,
+      "sha256": "6d8c8dd316618bf065881ba9d8388bbcf5cdd279cb7773eec1c98631a4926973"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_negative_offset_joint_seats_C04_R11.glb",
+      "bytes": 3362552,
+      "sha256": "c899337f336f12ae40345116d6fe0dda127faf341f219ccbd6b67d5fa548d78a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_negative_offset_joint_seats_C04_R11.step",
+      "bytes": 2118022,
+      "sha256": "5c261a605d6d3d57ec8ada993075ac330740979921412113baa394228e40e39f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_positive_offset_joint_seats_C04_R11.brep",
+      "bytes": 1017865,
+      "sha256": "765aa83308c1e1ea2d13d49c762c905cad2d18b39daf4390e99367f3f68d285e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_positive_offset_joint_seats_C04_R11.glb",
+      "bytes": 3360536,
+      "sha256": "e4d613cb48f870dbac9f5343b5caaf5480bbe076aeea59e0384b5f66979edcc1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/lower_steering_positive_offset_joint_seats_C04_R11.step",
+      "bytes": 2110937,
+      "sha256": "bcbdc15f957fd02f7acc2334a2fba47405b5a20c0d4eeff955bc342e86ee05e2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_cotter_washer_C04_R01.brep",
+      "bytes": 2367,
+      "sha256": "46d1903ca397b5ab95985af8c11ca81d0f3b75a3eb76ac5b3403edd51ae7fc58"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_cotter_washer_C04_R01.glb",
+      "bytes": 85876,
+      "sha256": "beb240f899f7a56380a71a45b6d1e8a5e2d14c1367bbbc779580cdd1bd7fd6ef"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_cotter_washer_C04_R01.step",
+      "bytes": 9616,
+      "sha256": "e63ff29117bbf21adde7b53b383f23b28d22ea751f62870d0bcff9ed03c4d13b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_head_takeup_C04_R01.brep",
+      "bytes": 2313,
+      "sha256": "f523ab804cb6c53f57c1d2ebc48dab4bc65bcaabfd210973c04100b57acc588a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_head_takeup_C04_R01.glb",
+      "bytes": 85876,
+      "sha256": "84982bfca113b439b4e44a91990737ff2cd24f0de97c699b57166fb852be4d80"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/middle_outer_pin_head_takeup_C04_R01.step",
+      "bytes": 9605,
+      "sha256": "12f02d6e0fb6e8830cc410cc7bf508f58d6de22cd373e69b12e7d6f65bc4bebb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_cotter_washer_C04_R02.brep",
+      "bytes": 2296,
+      "sha256": "8bd3b880ddf184ad5782004b743c1c22619644d285ed11d71b4d3e34f1081d47"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_cotter_washer_C04_R02.glb",
+      "bytes": 85864,
+      "sha256": "a4c0dfddc956f75b03651d6b6e05d5c8f9328ca657816746571695907ae57fe0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_cotter_washer_C04_R02.step",
+      "bytes": 9619,
+      "sha256": "6f47a3a1e2f2b48b41c226c3119c0bfeaaef724f2b59b18f6cd5cf76702d7dfe"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_fork72_C04_R02.brep",
+      "bytes": 20191,
+      "sha256": "6ded3f4ac99a9328decf9c02a1a64689b08e4733c80429589008ae6c206827ab"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_fork72_C04_R02.glb",
+      "bytes": 137264,
+      "sha256": "f0669c318e8cc107193459ebf6f320eddd861a26ed47cb93854496ec5c7990df"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_pin_fork72_C04_R02.step",
+      "bytes": 38988,
+      "sha256": "2bbc0d9502a44cee159755d080d9f7f39618befbd67bbce25019558212d7fbd8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_0_C04_R02.brep",
+      "bytes": 2525,
+      "sha256": "e26d749a5fd1034c87368e6dbd918ffa52b189a3aeaefc22748d8e49292266a9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_0_C04_R02.glb",
+      "bytes": 85856,
+      "sha256": "128bdcdfd199f877860343d7f57e05cab27a7849b939a4dc14844e5681c41fb8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_0_C04_R02.step",
+      "bytes": 9682,
+      "sha256": "6000fbd6f0aec2830a4ebef5cba1e2bfc2d09051da616aee2d94a3f938799f80"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_1_C04_R02.brep",
+      "bytes": 2557,
+      "sha256": "df054526e9199709a1f39258b13320a2b6fde40bd93731b8016fdc5f33ef32a4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_1_C04_R02.glb",
+      "bytes": 85856,
+      "sha256": "e5de21d75b710349605179e21e670c018a08eb998eaf0d415b66e9d87943db62"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_1_C04_R02.step",
+      "bytes": 9682,
+      "sha256": "f6f3e66ca1a22a2ab7400a10bc2d51cc0cfc9e26b3e1a394595132bdf7f8adb7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_2_C04_R02.brep",
+      "bytes": 2557,
+      "sha256": "9975f1e499b761113b2369e52dc052ad4c40d7ac211f8ed7ed2564a4390b06e8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_2_C04_R02.glb",
+      "bytes": 85856,
+      "sha256": "044f5ddecc78b9288e83b0c87d4458625eb980377f550d0db3f9e5379899e7e4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_2_C04_R02.step",
+      "bytes": 9682,
+      "sha256": "96440437d8325979122f930402a2505f1e622a886b8610cf489d7e11c1b775b8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_3_C04_R02.brep",
+      "bytes": 2557,
+      "sha256": "72ce71c37484e69745edc13b88446bc560efdafcb66016283e815e0674072395"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_3_C04_R02.glb",
+      "bytes": 85856,
+      "sha256": "30287fab76765e5c96cae8a79ada8edbb352f35a1f295a8a8e2d6cebe137de16"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/outer_shim_layer_3_C04_R02.step",
+      "bytes": 9684,
+      "sha256": "14bfc750e22e20a33842d0b31c7d932b2c25224658e7d84099e4b52f562df218"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_cotter_washer_C04_R01.brep",
+      "bytes": 2383,
+      "sha256": "2fdd2006cb4b69a04baf298cae5d4c9c83b142000de51d4c0804b2ebc7ac192d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_cotter_washer_C04_R01.glb",
+      "bytes": 85860,
+      "sha256": "b80db9f64ed6c505f1b173c5a461898c30b59a783ec7d0480372a82e0b8a5f9f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_cotter_washer_C04_R01.step",
+      "bytes": 9616,
+      "sha256": "d59dfdd12034346b8d85ca9c468c8de2433eebeff9cdf8194ab4d115119fb14e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_head_takeup_C04_R01.brep",
+      "bytes": 2325,
+      "sha256": "1391ff6a50393df71d0d11f619cc09af240e5e2713076b15de089d87147a43ca"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_head_takeup_C04_R01.glb",
+      "bytes": 85860,
+      "sha256": "44b0ab49f1b38e6d8a94764e570857cdb89524a23f60b90852545eb473904067"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/root_pin_head_takeup_C04_R01.step",
+      "bytes": 9625,
+      "sha256": "938fdaeee3980f12f52e4d7f6c848ca7cbe4f1f6f3f49ed7711cf230dac9c53e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_actuator_C04_R01.brep",
+      "bytes": 34853,
+      "sha256": "302f3d0707dd5ae55829e1d55d91be490750dec554bcf1a5bf65dc311c620fe1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_actuator_C04_R01.glb",
+      "bytes": 237032,
+      "sha256": "ab29558f68cbcc7646f2b7c5aee18bc2dd99fabe20ad97cda25728bd82b806d1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_actuator_C04_R01.step",
+      "bytes": 99165,
+      "sha256": "fd23cb9b69a4bfb78e97d88ee4ff47bb723988b08f936dc94cec5689ea273441"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_outer_C04_R01.brep",
+      "bytes": 35721,
+      "sha256": "56183a09e7b2752da44ef5cc63ddfd3c5664b36305485ceb6f390c000a98f7ef"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_outer_C04_R01.glb",
+      "bytes": 237036,
+      "sha256": "f0d19e4d9557335275a78838b395983096513633ecc7eeefd18ddb31317d897a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_outer_C04_R01.step",
+      "bytes": 99423,
+      "sha256": "c2885af8d54660e3dfcdc1cf16a92eff3c67906aba9b34800022fb1c1463b5d6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_tie_C04_R01.brep",
+      "bytes": 35186,
+      "sha256": "a9c9d4635366e5dbb238975141806e4cfa103bf6006bb7ec3a0e7c43f822035e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_tie_C04_R01.glb",
+      "bytes": 237032,
+      "sha256": "1f17d608f70b18e0e1f58a95258710267c1054d0b9b1675fefb54b976a2afbfe"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_2p5_tie_C04_R01.step",
+      "bytes": 99379,
+      "sha256": "697ee569a6129d77199b87b77051266b249135712bd9eb1642ab5eddb6e0feb6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_3p2_root_C04_R01.brep",
+      "bytes": 37255,
+      "sha256": "03eec9b7b603cdc2a8dafbae1653b93ccfcea112264898ffff5b164df7fb5895"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_3p2_root_C04_R01.glb",
+      "bytes": 250140,
+      "sha256": "6f7a853636185b083689a6411dfe5a5e6cdc715deb2940f773eacd4317597796"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/split_pin_3p2_root_C04_R01.step",
+      "bytes": 99077,
+      "sha256": "e4dde89c66302c10a73a15fd6bdbe07e3f5abd61c7ec21f090d06401b56d8e30"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_left_fork72_C04_R02.brep",
+      "bytes": 120971,
+      "sha256": "e1829e067ee6eebc94c67604ef0229d8c11b31e9da5a6ba7227e5e08c6b8be54"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_left_fork72_C04_R02.glb",
+      "bytes": 891084,
+      "sha256": "97e763ae2302c1fc41d4bb934571ad1b32a258b995ef4ddebab8553ea3234d51"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_left_fork72_C04_R02.step",
+      "bytes": 430988,
+      "sha256": "9030f3dd4e76d2ce4b031cac8336c679568e32326eafd43732ab55ad7de53a25"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_right_fork72_C04_R02.brep",
+      "bytes": 123347,
+      "sha256": "464b091bfdf1d6c229be3e98869b7c83384a76e23fa58753f5428ab09d9b936e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_right_fork72_C04_R02.glb",
+      "bytes": 891088,
+      "sha256": "d8f66aed8026aa76ca75289192a3e5917b10a37f2112091caad5efd43fbdcb62"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_front_right_fork72_C04_R02.step",
+      "bytes": 445716,
+      "sha256": "bb46565128c063cad43702f76c7fca475b2b4b680823073d785e64f3861cc437"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_left_fork72_C04_R02.brep",
+      "bytes": 121642,
+      "sha256": "a5203152f726df6926c89ff504216d95700a1c8ab4469009869b219691232b99"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_left_fork72_C04_R02.glb",
+      "bytes": 891084,
+      "sha256": "959768a223db3ebada0692f623f8211bc8181010ffb6283b86dbb2484d318445"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_left_fork72_C04_R02.step",
+      "bytes": 441188,
+      "sha256": "a3e9745e6c2a2bb8bf2d89af03da111f6c5f175543e8839cf2cfb184b22eb721"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_right_fork72_C04_R02.brep",
+      "bytes": 123360,
+      "sha256": "8464e5ae4f0974109585cc10a01b34bdcb886415b26c06ee05c2423aca19210a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_right_fork72_C04_R02.glb",
+      "bytes": 891088,
+      "sha256": "07eb353e21be269d8916e2502f204d616f2b7db03e974c613aaf309ed20233f5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/steering_upright_rear_right_fork72_C04_R02.step",
+      "bytes": 435612,
+      "sha256": "a2f5cc5d3e0732c3537f0da5e5cef58acc6698767ad7d5d9ad2f7c5409a7b05a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_LH_C04_R01.brep",
+      "bytes": 2474,
+      "sha256": "1ee65e54a1096024f43fbf0420779ad198b48beedddea6ad767a4341aed0741f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_LH_C04_R01.glb",
+      "bytes": 85844,
+      "sha256": "b77dcd0df29bda192df9f935299be08223d14b229ddfb4d326b256c18e864921"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_LH_C04_R01.step",
+      "bytes": 9654,
+      "sha256": "67476ad9fb61a9049e90f5a9c44d88546b2b396d7c32ee414a2190d3ca3ff659"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_RH_C04_R01.brep",
+      "bytes": 2474,
+      "sha256": "1ee65e54a1096024f43fbf0420779ad198b48beedddea6ad767a4341aed0741f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_RH_C04_R01.glb",
+      "bytes": 85844,
+      "sha256": "c55cf5bc792535726c359bdcc515a59d3815fea1c2a835495d5c3c6f22ff3d51"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_insert_RH_C04_R01.step",
+      "bytes": 9652,
+      "sha256": "62968f20a53034d5a90a117aa5b79bd3331ddd1ba5498add3d58b1ed53a9fbf8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_pin_cotter_washer_C04_R01.brep",
+      "bytes": 2546,
+      "sha256": "e15674874ecf9b36cb1f3fe7945c47cbc33127321ddb614b56096c8c6aace47a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_pin_cotter_washer_C04_R01.glb",
+      "bytes": 85860,
+      "sha256": "eb61ab91f1a429ac3436bfa889a2a751e57d28a62ac6fccd193e9bcf2c5cc41f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_pin_cotter_washer_C04_R01.step",
+      "bytes": 9632,
+      "sha256": "3f194c39ccd73211ce5b375a2cd7618fe5e5175647c5aa5747caa21a989f510a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_tube_C04_R01.brep",
+      "bytes": 2228,
+      "sha256": "5ffa52f633e31dd8baed2fb62d17cdedadc0a64843e078b102533f7f2cdf03d4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_tube_C04_R01.glb",
+      "bytes": 85832,
+      "sha256": "9cfa6384a64607fb8d9f6d5e5aa6841b8fcfc56c11ac66c9959aed5f11f6d6b5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/tie_tube_C04_R01.step",
+      "bytes": 9789,
+      "sha256": "22e78e6457552068baa8595bf6f5c85ecf8369f81a1a87f74fd9a5553b4ac088"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_middle_miter_joint_seats_C04_R01.brep",
+      "bytes": 361150,
+      "sha256": "f40334d5472a09a563bcf069a10e2aed455a4f31776d22aeab0d370677e3a9d1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_middle_miter_joint_seats_C04_R01.glb",
+      "bytes": 1523932,
+      "sha256": "0a3ceacd69608df7f361a46747f132aeab685590f0fa77bc64bbf75ad8f1cb26"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_middle_miter_joint_seats_C04_R01.step",
+      "bytes": 671325,
+      "sha256": "1298bc0b4d414051bd8a6209aadf13c5cbf18a00e4cbc6d1aef844cf710adb25"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_steering_miter_joint_seats_C04_R01.brep",
+      "bytes": 487233,
+      "sha256": "b2f3222f9927c314dadd1cedf9971fca895d7d6954067f53c86a56b6414e83a4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_steering_miter_joint_seats_C04_R01.glb",
+      "bytes": 1877408,
+      "sha256": "7135a43482e6312bc400dc528b6fad423c564a3a0a71e86405c7ea63bc96a63d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/parts/upper_steering_miter_joint_seats_C04_R01.step",
+      "bytes": 925994,
+      "sha256": "7aca2bdaa11234cdc74ab4812273fee3c8b48b74adf79aa6ce386c39fb475a3c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/pin_retention_checks_C04_R01.json",
+      "bytes": 2544,
+      "sha256": "9f659ab2cf0dbceff422897cc7e481c39236ea7e2c1cd295754a7297e9f746e2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/refine_spacers_C04_R01.py",
+      "bytes": 546,
+      "sha256": "303db377884bee4a56df6b0bb58a7ec35dfbdd9967163c5c09444db86c0e060d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/retention_invariants_C04_R01.json",
+      "bytes": 9253,
+      "sha256": "5948bf8052c5a07bec07f27e60b0aeb4ea0a1d02df291fe1ae86bd30d0b8309f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/revise_outer_forks_C04_R02.py",
+      "bytes": 4474,
+      "sha256": "975f1f77199850615949f2405f6172d64e43a5b5b08276a4732a584c369cacbc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/rover_joint_hardware_nominal_C04_R02.glb",
+      "bytes": 7893904,
+      "sha256": "dbfd423479335f95a8c8f302b290c23be376330cd5787de6af1670d7e5606486"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/rover_joint_hardware_nominal_C04_R02.step",
+      "bytes": 26454098,
+      "sha256": "a7dd3909e5156d39cb4675b2292ba5f6c2a4d5db448bee3ed97b15230eefb018"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/rover_joint_hardware_nominal_C04_R02_manifest.json",
+      "bytes": 481636,
+      "sha256": "945a21aea2d3a304912020ef2677732c6d664f11adcf665ca20c99de514283ae"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/source_dimensions_C04_R01.json",
+      "bytes": 5300,
+      "sha256": "cb49d2e1318bfd768ffeacdac5dd28ed22d56316b5c9c4245089ec88460124fa"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/upper_middle_miter_joint_seats_C04_R01_seat_report.json",
+      "bytes": 6325,
+      "sha256": "a4be255d02c8df64fd3d0be2e1883f135790ca07f25273091eb955772fc3ed8c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/upper_steering_miter_joint_seats_C04_R01_seat_report.json",
+      "bytes": 5331,
+      "sha256": "b3d5161b6f894e591bb6ab063a7c61b9cdcc7d1a9237a4b075c512f96ad36a03"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/joints/verify_retention_invariants_C04_R01.py",
+      "bytes": 4676,
+      "sha256": "e488f15a716a67923e6187b5e19abfc06737b355ae455ad62ab9059ff7721413"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/kinematics_C04_R03.mjs",
+      "bytes": 3382,
+      "sha256": "b9066e540dba1d6f9849716d2932578d48234f4352b91e25a3a9dac3a25da56e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/lower_middle_miter_C04_R01.glb",
+      "bytes": 1549784,
+      "sha256": "a57c09e8a2466fafb7be7c2e451400c0c43fb7aad64fae75125449f4d5a5799a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/lower_middle_miter_C04_R01.step",
+      "bytes": 2555273,
+      "sha256": "894186c8da8bd72c6ecb04f01b31cd284b579fddd0fb3e3015144f8f4b2a53a6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/lower_wishbone_miter_C04_R03.glb",
+      "bytes": 1994144,
+      "sha256": "0d3fcbe21a353ec183f5b771844fa948a5485329a76559028ea9562ab5bf7cbd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/lower_wishbone_miter_C04_R03.step",
+      "bytes": 1431261,
+      "sha256": "a115d438eec08c71a52b1b150900ff3e1e9f7e1de9bf20933cca3c3300bac88e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/mechanical_mass_BOM_C04_R01.json",
+      "bytes": 23024,
+      "sha256": "97c95b504b062a03158325c794b5349e4d2811ae105144636734f4ed87fc0dd6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/check_gusset_additions_C04_R13.py",
+      "bytes": 1775,
+      "sha256": "c302dbd362f30059d5e7208b751e0031f4936380540789ae1a9f6af916d393f3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/check_lower_actual_wheel_C04_R11.py",
+      "bytes": 1986,
+      "sha256": "ab5c7e6bccd025cee03ca29f76be5f37d673937f2a209a1ded88bc1c7f4cc3ae"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/clamp_reliefs_C04_R12.json",
+      "bytes": 5663,
+      "sha256": "6ea7f379b20a03f670362208a66d1b1c8107272bcccb26fadb800d6c10ed27b6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/gusset_addition_checks_C04_R13.json",
+      "bytes": 4278,
+      "sha256": "880f6ff95c8b10aa29bf8292ad3b9e1cce40a9a3f6bda04eb1b8f306c0c5cde7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/gusset_tower_roots_C04_R13.py",
+      "bytes": 1568,
+      "sha256": "d32dca397d723e4e8711f76d63bba7d501a88040f076474d733e06d2522f1106"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_actual_wheel_checks_C04_R11.json",
+      "bytes": 6673,
+      "sha256": "92c0deee2013191187e55b6d67d6ed21aa16bfb74915e42b2d76b68cb6c3e614"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_middle_negative_offset_raw_C04_R11.brep",
+      "bytes": 981310,
+      "sha256": "5e2ea64a3467030f1c16538216241272017ef2637e5c7a2830a8adaa369223c5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_middle_negative_offset_raw_C04_R11.glb",
+      "bytes": 2299764,
+      "sha256": "117b628fc99c4482b026a36cc255ef2ad46e7129e21afac7326a365e5850e443"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_middle_negative_offset_raw_C04_R11.step",
+      "bytes": 1964337,
+      "sha256": "3a843a569b3529a1814fa90146bfac89c791a725bfd0276097220ae885def6e8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_negative_offset_raw_C04_R11.brep",
+      "bytes": 1007380,
+      "sha256": "0ce065f0aa1718ad3eb552b0bf7e153d731faca644410ba85cccedb227d504c4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_negative_offset_raw_C04_R11.glb",
+      "bytes": 2515816,
+      "sha256": "22f1786f58e18c75792bed8d082a42ac2dd803ab386aeffeb4f2712b4b86f4b2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_negative_offset_raw_C04_R11.step",
+      "bytes": 2056945,
+      "sha256": "9fe211b27b84d333b8c1935ba797f09f0c388ffa23a8c1efc163a71a0b0d6f74"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_positive_offset_raw_C04_R11.brep",
+      "bytes": 1002610,
+      "sha256": "c2b684f6c4c2b81c5f1a1173a407ece200c5e127974cced71e5ab59ab6b471c1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_positive_offset_raw_C04_R11.glb",
+      "bytes": 2513800,
+      "sha256": "b7c7290cbf7eb3052d9830876cd32a6b776001355ad6643244f3407b04cfae1c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/lower_steering_positive_offset_raw_C04_R11.step",
+      "bytes": 2049795,
+      "sha256": "c50ee14114654155a26084b5d03ddddf8fcc70fa06ea67efe7cd22de9ee4317d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/relieve_clamp_ears_C04_R12.py",
+      "bytes": 1384,
+      "sha256": "80373216759043c0d42c145dc8586be52234e4481446474b360bef54b0671b26"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R11.brep",
+      "bytes": 64297,
+      "sha256": "57d71fdfe0bd034f3b6b6f284835a9ea80b17be8e9a16fa0fd999cbe394adf79"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R11.glb",
+      "bytes": 793476,
+      "sha256": "5174915718e356ad0f2ebcdb19a609b7e02b59630c082d637bf9792ec08d4a4a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R11.step",
+      "bytes": 345601,
+      "sha256": "e45f57ceb7bac5a1fee0aaa589461c7793b078a29e1078a33630b6cf989da2ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R12.brep",
+      "bytes": 67839,
+      "sha256": "dde136a5e2c38f0c99622c14566c02ca705b0c66639631580bd158b3e32677dd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R12.glb",
+      "bytes": 794820,
+      "sha256": "c4b24a395a0317cbd78c3fc54950b0ede7c5dcabacda0e9d693de5a277bda964"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R12.step",
+      "bytes": 361531,
+      "sha256": "f2fb1d2a9f8fdbec198375d7b539aecea68058f6d92dc65a18ad3a12db67785b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R13.brep",
+      "bytes": 71651,
+      "sha256": "643b0a423eea8b2bb7a46b7b70e130f42540d950cb47573f60403936496184d7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R13.glb",
+      "bytes": 795492,
+      "sha256": "30fc674f92124f3b8c08f84210d874c708391c48fd61a12cc39fe4889bec145c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_left_offset_C04_R13.step",
+      "bytes": 371912,
+      "sha256": "b54645122213e251b098091650994dec0aad4f9db37d3efc4f7735078eeba423"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R11.brep",
+      "bytes": 67157,
+      "sha256": "8cfcdbf5fa890662ab537c64febe96d67d77388b1d4260d09a12472b3ec76328"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R11.glb",
+      "bytes": 793480,
+      "sha256": "f319e157204388814376714d80b27f2fb1d004e554dbe6d595939361dce99ded"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R11.step",
+      "bytes": 353088,
+      "sha256": "b04b92b65cae629546d7402f5fb863531af8ac5df097f44dc3718ac37ba895bc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R12.brep",
+      "bytes": 70473,
+      "sha256": "043e9b4d1fecae065d6327bb5c56189640d38ce2f11a021c5fd2bd305c013d21"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R12.glb",
+      "bytes": 794824,
+      "sha256": "789bf587554663e3e431a4291f9f786d293050c7ea923de2f7dbcd632a9a5210"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R12.step",
+      "bytes": 367771,
+      "sha256": "e3841fc2cd5da8825e086159fa6460536b17011097593df52932a34ac180b583"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R13.brep",
+      "bytes": 72994,
+      "sha256": "b9041d3acd77df32ddc78c61633a051252f4fffcfef8b2bb8ec66bbee4b2c0d0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R13.glb",
+      "bytes": 795496,
+      "sha256": "7b14042098ea98b384d4e71ca91034c13e41b4ad2daff8088814e3929371eb2d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_front_right_offset_C04_R13.step",
+      "bytes": 379002,
+      "sha256": "be0991f00e5e55bf40125efdf97f2e20f73132eb46b1b39745fed25777efa382"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R11.brep",
+      "bytes": 60090,
+      "sha256": "b494d5ef0c5560c718908f82f95607ddab0ecf9bcef73c25b27a7cd42b5baba3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R11.glb",
+      "bytes": 622788,
+      "sha256": "b14b3774afa71a4acf8cafd5d5d55f493264d47fd463d580b033f38f9cd01c55"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R11.step",
+      "bytes": 329976,
+      "sha256": "2d05a571644f930eaa282dcea6647fcfc1c9d3af2ba1dd4a74bd2a6155d6f015"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R12.brep",
+      "bytes": 63634,
+      "sha256": "b401f274baed2fe78d0e9c777cdb74fd5d62cf1019ee7e3b4a39fa5d5feeb208"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R12.glb",
+      "bytes": 624132,
+      "sha256": "cd2ba0130163e1750163c607be423bbf32b9cef38a87e1f8716a212b73cd77a1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R12.step",
+      "bytes": 345935,
+      "sha256": "93208141bcf55544549b343755c15dd4b52f7ce5bf1f7a2718de32aebf42bf53"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R13.brep",
+      "bytes": 67670,
+      "sha256": "9e0bb8a5ac77fc15d3e92f88214cc6edb508f80c935a8fd2032bfbe781f5999a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R13.glb",
+      "bytes": 624804,
+      "sha256": "23dc71f5a3dfba189390acf09c8d597d1c66278febed781ffb542c8554d8005b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_middle_left_offset_C04_R13.step",
+      "bytes": 356375,
+      "sha256": "2d824012eeef05fe849f4930b47eb33ee9eab106b5a010210157b0727ac3f02e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R11.brep",
+      "bytes": 64833,
+      "sha256": "73d5905c813dac091a26ad6e8f256394e005feae1e482c15f965d3e1793a86da"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R11.glb",
+      "bytes": 793472,
+      "sha256": "a013c61dceefede72d65190fc632a782bb74dd875667d821dacc42572f393917"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R11.step",
+      "bytes": 347192,
+      "sha256": "96978a1bce6c7f2c031c56fe861346e3973ded17d5f946b41c7222fbcc353ef6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R12.brep",
+      "bytes": 68396,
+      "sha256": "56ba46c817af43c24f6f150f00c44059af51eb7f093b16ff3373969b754b265a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R12.glb",
+      "bytes": 794816,
+      "sha256": "ed3874a254dfe1356a9110ed19ee36270eaf138d275fa81780ade6a3f4d8ebbd"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R12.step",
+      "bytes": 363146,
+      "sha256": "cb8a4aaa20cad04fb7f9e865dd36cf12d0fda4f9a0e9999a742c30fed6ae4995"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R13.brep",
+      "bytes": 72231,
+      "sha256": "1fb8d3835c945f3de0e646de7aad706e826fb90a2de25027fcd4261795c753b8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R13.glb",
+      "bytes": 795488,
+      "sha256": "930129a3966f776c5e327d12ac4ebc9b2cdad9d4a41728b140823f25b054f131"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_left_offset_C04_R13.step",
+      "bytes": 373530,
+      "sha256": "b2b72ef8f61aa482573e4ee1e0b3b17b64517d31563d5e3f1586dcf96fd1ef77"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R11.brep",
+      "bytes": 67359,
+      "sha256": "f566c6706a6a5405e727ec3d1c7bdb7c9a4f307f1535a535d5baa01974dd8eb2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R11.glb",
+      "bytes": 793476,
+      "sha256": "4b5658db440630f9c6062769f50c61812054ab2aa2d68674f16fd7076fcf0c4d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R11.step",
+      "bytes": 352145,
+      "sha256": "e976784810d9a9f300b4ff10bdb70f831c4c2bdbf459d46dda5bef5b3011bae2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R12.brep",
+      "bytes": 70704,
+      "sha256": "c4ffcd85cfa9bea78979a48d2d164ed291f832317a7dab00df84999c9ebedae3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R12.glb",
+      "bytes": 794820,
+      "sha256": "712bfd0e1b270bdaedd2f48ba749a5cfc55a4d625c71cd0fab614aabaf7a0c4b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R12.step",
+      "bytes": 366853,
+      "sha256": "fb6d5295b616ec4bdf5a29d9e2ae5b0944f711387dbdc2ad42bb3734570892b3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R13.brep",
+      "bytes": 73251,
+      "sha256": "ce84afd9c670c172a5a6a037373a5cd20c1ce3c2f787bd6b868bfbcef5d6cadb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R13.glb",
+      "bytes": 795492,
+      "sha256": "81444fb4198c16f47f9893adcd7cdfe43aad16f96f8a4636269d84de2e2fbc08"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/stationary_clamp_rear_right_offset_C04_R13.step",
+      "bytes": 378176,
+      "sha256": "896b1dedf9912a0cf18872c55c6c46eca7f89ea136e3379be13831024127125f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/support_components_C04_R11.json",
+      "bytes": 15577,
+      "sha256": "3420a34651fb315634176a98081af51511a943d0b6326416945670cfa7657581"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/offset_supports/tower_root_gussets_C04_R13.json",
+      "bytes": 6724,
+      "sha256": "b9db2b83eb6e1dc448b08dcffc12f73dacdd7b59a7c8006b82ca00f8e5109e1c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/package_connected_C04_R01.py",
+      "bytes": 6336,
+      "sha256": "1c1559972394791382558f94d933d737231a9a262a85c9099722fb20be35c6e2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/check_retained_rack_C04_R12.py",
+      "bytes": 3116,
+      "sha256": "fc61d0e00d8cc8c7c47f7d173f61ba233e747c7d6fba7978043f6055c5efb094"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_0_C04_R12.brep",
+      "bytes": 9335,
+      "sha256": "73a25139f3215914c14fdc57d51a2dd3a5e88082a697f8d2bb2499acfa6b1d18"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_0_C04_R12.glb",
+      "bytes": 87532,
+      "sha256": "06709d53472b9716dd40056c31b8b85c7da844cda3f1cdf940ba789e36a1c569"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_0_C04_R12.step",
+      "bytes": 32597,
+      "sha256": "dc67a7b0328157e61e2dcd6f67ac546a74b31ee6e5deace16261ff1b6da23702"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_1_C04_R12.brep",
+      "bytes": 9320,
+      "sha256": "6aa9383edf0f59af035e584b4a0735645336cf7e3e6d8f0c4332df32f7ab902a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_1_C04_R12.glb",
+      "bytes": 87532,
+      "sha256": "4a536bd5eddc73e654a906bbf59bd96cab95141436363efd92c59f606acc7684"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_1_C04_R12.step",
+      "bytes": 32597,
+      "sha256": "39b378ff22dd2b48c1dac823b6ae317bbdf43b6ac34e9f5b139525daa8ec2e05"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_2_C04_R12.brep",
+      "bytes": 9502,
+      "sha256": "cbbe7c04b701a3b41878561dc269d0c62aa78b027d7c72a1fb15839a9a7ad404"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_2_C04_R12.glb",
+      "bytes": 87532,
+      "sha256": "05a02fb4e48c95605a861dfa81a89cb842f04b3864fdc1ee84da5ad9aa1e6251"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_2_C04_R12.step",
+      "bytes": 32891,
+      "sha256": "63b8839708ae340f5259bee7382959f4ee28b4c9ad7dab14a0d5d204faf5ae9d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_3_C04_R12.brep",
+      "bytes": 9487,
+      "sha256": "93830f38f9b86fe24c7c5500e65194298f2c53587bc8ce8787737d5a2b51a7a2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_3_C04_R12.glb",
+      "bytes": 87532,
+      "sha256": "c0cf5963d025a1061266292398392917d67e07cd8c92fe51e079300461298bbe"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_-1_3_C04_R12.step",
+      "bytes": 32891,
+      "sha256": "36c7c25c8ec37fc5f240dec7194d77dcf35b7e8e693f5d358a4bc2ac40008e53"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_0_C04_R12.brep",
+      "bytes": 9263,
+      "sha256": "36ab4d3e66ca2ae426cca6d312ba6eb7d777a51921315af3da32889eeed9b205"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_0_C04_R12.glb",
+      "bytes": 87528,
+      "sha256": "e42e007090033d5eeb7b309c52b7f776c309ee1167ef00df5b3b69bac10de964"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_0_C04_R12.step",
+      "bytes": 32510,
+      "sha256": "7dad7fafb38ca8639ef0bbce1ddf5cce0f12429b4468417631145d3e8bdab300"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_1_C04_R12.brep",
+      "bytes": 9300,
+      "sha256": "c20e5ae3e1a1676bfd662c6374555d0329c84a9cb3510f174201e04427d78f84"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_1_C04_R12.glb",
+      "bytes": 87528,
+      "sha256": "53182c886275b2635c3685f87332528fa05aa1862df34b04407aaa0a18820e8a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_1_C04_R12.step",
+      "bytes": 32510,
+      "sha256": "e84162b9829b11536b14cddf13fda542d342603634ce58ed5c5781a8e380ce5a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_2_C04_R12.brep",
+      "bytes": 9430,
+      "sha256": "1bedd3d3504407931b9198f6e292dbd1e54a6f3a198fed486957646de49d9ba6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_2_C04_R12.glb",
+      "bytes": 87528,
+      "sha256": "9b20753c5d3d2b3b80fdc466a4fbce5abe6224e92db5065e517c43acc7c1ee37"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_2_C04_R12.step",
+      "bytes": 32804,
+      "sha256": "58445cf381be3dd3d013abde798c9312a2b2246e321db9e17fe905c67407895a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_3_C04_R12.brep",
+      "bytes": 9467,
+      "sha256": "fed5569224514634c4b87f7c9a4281806aa235448677b8fbee5bf672f9cff11f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_3_C04_R12.glb",
+      "bytes": 87528,
+      "sha256": "6dd7dd6f22de33917178e56a0f2f152e35eaae60d64015c0dd3306be44433152"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_cap_M3x10_1_3_C04_R12.step",
+      "bytes": 32804,
+      "sha256": "05eae528bf1fb44032686845546d6bf8c5e45d545ffa8f639f552e684d458c33"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_-1_C04_R12.brep",
+      "bytes": 8977,
+      "sha256": "b9d3ba6d0abee67906b4cfbf0c92055cd8824fd0918bd7eb0c8c78408587690f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_-1_C04_R12.glb",
+      "bytes": 174520,
+      "sha256": "2b75ce1e72914c2533e10e59ba75cb1880bccf52aff6e8fc80916c7a20e28440"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_-1_C04_R12.step",
+      "bytes": 49636,
+      "sha256": "b5a73cae9b0b6e5d95cd2d181ab38bc60a69dcc8d59ab985c41bc63c594e7d4a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_1_C04_R12.brep",
+      "bytes": 8887,
+      "sha256": "89da84d663292c862687d7fc14b46965405e99e64036984b4793d6e85933de56"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_1_C04_R12.glb",
+      "bytes": 174516,
+      "sha256": "6f44ae437eb0241bddc42ec5e507b0e142cdbb2276d2f04cb0f9ca2872f58406"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_end_cap_1_C04_R12.step",
+      "bytes": 45132,
+      "sha256": "7e8f3b4aa7f813494cfb03ac342ed0361796461984fc03652c4a204a648d8908"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_-1_captured_C04_R12.brep",
+      "bytes": 5935,
+      "sha256": "245f3e8aff15094159db41a279f66858d04232003b00fd8cf28b568d693da09f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_-1_captured_C04_R12.glb",
+      "bytes": 3836,
+      "sha256": "89fd0d6f3b7b9d6ea0e9b75f083ce5eeade754bdec3a772e21862e1f253d28fb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_-1_captured_C04_R12.step",
+      "bytes": 30674,
+      "sha256": "7a9730bb08c91e31a197f64f5b78c5009401ed21aca8a4276a34dd1090de92c5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_1_captured_C04_R12.brep",
+      "bytes": 5885,
+      "sha256": "08ed0cb59e59923c082f7f56937a2c9590c507864239c2a577bc12d6dc7baf91"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_1_captured_C04_R12.glb",
+      "bytes": 3832,
+      "sha256": "b5e15514521a1189355eb38307fd83817dfd4a353f84e9f9511e905314b0ac8d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/guide_liner_1_captured_C04_R12.step",
+      "bytes": 30626,
+      "sha256": "7ea840c88cede51a3e31c19e035642ce459f5fef256e6067c7a6d32c85f1d467"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_-1_C04_R12.brep",
+      "bytes": 10114,
+      "sha256": "1790a50ba8d8708ebf46ded9bee8d6c2c811effdff1ee984ee9a67caec5e10b9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_-1_C04_R12.glb",
+      "bytes": 87516,
+      "sha256": "fb4e626025a34616870dd1518fdb5116673e53f87362abc4ee7f09bd882176ad"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_-1_C04_R12.step",
+      "bytes": 32560,
+      "sha256": "307c2d60a0e181351b9b6f1f05880f9ca99dd5251fc2b7e3b397c8f0270182aa"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_1_C04_R12.brep",
+      "bytes": 10071,
+      "sha256": "b0047236aa3c08557a8b9238ea3581eb182247e68f6b6786ca85a606bbc3f562"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_1_C04_R12.glb",
+      "bytes": 87512,
+      "sha256": "8af0a75064714a571b04a0043b76af1930a03eb5500a08d793e26eea218d6b4d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_inner_stop_M4x90_1_C04_R12.step",
+      "bytes": 32546,
+      "sha256": "aebdc4d650e9bcb75456700e2d2b0a22604484563e64753e64242188399aff43"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_-1_C04_R12.brep",
+      "bytes": 6855,
+      "sha256": "3af766063b33af4dcbbbb6afc559bc88b070de5b11a3a0a4f1649a788a243401"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_-1_C04_R12.glb",
+      "bytes": 45496,
+      "sha256": "f8f986c6eb6d2f1cf3357694f95cc949cd4b9cbe03bc6c04e7cb5f9565bf6183"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_-1_C04_R12.step",
+      "bytes": 27445,
+      "sha256": "c4110c188dc72f8560f8eefe862652419b4745a23a09c9ee24b4eec8412d17c5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_1_C04_R12.brep",
+      "bytes": 6811,
+      "sha256": "7f54a5093189286661afcd555b85eede97ed4952d09f9ef97d0eaa55b14bd9a4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_1_C04_R12.glb",
+      "bytes": 45492,
+      "sha256": "188f61e3bfb8ade87550c6bc7866b7942b1512e468f340f5fd201328b34b0e5f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_nut_1_C04_R12.step",
+      "bytes": 27437,
+      "sha256": "24cc9068f2ed7ae36935792569663eb80993f43fbdab3c1f9869cb08a8ae7d07"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_-1_C04_R12.brep",
+      "bytes": 2180,
+      "sha256": "47201d0053c39220e3060e87973906956d43769252e5d627192de7c72a839c47"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_-1_C04_R12.glb",
+      "bytes": 85856,
+      "sha256": "5a35716325d37c4749f82d2ec9617f93d12096d2dc50c5e28c8b84566060a99e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_-1_C04_R12.step",
+      "bytes": 9429,
+      "sha256": "1f312b4061268e3536f1092bed8f5b3a606c5ab56fca7a0011bfc8d858db7e2b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_1_C04_R12.brep",
+      "bytes": 2166,
+      "sha256": "2037cf4e61e9b4438cabfac71fe63db6efbba3c5f82c84289da4b9443ed2540e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_1_C04_R12.glb",
+      "bytes": 85852,
+      "sha256": "e05ce5386655ddbbe8ae18ebc24202136cf1b4a6162a919cdf679cb40864d40d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/liner_stop_washer_1_C04_R12.step",
+      "bytes": 9417,
+      "sha256": "8e5060bf989f41fc35d2f5858e66ea8b69dfae961132782a93ad136a5dd47c7d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/rack_guide_retained_C04_R12.brep",
+      "bytes": 28834,
+      "sha256": "09aa6a27a40c0b68f5225fbadde87a12bc8a2197e79707b8fcec2ea7e1cf9a23"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/rack_guide_retained_C04_R12.glb",
+      "bytes": 499108,
+      "sha256": "6cc428ff35e9a1a0dd055edbb291b75cc017aad3054af69edf3a85bf435f228b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/rack_guide_retained_C04_R12.step",
+      "bytes": 154812,
+      "sha256": "a649a7e5166134bccfe6c89d94772c3316ef2eefd7905c713f89918de7ed323c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/retained_rack_checks_C04_R12.json",
+      "bytes": 77473,
+      "sha256": "6ca2ea71fbd7958621958b4dbd4d93803fb98b7db699bb82720b7186da3e2215"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/rack_retention/retained_rack_contract_C04_R12.json",
+      "bytes": 19104,
+      "sha256": "5cebccc193872c0a2a45a88886303eb0c0f3a9c497d33d4e8bc94fbd3946a426"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/retained_connection_graph_C04_R01.json",
+      "bytes": 404268,
+      "sha256": "eec5e71f23f76af841ecfe7d0dfd3c92de881f608b95e426dc0eb1962a17509d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/service_checks/S01_neutral_C04_check.json",
+      "bytes": 3727,
+      "sha256": "67fed227cde0497849f81650444916b8ce94fc2b7df3e5f465d5e4f34251049b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/service_checks/check_S01_neutral_C04.py",
+      "bytes": 2016,
+      "sha256": "fd447a56bf56354c53c68a4a5abe3f5fb7cba34d0a23f6bd5b181af708880fd1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/assemble_guided_module_C04_R08.py",
+      "bytes": 3136,
+      "sha256": "d63a93b88dfacd83b6268b252bcc0947ee85987a3a7a94e051ee433b9929473c"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/check_offset_supported_C04_R11.py",
+      "bytes": 3425,
+      "sha256": "00ac048a3504e2ae33135c0e912eb1fc8bffdcd24893b28c707e53b5e33fe18a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/coilover_source_candidates_C04.json",
+      "bytes": 27226,
+      "sha256": "194ebd2a4cd1390b1f36a41aad867be396529216e9874e064a0674af47d62c00"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/generate_guided_spring_C04_R07.py",
+      "bytes": 4768,
+      "sha256": "c4094da80c4a44142e5e4a3ba39f735f83911d8b2e7436d4794bfc0d47c8588e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/generate_independent_spring_carrier_C04_R04.py",
+      "bytes": 13122,
+      "sha256": "f3173d8407461982a71f7c35d7490ad34cf203e78c1111783d39fb3a99a0d713"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/generate_shock_candidate_C04_R01.py",
+      "bytes": 14323,
+      "sha256": "c78f398ddc08a096a26fa6e3d7e15286622dd5b6c6a8194d3d669266f2af9f37"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/guided_module_source_hashes_C04_R08.json",
+      "bytes": 2108,
+      "sha256": "f9a6dd0ae6572eb802c75a3ef852ba19c6a1c29390143e540fcd5ed391e3c463"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/guided_spring_contract_C04_R07.json",
+      "bytes": 6002,
+      "sha256": "76de6a26200f875274175653d85c53b24201992baf0f72cebfc4700e699c6689"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/guided_spring_module_local_C04_R08.glb",
+      "bytes": 9756784,
+      "sha256": "a3d6966b00a8f236683e22d3c45df814a1123291abfc260cf19665c426f7fc98"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/guided_spring_module_local_C04_R08.step",
+      "bytes": 1510986,
+      "sha256": "f666fb2293d506dca05b4d8132668e94a3b612f71ab088c2057e6b9a2a8393ef"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/guided_spring_module_local_C04_R08_anchors.json",
+      "bytes": 11320,
+      "sha256": "8d4f102c6e61f1cb9e68e7f96215d1658bcff187773e1d03548b8edf8d02cd3b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/independent_spring_module_local_C04_R05_anchors.json",
+      "bytes": 4219,
+      "sha256": "654465a7ef0ef16a6e9d04ef94095baecde34689a690b81c4db13a8ca34c7063"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/middle350_tire_screen_C04_R11.json",
+      "bytes": 28435,
+      "sha256": "8aad22e1c0306fabd844b5feda0a367300a9190aad1326777f9461b213d9b955"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/offset_supported_checks_C04_R08.json",
+      "bytes": 255784,
+      "sha256": "769cb1e02fb2452ee650f076ae1ced1ffac0384a1c2eb1d57edc812c2563c977"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/offset_supported_checks_C04_R11.json",
+      "bytes": 308211,
+      "sha256": "4b41c6ac6ba6425cb3a6f517d86aa5a45f1750837be864fe689b421f6f6f8048"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/offset_tie_C04_R08.json",
+      "bytes": 30441,
+      "sha256": "c5f219100832309ad7b2633669ebabf4060cf60cae4e220774f3b416a5b9b414"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/offset_tie_R08.log",
+      "bytes": 8573,
+      "sha256": "07f7ceaf3ee4c8d838fc6ceab993d745894cbe953db60cb5867c7a1aec66934b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/outward350_actual_tire_screen_C04_R09.json",
+      "bytes": 37422,
+      "sha256": "6db6231d17c8980680ed78b3ba3360143d8e3bf9090be4d7e9d9435abf01c3cc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/outward450_tire_screen_C04_R10.json",
+      "bytes": 176286,
+      "sha256": "efc1e07526eedbb21b163e02e07033aa3f40b8ce3d8f2948281fa85b63805cf0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/outward550_tire_screen_C04_R10.json",
+      "bytes": 169223,
+      "sha256": "0f74d2c3944b55c14142d1fcda1295a360d2e6121ba59b5c9b294fab5076774e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/bronze_telescoping_guide_C04_R07.brep",
+      "bytes": 12553,
+      "sha256": "b26ce169ddfabf929377d3b9dbc1bc587f0ec1093051358d492fbd289d1373e6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/bronze_telescoping_guide_C04_R07.glb",
+      "bytes": 427220,
+      "sha256": "be6822dd963553096848b49920874fc765cee4e3cc897968e988c7017edbeb38"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/bronze_telescoping_guide_C04_R07.step",
+      "bytes": 61265,
+      "sha256": "bc38c1b7783962fe9c481cb331dd9c8dc13024f383e890756e0e7ecda75cb3aa"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_0_C04_R07.brep",
+      "bytes": 6166,
+      "sha256": "48a6a4c1b51a0eaa01805d8f29aa21c4ca8ab654dea3e51fcd7c3e1a2514c04a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_0_C04_R07.glb",
+      "bytes": 87544,
+      "sha256": "45a6311e4040fa99ee6e286e55d35c668d855564259a54bf32d4eb95996e2f06"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_0_C04_R07.step",
+      "bytes": 31280,
+      "sha256": "dc93284042158765a957336a6da34167c8bd50c41de6dc30a63e15bfba203e31"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_1_C04_R07.brep",
+      "bytes": 6114,
+      "sha256": "ff38b209f750fec61e834b6fdf5ed88272a815660a88c8d3f593df85b0e3de67"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_1_C04_R07.glb",
+      "bytes": 87544,
+      "sha256": "7f8c2a6e55b3f396a75fdd90ab623fa519762eae734e06ea84ffeb97743c8cd3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_1_C04_R07.step",
+      "bytes": 31228,
+      "sha256": "2eb14f061938f5fa312468c99fa6fb7a1cdcd23323a29f5db1cfebeb16ba0551"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_2_C04_R07.brep",
+      "bytes": 6113,
+      "sha256": "bb352de95e9e9f3870041d8e2e59f6b7400bbc16683242f5c436dc24d6842fbb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_2_C04_R07.glb",
+      "bytes": 87544,
+      "sha256": "89db07e1394c621a39d40ac1990e2094ab4abccfc8bc331cc79142c2d5521c5e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_2_C04_R07.step",
+      "bytes": 31265,
+      "sha256": "b8a62711b41b30d613b950fca82a1e57301bc97d7b054ba3f614ee6662b31154"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_3_C04_R07.brep",
+      "bytes": 6061,
+      "sha256": "a3e64b5eb53f1eb95d0f931772c10d81a0461c85abb9e1a635a54604534bb966"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_3_C04_R07.glb",
+      "bytes": 87540,
+      "sha256": "693860c50a577130103b0cb8e8ff7db273a40cba43fb800b990c62649011946b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guide_retaining_M4x10_3_C04_R07.step",
+      "bytes": 31213,
+      "sha256": "30a9a487dabba01248d2447268554ed7f8f5e60d961aab153bc14cddcdbf6ab6"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_lower_carrier_C04_R07.brep",
+      "bytes": 88170,
+      "sha256": "02417e37b5db653bd48b1b31707ac1abcbf7dbc907b2f60f63e56b8105f1e00b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_lower_carrier_C04_R07.glb",
+      "bytes": 1522156,
+      "sha256": "4af24acddf615aa4c07cbd6bb4060706f4a3b65a7e3bbbd017d8d8eff7554bb3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_lower_carrier_C04_R07.step",
+      "bytes": 280231,
+      "sha256": "c9e73788f6c70862e84049d431d001e9c311d5c9210e8e1b996b7dcb19687da8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_upper_carrier_C04_R07.brep",
+      "bytes": 81079,
+      "sha256": "04811426b5e78e8612ee46a2f57e58eade1e57d5adb1550d2363b6fd41151b82"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_upper_carrier_C04_R07.glb",
+      "bytes": 1237476,
+      "sha256": "f0f7f756869546c8085d317fb8bd52eb8f6028fe9fdb67e85fdcb1b7d85a4521"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/guided_upper_carrier_C04_R07.step",
+      "bytes": 265059,
+      "sha256": "106d156c33859edf9fee213fe19b8165056aadb2d3f5cd202ac0ddbbcf96b9cb"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_barrel_C04_R01.brep",
+      "bytes": 101011,
+      "sha256": "751fe18f7e094c76bb71c845b4d72c9937c511b2305c21127c7d264701517cfe"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_barrel_C04_R01.glb",
+      "bytes": 85852,
+      "sha256": "c823f6b86ff4d29b015f5d223766d53355d316f5dcf5d3b9b92e5d6a775f82c3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_barrel_C04_R01.step",
+      "bytes": 9594,
+      "sha256": "0b0ee40ccced9fcd304796abf4b2334215ef9b652fc32cd06b227c87dbf103c0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_gland_C04_R01.brep",
+      "bytes": 101190,
+      "sha256": "cf13a7dd076acb4ee1a4e343bfee1474f1bfe1f77da916e842022701b0f23a91"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_gland_C04_R01.glb",
+      "bytes": 85848,
+      "sha256": "bc6c0d1a31a27c877bdec77dcfe6a5a0fa8351fd60066bdea53967dd6c43f07b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_gland_C04_R01.step",
+      "bytes": 9587,
+      "sha256": "d9a808cb7350dcdc393c599f4ed8df653729e3c4da774ca15358553aa2e3d00f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_topcap_C04_R01.brep",
+      "bytes": 49499,
+      "sha256": "1b4c0cafeffe3cd47dbc3ca291daf557d154cb365555338223e7b3b7a316c9c8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_topcap_C04_R01.glb",
+      "bytes": 43180,
+      "sha256": "bf29ff25c6788459897773ef8c3176275af1ed282fc0a2015cbeb333606c065f"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_body_topcap_C04_R01.step",
+      "bytes": 5755,
+      "sha256": "2c54308b041951c7cf514b3edb604f8ab75018f477aa63e5465bbdd25cd47523"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_chromed_rod_C04_R01.brep",
+      "bytes": 50596,
+      "sha256": "985cc208ab56e6d4782c93574da481f19129ec3560e6f81a627cfc992b7b4ca4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_chromed_rod_C04_R01.glb",
+      "bytes": 43180,
+      "sha256": "2f344706072bbd1d1cd214ecd72b23c313ad430b1feb671f9f90bdd1de3475be"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_chromed_rod_C04_R01.step",
+      "bytes": 5800,
+      "sha256": "06cbb6fb759e64724e170fa4a9fac788e0de2df83f62282c80bf034b58824fc2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_clevis_reducer_sleeve_C04_R01.brep",
+      "bytes": 98926,
+      "sha256": "3fcd00a446700045300d3b90f1e4d59605f27fb7fd5d4f2e0fc672702ae21f2a"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_clevis_reducer_sleeve_C04_R01.glb",
+      "bytes": 85856,
+      "sha256": "09c8be862008b238604346796e401ea452b85537597d4eb5c021919870e59e92"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_clevis_reducer_sleeve_C04_R01.step",
+      "bytes": 9497,
+      "sha256": "2c37351ad76f37b25e7492da8f2a24c0eae181fb480f0e5d4e92115f4f74f1c5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_eye_interface_C04_R01.brep",
+      "bytes": 122414,
+      "sha256": "7dc0e0add77a8adc350805acb3ace19616fc87fcb9328d7eec3962eaa3373a83"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_eye_interface_C04_R01.glb",
+      "bytes": 95248,
+      "sha256": "5fcb4f2c43a9594caeb9de098aad86811c546212cf340821085926c2f397e36b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_eye_interface_C04_R01.step",
+      "bytes": 32162,
+      "sha256": "e0e1b44963fbf7b9fd4a103174d10728e42cf3c45a59488f182e8af7519e05c9"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_pin_C04_R05.brep",
+      "bytes": 20121,
+      "sha256": "c0b08ad40174d10b02e13ca50a0461602a39f20326a28792c5a757606bd15ec0"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_pin_C04_R05.glb",
+      "bytes": 137612,
+      "sha256": "6b6dbb6897e5bbfdcc6bbbabb9305effc461edc447ae847d10c57adc587f4d95"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_pin_C04_R05.step",
+      "bytes": 38945,
+      "sha256": "35d171cef350f2e2e0fa047605828192a662511b510e4942fd4555566e5b9f89"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_washer_C04_R05.brep",
+      "bytes": 2341,
+      "sha256": "e2ab1c84279a97f9a500d30f1144a5b27e88a06a8ca20efdec956e560fc452b1"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_washer_C04_R05.glb",
+      "bytes": 85868,
+      "sha256": "6a1a3175ceef5d3b3b957aabad06b768db390f77192d2697878806f82d113dce"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_lower_service_washer_C04_R05.step",
+      "bytes": 9601,
+      "sha256": "f469653de48c19200e455af1a97f87b6817a31fcdc9034895a199de2e7484670"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_split_pin_2p5x40_C04_R01.brep",
+      "bytes": 284212,
+      "sha256": "ce929a562736a75c5afa3de420df91622527b83960e3edf3d91b51c4e182dfcf"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_split_pin_2p5x40_C04_R01.glb",
+      "bytes": 237044,
+      "sha256": "1834da295ae27c1ffcef62fd39b8ce73b52ac2fdc2ab77136288c602d2faf17e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_split_pin_2p5x40_C04_R01.step",
+      "bytes": 99231,
+      "sha256": "5778fa422a26e924d598f1df3509535fc50412484fef46c3695ac621be6303a4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_external_washer_C04_R03.brep",
+      "bytes": 2318,
+      "sha256": "bc94123d68e0272b6a816f69b9ee3c390ffa44a092c5364a626ef147892602a7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_external_washer_C04_R03.glb",
+      "bytes": 85876,
+      "sha256": "7b0b00818e86b017d5377c7974f00d5c94a8f45f648a69974638bf9b1a427226"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_external_washer_C04_R03.step",
+      "bytes": 9605,
+      "sha256": "fcd88f6199d051376ea08e2badeba38be8cfc9419746443319f18ff3a44c0fe5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_shared_pin_C04_R03.brep",
+      "bytes": 20146,
+      "sha256": "d620f9a9d2e0ef7344c99ea0abdbf4ec84f79061923a0b229e494070edceba1d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_shared_pin_C04_R03.glb",
+      "bytes": 137612,
+      "sha256": "76fd5a3bf792bcaa530c943fd8ddcbb03ae9d9f08b919801a5a2374a842f639b"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_shared_pin_C04_R03.step",
+      "bytes": 38961,
+      "sha256": "ea96c28ca8b7fd1b3b5511a25dd273421c6ca05d8c37d4047c3e5f75b9ceb026"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_split_pin_C04_R03.brep",
+      "bytes": 284466,
+      "sha256": "14d05b9c2b6c61f39700826abab09849886378217272151f58f54b4584a95c04"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_split_pin_C04_R03.glb",
+      "bytes": 237040,
+      "sha256": "9d41d5ec9a4de895b62aa5e6e962747969ec08f20fb5ede722795d3cbd98f978"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_spring_split_pin_C04_R03.step",
+      "bytes": 100528,
+      "sha256": "38bcaed1f6aa7a4c38e78ad6922ff1f864ae5444065792907ec049b7073dfb09"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_upper_eye_interface_C04_R01.brep",
+      "bytes": 122225,
+      "sha256": "cb1ac4017439d87a68a00381a68e4d540ec0dac9a5b5fc06c09b1f54ca6d0876"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_upper_eye_interface_C04_R01.glb",
+      "bytes": 95248,
+      "sha256": "635ec050cbb4f13c65997c5bce26c5241c06e1b51c5415cb2796849b7434c15e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/shock_upper_eye_interface_C04_R01.step",
+      "bytes": 31877,
+      "sha256": "5ebdd2dec62d72b1e988a67e316b4a54786a09f85d26c13aebfd30bc9aeaafda"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/spring_Eibach1800_300_0200S_original_profile_C04_R08.brep",
+      "bytes": 166715,
+      "sha256": "78b0085f0ce00f77173f1e8e305e8e2306f5516fbe06351287508fb103aaa487"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/spring_Eibach1800_300_0200S_original_profile_C04_R08.glb",
+      "bytes": 4517104,
+      "sha256": "48b219f283c1877662c4fe918b69129602060b699b0f9cc78bf758f2a23cc8fc"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/parts/spring_Eibach1800_300_0200S_original_profile_C04_R08.step",
+      "bytes": 273876,
+      "sha256": "b8412dc5f4768015e769b71eca99d9ee4f4691e1327ec25bf92f2cb6bb643144"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/regenerate_selected_pin_hardware.py",
+      "bytes": 1439,
+      "sha256": "ee6ebccf42651ec0b31cc607883fcd99caf84c94f1adb47d9621e14eb8587858"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/screen_middle350_tire_C04_R11.py",
+      "bytes": 3019,
+      "sha256": "23f671dc7b81623cbb1bf0d1bb807831fd8bb557aed089646263e84d117bacb8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/screen_outward550_tire_C04_R10.py",
+      "bytes": 3079,
+      "sha256": "8d926a6a228cfe05bfc92ea6f60937b09f9b8bc9e844c69112871b40c2201a7d"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/shock_component_registry_C04_R01.json",
+      "bytes": 11748,
+      "sha256": "ef4eb9c537d9d25a8e09f884d34f139d9934bf37521250a88afe2f800113261e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/spring_capture_source_C04_R02.json",
+      "bytes": 8921,
+      "sha256": "96f3a1da512b89670deee5a469dd29f175ac6b9a82b6cfd3d2dc0847195157d4"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/spring_load_screen_C04_R08.json",
+      "bytes": 2688,
+      "sha256": "c6a9a88f83d67805a41a666b5e17f5bda138a16d401deca5e6ce9888fb3fddb7"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/spring_load_screen_C04_R08.py",
+      "bytes": 1819,
+      "sha256": "96645f17fa07e9c568a4c78a9b96af1d5e24eb672fd32589d4633488c5abe3e2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/spring_profile_runtime_C04_R08.js",
+      "bytes": 2716,
+      "sha256": "f00efd948ba3debb91071995a4f42d9e7c7d66edb033df3750be6c439ee383b5"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/supported_module_checks_C04_R12.json",
+      "bytes": 2198,
+      "sha256": "491ed5a35fcb3153ad7749e7313489eb89f1428cf417f1148093ee8dc4acf132"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/shocks/verify_supported_relief_C04_R12.py",
+      "bytes": 1994,
+      "sha256": "bffd23c383d0abb80a791eba8a9d26978f2b88895a67ec5ec393663bc15692c3"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/structural_connections_C04_R05.glb",
+      "bytes": 68447104,
+      "sha256": "f1d4f464b990772906bb10bb4263df0c5fd31fc8752018b76ca1cb6036106d12"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/structural_connections_C04_R05.step",
+      "bytes": 33152193,
+      "sha256": "d140e9e64f1777a1b43c551539f276cb8b48f2337b20db9721c2c717aab3a24e"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/structural_connections_C04_R05_manifest.json",
+      "bytes": 139991,
+      "sha256": "0e925530affc29562a8c165fe87f6e6421f18098d3edfca5f010ddb0c4876dca"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/upper_middle_miter_C04_R01.glb",
+      "bytes": 507872,
+      "sha256": "62a910ecfd75c45a8d70141c3dc8a490e1aaea431471e095e127bb42a748edab"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/upper_middle_miter_C04_R01.step",
+      "bytes": 597677,
+      "sha256": "634e5431dd2ae4821005a1fc30c58e65c84911e742f14d1b073d27a53096a729"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/upper_wishbone_miter_C04_R01.glb",
+      "bytes": 1030696,
+      "sha256": "b0aaeec860abb2245d87825a9a49affda7ed42668ce049a5efbc89c24507c1c2"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/upper_wishbone_miter_C04_R01.step",
+      "bytes": 854667,
+      "sha256": "daefb1ed82e544191100bbf1ab90a7defad48f46224237d95e4154946f5b61d8"
+    },
+    {
+      "path": "mechanical/connection_completion_C04/write_connected_contract.py",
+      "bytes": 5002,
+      "sha256": "72f9a1dcadc5a4aaacff5f8e46c56d89363af740c839c1fc28d1007d320e8f5d"
+    },
+    {
+      "path": "mechanical/generate_cad.py",
+      "bytes": 11452,
+      "sha256": "fddfede2e7e8c0c388542ab6a9a99983cfaaf7b10b84101688f80f3d62801b10"
+    },
+    {
+      "path": "mechanical/running_gear_C02/generate_interfaces.py",
+      "bytes": 10575,
+      "sha256": "22510dff8054a7f68744ffc8e89e0e1cf046d0e8318cc3f19d0bdd841606101f"
+    },
+    {
+      "path": "mechanical/running_gear_C02/inner_backing_C02_R01.glb",
+      "bytes": 172836,
+      "sha256": "930338238b04dcaeb40fd6433c1b9210c625f909b02967696005ee278dfa4a2d"
+    },
+    {
+      "path": "mechanical/running_gear_C02/inner_backing_C02_R01.step",
+      "bytes": 34678,
+      "sha256": "c735a886ec4bc576074a887053ee3f928866e8b8e1193fe271c754b624bcff09"
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_clamp_C02_R01.glb",
+      "bytes": 619728,
+      "sha256": "0733f321ab185469d91576bf57e3c5ff94e738bdbca02c2a11cd5c9e0e97825a"
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_clamp_C02_R01.step",
+      "bytes": 296231,
+      "sha256": "4966ddd60458e28ce31150ebe015c6103796916f45f3039680978f3c96dd62ec"
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_hardware_C02_R01.glb",
+      "bytes": 1275588,
+      "sha256": "4ea6bb8537b4f436d9f2d49140dfae25be1d0ac5a322a7c0fd9a4bff123c0edc"
+    },
+    {
+      "path": "mechanical/running_gear_C02/stationary_hardware_C02_R01.step",
+      "bytes": 417842,
+      "sha256": "e357a7e909bdff4ba8591b7a77e3e8759d3b62ccad917cf15ea5dc6503386d6f"
+    },
+    {
+      "path": "mechanical/running_gear_C02/upright_pins_C02_R02.glb",
+      "bytes": 287492,
+      "sha256": "af742a84fa417480c90e3eb48d60c1b9b247d695900d24f9e870370e77364c39"
+    },
+    {
+      "path": "mechanical/running_gear_C02/upright_pins_C02_R02.step",
+      "bytes": 74149,
+      "sha256": "68261ecda080aba0dc598cdfbe9a054fa6e29ed35716974e9d2e4d15a2cf0b62"
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_front_pin_C03_R11.glb",
+      "bytes": 137580,
+      "sha256": "8c842dd015c3357b300aaf72f311afa473676859f5a62d5340365a0d40e765fb"
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_front_pin_C03_R11.step",
+      "bytes": 39415,
+      "sha256": "5148c694a806110cb1c8fe72fe90839669e2b10bcaa77ad80856c104c0fdf904"
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_rear_pin_C03_R11.glb",
+      "bytes": 137576,
+      "sha256": "eec66093e9c70226e0f5ea6b4d84c54930667e72594773c0b0e8556712c254ac"
+    },
+    {
+      "path": "mechanical/running_gear_C03/actuator_rear_pin_C03_R11.step",
+      "bytes": 39417,
+      "sha256": "6b22c55adde46ed2680df7085e0dffe13b5e1e02006a5294e1e65853a1bfbd4c"
+    },
+    {
+      "path": "mechanical/running_gear_C03/generate_rack_R11.py",
+      "bytes": 5407,
+      "sha256": "2698ec32d1d55ca2d9f67cb21c071d77cde13e209f3f154a93af09235ab5c473"
+    },
+    {
+      "path": "mechanical/running_gear_C03/housing_retainer_C03_R01.glb",
+      "bytes": 256540,
+      "sha256": "9782214449045e411c5f4d60185f43e6de46b611d80e9073e8f382dd2fba6a11"
+    },
+    {
+      "path": "mechanical/running_gear_C03/housing_retainer_C03_R01.step",
+      "bytes": 31132,
+      "sha256": "be6550a5d18a7b889c89857c6a24e3b772f0895b3873f0d33d787893b0c5f911"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_carriage_C03_R11.glb",
+      "bytes": 560232,
+      "sha256": "d095b88863f148cf509e8c11d5571e9ee581a49600480b0fbd4d0feb53710627"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_carriage_C03_R11.step",
+      "bytes": 480090,
+      "sha256": "b9210c0e4af137bcf7ec77eeeb5942fe8c06db223492e0fcea46366cc55d745c"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_crossbeam_C03_R11.glb",
+      "bytes": 489672,
+      "sha256": "2f69356250943daaf036be1c317233eb5eff6fc5e52088ad46f6dd62af3b6fae"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_crossbeam_C03_R11.step",
+      "bytes": 269965,
+      "sha256": "0bba7a20fbc3259788ba6f1c7146c7a7a39dc3dae6dcebaec495b98485c89a4e"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_mount_hardware_C03_R03.glb",
+      "bytes": 2085192,
+      "sha256": "b128eaaa6d71372936f87d09e67a66551cc91ed4ccef76d129147b3e4853a629"
+    },
+    {
+      "path": "mechanical/running_gear_C03/rack_mount_hardware_C03_R03.step",
+      "bytes": 627442,
+      "sha256": "d0ea30be67428bb3bba7d0da283fc02bdae8c01a2ff4b5799fde816aa5d58957"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_left_C03_R03.glb",
+      "bytes": 790436,
+      "sha256": "1ee99e446cd1ceee131bd1273a80b39a093e8063ab1fff0ac3f97d041eda200b"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_left_C03_R03.step",
+      "bytes": 308952,
+      "sha256": "4a2cf4b57f1e1ee32a47bd45d383487d1414a7d14280b256a60e42514ec62fa5"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_right_C03_R03.glb",
+      "bytes": 790440,
+      "sha256": "c67fc2d7630e248ff3d5dc5c4b6c03622da003ff6d65dc79166dc2719d44b407"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_front_right_C03_R03.step",
+      "bytes": 309552,
+      "sha256": "d1101faea8741ba4a896c42635ee0de1a7a3ca1a6246cd661c4fb299e0dc338d"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_left_C03_R03.glb",
+      "bytes": 790436,
+      "sha256": "38f3841c99c34fa9a23f641e5b49af1cec5c7ec147fe038cbfb9ba9516edb0aa"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_left_C03_R03.step",
+      "bytes": 309218,
+      "sha256": "13752d447f94cd9cd5e2babf28cf19cb80718ddb8e30a18ee1ebfd54ca27b95a"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_right_C03_R03.glb",
+      "bytes": 790440,
+      "sha256": "2c42a44ef367ea9eb816f9cf18f699aba9404355006d9eee4807d4e80924ff8f"
+    },
+    {
+      "path": "mechanical/running_gear_C03/stationary_clamp_rear_right_C03_R03.step",
+      "bytes": 310582,
+      "sha256": "3d67bdf8caa1c51133528d1d7cdd5c9f9254dd06a2c541f1e40503389f22b8fb"
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_clevis_pin_C03_R01.glb",
+      "bytes": 141120,
+      "sha256": "17b8d919ed5c0f6047ef3d269cd59db648db69bedfea00c54de63546df54d483"
+    },
+    {
+      "path": "mechanical/running_gear_C03/tie_clevis_pin_C03_R01.step",
+      "bytes": 41722,
+      "sha256": "5de61d920b6e33dded533be78777ef4da4c079d3ba88dcb4dbc40694b24818bb"
+    }
+  ]
+}

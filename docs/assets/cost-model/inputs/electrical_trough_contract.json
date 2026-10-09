@@ -1,0 +1,563 @@
+{
+  "revision": "E04",
+  "changes": [
+    {
+      "action": "replace",
+      "name": "cable_duct_floor_1"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_1_400"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_1_484"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_1_470"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_1_546"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_1_rear_welded_support"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_1_front_welded_support"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_floor_2"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_2_400"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_2_484"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_2_470"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_2_546"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_2_rear_welded_support"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_2_front_welded_support"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_floor_3"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_3_400"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_3_484"
+    },
+    {
+      "action": "remove",
+      "name": "cable_duct_side_3_470"
+    },
+    {
+      "action": "add",
+      "name": "cable_duct_side_3_546"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_3_rear_welded_support"
+    },
+    {
+      "action": "replace",
+      "name": "cable_duct_3_front_welded_support"
+    },
+    {
+      "action": "add",
+      "name": "QB2_partition_gland_366.5_53111020_body"
+    },
+    {
+      "action": "add",
+      "name": "QB2_partition_gland_366.5_53119020_locknut"
+    },
+    {
+      "action": "add",
+      "name": "QB2_partition_gland_443.5_53111020_body"
+    },
+    {
+      "action": "add",
+      "name": "QB2_partition_gland_443.5_53119020_locknut"
+    }
+  ],
+  "welded_connections": [
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_484",
+      "seam": "690 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_546",
+      "seam": "690 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "rear_bulkhead_3mm",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "cable_duct_floor_1",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "controller_battery_partition",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "cable_duct_floor_1",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_484",
+      "seam": "650 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_546",
+      "seam": "650 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "controller_battery_partition",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "cable_duct_floor_2",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "battery_tool_partition",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "cable_duct_floor_2",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_484",
+      "seam": "960 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_546",
+      "seam": "960 mm longitudinal contact edge; proposed same-alloy seam weld.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "battery_tool_partition",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "cable_duct_floor_3",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "arm_facing_bulkhead_3mm",
+      "seam": "62\u00d73 mm shelf edge plus two24\u00d73 mm gusset roots; source-material contact must pass after SO01.",
+      "strength_qualified": false
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "cable_duct_floor_3",
+      "seam": "25\u00d762 mm bearing overlap plus edge welds.",
+      "strength_qualified": false
+    }
+  ],
+  "partition_hole_cutters": [
+    {
+      "id": "QB2_partition_gland_366.5",
+      "target_part": "controller_battery_partition",
+      "axis_C_mm": [
+        -1141.5,
+        366.5,
+        182.25
+      ],
+      "direction_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 20.2,
+      "cut_x_mm": [
+        -1144,
+        -1139
+      ],
+      "gland": "LAPP53111020",
+      "nut": "LAPP53119020",
+      "gland_axis_toward_cable_C": [
+        -1,
+        0,
+        0
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "physical_patch_applied": false
+    },
+    {
+      "id": "QB2_partition_gland_443.5",
+      "target_part": "controller_battery_partition",
+      "axis_C_mm": [
+        -1141.5,
+        443.5,
+        182.25
+      ],
+      "direction_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 20.2,
+      "cut_x_mm": [
+        -1144,
+        -1139
+      ],
+      "gland": "LAPP53111020",
+      "nut": "LAPP53119020",
+      "gland_axis_toward_cable_C": [
+        -1,
+        0,
+        0
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "physical_patch_applied": false
+    }
+  ],
+  "partition_trunk_slots": [
+    {
+      "target_part": "controller_battery_partition",
+      "center_C_mm": [
+        -1141.5,
+        515,
+        273
+      ],
+      "size_xyz_mm": [
+        10,
+        64,
+        42
+      ],
+      "purpose": "Aligned open-trough passage, lower edgeZ252 above support weld-rootZ250. Edge stiffness, weather isolation and grommet finish not released."
+    },
+    {
+      "target_part": "battery_tool_partition",
+      "center_C_mm": [
+        -458.5,
+        515,
+        273
+      ],
+      "size_xyz_mm": [
+        10,
+        64,
+        42
+      ],
+      "purpose": "Aligned open-trough passage, lower edgeZ252 above support weld-rootZ250. Edge stiffness, weather isolation and grommet finish not released."
+    }
+  ],
+  "parts": [
+    {
+      "name": "cable_duct_floor_1",
+      "bounds_mm": [
+        -1863.0000001,
+        483.9999999,
+        249.9999999,
+        -1172.9999999,
+        546.0000001,
+        252.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_1_484",
+      "bounds_mm": [
+        -1863.0000001,
+        482.9999999,
+        251.9999999,
+        -1172.9999999,
+        485.0000001,
+        292.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_1_546",
+      "bounds_mm": [
+        -1863.0000001,
+        544.9999999,
+        251.9999999,
+        -1172.9999999,
+        547.0000001,
+        292.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_1_rear_welded_support",
+      "bounds_mm": [
+        -1897.0000001,
+        483.9999999,
+        222.9999999,
+        -1837.9999999,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_1_front_welded_support",
+      "bounds_mm": [
+        -1198.0000001,
+        483.9999999,
+        222.9999999,
+        -1142.9999999,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_floor_2",
+      "bounds_mm": [
+        -1125.0000001,
+        483.99999989999986,
+        249.9999998999999,
+        -474.99999989999986,
+        546.0000001000001,
+        252.0000001000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_2_484",
+      "bounds_mm": [
+        -1125.0000001,
+        482.99999989999986,
+        251.9999998999999,
+        -474.99999989999986,
+        485.00000010000014,
+        292.00000010000014
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_2_546",
+      "bounds_mm": [
+        -1125.0000001,
+        544.9999998999999,
+        251.9999998999999,
+        -474.99999989999986,
+        547.0000001000001,
+        292.00000010000014
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_2_rear_welded_support",
+      "bounds_mm": [
+        -1140.0000001,
+        483.9999999,
+        222.9999999,
+        -1099.9999999,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_2_front_welded_support",
+      "bounds_mm": [
+        -500.0000001,
+        483.9999999,
+        222.9999999,
+        -459.9999999,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_floor_3",
+      "bounds_mm": [
+        -440.0000001,
+        483.9999999,
+        249.9999999,
+        520.0000001,
+        546.0000001,
+        252.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_3_484",
+      "bounds_mm": [
+        -440.0000001,
+        482.9999999,
+        251.9999999,
+        520.0000001,
+        485.0000001,
+        292.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_side_3_546",
+      "bounds_mm": [
+        -440.0000001,
+        544.9999999,
+        251.9999999,
+        520.0000001,
+        547.0000001,
+        292.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_3_rear_welded_support",
+      "bounds_mm": [
+        -457.0000001,
+        483.9999999,
+        222.9999999,
+        -414.9999999,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "cable_duct_3_front_welded_support",
+      "bounds_mm": [
+        494.9999999,
+        483.9999999,
+        222.9999999,
+        547.0000001,
+        546.0000001,
+        250.0000001
+      ],
+      "solids": 1
+    },
+    {
+      "name": "QB2_partition_gland_366.5_53111020_body",
+      "bounds_mm": [
+        -1171.0824765286486,
+        352.6175234713513,
+        168.36752347135135,
+        -1133.9371219989323,
+        380.3824765286487,
+        196.13247652864865
+      ],
+      "solids": 1
+    },
+    {
+      "name": "QB2_partition_gland_366.5_53119020_locknut",
+      "bounds_mm": [
+        -1140.0628780010677,
+        352.9927264335567,
+        167.3999999,
+        -1133.9371219989323,
+        380.0072735664433,
+        197.10181857795294
+      ],
+      "solids": 1
+    },
+    {
+      "name": "QB2_partition_gland_443.5_53111020_body",
+      "bounds_mm": [
+        -1171.0824765286486,
+        429.6175234713513,
+        168.36752347135135,
+        -1133.9371219989323,
+        457.3824765286487,
+        196.13247652864865
+      ],
+      "solids": 1
+    },
+    {
+      "name": "QB2_partition_gland_443.5_53119020_locknut",
+      "bounds_mm": [
+        -1140.0628780010677,
+        429.9927264335567,
+        167.3999999,
+        -1133.9371219989323,
+        457.0072735664433,
+        197.10181857795294
+      ],
+      "solids": 1
+    }
+  ],
+  "geometry": {
+    "source": "Original project body geometry; LAPP53111020/53119020 public dimensions",
+    "vehicle_placed": true,
+    "files": [
+      "aligned_trough_and_glands_E04.glb",
+      "aligned_trough_and_glands_E04.step"
+    ],
+    "original_named_parts": 19,
+    "geometry_valid": true,
+    "source_CAD_read": false,
+    "supplier_contours_exact": false,
+    "electrical_qualified": false,
+    "actual_model_bounds_mm": [
+      -1897.0000001,
+      352.6175234713513,
+      167.3999999,
+      547.0000001,
+      547.0000001000001,
+      292.00000010000014
+    ]
+  },
+  "gland_source_urls": [
+    "https://products.lappgroup.com/fileadmin/documents/technische_doku/datenblaetter/skintop/DB53111000EN.pdf",
+    "https://imager.lapp.com/e/lapp/IxNMTvvLiYtWEfUsJRUaNg~~/DB53119000EN.pdf"
+  ],
+  "installed_clamp_or_IP_tested": false,
+  "full_cable_continuity": false,
+  "freeze": true,
+  "freeze_note": "Geometry pinned after actual body/40-hole deck/ABB/local lead checks and independent SO02_E04P 78-pose R13 motion screen. Named partition patches exported by body owner; no full cable continuity or electrical qualification claim.",
+  "independent_body_motion_report": "body-power/shock-opening-study/partition_trough_check_SO02_E04P.json"
+}

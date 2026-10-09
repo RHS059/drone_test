@@ -1,0 +1,321 @@
+{
+  "revision": "C04_R03 directdrive developmentassembly",
+  "nodes": [
+    {
+      "node": "drive_stator_external_C04_R02",
+      "group": "steer",
+      "source_basis": "Original source-dimensioned external approximation: gear envelope \u00d8206, frame248x206x18 with original local mounting pads, verified holes and172pilot; motor \u00d8140 envelope and rear322 are numeric source facts. Not vendor topology, internal details or mass.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -124.0000001,
+        -103.0000001,
+        24.0,
+        124.0000001,
+        103.0000001,
+        322.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "42df38247a514dcc70e286a8343f5680d072b270dafa51c9b70a51bb7a515e8a"
+    },
+    {
+      "node": "drive_output_hub_C04_R02",
+      "group": "spin",
+      "source_basis": "Original external output interface: \u00d8166 flange, \u00d894pilot, wheel plane0. Purchased internal load path is within the commercial drive, not modeled.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -83.0,
+        -83.0,
+        -4.7,
+        83.0,
+        83.0,
+        24.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "cd5af41c6fe8ac2603d37789e86c62c9ae27d0f6e7905c62c90df11724fb255f"
+    },
+    {
+      "node": "drive_input_stud_0_C04_R02",
+      "group": "spin",
+      "source_basis": "M16x1.5 source stud,30mm protrusion. Nominal thread major cylinder; rotor clock selected to phase0, independent of stator.",
+      "solid_count": 1,
+      "bounds_mm": [
+        62.0,
+        -8.0,
+        -30.0,
+        78.0,
+        8.0,
+        0.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "d1a87794b161b84c92b09c28df0fd71bcfc3fa9925ac35a301888e729fc99fb7"
+    },
+    {
+      "node": "drive_input_stud_1_C04_R02",
+      "group": "spin",
+      "source_basis": "M16x1.5 source stud,30mm protrusion. Nominal thread major cylinder; rotor clock selected to phase0, independent of stator.",
+      "solid_count": 1,
+      "bounds_mm": [
+        13.631189606246323,
+        58.57395614066074,
+        -30.0,
+        29.631189606246323,
+        74.57395614066074,
+        0.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "6c8e3ccc78e2034640c14be441805d84c18bfa66c3d6207e0887e8411d3a3f03"
+    },
+    {
+      "node": "drive_input_stud_2_C04_R02",
+      "group": "spin",
+      "source_basis": "M16x1.5 source stud,30mm protrusion. Nominal thread major cylinder; rotor clock selected to phase0, independent of stator.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -64.63118960624632,
+        33.14496766047313,
+        -30.0,
+        -48.631189606246316,
+        49.14496766047313,
+        0.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "7166721fa50363cb38ca3ce51f24d34a7e8d70664a4b812d7ccacaaa6018a25c"
+    },
+    {
+      "node": "drive_input_stud_3_C04_R02",
+      "group": "spin",
+      "source_basis": "M16x1.5 source stud,30mm protrusion. Nominal thread major cylinder; rotor clock selected to phase0, independent of stator.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -64.63118960624632,
+        -49.144967660473114,
+        -30.0,
+        -48.63118960624633,
+        -33.144967660473114,
+        0.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "2cca507fdef13d9b327289da5f51146ac6bac95f10cc886ff39126e149ab2e35"
+    },
+    {
+      "node": "drive_input_stud_4_C04_R02",
+      "group": "spin",
+      "source_basis": "M16x1.5 source stud,30mm protrusion. Nominal thread major cylinder; rotor clock selected to phase0, independent of stator.",
+      "solid_count": 1,
+      "bounds_mm": [
+        13.631189606246306,
+        -74.57395614066075,
+        -30.0,
+        29.631189606246306,
+        -58.573956140660755,
+        0.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "b4e88aa10672a2300b0e709a1afec698a22455b7addb78d2dcf288276a216e15"
+    },
+    {
+      "node": "drive_mount_M10x25_0_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -121.0,
+        -8.0,
+        114.0,
+        -105.0,
+        8.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "d15281396a187ac2854374aa6a1facb6c1448d92b891c842a3d8f5ae4c35fd4e"
+    },
+    {
+      "node": "drive_mount_M10x25_1_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        105.0,
+        -8.0,
+        114.0,
+        121.0,
+        8.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "5484033a4deadd0dc0f973e2896fbcaf899e1ab685ebea019ddcfea0d9157dcf"
+    },
+    {
+      "node": "drive_mount_M10x25_2_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -109.823376,
+        -57.0,
+        114.0,
+        -93.823376,
+        -41.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "3ff0a33a08d3a23466f3c0b910d54bd3561f752ee15f666be22d0da92e86e01d"
+    },
+    {
+      "node": "drive_mount_M10x25_3_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        93.823376,
+        -57.0,
+        114.0,
+        109.823376,
+        -41.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "402c1a506ebef0d1a379df0212652d443edbc591a9084ac9258dcbc4ff0048fe"
+    },
+    {
+      "node": "drive_mount_M10x25_4_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -109.823376,
+        41.0,
+        114.0,
+        -93.823376,
+        57.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "9bbd5b215e80827f50ea338ccdc7594a084c9c64a0f83e495fc86b6b60c93985"
+    },
+    {
+      "node": "drive_mount_M10x25_5_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        93.823376,
+        41.0,
+        114.0,
+        109.823376,
+        57.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "8a78d166b10b273ef484fbf99fe03dfddc8b2d4b8ecd5d420543e0eee594a689"
+    },
+    {
+      "node": "drive_mount_M10x25_6_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        -74.992537,
+        83.0,
+        114.0,
+        -58.992537,
+        99.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "c555edd9f5c80fcb305a548f48c2e0d7781ae20e3356a39151279f603478f683"
+    },
+    {
+      "node": "drive_mount_M10x25_7_C04_R02",
+      "group": "steer",
+      "source_basis": "ISO4762/DIN912 nominal M10x25 socket screw,head\u00d816x10,8mmkey. 7mm sourceflange grip+18mm carrier engagement. Threaded mating holes require finished specification; no torque/grade approval.",
+      "solid_count": 1,
+      "bounds_mm": [
+        58.992537,
+        83.0,
+        114.0,
+        74.992537,
+        99.0,
+        149.0
+      ],
+      "mass_kg": null,
+      "valid": true,
+      "source_sha256": "43a44c6aa1832ad47e2ff78b638d522a8ecb8b38ffdb227888159accb6a6961e"
+    },
+    {
+      "node": "direct_wheel_nut_0_C04_R01",
+      "group": "spin",
+      "mass_kg": null,
+      "source": "direct_wheel_nuts_C04_R01.step",
+      "source_transform": "Rx180 fromoutboardnutframe toinboarddriveframe"
+    },
+    {
+      "node": "direct_wheel_nut_1_C04_R01",
+      "group": "spin",
+      "mass_kg": null,
+      "source": "direct_wheel_nuts_C04_R01.step",
+      "source_transform": "Rx180 fromoutboardnutframe toinboarddriveframe"
+    },
+    {
+      "node": "direct_wheel_nut_2_C04_R01",
+      "group": "spin",
+      "mass_kg": null,
+      "source": "direct_wheel_nuts_C04_R01.step",
+      "source_transform": "Rx180 fromoutboardnutframe toinboarddriveframe"
+    },
+    {
+      "node": "direct_wheel_nut_3_C04_R01",
+      "group": "spin",
+      "mass_kg": null,
+      "source": "direct_wheel_nuts_C04_R01.step",
+      "source_transform": "Rx180 fromoutboardnutframe toinboarddriveframe"
+    },
+    {
+      "node": "direct_wheel_nut_4_C04_R01",
+      "group": "spin",
+      "mass_kg": null,
+      "source": "direct_wheel_nuts_C04_R01.step",
+      "source_transform": "Rx180 fromoutboardnutframe toinboarddriveframe"
+    }
+  ],
+  "geometry_sources": [
+    "generate_drive_connections_R02.py",
+    "generate_direct_wheel_nuts.py",
+    "assemble_direct_drive_R03.py"
+  ],
+  "wheel": {
+    "candidate": "Jantsa10005240/TrelleborgSK90012-16.5",
+    "center_C_left_mm": [
+      0,
+      998,
+      -250
+    ],
+    "mountplane_C_left_Y_mm": 928,
+    "offset_mm": -70,
+    "pilot_engagement_mm": 4.7,
+    "adapter_present": false
+  },
+  "assembly_transform": "sourcewheelplanez0,+Zinboard; Rx90 thenC(0,928,-250); rightproperRzpi,stationtranslation; statorfollowsupright,hub/studs/nutsfollowwheelspin",
+  "motor_geometry": "Original external dimensional representation; no vendor STEP or derivative geometry, no invented internals",
+  "source_gates": [
+    "Exact rim section and nut seat exterior undisclosed",
+    "B14 wheel designation/M16 motor stud application requires supplier approval",
+    "Thread tolerances, preload/torque, grade, bearing moment and motor thermal duty unqualified"
+  ],
+  "validation_scope": "Component validity and local nominal nut/seat contact only; new complete assembly motion/collision/retention tests pending",
+  "fabrication_released": false
+}

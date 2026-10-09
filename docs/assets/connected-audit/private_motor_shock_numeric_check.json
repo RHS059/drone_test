@@ -1,0 +1,185 @@
+{
+  "scope": "Local private supplier motor fit versus rejected/development original R05 spring module. This is diagnostic only and must be repeated on the eventual final revision. No supplier geometry or derivative is saved or published.",
+  "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+  "original_spring_module_sha256": "7a3a82c738d86fd23630814dbc82cd4df16ed6c1aa87bedf8f86fc51ea26b466",
+  "pairs": [
+    {
+      "original_module_solid_index": 2,
+      "original_part_bounds_C_mm": [
+        -27.0,
+        548.4158195537558,
+        -173.11834364569756,
+        27.0,
+        685.9016333454742,
+        129.80186870283757
+      ],
+      "intersection_mm3": 10658.40134597478,
+      "private_part_numeric_hits": [
+        {
+          "private_component_index": 1,
+          "intersection_mm3": 10575.922560922801
+        },
+        {
+          "private_component_index": 24,
+          "intersection_mm3": 3.533818917976788
+        },
+        {
+          "private_component_index": 45,
+          "intersection_mm3": 3.5338189181060744
+        },
+        {
+          "private_component_index": 162,
+          "intersection_mm3": 33.317641351667284
+        },
+        {
+          "private_component_index": 239,
+          "intersection_mm3": 42.093505864230316
+        }
+      ]
+    },
+    {
+      "original_module_solid_index": 3,
+      "original_part_bounds_C_mm": [
+        -26.0,
+        635.1122004155429,
+        -187.2069178237495,
+        26.0,
+        689.2302466418371,
+        -157.9712811365505
+      ],
+      "intersection_mm3": 10779.487515897219,
+      "private_part_numeric_hits": [
+        {
+          "private_component_index": 1,
+          "intersection_mm3": 10687.46898666338
+        },
+        {
+          "private_component_index": 24,
+          "intersection_mm3": 17.94652044221061
+        },
+        {
+          "private_component_index": 45,
+          "intersection_mm3": 17.946620221977035
+        },
+        {
+          "private_component_index": 162,
+          "intersection_mm3": 56.12538856965232
+        }
+      ]
+    },
+    {
+      "original_module_solid_index": 5,
+      "original_part_bounds_C_mm": [
+        -7.9375,
+        618.3816650584723,
+        -317.062471651269,
+        7.9375,
+        712.1877865259977,
+        -48.99542121616104
+      ],
+      "intersection_mm3": 17150.822696332474,
+      "private_part_numeric_hits": [
+        {
+          "private_component_index": 0,
+          "intersection_mm3": 28.74954929093817
+        },
+        {
+          "private_component_index": 1,
+          "intersection_mm3": 17041.004242592964
+        },
+        {
+          "private_component_index": 175,
+          "intersection_mm3": 1.0255124092729604
+        },
+        {
+          "private_component_index": 176,
+          "intersection_mm3": 20.55701204710934
+        },
+        {
+          "private_component_index": 195,
+          "intersection_mm3": 36.59638075536711
+        },
+        {
+          "private_component_index": 200,
+          "intersection_mm3": 22.889999236825446
+        }
+      ]
+    },
+    {
+      "original_module_solid_index": 6,
+      "original_part_bounds_C_mm": [
+        -15.875,
+        693.08185597806,
+        -386.55,
+        15.875,
+        739.3499999999999,
+        -311.3644611083
+      ],
+      "intersection_mm3": 1976.4298758883208,
+      "private_part_numeric_hits": [
+        {
+          "private_component_index": 1,
+          "intersection_mm3": 1976.4298758883208
+        }
+      ]
+    },
+    {
+      "original_module_solid_index": 7,
+      "original_part_bounds_C_mm": [
+        -56.0000001,
+        656.6667907584903,
+        -381.5,
+        56.0000001,
+        768.548229869,
+        -298.12515578058617
+      ],
+      "intersection_mm3": 6149.208672951048,
+      "private_part_numeric_hits": [
+        {
+          "private_component_index": 1,
+          "intersection_mm3": 6144.541719907037
+        },
+        {
+          "private_component_index": 177,
+          "intersection_mm3": 4.1183803152116365
+        },
+        {
+          "private_component_index": 178,
+          "intersection_mm3": 0.5485727287993636
+        }
+      ]
+    }
+  ],
+  "qualification": false,
+  "motor_validity_recheck": "Whole-compound validity not repeated in this bounded diagnostic; source was previously imported successfully in CQ2.7.0/OCP7.8.1.1.",
+  "motor_solid_count": 240,
+  "spring_module_solid_count": 19,
+  "diagnostic_stopping_condition": "Original centerline rejected once exact positive-overlap witnesses were established; further helical-spring Booleans add no acceptance decision.",
+  "original_centerline_rejected": true,
+  "confirmed_original_module_collision_solids": 5,
+  "passed_no_positive_overlap": false,
+  "not_all_module_pairs_evaluated": true,
+  "smaller_offset_boolean_cases": "Not reached; \u2212150/\u2212180/\u2212200/\u2212220 exact offset cases remain untested. Continuous actual-source X-bound proof for \u2212220/\u2212240 is a separate active audit.",
+  "import_environment": {
+    "cadquery_version": "2.7.0",
+    "ocp_version": "7.8.1.1",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "imported_solid_count": 240,
+    "orientation_counts": {
+      "TopAbs_Orientation.TopAbs_FORWARD": 240
+    },
+    "negative_volume_solids": 0,
+    "source_product_count_is_not_imported_solid_count": true,
+    "private_source_sha256": "ea7ebeb56a3c70e91fc88a347be1b035bd4aa68198d0a53a015d9ecc5bc26b9c",
+    "source_product_count": 1,
+    "source_manifold_solid_brep_entities": 12,
+    "source_brep_with_voids_entities": 1,
+    "source_closed_shell_entities": 244,
+    "vendor_part_count_inferred": false,
+    "count_note": "Kernel-imported solid decomposition, not unique vendor parts. The preserved final Colab output independently records the same source SHA, CadQuery2.7.0 and240 valid solids. Earlier unsupported verbal30 count is superseded; no duplication explanation is inferred.",
+    "reconciled_prior_numeric_report_sha256": "13000ecd41dd7a0ed304b880a326c7ab1e702a0c0f26f3599603c6d7dcf76386",
+    "prior_CadQuery_version": "2.7.0",
+    "prior_all_solids_valid": true
+  },
+  "fit_count_scope": "Private source solid-decomposition tests, not OEM part enumeration; volume sums are sums across imported components."
+}

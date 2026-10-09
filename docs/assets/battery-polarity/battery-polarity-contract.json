@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "revision": "BA02_POLARITY_R01",
+  "created_utc": "2026-10-09",
+  "scope": "Source-verified functional polarity and viewer semantics only. Frozen BA02 geometry, archive, source names and placement are unchanged.",
+  "source": {
+    "manufacturer": "Victron Energy",
+    "model": "LiFePO4 Battery 51.2 V / 100 Ah NG",
+    "part_number": "BAT548110620",
+    "document_title": "Dimension Drawing - LiFePO4 (NG)",
+    "url": "https://www.victronenergy.com/upload/documents/LiFePO4-Battery-51.2V100Ah-NG.pdf",
+    "sha256": "d153636d0bb1cb84ea4c3c339746618c97fd02859398404febbc8a92a2a27d4b",
+    "page": 1,
+    "view": "Top plan view, positive mark at drawing-left and negative mark at drawing-right.",
+    "inspection": "Official PDF hash checked and rendered marks visually inspected on 2026-10-09. Vendor document/image is not included in this package.",
+    "drawing_width_mm": 647.6,
+    "fitting_from_drawing_left_mm": 376.3,
+    "terminal_pitch_mm": 550.5,
+    "depth_mm": 161.5,
+    "terminal_from_depth_edge_mm": 26.7,
+    "drawing_terminal_marks": {
+      "left": "positive",
+      "right": "negative"
+    }
+  },
+  "datum": {
+    "frame": "BA02 source CAD frame C, millimetres, Z up; GLB stores metres.",
+    "pack_centers_C_x_mm": [
+      -975,
+      -625
+    ],
+    "pack_center_C_y_mm": 0,
+    "installed_fitting_C_y_mm": -52.5,
+    "drawing_right_to_C_y_sign": -1,
+    "terminal_x_relative_to_pack_center_mm": -54.05,
+    "terminal_axis_abs_C_y_mm": 275.25,
+    "terminal_top_C_z_mm": 169.6,
+    "terminal_top_z_scope": "Preserved frozen BA02 conservative reservation height, not a new source-hardware or current-drawing height qualification.",
+    "terminal_position_note": "Use frozen symmetric 550.5 mm pitch / 2 = 275.25 mm. The source 48.5 mm end offset is rounded, differing by 0.05 mm; this correction does not rebuild geometry."
+  },
+  "derivation": [
+    "Drawing fitting offset from center = 376.3 - 647.6 / 2 = +52.5 mm, toward drawing-right.",
+    "Frozen BA02 fitting center is Y -52.5 mm. Therefore drawing-right maps to CAD -Y.",
+    "Positive mark is on drawing-left, so installed positive is Y +275.25 mm. Negative mark is on drawing-right, so installed negative is Y -275.25 mm.",
+    "Terminal depth offset gives X = cx - (161.5 / 2 - 26.7) = cx - 54.05 mm. Z 169.6 mm is preserved from frozen BA02.",
+    "Legacy node names assigned the opposite polarity. Resolve source aliases and use this source-verified functional map; cable continuity is not polarity evidence."
+  ],
+  "viewer_colors": {
+    "positive": "#e53935",
+    "negative": "#20252b",
+    "scope": "Semantic visualization colors selected for this correction; no assertion about physical terminal coating or insulation color."
+  },
+  "runtime_policy": {
+    "retain_source_node_names": true,
+    "label_field": "userData.label",
+    "display_label_field": "userData.displayLabel",
+    "functional_name_field": "userData.batteryPolarity.functionalName",
+    "source_alias_field": "userData.batteryPolarity.sourceNodeName",
+    "material_isolation": "Clone every corrected mesh material. Never recolor a shared original metal material.",
+    "geometry_change": false,
+    "transform_change": false
+  },
+  "terminals": [
+    {
+      "pack": 1,
+      "source_node_name": "BA02_pack_1_negative_M8_interface",
+      "legacy_name_polarity": "negative",
+      "functional_polarity": "positive",
+      "functional_name": "BA02_pack_1_positive_M8_interface_VERIFIED_R01",
+      "drawing_side": "left",
+      "symbol": "+",
+      "axis_top_C_mm": [
+        -1029.05,
+        275.25,
+        169.6
+      ],
+      "display_label": "Battery 1 positive (+) terminal interface; source-verified polarity, hardware/lug unqualified",
+      "color": "#e53935"
+    },
+    {
+      "pack": 1,
+      "source_node_name": "BA02_pack_1_positive_M8_interface",
+      "legacy_name_polarity": "positive",
+      "functional_polarity": "negative",
+      "functional_name": "BA02_pack_1_negative_M8_interface_VERIFIED_R01",
+      "drawing_side": "right",
+      "symbol": "-",
+      "axis_top_C_mm": [
+        -1029.05,
+        -275.25,
+        169.6
+      ],
+      "display_label": "Battery 1 negative (-) terminal interface; source-verified polarity, hardware/lug unqualified",
+      "color": "#20252b"
+    },
+    {
+      "pack": 2,
+      "source_node_name": "BA02_pack_2_negative_M8_interface",
+      "legacy_name_polarity": "negative",
+      "functional_polarity": "positive",
+      "functional_name": "BA02_pack_2_positive_M8_interface_VERIFIED_R01",
+      "drawing_side": "left",
+      "symbol": "+",
+      "axis_top_C_mm": [
+        -679.05,
+        275.25,
+        169.6
+      ],
+      "display_label": "Battery 2 positive (+) terminal interface; source-verified polarity, hardware/lug unqualified",
+      "color": "#e53935"
+    },
+    {
+      "pack": 2,
+      "source_node_name": "BA02_pack_2_positive_M8_interface",
+      "legacy_name_polarity": "positive",
+      "functional_polarity": "negative",
+      "functional_name": "BA02_pack_2_negative_M8_interface_VERIFIED_R01",
+      "drawing_side": "right",
+      "symbol": "-",
+      "axis_top_C_mm": [
+        -679.05,
+        -275.25,
+        169.6
+      ],
+      "display_label": "Battery 2 negative (-) terminal interface; source-verified polarity, hardware/lug unqualified",
+      "color": "#20252b"
+    }
+  ],
+  "fitting_source_nodes": [
+    "BA02_pack_1_central_vent_INTERFACE",
+    "BA02_pack_2_central_vent_INTERFACE"
+  ],
+  "not_closed": [
+    "Source terminal, recess, bolt and lug geometry/qualification",
+    "Electrical current paths or cable continuity",
+    "Fuses, BMS, isolation, controls, conductor selection and full harness",
+    "Battery height discrepancy and source geometry reconstruction",
+    "Vehicle operational or electrical safety qualification"
+  ],
+  "frozen_inputs_sha256": {
+    "build_strap_tray_BA02.py": "5dff0965a54a0d2ca701dbbdfa58cd7e968e629ae06576fb91bc72a137bb954c",
+    "original_battery_strap_tray_BA02_source_and_evidence.zip": "413d55e0e22ad12578526d0005766d8fd43baa43415442468682e819ffd893da",
+    "BA02/CHECKPOINT.json": "407fe3cbc234e0b3e5a16e48733155bd0c4ed90df14a5261c174137a773bd52b",
+    "BA02/README.md": "27b7e0bf1520a4e627e83a2e22a6e4807cb2508333d4c82b80f9d56145024861",
+    "BA02/battery_strap_tray_BA02.glb": "c702c13bf4c6067997a4f0415338709a83d2ceb39a73f565e10512bab958b1f6",
+    "BA02/battery_strap_tray_BA02.step": "b50cd237244c16cea9a1c0ba74af51bb8d4d876e3ae1587e2686fed07ae478c6",
+    "BA02/buckle_service_reservations_BA02.glb": "deca221d29e8e4aa318ad50b2a2cad185d536adbd0edde47d7e1dc715693a1d4",
+    "BA02/buckle_service_reservations_BA02.step": "8d82c033d853a0f4c9cdba6a3b511e3ded9c9dad0cfc82fadd6bb8a79d44c371",
+    "BA02/original_hardware_mass.csv": "bee8c9f61a3f792cd462f234227758c838362cfafd75b5e339f6f94c9160b837",
+    "BA02/replacement_addition_manifest.json": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224",
+    "BA02/representation_metadata_check.json": "7940df05ecd6f403bd6400430b7bef10d8514dcdefe6ca9798fcea396688ffb5",
+    "BA02/strap_captures_tray_section.png": "058cbd31f6f41496085f05990cd5c89bba69daff6c0764ef3d4680108163c2e9",
+    "BA02/strap_channel_closeup.png": "9a988a8e549636d774ae1cd5cf1e09ab260312fd2d1770eff880d5a7bc75e85b",
+    "BA02/strap_source_and_cost_record.json": "bd209098c7280e3653ce6094cbcdbe0bb66a500c2403fc4351c6e74977850c09",
+    "BA02/strap_terminal_route_plan.png": "22b133576516b8fc1e08e34cb75252faea14590e8379bf3e7c72012fcf78c03d",
+    "BA02/tray_M8_retention_section.png": "477b80c6d1c14899c4d08f20cd3fa3164e972488801d2fecd56273ac3d2e8c6e",
+    "BA02/verification.json": "c655c66f3c4b55e543472f3a72227f7b473b716d08f46e9f6b8fc8c10fd46953"
+  },
+  "gates": {
+    "polarity_source_verified": true,
+    "terminal_hardware_qualified": false,
+    "full_harness_complete": false,
+    "physical_electrical_continuity_verified": false
+  }
+}

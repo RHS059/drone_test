@@ -1,0 +1,211 @@
+{
+  "scope": "Frozen original guided R08 reusable component interfaces only. Tested source parts bind to frozen module source hashes. Complete offset supports, tire/linkages and vehicle are excluded. Nominal cylindrical thread equivalents, no helical threads/tolerances/strength qualification.",
+  "identity": [
+    {
+      "part": "guided_upper_carrier_C04_R07",
+      "sha256": "106d156c33859edf9fee213fe19b8165056aadb2d3f5cd202ac0ddbbcf96b9cb",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guided_lower_carrier_C04_R07",
+      "sha256": "c9e73788f6c70862e84049d431d001e9c311d5c9210e8e1b996b7dcb19687da8",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "bronze_telescoping_guide_C04_R07",
+      "sha256": "bc38c1b7783962fe9c481cb331dd9c8dc13024f383e890756e0e7ecda75cb3aa",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_retaining_M4x10_0_C04_R07",
+      "sha256": "dc93284042158765a957336a6da34167c8bd50c41de6dc30a63e15bfba203e31",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_retaining_M4x10_1_C04_R07",
+      "sha256": "2eb14f061938f5fa312468c99fa6fb7a1cdcd23323a29f5db1cfebeb16ba0551",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_retaining_M4x10_2_C04_R07",
+      "sha256": "b8a62711b41b30d613b950fca82a1e57301bc97d7b054ba3f614ee6662b31154",
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_retaining_M4x10_3_C04_R07",
+      "sha256": "30a9a487dabba01248d2447268554ed7f8f5e60d961aab153bc14cddcdbf6ab6",
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "retained_contacts": [
+    {
+      "pair": "lower carrier to guide flange",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 0 thread equivalent to lower carrier",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 0 head to guide flange",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 1 thread equivalent to lower carrier",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 1 head to guide flange",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 2 thread equivalent to lower carrier",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 2 head to guide flange",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 3 thread equivalent to lower carrier",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "M4 3 head to guide flange",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    }
+  ],
+  "actual_thread_faces": [
+    {
+      "index": 0,
+      "thread_equivalent_faces": [
+        {
+          "radius_mm": 2.0,
+          "zmin_mm": -55.0,
+          "zmax_mm": -49.0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "thread_equivalent_faces": [
+        {
+          "radius_mm": 2.0,
+          "zmin_mm": -55.0,
+          "zmax_mm": -49.0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "thread_equivalent_faces": [
+        {
+          "radius_mm": 2.0,
+          "zmin_mm": -55.0,
+          "zmax_mm": -49.0
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "thread_equivalent_faces": [
+        {
+          "radius_mm": 2.0,
+          "zmin_mm": -55.0,
+          "zmax_mm": -49.0
+        }
+      ]
+    }
+  ],
+  "thread_support_samples": [
+    {
+      "index": 0,
+      "samples": 60,
+      "misses": []
+    },
+    {
+      "index": 1,
+      "samples": 60,
+      "misses": []
+    },
+    {
+      "index": 2,
+      "samples": 60,
+      "misses": []
+    },
+    {
+      "index": 3,
+      "samples": 60,
+      "misses": []
+    }
+  ],
+  "guide_slide_and_stop_pairs": [
+    {
+      "eye_length_mm": 518.9,
+      "pair": "upper guide to moving bronze at 518.9",
+      "overlap_mm3": 5089.691116488297,
+      "distance_mm": 0.0
+    },
+    {
+      "eye_length_mm": 519.0,
+      "pair": "upper guide to moving bronze at 519.0",
+      "overlap_mm3": 5006.253557201584,
+      "distance_mm": 0.0
+    },
+    {
+      "eye_length_mm": 525.0,
+      "pair": "upper guide to moving bronze at 525.0",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "eye_length_mm": 530.319,
+      "pair": "upper guide to moving bronze at 530.319",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.09999999999983018
+    },
+    {
+      "eye_length_mm": 560.8942324538557,
+      "pair": "upper guide to moving bronze at 560.8942324538557",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.09999999999983043
+    },
+    {
+      "eye_length_mm": 586.827,
+      "pair": "upper guide to moving bronze at 586.827",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.09999999999982954
+    },
+    {
+      "eye_length_mm": 595.0,
+      "pair": "upper guide to moving bronze at 595.0",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "eye_length_mm": 595.1,
+      "pair": "upper guide to moving bronze at 595.1",
+      "overlap_mm3": 37.32212072465517,
+      "distance_mm": 0.0
+    }
+  ],
+  "nominal_contact_pass": true,
+  "thread_surrounding_support_pass": true,
+  "fabrication_or_operating_approval": false
+}

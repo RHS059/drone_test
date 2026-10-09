@@ -1,0 +1,677 @@
+{
+  "units": {
+    "STEP": "mm",
+    "GLB": "m"
+  },
+  "nodes": [
+    {
+      "node": "shock_upper_eye_interface_C04_R01",
+      "part": "shock_upper_eye_interface_C04_R01",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "shock_body",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "shock_body_topcap_C04_R01",
+      "part": "shock_body_topcap_C04_R01",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "shock_body",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "shock_body_barrel_C04_R01",
+      "part": "shock_body_barrel_C04_R01",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "shock_body",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "shock_body_gland_C04_R01",
+      "part": "shock_body_gland_C04_R01",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "shock_body",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guided_upper_carrier_C04_R07",
+      "part": "guided_upper_carrier_C04_R07",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "shock_body",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "shock_chromed_rod_C04_R01",
+      "part": "shock_chromed_rod_C04_R01",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "shock_lower_eye_interface_C04_R01",
+      "part": "shock_lower_eye_interface_C04_R01",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guided_lower_carrier_C04_R07",
+      "part": "guided_lower_carrier_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "catalog_spring_profile",
+      "part": "spring_Eibach1800_300_0200S_original_profile_C04_R08",
+      "origin_mm": [
+        0,
+        0,
+        170
+      ],
+      "motion_group": "spring_deformable",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "upper_clevis_sleeve_negative",
+      "part": "shock_clevis_reducer_sleeve_C04_R01",
+      "origin_mm": [
+        -32.25,
+        0.0,
+        0.0
+      ],
+      "motion_group": "upper_clevis",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "upper_clevis_sleeve_positive",
+      "part": "shock_clevis_reducer_sleeve_C04_R01",
+      "origin_mm": [
+        24.25,
+        0.0,
+        0.0
+      ],
+      "motion_group": "upper_clevis",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "upper_shared_pin",
+      "part": "shock_spring_shared_pin_C04_R03",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "upper_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "upper_external_washer",
+      "part": "shock_spring_external_washer_C04_R03",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "motion_group": "upper_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "upper_split_pin",
+      "part": "shock_spring_split_pin_C04_R03",
+      "origin_mm": [
+        36.75,
+        0.0,
+        0.0
+      ],
+      "motion_group": "upper_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "lower_clevis_sleeve_negative",
+      "part": "shock_clevis_reducer_sleeve_C04_R01",
+      "origin_mm": [
+        -32.25,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "lower_clevis",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "lower_clevis_sleeve_positive",
+      "part": "shock_clevis_reducer_sleeve_C04_R01",
+      "origin_mm": [
+        24.25,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "lower_clevis",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "lower_shared_pin",
+      "part": "shock_lower_service_pin_C04_R05",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "lower_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "lower_external_washer",
+      "part": "shock_lower_service_washer_C04_R05",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "lower_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "lower_split_pin",
+      "part": "shock_spring_split_pin_C04_R03",
+      "origin_mm": [
+        64.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "lower_pin",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "bronze_telescoping_guide_C04_R07",
+      "part": "bronze_telescoping_guide_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guide_retaining_M4x10_0_C04_R07",
+      "part": "guide_retaining_M4x10_0_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guide_retaining_M4x10_1_C04_R07",
+      "part": "guide_retaining_M4x10_1_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guide_retaining_M4x10_2_C04_R07",
+      "part": "guide_retaining_M4x10_2_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "node": "guide_retaining_M4x10_3_C04_R07",
+      "part": "guide_retaining_M4x10_3_C04_R07",
+      "origin_mm": [
+        0.0,
+        0.0,
+        560.8942324538557
+      ],
+      "motion_group": "shock_rod",
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "upper_eye_mm": [
+    0,
+    0,
+    0
+  ],
+  "lower_eye_mm": [
+    0,
+    0,
+    560.8942324538557
+  ],
+  "source_spring": "Eibach1800.300.0200S",
+  "original_visual_profile": {
+    "wire_diameter_mm": 10,
+    "turns": 12,
+    "OD_mm": 96.2,
+    "reserved_OD_mm": 110,
+    "supplier_wire_geometry_verified": false
+  },
+  "no_rigid_part_scaling": true,
+  "guide_contract": "guided_spring_contract_C04_R07.json",
+  "frame": "Canonical component frame: local X pin axis, local Z upper to lower. Vehicle placement is defined only by connected_mechanical_contract_C04_R01.json and kinematics_C04_R03.mjs."
+}

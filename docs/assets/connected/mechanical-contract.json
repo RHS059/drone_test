@@ -1,0 +1,327 @@
+{
+  "revision": "C04 connected mechanical candidate R01",
+  "status": "Component freeze; final assembly export and combined checks pending",
+  "units": {
+    "CAD": "mm",
+    "GLB": "metres",
+    "kinematics": "metres/radians"
+  },
+  "corners": [
+    {
+      "corner": "rear_right",
+      "station_X_mm": -1350,
+      "side": -1,
+      "fore": -1,
+      "wheel_center_mm": [
+        -1350,
+        -998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        -1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        -1900,
+        -560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        -1900,
+        -720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_rear_right_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      },
+      "lower_source": "joints/parts/lower_steering_positive_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 180,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "corner": "rear_left",
+      "station_X_mm": -1350,
+      "side": 1,
+      "fore": -1,
+      "wheel_center_mm": [
+        -1350,
+        998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        -1900,
+        560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        -1900,
+        720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_rear_left_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      },
+      "lower_source": "joints/parts/lower_steering_negative_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          -1350,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "corner": "middle_right",
+      "station_X_mm": 0,
+      "side": -1,
+      "fore": 0,
+      "wheel_center_mm": [
+        0,
+        -998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        -1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        350,
+        -560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        350,
+        -720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_middle_left_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 180,
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "source_already_handed": false
+      },
+      "lower_source": "joints/parts/lower_middle_negative_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 180,
+        "translation_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "corner": "middle_left",
+      "station_X_mm": 0,
+      "side": 1,
+      "fore": 0,
+      "wheel_center_mm": [
+        0,
+        998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        -350,
+        560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        -350,
+        720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_middle_left_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          0,
+          0,
+          0
+        ],
+        "source_already_handed": false
+      },
+      "lower_source": "joints/parts/lower_middle_negative_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "corner": "front_right",
+      "station_X_mm": 1350,
+      "side": -1,
+      "fore": 1,
+      "wheel_center_mm": [
+        1350,
+        -998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        -1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        1900,
+        -560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        1900,
+        -720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_front_right_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      },
+      "lower_source": "joints/parts/lower_steering_negative_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 180,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "corner": "front_left",
+      "station_X_mm": 1350,
+      "side": 1,
+      "fore": 1,
+      "wheel_center_mm": [
+        1350,
+        998,
+        -250
+      ],
+      "wheel_axis": [
+        0,
+        1,
+        0
+      ],
+      "shock_upper_eye_mm": [
+        1900,
+        560,
+        170
+      ],
+      "shock_lower_eye_mm": [
+        1900,
+        720.3,
+        -367.5
+      ],
+      "clamp_source": "offset_supports/stationary_clamp_front_left_offset_C04_R13.step",
+      "clamp_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ],
+        "source_already_handed": true
+      },
+      "lower_source": "joints/parts/lower_steering_positive_offset_joint_seats_C04_R11.step",
+      "lower_transform": {
+        "Rz_deg": 0,
+        "translation_mm": [
+          1350,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "solver": "kinematics_C04_R03.mjs",
+  "structural_assembly": "structural_connections_C04_R05.step",
+  "structural_manifest": "structural_connections_C04_R05_manifest.json",
+  "modules": {
+    "retained_joints": "joints/JOINT_INTERFACE_CONTRACT_C04_R02.json",
+    "drive": "drive/direct_drive_contract_C04_R03.json",
+    "guided_spring": "shocks/guided_spring_module_local_C04_R08_anchors.json",
+    "spring_renderer": "shocks/spring_profile_runtime_C04_R08.js",
+    "wheel": "external: wheel-drive-hardware/model-16p5/interface_contract.json",
+    "actuator": "external: steering-actuator/actuator_interface_contract_R02.json",
+    "breakout": "external: electrical-drive/carrier_freeze_E02/breakout_retention_contract.json"
+  },
+  "motion_rules": {
+    "shock": "Local X=[side,0,0]; local Z=normalize(moving eye-fixed eye); local Y=Z cross X. Anchor body parts at the fixed eye and rod parts at the moving eye. Preserve raw component geometry without scaling.",
+    "shock_pins": "Upper pins and sleeves retain proper side orientation. Lower pins and sleeves follow Rx(side*q) about the lower root pivot, rather than the damper axial tilt.",
+    "drive": "Source +Z points inboard. Apply Rx90, then proper Rz180 on the right, then station translation. Source wheel plane is at Y=side*928, Z=-250 mm. Apply upright motion before rotor spin. Never reflect the rear motor."
+  },
+  "replacement_policy": [
+    "Remove the previous C03 structural 76-node assembly and both old C02 middle structures before loading the new 126-node structural assembly.",
+    "Remove old EVO wheels, pattern adapters, proposed output studs, unretained outer pins, tie tubes/inserts and bearing reservations.",
+    "The retained-joint 816-node module supplies their replacements. Keep all 816 joint nodes, including actuator retention. Configure actuator-scene retentionOwner=\"joints\" to suppress its eight duplicate retention nodes.",
+    "Instance the 20-node direct-drive module six times. Stator and eight screws follow the upright; hub, five studs and five nuts spin with the wheel.",
+    "Instance the 24-node guided spring module six times. Remove previous centerline reservations, old perches and old shock pins."
+  ],
+  "load_paths": {
+    "wheel": "Tire -> rim and five R14 nut seats -> WD220 output flange and purchased bearing assembly -> stator flange -> eight M10 screws/pilot -> original carrier -> retained outer joints -> continuous hollow wishbones -> retained root bearings -> split clamps -> R07 rails.",
+    "spring": "Spring end planes -> original guided perches -> welded carrier stays -> retained shared 12.7 mm pins -> sleeved clevis ears. Upper tower loads the rail clamp. Lower crossbrace loads inclined CHS legs, closed RHS outrigger and both lower wishbone branches.",
+    "steering": "Retained B068 actuator eyes -> translating rack -> retained inner ball -> threaded rod end/tube/outer rod end -> retained outer ball -> steering horn and carrier."
+  },
+  "nominal_unloaded_ground_lift_mm": 665.5,
+  "lower_RHS_bottom_nominal_Z_mm": -470,
+  "nominal_lower_RHS_ground_clearance_mm": 195.5,
+  "service_gates": [
+    "The installed tire obstructed the old outer-pin extraction corridor; that corridor was not a complete service path.",
+    "Control stored spring energy and mechanically support the suspension before removing shared pins.",
+    "The new supports and direct wheel require fresh S01 fixture and tool-approach checks."
+  ],
+  "qualification_gates": [
+    "Drive bearing rating and increased wheel offset",
+    "Wheel/nut application, grade, torque and finished seat datum",
+    "Thread classes, bolt preload and welded load paths",
+    "Spring rate, equilibrium, buckling and fatigue",
+    "Damper exterior fit, guide wear/lubrication/seals and stop loads",
+    "Actuator force, duty and braking/control integration"
+  ],
+  "fabrication_released": false
+}
