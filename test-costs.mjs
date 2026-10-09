@@ -15,3 +15,5 @@ assert.throws(()=>operatingScenario({...example,depth:2},6.144),RangeError);
 console.log('PASS: exact-currency source baskets, null unknowns, three declared scenario fixtures and invalid-input gates. No actual operating-cost or full-build claim.');
 
 const correctedMassModel=JSON.parse(fs.readFileSync('docs/assets/cost-model/cost_model.json'));assert.equal(correctedMassModel.parts.find(p=>p.id==='wheel_nuts').unit_mass_kg,null);assert.equal(correctedMassModel.mass_context.additional_catalog_nuts_kg,null);
+
+const{partQuantity,partUnitMass}=await import('./docs/cost-display.mjs');assert.equal(partQuantity({quantity:2.769746431,quantity_unit:'m_nominal_routed_length'}),'2.770 m nominal route (cut length unreleased)');assert.equal(partUnitMass({unit_mass_kg:.724,quantity_unit:'m_nominal_routed_length'}),'0.724 kg/m');assert.equal(partQuantity({quantity:null}),'Unknown');

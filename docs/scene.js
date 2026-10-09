@@ -3,7 +3,7 @@ import * as T from 'three/webgpu';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {GLTFLoader} from './vendor/GLTFLoader.js';
 import {forward,origin,multiply,homeJoints} from './kinematics.js';
-import {loadRover} from './rover.js?v=connected-01';
+import {loadRover} from './rover.js?v=main-pair-05';
 import {decodeCadBytes} from './cad-loading.js?v=motion-03';
 const ROOT='./assets/robots/';
 export async function createScene(host,onSelect){

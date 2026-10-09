@@ -1,8 +1,8 @@
 {
-  "revision": "C04_R01",
-  "tests_run": 24,
+  "revision": "C04+E05_R01",
+  "tests_run": 36,
   "failures": 0,
   "errors": 0,
   "all_pass": true,
-  "scope": "Arithmetic, frozen-source consistency, name-replacement, unknown preservation, no-proxy/double counting and reproducibility. No hardware, supplier quote or operational qualification."
+  "scope": "Offline arithmetic, source/dependency hashes, exact replacements, unchanged body/deck, explicit materials, no duplication, price/unknown preservation, route scope, CSV and deterministic rebuild. No independent CAD-kernel rerun, weighed mass, procurement or engineering qualification."
 }

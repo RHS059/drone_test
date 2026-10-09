@@ -1,0 +1,134 @@
+{
+  "revision": "R02 retained external interfaces",
+  "candidate": "Thomson Electrak HD48 B068,200mm,M/M,COO control candidate",
+  "selection_status": "Development candidate; steering load/duty and configured unit unqualified",
+  "source": "https://www.thomsonlinear.com/downloads/actuators/Electrak_HD_Actuator_bren.pdf",
+  "source_pages": [
+    22,
+    23
+  ],
+  "source_geometry_included": false,
+  "units": {
+    "STEP": "mm",
+    "GLB": "m,Z-up"
+  },
+  "parts": [
+    {
+      "node": "actuator_fixed_interface",
+      "step": "actuator_fixed_interface.step",
+      "glb": "actuator_fixed_interface.glb",
+      "valid_single_solid": true,
+      "mass_from_geometry_kg": null
+    },
+    {
+      "node": "actuator_moving_interface",
+      "step": "actuator_moving_interface.step",
+      "glb": "actuator_moving_interface.glb",
+      "valid_single_solid": true,
+      "mass_from_geometry_kg": null
+    }
+  ],
+  "coordinate_system": "Rear fixed pin at0, actuator extends+Y, motor hump\u2212Z, both pin axesX",
+  "mounts": [
+    {
+      "id": "front",
+      "fixed_pin_C_m": [
+        1.084,
+        -0.34,
+        -0.25
+      ],
+      "moving_pin_neutral_C_m": [
+        1.084,
+        0.15,
+        -0.25
+      ],
+      "pin_axis_C": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "rear",
+      "fixed_pin_C_m": [
+        -1.084,
+        -0.34,
+        -0.25
+      ],
+      "moving_pin_neutral_C_m": [
+        -1.084,
+        0.15,
+        -0.25
+      ],
+      "pin_axis_C": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "source_dimensions_mm": {
+    "stroke": 200,
+    "retracted_pin_span": 390,
+    "extended_pin_span": 590,
+    "A_tolerance": 3.8,
+    "stroke_tolerance": 1.5,
+    "rear_eye_OD": 25.4,
+    "rear_eye_axial_bounds": [
+      -13.4,
+      21.6
+    ],
+    "front_eye_OD": 30.2,
+    "front_eye_axial_bounds": [
+      -17.5,
+      10.9
+    ],
+    "cross_bore": 12.2,
+    "nominal_pin_diameter": 12,
+    "housing_max_width": 77,
+    "housing_max_length": 235,
+    "housing_max_height": 148,
+    "housing_Z_bounds_motor_down": [
+      -110,
+      38
+    ]
+  },
+  "model_assumptions": {
+    "housing": "Full published maximum rectangular envelope, simplified; exact taper/fillets/transition not claimed",
+    "cover_tube": "Original concentric76mmOD/34mmID representation chosen within published envelope; actual supplier cross-section unknown",
+    "shaft": "Original30.2mmOD representation and220mm length; actual supplier shaft/internal engagement unknown",
+    "internals": "No motor, gearing, screw, seals, or electrical connector internals reconstructed",
+    "mass": "Use configured-unit catalogue/quote mass separately, never solid-volume density for this envelope"
+  },
+  "checks": [
+    {
+      "pin_span_mm": 415,
+      "solid_overlap_mm3": 0.0,
+      "modeled_shaft_engagement_mm": 177.5
+    },
+    {
+      "pin_span_mm": 490,
+      "solid_overlap_mm3": 0.0,
+      "modeled_shaft_engagement_mm": 102.5
+    },
+    {
+      "pin_span_mm": 565,
+      "solid_overlap_mm3": 0.0,
+      "modeled_shaft_engagement_mm": 27.5
+    }
+  ],
+  "hard_gates": [
+    "Source profile and body/cable clearance must be checked for ordered configuration",
+    "Actuator axial force/duty and steering response not qualified",
+    "Retained pin stack still needs final assembled motion and close-up visual acceptance",
+    "No physical load or fabrication release"
+  ],
+  "retention": {
+    "fixed_file": "actuator_rear_retention_local_C04_R01.glb",
+    "moving_file": "actuator_front_retention_local_C04_R01.glb",
+    "origin": "Actuator eye center / pin-axis intersection, NOT pin shaft midpoint",
+    "rear_axle_rotation_z_rad": 3.141592653589793,
+    "source": "Original joint-worker C04_R01 parts; source diameter 2.5 mm split pins and original external take-up washers",
+    "qualification": "Nominal original pin B-rep contact/clearance checked; split-pin installed bends, strength and full new assembly motion remain unqualified"
+  }
+}

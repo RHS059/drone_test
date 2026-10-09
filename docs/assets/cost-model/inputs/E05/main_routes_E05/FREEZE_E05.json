@@ -1,0 +1,9 @@
+{
+  "revision": "E05",
+  "zip_file": "original_main_pair_E05.zip",
+  "zip_sha256": "ba9c96ef4ff2f06199055eec714ebbcfd78250c395f720b5ce19f34b9a6af1b6",
+  "bytes": 1012315,
+  "manifest_SHA256": "49db3e7bc2e46399615c24f7a35053ad732b373a7b7675731ba7af04ddf68814",
+  "contract_SHA256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d",
+  "system_complete": false
+}

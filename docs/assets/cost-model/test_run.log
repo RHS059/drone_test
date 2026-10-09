@@ -1,29 +1,41 @@
-test_battery_mass_separate_from_floor (__main__.Costs.test_battery_mass_separate_from_floor) ... ok
-test_body_composition (__main__.Costs.test_body_composition) ... ok
-test_body_densities_and_replacement (__main__.Costs.test_body_densities_and_replacement) ... ok
-test_complete_and_actual_unknown (__main__.Costs.test_complete_and_actual_unknown) ... ok
-test_csv_matches (__main__.Costs.test_csv_matches) ... ok
-test_currency_baskets (__main__.Costs.test_currency_baskets) ... ok
-test_electrical_proxy_exclusion (__main__.Costs.test_electrical_proxy_exclusion) ... ok
-test_frozen_inputs (__main__.Costs.test_frozen_inputs) ... ok
-test_ids_are_unique (__main__.Costs.test_ids_are_unique) ... ok
-test_mass_arithmetic (__main__.Costs.test_mass_arithmetic) ... ok
-test_mechanical_freeze_binding (__main__.Costs.test_mechanical_freeze_binding) ... ok
-test_mechanical_subtotals (__main__.Costs.test_mechanical_subtotals) ... ok
-test_no_electrical_trough_double_count (__main__.Costs.test_no_electrical_trough_double_count) ... ok
-test_no_invented_quote (__main__.Costs.test_no_invented_quote) ... ok
-test_operating_model (__main__.Costs.test_operating_model) ... ok
-test_price_extensions (__main__.Costs.test_price_extensions) ... ok
-test_price_source_links (__main__.Costs.test_price_source_links) ... ok
-test_quantities (__main__.Costs.test_quantities) ... ok
-test_replacement_skus (__main__.Costs.test_replacement_skus) ... ok
-test_reproducible (__main__.Costs.test_reproducible) ... ok
-test_spring_count_once (__main__.Costs.test_spring_count_once) ... ok
-test_straps_are_two_pairs (__main__.Costs.test_straps_are_two_pairs) ... ok
-test_thermal_regen_gates (__main__.Costs.test_thermal_regen_gates) ... ok
-test_unknown_purchased_masses (__main__.Costs.test_unknown_purchased_masses) ... ok
+test_01_input_hashes (__main__.PatchTests.test_01_input_hashes) ... ok
+test_02_baseline_mass (__main__.PatchTests.test_02_baseline_mass) ... ok
+test_03_exact_two_replacements (__main__.PatchTests.test_03_exact_two_replacements) ... ok
+test_04_partition_values (__main__.PatchTests.test_04_partition_values) ... ok
+test_05_four_cylindrical_cuts (__main__.PatchTests.test_05_four_cylindrical_cuts) ... ok
+test_06_deck_byte_equivalent_object (__main__.PatchTests.test_06_deck_byte_equivalent_object) ... ok
+test_07_other_235_body_parts_unchanged (__main__.PatchTests.test_07_other_235_body_parts_unchanged) ... ok
+test_08_one_body_BOM_row (__main__.PatchTests.test_08_one_body_BOM_row) ... ok
+test_09_98_named_added_nodes (__main__.PatchTests.test_09_98_named_added_nodes) ... ok
+test_10_main_GLB_names (__main__.PatchTests.test_10_main_GLB_names) ... ok
+test_11_partition_GLB_names (__main__.PatchTests.test_11_partition_GLB_names) ... ok
+test_12_explicit_aluminium_density (__main__.PatchTests.test_12_explicit_aluminium_density) ... ok
+test_13_steel_palette_not_used (__main__.PatchTests.test_13_steel_palette_not_used) ... ok
+test_14_fasteners_unknown (__main__.PatchTests.test_14_fasteners_unknown) ... ok
+test_15_glands_unknown (__main__.PatchTests.test_15_glands_unknown) ... ok
+test_16_clamps_unknown (__main__.PatchTests.test_16_clamps_unknown) ... ok
+test_17_catalogue_weight_not_copper_index (__main__.PatchTests.test_17_catalogue_weight_not_copper_index) ... ok
+test_18_cut_lengths_and_mass (__main__.PatchTests.test_18_cut_lengths_and_mass) ... ok
+test_19_no_optional_lead_term (__main__.PatchTests.test_19_no_optional_lead_term) ... ok
+test_20_reused_terminal_hardware_unchanged (__main__.PatchTests.test_20_reused_terminal_hardware_unchanged) ... ok
+test_21_mass_arithmetic (__main__.PatchTests.test_21_mass_arithmetic) ... ok
+test_22_groups_preserved (__main__.PatchTests.test_22_groups_preserved) ... ok
+test_23_USD_PLN_baskets_identical (__main__.PatchTests.test_23_USD_PLN_baskets_identical) ... ok
+test_24_all_added_costs_unknown (__main__.PatchTests.test_24_all_added_costs_unknown) ... ok
+test_25_operating_scenarios_unchanged (__main__.PatchTests.test_25_operating_scenarios_unchanged) ... ok
+test_26_actuals_null (__main__.PatchTests.test_26_actuals_null) ... ok
+test_27_only_two_geometric_routes (__main__.PatchTests.test_27_only_two_geometric_routes) ... ok
+test_28_csv_roundtrip_nulls (__main__.PatchTests.test_28_csv_roundtrip_nulls) ... ok
+test_29_12_upstream_hashes (__main__.PatchTests.test_29_12_upstream_hashes) ... ok
+test_30_historical_files_resolve (__main__.PatchTests.test_30_historical_files_resolve) ... ok
+test_31_deterministic_rebuild (__main__.PatchTests.test_31_deterministic_rebuild) ... ok
+test_32_tamper_rejected (__main__.PatchTests.test_32_tamper_rejected) ... ok
+test_33_isolated_baseline_rebuild (__main__.PatchTests.test_33_isolated_baseline_rebuild) ... ok
+test_34_all_88_unknown_nodes (__main__.PatchTests.test_34_all_88_unknown_nodes) ... ok
+test_35_procurement_not_released (__main__.PatchTests.test_35_procurement_not_released) ... ok
+test_36_baseline_input_bytes_unchanged (__main__.PatchTests.test_36_baseline_input_bytes_unchanged) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.284s
+Ran 36 tests in 0.970s
 
 OK

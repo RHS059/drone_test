@@ -1,0 +1,7977 @@
+{
+  "revision": "PR01",
+  "scope": "Body plus frame_R07 only, all body parts named. Does not substitute for current all-six-corner, electrical, arm or coilover integration check.",
+  "body_count": 267,
+  "parts": [
+    {
+      "name": "main_base_deck_3mm",
+      "volume_mm3": 5395846.89060286,
+      "bounds_mm": [
+        -1900.0,
+        -513.0,
+        100.0,
+        550.0,
+        513.0,
+        103.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_left_side_3mm",
+      "volume_mm3": 542130.0,
+      "bounds_mm": [
+        -1900.0,
+        513.0,
+        103.0,
+        550.0,
+        516.0,
+        220.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_side_service_cover_1",
+      "volume_mm3": 85389.45667203,
+      "bounds_mm": [
+        -1038.0,
+        513.0,
+        153.0,
+        -562.0,
+        516.0,
+        215.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_1",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -1042.0,
+        510.0,
+        144.0,
+        -1002.0,
+        513.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_2",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -1042.0,
+        510.0,
+        184.0,
+        -1002.0,
+        513.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_3",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -598.0,
+        510.0,
+        144.0,
+        -558.0,
+        513.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_4",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -598.0,
+        510.0,
+        184.0,
+        -558.0,
+        513.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_side_service_cover_2",
+      "volume_mm3": 42609.45667203,
+      "bounds_mm": [
+        267.0,
+        513.0,
+        153.0,
+        513.0,
+        516.0,
+        215.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_1",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        263.0,
+        510.0,
+        144.0,
+        303.0,
+        513.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_2",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        263.0,
+        510.0,
+        184.0,
+        303.0,
+        513.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_3",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        477.0,
+        510.0,
+        144.0,
+        517.0,
+        513.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_4",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        477.0,
+        510.0,
+        184.0,
+        517.0,
+        513.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_right_side_3mm",
+      "volume_mm3": 542130.0,
+      "bounds_mm": [
+        -1900.0,
+        -516.0,
+        103.0,
+        550.0,
+        -513.0,
+        220.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_side_service_cover_1",
+      "volume_mm3": 85389.45667203,
+      "bounds_mm": [
+        -1038.0,
+        -516.0,
+        153.0,
+        -562.0,
+        -513.0,
+        215.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_1",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -1042.0,
+        -513.0,
+        144.0,
+        -1002.0,
+        -510.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_2",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -1042.0,
+        -513.0,
+        184.0,
+        -1002.0,
+        -510.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_3",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -598.0,
+        -513.0,
+        144.0,
+        -558.0,
+        -510.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_4",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        -598.0,
+        -513.0,
+        184.0,
+        -558.0,
+        -510.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_side_service_cover_2",
+      "volume_mm3": 42609.45667203,
+      "bounds_mm": [
+        267.0,
+        -516.0,
+        153.0,
+        513.0,
+        -513.0,
+        215.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_1",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        263.0,
+        -513.0,
+        144.0,
+        303.0,
+        -510.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_2",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        263.0,
+        -513.0,
+        184.0,
+        303.0,
+        -510.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_3",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        477.0,
+        -513.0,
+        144.0,
+        517.0,
+        -510.0,
+        184.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_4",
+      "volume_mm3": 4697.36416801,
+      "bounds_mm": [
+        477.0,
+        -513.0,
+        184.0,
+        517.0,
+        -510.0,
+        224.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_left_lower_sloping_shoulder",
+      "volume_mm3": 1026050.15992868,
+      "bounds_mm": [
+        -1900.0,
+        515.57094671,
+        218.56267148,
+        550.0,
+        650.42905329,
+        261.43732852
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_left_upper_sloping_shoulder",
+      "volume_mm3": 1555229.35257163,
+      "bounds_mm": [
+        -1900.0,
+        449.46106239,
+        260.0,
+        550.0,
+        650.53893761,
+        338.39983794
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_right_lower_sloping_shoulder",
+      "volume_mm3": 1026050.15992869,
+      "bounds_mm": [
+        -1900.0,
+        -650.42905329,
+        218.56267148,
+        550.0,
+        -515.57094671,
+        261.43732852
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "main_right_upper_sloping_shoulder",
+      "volume_mm3": 1555229.35257163,
+      "bounds_mm": [
+        -1900.0,
+        -650.53893761,
+        260.0,
+        550.0,
+        -449.46106239,
+        338.39983794
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_bulkhead_3mm",
+      "volume_mm3": 751373.25684204,
+      "bounds_mm": [
+        -1900.0,
+        -650.0,
+        103.0,
+        -1897.0,
+        650.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "arm_facing_bulkhead_3mm",
+      "volume_mm3": 742005.02754904,
+      "bounds_mm": [
+        547.0,
+        -650.0,
+        103.0,
+        550.0,
+        650.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_battery_partition",
+      "volume_mm3": 714577.40746699,
+      "bounds_mm": [
+        -1143.0,
+        -650.0,
+        103.0,
+        -1140.0,
+        650.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_tool_partition",
+      "volume_mm3": 736849.40746699,
+      "bounds_mm": [
+        -460.0,
+        -650.0,
+        103.0,
+        -457.0,
+        650.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_well_floor_3mm",
+      "volume_mm3": 1403270.14519472,
+      "bounds_mm": [
+        -1125.0,
+        -360.0,
+        -80.0,
+        -475.0,
+        360.0,
+        -77.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_well_left_wall",
+      "volume_mm3": 802738.40746699,
+      "bounds_mm": [
+        -1125.0,
+        357.0,
+        -77.0,
+        -475.0,
+        360.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_well_right_wall",
+      "volume_mm3": 807300.0,
+      "bounds_mm": [
+        -1125.0,
+        -360.0,
+        -77.0,
+        -475.0,
+        -357.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_well_rear_wall",
+      "volume_mm3": 886788.0,
+      "bounds_mm": [
+        -1125.0,
+        -357.0,
+        -77.0,
+        -1122.0,
+        357.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_well_front_wall",
+      "volume_mm3": 886788.0,
+      "bounds_mm": [
+        -478.0,
+        -357.0,
+        -77.0,
+        -475.0,
+        357.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_1_isolator_pad",
+      "volume_mm3": 187200.0,
+      "bounds_mm": [
+        -1080.0,
+        -200.0,
+        -77.0,
+        -820.0,
+        -20.0,
+        -73.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_1_stop_-1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -1080.0,
+        -215.5,
+        -77.0,
+        -820.0,
+        -212.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_1_stop_1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -1080.0,
+        -7.5,
+        -77.0,
+        -820.0,
+        -4.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_2_isolator_pad",
+      "volume_mm3": 187200.0,
+      "bounds_mm": [
+        -1080.0,
+        20.0,
+        -77.0,
+        -820.0,
+        200.0,
+        -73.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_2_stop_-1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -1080.0,
+        4.5,
+        -77.0,
+        -820.0,
+        7.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_2_stop_1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -1080.0,
+        212.5,
+        -77.0,
+        -820.0,
+        215.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_3_isolator_pad",
+      "volume_mm3": 187200.0,
+      "bounds_mm": [
+        -780.0,
+        -200.0,
+        -77.0,
+        -520.0,
+        -20.0,
+        -73.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_3_stop_-1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -780.0,
+        -215.5,
+        -77.0,
+        -520.0,
+        -212.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_3_stop_1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -780.0,
+        -7.5,
+        -77.0,
+        -520.0,
+        -4.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_4_isolator_pad",
+      "volume_mm3": 187200.0,
+      "bounds_mm": [
+        -780.0,
+        20.0,
+        -77.0,
+        -520.0,
+        200.0,
+        -73.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_4_stop_-1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -780.0,
+        4.5,
+        -77.0,
+        -520.0,
+        7.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_4_stop_1",
+      "volume_mm3": 24960.0,
+      "bounds_mm": [
+        -780.0,
+        212.5,
+        -77.0,
+        -520.0,
+        215.5,
+        -45.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_crossbar_1",
+      "volume_mm3": 59513.43012981,
+      "bounds_mm": [
+        -965.0,
+        -250.0,
+        215.0,
+        -935.0,
+        250.0,
+        219.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_stud_1_-235",
+      "volume_mm3": 16336.28179867,
+      "bounds_mm": [
+        -954.0,
+        -239.0,
+        -93.0,
+        -946.0,
+        -231.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_1_-235_bottom",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -957.5055535,
+        -241.5,
+        -88.1,
+        -942.4944465,
+        -228.5,
+        -81.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_1_-235_top",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -957.5055535,
+        -241.5,
+        220.6,
+        -942.4944465,
+        -228.5,
+        227.1
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_stud_1_235",
+      "volume_mm3": 16336.28179867,
+      "bounds_mm": [
+        -954.0,
+        231.0,
+        -93.0,
+        -946.0,
+        239.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_1_235_bottom",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -957.5055535,
+        228.5,
+        -88.1,
+        -942.4944465,
+        241.5,
+        -81.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_1_235_top",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -957.5055535,
+        228.5,
+        220.6,
+        -942.4944465,
+        241.5,
+        227.1
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_crossbar_2",
+      "volume_mm3": 59513.43012981,
+      "bounds_mm": [
+        -665.0,
+        -250.0,
+        215.0,
+        -635.0,
+        250.0,
+        219.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_stud_2_-235",
+      "volume_mm3": 16336.28179867,
+      "bounds_mm": [
+        -654.0,
+        -239.0,
+        -93.0,
+        -646.0,
+        -231.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_2_-235_bottom",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -657.5055535,
+        -241.5,
+        -88.1,
+        -642.4944465,
+        -228.5,
+        -81.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_2_-235_top",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -657.5055535,
+        -241.5,
+        220.6,
+        -642.4944465,
+        -228.5,
+        227.1
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_stud_2_235",
+      "volume_mm3": 16336.28179867,
+      "bounds_mm": [
+        -654.0,
+        231.0,
+        -93.0,
+        -646.0,
+        239.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_2_235_bottom",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -657.5055535,
+        228.5,
+        -88.1,
+        -642.4944465,
+        241.5,
+        -81.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_nut_2_235_top",
+      "volume_mm3": 624.60327008,
+      "bounds_mm": [
+        -657.5055535,
+        228.5,
+        220.6,
+        -642.4944465,
+        241.5,
+        227.1
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_weld_flange",
+      "volume_mm3": 193304.18500804,
+      "bounds_mm": [
+        -1900.0,
+        -450.0,
+        337.0,
+        -1144.0,
+        450.0,
+        340.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_gasket",
+      "volume_mm3": 103271.67711724,
+      "bounds_mm": [
+        -1899.0,
+        -449.0,
+        340.0,
+        -1145.0,
+        449.0,
+        342.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_removable_lid",
+      "volume_mm3": 2022437.3709784,
+      "bounds_mm": [
+        -1899.0,
+        -449.0,
+        342.0,
+        -1145.0,
+        449.0,
+        345.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_1",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1891.0,
+        -441.0,
+        326.6,
+        -1881.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_2",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1163.0,
+        -441.0,
+        326.6,
+        -1153.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_3",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1891.0,
+        431.0,
+        326.6,
+        -1881.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_4",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1163.0,
+        431.0,
+        326.6,
+        -1153.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_5",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1527.0,
+        -441.0,
+        326.6,
+        -1517.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_6",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1527.0,
+        431.0,
+        326.6,
+        -1517.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_1",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1895.0,
+        -445.0,
+        327.0,
+        -1877.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_2",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1167.0,
+        -445.0,
+        327.0,
+        -1149.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_3",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1895.0,
+        427.0,
+        327.0,
+        -1877.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_4",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1167.0,
+        427.0,
+        327.0,
+        -1149.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_5",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1531.0,
+        -445.0,
+        327.0,
+        -1513.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_nutplate_6",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1531.0,
+        427.0,
+        327.0,
+        -1513.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_deck_shoulder",
+      "volume_mm3": 432000.0,
+      "bounds_mm": [
+        -1140.0,
+        -450.0,
+        337.0,
+        -460.0,
+        450.0,
+        340.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_weld_flange",
+      "volume_mm3": 158984.18500804,
+      "bounds_mm": [
+        -1125.0,
+        -360.0,
+        337.0,
+        -475.0,
+        360.0,
+        340.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_gasket",
+      "volume_mm3": 84967.67711703,
+      "bounds_mm": [
+        -1124.0,
+        -359.0,
+        340.0,
+        -476.0,
+        359.0,
+        342.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_removable_lid",
+      "volume_mm3": 1386953.3709784,
+      "bounds_mm": [
+        -1124.0,
+        -359.0,
+        342.0,
+        -476.0,
+        359.0,
+        345.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_1",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1116.0,
+        -351.0,
+        326.6,
+        -1106.0,
+        -341.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_2",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -494.0,
+        -351.0,
+        326.6,
+        -484.0,
+        -341.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_3",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1116.0,
+        341.0,
+        326.6,
+        -1106.0,
+        351.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_4",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -494.0,
+        341.0,
+        326.6,
+        -484.0,
+        351.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_5",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -805.0,
+        -351.0,
+        326.6,
+        -795.0,
+        -341.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_6",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -805.0,
+        341.0,
+        326.6,
+        -795.0,
+        351.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_1",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1120.0,
+        -355.0,
+        327.0,
+        -1102.0,
+        -337.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_2",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -498.0,
+        -355.0,
+        327.0,
+        -480.0,
+        -337.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_3",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -1120.0,
+        337.0,
+        327.0,
+        -1102.0,
+        355.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_4",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -498.0,
+        337.0,
+        327.0,
+        -480.0,
+        355.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_5",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -809.0,
+        -355.0,
+        327.0,
+        -791.0,
+        -337.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_nutplate_6",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -809.0,
+        337.0,
+        327.0,
+        -791.0,
+        355.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_weld_flange",
+      "volume_mm3": 223304.18500804,
+      "bounds_mm": [
+        -456.0,
+        -450.0,
+        337.0,
+        550.0,
+        450.0,
+        340.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_gasket",
+      "volume_mm3": 119271.67711699,
+      "bounds_mm": [
+        -455.0,
+        -449.0,
+        340.0,
+        549.0,
+        449.0,
+        342.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_removable_lid",
+      "volume_mm3": 2695937.3709784,
+      "bounds_mm": [
+        -455.0,
+        -449.0,
+        342.0,
+        549.0,
+        449.0,
+        345.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_1",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -447.0,
+        -441.0,
+        326.6,
+        -437.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_2",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        531.0,
+        -441.0,
+        326.6,
+        541.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_3",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -447.0,
+        431.0,
+        326.6,
+        -437.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_4",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        531.0,
+        431.0,
+        326.6,
+        541.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_5",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        42.0,
+        -441.0,
+        326.6,
+        52.0,
+        -431.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_6",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        42.0,
+        431.0,
+        326.6,
+        52.0,
+        441.0,
+        352.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_1",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -451.0,
+        -445.0,
+        327.0,
+        -433.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_2",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        527.0,
+        -445.0,
+        327.0,
+        545.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_3",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        -451.0,
+        427.0,
+        327.0,
+        -433.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_4",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        527.0,
+        427.0,
+        327.0,
+        545.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_5",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        38.0,
+        -445.0,
+        327.0,
+        56.0,
+        -427.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_nutplate_6",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        38.0,
+        427.0,
+        327.0,
+        56.0,
+        445.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_mount_tray_1",
+      "volume_mm3": 443360.81421051,
+      "bounds_mm": [
+        -1845.0,
+        -275.0,
+        140.0,
+        -1575.0,
+        275.0,
+        143.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_tray_leg_1_-250",
+      "volume_mm3": 27750.0,
+      "bounds_mm": [
+        -1835.0,
+        -251.5,
+        103.0,
+        -1585.0,
+        -248.5,
+        140.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_tray_leg_1_250",
+      "volume_mm3": 27750.0,
+      "bounds_mm": [
+        -1835.0,
+        248.5,
+        103.0,
+        -1585.0,
+        251.5,
+        140.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_mount_tray_2",
+      "volume_mm3": 443360.81421051,
+      "bounds_mm": [
+        -1505.0,
+        -275.0,
+        140.0,
+        -1235.0,
+        275.0,
+        143.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_tray_leg_2_-250",
+      "volume_mm3": 27750.0,
+      "bounds_mm": [
+        -1495.0,
+        -251.5,
+        103.0,
+        -1245.0,
+        -248.5,
+        140.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "controller_tray_leg_2_250",
+      "volume_mm3": 27750.0,
+      "bounds_mm": [
+        -1495.0,
+        248.5,
+        103.0,
+        -1245.0,
+        251.5,
+        140.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_floor_1",
+      "volume_mm3": 96600.0,
+      "bounds_mm": [
+        -1863.0,
+        400.0,
+        230.0,
+        -1173.0,
+        470.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_1_400",
+      "volume_mm3": 55200.0,
+      "bounds_mm": [
+        -1863.0,
+        399.0,
+        232.0,
+        -1173.0,
+        401.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_1_470",
+      "volume_mm3": 55200.0,
+      "bounds_mm": [
+        -1863.0,
+        469.0,
+        232.0,
+        -1173.0,
+        471.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_floor_2",
+      "volume_mm3": 91000.0,
+      "bounds_mm": [
+        -1125.0,
+        400.0,
+        230.0,
+        -475.0,
+        470.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_2_400",
+      "volume_mm3": 48416.0,
+      "bounds_mm": [
+        -1125.0,
+        399.0,
+        232.0,
+        -475.0,
+        401.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_2_470",
+      "volume_mm3": 52000.0,
+      "bounds_mm": [
+        -1125.0,
+        469.0,
+        232.0,
+        -475.0,
+        471.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_floor_3",
+      "volume_mm3": 134400.0,
+      "bounds_mm": [
+        -440.0,
+        400.0,
+        230.0,
+        520.0,
+        470.0,
+        232.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_3_400",
+      "volume_mm3": 76800.0,
+      "bounds_mm": [
+        -440.0,
+        399.0,
+        232.0,
+        520.0,
+        401.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_side_3_470",
+      "volume_mm3": 76800.0,
+      "bounds_mm": [
+        -440.0,
+        469.0,
+        232.0,
+        520.0,
+        471.0,
+        272.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_top",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -1090.0,
+        -540.0,
+        103.0,
+        -1010.0,
+        -380.0,
+        109.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_bottom",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -1090.0,
+        -540.0,
+        -106.0,
+        -1010.0,
+        -380.0,
+        -100.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_M10_1",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -1058.5,
+        -398.5,
+        -117.0,
+        -1041.5,
+        -381.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_1",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -1059.815,
+        -398.50003934,
+        -116.0,
+        -1040.185,
+        -381.49996066,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_M10_2",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -1058.5,
+        -538.5,
+        -117.0,
+        -1041.5,
+        -521.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_1_M10_nut_2",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -1059.815,
+        -538.50003934,
+        -116.0,
+        -1040.185,
+        -521.49996066,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_top",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -1090.0,
+        380.0,
+        103.0,
+        -1010.0,
+        540.0,
+        109.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_bottom",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -1090.0,
+        380.0,
+        -106.0,
+        -1010.0,
+        540.0,
+        -100.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_M10_1",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -1058.5,
+        381.5,
+        -117.0,
+        -1041.5,
+        398.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_1",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -1059.815,
+        381.49996066,
+        -116.0,
+        -1040.185,
+        398.50003934,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_M10_2",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -1058.5,
+        521.5,
+        -117.0,
+        -1041.5,
+        538.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_2_M10_nut_2",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -1059.815,
+        521.49996066,
+        -116.0,
+        -1040.185,
+        538.50003934,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_top",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -590.0,
+        -540.0,
+        103.0,
+        -510.0,
+        -380.0,
+        109.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_bottom",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -590.0,
+        -540.0,
+        -106.0,
+        -510.0,
+        -380.0,
+        -100.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_M10_1",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -558.5,
+        -398.5,
+        -117.0,
+        -541.5,
+        -381.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_1",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -559.815,
+        -398.50003934,
+        -116.0,
+        -540.185,
+        -381.49996066,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_M10_2",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -558.5,
+        -538.5,
+        -117.0,
+        -541.5,
+        -521.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_3_M10_nut_2",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -559.815,
+        -538.50003934,
+        -116.0,
+        -540.185,
+        -521.49996066,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_top",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -590.0,
+        380.0,
+        103.0,
+        -510.0,
+        540.0,
+        109.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_bottom",
+      "volume_mm3": 75700.69389866,
+      "bounds_mm": [
+        -590.0,
+        380.0,
+        -106.0,
+        -510.0,
+        540.0,
+        -100.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_M10_1",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -558.5,
+        381.5,
+        -117.0,
+        -541.5,
+        398.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_1",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -559.815,
+        381.49996066,
+        -116.0,
+        -540.185,
+        398.50003934,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_M10_2",
+      "volume_mm3": 19254.15438576,
+      "bounds_mm": [
+        -558.5,
+        521.5,
+        -117.0,
+        -541.5,
+        538.5,
+        116.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rail_saddle_4_M10_nut_2",
+      "volume_mm3": 1636.93510797,
+      "bounds_mm": [
+        -559.815,
+        521.49996066,
+        -116.0,
+        -540.185,
+        538.50003934,
+        -106.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_base",
+      "volume_mm3": 2008980.0,
+      "bounds_mm": [
+        1200.0,
+        -513.0,
+        100.0,
+        1950.0,
+        513.0,
+        103.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_rear_wall",
+      "volume_mm3": 574860.0,
+      "bounds_mm": [
+        1200.0,
+        -513.0,
+        103.0,
+        1203.0,
+        513.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_left_side",
+      "volume_mm3": 318744.0,
+      "bounds_mm": [
+        1203.0,
+        513.0,
+        103.0,
+        1947.0,
+        516.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_right_side",
+      "volume_mm3": 318744.0,
+      "bounds_mm": [
+        1203.0,
+        -516.0,
+        103.0,
+        1947.0,
+        -513.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_nose_wall",
+      "volume_mm3": 258552.0,
+      "bounds_mm": [
+        1947.0,
+        -513.0,
+        103.0,
+        1950.0,
+        513.0,
+        187.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_sloped_service_nose",
+      "volume_mm3": 832250.44737509,
+      "bounds_mm": [
+        1699.38976302,
+        -513.0,
+        187.1297406,
+        1947.61023698,
+        513.0,
+        299.8702594
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_weld_flange",
+      "volume_mm3": 176984.18500804,
+      "bounds_mm": [
+        1203.0,
+        -513.0,
+        297.0,
+        1697.0,
+        513.0,
+        300.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_gasket",
+      "volume_mm3": 94567.67711705,
+      "bounds_mm": [
+        1204.0,
+        -512.0,
+        300.0,
+        1696.0,
+        512.0,
+        302.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_removable_lid",
+      "volume_mm3": 1502585.3709784,
+      "bounds_mm": [
+        1204.0,
+        -512.0,
+        302.0,
+        1696.0,
+        512.0,
+        305.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_1",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1212.0,
+        -504.0,
+        286.6,
+        1222.0,
+        -494.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_2",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1678.0,
+        -504.0,
+        286.6,
+        1688.0,
+        -494.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_3",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1212.0,
+        494.0,
+        286.6,
+        1222.0,
+        504.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_4",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1678.0,
+        494.0,
+        286.6,
+        1688.0,
+        504.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_5",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1445.0,
+        -504.0,
+        286.6,
+        1455.0,
+        -494.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_6",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        1445.0,
+        494.0,
+        286.6,
+        1455.0,
+        504.0,
+        312.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_1",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1208.0,
+        -508.0,
+        287.0,
+        1226.0,
+        -490.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_2",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1674.0,
+        -508.0,
+        287.0,
+        1692.0,
+        -490.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_3",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1208.0,
+        490.0,
+        287.0,
+        1226.0,
+        508.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_4",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1674.0,
+        490.0,
+        287.0,
+        1692.0,
+        508.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_5",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1441.0,
+        -508.0,
+        287.0,
+        1459.0,
+        -490.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_nutplate_6",
+      "volume_mm3": 2957.25666118,
+      "bounds_mm": [
+        1441.0,
+        490.0,
+        287.0,
+        1459.0,
+        508.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "arm_center_cable_guard",
+      "volume_mm3": 387600.0,
+      "bounds_mm": [
+        552.0,
+        -100.0,
+        100.0,
+        1198.0,
+        100.0,
+        103.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_bumper_RHS_70x50x3",
+      "volume_mm3": 745560.0,
+      "bounds_mm": [
+        -2050.0,
+        -545.0,
+        -45.0,
+        -2000.0,
+        545.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_bumper_cap_-1",
+      "volume_mm3": 10500.0,
+      "bounds_mm": [
+        -2050.0,
+        -548.0,
+        -45.0,
+        -2000.0,
+        -545.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_bumper_cap_1",
+      "volume_mm3": 10500.0,
+      "bounds_mm": [
+        -2050.0,
+        545.0,
+        -45.0,
+        -2000.0,
+        548.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_bumper_RHS_70x50x3",
+      "volume_mm3": 745560.0,
+      "bounds_mm": [
+        2000.0,
+        -545.0,
+        -45.0,
+        2050.0,
+        545.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_bumper_cap_-1",
+      "volume_mm3": 10500.0,
+      "bounds_mm": [
+        2000.0,
+        -548.0,
+        -45.0,
+        2050.0,
+        -545.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_bumper_cap_1",
+      "volume_mm3": 10500.0,
+      "bounds_mm": [
+        2000.0,
+        545.0,
+        -45.0,
+        2050.0,
+        548.0,
+        25.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_1",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1892.0,
+        -442.0,
+        345.0,
+        -1880.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_2",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1164.0,
+        -442.0,
+        345.0,
+        -1152.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_3",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1892.0,
+        430.0,
+        345.0,
+        -1880.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_4",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1164.0,
+        430.0,
+        345.0,
+        -1152.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_5",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1528.0,
+        -442.0,
+        345.0,
+        -1516.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_controller_hatch_M6_washer_6",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1528.0,
+        430.0,
+        345.0,
+        -1516.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_1",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1117.0,
+        -352.0,
+        345.0,
+        -1105.0,
+        -340.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_2",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -495.0,
+        -352.0,
+        345.0,
+        -483.0,
+        -340.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_3",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1117.0,
+        340.0,
+        345.0,
+        -1105.0,
+        352.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_4",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -495.0,
+        340.0,
+        345.0,
+        -483.0,
+        352.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_5",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -806.0,
+        -352.0,
+        345.0,
+        -794.0,
+        -340.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_hatch_M6_washer_6",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -806.0,
+        340.0,
+        345.0,
+        -794.0,
+        352.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_1",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -448.0,
+        -442.0,
+        345.0,
+        -436.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_2",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        530.0,
+        -442.0,
+        345.0,
+        542.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_3",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -448.0,
+        430.0,
+        345.0,
+        -436.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_4",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        530.0,
+        430.0,
+        345.0,
+        542.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_5",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        41.0,
+        -442.0,
+        345.0,
+        53.0,
+        -430.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_tool_hatch_M6_washer_6",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        41.0,
+        430.0,
+        345.0,
+        53.0,
+        442.0,
+        346.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_1",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1211.0,
+        -505.0,
+        305.0,
+        1223.0,
+        -493.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_2",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1677.0,
+        -505.0,
+        305.0,
+        1689.0,
+        -493.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_3",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1211.0,
+        493.0,
+        305.0,
+        1223.0,
+        505.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_4",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1677.0,
+        493.0,
+        305.0,
+        1689.0,
+        505.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_5",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1444.0,
+        -505.0,
+        305.0,
+        1456.0,
+        -493.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_tool_hatch_M6_washer_6",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        1444.0,
+        493.0,
+        305.0,
+        1456.0,
+        505.0,
+        306.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "rear_hatch_partition_ledge",
+      "volume_mm3": 51348.0,
+      "bounds_mm": [
+        -1163.0,
+        -430.0,
+        334.0,
+        -1143.0,
+        430.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "payload_hatch_partition_ledge",
+      "volume_mm3": 51348.0,
+      "bounds_mm": [
+        -457.0,
+        -430.0,
+        334.0,
+        -437.0,
+        430.0,
+        337.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_hatch_left_support_ledge",
+      "volume_mm3": 27210.0,
+      "bounds_mm": [
+        1203.0,
+        493.0,
+        294.0,
+        1697.0,
+        513.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_hatch_right_support_ledge",
+      "volume_mm3": 27210.0,
+      "bounds_mm": [
+        1203.0,
+        -513.0,
+        294.0,
+        1697.0,
+        -493.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_hatch_rear_support_ledge",
+      "volume_mm3": 58890.0,
+      "bounds_mm": [
+        1203.0,
+        -493.0,
+        294.0,
+        1223.0,
+        493.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "front_hatch_nose_support_ledge",
+      "volume_mm3": 74219.56901849,
+      "bounds_mm": [
+        1677.0,
+        -493.0,
+        294.0,
+        1703.0,
+        493.0,
+        297.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_1_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -1031.0,
+        497.0,
+        155.0,
+        -1013.0,
+        510.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_1_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1027.0,
+        497.6,
+        159.0,
+        -1017.0,
+        523.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_1_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1028.0,
+        516.0,
+        158.0,
+        -1016.0,
+        517.6,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_2_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -1031.0,
+        497.0,
+        195.0,
+        -1013.0,
+        510.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_2_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1027.0,
+        497.6,
+        199.0,
+        -1017.0,
+        523.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_2_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1028.0,
+        516.0,
+        198.0,
+        -1016.0,
+        517.6,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_3_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -587.0,
+        497.0,
+        155.0,
+        -569.0,
+        510.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_3_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -583.0,
+        497.6,
+        159.0,
+        -573.0,
+        523.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_3_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -584.0,
+        516.0,
+        158.0,
+        -572.0,
+        517.6,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_4_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -587.0,
+        497.0,
+        195.0,
+        -569.0,
+        510.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_4_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -583.0,
+        497.6,
+        199.0,
+        -573.0,
+        523.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_1_4_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -584.0,
+        516.0,
+        198.0,
+        -572.0,
+        517.6,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_1_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        274.0,
+        497.0,
+        155.0,
+        292.0,
+        510.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_1_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        278.0,
+        497.6,
+        159.0,
+        288.0,
+        523.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_1_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        277.0,
+        516.0,
+        158.0,
+        289.0,
+        517.6,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_2_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        274.0,
+        497.0,
+        195.0,
+        292.0,
+        510.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_2_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        278.0,
+        497.6,
+        199.0,
+        288.0,
+        523.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_2_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        277.0,
+        516.0,
+        198.0,
+        289.0,
+        517.6,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_3_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        488.0,
+        497.0,
+        155.0,
+        506.0,
+        510.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_3_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        492.0,
+        497.6,
+        159.0,
+        502.0,
+        523.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_3_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        491.0,
+        516.0,
+        158.0,
+        503.0,
+        517.6,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_4_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        488.0,
+        497.0,
+        195.0,
+        506.0,
+        510.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_4_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        492.0,
+        497.6,
+        199.0,
+        502.0,
+        523.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "left_service_nutclip_2_4_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        491.0,
+        516.0,
+        198.0,
+        503.0,
+        517.6,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_1_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -1031.0,
+        -510.0,
+        155.0,
+        -1013.0,
+        -497.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_1_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1027.0,
+        -523.6,
+        159.0,
+        -1017.0,
+        -497.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_1_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1028.0,
+        -517.6,
+        158.0,
+        -1016.0,
+        -516.0,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_2_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -1031.0,
+        -510.0,
+        195.0,
+        -1013.0,
+        -497.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_2_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -1027.0,
+        -523.6,
+        199.0,
+        -1017.0,
+        -497.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_2_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -1028.0,
+        -517.6,
+        198.0,
+        -1016.0,
+        -516.0,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_3_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -587.0,
+        -510.0,
+        155.0,
+        -569.0,
+        -497.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_3_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -583.0,
+        -523.6,
+        159.0,
+        -573.0,
+        -497.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_3_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -584.0,
+        -517.6,
+        158.0,
+        -572.0,
+        -516.0,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_4_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        -587.0,
+        -510.0,
+        195.0,
+        -569.0,
+        -497.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_4_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        -583.0,
+        -523.6,
+        199.0,
+        -573.0,
+        -497.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_1_4_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        -584.0,
+        -517.6,
+        198.0,
+        -572.0,
+        -516.0,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_1_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        274.0,
+        -510.0,
+        155.0,
+        292.0,
+        -497.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_1_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        278.0,
+        -523.6,
+        159.0,
+        288.0,
+        -497.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_1_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        277.0,
+        -517.6,
+        158.0,
+        289.0,
+        -516.0,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_2_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        274.0,
+        -510.0,
+        195.0,
+        292.0,
+        -497.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_2_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        278.0,
+        -523.6,
+        199.0,
+        288.0,
+        -497.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_2_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        277.0,
+        -517.6,
+        198.0,
+        289.0,
+        -516.0,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_3_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        488.0,
+        -510.0,
+        155.0,
+        506.0,
+        -497.0,
+        173.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_3_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        492.0,
+        -523.6,
+        159.0,
+        502.0,
+        -497.6,
+        169.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_3_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        491.0,
+        -517.6,
+        158.0,
+        503.0,
+        -516.0,
+        170.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_4_tapped_boss",
+      "volume_mm3": 3844.43365953,
+      "bounds_mm": [
+        488.0,
+        -510.0,
+        195.0,
+        506.0,
+        -497.0,
+        213.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_4_M6x20",
+      "volume_mm3": 971.7736704,
+      "bounds_mm": [
+        492.0,
+        -523.6,
+        199.0,
+        502.0,
+        -497.6,
+        209.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "right_service_nutclip_2_4_washer",
+      "volume_mm3": 129.48388281,
+      "bounds_mm": [
+        491.0,
+        -517.6,
+        198.0,
+        503.0,
+        -516.0,
+        210.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_1_rear_welded_support",
+      "volume_mm3": 16638.0,
+      "bounds_mm": [
+        -1897.0,
+        400.0,
+        203.0,
+        -1838.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_1_front_welded_support",
+      "volume_mm3": 15510.0,
+      "bounds_mm": [
+        -1198.0,
+        400.0,
+        203.0,
+        -1143.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_2_rear_welded_support",
+      "volume_mm3": 11280.0,
+      "bounds_mm": [
+        -1140.0,
+        400.0,
+        203.0,
+        -1100.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_2_front_welded_support",
+      "volume_mm3": 11280.0,
+      "bounds_mm": [
+        -500.0,
+        400.0,
+        203.0,
+        -460.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_3_rear_welded_support",
+      "volume_mm3": 11844.0,
+      "bounds_mm": [
+        -457.0,
+        400.0,
+        203.0,
+        -415.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "cable_duct_3_front_welded_support",
+      "volume_mm3": 14664.0,
+      "bounds_mm": [
+        495.0,
+        400.0,
+        203.0,
+        547.0,
+        470.0,
+        230.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_1_-235_bottom",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -958.0,
+        -243.0,
+        -81.6,
+        -942.0,
+        -227.0,
+        -80.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_1_-235_top",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -958.0,
+        -243.0,
+        219.0,
+        -942.0,
+        -227.0,
+        220.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_1_235_bottom",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -958.0,
+        227.0,
+        -81.6,
+        -942.0,
+        243.0,
+        -80.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_1_235_top",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -958.0,
+        227.0,
+        219.0,
+        -942.0,
+        243.0,
+        220.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_2_-235_bottom",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -658.0,
+        -243.0,
+        -81.6,
+        -642.0,
+        -227.0,
+        -80.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_2_-235_top",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -658.0,
+        -243.0,
+        219.0,
+        -642.0,
+        -227.0,
+        220.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_2_235_bottom",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -658.0,
+        227.0,
+        -81.6,
+        -642.0,
+        243.0,
+        -80.0
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "battery_retention_washer_2_235_top",
+      "volume_mm3": 233.03077667,
+      "bounds_mm": [
+        -658.0,
+        227.0,
+        219.0,
+        -642.0,
+        243.0,
+        220.6
+      ],
+      "valid": true,
+      "solid_count": 1
+    }
+  ],
+  "frame_solid_count": 18,
+  "frame_sha256": "fab7821d6c7cdcd59488bcb25d1073e6639dcea6f73fd895b114e10811e3225e",
+  "old_17_floating_mapping": [
+    {
+      "old_body_index": 37,
+      "name": "battery_1_stop_-1"
+    },
+    {
+      "old_body_index": 38,
+      "name": "battery_1_stop_1"
+    },
+    {
+      "old_body_index": 40,
+      "name": "battery_2_stop_-1"
+    },
+    {
+      "old_body_index": 41,
+      "name": "battery_2_stop_1"
+    },
+    {
+      "old_body_index": 43,
+      "name": "battery_3_stop_-1"
+    },
+    {
+      "old_body_index": 44,
+      "name": "battery_3_stop_1"
+    },
+    {
+      "old_body_index": 46,
+      "name": "battery_4_stop_-1"
+    },
+    {
+      "old_body_index": 47,
+      "name": "battery_4_stop_1"
+    },
+    {
+      "old_body_index": 114,
+      "name": "cable_duct_floor_1"
+    },
+    {
+      "old_body_index": 115,
+      "name": "cable_duct_side_1_400"
+    },
+    {
+      "old_body_index": 116,
+      "name": "cable_duct_side_1_470"
+    },
+    {
+      "old_body_index": 117,
+      "name": "cable_duct_floor_2"
+    },
+    {
+      "old_body_index": 118,
+      "name": "cable_duct_side_2_400"
+    },
+    {
+      "old_body_index": 119,
+      "name": "cable_duct_side_2_470"
+    },
+    {
+      "old_body_index": 120,
+      "name": "cable_duct_floor_3"
+    },
+    {
+      "old_body_index": 121,
+      "name": "cable_duct_side_3_400"
+    },
+    {
+      "old_body_index": 122,
+      "name": "cable_duct_side_3_470"
+    }
+  ],
+  "body_valid": true,
+  "zero_gap_graph": {
+    "tolerance_mm": 1e-05,
+    "connected_count": 285,
+    "floating": []
+  },
+  "half_mm_graph": {
+    "tolerance_mm": 0.5,
+    "connected_count": 285,
+    "floating": []
+  },
+  "interferences_mm3": [],
+  "retained_M6_joints": [
+    {
+      "id": "rear_controller_hatch_M6_1",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_1",
+          "b": "rear_controller_hatch_M6_washer_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_1",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_1",
+          "b": "rear_controller_hatch_nutplate_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_1",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_2",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_2",
+          "b": "rear_controller_hatch_M6_washer_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_2",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_2",
+          "b": "rear_controller_hatch_nutplate_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_2",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_3",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_3",
+          "b": "rear_controller_hatch_M6_washer_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_3",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_3",
+          "b": "rear_controller_hatch_nutplate_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_3",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_4",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_4",
+          "b": "rear_controller_hatch_M6_washer_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_4",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_4",
+          "b": "rear_controller_hatch_nutplate_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_4",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_5",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_5",
+          "b": "rear_controller_hatch_M6_washer_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_5",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_5",
+          "b": "rear_controller_hatch_nutplate_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_5",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_6",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "rear_controller_hatch_M6_6",
+          "b": "rear_controller_hatch_M6_washer_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_washer_6",
+          "b": "rear_controller_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_M6_6",
+          "b": "rear_controller_hatch_nutplate_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_nutplate_6",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_removable_lid",
+          "b": "rear_controller_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "rear_controller_hatch_gasket",
+          "b": "rear_controller_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_1",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_1",
+          "b": "battery_hatch_M6_washer_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_1",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_1",
+          "b": "battery_hatch_nutplate_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_1",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_2",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_2",
+          "b": "battery_hatch_M6_washer_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_2",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_2",
+          "b": "battery_hatch_nutplate_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_2",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_3",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_3",
+          "b": "battery_hatch_M6_washer_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_3",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_3",
+          "b": "battery_hatch_nutplate_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_3",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_4",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_4",
+          "b": "battery_hatch_M6_washer_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_4",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_4",
+          "b": "battery_hatch_nutplate_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_4",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_5",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_5",
+          "b": "battery_hatch_M6_washer_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_5",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_5",
+          "b": "battery_hatch_nutplate_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_5",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_6",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "battery_hatch_M6_6",
+          "b": "battery_hatch_M6_washer_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_washer_6",
+          "b": "battery_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_M6_6",
+          "b": "battery_hatch_nutplate_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_nutplate_6",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_removable_lid",
+          "b": "battery_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "battery_hatch_gasket",
+          "b": "battery_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_1",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_1",
+          "b": "payload_tool_hatch_M6_washer_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_1",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_1",
+          "b": "payload_tool_hatch_nutplate_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_1",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_2",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_2",
+          "b": "payload_tool_hatch_M6_washer_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_2",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_2",
+          "b": "payload_tool_hatch_nutplate_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_2",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_3",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_3",
+          "b": "payload_tool_hatch_M6_washer_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_3",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_3",
+          "b": "payload_tool_hatch_nutplate_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_3",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_4",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_4",
+          "b": "payload_tool_hatch_M6_washer_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_4",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_4",
+          "b": "payload_tool_hatch_nutplate_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_4",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_5",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_5",
+          "b": "payload_tool_hatch_M6_washer_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_5",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_5",
+          "b": "payload_tool_hatch_nutplate_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_5",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_6",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "payload_tool_hatch_M6_6",
+          "b": "payload_tool_hatch_M6_washer_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_washer_6",
+          "b": "payload_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_M6_6",
+          "b": "payload_tool_hatch_nutplate_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_nutplate_6",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_removable_lid",
+          "b": "payload_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "payload_tool_hatch_gasket",
+          "b": "payload_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_1",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_1",
+          "b": "front_tool_hatch_M6_washer_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_1",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_1",
+          "b": "front_tool_hatch_nutplate_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_1",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_2",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_2",
+          "b": "front_tool_hatch_M6_washer_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_2",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_2",
+          "b": "front_tool_hatch_nutplate_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_2",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_3",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_3",
+          "b": "front_tool_hatch_M6_washer_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_3",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_3",
+          "b": "front_tool_hatch_nutplate_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_3",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_4",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_4",
+          "b": "front_tool_hatch_M6_washer_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_4",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_4",
+          "b": "front_tool_hatch_nutplate_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_4",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_5",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_5",
+          "b": "front_tool_hatch_M6_washer_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_5",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_5",
+          "b": "front_tool_hatch_nutplate_5",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_5",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_6",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 9.6,
+      "actual_nominal_thread_engagement_mm": 10.0,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "front_tool_hatch_M6_6",
+          "b": "front_tool_hatch_M6_washer_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_washer_6",
+          "b": "front_tool_hatch_removable_lid",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_M6_6",
+          "b": "front_tool_hatch_nutplate_6",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_nutplate_6",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_removable_lid",
+          "b": "front_tool_hatch_gasket",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "front_tool_hatch_gasket",
+          "b": "front_tool_hatch_weld_flange",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_1_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_1_1_M6x20",
+          "b": "left_service_nutclip_1_1_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_1_washer",
+          "b": "left_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_1_M6x20",
+          "b": "left_service_nutclip_1_1_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_1_tapped_boss",
+          "b": "left_service_nutclip_1_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_1",
+          "b": "left_service_nutclip_1_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_2_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_1_2_M6x20",
+          "b": "left_service_nutclip_1_2_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_2_washer",
+          "b": "left_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_2_M6x20",
+          "b": "left_service_nutclip_1_2_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_2_tapped_boss",
+          "b": "left_service_nutclip_1_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_1",
+          "b": "left_service_nutclip_1_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_3_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_1_3_M6x20",
+          "b": "left_service_nutclip_1_3_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_3_washer",
+          "b": "left_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_3_M6x20",
+          "b": "left_service_nutclip_1_3_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_3_tapped_boss",
+          "b": "left_service_nutclip_1_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_1",
+          "b": "left_service_nutclip_1_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_4_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_1_4_M6x20",
+          "b": "left_service_nutclip_1_4_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_4_washer",
+          "b": "left_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_4_M6x20",
+          "b": "left_service_nutclip_1_4_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_1_4_tapped_boss",
+          "b": "left_service_nutclip_1_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_1",
+          "b": "left_service_nutclip_1_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_1_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_2_1_M6x20",
+          "b": "left_service_nutclip_2_1_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_1_washer",
+          "b": "left_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_1_M6x20",
+          "b": "left_service_nutclip_2_1_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_1_tapped_boss",
+          "b": "left_service_nutclip_2_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_2",
+          "b": "left_service_nutclip_2_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_2_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_2_2_M6x20",
+          "b": "left_service_nutclip_2_2_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_2_washer",
+          "b": "left_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_2_M6x20",
+          "b": "left_service_nutclip_2_2_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_2_tapped_boss",
+          "b": "left_service_nutclip_2_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_2",
+          "b": "left_service_nutclip_2_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_3_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_2_3_M6x20",
+          "b": "left_service_nutclip_2_3_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_3_washer",
+          "b": "left_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_3_M6x20",
+          "b": "left_service_nutclip_2_3_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_3_tapped_boss",
+          "b": "left_service_nutclip_2_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_2",
+          "b": "left_service_nutclip_2_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_4_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "left_service_nutclip_2_4_M6x20",
+          "b": "left_service_nutclip_2_4_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_4_washer",
+          "b": "left_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_4_M6x20",
+          "b": "left_service_nutclip_2_4_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_service_nutclip_2_4_tapped_boss",
+          "b": "left_service_nutclip_2_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "left_side_service_cover_2",
+          "b": "left_service_nutclip_2_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_1_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_1_1_M6x20",
+          "b": "right_service_nutclip_1_1_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_1_washer",
+          "b": "right_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_1_M6x20",
+          "b": "right_service_nutclip_1_1_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_1_tapped_boss",
+          "b": "right_service_nutclip_1_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_1",
+          "b": "right_service_nutclip_1_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_2_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_1_2_M6x20",
+          "b": "right_service_nutclip_1_2_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_2_washer",
+          "b": "right_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_2_M6x20",
+          "b": "right_service_nutclip_1_2_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_2_tapped_boss",
+          "b": "right_service_nutclip_1_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_1",
+          "b": "right_service_nutclip_1_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_3_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_1_3_M6x20",
+          "b": "right_service_nutclip_1_3_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_3_washer",
+          "b": "right_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_3_M6x20",
+          "b": "right_service_nutclip_1_3_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_3_tapped_boss",
+          "b": "right_service_nutclip_1_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_1",
+          "b": "right_service_nutclip_1_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_4_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_1_4_M6x20",
+          "b": "right_service_nutclip_1_4_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_4_washer",
+          "b": "right_side_service_cover_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_4_M6x20",
+          "b": "right_service_nutclip_1_4_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_1_4_tapped_boss",
+          "b": "right_service_nutclip_1_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_1",
+          "b": "right_service_nutclip_1_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_1_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_2_1_M6x20",
+          "b": "right_service_nutclip_2_1_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_1_washer",
+          "b": "right_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_1_M6x20",
+          "b": "right_service_nutclip_2_1_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_1_tapped_boss",
+          "b": "right_service_nutclip_2_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_2",
+          "b": "right_service_nutclip_2_1",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_2_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_2_2_M6x20",
+          "b": "right_service_nutclip_2_2_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_2_washer",
+          "b": "right_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_2_M6x20",
+          "b": "right_service_nutclip_2_2_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_2_tapped_boss",
+          "b": "right_service_nutclip_2_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_2",
+          "b": "right_service_nutclip_2_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_3_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_2_3_M6x20",
+          "b": "right_service_nutclip_2_3_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_3_washer",
+          "b": "right_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_3_M6x20",
+          "b": "right_service_nutclip_2_3_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_3_tapped_boss",
+          "b": "right_service_nutclip_2_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_2",
+          "b": "right_service_nutclip_2_3",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_4_M6x20",
+      "actual_length_mm": 20.0,
+      "actual_grip_mm": 7.6,
+      "actual_nominal_thread_engagement_mm": 12.4,
+      "thread_model": "smooth nominal diameter 6 mm; no helical thread proof",
+      "coaxial_cylindrical_face_radii_mm": {
+        "cover": [
+          3.3
+        ],
+        "flange": [
+          3.3
+        ],
+        "holder": [
+          3.0
+        ]
+      },
+      "contacts": [
+        {
+          "a": "right_service_nutclip_2_4_M6x20",
+          "b": "right_service_nutclip_2_4_washer",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_4_washer",
+          "b": "right_side_service_cover_2",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_4_M6x20",
+          "b": "right_service_nutclip_2_4_tapped_boss",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_service_nutclip_2_4_tapped_boss",
+          "b": "right_service_nutclip_2_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "right_side_service_cover_2",
+          "b": "right_service_nutclip_2_4",
+          "distance_mm": 0.0,
+          "overlap_mm3": 0.0
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "M8_tie_rod_stack_checks": [
+    {
+      "id": "battery_retention_stud_1_-235",
+      "rod_length_mm": 325.0,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_1_-235_bottom",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_1_-235",
+              "b": "battery_retention_nut_1_-235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_1_-235_bottom",
+              "b": "battery_retention_washer_1_-235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_1_-235_bottom",
+              "b": "battery_well_floor_3mm",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_1_-235_top",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_1_-235",
+              "b": "battery_retention_nut_1_-235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_1_-235_top",
+              "b": "battery_retention_washer_1_-235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_1_-235_top",
+              "b": "battery_retention_crossbar_1",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "remaining_battery_top_gap_mm": 12,
+      "battery_restraint_qualified": false
+    },
+    {
+      "id": "battery_retention_stud_1_235",
+      "rod_length_mm": 325.0,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_1_235_bottom",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_1_235",
+              "b": "battery_retention_nut_1_235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_1_235_bottom",
+              "b": "battery_retention_washer_1_235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_1_235_bottom",
+              "b": "battery_well_floor_3mm",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_1_235_top",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_1_235",
+              "b": "battery_retention_nut_1_235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_1_235_top",
+              "b": "battery_retention_washer_1_235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_1_235_top",
+              "b": "battery_retention_crossbar_1",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "remaining_battery_top_gap_mm": 12,
+      "battery_restraint_qualified": false
+    },
+    {
+      "id": "battery_retention_stud_2_-235",
+      "rod_length_mm": 325.0,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_2_-235_bottom",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_2_-235",
+              "b": "battery_retention_nut_2_-235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_2_-235_bottom",
+              "b": "battery_retention_washer_2_-235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_2_-235_bottom",
+              "b": "battery_well_floor_3mm",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_2_-235_top",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_2_-235",
+              "b": "battery_retention_nut_2_-235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_2_-235_top",
+              "b": "battery_retention_washer_2_-235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_2_-235_top",
+              "b": "battery_retention_crossbar_2",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "remaining_battery_top_gap_mm": 12,
+      "battery_restraint_qualified": false
+    },
+    {
+      "id": "battery_retention_stud_2_235",
+      "rod_length_mm": 325.0,
+      "ends": [
+        {
+          "name": "bottom",
+          "nut": "battery_retention_nut_2_235_bottom",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_2_235",
+              "b": "battery_retention_nut_2_235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_2_235_bottom",
+              "b": "battery_retention_washer_2_235_bottom",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_2_235_bottom",
+              "b": "battery_well_floor_3mm",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        },
+        {
+          "name": "top",
+          "nut": "battery_retention_nut_2_235_top",
+          "engagement_mm": 6.5,
+          "protrusion_mm": 4.9,
+          "coaxial_nominal_thread_radii_mm": [
+            4.0
+          ],
+          "contacts": [
+            {
+              "a": "battery_retention_stud_2_235",
+              "b": "battery_retention_nut_2_235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_nut_2_235_top",
+              "b": "battery_retention_washer_2_235_top",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            },
+            {
+              "a": "battery_retention_washer_2_235_top",
+              "b": "battery_retention_crossbar_2",
+              "distance_mm": 0.0,
+              "overlap_mm3": 0.0
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "remaining_battery_top_gap_mm": 12,
+      "battery_restraint_qualified": false
+    }
+  ],
+  "weld_connection_fits": [
+    {
+      "a": "rear_controller_hatch_nutplate_1",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_2",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_3",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_4",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_5",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_controller_hatch_nutplate_6",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_1",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_2",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_3",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_4",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_5",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_hatch_nutplate_6",
+      "b": "battery_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_1",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_2",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_3",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_4",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_5",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_tool_hatch_nutplate_6",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_1",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_2",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_3",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_4",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_5",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_tool_hatch_nutplate_6",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Weld boss perimeter to underside of same-alloy flange; weld sizing and distortion TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_hatch_partition_ledge",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "860 mm butt seam at partition face; qualification pending.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "rear_hatch_partition_ledge",
+      "b": "rear_controller_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Flange bears over 19 mm ledge; same-alloy weld/fit detail.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_hatch_partition_ledge",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "860 mm butt seam at partition face; qualification pending.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "payload_hatch_partition_ledge",
+      "b": "payload_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Flange bears over 19 mm ledge; same-alloy weld/fit detail.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_left_support_ledge",
+      "b": "front_tool_left_side",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "494 mm edge seam to side wall.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_left_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "20 mm bearing band under flange.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_right_support_ledge",
+      "b": "front_tool_right_side",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "494 mm edge seam to side wall.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_right_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "20 mm bearing band under flange.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_rear_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Broad flange bearing contact.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_rear_support_ledge",
+      "b": "front_tool_rear_wall",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Rear butt seam / fitted nose seam, unqualified.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_nose_support_ledge",
+      "b": "front_tool_hatch_weld_flange",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Broad flange bearing contact.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "front_hatch_nose_support_ledge",
+      "b": "front_sloped_service_nose",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Rear butt seam / fitted nose seam, unqualified.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_1",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_1_tapped_boss",
+      "b": "left_service_nutclip_1_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_2",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_2_tapped_boss",
+      "b": "left_service_nutclip_1_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_3",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_3_tapped_boss",
+      "b": "left_service_nutclip_1_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_4",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_1_4_tapped_boss",
+      "b": "left_service_nutclip_1_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_1",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_1_tapped_boss",
+      "b": "left_service_nutclip_2_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_2",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_2_tapped_boss",
+      "b": "left_service_nutclip_2_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_3",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_3_tapped_boss",
+      "b": "left_service_nutclip_2_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_4",
+      "b": "main_left_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "left_service_nutclip_2_4_tapped_boss",
+      "b": "left_service_nutclip_2_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_1",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_1_tapped_boss",
+      "b": "right_service_nutclip_1_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_2",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_2_tapped_boss",
+      "b": "right_service_nutclip_1_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_3",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_3_tapped_boss",
+      "b": "right_service_nutclip_1_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_4",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_1_4_tapped_boss",
+      "b": "right_service_nutclip_1_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_1",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_1_tapped_boss",
+      "b": "right_service_nutclip_2_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_2",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_2_tapped_boss",
+      "b": "right_service_nutclip_2_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_3",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_3_tapped_boss",
+      "b": "right_service_nutclip_2_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_4",
+      "b": "main_right_side_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Clip overlaps cutout at end and top/bottom; same-alloy weld outside removable cover footprint.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "right_service_nutclip_2_4_tapped_boss",
+      "b": "right_service_nutclip_2_4",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Same-alloy boss perimeter welded to backing clip.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_1_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_1_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_2_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_2_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_3_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_3_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_4_stop_-1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "battery_4_stop_1",
+      "b": "battery_well_floor_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "260 mm continuous bottom edge; proposed fillet weld both accessible sides, sizing TBD.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "rear_bulkhead_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_1_rear_welded_support",
+      "b": "cable_duct_floor_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_1_front_welded_support",
+      "b": "cable_duct_floor_1",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_1",
+      "b": "cable_duct_side_1_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "controller_battery_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_2_rear_welded_support",
+      "b": "cable_duct_floor_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_2_front_welded_support",
+      "b": "cable_duct_floor_2",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_2",
+      "b": "cable_duct_side_2_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "battery_tool_partition",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_3_rear_welded_support",
+      "b": "cable_duct_floor_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "arm_facing_bulkhead_3mm",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "70 mm shelf end seam plus two 24 mm gusset roots to partition.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_3_front_welded_support",
+      "b": "cable_duct_floor_3",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "25x70 mm bearing overlap, duct welded at support edges.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_400",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    },
+    {
+      "a": "cable_duct_floor_3",
+      "b": "cable_duct_side_3_470",
+      "joint": "proposed same-alloy welded attachment",
+      "note": "Existing floor/side edge connection to become same-alloy welded duct.",
+      "strength_qualified": false,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "geometric_fit_pass": true
+    }
+  ],
+  "tool_access": [
+    {
+      "id": "rear_controller_hatch_M6_1",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_2",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_3",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_4",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_5",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "rear_controller_hatch_M6_6",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_1",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_2",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_3",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_4",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_5",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "battery_hatch_M6_6",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_1",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_2",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_3",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_4",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_5",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "payload_tool_hatch_M6_6",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_1",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_2",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_3",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_4",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_5",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "front_tool_hatch_M6_6",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_1_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_2_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_3_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_1_4_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_1_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_2_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_3_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "left_service_nutclip_2_4_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_1_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_2_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_3_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_1_4_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_1_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_2_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_3_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    },
+    {
+      "id": "right_service_nutclip_2_4_M6x20",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "positive_volume_hits": [],
+      "pass": true
+    }
+  ],
+  "panel_unseating_checks": [
+    {
+      "group": "rear_controller_hatch",
+      "panel": "rear_controller_hatch_removable_lid",
+      "removal_vector": [
+        0,
+        0,
+        1
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "battery_hatch",
+      "panel": "battery_hatch_removable_lid",
+      "removal_vector": [
+        0,
+        0,
+        1
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "payload_tool_hatch",
+      "panel": "payload_tool_hatch_removable_lid",
+      "removal_vector": [
+        0,
+        0,
+        1
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "front_tool_hatch",
+      "panel": "front_tool_hatch_removable_lid",
+      "removal_vector": [
+        0,
+        0,
+        1
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "left_side_service_cover_1",
+      "panel": "left_side_service_cover_1",
+      "removal_vector": [
+        0,
+        1,
+        0
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "left_side_service_cover_2",
+      "panel": "left_side_service_cover_2",
+      "removal_vector": [
+        0,
+        1,
+        0
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "right_side_service_cover_1",
+      "panel": "right_side_service_cover_1",
+      "removal_vector": [
+        0,
+        -1,
+        0
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    },
+    {
+      "group": "right_side_service_cover_2",
+      "panel": "right_side_service_cover_2",
+      "removal_vector": [
+        0,
+        -1,
+        0
+      ],
+      "sampled_displacements_mm": [
+        1,
+        5,
+        10,
+        20
+      ],
+      "positive_volume_hits": [],
+      "pass": true,
+      "scope": "Straight 20 mm unseating sampled only; full extraction and personnel access not qualified."
+    }
+  ],
+  "R02_deck_bores": [
+    {
+      "id": "INV1_to_deck_00",
+      "axis_C_mm": [
+        -448.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV1_to_deck_01",
+      "axis_C_mm": [
+        -448.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV1_to_deck_10",
+      "axis_C_mm": [
+        -185.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV1_to_deck_11",
+      "axis_C_mm": [
+        -185.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV2_to_deck_00",
+      "axis_C_mm": [
+        -448.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV2_to_deck_01",
+      "axis_C_mm": [
+        -448.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV2_to_deck_10",
+      "axis_C_mm": [
+        -185.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV2_to_deck_11",
+      "axis_C_mm": [
+        -185.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV3_to_deck_00",
+      "axis_C_mm": [
+        -155.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV3_to_deck_01",
+      "axis_C_mm": [
+        -155.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV3_to_deck_10",
+      "axis_C_mm": [
+        75.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV3_to_deck_11",
+      "axis_C_mm": [
+        75.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV4_to_deck_00",
+      "axis_C_mm": [
+        -155.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV4_to_deck_01",
+      "axis_C_mm": [
+        -155.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV4_to_deck_10",
+      "axis_C_mm": [
+        75.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV4_to_deck_11",
+      "axis_C_mm": [
+        75.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV5_to_deck_00",
+      "axis_C_mm": [
+        105.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV5_to_deck_01",
+      "axis_C_mm": [
+        105.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV5_to_deck_10",
+      "axis_C_mm": [
+        335.0,
+        115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV5_to_deck_11",
+      "axis_C_mm": [
+        335.0,
+        285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV6_to_deck_00",
+      "axis_C_mm": [
+        105.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV6_to_deck_01",
+      "axis_C_mm": [
+        105.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV6_to_deck_10",
+      "axis_C_mm": [
+        335.0,
+        -285.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "INV6_to_deck_11",
+      "axis_C_mm": [
+        335.0,
+        -115.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "PDU_to_deck_370_-205",
+      "axis_C_mm": [
+        370.0,
+        -205.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "PDU_to_deck_370_205",
+      "axis_C_mm": [
+        370.0,
+        205.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "PDU_to_deck_520_-205",
+      "axis_C_mm": [
+        520.0,
+        -205.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "id": "PDU_to_deck_520_205",
+      "axis_C_mm": [
+        520.0,
+        205.0,
+        100
+      ],
+      "diameter_mm": 6.6,
+      "residual_volume_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "R02_deck_unchanged_volume_error_mm3": 0.0,
+  "nominal_thread_and_weld_strength_qualified": false,
+  "whole_vehicle_qualified": false,
+  "geometry_pass": true
+}

@@ -1,0 +1,140 @@
+{
+  "revision": "E05",
+  "source_body_package": "body-power/shock-opening-study/body_shock_partition_replacements_SO02_E04P",
+  "source_body_STEP_SHA256": "1962a34d8d9104f2ec5673ec6454f587338bcb847fe8d8195dabc95941eeda8e",
+  "replace_by_name": [
+    "controller_battery_partition",
+    "battery_tool_partition"
+  ],
+  "cutters": [
+    {
+      "target_part": "controller_battery_partition",
+      "center_C_mm": [
+        -1141.5,
+        -450,
+        184.25
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -1144,
+        -1139
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "controller_battery_partition",
+      "center_C_mm": [
+        -1141.5,
+        -470,
+        270
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -1144,
+        -1139
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "battery_tool_partition",
+      "center_C_mm": [
+        -458.5,
+        -450,
+        184.25
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -461,
+        -456
+      ],
+      "gland_panel_seat_X_mm": -460,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "battery_tool_partition",
+      "center_C_mm": [
+        -458.5,
+        -470,
+        270
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -461,
+        -456
+      ],
+      "gland_panel_seat_X_mm": -460,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    }
+  ],
+  "volume_checks": [
+    {
+      "name": "controller_battery_partition",
+      "before_mm3": 704590.5642673646,
+      "after_mm3": 701598.0087692622,
+      "removed_mm3": 2992.5554981023306
+    },
+    {
+      "name": "battery_tool_partition",
+      "before_mm3": 728785.4074669192,
+      "after_mm3": 725792.8519688171,
+      "removed_mm3": 2992.5554981020978
+    }
+  ],
+  "geometry": {
+    "source": "Original SO02_E04P body partition delta, four source-sized LAPP gland mounting bores",
+    "vehicle_placed": true,
+    "files": [
+      "partition_main_glands_E05.glb",
+      "partition_main_glands_E05.step"
+    ],
+    "original_named_parts": 2,
+    "geometry_valid": true,
+    "source_CAD_read": false,
+    "supplier_contours_exact": false,
+    "electrical_qualified": false,
+    "actual_model_bounds_mm": [
+      -1143.1383314823488,
+      -650.0000001000326,
+      102.99999989999988,
+      -456.8616685176513,
+      650.0000001000326,
+      337.00000010003265
+    ]
+  },
+  "deck_40_bores_unchanged": true,
+  "body_strength_weather_and_installed_IP_qualified": false
+}

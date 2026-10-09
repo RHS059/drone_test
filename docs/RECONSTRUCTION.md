@@ -31,3 +31,7 @@ The known modeled/catalogue subtotal is partial; complete vehicle mass and cente
 ## Battery terminal correction
 
 [Verified polarity and source proof](assets/battery-polarity/README.md) supersedes the frozen BA02 assumed terminal names. Installed +Y is positive and −Y negative. Runtime labels and isolated colors use this mapping; immutable source aliases are retained for traceability. Geometry and hardware qualification are unchanged.
+
+## Supported main cable pair
+
+E05 adds exactly 98 named cable/support/retention parts and replaces two partitions for four retained glands. Its graph binds 105 actual scene objects across 22 interface edges. Only the isolator-output to BMS-battery pair has modeled jacket routes; upstream battery wiring, conductor/crimp continuity and full-circuit protection remain unfinished. The 40-hole deck, BA02 parts and corrected terminal polarity are unchanged. The known modeled/catalogue subset is 1272.550107 kg; complete vehicle mass and electrical operation remain unverified. Run `node test-main-pair.mjs` for the actual-GLTFLoader composed regression.

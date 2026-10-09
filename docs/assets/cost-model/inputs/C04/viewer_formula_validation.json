@@ -1,0 +1,32 @@
+{
+  "scope": "Current unchanged app/docs/cost-math.js interoperates with selected C04 JSON, without modifying application files",
+  "scenario_results": [
+    {
+      "scenario": "assumed_2kw",
+      "energy": 0.3333333333333333,
+      "labor": 60,
+      "battery": 0.8964,
+      "partial": 61.229733333333336,
+      "pass": true
+    },
+    {
+      "scenario": "assumed_4kw",
+      "energy": 0.6666666666666666,
+      "labor": 60,
+      "battery": 1.09423828125,
+      "partial": 61.760904947916664,
+      "pass": true
+    },
+    {
+      "scenario": "assumed_8kw",
+      "energy": 1.3333333333333333,
+      "labor": 60,
+      "battery": 2.1884765625,
+      "partial": 63.521809895833336,
+      "pass": true
+    }
+  ],
+  "unknown_replacement_preserved": true,
+  "invalid_inputs_rejected": true,
+  "all_pass": true
+}

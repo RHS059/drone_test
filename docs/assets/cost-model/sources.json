@@ -312,6 +312,46 @@
       "is_supplier_quote": false,
       "unit_price": null,
       "currency": null
+    },
+    {
+      "id": "lapp_0060001_mass",
+      "manufacturer": "LAPP",
+      "article": "0060001",
+      "family": "ÖLFLEX HEAT 180 SiF",
+      "url": "https://products.lappgroup.com/online-catalogue/power-and-control-cables/expanded-ambient-temperatures/silicone-single-cores/oelflex-heat-180-sif.html",
+      "verified_on": "2026-10-09",
+      "method": "Official manufacturer catalogue article table, header and exact SKU row checked using web reader.",
+      "fields": {
+        "conductor_cross_section_mm2": 70,
+        "outside_diameter_nominal_mm": 14.2,
+        "core_colour": "black",
+        "copper_index_kg_per_km": 672,
+        "weight_kg_per_km": 724
+      },
+      "source_locations": {
+        "table_header_line": 145,
+        "article_row_line": 263,
+        "nominal_values_note_line": 327
+      },
+      "mass_basis": "Nominal manufacturer cable weight per km, includes cable construction. Copper index is a separate procurement index, not cable total weight.",
+      "unit_price": null,
+      "currency": null,
+      "is_supplier_quote": false,
+      "source_document_bundled": false,
+      "kind": "manufacturer_catalogue",
+      "retrieved_on": "2026-10-09",
+      "facts": "Exact article 0060001: 70 mm²; 14.2 mm nominal OD; nominal weight 724 kg/km. Separate copper index is 672 kg/km. No unit price accepted."
+    },
+    {
+      "id": "E05_frozen_contract",
+      "url": null,
+      "publisher": "Original project E05",
+      "kind": "hash_pinned_original_contract",
+      "retrieved_on": "2026-10-09",
+      "file": "inputs/E05/main_routes_E05/main_pair_contract_E05.json",
+      "sha256": "fa19f75e79b911cd2901c5337a730420a8e8b66633d1d5468b49f2250593af5d",
+      "is_supplier_quote": false,
+      "facts": "98 added nodes, two replaced partitions, two geometric main DC jacket routes; electrically operational false."
     }
   ],
   "restrictions": "Factual summaries and links only. No raw vendor CAD, PDFs or fetched webpages."

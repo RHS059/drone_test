@@ -1,0 +1,60 @@
+{
+  "revision": "C04+E05_R01",
+  "baseline_known_subset_kg": 1268.0641640992537,
+  "partition_replacement_delta_kg": -0.016159799689731358,
+  "new_original_aluminium_stands_kg": 0.4274107601194724,
+  "nominal_routed_cable_length_m": 5.628027687008149,
+  "nominal_routed_cable_mass_kg": 4.0746920453939,
+  "known_subset_delta_kg": 4.485943005823641,
+  "candidate_known_subset_kg": 1272.5501071050776,
+  "whole_vehicle_mass_kg": null,
+  "E05_complete_installed_mass_kg": null,
+  "E05_complete_cost": null,
+  "new_source_nodes": 98,
+  "replaced_body_nodes": 2,
+  "net_source_node_increase": 98,
+  "added_BOM_rows": 98,
+  "total_BOM_rows": 328,
+  "unresolved_E05_node_masses": 88,
+  "public_price_baskets": [
+    {
+      "currency": "PLN",
+      "reference_subtotal": 6090.0,
+      "line_ids": [
+        "tires"
+      ],
+      "line_count": 1,
+      "complete_build_total": false,
+      "tax_basis": "PLN tire listing gross/brutto",
+      "shipping_total": null,
+      "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+    },
+    {
+      "currency": "USD",
+      "reference_subtotal": 17200.0,
+      "line_ids": [
+        "grippers",
+        "couplings",
+        "batteries",
+        "battery_bms"
+      ],
+      "line_count": 4,
+      "complete_build_total": false,
+      "tax_basis": "Mixed references: US gripper/coupling tax basis unresolved; LATAM battery/BMS ex VAT",
+      "shipping_total": null,
+      "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+    }
+  ],
+  "priced_subset_delta_by_currency": {
+    "USD": 0.0,
+    "PLN": 0.0
+  },
+  "complete_build_cost": null,
+  "actual_cost_per_operating_hour": null,
+  "whole_rover_runtime_hours": null,
+  "operating_scenarios_changed": false,
+  "geometric_main_routes_only": 2,
+  "electrical_end_to_end_complete": false,
+  "publication_status": "Separate candidate; original app, C04 cost freeze and pending publication payload unchanged",
+  "warning": "A zero priced-subset delta means no additional accepted prices. It does not mean E05 costs zero."
+}

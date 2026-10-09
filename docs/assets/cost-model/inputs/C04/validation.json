@@ -1,0 +1,8 @@
+{
+  "revision": "C04_R01",
+  "tests_run": 24,
+  "failures": 0,
+  "errors": 0,
+  "all_pass": true,
+  "scope": "Arithmetic, frozen-source consistency, name-replacement, unknown preservation, no-proxy/double counting and reproducibility. No hardware, supplier quote or operational qualification."
+}

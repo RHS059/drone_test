@@ -1,19 +1,19 @@
 {
   "configuration": {
-    "revision": "C04_R01",
+    "revision": "C04_E05_R01",
     "structural_revision": "C04_R05",
     "mechanical_public_freeze": "C04_R02",
     "steering_corner_count": 4,
     "middle_corner_count": 2,
     "rack_count": 2,
     "frame_revision": "R07",
-    "body_revision": "PR01 + SO02_E04P + E04 trough + BA02",
+    "body_revision": "PR01 + SO02_E04P + E04 trough + BA02 + E05 four bores / two partition replacements",
     "battery_revision": "BA02",
-    "electrical_revision": "E04",
+    "electrical_revision": "E04 + E05 two geometric Q0-to-Lynx main routes",
     "tool_adapter_revision": "R04",
     "not_fabrication_released": true
   },
-  "known_subset_kg": 1268.0641640992537,
+  "known_subset_kg": 1272.5501071050776,
   "whole_vehicle_mass_kg": null,
   "groups_kg": {
     "frame": 386.9529671773959,
@@ -22,11 +22,13 @@
     "joint_details": 14.017320451359337,
     "shock_details": 16.93926994842406,
     "mechanical_purchased": 152.24,
-    "body": 113.5556902568118,
+    "body": 113.53953045712207,
     "battery_mount": 7.2705448374377335,
     "battery_catalogue": 74.0,
     "electrical_catalogue": 2.7,
-    "electrical_original": 13.242345372493395
+    "electrical_original": 13.242345372493395,
+    "E05_nominal_routed_cable": 4.0746920453939,
+    "E05_original_aluminium_stands": 0.42741076011947243
   },
   "body_stages": [
     {
@@ -48,9 +50,74 @@
       "stage": "BA02 removes 34 RELiON restraint parts and replaces battery well floor",
       "part_count": 237,
       "known_original_mass_kg": 113.5556902568118
+    },
+    {
+      "stage": "E05 four M25 bores, exactly two named partition replacements; 40-hole deck unchanged",
+      "part_count": 237,
+      "known_original_mass_kg": 113.53953045712207
     }
   ],
-  "mechanical_purchased_mass_kg": 152.24,
+  "baseline_known_subset_kg": 1268.0641640992537,
+  "delta": {
+    "revision": "C04+E05_R01",
+    "baseline_known_subset_kg": 1268.0641640992537,
+    "partition_replacement_delta_kg": -0.016159799689731358,
+    "new_original_aluminium_stands_kg": 0.4274107601194724,
+    "nominal_routed_cable_length_m": 5.628027687008149,
+    "nominal_routed_cable_mass_kg": 4.0746920453939,
+    "known_subset_delta_kg": 4.485943005823641,
+    "candidate_known_subset_kg": 1272.5501071050776,
+    "whole_vehicle_mass_kg": null,
+    "E05_complete_installed_mass_kg": null,
+    "E05_complete_cost": null,
+    "new_source_nodes": 98,
+    "replaced_body_nodes": 2,
+    "net_source_node_increase": 98,
+    "added_BOM_rows": 98,
+    "total_BOM_rows": 328,
+    "unresolved_E05_node_masses": 88,
+    "public_price_baskets": [
+      {
+        "currency": "PLN",
+        "reference_subtotal": 6090.0,
+        "line_ids": [
+          "tires"
+        ],
+        "line_count": 1,
+        "complete_build_total": false,
+        "tax_basis": "PLN tire listing gross/brutto",
+        "shipping_total": null,
+        "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+      },
+      {
+        "currency": "USD",
+        "reference_subtotal": 17200.0,
+        "line_ids": [
+          "grippers",
+          "couplings",
+          "batteries",
+          "battery_bms"
+        ],
+        "line_count": 4,
+        "complete_build_total": false,
+        "tax_basis": "Mixed references: US gripper/coupling tax basis unresolved; LATAM battery/BMS ex VAT",
+        "shipping_total": null,
+        "price_scope": "Dated reference subtotal only; no common destination, supplier quote, FX or checkout total"
+      }
+    ],
+    "priced_subset_delta_by_currency": {
+      "USD": 0.0,
+      "PLN": 0.0
+    },
+    "complete_build_cost": null,
+    "actual_cost_per_operating_hour": null,
+    "whole_rover_runtime_hours": null,
+    "operating_scenarios_changed": false,
+    "geometric_main_routes_only": 2,
+    "electrical_end_to_end_complete": false,
+    "publication_status": "Separate candidate; original app, C04 cost freeze and pending publication payload unchanged",
+    "warning": "A zero priced-subset delta means no additional accepted prices. It does not mean E05 costs zero."
+  },
   "rows": [
     {
       "id": "frame_R07",
@@ -1559,8 +1626,8 @@
     {
       "id": "body_composed",
       "quantity": 1,
-      "unit_mass_kg": 113.5556902568118,
-      "extended_mass_kg": 113.5556902568118,
+      "unit_mass_kg": 113.53953045712207,
+      "extended_mass_kg": 113.53953045712207,
       "mass_group": "body",
       "basis": "original material-volume estimate; not weighed"
     },
@@ -1891,7 +1958,791 @@
       "extended_mass_kg": null,
       "mass_group": null,
       "basis": "unknown"
+    },
+    {
+      "id": "E05:MAIN_positive_70mm2_routed_jacket",
+      "quantity": 2.7697464313510465,
+      "unit_mass_kg": 0.724,
+      "extended_mass_kg": 2.0052964162981577,
+      "mass_group": "E05_nominal_routed_cable",
+      "basis": "Manufacturer nominal 724 kg/km × geometric centreline length; excludes allowances, terminations and hardware; procurement cut length unreleased"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535216881,
+      "extended_mass_kg": 0.05035083535216881,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support0_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535216881,
+      "extended_mass_kg": 0.05035083535216881,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support1_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535217693,
+      "extended_mass_kg": 0.05035083535217693,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support2_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05035083535217491,
+      "extended_mass_kg": 0.05035083535217491,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_support3_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_70mm2_routed_jacket",
+      "quantity": 2.8582812556571024,
+      "unit_mass_kg": 0.724,
+      "extended_mass_kg": 2.0693956290957423,
+      "mass_group": "E05_nominal_routed_cable",
+      "basis": "Manufacturer nominal 724 kg/km × geometric centreline length; excludes allowances, terminations and hardware; procurement cut length unreleased"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support0_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support1_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support2_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4x30_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_washer_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4nut_0",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4x30_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_washer_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_M4nut_1",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_welded_stand",
+      "quantity": 1,
+      "unit_mass_kg": 0.05650185467769572,
+      "extended_mass_kg": 0.05650185467769572,
+      "mass_group": "E05_original_aluminium_stands",
+      "basis": "Original nominal volume × matched-deck aluminium density 2700 kg/m3; alloy/temper/weld unqualified"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_lower_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_support3_upper_clamp",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
+    },
+    {
+      "id": "E05:MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "quantity": 1,
+      "unit_mass_kg": null,
+      "extended_mass_kg": null,
+      "mass_group": null,
+      "basis": "Unknown installed mass; no density applied to representation"
     }
   ],
-  "exclusions": "Known modeled/catalogue subtotal, not weighed or complete. Drives, tires, nuts, straps/buckles, dampers, bearings and most installed electrical components remain unknown. Named patches replace prior geometry; density is never applied to purchased representations."
+  "exclusions": "Known modeled/catalogue subtotal, not weighed or complete. Drives, tires, nuts, straps/buckles, dampers, bearings and most installed electrical components remain unknown. Named patches replace prior geometry; density is never applied to purchased representations. E05 nominal routed cable length and aluminium stand estimates are included. Procurement cut allowances, 64 unselected commercial fasteners, 16 material-unspecified clamps and eight purchased gland/locknut masses remain unknown. Do not treat the known subset as installed whole-vehicle mass."
 }

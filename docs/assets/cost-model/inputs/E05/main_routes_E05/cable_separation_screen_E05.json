@@ -1,0 +1,19 @@
+{
+  "revision": "E05_revised_circular_routes",
+  "centerline_min_sampled_separation_mm": 33.591355780469506,
+  "minimum_needed_OD_sum_half_mm": 14.2,
+  "sampled_outer_clearance_mm": 19.391355780469507,
+  "nearest_C_mm": [
+    [
+      -1791.6433333817456,
+      -484.29244020326064,
+      184.25
+    ],
+    [
+      -1781.7721891546569,
+      -472.9760876593625,
+      214.29795933038224
+    ]
+  ],
+  "not_substitute_for_exact_STEP_boolean": true
+}

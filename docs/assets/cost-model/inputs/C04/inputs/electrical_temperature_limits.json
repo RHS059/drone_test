@@ -1,0 +1,116 @@
+{
+  "source": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51,2_V/en/operation.html",
+  "source_plot_text_discrepancy": "General datasheet charge100A/pack; operation plot50A/pack maximum at15\u201335C. Lower plot governs this candidate.",
+  "boundary_policy": "At all discontinuities use lower limit; no operation at exact outer boundaries until measurement error/hysteresis is specified.",
+  "test_count": 21,
+  "all_assertions_pass": true,
+  "rows": [
+    {
+      "cell_temperature_C": -21,
+      "discharge_A_each": 0,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": -20,
+      "discharge_A_each": 0,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": -10,
+      "discharge_A_each": 50,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": 0,
+      "discharge_A_each": 50,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": 5,
+      "discharge_A_each": 100,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": 7,
+      "discharge_A_each": 100,
+      "charge_A_each": 20
+    },
+    {
+      "cell_temperature_C": 10,
+      "discharge_A_each": 100,
+      "charge_A_each": 20
+    },
+    {
+      "cell_temperature_C": 12,
+      "discharge_A_each": 100,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 15,
+      "discharge_A_each": 100,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 25,
+      "discharge_A_each": 100,
+      "charge_A_each": 50
+    },
+    {
+      "cell_temperature_C": 35,
+      "discharge_A_each": 50,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 40,
+      "discharge_A_each": 50,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 45,
+      "discharge_A_each": 30,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 49,
+      "discharge_A_each": 30,
+      "charge_A_each": 30
+    },
+    {
+      "cell_temperature_C": 50,
+      "discharge_A_each": 0,
+      "charge_A_each": 0
+    },
+    {
+      "cell_temperature_C": 51,
+      "discharge_A_each": 0,
+      "charge_A_each": 0
+    }
+  ],
+  "warm_with20A_aux": {
+    "traction_A": 160,
+    "regen_A": 100,
+    "motion_enable": false,
+    "reason": "Requirement calculation only; brake/sink, motor pairing and enforcement are not commissioned."
+  },
+  "mixed_cold": {
+    "traction_A": 80,
+    "regen_A": 0,
+    "motion_enable": false,
+    "reason": "Requirement calculation only; brake/sink, motor pairing and enforcement are not commissioned."
+  },
+  "ATC_open": {
+    "traction_A": 160,
+    "regen_A": 0,
+    "motion_enable": false,
+    "reason": "Requirement calculation only; brake/sink, motor pairing and enforcement are not commissioned."
+  },
+  "lost_pack": {
+    "traction_A": 0,
+    "regen_A": 0,
+    "motion_enable": false,
+    "reason": "Missing/stale data or a pack is offline; validated stop required."
+  },
+  "implemented_vehicle_enforcement": false,
+  "motion_enable": false,
+  "safety_release": false
+}

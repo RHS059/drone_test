@@ -1,0 +1,61 @@
+{
+  "revision": "E05",
+  "source": "https://www.victronenergy.com/upload/documents/LiFePO4-Battery-51.2V100Ah-NG.pdf",
+  "source_pdf_SHA256": "d153636d0bb1cb84ea4c3c339746618c97fd02859398404febbc8a92a2a27d4b",
+  "drawing_labels": {
+    "left": "positive",
+    "right": "negative"
+  },
+  "drawing_fitting_offset_toward_right_mm": 52.5,
+  "installed_fitting_Y_mm": -52.5,
+  "drawing_right_to_vehicle_Y_sign": -1.0,
+  "terminals": [
+    {
+      "id": "BAT1:+",
+      "role": "positive",
+      "point_C_mm": [
+        -1029.05,
+        275.25,
+        169.6
+      ],
+      "source_polarity_verified": true,
+      "source_terminal_contact_height_revision_confirmed": false
+    },
+    {
+      "id": "BAT1:-",
+      "role": "negative",
+      "point_C_mm": [
+        -1029.05,
+        -275.25,
+        169.6
+      ],
+      "source_polarity_verified": true,
+      "source_terminal_contact_height_revision_confirmed": false
+    },
+    {
+      "id": "BAT2:+",
+      "role": "positive",
+      "point_C_mm": [
+        -679.05,
+        275.25,
+        169.6
+      ],
+      "source_polarity_verified": true,
+      "source_terminal_contact_height_revision_confirmed": false
+    },
+    {
+      "id": "BAT2:-",
+      "role": "negative",
+      "point_C_mm": [
+        -679.05,
+        -275.25,
+        169.6
+      ],
+      "source_polarity_verified": true,
+      "source_terminal_contact_height_revision_confirmed": false
+    }
+  ],
+  "passes": true,
+  "correction": "Earlier BA02 assumed node names reversed polarity; use this verified function mapping, never those names alone. Physical max-case geometry unchanged.",
+  "height_gate": "Installed169.6 comes from sourceSTEP upper conducting annulus and BA02bottom\u221269; discrepancy with234.7drawing total height remains supplier revision gate."
+}

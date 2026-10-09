@@ -1,80 +1,88 @@
-# C04 matched build and operating cost model
+# C04 + E05 separate mass, BOM and cost candidate
 
-Observed 9 October 2026. Development visualization only, not fabrication, procurement or operational release. This package changes no application files and makes no orders or vendor contacts.
+Prepared 9 October 2026. This is an isolated, offline-reproducible candidate patch. It does not change `app-C04`, the accepted `cost-model-C04` snapshot, the E05 source freeze, or the pending publication payload. No external write, order, supplier contact or publication is included.
 
-## Results
+## Result
 
-- **Complete build cost is unknown.** The matched BOM contains 230 cost/mass rows, including original geometry and unresolved categories. This is not a complete manufacturing BOM.
-- **Priced subset: USD 17,200 and PLN 6,090, kept separate.** No EUR rim basket survives. USD combines US gripper/coupling references with a clearly dated 2026 Q2 LATAM USD-C battery/BMS price list; these are not a current US quotation or a common landed-cost basis.
-- **Known modeled/catalogue mass subset: 1268.0641640992537 kg.** Whole-vehicle mass and center of gravity remain unknown. No vehicle was weighed.
-- **Actual hourly operating cost and runtime are unknown.** Preserved illustrative 2, 4 and 8 kW assumptions now use the selected 10.24 kWh nominal bank and USD 4,482 dated module-only replacement reference. Partial scenario results are USD 61.23, 61.76 and 63.52 per operating hour. These omit major costs and do not establish continuous operation.
-
-## Price observations
-
-| Selected item | Quantity | Unit reference | Extended reference | Basis |
-|---|---:|---:|---:|---|
-| Robotiq AGC-GRP-2F85 | 2 | USD 5,205 | USD 10,410 | Retained [Logic public listing](https://www.logic-control.com/robotiq-agc-grp-2f85); exact contents/lead time require confirmation |
-| Robotiq GRP-CPL-062 | 2 | USD 644 | USD 1,288 | Retained [King Barcode listing](https://www.kingbarcode.com/GRP-CPL-062); controller-connected route, full cable/interface cost absent |
-| Victron BAT548110620 | 2 | USD 2,241 | USD 4,482 | [Official 2026 Q2 LATAM USD-C price list](https://latam.victronenergy.com/wp-content/uploads/2026/04/Pricelist-Victron-2026-Q2-USD-C.pdf), ex VAT, dated indicative reference |
-| Victron LYN034170310 | 1 | USD 1,020 | USD 1,020 | Same dated LATAM price list, ex VAT |
-| Trelleborg SK-900 12-16.5 12PR, seller SKU 35546 | 6 | PLN 1,015 | PLN 6,090 | [TyreTrade listing](https://tyretrade.pl/opona/12-16-5-trelleborg-sk-900-12pr/), gross/brutto; manufacturer article identifier and six-unit allocation unverified |
-
-Jantsa 10005240 rim price remains null. NRS 60027.01.112 is a four-foot Stealth Black retail pair, so two packages supply four straps. Its variant-specific price and purchased mass remain null; the family range is not used. No tax, import charge, freight, FX rate, current stock allocation or supplier quote is invented. Confirm commercial region, exact SKUs, package contents and destination costs before procurement.
-
-## Matched configuration
-
-- Mechanical structure C04 R05, bound to the 575-file public source freeze C04 R02: 126 original nodes, replacing old C03 steering and C02 middle structures. No EVO/BFG or pattern-adapter active rows remain.
-- Six Jantsa 10005240 9.75 x 16.5 ET -70 rims, six Trelleborg SK-900 tires, thirty RIMA 22095 nuts.
-- Two Thomson B068 200 mm M/M candidates at 7 kg each; six Eibach 1800.300.0200S springs at 3.54 kg each. Their simplified external CAD does not add another mass term.
-- Frame R07, two UR20 arms, two original R04 adapters, two Robotiq grippers and controller-connected couplings retained. The exact arm/controller package remains unpriced and must count packaged controllers only once.
-- Body is PR01, then the twenty SO02_E04P named replacements, then the nineteen-part E04 trough/gland delta, then BA02 removes thirty-four RELiON restraint parts and replaces the well floor.
-- BA02 has two 37 kg Victron batteries. Its original metal additions are counted separately from the replacement floor. Strap, buckle, battery, terminal and vent external depictions do not contribute density-based mass.
-- Selected E02 carrier and E04 electrical patches compose by their ledger's remove/replace flags. Trough mass is in body only. Purchased housing, lug and connector-contact representations remain excluded from accepted original mass. Current [Lynx 1000 A specifications](https://www.victronenergy.com/media/pg/Lynx_Smart_BMS_NG/en/technical-specifications.html) give 2.7 kg; the conflicting 2.5 kg price-list value is not used for mass.
-
-## Mass reconciliation
-
-| Separate group | Included known kg |
+| Known nominal subset component | Delta, kg |
 |---|---:|
-| Frame R07 | 386.9529671773959 |
-| Two arms, two controller reservations, two original adapters | 139.233693246 |
-| Original structure C04 R05 | 347.912332809332 |
-| Original joint details | 14.017320451359337 |
-| Original shock/carrier/retention details | 16.93926994842406 |
-| Six rims + two actuators + six springs | 152.24 |
-| Composed original body, including replacement well floor | 113.5556902568118 |
-| BA02 new original metal excluding floor | 7.2705448374377335 |
-| Two battery modules | 74 |
-| Lynx BMS | 2.7 |
-| Selected original electrical support/hardware estimates, excluding trough | 13.242345372493395 |
+| Two LAPP 0060001 geometric route lengths | +4.074692045393900 |
+| Eight original aluminium stands | +0.427410760119472 |
+| Four holes in two existing aluminium partitions | −0.016159799689731 |
+| **Net known-subset delta** | **+4.485943005823641** |
+| C04 baseline known subset | 1268.064164099253700 |
+| **Separate C04+E05 candidate known subset** | **1272.550107105077600** |
 
-`body_composition.json` preserves every final named body part, material assumption, volume and mass; records the removed parts; and records each intermediate subtotal. PR01 material changes to aluminium bosses/clips are sourced from its generator instead of incorrectly inheriting the old steel placeholder material. Its progression is:
+These are mixed nominal modeled/catalogue estimates, not weighed or complete installed masses. Full E05 installed mass, whole-vehicle mass, center of gravity and complete build cost remain unknown. Tiny last-digit differences from direct bore-volume arithmetic reflect floating-point summation only.
 
-1. PR01: 267 parts, 116.7967822162259 kg
-2. SO02_E04P: 267 parts, 115.99386426207543 kg
-3. E04 trough/glands: 271 parts, 115.88551866207544 kg, with four unknown-mass purchased representations
-4. BA02 removals/floor: 237 retained body parts, 113.5556902568118 kg
+The priced subsets remain **USD 17,200** and **PLN 6,090**, separately and with the original dated/mixed-market restrictions. None of the 98 new rows has an accepted price. A zero change in priced subsets does not mean E05 is free. No currency conversion, raw-metal price, fastener allowance, cable allowance, gland price or labor estimate has been invented.
 
-The BA02 additions are separate: 7.2705448374377335 kg original metal plus 74 kg battery catalogue mass. Its replacement floor is 3.7848881760772164 kg and appears only in the composed body.
+Actual operating cost/hour and runtime remain null. The entire C04 operating-cost object is preserved exactly: its 2/4/8 kW assumptions and illustrative partial USD/hour figures are unchanged. Added mass and an ideal-copper route-loss scenario do not justify a new measured demand or runtime claim.
 
-The installed mass of drives, tires, nuts, dampers, bearings, grippers/couplings, straps/buckles, unselected-grade guides, inverter variants, ABB devices, most electrical components and harness remains unresolved. Original nominal hardware estimates do not prove final purchased mass, grade, preload, tolerance or fatigue strength.
+## Cable source, lengths and boundaries
 
-## Operating boundaries
+The [official LAPP ÖLFLEX HEAT 180 SiF catalogue](https://products.lappgroup.com/online-catalogue/power-and-control-cables/expanded-ambient-temperatures/silicone-single-cores/oelflex-heat-180-sif.html) was checked on 9 October 2026. The exact article 0060001 row gives 70 mm², black insulation, 14.2 mm nominal OD, and nominal cable weight 724 kg/km, equivalent to 0.724 kg/m. The adjacent 672 kg/km value is the separate copper index; it is not the full cable mass. Manufacturer values are nominal, with detailed tolerances available on request.
 
-The bank is **2 × 51.2 V × 100 Ah = 10.24 kWh nominal**. Usable energy and mission energy are unknown. The **180 A figure is a conditional warm-bank development ceiling with no implemented vehicle enforcement**, not qualified full-six-motor operation. Actual BMS discharge/charge limits, both module temperatures, current sharing, auxiliaries, inrush and pack availability can reduce the permissible power or disable motion. ATC/ATD mapping, regen inhibition, an independent brake/energy sink, branch protection and completed physical wiring remain open.
+The frozen geometry supplies the lengths, not the manufacturer:
 
-The 47 A drive nameplate value is not established DC demand. Six 2.2 kW ratings are S2 60 minutes, with S1 unknown. Even ideal 13.2 kW/51.2 V is 257.8125 A before arms/auxiliaries and conversion losses; this is a limiting arithmetic illustration, not a system demand measurement.
+- MAIN_positive, Q0:P_OUT → LYNX:BAT+: 2.7697464313510465 m
+- MAIN_negative, Q0:N_OUT → LYNX:BAT−: 2.8582812556571024 m
+- Total 5.628027687008149 m × 0.724 kg/m = 4.0746920453939 kg
 
-Preserved assumptions are USD 0.15/kWh, 90% charging efficiency, one supervisor hour at USD 50 and 0.1 maintenance hour at USD 100 per robot-hour; 2,000 cycles, 80% depth, five calendar years and 1,000 operating hours/year. The module reserve takes the larger of cycle or calendar reserve, never their sum. Only the module reference changes to USD 4,482 and nominal capacity changes to 10.24 kWh. These life and utilization assumptions are not validated. The BMS is not included in the module-only reserve. Capital, replacement installation labor, maintenance parts, taxes/freight, insurance, consumables, connectivity, transport, parked energy and downtime remain excluded.
+This is a nominal routed-length cable estimate. Procurement cut lengths are unreleased and remain null. It excludes additional stripping/cut allowances, slack or service allowance beyond the modeled routes, waste, new terminations and other hardware. Cable jacket volumes are never multiplied by copper, silicone or other bulk density; doing that as well as applying catalogue mass would double count the cable.
 
-## Reproduction and files
+Two geometric jacket routes are present. Conductive crimp contact, installed ampacity, protection coordination, upstream pack/merge/main-fuse wiring, traction branches, motor pigtails, arm wiring, safety mapping and regeneration handling are still unresolved. End-to-end electrical continuity and operational acceptance remain false. Do not energize. The source's 180 A ideal-copper calculation is preserved in the frozen evidence only; it is not injected into operating scenarios or treated as ampacity approval.
 
-Run `python build_cost_model.py` then `python test_cost_model.py` in this directory. Both use the Python standard library. The builder needs only the bundled frozen inputs, performs no network calls and is byte-reproducible. The 24 passing tests cover arithmetic, CSV, null preservation, source hashes, replacements, quantities, thermal/control flags, no-proxy/double-counting and deterministic rebuild. They are not hardware or safety tests.
+## Exact part accounting
 
-- `cost_model.json`, `BOM.csv`, `sources.json`: active matched cost model
-- `mass_reconciliation.json`, `body_composition.json`, `electrical_mass_selection.json`: inspectable accepted/excluded mass evidence
-- `inputs/`: factual frozen ledgers, baseline historical records and one original source script for material traceability; no vendor CAD, PDFs or fetched webpage captures
-- `input-manifest.json`: exact source-file and SHA-256 mapping
-- `validation.json`, `test_run.log`: local checks
-- `UI_INTEGRATION.md`: required static-text changes when the parent integrates this model
+`replacement_map.json` records full old/new named body records and masses:
 
-`freeze_inputs.py` is a maintainer-only refresh tool for the original shared staging paths. It is not part of normal replay. Do not run it to silently follow new files: inspect the changes, refresh deliberately, rerun tests and update checksums. Historical C03 data is preserved solely under named historical input records and is not included in active totals.
+| Body name | Old kg | Replacement kg |
+|---|---:|---:|
+| controller_battery_partition | 1.9023945235218704 | 1.8943146236770079 |
+| battery_tool_partition | 1.9677206001606726 | 1.9596407003158060 |
+
+Only these two existing parts are replaced. Each loses two 25.2 mm bores through 3 mm material. They remain included once through the single `body_composed` BOM row. All other 235 final body records, including the forty-hole `main_base_deck_3mm`, are unchanged. The final body still contains 237 named records; its known original mass is 113.53953045712207 kg.
+
+There are 98 added source nodes and exactly 98 added BOM rows, for 328 rows total. Source nodes are individually traceable to the contract, connection graph and GLB:
+
+- 2 cable runs: nominal manufacturer mass × source geometry length accepted
+- 8 original welded stands: 2700 kg/m³ assumed aluminium density matched to the retained deck
+- 16 original clamp halves: mass and material/liner selection unknown
+- 16 M4×30 screws, 32 washers and 16 M4 nuts: purchased SKU, installed mass and price unknown
+- 4 LAPP 53111030 glands and 4 LAPP 53119030 locknuts: installed mass and price unknown
+
+The eight stands add 0.4274107601194724 kg of nominal original aluminium. The E05 generator's legacy `steel` display-palette key is explicitly rejected as a material specification. An exact-name material ledger binds each node to the frozen contract's `actual_material`, then accepts only the declared aluminium density for stands. Alloy, temper, filler, weld process, heat-affected-zone strength and fatigue remain unqualified. Original clamp material is not assigned a guessed polymer density. Nominal steel fastener geometry is not used to invent commercial masses.
+
+Existing E04 lugs and M8/M10 terminal stacks are reused without an extra mass or purchase term. Optional old Q0_P_OUT_service_lead_bend and Q0_N_OUT_service_lead_bend were absent from both the frozen runtime source-node selection and accepted C04 mass ledger. They are neither added nor subtracted here. Their conditional removal list is recorded explicitly. Remaining-harness scope excludes already itemized E05 rows and reused terminal hardware.
+
+## Reproduce and inspect
+
+Use Python 3 with only its standard library:
+
+```sh
+python build_cost_model.py
+python test_cost_model.py
+```
+
+Normal replay is offline, uses only bundled inputs and writes only this folder. No CAD kernel, browser, upstream directory or external service is required. The builder refuses altered frozen inputs. It also verifies the original C04 checksum set, E05 public allowlist and freeze pins before calculating. The prior C04 builder can reproduce its model in an isolated temporary copy.
+
+The 36 regression tests cover input hashes, actual GLB node names, exact replacements, unchanged deck/body rows, bore arithmetic, explicit aluminium materials, null commercial parts, cable units, no duplicate optional leads, reused terminal hardware, row counts, mass/baskets, identical scenarios, null actuals, electrical scope, CSV roundtrip, deterministic replay and rejection of a tampered input. They are calculation/source-accounting tests, not independent CAD-kernel, metrology, structural, electrical, procurement or operational approval. Frozen upstream geometry-check reports are evidence from the E05 source freeze; their CAD analyses were not rerun for this cost patch.
+
+Key files:
+
+- `cost_model.json`, `BOM.csv`, `sources.json`: separate complete candidate cost/BOM data
+- `delta_summary.json`: small machine-readable numerical change and unresolved boundaries
+- `body_composition.json`, `replacement_map.json`: exact final body and replacements
+- `material_mass_ledger_E05.json`: all 98 added named nodes with explicit material/mass decisions
+- `mass_reconciliation.json`: full final mass rows and groups
+- `input-manifest.json`: 76 immutable local input files and SHA-256 pins
+- `dependency_manifest.json`: E05 freeze/geometry pins plus 12 verified separately supplied upstream dependencies
+- `output-checksums.json`: deterministic generated-output hashes
+- `validation.json`, `test_run.log`: local regression results
+- `isolation_verification.json`: source/app/publication comparison against the pre-build read-only snapshot
+- `UI_INTEGRATION.md`: future integration handoff; no app changes have been made
+
+`inputs/C04/` preserves the prior model and its complete factual input package. `inputs/E05/` contains only the E05 public allowlist plus its freeze/allowlist records: original CAD, scripts and factual ledgers, no supplier CAD/PDF/images. `inputs/runtime_C04/` records the frozen runtime loader/selection used for the optional-lead check. Manufacturer provenance is a compact factual observation with a direct source link, not a copied webpage.
+
+The 12 upstream geometry dependencies are hash-pinned and were checked against their actual local bytes. They remain separately supplied and are not required to replay this mass calculation; a CAD regeneration would require them and the E05 CAD toolchain. `freeze_inputs.py` is a maintainer-only one-time snapshot tool, deliberately refusing an existing freeze. Do not use it to silently update sources during replay.

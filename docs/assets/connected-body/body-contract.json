@@ -535,6 +535,19 @@
           "name": "QB2_partition_gland_443.5_53119020_locknut"
         }
       ]
+    },
+    {
+      "file": "partition-main-E05.glb.gz",
+      "changes": [
+        {
+          "action": "replace",
+          "name": "controller_battery_partition"
+        },
+        {
+          "action": "replace",
+          "name": "battery_tool_partition"
+        }
+      ]
     }
   ],
   "service_groups": [
@@ -805,6 +818,13 @@
       "source_sha256": "ee27d31374157fbf4926e0a9adba1b80d22b78a7aebd93e3326e0a98bacef106",
       "sha256": "f56d44d6f80bf69140bff3dd85e9858682397bf6763384d1ea254c9e0c3b4846",
       "bytes": 25617
+    },
+    {
+      "source": "electrical-drive/main_routes_E05/partition_main_glands_E05.glb",
+      "file": "partition-main-E05.glb.gz",
+      "source_sha256": "37154f8ead92cae9f4684d2b6b90e00c373850e4a3b54429c1aef2b49385c29e",
+      "sha256": "be03a42d53bcb95c325b26e62096081eb33ef29199a53ff51c8e97dce0b48e7d",
+      "bytes": 14702
     }
   ],
   "battery_polarity": {
@@ -971,5 +991,6 @@
       "full_harness_complete": false,
       "physical_electrical_continuity_verified": false
     }
-  }
+  },
+  "main_pair_partition_revision": "E05: exactly two replacements,40-hole deck and BA02 unchanged"
 }

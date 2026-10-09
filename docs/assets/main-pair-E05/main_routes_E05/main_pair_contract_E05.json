@@ -1,0 +1,2468 @@
+{
+  "revision": "E05_frozen_two_route_candidate",
+  "geometry": {
+    "source": "Original supported main DC cable routes; LAPP fixed cable and glands source dimensions; existing ABB/Lynx source terminal anchors",
+    "vehicle_placed": true,
+    "files": [
+      "main_pair_supported_E05.glb",
+      "main_pair_supported_E05.step"
+    ],
+    "original_named_parts": 98,
+    "geometry_valid": true,
+    "source_CAD_read": false,
+    "supplier_contours_exact": false,
+    "electrical_qualified": false,
+    "actual_model_bounds_mm": [
+      -1832.3000001,
+      -599.6000001,
+      102.9999999,
+      494.02446690000005,
+      -136.5136588999999,
+      288.7022900352
+    ]
+  },
+  "parts": [
+    {
+      "name": "MAIN_positive_70mm2_routed_jacket",
+      "solids": 9,
+      "volume_mm3": 438638.3322187737,
+      "actual_material": "source cable insulation envelope",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_welded_stand",
+      "solids": 1,
+      "volume_mm3": 18648.457537840302,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457679,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support0_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457833,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_welded_stand",
+      "solids": 1,
+      "volume_mm3": 18648.457537840302,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457678,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support1_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457832,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566766,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345521,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345521,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734744996,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566766,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345521,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345521,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734744996,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_welded_stand",
+      "solids": 1,
+      "volume_mm3": 18648.457537843307,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.2169744576795,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support2_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457834,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566766,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345517,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345517,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.5803973474499,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566766,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345517,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345517,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.5803973474499,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_welded_stand",
+      "solids": 1,
+      "volume_mm3": 18648.457537842558,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457679,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_support3_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974457834,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_70mm2_routed_jacket",
+      "solids": 9,
+      "volume_mm3": 452659.38744510186,
+      "actual_material": "source cable insulation envelope",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734745024,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734745024,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_welded_stand",
+      "solids": 1,
+      "volume_mm3": 20926.612843591007,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974458429,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support0_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974458037,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566748,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345488,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734745026,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_welded_stand",
+      "solids": 1,
+      "volume_mm3": 20926.612843591007,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.21697445843,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support1_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974458036,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566765,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734744995,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566765,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734744995,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_welded_stand",
+      "solids": 1,
+      "volume_mm3": 20926.612843591007,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.21697445843,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support2_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974458038,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_M4x30_0",
+      "solids": 1,
+      "volume_mm3": 530.9291584566765,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_upper_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_lower_washer_0",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_M4nut_0",
+      "solids": 1,
+      "volume_mm3": 95.58039734744995,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_M4x30_1",
+      "solids": 1,
+      "volume_mm3": 530.9291584566765,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_upper_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_lower_washer_1",
+      "solids": 1,
+      "volume_mm3": 38.72955423345522,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_M4nut_1",
+      "solids": 1,
+      "volume_mm3": 95.58039734744995,
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_welded_stand",
+      "solids": 1,
+      "volume_mm3": 20926.612843591007,
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_lower_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.21697445843,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_support3_upper_clamp",
+      "solids": 1,
+      "volume_mm3": 6112.216974458038,
+      "actual_material": "original clamp polymer/liner unspecified",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "solids": 1,
+      "volume_mm3": 23415.707361765435,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "solids": 1,
+      "volume_mm3": 3004.5495052608544,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "solids": 1,
+      "volume_mm3": 23415.70736176543,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "solids": 1,
+      "volume_mm3": 3004.5495052608526,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "solids": 1,
+      "volume_mm3": 23415.707361765435,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "solids": 1,
+      "volume_mm3": 3004.5495052608544,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "solids": 1,
+      "volume_mm3": 23415.70736176543,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    },
+    {
+      "name": "MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "solids": 1,
+      "volume_mm3": 3004.5495052608526,
+      "actual_material": "purchased gland/locknut representation",
+      "display_palette_is_not_material_specification": true
+    }
+  ],
+  "routes": [
+    {
+      "id": "MAIN_positive",
+      "from": "Q0:P_OUT",
+      "to": "LYNX:BAT+",
+      "domain": "DC_power",
+      "cable_candidate": "LAPP0060001 70mm\u00b2 black, positive identification required",
+      "source_OD_mm": 14.2,
+      "source_minimum_fixed_bend_R_mm": 85.2,
+      "start_C_mm": [
+        -1664.0,
+        -331.5,
+        184.25
+      ],
+      "end_C_mm": [
+        399.9244668,
+        -136.51365900000002,
+        190.05
+      ],
+      "source_blade_XYZ_verified_at_both_devices": true,
+      "lug_mouth_contours_original_assumptions": true,
+      "jacket_endpoint_coordinate_error_mm": 0,
+      "centreline_length_mm": 2769.7464313510463,
+      "sampled_min_radius_mm": 85.19999999998824,
+      "segment_sampled_radii_mm": [
+        null,
+        85.19999999998824,
+        null,
+        193.69343691270885,
+        193.69343691260616,
+        null,
+        85.19999999999021,
+        2247.7712709570815,
+        2247.7712709482053
+      ],
+      "CAD_centreline_edges_are_exact_lines_and_circles": true,
+      "CAD_minimum_circular_radius_mm": 85.2,
+      "points_by_segment_C_mm": [
+        [
+          [
+            -1664.0,
+            -331.5,
+            184.25
+          ],
+          [
+            -1740.0,
+            -331.5,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1740.0,
+            -331.5,
+            184.25
+          ],
+          [
+            -1753.3282164214277,
+            -332.54895338129427,
+            184.25
+          ],
+          [
+            -1766.3282479207455,
+            -335.6699848116529,
+            184.25
+          ],
+          [
+            -1778.6799905778093,
+            -340.78624413915105,
+            184.25
+          ],
+          [
+            -1790.0793034953188,
+            -347.7717520792545,
+            184.25
+          ],
+          [
+            -1800.2454977570937,
+            -356.45450224290613,
+            184.25
+          ],
+          [
+            -1808.9282479207454,
+            -366.6206965046813,
+            184.25
+          ],
+          [
+            -1815.913755860849,
+            -378.02000942219064,
+            184.25
+          ],
+          [
+            -1821.030015188347,
+            -390.37175207925446,
+            184.25
+          ],
+          [
+            -1824.1510466187058,
+            -403.3717835785723,
+            184.25
+          ],
+          [
+            -1825.2,
+            -416.7,
+            184.25
+          ],
+          [
+            -1824.1510466187058,
+            -430.0282164214277,
+            184.25
+          ],
+          [
+            -1821.030015188347,
+            -443.0282479207455,
+            184.25
+          ],
+          [
+            -1815.913755860849,
+            -455.3799905778094,
+            184.25
+          ],
+          [
+            -1808.9282479207454,
+            -466.7793034953187,
+            184.25
+          ],
+          [
+            -1800.2454977570937,
+            -476.94549775709385,
+            184.25
+          ],
+          [
+            -1790.0793034953188,
+            -485.62824792074554,
+            184.25
+          ],
+          [
+            -1778.6799905778093,
+            -492.613755860849,
+            184.25
+          ],
+          [
+            -1766.3282479207455,
+            -497.7300151883471,
+            184.25
+          ],
+          [
+            -1753.3282164214277,
+            -500.8510466187057,
+            184.25
+          ],
+          [
+            -1740.0,
+            -501.9,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1740.0,
+            -501.9,
+            184.25
+          ],
+          [
+            -1435.0,
+            -501.9,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1435.0,
+            -501.9,
+            184.25
+          ],
+          [
+            -1429.9296969143586,
+            -501.83362609677147,
+            184.25
+          ],
+          [
+            -1424.862868761185,
+            -501.6345498764438,
+            184.25
+          ],
+          [
+            -1419.8029880914014,
+            -501.3029077759143,
+            184.25
+          ],
+          [
+            -1414.7535226944722,
+            -500.8389270861128,
+            184.25
+          ],
+          [
+            -1409.7179332217543,
+            -500.24292579622767,
+            184.25
+          ],
+          [
+            -1404.6996708147385,
+            -499.5153123757721,
+            184.25
+          ],
+          [
+            -1399.7021747398112,
+            -498.6565854946394,
+            184.25
+          ],
+          [
+            -1394.7288700311517,
+            -497.6673336813395,
+            184.25
+          ],
+          [
+            -1389.7831651433848,
+            -496.548234919651,
+            184.25
+          ],
+          [
+            -1384.8684496155975,
+            -495.300056183965,
+            184.25
+          ],
+          [
+            -1379.9880917483165,
+            -493.92365291363893,
+            184.25
+          ],
+          [
+            -1375.1454362950453,
+            -492.4199684267214,
+            184.25
+          ],
+          [
+            -1370.3438021699353,
+            -490.7900332734491,
+            184.25
+          ],
+          [
+            -1365.586480173169,
+            -489.034964529959,
+            184.25
+          ],
+          [
+            -1360.8767307356093,
+            -487.1559650327002,
+            184.25
+          ],
+          [
+            -1356.2177816842634,
+            -485.15432255406995,
+            184.25
+          ],
+          [
+            -1351.6128260300916,
+            -483.03140891983895,
+            184.25
+          ],
+          [
+            -1347.0650197796763,
+            -480.7886790689701,
+            184.25
+          ],
+          [
+            -1342.5774797722538,
+            -478.4276700564764,
+            184.25
+          ],
+          [
+            -1338.1532815435876,
+            -475.95,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1338.1532815435876,
+            -475.95,
+            184.25
+          ],
+          [
+            -1333.7290833149214,
+            -473.47232994352356,
+            184.25
+          ],
+          [
+            -1329.241543307499,
+            -471.11132093102987,
+            184.25
+          ],
+          [
+            -1324.6937370570838,
+            -468.868591080161,
+            184.25
+          ],
+          [
+            -1320.0887814029118,
+            -466.74567744593,
+            184.25
+          ],
+          [
+            -1315.429832351566,
+            -464.7440349672998,
+            184.25
+          ],
+          [
+            -1310.7200829140063,
+            -462.865035470041,
+            184.25
+          ],
+          [
+            -1305.9627609172398,
+            -461.10996672655085,
+            184.25
+          ],
+          [
+            -1301.1611267921298,
+            -459.48003157327855,
+            184.25
+          ],
+          [
+            -1296.3184713388587,
+            -457.97634708636105,
+            184.25
+          ],
+          [
+            -1291.438113471578,
+            -456.59994381603497,
+            184.25
+          ],
+          [
+            -1286.5233979437905,
+            -455.35176508034897,
+            184.25
+          ],
+          [
+            -1281.5776930560237,
+            -454.23266631866045,
+            184.25
+          ],
+          [
+            -1276.604388347364,
+            -453.2434145053606,
+            184.25
+          ],
+          [
+            -1271.6068922724367,
+            -452.38468762422787,
+            184.25
+          ],
+          [
+            -1266.5886298654211,
+            -451.6570742037723,
+            184.25
+          ],
+          [
+            -1261.553040392703,
+            -451.0610729138872,
+            184.25
+          ],
+          [
+            -1256.5035749957738,
+            -450.59709222408566,
+            184.25
+          ],
+          [
+            -1251.4436943259902,
+            -450.26545012355615,
+            184.25
+          ],
+          [
+            -1246.3768661728166,
+            -450.0663739032285,
+            184.25
+          ],
+          [
+            -1241.3065630871752,
+            -450.0,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1241.3065630871754,
+            -450.0,
+            184.25
+          ],
+          [
+            314.7244668,
+            -450.0,
+            184.25
+          ]
+        ],
+        [
+          [
+            314.7244668,
+            -450.0,
+            184.25
+          ],
+          [
+            321.4091817560124,
+            -449.7373568340625,
+            184.25
+          ],
+          [
+            328.0526832214277,
+            -448.95104661870573,
+            184.25
+          ],
+          [
+            334.61401180052314,
+            -447.645917217882,
+            184.25
+          ],
+          [
+            341.05271472074554,
+            -445.8300151883471,
+            184.25
+          ],
+          [
+            347.32909523750567,
+            -443.5145361699616,
+            184.25
+          ],
+          [
+            353.4044573778094,
+            -440.71375586084895,
+            184.25
+          ],
+          [
+            359.2413445137989,
+            -437.4449420029687,
+            184.25
+          ],
+          [
+            364.8037702953187,
+            -433.7282479207455,
+            184.25
+          ],
+          [
+            370.05744051773166,
+            -429.5865882691226,
+            184.25
+          ],
+          [
+            374.9699645570939,
+            -425.04549775709387,
+            184.25
+          ],
+          [
+            379.5110550691227,
+            -420.13297371773166,
+            184.25
+          ],
+          [
+            383.6527147207455,
+            -414.8793034953187,
+            184.25
+          ],
+          [
+            387.3694088029687,
+            -409.3168777137988,
+            184.25
+          ],
+          [
+            390.63822266084895,
+            -403.47999057780936,
+            184.25
+          ],
+          [
+            393.4390029699616,
+            -397.40462843750566,
+            184.25
+          ],
+          [
+            395.7544819883471,
+            -391.12824792074554,
+            184.25
+          ],
+          [
+            397.5703840178821,
+            -384.68954500052314,
+            184.25
+          ],
+          [
+            398.87551341870574,
+            -378.1282164214277,
+            184.25
+          ],
+          [
+            399.6618236340625,
+            -371.4847149560124,
+            184.25
+          ],
+          [
+            399.9244668,
+            -364.8,
+            184.25
+          ]
+        ],
+        [
+          [
+            399.9244668,
+            -364.8,
+            184.25
+          ],
+          [
+            399.9244668,
+            -359.09039195201933,
+            184.2572515555891
+          ],
+          [
+            399.9244668,
+            -353.3808207436768,
+            184.27900617556801
+          ],
+          [
+            399.9244668,
+            -347.6713232143729,
+            184.31526371957082
+          ],
+          [
+            399.9244668,
+            -341.9619362030327,
+            184.36602395365628
+          ],
+          [
+            399.9244668,
+            -336.2526965478682,
+            184.4312865503079
+          ],
+          [
+            399.9244668,
+            -330.5436410861406,
+            184.5110510884376
+          ],
+          [
+            399.9244668,
+            -324.8348066539227,
+            184.60531705338678
+          ],
+          [
+            399.9244668,
+            -319.12623008586115,
+            184.71408383693128
+          ],
+          [
+            399.9244668,
+            -313.41794821493863,
+            184.83735073728337
+          ],
+          [
+            399.9244668,
+            -307.7099978722367,
+            184.97511695909876
+          ],
+          [
+            399.9244668,
+            -302.0024158866976,
+            185.1273816134795
+          ],
+          [
+            399.9244668,
+            -296.2952390848868,
+            185.29414371798046
+          ],
+          [
+            399.9244668,
+            -290.5885042907557,
+            185.4754021966165
+          ],
+          [
+            399.9244668,
+            -284.88224832540345,
+            185.6711558798682
+          ],
+          [
+            399.9244668,
+            -279.17650800684,
+            185.8814035046902
+          ],
+          [
+            399.9244668,
+            -273.4713201497479,
+            186.10614371451862
+          ],
+          [
+            399.9244668,
+            -267.76672156524535,
+            186.3453750592805
+          ],
+          [
+            399.9244668,
+            -262.06274906064846,
+            186.59909599540336
+          ],
+          [
+            399.9244668,
+            -256.3594394392336,
+            186.86730488582393
+          ],
+          [
+            399.9244668,
+            -250.65682950000001,
+            187.14999999999998
+          ]
+        ],
+        [
+          [
+            399.9244668,
+            -250.65682950000001,
+            187.14999999999998
+          ],
+          [
+            399.9244668,
+            -244.95421956076643,
+            187.43269511417603
+          ],
+          [
+            399.9244668,
+            -239.25090993935154,
+            187.7009040045966
+          ],
+          [
+            399.9244668,
+            -233.54693743475462,
+            187.95462494071944
+          ],
+          [
+            399.9244668,
+            -227.84233885025213,
+            188.19385628548133
+          ],
+          [
+            399.9244668,
+            -222.13715099316008,
+            188.41859649530974
+          ],
+          [
+            399.9244668,
+            -216.43141067459658,
+            188.62884412013176
+          ],
+          [
+            399.9244668,
+            -210.72515470924432,
+            188.82459780338345
+          ],
+          [
+            399.9244668,
+            -205.01841991511318,
+            189.0058562820195
+          ],
+          [
+            399.9244668,
+            -199.31124311330245,
+            189.17261838652044
+          ],
+          [
+            399.9244668,
+            -193.6036611277633,
+            189.3248830409012
+          ],
+          [
+            399.9244668,
+            -187.89571078506137,
+            189.46264926271658
+          ],
+          [
+            399.9244668,
+            -182.18742891413888,
+            189.58591616306865
+          ],
+          [
+            399.9244668,
+            -176.4788523460773,
+            189.69468294661317
+          ],
+          [
+            399.9244668,
+            -170.7700179138594,
+            189.78894891156233
+          ],
+          [
+            399.9244668,
+            -165.06096245213183,
+            189.86871344969205
+          ],
+          [
+            399.9244668,
+            -159.35172279696735,
+            189.93397604634367
+          ],
+          [
+            399.9244668,
+            -153.64233578562715,
+            189.98473628042913
+          ],
+          [
+            399.9244668,
+            -147.93283825632324,
+            190.0209938244319
+          ],
+          [
+            399.9244668,
+            -142.2232670479807,
+            190.04274844441085
+          ],
+          [
+            399.9244668,
+            -136.51365900000002,
+            190.04999999999995
+          ]
+        ]
+      ],
+      "full_terminal_to_terminal_jacket_route": true,
+      "crimped_conductor_contact_proven": false,
+      "energizable_circuit": false,
+      "upstream_protection_and_merge_installed": false,
+      "cable_thermal_ampacity_and_voltage_drop_qualified": false
+    },
+    {
+      "id": "MAIN_negative",
+      "from": "Q0:N_OUT",
+      "to": "LYNX:BAT-",
+      "domain": "DC_power",
+      "cable_candidate": "LAPP0060001 70mm\u00b2 black, positive identification required",
+      "source_OD_mm": 14.2,
+      "source_minimum_fixed_bend_R_mm": 85.2,
+      "start_C_mm": [
+        -1664.0,
+        -408.5,
+        184.25
+      ],
+      "end_C_mm": [
+        486.9244668,
+        -136.51365900000002,
+        190.05
+      ],
+      "source_blade_XYZ_verified_at_both_devices": true,
+      "lug_mouth_contours_original_assumptions": true,
+      "jacket_endpoint_coordinate_error_mm": 0,
+      "centreline_length_mm": 2858.2812556571025,
+      "sampled_min_radius_mm": 85.19999999999021,
+      "segment_sampled_radii_mm": [
+        null,
+        101.50007697039655,
+        null,
+        209.12058069527558,
+        209.12058069529974,
+        null,
+        85.19999999999021,
+        212.75206262397958,
+        212.75206262397109
+      ],
+      "CAD_centreline_edges_are_exact_lines_and_circles": true,
+      "CAD_minimum_circular_radius_mm": 85.2,
+      "points_by_segment_C_mm": [
+        [
+          [
+            -1664.0,
+            -408.5,
+            184.25
+          ],
+          [
+            -1685.0,
+            -408.5,
+            184.25
+          ]
+        ],
+        [
+          [
+            -1685.0,
+            -408.5,
+            184.25
+          ],
+          [
+            -1700.878110242409,
+            -409.6326726652473,
+            184.77786239698347
+          ],
+          [
+            -1716.3652487142233,
+            -413.00280050084586,
+            186.3484518638453
+          ],
+          [
+            -1731.0800706674008,
+            -418.52739977467013,
+            188.92309527542372
+          ],
+          [
+            -1744.6602483497604,
+            -426.07043651750485,
+            192.43839636617412
+          ],
+          [
+            -1756.7713927167363,
+            -435.4461761308376,
+            196.80779675662677
+          ],
+          [
+            -1767.1152871994302,
+            -446.42375678909247,
+            201.92370730796023
+          ],
+          [
+            -1775.4372307862604,
+            -458.7328740239617,
+            207.66015732366694
+          ],
+          [
+            -1781.532309607172,
+            -472.07043651750485,
+            213.87589636617412
+          ],
+          [
+            -1785.250442593187,
+            -486.10802921629875,
+            220.4178723114001
+          ],
+          [
+            -1786.5000769704143,
+            -500.5,
+            227.125
+          ],
+          [
+            -1785.250442593187,
+            -514.8919707837013,
+            233.8321276885999
+          ],
+          [
+            -1781.532309607172,
+            -528.9295634824952,
+            240.37410363382588
+          ],
+          [
+            -1775.4372307862604,
+            -542.2671259760383,
+            246.58984267633306
+          ],
+          [
+            -1767.1152871994302,
+            -554.5762432109075,
+            252.32629269203977
+          ],
+          [
+            -1756.7713927167365,
+            -565.5538238691623,
+            257.4422032433732
+          ],
+          [
+            -1744.6602483497604,
+            -574.9295634824952,
+            261.8116036338259
+          ],
+          [
+            -1731.0800706674008,
+            -582.4726002253299,
+            265.32690472457625
+          ],
+          [
+            -1716.3652487142233,
+            -587.9971994991541,
+            267.9015481361547
+          ],
+          [
+            -1700.878110242409,
+            -591.3673273347526,
+            269.47213760301656
+          ],
+          [
+            -1685.0,
+            -592.5,
+            270.0
+          ]
+        ],
+        [
+          [
+            -1685.0,
+            -592.5,
+            270.0
+          ],
+          [
+            -1660.0,
+            -592.5,
+            270.0
+          ]
+        ],
+        [
+          [
+            -1660.0,
+            -592.5,
+            270.0
+          ],
+          [
+            -1651.789964530471,
+            -592.338775610965,
+            270.0
+          ],
+          [
+            -1643.592588340561,
+            -591.8553510401817,
+            270.0
+          ],
+          [
+            -1635.4205111901965,
+            -591.0504716932993,
+            270.0
+          ],
+          [
+            -1627.28633383002,
+            -589.9253786359318,
+            270.0
+          ],
+          [
+            -1619.202598571944,
+            -588.4818066800252,
+            270.0
+          ],
+          [
+            -1611.1817699498154,
+            -586.7219817089033,
+            270.0
+          ],
+          [
+            -1603.236215500008,
+            -584.6486172451171,
+            270.0
+          ],
+          [
+            -1595.3781866915785,
+            -582.264910266389,
+            270.0
+          ],
+          [
+            -1587.6198000353884,
+            -579.574536276106,
+            270.0
+          ],
+          [
+            -1579.973018401322,
+            -576.5816436359586,
+            270.0
+          ],
+          [
+            -1572.4496325724094,
+            -573.290847169469,
+            270.0
+          ],
+          [
+            -1565.061243064293,
+            -569.7072210462667,
+            270.0
+          ],
+          [
+            -1557.819242238073,
+            -565.8362909580873,
+            270.0
+          ],
+          [
+            -1550.7347967341127,
+            -561.6840255985561,
+            270.0
+          ],
+          [
+            -1543.8188302538888,
+            -557.2568274598955,
+            270.0
+          ],
+          [
+            -1537.082006716434,
+            -552.5615229607453,
+            270.0
+          ],
+          [
+            -1530.5347138153486,
+            -547.6053519203209,
+            270.0
+          ],
+          [
+            -1524.1870470017288,
+            -542.3959563951363,
+            270.0
+          ],
+          [
+            -1518.0487939177133,
+            -536.9413688955067,
+            270.0
+          ],
+          [
+            -1512.1294193046479,
+            -531.25,
+            270.0
+          ]
+        ],
+        [
+          [
+            -1512.1294193046479,
+            -531.25,
+            270.0
+          ],
+          [
+            -1506.2100446915824,
+            -525.5586311044933,
+            270.0
+          ],
+          [
+            -1500.0717916075669,
+            -520.1040436048637,
+            270.0
+          ],
+          [
+            -1493.724124793947,
+            -514.894648079679,
+            270.0
+          ],
+          [
+            -1487.1768318928619,
+            -509.9384770392547,
+            270.0
+          ],
+          [
+            -1480.4400083554071,
+            -505.2431725401046,
+            270.0
+          ],
+          [
+            -1473.524041875183,
+            -500.8159744014439,
+            270.0
+          ],
+          [
+            -1466.439596371223,
+            -496.66370904191274,
+            270.0
+          ],
+          [
+            -1459.197595545003,
+            -492.7927789537333,
+            270.0
+          ],
+          [
+            -1451.8092060368865,
+            -489.209152830531,
+            270.0
+          ],
+          [
+            -1444.2858202079738,
+            -485.9183563640414,
+            270.0
+          ],
+          [
+            -1436.6390385739073,
+            -482.92546372389404,
+            270.0
+          ],
+          [
+            -1428.8806519177172,
+            -480.23508973361095,
+            270.0
+          ],
+          [
+            -1421.0226231092877,
+            -477.85138275488293,
+            270.0
+          ],
+          [
+            -1413.0770686594803,
+            -475.77801829109666,
+            270.0
+          ],
+          [
+            -1405.0562400373517,
+            -474.0181933199748,
+            270.0
+          ],
+          [
+            -1396.9725047792756,
+            -472.5746213640682,
+            270.0
+          ],
+          [
+            -1388.8383274190992,
+            -471.44952830670064,
+            270.0
+          ],
+          [
+            -1380.666250268735,
+            -470.64464895981826,
+            270.0
+          ],
+          [
+            -1372.4688740788247,
+            -470.1612243890351,
+            270.0
+          ],
+          [
+            -1364.2588386092957,
+            -470.0,
+            270.0
+          ]
+        ],
+        [
+          [
+            -1364.2588386092957,
+            -470.0,
+            270.0
+          ],
+          [
+            401.7244668,
+            -470.0,
+            270.0
+          ]
+        ],
+        [
+          [
+            401.7244668,
+            -470.0,
+            270.0
+          ],
+          [
+            408.4091817560124,
+            -469.7373568340625,
+            270.0
+          ],
+          [
+            415.0526832214277,
+            -468.95104661870573,
+            270.0
+          ],
+          [
+            421.61401180052314,
+            -467.645917217882,
+            270.0
+          ],
+          [
+            428.05271472074554,
+            -465.8300151883471,
+            270.0
+          ],
+          [
+            434.32909523750567,
+            -463.5145361699616,
+            270.0
+          ],
+          [
+            440.4044573778094,
+            -460.71375586084895,
+            270.0
+          ],
+          [
+            446.2413445137989,
+            -457.4449420029687,
+            270.0
+          ],
+          [
+            451.8037702953187,
+            -453.7282479207455,
+            270.0
+          ],
+          [
+            457.05744051773166,
+            -449.5865882691226,
+            270.0
+          ],
+          [
+            461.9699645570939,
+            -445.04549775709387,
+            270.0
+          ],
+          [
+            466.5110550691227,
+            -440.13297371773166,
+            270.0
+          ],
+          [
+            470.6527147207455,
+            -434.8793034953187,
+            270.0
+          ],
+          [
+            474.3694088029687,
+            -429.3168777137988,
+            270.0
+          ],
+          [
+            477.63822266084895,
+            -423.47999057780936,
+            270.0
+          ],
+          [
+            480.4390029699616,
+            -417.40462843750566,
+            270.0
+          ],
+          [
+            482.7544819883471,
+            -411.12824792074554,
+            270.0
+          ],
+          [
+            484.5703840178821,
+            -404.68954500052314,
+            270.0
+          ],
+          [
+            485.87551341870574,
+            -398.1282164214277,
+            270.0
+          ],
+          [
+            486.6618236340625,
+            -391.4847149560124,
+            270.0
+          ],
+          [
+            486.9244668,
+            -384.8,
+            270.0
+          ]
+        ],
+        [
+          [
+            486.9244668,
+            -384.8,
+            270.0
+          ],
+          [
+            486.9244668,
+            -378.17336276386845,
+            269.89677426373646
+          ],
+          [
+            486.9244668,
+            -371.55315591904986,
+            269.58719722368204
+          ],
+          [
+            486.9244668,
+            -364.94580361689987,
+            269.0715692888434
+          ],
+          [
+            486.9244668,
+            -358.3577175349152,
+            268.35039081698494
+          ],
+          [
+            486.9244668,
+            -351.79529065493574,
+            267.424361629089
+          ],
+          [
+            486.9244668,
+            -345.2648910594891,
+            266.29438033025997
+          ],
+          [
+            486.9244668,
+            -338.77285575229723,
+            264.96154343773105
+          ],
+          [
+            486.9244668,
+            -332.32548450894075,
+            263.42714431682015
+          ],
+          [
+            486.9244668,
+            -325.9290337636498,
+            261.69267192586705
+          ],
+          [
+            486.9244668,
+            -319.5897105381519,
+            259.7598093713703
+          ],
+          [
+            486.9244668,
+            -313.3136664184699,
+            257.6304322747252
+          ],
+          [
+            486.9244668,
+            -307.1069915855127,
+            255.30660695214863
+          ],
+          [
+            486.9244668,
+            -300.9757089052538,
+            252.79058840955605
+          ],
+          [
+            486.9244668,
+            -294.9257680842305,
+            250.08481815433692
+          ],
+          [
+            486.9244668,
+            -288.96303989603626,
+            247.1919218261519
+          ],
+          [
+            486.9244668,
+            -283.09331048440833,
+            244.1147066490507
+          ],
+          [
+            486.9244668,
+            -277.32227574843887,
+            240.85615870738314
+          ],
+          [
+            486.9244668,
+            -271.65553581535835,
+            237.41944004814684
+          ],
+          [
+            486.9244668,
+            -266.09858960625445,
+            233.8078856125833
+          ],
+          [
+            486.9244668,
+            -260.6568295,
+            230.025
+          ]
+        ],
+        [
+          [
+            486.9244668,
+            -260.6568295,
+            230.025
+          ],
+          [
+            486.9244668,
+            -255.21506939374555,
+            226.2421143874167
+          ],
+          [
+            486.9244668,
+            -249.6581231846417,
+            222.63055995185317
+          ],
+          [
+            486.9244668,
+            -243.9913832515612,
+            219.19384129261687
+          ],
+          [
+            486.9244668,
+            -238.22034851559172,
+            215.9352933509493
+          ],
+          [
+            486.9244668,
+            -232.35061910396377,
+            212.8580781738481
+          ],
+          [
+            486.9244668,
+            -226.3878909157695,
+            209.9651818456631
+          ],
+          [
+            486.9244668,
+            -220.33795009474625,
+            207.25941159044396
+          ],
+          [
+            486.9244668,
+            -214.20666741448736,
+            204.74339304785138
+          ],
+          [
+            486.9244668,
+            -207.99999258153017,
+            202.41956772527485
+          ],
+          [
+            486.9244668,
+            -201.72394846184812,
+            200.29019062862972
+          ],
+          [
+            486.9244668,
+            -195.38462523635025,
+            198.35732807413297
+          ],
+          [
+            486.9244668,
+            -188.98817449105925,
+            196.62285568317986
+          ],
+          [
+            486.9244668,
+            -182.5408032477028,
+            195.08845656226896
+          ],
+          [
+            486.9244668,
+            -176.04876794051086,
+            193.75561966974004
+          ],
+          [
+            486.9244668,
+            -169.5183683450643,
+            192.62563837091102
+          ],
+          [
+            486.9244668,
+            -162.95594146508483,
+            191.69960918301504
+          ],
+          [
+            486.9244668,
+            -156.36785538310016,
+            190.97843071115656
+          ],
+          [
+            486.9244668,
+            -149.76050308095023,
+            190.46280277631794
+          ],
+          [
+            486.9244668,
+            -143.14029623613155,
+            190.15322573626358
+          ],
+          [
+            486.9244668,
+            -136.51365900000002,
+            190.05
+          ]
+        ]
+      ],
+      "full_terminal_to_terminal_jacket_route": true,
+      "crimped_conductor_contact_proven": false,
+      "energizable_circuit": false,
+      "upstream_protection_and_merge_installed": false,
+      "cable_thermal_ampacity_and_voltage_drop_qualified": false
+    }
+  ],
+  "supports": [
+    {
+      "id": "MAIN_positive_support0",
+      "axis_C_mm": [
+        -975,
+        -450,
+        184.25
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_positive_support1",
+      "axis_C_mm": [
+        -650,
+        -450,
+        184.25
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_positive_support2",
+      "axis_C_mm": [
+        -350,
+        -450,
+        184.25
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_positive_support3",
+      "axis_C_mm": [
+        260,
+        -450,
+        184.25
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_negative_support0",
+      "axis_C_mm": [
+        -925,
+        -470,
+        270
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_negative_support1",
+      "axis_C_mm": [
+        -700,
+        -470,
+        270
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_negative_support2",
+      "axis_C_mm": [
+        -300,
+        -470,
+        270
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    },
+    {
+      "id": "MAIN_negative_support3",
+      "axis_C_mm": [
+        310,
+        -470,
+        270
+      ],
+      "cable_axis_C": [
+        1,
+        0,
+        0
+      ],
+      "body_support": "main_base_deck_3mm",
+      "foot_plane_Z_mm": 103,
+      "weld_foot_mm": [
+        30,
+        50
+      ],
+      "two_bolts": "M4x30, nominal0.7thread",
+      "nut_engagement_mm": 3.2,
+      "thread_protrusion_mm": 2.2,
+      "cable_pullout_vibration_thermal_qualified": false
+    }
+  ],
+  "partition_hole_patch": [
+    {
+      "target_part": "controller_battery_partition",
+      "center_C_mm": [
+        -1141.5,
+        -450,
+        184.25
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -1144,
+        -1139
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "controller_battery_partition",
+      "center_C_mm": [
+        -1141.5,
+        -470,
+        270
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -1144,
+        -1139
+      ],
+      "gland_panel_seat_X_mm": -1143,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "battery_tool_partition",
+      "center_C_mm": [
+        -458.5,
+        -450,
+        184.25
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -461,
+        -456
+      ],
+      "gland_panel_seat_X_mm": -460,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    },
+    {
+      "target_part": "battery_tool_partition",
+      "center_C_mm": [
+        -458.5,
+        -470,
+        270
+      ],
+      "axis_C": [
+        1,
+        0,
+        0
+      ],
+      "diameter_mm": 25.2,
+      "cut_X_mm": [
+        -461,
+        -456
+      ],
+      "gland_panel_seat_X_mm": -460,
+      "panel_thickness_mm": 3,
+      "nut_thickness_mm": 6,
+      "source_thread_length_mm": 10,
+      "source_thread_engagement_mm": 6
+    }
+  ],
+  "existing_E04_overlays_to_remove": [
+    "Q0_P_OUT_service_lead_bend",
+    "Q0_N_OUT_service_lead_bend"
+  ],
+  "source_urls": [
+    "https://products.lappgroup.com/fileadmin/documents/technische_doku/datenblaetter/skintop/DB53111000EN.pdf",
+    "https://products.lappgroup.com/fileadmin/documents/technische_doku/datenblaetter/skintop/DB53119000EN.pdf",
+    "https://lapp.com.ph/products/53119030",
+    "https://products.lappgroup.com/online-catalogue/power-and-control-cables/expanded-ambient-temperatures/silicone-single-cores/oelflex-heat-180-sif.html"
+  ],
+  "required_geometry_checks_passed": true,
+  "freeze": true,
+  "remaining_upstream_gates": [
+    "Covered <=100 A pack fuses with source mount/terminal datums",
+    "Source-rated retained positive and negative merge",
+    "Main positive fuse and coordination",
+    "Battery terminal source revision confirmation; polarity verified separately by R01"
+  ],
+  "no_motor_port_invented": true,
+  "electrical_operational_acceptance": false,
+  "cable_source_and_scenario": "cable_source_and_scenario_E05.json",
+  "source_material_record": "body-power/verification.json: aluminium, 5083-like density only; exact alloy/temper and weld process unqualified",
+  "source_E04_unchanged": true,
+  "geometry_file_SHA256": {
+    "main_pair_supported_E05.step": "d667075d5e777b51940b6501fa71f5529b271552fe324ab1660cb3365348f31c",
+    "main_pair_supported_E05.glb": "8b24f5116e278d8b02a474eeaea88cf0162e6e998461a5f816fb54ec69cf2756"
+  },
+  "body_partition_delta": "partition_patch_E05.json",
+  "connection_graph": "main_pair_graph_E05.json",
+  "selected_route_scope": "Only Q0:P_OUT\u2192LYNX:BAT+ and Q0:N_OUT\u2192LYNX:BAT\u2212. Upstream battery/merge/protection and all other branches remain open. No motorport changes."
+}

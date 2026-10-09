@@ -1,0 +1,11 @@
+{
+  "cost_model.json": "6f32765b5b802c712020f4b697bfcac2412b41d894dd4110db4c76d66369270f",
+  "BOM.csv": "6dea6d0cd5004c51a38c72a7db8986c081381dd6f244b052e5000e1fd57c7d31",
+  "sources.json": "a309af6a477ccb06dc61174757d2f2bfce7391b69b59f87422bfa04fbb0a0e59",
+  "body_composition.json": "06e99e6b4e43563d8e35725d559375c0a8978110898931ad98151e775a4f0893",
+  "material_mass_ledger_E05.json": "8d4627933906d4094cdc4495bfb7060bf9c29a5f17ba37a1dece4726a6b0bdc4",
+  "replacement_map.json": "801342e19e7f58d01e78ca3e82891827b495f3473f77e87283602bfc3ce29a23",
+  "mass_reconciliation.json": "2d653be66ed5dcb52aadf7bf24d02a7cf2bb1ffceedee456e6754cee6c9df7d0",
+  "delta_summary.json": "d67baebbc44fefd62c5403627826e5ae4eb1696e37e56e17a233b3472a53d3f5",
+  "dependency_manifest.json": "179ca10be0ff2964768cb74cd78012db5611215ae28538ea4d53512f99645ab3"
+}

@@ -1,0 +1,985 @@
+{
+  "parts": [
+    {
+      "name": "MAIN_positive_70mm2_routed_jacket",
+      "category": "manufacturer_cable_length",
+      "actual_material": "source cable insulation envelope",
+      "density_kg_m3_assumed": null,
+      "sku": "0060001",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_positive_support0_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support0_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_positive_support1_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support1_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_positive_support2_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support2_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_positive_support3_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_support3_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_70mm2_routed_jacket",
+      "category": "manufacturer_cable_length",
+      "actual_material": "source cable insulation envelope",
+      "density_kg_m3_assumed": null,
+      "sku": "0060001",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_negative_support0_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support0_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_negative_support1_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support1_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_negative_support2_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support2_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_M4x30_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_upper_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_lower_washer_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_M4nut_0",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_M4x30_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_upper_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_lower_washer_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_M4nut_1",
+      "category": "commercial_fastener_unselected",
+      "actual_material": "nominal steel hardware; grade and locking unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_welded_stand",
+      "category": "original_aluminium_stand",
+      "actual_material": "aluminium matched to selected deck; exact alloy/temper pending",
+      "density_kg_m3_assumed": 2700,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": "C04/body_composition.json:main_base_deck_3mm; 2700 kg/m3 assumed, exact alloy/temper unqualified"
+    },
+    {
+      "name": "MAIN_negative_support3_lower_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_support3_upper_clamp",
+      "category": "original_clamp_material_unknown",
+      "actual_material": "original clamp polymer/liner unspecified",
+      "density_kg_m3_assumed": null,
+      "sku": null,
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_controller_battery_partition_gland_LAPP53111030",
+      "category": "purchased_gland",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53111030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_controller_battery_partition_gland_LAPP53119030",
+      "category": "purchased_locknut",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53119030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_controller_battery_partition_gland_LAPP53111030",
+      "category": "purchased_gland",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53111030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_controller_battery_partition_gland_LAPP53119030",
+      "category": "purchased_locknut",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53119030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_battery_tool_partition_gland_LAPP53111030",
+      "category": "purchased_gland",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53111030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_positive_battery_tool_partition_gland_LAPP53119030",
+      "category": "purchased_locknut",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53119030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_battery_tool_partition_gland_LAPP53111030",
+      "category": "purchased_gland",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53111030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    },
+    {
+      "name": "MAIN_negative_battery_tool_partition_gland_LAPP53119030",
+      "category": "purchased_locknut",
+      "actual_material": "purchased gland/locknut representation",
+      "density_kg_m3_assumed": null,
+      "sku": "53119030",
+      "display_palette_must_not_supply_material": true,
+      "material_source": "E05/main_routes_E05/main_pair_contract_E05.json:parts.actual_material",
+      "density_basis": null
+    }
+  ],
+  "policy": "Exact source-name mapping. Display palette steel is never a material specification. Nominal fastener material is not a purchased mass source."
+}

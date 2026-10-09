@@ -1,0 +1,488 @@
+{
+  "revision": "BA02",
+  "scope": "Nominal static original CAD only. Not load, thermal, waterproof, shock, manufacturing or lifting qualification.",
+  "candidate_parts": 51,
+  "all_valid_single_solids": true,
+  "internal_positive_volume_intersections": [],
+  "retained_body_intersections": [],
+  "frame_intersections": [],
+  "zero_gap_contact_edges": [
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_positive_M8_interface"
+    ],
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_negative_M8_interface"
+    ],
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_central_vent_INTERFACE"
+    ],
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_pocketed_tray"
+    ],
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_strap_1_webbing_route"
+    ],
+    [
+      "BA02_pack_1_original_external_interface",
+      "BA02_pack_1_strap_2_webbing_route"
+    ],
+    [
+      "BA02_pack_1_tray_M8_1_top_washer",
+      "BA02_pack_1_tray_M8_1_screw"
+    ],
+    [
+      "BA02_pack_1_tray_M8_1_top_washer",
+      "BA02_pack_1_pocketed_tray"
+    ],
+    [
+      "BA02_pack_1_tray_M8_1_screw",
+      "BA02_pack_1_tray_M8_1_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_1_bottom_washer",
+      "BA02_pack_1_tray_M8_1_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_1_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_1_tray_M8_2_top_washer",
+      "BA02_pack_1_tray_M8_2_screw"
+    ],
+    [
+      "BA02_pack_1_tray_M8_2_top_washer",
+      "BA02_pack_1_pocketed_tray"
+    ],
+    [
+      "BA02_pack_1_tray_M8_2_screw",
+      "BA02_pack_1_tray_M8_2_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_2_bottom_washer",
+      "BA02_pack_1_tray_M8_2_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_2_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_1_tray_M8_3_top_washer",
+      "BA02_pack_1_tray_M8_3_screw"
+    ],
+    [
+      "BA02_pack_1_tray_M8_3_top_washer",
+      "BA02_pack_1_pocketed_tray"
+    ],
+    [
+      "BA02_pack_1_tray_M8_3_screw",
+      "BA02_pack_1_tray_M8_3_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_3_bottom_washer",
+      "BA02_pack_1_tray_M8_3_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_3_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_1_tray_M8_4_top_washer",
+      "BA02_pack_1_tray_M8_4_screw"
+    ],
+    [
+      "BA02_pack_1_tray_M8_4_top_washer",
+      "BA02_pack_1_pocketed_tray"
+    ],
+    [
+      "BA02_pack_1_tray_M8_4_screw",
+      "BA02_pack_1_tray_M8_4_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_4_bottom_washer",
+      "BA02_pack_1_tray_M8_4_nut"
+    ],
+    [
+      "BA02_pack_1_tray_M8_4_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_1_pocketed_tray",
+      "BA02_pack_1_strap_1_webbing_route"
+    ],
+    [
+      "BA02_pack_1_pocketed_tray",
+      "BA02_pack_1_strap_2_webbing_route"
+    ],
+    [
+      "BA02_pack_1_pocketed_tray",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_1_strap_1_webbing_route",
+      "BA02_pack_1_strap_1_purchased_buckle_APPROX_EXTERNAL"
+    ],
+    [
+      "BA02_pack_1_strap_2_webbing_route",
+      "BA02_pack_1_strap_2_purchased_buckle_APPROX_EXTERNAL"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_positive_M8_interface"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_negative_M8_interface"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_central_vent_INTERFACE"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_pocketed_tray"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_strap_1_webbing_route"
+    ],
+    [
+      "BA02_pack_2_original_external_interface",
+      "BA02_pack_2_strap_2_webbing_route"
+    ],
+    [
+      "BA02_pack_2_tray_M8_1_top_washer",
+      "BA02_pack_2_tray_M8_1_screw"
+    ],
+    [
+      "BA02_pack_2_tray_M8_1_top_washer",
+      "BA02_pack_2_pocketed_tray"
+    ],
+    [
+      "BA02_pack_2_tray_M8_1_screw",
+      "BA02_pack_2_tray_M8_1_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_1_bottom_washer",
+      "BA02_pack_2_tray_M8_1_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_1_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_2_tray_M8_2_top_washer",
+      "BA02_pack_2_tray_M8_2_screw"
+    ],
+    [
+      "BA02_pack_2_tray_M8_2_top_washer",
+      "BA02_pack_2_pocketed_tray"
+    ],
+    [
+      "BA02_pack_2_tray_M8_2_screw",
+      "BA02_pack_2_tray_M8_2_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_2_bottom_washer",
+      "BA02_pack_2_tray_M8_2_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_2_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_2_tray_M8_3_top_washer",
+      "BA02_pack_2_tray_M8_3_screw"
+    ],
+    [
+      "BA02_pack_2_tray_M8_3_top_washer",
+      "BA02_pack_2_pocketed_tray"
+    ],
+    [
+      "BA02_pack_2_tray_M8_3_screw",
+      "BA02_pack_2_tray_M8_3_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_3_bottom_washer",
+      "BA02_pack_2_tray_M8_3_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_3_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_2_tray_M8_4_top_washer",
+      "BA02_pack_2_tray_M8_4_screw"
+    ],
+    [
+      "BA02_pack_2_tray_M8_4_top_washer",
+      "BA02_pack_2_pocketed_tray"
+    ],
+    [
+      "BA02_pack_2_tray_M8_4_screw",
+      "BA02_pack_2_tray_M8_4_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_4_bottom_washer",
+      "BA02_pack_2_tray_M8_4_nut"
+    ],
+    [
+      "BA02_pack_2_tray_M8_4_bottom_washer",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_2_pocketed_tray",
+      "BA02_pack_2_strap_1_webbing_route"
+    ],
+    [
+      "BA02_pack_2_pocketed_tray",
+      "BA02_pack_2_strap_2_webbing_route"
+    ],
+    [
+      "BA02_pack_2_pocketed_tray",
+      "battery_well_floor_3mm"
+    ],
+    [
+      "BA02_pack_2_strap_1_webbing_route",
+      "BA02_pack_2_strap_1_purchased_buckle_APPROX_EXTERNAL"
+    ],
+    [
+      "BA02_pack_2_strap_2_webbing_route",
+      "BA02_pack_2_strap_2_purchased_buckle_APPROX_EXTERNAL"
+    ]
+  ],
+  "unconnected_new_parts": [],
+  "retained_floor_root": "battery_well_floor_3mm",
+  "strap_to_interface_clearances": [
+    {
+      "strap": "BA02_pack_1_strap_1_webbing_route",
+      "interface": "BA02_pack_1_positive_M8_interface",
+      "distance_mm": 102.55000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_1_strap_1_webbing_route",
+      "interface": "BA02_pack_1_negative_M8_interface",
+      "distance_mm": 402.55,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_1_strap_1_webbing_route",
+      "interface": "BA02_pack_1_central_vent_INTERFACE",
+      "distance_mm": 72.80000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_1_strap_2_webbing_route",
+      "interface": "BA02_pack_1_positive_M8_interface",
+      "distance_mm": 402.55,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_1_strap_2_webbing_route",
+      "interface": "BA02_pack_1_negative_M8_interface",
+      "distance_mm": 102.55000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_1_strap_2_webbing_route",
+      "interface": "BA02_pack_1_central_vent_INTERFACE",
+      "distance_mm": 177.8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_1_webbing_route",
+      "interface": "BA02_pack_2_positive_M8_interface",
+      "distance_mm": 102.55000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_1_webbing_route",
+      "interface": "BA02_pack_2_negative_M8_interface",
+      "distance_mm": 402.55,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_1_webbing_route",
+      "interface": "BA02_pack_2_central_vent_INTERFACE",
+      "distance_mm": 72.80000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_2_webbing_route",
+      "interface": "BA02_pack_2_positive_M8_interface",
+      "distance_mm": 402.55,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_2_webbing_route",
+      "interface": "BA02_pack_2_negative_M8_interface",
+      "distance_mm": 102.55000000000001,
+      "overlap_mm3": 0.0
+    },
+    {
+      "strap": "BA02_pack_2_strap_2_webbing_route",
+      "interface": "BA02_pack_2_central_vent_INTERFACE",
+      "distance_mm": 177.8,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "axial_tool_path_hits": [],
+  "expanded_vertical_lift_hits": [],
+  "nominal_tool_hatch_side_clearance_mm": 46,
+  "nominal_pack_hatch_side_clearance_mm": 16.2,
+  "expanded_pack_hatch_side_clearance_mm": 6.2,
+  "well_side_ventilation_space_mm": 33.2,
+  "well_end_space_mm": 67.25,
+  "interpack_gap_mm": 188.5,
+  "R02_deck_holes_checked": [
+    {
+      "id": "INV1_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV1_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV1_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV1_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV2_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV2_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV2_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV2_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV3_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV3_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV3_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV3_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV4_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV4_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV4_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV4_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV5_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV5_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV5_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV5_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV6_to_deck_00",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV6_to_deck_01",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV6_to_deck_10",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "INV6_to_deck_11",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "PDU_to_deck_370_-205",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "PDU_to_deck_370_205",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "PDU_to_deck_520_-205",
+      "remaining_material_mm3": 0.0
+    },
+    {
+      "id": "PDU_to_deck_520_205",
+      "remaining_material_mm3": 0.0
+    }
+  ],
+  "original_history_modified": false,
+  "gates": {
+    "strap_case_interface": "Victron permits straps. This is an original engaged route only; no case preload, bearing-zone approval, webbing thickness, edge protection or buckle geometry qualification. Factory-bracket failures remain in BA01.",
+    "dry_indoor_location": "FAIL for existing unsealed hatch/finger slots and apertures; dry, ventilated enclosure not qualified.",
+    "thermal": "Case-to-wall clearance exceeds 20 mm; local mounting hardware occupies part of the lower ventilation region; heat rejection/condensation/water exclusion not verified.",
+    "lifting": "Only rigid-pack extraction volume checked. Each 37 kg pack requires suitable human-assisted handling/hoist and validated sling/handle/access procedure; arms-only unsupported.",
+    "loads": "Tray/floor, fastener and strap load path require bending, load transfer, locking, preload, shock, fatigue and corrosion qualification. No welded strap anchors are introduced.",
+    "electrical": "Separate 180 A two-pack topology review; sharing, branch protection, disconnects and conductor heating remain open."
+  },
+  "vehicle_restraint_qualified": false,
+  "buckle_internal_mechanism_modeled": false,
+  "contact_graph_scope": "Nominal geometry connectivity through approximate purchased buckle interfaces. Does not prove cam locking, grip force, sewn termination or complete modeled retention mechanism.",
+  "R02_deck_holes_preserved": true,
+  "outputs_sha256": {
+    "battery_strap_tray_BA02.step": "b50cd237244c16cea9a1c0ba74af51bb8d4d876e3ae1587e2686fed07ae478c6",
+    "battery_strap_tray_BA02.glb": "c702c13bf4c6067997a4f0415338709a83d2ceb39a73f565e10512bab958b1f6",
+    "replacement_addition_manifest.json": "156233c089172e2e78db6d1f52d8d859439a93a40e86ffb637275eb3d1fee224"
+  },
+  "nominal_geometry_pass": true,
+  "representation_metadata_checks": [
+    {
+      "file": "battery_strap_tray_BA02.glb",
+      "geometry_binary_sha256": "e5c00abe22a29994ca22f84b4983966d6b0b48296bf62555205d1432590102aa",
+      "geometry_unchanged": true
+    },
+    {
+      "file": "buckle_service_reservations_BA02.glb",
+      "geometry_binary_sha256": "71991e36ec4a4b97b5f7239ebb9e4df96c9d21e271bc4f91e28919068dda1073",
+      "geometry_unchanged": true
+    }
+  ]
+}
