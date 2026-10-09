@@ -1,0 +1,104 @@
+{
+  "status": "OEM source visual geometry acquired; new six-wheel mounting interface and loads unqualified",
+  "frame": "Z-up metres, X forward, Y left; source geometry unscaled",
+  "wheel": {
+    "asset": "wheel-zup-m.glb",
+    "source_asset": "wheel.stl",
+    "source_to_asset_rotation_xyz_rad": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "source_axle_axis": [
+      1,
+      0,
+      0
+    ],
+    "asset_axle_axis": [
+      0,
+      1,
+      0
+    ],
+    "asset_axle_origin_m": [
+      0,
+      0,
+      0
+    ],
+    "rotational_envelope_radius_m": 0.30493137992041575,
+    "nominal_collision_radius_from_source_urdf_m": 0.3,
+    "visual_min_z_m": -0.30467748641967773,
+    "axial_bounds_m": [
+      -0.12716922163963318,
+      0.1271304488182068
+    ],
+    "nominal_description": "OEM Warthog 610 mm Argo Turf tire",
+    "source_urdf_mass_kg": 15,
+    "mass_qualification": "Simulation parameter only; not independently weighed component, no material densities or wheel load rating verified",
+    "minimum_vertex_radius_from_axle_m": 0.07712714463338956,
+    "hub_interface": "UNRESOLVED. Simplified filled low-poly central faces are present but no identifiable lug holes. No OEM bolt circle, lug size, pilot bore, mounting plane, rim offset or load limit verified. Do not infer manufacturing compatibility from triangles.",
+    "contact": "Flat-plane visual contact axle_Z + min_Z; rotation-safe envelope uses 0.30493138 m. Elastic loaded radius/contact patch unavailable. Nominal URDF collision cylinder is smaller and will visually penetrate by about 5 mm.",
+    "steering_clearance": "No steering joint in source; original Warthog skid steers. If new steering is added calculate full swept volume separately.",
+    "mesh_axle_ray_intersections_y_m": [
+      -0.08654227993458098,
+      0.001998187569809915
+    ],
+    "mesh_center_correction": "Minimum vertex radius does not imply an open center: fan triangles fill the center. These surface intersections are visual geometry only, not qualified mounting datums."
+  },
+  "source_suspension": {
+    "use": "Reference only; rejected for transplant into six single-wheel stations",
+    "geometry": "Each rocker is one TWO-wheel rigid drive-unit enclosure; not one independent wheel pod",
+    "left_rocker_asset": "rocker-zup-m.glb",
+    "left_fender_asset": "fenders-zup-m.glb",
+    "right_asset_transform": "Rotate left asset about Z by pi",
+    "wheel_centers_relative_to_rocker_pivot_m": [
+      [
+        0.457367,
+        0,
+        -0.012977
+      ],
+      [
+        -0.457367,
+        0,
+        -0.012977
+      ]
+    ],
+    "rocker_pivot_axis": [
+      0,
+      1,
+      0
+    ],
+    "source_joint_limits_rad": [
+      -0.4,
+      0.4
+    ],
+    "source_modeled_drive_unit_mass_kg": 50,
+    "source_left_rocker_pivot_relative_to_chassis_m": [
+      0,
+      0.56821,
+      0
+    ],
+    "source_right_rocker_pivot_relative_to_chassis_m": [
+      0,
+      -0.56821,
+      0
+    ],
+    "diff_link_fixed_origin_m": [
+      -0.5826,
+      0,
+      0.24979
+    ],
+    "caveat": "Source explicitly says diff_link is purely visual; duplicated susp-link visual entries are not a physically closed-loop joint model. Internal motor, gearing, axle bearings and brakes are not supplied meshes."
+  },
+  "source_vehicle_reference": {
+    "manual": "https://docs.clearpathrobotics.com/docs_robots/legacy/ros1_robots/outdoor_robots/warthog/user_manual_warthog/",
+    "dimensions_m": [
+      1.52,
+      1.38,
+      0.83
+    ],
+    "base_mass_kg": 280,
+    "max_payload_kg": 272,
+    "drive": "4x4 skid steer; passive geometric articulation",
+    "rating_transfer": "These whole-platform values DO NOT rate individual wheels or the new six-wheel frame. R06 frame alone is about 690.076 kg, plus two 64 kg arms before pods and batteries."
+  }
+}
