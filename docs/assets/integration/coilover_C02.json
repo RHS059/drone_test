@@ -1,0 +1,128 @@
+{
+ "classification": "envelope + sizing, not OEM shock CAD or qualified spring",
+ "frame": "corner C, left station X=0, mm",
+ "eyes_mm": {
+  "fixed": [
+   0.0,
+   560.0,
+   170.0
+  ],
+  "lower_at_neutral": [
+   0.0,
+   720.3,
+   -367.5
+  ]
+ },
+ "sweep": [
+  {
+   "arm_deg": -12,
+   "wheel_dz_mm": -51.2,
+   "eye_to_eye_mm": 586.8,
+   "clashes_mm3": [
+    [
+     "stationary_clamp",
+     12.6
+    ],
+    [
+     "drive_stator",
+     108685.9
+    ]
+   ]
+  },
+  {
+   "arm_deg": -6,
+   "wheel_dz_mm": -26.6,
+   "eye_to_eye_mm": 574.5,
+   "clashes_mm3": [
+    [
+     "stationary_clamp",
+     113.6
+    ],
+    [
+     "drive_stator",
+     82048.6
+    ]
+   ]
+  },
+  {
+   "arm_deg": 0,
+   "wheel_dz_mm": 0.0,
+   "eye_to_eye_mm": 560.9,
+   "clashes_mm3": [
+    [
+     "stationary_clamp",
+     320.9
+    ],
+    [
+     "drive_stator",
+     623153.1
+    ]
+   ]
+  },
+  {
+   "arm_deg": 6,
+   "wheel_dz_mm": 28.2,
+   "eye_to_eye_mm": 546.2,
+   "clashes_mm3": [
+    [
+     "stationary_clamp",
+     616.2
+    ],
+    [
+     "drive_stator",
+     630111.8
+    ]
+   ]
+  },
+  {
+   "arm_deg": 12,
+   "wheel_dz_mm": 57.8,
+   "eye_to_eye_mm": 530.3,
+   "clashes_mm3": [
+    [
+     "stationary_clamp",
+     986.6
+    ],
+    [
+     "drive_stator",
+     601163.7
+    ]
+   ]
+  }
+ ],
+ "motion_ratio_spring_per_wheel": 0.516,
+ "shock_stroke_needed_mm_for_pm12deg": 56.5,
+ "wheel_travel_mm_for_pm12deg": 109.0,
+ "ride_frequency_Hz": 1.4,
+ "unsprung_per_corner_kg_assumed": 90.0,
+ "spring_sizing": [
+  {
+   "vehicle_kg": 1300,
+   "sprung_per_corner_kg": 126.7,
+   "wheel_rate_N_mm": 9.8,
+   "spring_rate_N_mm": 36.8,
+   "spring_rate_lb_in": 210.0,
+   "static_spring_force_kN": 2.41,
+   "static_sag_spring_mm": 65.5
+  },
+  {
+   "vehicle_kg": 1600,
+   "sprung_per_corner_kg": 176.7,
+   "wheel_rate_N_mm": 13.7,
+   "spring_rate_N_mm": 51.3,
+   "spring_rate_lb_in": 293.0,
+   "static_spring_force_kN": 3.36,
+   "static_sag_spring_mm": 65.5
+  },
+  {
+   "vehicle_kg": 2000,
+   "sprung_per_corner_kg": 243.3,
+   "wheel_rate_N_mm": 18.8,
+   "spring_rate_N_mm": 70.6,
+   "spring_rate_lb_in": 403.0,
+   "static_spring_force_kN": 4.62,
+   "static_sag_spring_mm": 65.5
+  }
+ ],
+ "selection_rule": "pick a 2.0-2.5 in coilover with eye-to-eye at ride = neutral eye_to_eye and stroke >= shock_stroke_needed + 10 mm bump margin; spring rate from row matching the measured vehicle mass"
+}

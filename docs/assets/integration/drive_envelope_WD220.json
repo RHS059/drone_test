@@ -1,0 +1,21 @@
+{
+ "part": "drive_envelope_WD220",
+ "classification": "public-dimension envelope, not vendor CAD",
+ "frame": "corner C, left station X=0, mm",
+ "bounds_mm": [
+  [
+   -124.0,
+   606.0,
+   -350.0
+  ],
+  [
+   124.0,
+   958.0,
+   -104.5
+  ]
+ ],
+ "inside_drive_reservation": true,
+ "mass_kg": null,
+ "mass_note": "WD220 mass not published for this variant; do not use envelope volume",
+ "valid": true
+}

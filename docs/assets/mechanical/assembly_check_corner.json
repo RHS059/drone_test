@@ -1,0 +1,15 @@
+{
+ "touch_tolerance_mm": 0.5,
+ "declared_joints": [
+  [
+   "drive_stator",
+   "drive_rotor",
+   "WD220 internal output bearing (vendor; rating unknown)"
+  ]
+ ],
+ "parts": 58,
+ "connected_to_frame": 58,
+ "floating": [],
+ "interferences_mm3": [],
+ "touch_pairs": 96
+}

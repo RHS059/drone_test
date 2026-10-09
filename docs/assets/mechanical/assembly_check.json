@@ -1,0 +1,134 @@
+{
+ "touch_tolerance_mm": 0.5,
+ "parts": 225,
+ "connected_to_frame": 200,
+ "floating": [
+  {
+   "part": "body#37",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#38",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#40",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#41",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#43",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#44",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#46",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#47",
+   "nearest_connected": "body#31",
+   "gap_mm": 4.0
+  },
+  {
+   "part": "body#114",
+   "nearest_connected": "body#29",
+   "gap_mm": 30.0
+  },
+  {
+   "part": "body#115",
+   "nearest_connected": "body#29",
+   "gap_mm": 30.0
+  },
+  {
+   "part": "body#116",
+   "nearest_connected": "body#29",
+   "gap_mm": 30.0
+  },
+  {
+   "part": "body#117",
+   "nearest_connected": "body#29",
+   "gap_mm": 15.0
+  },
+  {
+   "part": "body#118",
+   "nearest_connected": "body#29",
+   "gap_mm": 15.0
+  },
+  {
+   "part": "body#119",
+   "nearest_connected": "body#29",
+   "gap_mm": 15.0
+  },
+  {
+   "part": "body#120",
+   "nearest_connected": "body#30",
+   "gap_mm": 17.0
+  },
+  {
+   "part": "body#121",
+   "nearest_connected": "body#30",
+   "gap_mm": 17.0
+  },
+  {
+   "part": "body#122",
+   "nearest_connected": "body#30",
+   "gap_mm": 17.0
+  },
+  {
+   "part": "upper_wishbone",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 3.0
+  },
+  {
+   "part": "lower_wishbone",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 3.0
+  },
+  {
+   "part": "upright_WD220",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 199.0
+  },
+  {
+   "part": "wheel_adapter",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 348.1
+  },
+  {
+   "part": "upright_pins#0",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 250.8
+  },
+  {
+   "part": "upright_pins#1",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 250.8
+  },
+  {
+   "part": "wheel_C01#0",
+   "nearest_connected": "body#23",
+   "gap_mm": 179.6
+  },
+  {
+   "part": "wheel_C01#1",
+   "nearest_connected": "stationary_clamp",
+   "gap_mm": 245.0
+  }
+ ],
+ "interferences_mm3": [],
+ "touch_pairs": 427
+}
