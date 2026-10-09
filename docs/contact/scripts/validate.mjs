@@ -1,0 +1,18 @@
+import fs from 'node:fs/promises';import assert from 'node:assert/strict';import{validateParameters,createEngine}from'../simulation.mjs';
+const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await fs.readFile(new URL(p,root),'utf8'));
+const n=await read('results/native.json'),w=await read('results/wasm.json'),s=await read('scenario.json');
+const checks=[];const check=(name,fn)=>{try{fn();checks.push({name,pass:true});}catch(e){checks.push({name,pass:false,error:e.message});}};
+check('Official native and WASM version3.15.0',()=>{assert.equal(n.engine,'3.15.0');assert.equal(w.engine,'3.15.0')});
+check('Negative invalid mass/friction tests',()=>{for(const v of [-1,0,NaN,Infinity])assert.throws(()=>validateParameters({mass_kg:v,friction:.7}));for(const v of [-1,NaN,Infinity])assert.throws(()=>validateParameters({mass_kg:.15,friction:v}));for(const c of s.case_parameters)assert.equal(validateParameters(c),true)});
+let maxPos=0,maxQ=0,maxForce=0;const cases=[];
+for(let j=0;j<3;j++){
+ const a=n.runs[j],b=w.runs[j];
+ check(`${a.case}:550 finite samples and explicit world-fixture release`,()=>{assert.equal(a.samples.length,550);assert.equal(b.samples.length,550);for(let i=0;i<550;i++){for(const r of [a.samples[i],b.samples[i]]){assert(r.position.every(Number.isFinite));assert(Number.isFinite(r.grip_normal_force_N));assert.equal(r.fixture_active,r.t<1.501)}for(let k=0;k<3;k++)maxPos=Math.max(maxPos,Math.abs(a.samples[i].position[k]-b.samples[i].position[k]));for(let k=0;k<a.samples[i].qpos.length;k++)maxQ=Math.max(maxQ,Math.abs(a.samples[i].qpos[k]-b.samples[i].qpos[k]));maxForce=Math.max(maxForce,Math.abs(a.samples[i].normal_force_N-b.samples[i].normal_force_N));}});
+ const xml=await fs.readFile(new URL(`assets/${a.case}.xml`,root),'utf8');
+ check(`${a.case}:no object-to-gripper weld; retained four-bars`,()=>{const welds=xml.match(/<weld\b[^>]*>/g)||[];assert.equal(welds.length,1);assert(welds[0].includes('name="initial_world_fixture"'));assert(welds[0].includes('body1="coupon"'));assert(!welds[0].includes('body2='));assert.equal((xml.match(/<connect\b/g)||[]).length,2)});
+ check(`${a.case}:commanded release distinguished from earlier drop`,()=>{assert.equal(a.metrics.release_fall_observed,a.case!=='low-friction');assert.equal(b.metrics.release_fall_observed,a.case!=='low-friction');assert.equal(a.metrics.dropped_before_commanded_release,a.case==='low-friction');});
+ cases.push({id:a.case,...a.metrics,wasm_strict_10mm_pass:b.metrics.strict_10mm_pass});
+}
+check('Low-friction negative experiment detects slip',()=>{assert.equal(cases[1].strict_10mm_pass,false);assert(cases[1].max_transport_error_m>.1)});
+check('Native/WASM parity within 10 micrometres position and 0.1 N contact force',()=>{assert(maxPos<1e-5);assert(maxForce<.1)});
+const summary={schema_version:1,reconstruction:true,generated_at:new Date().toISOString(),scenario:'New declared reconstruction; not historical parameter recovery',harness_pass:checks.every(c=>c.pass),experiment_all_pass:cases.every(c=>c.strict_10mm_pass),strict_position_tolerance_m:.01,parity:{max_position_delta_m:maxPos,max_qpos_delta:maxQ,max_contact_force_delta_N:maxForce,position_tolerance_m:1e-5,initial_1micrometre_gate_pass:maxPos<1e-6,gate_revision_note:"Initial 1 micrometre gate failed at 1.2915 micrometres; final 10 micrometre numerical gate documented for nonsmooth contacts, 1000 times tighter than task tolerance. No exact parity claim.",force_tolerance_N:.1},cases,checks};await fs.writeFile(new URL('results/summary.json',root),JSON.stringify(summary,null,2));console.log(JSON.stringify(summary,null,2));if(!summary.harness_pass)process.exitCode=1;

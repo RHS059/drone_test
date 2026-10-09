@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';import fs from'node:fs';import crypto from'node:crypto';import{forward,origin,multiply,jointValues}from'./docs/kinematics.js';
+const read=p=>JSON.parse(fs.readFileSync(p)),base='docs/assets/robots/',graph=read(base+'robot-kinematics.json'),fixtures=read(base+'fk-fixtures.json');let matrices=0;
+for(const key of['ur20','robotiq'])for(const f of fixtures[key]){const got=forward(graph[key],f.joint_values);for(const[name,expect]of Object.entries(f.link_matrices_row_major)){assert.ok(got[name],name);for(let r=0;r<4;r++)for(let c=0;c<4;c++)assert.ok(Math.abs(got[name][c*4+r]-expect[r*4+c])<1e-8,`${key}/${f.name}/${name}/${r}/${c}`);matrices++;}}
+assert.throws(()=>forward(graph.ur20,{elbow_joint:10}),/Joint limit/);assert.throws(()=>forward(graph.ur20,{elbow_joint:NaN}),/Nonfinite/);
+const chain=graph.mount_chain.reduce((a,j)=>multiply(a,origin(j.origin)),origin());assert.ok(Math.abs(chain[14]-.0345)<1e-12);assert.ok(Math.abs(chain[0]+1)<1e-12);
+for(const key of['ur20','robotiq'])for(const l of graph[key].links)if(l.visual)assert.ok(fs.existsSync(base+l.visual.asset),l.visual.asset);assert.ok(fs.existsSync(base+graph.coupling.visual.asset));
+const report=read(base+'validation-report.json');assert.equal(report.status,'passed');for(const item of report.geometry_checks){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(base+item.asset)).digest('hex'),item.sha256,item.asset)}
+const text=fs.readFileSync('docs/index.html','utf8');assert.ok(text.includes('© 2023 Universal Robots A/S.'));assert.ok(text.includes('not manufacturing CAD'));assert.ok(!fs.readFileSync('docs/scene.js','utf8').includes('BoxGeometry'));assert.ok(fs.existsSync('docs/assets/mechanical/adapter_R03.glb'));
+console.log(`PASS: ${matrices} link matrices versus fresh independent fixtures; mimic graph, limits, nominal mounting chain, asset hashes and notices. No collision or whole-robot qualification.`);

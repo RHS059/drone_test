@@ -1,0 +1,132 @@
+{
+  "revision": "adapter_R03",
+  "new_reconstruction": true,
+  "units": {
+    "STEP": "mm",
+    "GLB": "m, Z-up"
+  },
+  "solid_count": 1,
+  "bbox_m": [
+    0.1,
+    0.1,
+    0.026
+  ],
+  "bounds_m": [
+    [
+      -0.05,
+      -0.05,
+      -0.0025
+    ],
+    [
+      0.05,
+      0.05,
+      0.0235
+    ]
+  ],
+  "valid_single_solids": true,
+  "positive_volume_intersections_mm3": [],
+  "zero_gap_contacts": [],
+  "density_kg_m3": 7850,
+  "density_is_assumption": true,
+  "assembly_properties": {
+    "volume_m3": 0.0001692079280962071,
+    "mass_kg": 1.3282822355552257,
+    "com_m": [
+      8.091073265102225e-18,
+      -2.090879800788717e-18,
+      0.010847262635726043
+    ],
+    "inertia_com_kg_m2": [
+      [
+        0.0008567606575852497,
+        1.0011767699324989e-19,
+        -1.5834399865954797e-19
+      ],
+      [
+        1.0011767699324989e-19,
+        0.0008567606575852303,
+        -3.381177109608717e-21
+      ],
+      [
+        -1.5834399865954797e-19,
+        -3.381177109608717e-21,
+        0.0015875288529492776
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "name": "original_adapter_nominal_R03",
+      "volume_m3": 0.0001692079280962071,
+      "mass_kg": 1.3282822355552257,
+      "com_m": [
+        8.091073265102225e-18,
+        -2.090879800788717e-18,
+        0.010847262635726043
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0008567606575852497,
+          1.0011767699324989e-19,
+          -1.5834399865954797e-19
+        ],
+        [
+          1.0011767699324989e-19,
+          0.0008567606575852303,
+          -3.381177109608717e-21
+        ],
+        [
+          -1.5834399865954797e-19,
+          -3.381177109608717e-21,
+          0.0015875288529492776
+        ]
+      ]
+    }
+  ],
+  "fabrication_release": false,
+  "nominal_total_thickness_mm": 26,
+  "face_separation_mm": 23.5,
+  "ur_pilot_protrusion_mm": 2.5,
+  "ur_pilot_diameter_mm": 50,
+  "pilot_fit_status": "Nominal geometry only; male fit/tolerance NOT selected or approved",
+  "M8_clearance_count": 6,
+  "M8_clearance_diameter_mm": 8.5,
+  "M8_counterbore_diameter_mm": 14,
+  "M8_counterbore_depth_mm": 12,
+  "M6_tap_pilot_count": 4,
+  "M6_tap_pilot_diameter_mm": 5,
+  "M6_tap_pilot_depth_mm": 12,
+  "locating_pin_seats": "not modeled pending validated datum/index requirements",
+  "thread_representation": "tap-drill holes only, threads not cut",
+  "release_blockers": [
+    "Pilot fit unapproved",
+    "Thread effective engagement and drill tip relief unresolved",
+    "Index pin orientation/seats unresolved",
+    "Screw grade,length,head tooling clearance and torque unresolved",
+    "Adapter strength and payload/inertia limit review unresolved",
+    "Full vendor assembly swept-volume check pending"
+  ],
+  "coupling_skirt_relief": {
+    "inner_radius_mm": 31,
+    "outer_radius_mm": 38,
+    "depth_mm": 3.5,
+    "chosen_nominal_clearance_mm": 0.5,
+    "status": "original design clearance, NOT manufacturer fit"
+  },
+  "coupling_skirt_conservative_envelope_intersection_mm3": 0,
+  "assumed_M8_head": {
+    "diameter_mm": 13,
+    "height_mm": 8,
+    "count": 6,
+    "top_Z_mm": 19.5,
+    "minimum_axial_skirt_clearance_mm": 1,
+    "status": "nominal ISO4762 size envelope; actual hardware/tolerance/length unapproved"
+  },
+  "tests_passed": [
+    "valid single B-rep solid",
+    "26mm total axial envelope",
+    "4 actual \u00d85 M6 tap pilots",
+    "nominal vendor skirt conservative envelope has no intersection",
+    "six nominal M8 head envelopes clear adapter and skirt"
+  ]
+}

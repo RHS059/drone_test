@@ -1,11 +1,20 @@
-# Real-CAD reconstruction checkpoint
+# Six-Wheel Builder: real-CAD reconstruction R01
 
-The unpublished October 9 CAD package could not be recovered from the current executor or available backups. This branch is a NEW reconstruction; historical test results do not validate it.
+[Open the viewer](https://rhs059.github.io/drone_test/).
 
-Pinned public source inputs:
-- UniversalRobots/Universal_Robots_ROS2_Description@6662e15f32c23c12ece57d0050aee9a716e4fc41 (UR20 visualization geometry and nominal kinematics; upstream graphical-documentation terms apply).
-- Robotiq/ros@adb20dc0048ff2ef51c5a86fe2f7880a8618f099 (2F85 and licensed coupling geometry; preserve BSD notices).
+This is a new reconstruction of the previously unpublished local package, not recovery of that package or reuse of its audit results.
 
-Fresh original frame/adapter CAD, source conversion, executable joint graph and standalone MuJoCo contact experiments are being reconstructed and require new tests. No complete six-wheel vehicle, rated mobility subsystem, autonomous assembly or physical qualification is claimed. Private review-only geometry must not be included.
+- Actual licensed UR20/Robotiq source meshes, original textures and source joint graphs; executable joint/mimic controls.
+- Original parametric frame R06 and adapter R03 B-rep/STEP, source generators and fresh checks.
+- Standalone MuJoCo native/WASM contact model, with software parity separated from task success. New nominal/heavy cases pass the 10 mm screen; low-friction case fails. These are new declared experiments, not the earlier lost experiments.
+- Explicit GPU fallback: CPU kinematics remains usable where WebGPU/WebGL2 is unavailable. Rendered appearance was not independently verified before initial deployment because the QA executor cannot launch Chromium; post-deploy browser checks are separate.
 
-Main remains the prior schematic until a separately verified release replaces it.
+No whole robot, rated drivetrain, collision-free motion, physical manufacturing release, autonomous assembly or repair capability is claimed. A nominal source-frame mating convention is not tolerance/preload/load qualification.
+
+## Reproduce bounded checks
+
+Run `node test-cad.mjs`, `node test-model.mjs` (historical estimates only), and `node docs/contact/scripts/validate.mjs`. Run contact native/WASM generators and mechanical/asset scripts as documented in their folders. Original robot conversion scripts are in `reconstruction/robots/`; retained upstream source/licences and fresh fixtures are in `docs/assets/robots/`. Source paths may need setting to your workspace; the pinned source commits are in the manifest.
+
+## Licensing
+
+Preserve per-asset notices. UR geometry is subject to the complete graphical-documentation terms at `docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt`, including displayed copyright and use notice. Robotiq source, MuJoCo Menagerie assets and Three.js carry their respective notices. No blanket license replaces upstream conditions. No private/review-only coupling STEP is included.

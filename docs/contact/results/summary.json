@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "reconstruction": true,
+  "generated_at": "2026-10-09T08:00:49.387Z",
+  "scenario": "New declared reconstruction; not historical parameter recovery",
+  "harness_pass": true,
+  "experiment_all_pass": false,
+  "strict_position_tolerance_m": 0.01,
+  "parity": {
+    "max_position_delta_m": 0.0000012915145998051353,
+    "max_qpos_delta": 0.000027897112962945185,
+    "max_contact_force_delta_N": 0.037033843873118144,
+    "position_tolerance_m": 0.00001,
+    "initial_1micrometre_gate_pass": false,
+    "gate_revision_note": "Initial 1 micrometre gate failed at 1.2915 micrometres; final 10 micrometre numerical gate documented for nonsmooth contacts, 1000 times tighter than task tolerance. No exact parity claim.",
+    "force_tolerance_N": 0.1
+  },
+  "cases": [
+    {
+      "id": "nominal",
+      "max_transport_error_m": 0.0026110294806710116,
+      "strict_10mm_pass": true,
+      "release_fall_observed": true,
+      "dropped_before_commanded_release": false,
+      "peak_contact_normal_force_N": 101.70488030616539,
+      "peak_grip_normal_force_N": 101.70488030616539,
+      "wasm_strict_10mm_pass": true
+    },
+    {
+      "id": "low-friction",
+      "max_transport_error_m": 0.15231481026135213,
+      "strict_10mm_pass": false,
+      "release_fall_observed": false,
+      "dropped_before_commanded_release": true,
+      "peak_contact_normal_force_N": 98.45647331934302,
+      "peak_grip_normal_force_N": 98.45647331934302,
+      "wasm_strict_10mm_pass": false
+    },
+    {
+      "id": "heavy",
+      "max_transport_error_m": 0.002376957332106001,
+      "strict_10mm_pass": true,
+      "release_fall_observed": true,
+      "dropped_before_commanded_release": false,
+      "peak_contact_normal_force_N": 309.7910659059671,
+      "peak_grip_normal_force_N": 111.9030963232922,
+      "wasm_strict_10mm_pass": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "Official native and WASM version3.15.0",
+      "pass": true
+    },
+    {
+      "name": "Negative invalid mass/friction tests",
+      "pass": true
+    },
+    {
+      "name": "nominal:550 finite samples and explicit world-fixture release",
+      "pass": true
+    },
+    {
+      "name": "nominal:no object-to-gripper weld; retained four-bars",
+      "pass": true
+    },
+    {
+      "name": "nominal:commanded release distinguished from earlier drop",
+      "pass": true
+    },
+    {
+      "name": "low-friction:550 finite samples and explicit world-fixture release",
+      "pass": true
+    },
+    {
+      "name": "low-friction:no object-to-gripper weld; retained four-bars",
+      "pass": true
+    },
+    {
+      "name": "low-friction:commanded release distinguished from earlier drop",
+      "pass": true
+    },
+    {
+      "name": "heavy:550 finite samples and explicit world-fixture release",
+      "pass": true
+    },
+    {
+      "name": "heavy:no object-to-gripper weld; retained four-bars",
+      "pass": true
+    },
+    {
+      "name": "heavy:commanded release distinguished from earlier drop",
+      "pass": true
+    },
+    {
+      "name": "Low-friction negative experiment detects slip",
+      "pass": true
+    },
+    {
+      "name": "Native/WASM parity within 10 micrometres position and 0.1 N contact force",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "source": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/",
+  "license": "BSD-2-Clause",
+  "files": [
+    {
+      "path": "2f85.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/2f85.xml",
+      "sha256": "d48aca5f9151798ffd38111ce4e8b2081f3ec2d4f525161b33643451580010de"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/CHANGELOG.md",
+      "sha256": "38082db6de93a95ef85a319c2a8cac8b1dbcff597a718d8cdf843c339e7b23a6"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/LICENSE",
+      "sha256": "3d5edd18d1e22a17666e9bb84270171ed5ac90b192d24e0177fd171708ea2316"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/README.md",
+      "sha256": "a10f34027d417f8f7b9102b74b42976031f0246f3090444728ab322bc4632aaf"
+    },
+    {
+      "path": "assets/base.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/base.stl",
+      "sha256": "1c7b9f2bd92d705fc4e897c94e905973a3c05f406845e942229433deb7041453"
+    },
+    {
+      "path": "assets/base_mount.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/base_mount.stl",
+      "sha256": "87971dfdd6e5311b5a723e7b73c4701ebf5c2364df671500f30dfc1c53c8e61a"
+    },
+    {
+      "path": "assets/coupler.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/coupler.stl",
+      "sha256": "d5ee95e62f8415bf5b6e503c831a958f5fc1990bf9b2865329ec38a28932727c"
+    },
+    {
+      "path": "assets/driver.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/driver.stl",
+      "sha256": "bbd6e868b1778bead60d2516c7ede581d7ad4e431744b1828757d6ea5129c112"
+    },
+    {
+      "path": "assets/follower.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/follower.stl",
+      "sha256": "633793332c081641ce200df27a40643cc293b29956e3cb5cb29cb811c33ef1c7"
+    },
+    {
+      "path": "assets/pad.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/pad.stl",
+      "sha256": "4af1fa8d9bb285abecbf5dfc88e74cb30f059a7a074c2030dc35e9ee4316019d"
+    },
+    {
+      "path": "assets/silicone_pad.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/silicone_pad.stl",
+      "sha256": "ca20c0fa61e6d3ce7b04bed25360e048e31dfd88ace04187aa6d9e8f4ca3fd0f"
+    },
+    {
+      "path": "assets/spring_link.stl",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/assets/spring_link.stl",
+      "sha256": "4fb74a8a0d76c0e471cf19fd48bc676fd5b19123798e7a39eb6aa56869354283"
+    },
+    {
+      "path": "scene.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotiq_2f85/scene.xml",
+      "sha256": "dbc7255f3e1a5539e59cffac3000a49f19aa3cae384061aa74ec787e6a5760ff"
+    }
+  ],
+  "mujoco": {
+    "version": "3.15.0",
+    "npm": "https://www.npmjs.com/package/@mujoco/mujoco/v/3.15.0",
+    "native": "https://pypi.org/project/mujoco/3.15.0/",
+    "license": "Apache-2.0",
+    "files": {
+      "mujoco.js": "a5d5f00c4c16d327cf8275f88ddd47c857a5e9baec8ca4174d676fe299267a0c",
+      "mujoco.wasm": "d59c489dd521c80af6965756c5b90daff549fa281566544e4540c170d937633d"
+    }
+  }
+}

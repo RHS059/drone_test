@@ -1,0 +1,10 @@
+{
+  "name": "reconstructed-gripper-contact",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/run_wasm.mjs && node scripts/validate.mjs",
+    "test:native": "python scripts/run_native.py",
+    "test:browser": "python scripts/browser_qa.py"
+  }
+}

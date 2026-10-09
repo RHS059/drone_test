@@ -1,0 +1,1 @@
+{"browser":"Playwright Chromium /usr/bin/chromium","pass":null,"status":"blocked_before_launch","reason":"Chromium process_singleton socket() returned Operation not permitted in normal and escalated shell runs. No screenshot or browser execution claimed.","node_wasm_verified":true,"javascript_syntax_checked":true}

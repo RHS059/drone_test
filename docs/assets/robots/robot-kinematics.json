@@ -1,0 +1,1381 @@
+{
+  "schema_version": 1,
+  "reconstruction_status": "new reconstruction from pinned public source; previous audited archive unavailable",
+  "units": {
+    "length": "metre",
+    "angle": "radian",
+    "mass": "kg"
+  },
+  "coordinate_system": "right-handed native ROS Z-up; GLB preserves source axes; do not rotate loader roots",
+  "transform_order": "T_world_child = T_world_parent * T_xyz * Rz(yaw) * Ry(pitch) * Rx(roll) * R_axis(q); visual origin applied after link transform",
+  "ur20": {
+    "name": "Universal Robots UR20",
+    "root": "base_link",
+    "links": [
+      {
+        "name": "base_link"
+      },
+      {
+        "name": "base_link_inertia",
+        "visual": {
+          "asset": "ur20/base_link_inertia.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              3.141592653589793
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/base.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/base.stl",
+        "mass_kg": 4.0
+      },
+      {
+        "name": "shoulder_link",
+        "visual": {
+          "asset": "ur20/shoulder_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              3.141592653589793
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/shoulder.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/shoulder.stl",
+        "mass_kg": 16.343
+      },
+      {
+        "name": "upper_arm_link",
+        "visual": {
+          "asset": "ur20/upper_arm_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.26
+            ],
+            "rpy": [
+              1.5707963267948966,
+              0.0,
+              -1.5707963267948966
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/upperarm.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/upperarm.stl",
+        "mass_kg": 29.632
+      },
+      {
+        "name": "forearm_link",
+        "visual": {
+          "asset": "ur20/forearm_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.043
+            ],
+            "rpy": [
+              1.5707963267948966,
+              0.0,
+              -1.5707963267948966
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/forearm.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/forearm.stl",
+        "mass_kg": 7.879
+      },
+      {
+        "name": "wrist_1_link",
+        "visual": {
+          "asset": "ur20/wrist_1_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              -0.0775
+            ],
+            "rpy": [
+              1.5707963267948966,
+              0.0,
+              0.0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/wrist1.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/wrist1.stl",
+        "mass_kg": 3.054
+      },
+      {
+        "name": "wrist_2_link",
+        "visual": {
+          "asset": "ur20/wrist_2_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              -0.0749
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/wrist2.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/wrist2.stl",
+        "mass_kg": 3.126
+      },
+      {
+        "name": "wrist_3_link",
+        "visual": {
+          "asset": "ur20/wrist_3_link.glb",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              -0.07
+            ],
+            "rpy": [
+              1.5707963267948966,
+              0.0,
+              0.0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/ur/meshes/ur20/visual/wrist3.dae",
+        "source_collision": "upstream/ur/meshes/ur20/collision/wrist3.stl",
+        "mass_kg": 0.926
+      },
+      {
+        "name": "ft_frame"
+      },
+      {
+        "name": "base"
+      },
+      {
+        "name": "flange"
+      },
+      {
+        "name": "tool0"
+      }
+    ],
+    "joints": [
+      {
+        "name": "base_link-base_link_inertia",
+        "type": "fixed",
+        "parent": "base_link",
+        "child": "base_link_inertia",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            3.141592653589793
+          ]
+        }
+      },
+      {
+        "name": "shoulder_pan_joint",
+        "type": "revolute",
+        "parent": "base_link_inertia",
+        "child": "shoulder_link",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0.2363
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "effort": 738.0,
+          "velocity": 2.0943951023931953
+        }
+      },
+      {
+        "name": "shoulder_lift_joint",
+        "type": "revolute",
+        "parent": "shoulder_link",
+        "child": "upper_arm_link",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            1.570796327,
+            0,
+            0
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "effort": 738.0,
+          "velocity": 2.0943951023931953
+        }
+      },
+      {
+        "name": "elbow_joint",
+        "type": "revolute",
+        "parent": "upper_arm_link",
+        "child": "forearm_link",
+        "origin": {
+          "xyz": [
+            -0.862,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -3.141592653589793,
+          "upper": 3.141592653589793,
+          "effort": 433.0,
+          "velocity": 2.6179938779914944
+        }
+      },
+      {
+        "name": "wrist_1_joint",
+        "type": "revolute",
+        "parent": "forearm_link",
+        "child": "wrist_1_link",
+        "origin": {
+          "xyz": [
+            -0.7287,
+            0,
+            0.201
+          ],
+          "rpy": [
+            0,
+            0,
+            0
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "effort": 107.0,
+          "velocity": 3.6651914291880923
+        }
+      },
+      {
+        "name": "wrist_2_joint",
+        "type": "revolute",
+        "parent": "wrist_1_link",
+        "child": "wrist_2_link",
+        "origin": {
+          "xyz": [
+            0,
+            -0.1593,
+            -3.267297616249225e-11
+          ],
+          "rpy": [
+            1.570796327,
+            0,
+            0
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "effort": 107.0,
+          "velocity": 3.6651914291880923
+        }
+      },
+      {
+        "name": "wrist_3_joint",
+        "type": "revolute",
+        "parent": "wrist_2_link",
+        "child": "wrist_3_link",
+        "origin": {
+          "xyz": [
+            0,
+            0.1543,
+            -3.1647459019915597e-11
+          ],
+          "rpy": [
+            1.570796326589793,
+            3.141592653589793,
+            3.141592653589793
+          ]
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limit": {
+          "lower": -6.283185307179586,
+          "upper": 6.283185307179586,
+          "effort": 107.0,
+          "velocity": 3.6651914291880923
+        }
+      },
+      {
+        "name": "wrist_3_link-ft_frame",
+        "type": "fixed",
+        "parent": "wrist_3_link",
+        "child": "ft_frame",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            3.141592653589793,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "name": "base_link-base",
+        "type": "fixed",
+        "parent": "base_link",
+        "child": "base",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            0,
+            3.141592653589793
+          ]
+        }
+      },
+      {
+        "name": "wrist_3_link-flange",
+        "type": "fixed",
+        "parent": "wrist_3_link",
+        "child": "flange",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            0,
+            -1.5707963267948966,
+            -1.5707963267948966
+          ]
+        }
+      },
+      {
+        "name": "flange-tool0",
+        "type": "fixed",
+        "parent": "flange",
+        "child": "tool0",
+        "origin": {
+          "xyz": [
+            0,
+            0,
+            0
+          ],
+          "rpy": [
+            1.5707963267948966,
+            0,
+            1.5707963267948966
+          ]
+        }
+      }
+    ],
+    "source_mass_total_kg": 64.96,
+    "catalogue_mass_kg": 64,
+    "calibration": "calib_4890363623803256388",
+    "caveats": [
+      "Source default kinematics are not calibrated to a particular serial-number robot.",
+      "Source base mass 4.0 kg is explicitly marked possibly incorrect; total source mass is retained without normalization.",
+      "Elbow limits are planning limits of \u00b1pi, not a claim about unrestricted mechanical joint travel."
+    ],
+    "physical_parameters": {
+      "base_mass": 4.0,
+      "shoulder_mass": 16.343,
+      "upper_arm_mass": 29.632,
+      "forearm_mass": 7.879,
+      "wrist_1_mass": 3.054,
+      "wrist_2_mass": 3.126,
+      "wrist_3_mass": 0.926,
+      "links": {
+        "base": {
+          "radius": 0.075,
+          "length": 0.038
+        }
+      },
+      "center_of_mass": {
+        "shoulder_cog": {
+          "x": 0.0,
+          "y": -0.0062,
+          "z": -0.061
+        },
+        "upper_arm_cog": {
+          "x": -0.3394,
+          "y": 0.0,
+          "z": 0.2098
+        },
+        "forearm_cog": {
+          "x": -0.4053,
+          "y": 0.0,
+          "z": 0.0604
+        },
+        "wrist_1_cog": {
+          "x": 0.0,
+          "y": -0.0393,
+          "z": -0.0026
+        },
+        "wrist_2_cog": {
+          "x": 0.0,
+          "y": 0.0379,
+          "z": -0.0024
+        },
+        "wrist_3_cog": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.0293
+        }
+      },
+      "rotation": {
+        "shoulder": {
+          "roll": 1.570796326794897,
+          "pitch": 0,
+          "yaw": 0
+        },
+        "upper_arm": {
+          "roll": 0,
+          "pitch": 0,
+          "yaw": 0
+        },
+        "forearm": {
+          "roll": 0,
+          "pitch": 0,
+          "yaw": 0
+        },
+        "wrist_1": {
+          "roll": 1.570796326794897,
+          "pitch": 0,
+          "yaw": 0
+        },
+        "wrist_2": {
+          "roll": -1.570796326794897,
+          "pitch": 0,
+          "yaw": 0
+        },
+        "wrist_3": {
+          "roll": 0,
+          "pitch": 0,
+          "yaw": 0
+        }
+      },
+      "tensor": {
+        "shoulder": {
+          "ixx": 0.08866,
+          "ixy": -0.00011,
+          "ixz": -0.00011,
+          "iyy": 0.07632,
+          "iyz": 0.0072,
+          "izz": 0.08418
+        },
+        "upper_arm": {
+          "ixx": 0.1467,
+          "ixy": 0.00019,
+          "ixz": -0.05163,
+          "iyy": 4.6659,
+          "iyz": 4e-05,
+          "izz": 4.6348
+        },
+        "forearm": {
+          "ixx": 0.02612,
+          "ixy": -5e-05,
+          "ixz": -0.02898,
+          "iyy": 0.75763,
+          "iyz": -1e-05,
+          "izz": 0.75327
+        },
+        "wrist_1": {
+          "ixx": 0.00555,
+          "ixy": -1e-05,
+          "ixz": -2e-05,
+          "iyy": 0.00537,
+          "iyz": 0.00036,
+          "izz": 0.00402
+        },
+        "wrist_2": {
+          "ixx": 0.00586,
+          "ixy": -1e-05,
+          "ixz": -2e-05,
+          "iyy": 0.00578,
+          "iyz": -0.00037,
+          "izz": 0.00427
+        },
+        "wrist_3": {
+          "ixx": 0.00092,
+          "ixy": 0.0,
+          "ixz": 0.0,
+          "iyy": 0.00091,
+          "iyz": 0.0,
+          "izz": 0.00117
+        }
+      }
+    }
+  },
+  "robotiq": {
+    "name": "Robotiq 2F-85",
+    "root": "robotiq_85_base_link",
+    "links": [
+      {
+        "name": "robotiq_85_base_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_base_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/robotiq_base.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/robotiq_base.stl",
+        "mass_kg": 0.66320197,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              0.0,
+              2.274e-05,
+              0.03232288
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 0.00051617816,
+            "iyy": 0.00058802208,
+            "izz": 0.00039462776,
+            "ixy": 2.936e-08,
+            "ixz": 0.0,
+            "iyz": -3.2296e-07
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_left_knuckle_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_left_knuckle_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_knuckle.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_knuckle.stl",
+        "mass_kg": 0.01384773208,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              0.01213197,
+              0.0002,
+              -0.00058647
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 3.5232e-07,
+            "iyy": 2.31944e-06,
+            "izz": 2.23136e-06,
+            "ixy": 0.0,
+            "ixz": 1.1744e-07,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_right_knuckle_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_right_knuckle_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_knuckle.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_knuckle.stl",
+        "mass_kg": 0.01384773208,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              -0.01213197,
+              0.0002,
+              -0.00058647
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 3.5232e-07,
+            "iyy": 2.31944e-06,
+            "izz": 2.23136e-06,
+            "ixy": 0.0,
+            "ixz": -1.1744e-07,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_left_finger_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_left_finger_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger.stl",
+        "mass_kg": 0.04260376752,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              0.00346899,
+              -0.00079447,
+              0.01867121
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 1.385792e-05,
+            "iyy": 1.183208e-05,
+            "izz": 5.19672e-06,
+            "ixy": 0.0,
+            "ixz": -2.17264e-06,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_right_finger_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_right_finger_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger.stl",
+        "mass_kg": 0.04260376752,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              -0.00346899,
+              -5.53e-06,
+              0.01867121
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 1.385792e-05,
+            "iyy": 1.183208e-05,
+            "izz": 5.19672e-06,
+            "ixy": 0.0,
+            "ixz": 2.17264e-06,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_left_inner_knuckle_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_left_inner_knuckle_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl",
+        "mass_kg": 0.02969376448,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              0.01897699,
+              0.00015001,
+              0.02247101
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 9.57136e-06,
+            "iyy": 8.69056e-06,
+            "izz": 8.19144e-06,
+            "ixy": 0.0,
+            "ixz": -3.93424e-06,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_right_inner_knuckle_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_right_inner_knuckle_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl",
+        "mass_kg": 0.02969376448,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              -0.01926824,
+              5.001e-05,
+              0.02222178
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 9.42456e-06,
+            "iyy": 8.69056e-06,
+            "izz": 8.33824e-06,
+            "ixy": 0.0,
+            "ixz": 3.9636e-06,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_left_finger_tip_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_left_finger_tip_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl",
+        "mass_kg": 0.04268588744,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              -0.01456706,
+              -0.0008,
+              0.01649701
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 1.048152e-05,
+            "iyy": 1.197888e-05,
+            "izz": 4.22784e-06,
+            "ixy": 0.0,
+            "ixz": 3.5232e-06,
+            "iyz": 0.0
+          }
+        }
+      },
+      {
+        "name": "robotiq_85_right_finger_tip_link",
+        "visual": {
+          "asset": "robotiq/robotiq_85_right_finger_tip_link.glb",
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "source_visual": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae",
+        "source_collision": "upstream/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl",
+        "mass_kg": 0.04268588744,
+        "inertial": {
+          "origin": {
+            "xyz": [
+              0.01456706,
+              5e-05,
+              0.01649701
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "inertia": {
+            "ixx": 1.048152e-05,
+            "iyy": 1.197888e-05,
+            "izz": 4.22784e-06,
+            "ixy": 0.0,
+            "ixz": -3.5232e-06,
+            "iyz": 0.0
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "robotiq_85_left_knuckle_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_base_link",
+        "child": "robotiq_85_left_knuckle_link",
+        "origin": {
+          "xyz": [
+            0.03060114,
+            0.0,
+            0.05490452
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.8,
+          "velocity": 0.5,
+          "effort": 50.0
+        }
+      },
+      {
+        "name": "robotiq_85_right_knuckle_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_base_link",
+        "child": "robotiq_85_right_knuckle_link",
+        "origin": {
+          "xyz": [
+            -0.03060114,
+            0.0,
+            0.05490452
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": -0.8,
+          "upper": 0.0,
+          "velocity": 0.5,
+          "effort": 50.0
+        },
+        "mimic": {
+          "joint": "robotiq_85_left_knuckle_joint",
+          "multiplier": -1.0,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "robotiq_85_left_finger_joint",
+        "type": "fixed",
+        "parent": "robotiq_85_left_knuckle_link",
+        "child": "robotiq_85_left_finger_link",
+        "origin": {
+          "xyz": [
+            0.03152616,
+            0.0,
+            -0.00376347
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "robotiq_85_right_finger_joint",
+        "type": "fixed",
+        "parent": "robotiq_85_right_knuckle_link",
+        "child": "robotiq_85_right_finger_link",
+        "origin": {
+          "xyz": [
+            -0.03152616,
+            0.0,
+            -0.00376347
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "robotiq_85_left_inner_knuckle_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_base_link",
+        "child": "robotiq_85_left_inner_knuckle_link",
+        "origin": {
+          "xyz": [
+            0.0127,
+            0.0,
+            0.06142
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.8,
+          "velocity": 0.5,
+          "effort": 50.0
+        },
+        "mimic": {
+          "joint": "robotiq_85_left_knuckle_joint",
+          "multiplier": 1.0,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "robotiq_85_right_inner_knuckle_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_base_link",
+        "child": "robotiq_85_right_inner_knuckle_link",
+        "origin": {
+          "xyz": [
+            -0.0127,
+            0.0,
+            0.06142
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": -0.8,
+          "upper": 0.0,
+          "velocity": 0.5,
+          "effort": 50.0
+        },
+        "mimic": {
+          "joint": "robotiq_85_left_knuckle_joint",
+          "multiplier": -1.0,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "robotiq_85_left_finger_tip_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_left_finger_link",
+        "child": "robotiq_85_left_finger_tip_link",
+        "origin": {
+          "xyz": [
+            0.00563134,
+            0.0,
+            0.04718515
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": -0.8,
+          "upper": 0.0,
+          "velocity": 0.5,
+          "effort": 50.0
+        },
+        "mimic": {
+          "joint": "robotiq_85_left_knuckle_joint",
+          "multiplier": -1.0,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "robotiq_85_right_finger_tip_joint",
+        "type": "revolute",
+        "parent": "robotiq_85_right_finger_link",
+        "child": "robotiq_85_right_finger_tip_link",
+        "origin": {
+          "xyz": [
+            -0.00563134,
+            0.0,
+            0.04718515
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.8,
+          "velocity": 0.5,
+          "effort": 50.0
+        },
+        "mimic": {
+          "joint": "robotiq_85_left_knuckle_joint",
+          "multiplier": 1.0,
+          "offset": 0.0
+        }
+      }
+    ],
+    "driver_joint": "robotiq_85_left_knuckle_joint",
+    "command_range_rad": [
+      0,
+      0.8
+    ],
+    "closed_control_default_rad": 0.7929,
+    "source_mass_total_kg": 0.9208642730400001
+  },
+  "mount_chain": [
+    {
+      "name": "tool0_to_adapter",
+      "parent": "tool0",
+      "child": "adapter",
+      "origin": {
+        "xyz": [
+          0,
+          0,
+          0
+        ],
+        "rpy": [
+          0,
+          0,
+          3.141592653589793
+        ]
+      }
+    },
+    {
+      "name": "adapter_to_coupling",
+      "parent": "adapter",
+      "child": "robotiq_coupling",
+      "origin": {
+        "xyz": [
+          0,
+          0,
+          0.0235
+        ],
+        "rpy": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "coupling_to_gripper",
+      "parent": "robotiq_coupling",
+      "child": "robotiq_85_base_link",
+      "origin": {
+        "xyz": [
+          0,
+          0,
+          0.011
+        ],
+        "rpy": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "coupling": {
+    "name": "robotiq_coupling",
+    "visual": {
+      "asset": "robotiq/robotiq_coupling.glb",
+      "origin": {
+        "xyz": [
+          0,
+          0,
+          0
+        ],
+        "rpy": [
+          0,
+          0,
+          0
+        ]
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae",
+    "caveat": "Licensed OEM 2F85 ur_to_robotiq_adapter.dae; zero visual origin and +11mm gripper seating explicitly from source ur_to_robotiq_adapter.urdf.xacro. Not private STEP or manufacturing drawing. \u22123mm outer skirt must clear project adapter; physical fit not certified."
+  },
+  "notices": {
+    "ur20": "\u00a9 2023 Universal Robots A/S. Use hereof is subject to Universal Robots A/S\u2019 Terms and Conditions for Use of Graphical Documentation.",
+    "robotiq": "Copyright (c) 2026, Robotiq; Copyright (c) 2022, PickNik Robotics. BSD 3-Clause."
+  }
+}

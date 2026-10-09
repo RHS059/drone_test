@@ -1,0 +1,851 @@
+{
+  "release": "reconstruction-r01",
+  "whole_robot_qualified": false,
+  "files": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 885,
+      "sha256": "ff5497776577b38abf8aa8f70866e2a9501e1f0496fd62ed74ce3b7a4abb618c"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 558,
+      "sha256": "82bd31bc0f7d8afb5707b0abb8b4a8e1ca6696786c5078b7ec5cb8efae4783d4"
+    },
+    {
+      "path": "BASELINE.md",
+      "bytes": 1952,
+      "sha256": "e3c4dbfe274e25484b4294885eb2335254cddd4727689504cad66b81f4c1d2e9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2079,
+      "sha256": "f7996e7b8e3a38f7641ce65ff0d93c708a7421719a28d99c3bbebb83d0b2fdb0"
+    },
+    {
+      "path": "RECONSTRUCTION.md",
+      "bytes": 2079,
+      "sha256": "f7996e7b8e3a38f7641ce65ff0d93c708a7421719a28d99c3bbebb83d0b2fdb0"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/RECONSTRUCTION.md",
+      "bytes": 2079,
+      "sha256": "f7996e7b8e3a38f7641ce65ff0d93c708a7421719a28d99c3bbebb83d0b2fdb0"
+    },
+    {
+      "path": "docs/app.js",
+      "bytes": 2362,
+      "sha256": "7b97643e78452399493efa875ce49c272c20764ae42527d09dbee209ad387ccc"
+    },
+    {
+      "path": "docs/assembly.json",
+      "bytes": 40848,
+      "sha256": "50ff5d6d83ad6148d18758e5e196524c7247909d000c535949cd91f55c2cf0e4"
+    },
+    {
+      "path": "docs/assets/mechanical/QUALIFICATION.md",
+      "bytes": 8589,
+      "sha256": "6f51ee64004bf9cd89734b9776b8e923e1b117492858e6db460e30d42b76274f"
+    },
+    {
+      "path": "docs/assets/mechanical/adapter_R03.glb",
+      "bytes": 837500,
+      "sha256": "d33cd52a93faf5d2857e33352d8571300b583f2f0dcf9f79774bee2bb4342ee1"
+    },
+    {
+      "path": "docs/assets/mechanical/adapter_R03.step",
+      "bytes": 134892,
+      "sha256": "ceef5377719aa424e4ab3e492ee66371d71051aa7c093b8681aacfbf2c33779f"
+    },
+    {
+      "path": "docs/assets/mechanical/adapter_R03_verification.json",
+      "bytes": 3487,
+      "sha256": "51e7389aac066ae0ce403e9b09f70cef1b23a705cc1ef1735bd2a3714208442f"
+    },
+    {
+      "path": "docs/assets/mechanical/check_export.py",
+      "bytes": 1513,
+      "sha256": "f01e8636da54a269ce50843d44eea0364a6d4f9b3c562b466cdd8f3d739d3a33"
+    },
+    {
+      "path": "docs/assets/mechanical/export_roundtrip_tests.json",
+      "bytes": 1250,
+      "sha256": "4994dbe1688c9ba7fe203974c338e3b4dcba849e73dc58839e231072fd5d1b55"
+    },
+    {
+      "path": "docs/assets/mechanical/finalize_frame.py",
+      "bytes": 2216,
+      "sha256": "270fdd30ff934a9052aca50b835650e1d02b4ab7343a2139c9d268619f12f9c6"
+    },
+    {
+      "path": "docs/assets/mechanical/frame_R06.glb",
+      "bytes": 1665100,
+      "sha256": "65ecead08b406b454a24fb9ae7f72894d3223a46e14e3d83826e01b5a5e62bc5"
+    },
+    {
+      "path": "docs/assets/mechanical/frame_R06.step",
+      "bytes": 1546526,
+      "sha256": "4f31f400a6a1bdcfdcb79a962813ca3dd4fac7f6c3da46e5b73fb70bbcd1b9ab"
+    },
+    {
+      "path": "docs/assets/mechanical/frame_R06_cutlist.csv",
+      "bytes": 1144,
+      "sha256": "fbbc7a01117e986fb06f56748a87d585fba6e6a9f560d72af14bd2bfa4454f38"
+    },
+    {
+      "path": "docs/assets/mechanical/frame_R06_verification.json",
+      "bytes": 16020,
+      "sha256": "29fcc5588957d305d0d7a681ecfb4efd7fc2f050995fd5665cfd693bc8a938df"
+    },
+    {
+      "path": "docs/assets/mechanical/generate_cad.py",
+      "bytes": 11452,
+      "sha256": "fddfede2e7e8c0c388542ab6a9a99983cfaaf7b10b84101688f80f3d62801b10"
+    },
+    {
+      "path": "docs/assets/mechanical/index.html",
+      "bytes": 815,
+      "sha256": "54c70120dfe3b5b0639535a4b01d7bcd3b329334ef28e319e40a75c38266de12"
+    },
+    {
+      "path": "docs/assets/mechanical/interface_contract.json",
+      "bytes": 2839,
+      "sha256": "de56584933288cae1b835af6e25eeaef741ea3b085f978614977f8fd006080cf"
+    },
+    {
+      "path": "docs/assets/robots/fk-fixtures.json",
+      "bytes": 32081,
+      "sha256": "5fad630da665dc63b1d9bd3185315e77504b32094ef11f6e35cf7d8338ec26e2"
+    },
+    {
+      "path": "docs/assets/robots/geometry-report.json",
+      "bytes": 9655,
+      "sha256": "80ee70f76a2ffeabffe928e572e839e287fb0761508cd57d2cb2c0b28c536221"
+    },
+    {
+      "path": "docs/assets/robots/licenses/ROBOTIQ-GRIPPERS-LICENSE",
+      "bytes": 1524,
+      "sha256": "a47544ef0ad645c587e46348dc10e68b89c3e74732bd124c005cfcd8ede3b3b8"
+    },
+    {
+      "path": "docs/assets/robots/licenses/ROBOTIQ-LICENSE",
+      "bytes": 1515,
+      "sha256": "376150a80f36fc6ca750935fb74f99b6a77b9942f1c6c5bf1d51a2adc853b096"
+    },
+    {
+      "path": "docs/assets/robots/licenses/UR-GRAPHICAL-TERMS.txt",
+      "bytes": 13520,
+      "sha256": "f173efc8bd4b0ffaec2280b2dd126805ff7dddee8758b3d869132afc1776daa8"
+    },
+    {
+      "path": "docs/assets/robots/licenses/UR-ROS-DESCRIPTION-LICENSE",
+      "bytes": 1459,
+      "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8"
+    },
+    {
+      "path": "docs/assets/robots/robot-kinematics.json",
+      "bytes": 31638,
+      "sha256": "9c34d1364915987a6a68d4633334a6d3c7aa57d1b416250fa1b9280ce9ca9ea6"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_base_link.glb",
+      "bytes": 2110048,
+      "sha256": "593d7b6092e6a79ff09eff82956354be5c9739e84d47a735197663f6d6e34870"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_left_finger_link.glb",
+      "bytes": 213088,
+      "sha256": "d3031fb26bd50ceb6e4ca37afd85a67f7d64b4a280954e503a07a5c4b3ed2237"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_left_finger_tip_link.glb",
+      "bytes": 190548,
+      "sha256": "b245ba96bc7e33947648be70aa2080ba220a8c35f9a807fdc6839ca073354518"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_left_inner_knuckle_link.glb",
+      "bytes": 130132,
+      "sha256": "8ec1f58234f7e7586ba6d534df1b8c3682bba94c8db4d56430e1a25e967e019e"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_left_knuckle_link.glb",
+      "bytes": 88964,
+      "sha256": "adf4339f503c1e865f9a00506094cb2c4f0d6679f3e029aa69182841f634da18"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_right_finger_link.glb",
+      "bytes": 213088,
+      "sha256": "2bd439d4dcb26f21b5fc1c9c2d6983d1f17ee803bc3bc4009c9a62067c834a43"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_right_finger_tip_link.glb",
+      "bytes": 190552,
+      "sha256": "5f4690538e78f9db93ae85f9afbe6437c0e2f3d6176ee2867d9f393d7fdd1aed"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_right_inner_knuckle_link.glb",
+      "bytes": 130140,
+      "sha256": "44509c7d097141fbe952aae87c753c1183e51803ffe15e0f60d9366d37c4321d"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_85_right_knuckle_link.glb",
+      "bytes": 88968,
+      "sha256": "19014a9d0031c8514c3c17d63bae75bdb54f68eaabe91e7b04b821ea43c2c7f1"
+    },
+    {
+      "path": "docs/assets/robots/robotiq/robotiq_coupling.glb",
+      "bytes": 192476,
+      "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/LICENSE",
+      "bytes": 1515,
+      "sha256": "376150a80f36fc6ca750935fb74f99b6a77b9942f1c6c5bf1d51a2adc853b096"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/LICENSE",
+      "bytes": 1524,
+      "sha256": "a47544ef0ad645c587e46348dc10e68b89c3e74732bd124c005cfcd8ede3b3b8"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger.stl",
+      "bytes": 19684,
+      "sha256": "f39a50be121122fc1c53c588a762ad1da8a0f64d39bc6f299cbe9b0597e7257b"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl",
+      "bytes": 11284,
+      "sha256": "9d90031cd99106a8be63609f8ff78580638d91cc4167bf66c09198329f2e65cf"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl",
+      "bytes": 17984,
+      "sha256": "f250a3fea49be4d1bb2383d9980172c59fc44031193ef2293ca540f756f6c1e6"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/left_knuckle.stl",
+      "bytes": 4384,
+      "sha256": "b7ec787f57a7db5b2b14e64ffbedaac28739e38f14aac8afa8b575bac941feb7"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger.stl",
+      "bytes": 19684,
+      "sha256": "1d018fa2f0b50aca5941778d78810b211b1abfc8637c7953451d76d4833ba6f8"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl",
+      "bytes": 11284,
+      "sha256": "126f1559f2f7dca62449a6ca926c609fbdaa93ca66df805ff7c069bb206e3d10"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl",
+      "bytes": 17784,
+      "sha256": "c936d951ede875b91c180bd41d45b22ae23f8a39d9c3e09e29066453a8e863ef"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/right_knuckle.stl",
+      "bytes": 4384,
+      "sha256": "d151fb38f59748f1e6e627312e2ede96f2c98ba267bf722091665b20c78e7a8d"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/robotiq_base.stl",
+      "bytes": 20084,
+      "sha256": "ede5cd7d7846c051b88645f33d6bbb5ed9b36bbef404a19a46557639bfab7060"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl",
+      "bytes": 48884,
+      "sha256": "e5b4eaba7f75c4071c9c0213281af4798098c971891808d87e948383cd2b9aa9"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl",
+      "bytes": 160684,
+      "sha256": "4281e83002a25c20dc07c68b8d77da30a13e9a8401f157f6848ed8287d7cce44"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger.dae",
+      "bytes": 191399,
+      "sha256": "5fb9e5659c735e48eb55269da431cf61b3b7a6745922c1932a7adefb1db86dc3"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae",
+      "bytes": 174578,
+      "sha256": "785ec7a83b4fc6357c211a39bb117833b1cfd4e9bccbef2efc7f35aeb2fdb92e"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae",
+      "bytes": 110219,
+      "sha256": "2df009ef28868c90a4904370f5f4995c74ec84e0b8ca1371044e0ea669edcd71"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_knuckle.dae",
+      "bytes": 78865,
+      "sha256": "1b82214363d9548f3562be70e25cd23217a304c72ccd37bc1551cf1a3a64029d"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger.dae",
+      "bytes": 190861,
+      "sha256": "3b2245b5537eb596d7f8a4c64b12e3aedea46e365fc589019184d3b4200e664f"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae",
+      "bytes": 173460,
+      "sha256": "568371d25ddbcee8e432c0610bdcc7afcd1393d48d973eed92168e353eb4edf5"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae",
+      "bytes": 111109,
+      "sha256": "4cc6de99e177773ba755805b58b67537c3af24b2fd8f3a1bf4bbced87d6240a5"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_knuckle.dae",
+      "bytes": 79122,
+      "sha256": "532b6f6f8794883ff34995701036ca392461f26127757f92003db127693bc57c"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/robotiq_base.dae",
+      "bytes": 2159533,
+      "sha256": "761a79d586a48d367d60f146ca77ef7d2821ad790f7b1b1c93b061ac59799267"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae",
+      "bytes": 188335,
+      "sha256": "ed326c745df2942d2efb8dd902ecfafa84c692d360a7c03ce9276ad491614ac4"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/package.xml",
+      "bytes": 2073,
+      "sha256": "b5b28a1ab206363bf299688f95986a97ad69ea130dafc61294987a027195a536"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro",
+      "bytes": 15011,
+      "sha256": "bfa97d612cf0df29079ab1d0bdcb5f6a8d14fc1563230eb2758008d8a12dc36b"
+    },
+    {
+      "path": "docs/assets/robots/source/robotiq/grippers/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro",
+      "bytes": 1513,
+      "sha256": "3d52ae3dbe23c20cea598c816fcc745acaed55b77c9e41b92ad55f0623d3d1d7"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/LICENSE",
+      "bytes": 1459,
+      "sha256": "143077f9f6a8de5a99f78c2c2472801fb53cf240277ef661642f079b9acdfff8"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/config/ur20/default_kinematics.yaml",
+      "bytes": 714,
+      "sha256": "2328a839f0cbf3e55aa420110f1f708f64f37e7f65b5d6b8994eb4860b5991bb"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/config/ur20/joint_limits.yaml",
+      "bytes": 2689,
+      "sha256": "ba2be7ecf42ee235d83aa572ca3743532c45577affef0d75b65d9f0cd40aed66"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/config/ur20/physical_parameters.yaml",
+      "bytes": 2220,
+      "sha256": "684661b845c56a6df5521b3a39fed199601bee56d6c6ae5206570636e67f3fae"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/config/ur20/visual_parameters.yaml",
+      "bytes": 2388,
+      "sha256": "a43b2b1acf30e60763fd4ef268cbedf20423f81cd83596ed26f7043050fcc81e"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/LICENSE.txt",
+      "bytes": 13520,
+      "sha256": "f173efc8bd4b0ffaec2280b2dd126805ff7dddee8758b3d869132afc1776daa8"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/base.stl",
+      "bytes": 21884,
+      "sha256": "455a01c50280f986471a86fefe1b2b3e86f7f1afd9fb32493a4febc42d0388f0"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/forearm.stl",
+      "bytes": 124384,
+      "sha256": "4bd860969e56358c6aed65be1268b13a83535541aacac746323dcff217d3a815"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/shoulder.stl",
+      "bytes": 27084,
+      "sha256": "f20bd5197388f050d5cf752ff980b4a117b8559d4dc5b0ba95a52f9c3e76d182"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/upperarm.stl",
+      "bytes": 121484,
+      "sha256": "0093cb733ea040e9ec715b9b4a5add42961ab99efab752abd0c0b1e933a578fa"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/wrist1.stl",
+      "bytes": 36484,
+      "sha256": "19bc042d09f58aa2a0646dead171955f4d6f3518ef9b4c5a99ba6b565536532e"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/wrist2.stl",
+      "bytes": 28084,
+      "sha256": "0a2972fb64f334297bc8bdd42e343f572f109bdbfd867a93785763d9b4095740"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/collision/wrist3.stl",
+      "bytes": 15784,
+      "sha256": "d985f80bc6ab8d6979e9e9267c1ac2442a804d9905022b1fd77eb1dbb7de93f4"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/UR20_DIFF_8bit_2K.png",
+      "bytes": 1561213,
+      "sha256": "9c659b5115540ac6f0af94d504e04ca734afaa304dc0c1e8392741c20ca055ea"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/base.dae",
+      "bytes": 411209,
+      "sha256": "dc5673ad78ac29b3c3f6ddd7465529af5eedbd3b76fdf4d2940b0ec2ce05762c"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/forearm.dae",
+      "bytes": 772257,
+      "sha256": "1b9523f0122f7b186a0b0223636b0713e908536f4812cb7ef3ead227e310f09b"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/shoulder.dae",
+      "bytes": 202604,
+      "sha256": "4ac24b17acd73d47d6f4c213e2786abe4d491600363591790ceaa8f601474e20"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/upperarm.dae",
+      "bytes": 727975,
+      "sha256": "550f87116f6f75588ee1ab028a1413cffe45546e5bda39a7e22a56888de9a4ad"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/wrist1.dae",
+      "bytes": 382017,
+      "sha256": "40e172b209db1a89f2bc74e4120ab751ba6ca7a13b80aba4fc286280902e6483"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/wrist2.dae",
+      "bytes": 259816,
+      "sha256": "ba20b26ac45e934efc804d3376fe5bf0d2c2fda6f9563a48b60d926e76404a43"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/meshes/ur20/visual/wrist3.dae",
+      "bytes": 379595,
+      "sha256": "8440f202606a4c1325a2f31b45ae19ab439c99db0842f2ce7637dd789563ead9"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/package.xml",
+      "bytes": 3488,
+      "sha256": "fb8dc76afa1b2ac0c631295e575bc1655df6131fa82864c354e969d48260ecad"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/urdf/inc/ur_common.xacro",
+      "bytes": 19909,
+      "sha256": "91b5a8c55c3a0b04ff0d8abe74fbaf7635966e903e9e978cec473bf88234f9fd"
+    },
+    {
+      "path": "docs/assets/robots/source/ur/urdf/ur_macro.xacro",
+      "bytes": 18813,
+      "sha256": "2683ddcc2db392116d69ac775e4d6dd1c7b3d420f9eca926bd10cf43a1ce8b35"
+    },
+    {
+      "path": "docs/assets/robots/source-manifest.json",
+      "bytes": 9887,
+      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
+    },
+    {
+      "path": "docs/assets/robots/ur20/base_link_inertia.glb",
+      "bytes": 1846024,
+      "sha256": "e1a94e380e1e0803d1405f95c5dbea7229f5ff89639ebc0b072a0c962a67d344"
+    },
+    {
+      "path": "docs/assets/robots/ur20/forearm_link.glb",
+      "bytes": 2133448,
+      "sha256": "12bc13217620a21b467a0548c2a8561ef326298026b6ddd1c6b9ba75a1c0b1b2"
+    },
+    {
+      "path": "docs/assets/robots/ur20/shoulder_link.glb",
+      "bytes": 1711424,
+      "sha256": "23ee4b44fdb268a5731e4ca73739366137fe663c78aecd819987646e1d2a8deb"
+    },
+    {
+      "path": "docs/assets/robots/ur20/upper_arm_link.glb",
+      "bytes": 2128516,
+      "sha256": "e8409bdff71f2d03fe63a7d3a4173553809f09adec52d60c872cb38a4f47dfb3"
+    },
+    {
+      "path": "docs/assets/robots/ur20/wrist_1_link.glb",
+      "bytes": 1842876,
+      "sha256": "de27c455a91f51296984ad742ff2509ac8bc568d7446f95c92b52c39b837d951"
+    },
+    {
+      "path": "docs/assets/robots/ur20/wrist_2_link.glb",
+      "bytes": 1754936,
+      "sha256": "366729a7a851a3a7d4015fa2a748b680e4a9d9585a500f80af83d1a318458e48"
+    },
+    {
+      "path": "docs/assets/robots/ur20/wrist_3_link.glb",
+      "bytes": 1831200,
+      "sha256": "988d9e53d603f8e36444436902b2eed4a0870306fe3d1b4d33c9459a138c7833"
+    },
+    {
+      "path": "docs/assets/robots/validation-report.json",
+      "bytes": 7240,
+      "sha256": "e08edeaa850513e25c3d7c2e9809ecbfa8f2ab1fd0c6bf24cc2203cfab1f9565"
+    },
+    {
+      "path": "docs/contact/README.md",
+      "bytes": 6288,
+      "sha256": "4812c2d62c442f9ea36e1bf3ca591ac58ec464759f817085f9c748f18a6d6212"
+    },
+    {
+      "path": "docs/contact/assets/coupon_40x40x30_mm.step",
+      "bytes": 15504,
+      "sha256": "74754f2b63902a459801598418ba0d63fc5085de52ae46d7e58bbb2fc661e01b"
+    },
+    {
+      "path": "docs/contact/assets/coupon_40x40x30_mm.stl",
+      "bytes": 684,
+      "sha256": "59bf8ecfb7d1f782d4ec03b972b9e5c7c859dd02737f4b168f6f98210aff9ed7"
+    },
+    {
+      "path": "docs/contact/assets/heavy.xml",
+      "bytes": 9043,
+      "sha256": "59c6029d2b963e96540d39e7e71e101627cf1d871e0da61f018819a0781036cb"
+    },
+    {
+      "path": "docs/contact/assets/low-friction.xml",
+      "bytes": 9053,
+      "sha256": "84899969e2820184f028f2dfb419429a1df2b28fac7532a41cffd59c88aebb0a"
+    },
+    {
+      "path": "docs/contact/assets/nominal.xml",
+      "bytes": 9046,
+      "sha256": "12e4ba49c9caa83e34e949d7441414ca0aeef2b91d3f6762acc83a3495e30607"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/2f85.xml",
+      "bytes": 9540,
+      "sha256": "d48aca5f9151798ffd38111ce4e8b2081f3ec2d4f525161b33643451580010de"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/CHANGELOG.md",
+      "bytes": 146,
+      "sha256": "38082db6de93a95ef85a319c2a8cac8b1dbcff597a718d8cdf843c339e7b23a6"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/LICENSE",
+      "bytes": 1297,
+      "sha256": "3d5edd18d1e22a17666e9bb84270171ed5ac90b192d24e0177fd171708ea2316"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/README.md",
+      "bytes": 1367,
+      "sha256": "a10f34027d417f8f7b9102b74b42976031f0246f3090444728ab322bc4632aaf"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/base.stl",
+      "bytes": 1712484,
+      "sha256": "1c7b9f2bd92d705fc4e897c94e905973a3c05f406845e942229433deb7041453"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/base_mount.stl",
+      "bytes": 1091784,
+      "sha256": "87971dfdd6e5311b5a723e7b73c4701ebf5c2364df671500f30dfc1c53c8e61a"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/coupler.stl",
+      "bytes": 89084,
+      "sha256": "d5ee95e62f8415bf5b6e503c831a958f5fc1990bf9b2865329ec38a28932727c"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/driver.stl",
+      "bytes": 67084,
+      "sha256": "bbd6e868b1778bead60d2516c7ede581d7ad4e431744b1828757d6ea5129c112"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/follower.stl",
+      "bytes": 110484,
+      "sha256": "633793332c081641ce200df27a40643cc293b29956e3cb5cb29cb811c33ef1c7"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/pad.stl",
+      "bytes": 15084,
+      "sha256": "4af1fa8d9bb285abecbf5dfc88e74cb30f059a7a074c2030dc35e9ee4316019d"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/silicone_pad.stl",
+      "bytes": 15084,
+      "sha256": "ca20c0fa61e6d3ce7b04bed25360e048e31dfd88ace04187aa6d9e8f4ca3fd0f"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/assets/spring_link.stl",
+      "bytes": 84884,
+      "sha256": "4fb74a8a0d76c0e471cf19fd48bc676fd5b19123798e7a39eb6aa56869354283"
+    },
+    {
+      "path": "docs/contact/assets/robotiq_2f85/scene.xml",
+      "bytes": 1393,
+      "sha256": "dbc7255f3e1a5539e59cffac3000a49f19aa3cae384061aa74ec787e6a5760ff"
+    },
+    {
+      "path": "docs/contact/index.html",
+      "bytes": 3032,
+      "sha256": "3a627d9181aa6ce4c4a4da64cff38d4e5d8303b735c4971cf61c2e4e9661aebb"
+    },
+    {
+      "path": "docs/contact/package.json",
+      "bytes": 277,
+      "sha256": "ac6f80e50f0e4d4fa45c84367814bcc8a3b370ed28636283cf917e48d2cc9c58"
+    },
+    {
+      "path": "docs/contact/requirements.txt",
+      "bytes": 31,
+      "sha256": "e7550d4465bcfb4ff40f467b1fb3a99d2ffc10eba4ceff18fd5d12174456c044"
+    },
+    {
+      "path": "docs/contact/results/browser-qa.json",
+      "bytes": 316,
+      "sha256": "327e30667e325e3bef1ae106d6f5f1f0a48159e29da54f120788dbda9bab802a"
+    },
+    {
+      "path": "docs/contact/results/native.json",
+      "bytes": 1006410,
+      "sha256": "9537cb19cc62c634aa635688a415f2262a2c08e0ae25ff688906ed1de9a028b1"
+    },
+    {
+      "path": "docs/contact/results/summary.json",
+      "bytes": 3237,
+      "sha256": "248fabeef0e8016d48c6328d96cc4642516ed6a79650ab51c8ae4c078096247f"
+    },
+    {
+      "path": "docs/contact/results/wasm.json",
+      "bytes": 935213,
+      "sha256": "8266c10268529f4e4f16f9f1ea53d6fcae9303f941421031ae32895a98de8f19"
+    },
+    {
+      "path": "docs/contact/scenario.json",
+      "bytes": 1416,
+      "sha256": "c6f4e12b376ae14eaebb0164f33f04830a5325285d9634fe3f7e8651b2c61ce6"
+    },
+    {
+      "path": "docs/contact/scripts/browser_qa.py",
+      "bytes": 1653,
+      "sha256": "e28d44bcb900dd7eacf55e978ad41b7c7a5c0622858d14533692bef63ab4f64a"
+    },
+    {
+      "path": "docs/contact/scripts/build_scenarios.py",
+      "bytes": 2673,
+      "sha256": "5d4543c6a931e8143e6d938bb495bced58f2d3ea6f6305e88f9f5a9b7fc609f5"
+    },
+    {
+      "path": "docs/contact/scripts/fetch_sources.py",
+      "bytes": 1019,
+      "sha256": "9a5cb174be735859a5541b9ac972bb429fb1ea11d12fc35e5147b13c76f991e8"
+    },
+    {
+      "path": "docs/contact/scripts/run_native.py",
+      "bytes": 2014,
+      "sha256": "03ca21d517902033aee03112e735ec8a12fb900514b79e6eafdbb71f92780334"
+    },
+    {
+      "path": "docs/contact/scripts/run_wasm.mjs",
+      "bytes": 658,
+      "sha256": "882a4033af5d268903b4ef5337cb3bfba57ceeab8c8bd2e9d96c7260cf71c185"
+    },
+    {
+      "path": "docs/contact/scripts/validate.mjs",
+      "bytes": 3654,
+      "sha256": "8073dcfa1495e7fee8fc1838d2d7a4b595133d7a3197e1a86ab51c1a8c78151c"
+    },
+    {
+      "path": "docs/contact/simulation.mjs",
+      "bytes": 3089,
+      "sha256": "37f0dcf2217bc31abfccd1ae95ec0348c590aa8034150e13143289eed9aee5e0"
+    },
+    {
+      "path": "docs/contact/sources.json",
+      "bytes": 4309,
+      "sha256": "d96475730bff407901c568f4d29680dd186ec788653d15d88b1ff66a516e11b9"
+    },
+    {
+      "path": "docs/contact/ui.mjs",
+      "bytes": 4525,
+      "sha256": "b119688562d1e12c7e905b7cdbbf0ce4e16ca55ecd80ecf755f0d8c521ee2cac"
+    },
+    {
+      "path": "docs/contact/vendor/LICENSE-MUJOCO",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "docs/contact/vendor/MUJOCO_PACKAGE.json",
+      "bytes": 1291,
+      "sha256": "6f107d346ea5c8839555467bb7dc186f664604f9e927dd3f02718999d5a3446f"
+    },
+    {
+      "path": "docs/contact/vendor/MUJOCO_README.md",
+      "bytes": 20260,
+      "sha256": "8aac6a48315d961e9f5d06b1df254f6033ce541e4e8b7ba8d376859d6ad6b570"
+    },
+    {
+      "path": "docs/contact/vendor/OrbitControls.js",
+      "bytes": 40755,
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    {
+      "path": "docs/contact/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "docs/contact/vendor/mujoco.d.ts",
+      "bytes": 143398,
+      "sha256": "fc881715deb2e0ba471d5e10809ec30df2a908d74c21f8f2e20d148096f7dea4"
+    },
+    {
+      "path": "docs/contact/vendor/mujoco.js",
+      "bytes": 293619,
+      "sha256": "a5d5f00c4c16d327cf8275f88ddd47c857a5e9baec8ca4174d676fe299267a0c"
+    },
+    {
+      "path": "docs/contact/vendor/mujoco.wasm",
+      "bytes": 10370402,
+      "sha256": "d59c489dd521c80af6965756c5b90daff549fa281566544e4540c170d937633d"
+    },
+    {
+      "path": "docs/contact/vendor/three.core.js",
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "path": "docs/contact/vendor/three.webgpu.js",
+      "bytes": 2284850,
+      "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
+    },
+    {
+      "path": "docs/costs.json",
+      "bytes": 26216,
+      "sha256": "5d759de1dfb91cb7dee728dbd4f80c9d7bfc70ce151d25e8b528394967a63507"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 6927,
+      "sha256": "82eaf937d3cc2e7e5a6bed39bd8f216ded478a62b806d6ed720502b7cd59cee3"
+    },
+    {
+      "path": "docs/kinematics.js",
+      "bytes": 2288,
+      "sha256": "6a131df727f4e89501ae21fd61fb846663b64c4e9df259641e6216faac2c5993"
+    },
+    {
+      "path": "docs/legacy-estimates.html",
+      "bytes": 1228,
+      "sha256": "9badc9cde33347aa14159fbb60c8a55b10f185f2e553cb8f874b92f1525de6be"
+    },
+    {
+      "path": "docs/mobility.json",
+      "bytes": 16899,
+      "sha256": "468eebd54f7afc1e42fdf823423485f47d6529f74398896825eb3f456cdb1bbe"
+    },
+    {
+      "path": "docs/model.js",
+      "bytes": 2185,
+      "sha256": "85f99f1a9f94a1efae594c0ff205cf995c783378a0f6766c8d43ba99b6cf9ebc"
+    },
+    {
+      "path": "docs/scene.js",
+      "bytes": 6546,
+      "sha256": "8ed71a42926449cda9cf96364a8b18cf15dd67e55388a1bde7b0341be3e3bd0c"
+    },
+    {
+      "path": "docs/style.css",
+      "bytes": 6099,
+      "sha256": "2ab260b01c89a91d1034be517d4ae5912357654d16511b6a15a0b5246e7cc3aa"
+    },
+    {
+      "path": "docs/vendor/BufferGeometryUtils.js",
+      "bytes": 37712,
+      "sha256": "9fb63427ce6641fa14fd0baff9cc4d1b5f9c3d85fd084bf2e90e803c44ec1797"
+    },
+    {
+      "path": "docs/vendor/GLTFLoader.js",
+      "bytes": 117556,
+      "sha256": "200cb5621236d83d241662078878de25800b152d091ac63678d74179abb0df6b"
+    },
+    {
+      "path": "docs/vendor/OrbitControls.js",
+      "bytes": 40755,
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    {
+      "path": "docs/vendor/SkeletonUtils.js",
+      "bytes": 11535,
+      "sha256": "b1632a703206c3d830de9fcbe515696770d04b71a15ee6b50afa6d2c3298c86f"
+    },
+    {
+      "path": "docs/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "docs/vendor/three.core.js",
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    {
+      "path": "docs/vendor/three.webgpu.js",
+      "bytes": 2284850,
+      "sha256": "15cfce5c653541704fd9a3463c39d3e8b854bb6265ccd854d7cfe74090625cc6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 289,
+      "sha256": "400a88cec339247254762dfb91d3ee0588a00fac46edb6a774d1fe7c11b94067"
+    },
+    {
+      "path": "reconstruction/robots/README.md",
+      "bytes": 7538,
+      "sha256": "41a104d03496b321ee27b19ac1f9ced05dd46be4e657b538d93919930356ab3c"
+    },
+    {
+      "path": "reconstruction/robots/requirements-build.txt",
+      "bytes": 58,
+      "sha256": "c76bf9de2d2c07bf2799e338c79f11e64325121008ff3f8e978c7198bd33cc17"
+    },
+    {
+      "path": "reconstruction/robots/scripts/build_metadata.py",
+      "bytes": 8821,
+      "sha256": "8068eef59dcd38aee2c555de98afac8e6c5c4b27356b14dd9d0583b04ee3e6fa"
+    },
+    {
+      "path": "reconstruction/robots/scripts/convert_meshes.py",
+      "bytes": 9268,
+      "sha256": "24a6432be4c0cc5dea7ba6ed907a2069c07a308bf9678257ad09ffb1fcb6117a"
+    },
+    {
+      "path": "reconstruction/robots/scripts/rebuild.sh",
+      "bytes": 781,
+      "sha256": "72ec8d173553042a6e06cc1aacbff7ad89107c232307f3e8ae46b4aa7677c5a3"
+    },
+    {
+      "path": "reconstruction/robots/tests/validate_assets.py",
+      "bytes": 7929,
+      "sha256": "e5090252c2ecdaea8b881de63684fb2c5e3813e17079df3ed3e9ad1c1a199afe"
+    },
+    {
+      "path": "test-cad.mjs",
+      "bytes": 1943,
+      "sha256": "5cf4acba261a30483d19555634b54adfc1fa0915a40fcd1273d055bebf566122"
+    },
+    {
+      "path": "test-model.mjs",
+      "bytes": 1682,
+      "sha256": "0d7ae4a12e0ac0eca1d7233811f5e44960256143cfee4afffa721a2aefaee56e"
+    }
+  ]
+}

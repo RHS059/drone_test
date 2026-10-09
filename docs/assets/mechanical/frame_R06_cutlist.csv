@@ -1,0 +1,12 @@
+part,material_assumption,stock,quantity,blank_length_mm,note
+main rails,steel grade TBD,RHS200x100x10 R20/R10,2,4000,confirm stock corner radii
+crossmember_01,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=-1950; cope to main rail outer envelope
+crossmember_02,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=-1200; cope to main rail outer envelope
+crossmember_03,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=-400; cope to main rail outer envelope
+crossmember_04,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=750; cope to main rail outer envelope
+crossmember_05,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=1050; cope to main rail outer envelope
+crossmember_06,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=1300; cope to main rail outer envelope
+crossmember_07,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=1650; cope to main rail outer envelope
+crossmember_08,steel grade TBD,RHS200x100x10 R20/R10,1,860,X=1950; cope to main rail outer envelope
+arm decks,steel grade TBD,plate400x400x30,2,400,6xØ8.5 pilots per deck; post-weld machine/tap not released
+gussets,steel grade TBD,8mm triangular plate100x140,6,100,edge preparation TBD

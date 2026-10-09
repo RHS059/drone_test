@@ -1,0 +1,60 @@
+{
+  "frame_R06": {
+    "STEP_roundtrip_valid": true,
+    "STEP_solid_count": 18,
+    "STEP_volume_m3": 0.08790774387642031,
+    "mass_kg_at_7850": 690.0757894298994,
+    "exact_STEP_bounds_mm": [
+      -2000.0000001,
+      -510.0,
+      -100.0000001,
+      2000.0000001,
+      510.0,
+      130.0
+    ],
+    "GLB_valid_container": true,
+    "GLB_node_count": 18,
+    "GLB_bounds_m": [
+      [
+        -2.0,
+        -0.5099999904632568,
+        -0.10000000149011612
+      ],
+      [
+        2.0,
+        0.5099999904632568,
+        0.12999999523162842
+      ]
+    ],
+    "GLB_STEP_bounds_agree_tolerance_m": 0.00021
+  },
+  "adapter_R03": {
+    "STEP_roundtrip_valid": true,
+    "STEP_solid_count": 1,
+    "STEP_volume_m3": 0.00016920792809621432,
+    "mass_kg_at_7850": 1.3282822355552824,
+    "exact_STEP_bounds_mm": [
+      -50.0,
+      -50.0,
+      -2.5,
+      50.0,
+      50.0,
+      23.5
+    ],
+    "GLB_valid_container": true,
+    "GLB_node_count": 1,
+    "GLB_bounds_m": [
+      [
+        -0.05000000074505806,
+        -0.04998445883393288,
+        -0.0024999999441206455
+      ],
+      [
+        0.05000000074505806,
+        0.04998445883393288,
+        0.023499999195337296
+      ]
+    ],
+    "GLB_STEP_bounds_agree_tolerance_m": 0.00021
+  }
+}

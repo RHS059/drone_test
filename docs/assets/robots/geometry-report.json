@@ -1,0 +1,393 @@
+[
+  {
+    "link": "base_link_inertia",
+    "asset": "ur20/base_link_inertia.glb",
+    "source": "upstream/ur/meshes/ur20/visual/base.dae",
+    "bounds_mesh_m": [
+      [
+        -0.1225102993298535,
+        -0.12251028112317691,
+        0.00019210067016845259
+      ],
+      [
+        0.12256617620347467,
+        0.12251029437476516,
+        0.10764820844831363
+      ]
+    ],
+    "triangles": 2122,
+    "objects": 3,
+    "materials": 1,
+    "images": 1,
+    "bytes": 1846024,
+    "sha256": "e1a94e380e1e0803d1405f95c5dbea7229f5ff89639ebc0b072a0c962a67d344"
+  },
+  {
+    "link": "shoulder_link",
+    "asset": "ur20/shoulder_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/shoulder.dae",
+    "bounds_mesh_m": [
+      [
+        -0.09047388093602916,
+        -0.08999362818268349,
+        -0.1279273331455326
+      ],
+      [
+        0.09049208767037424,
+        0.1339999904495049,
+        0.09686753268114959
+      ]
+    ],
+    "triangles": 1112,
+    "objects": 2,
+    "materials": 1,
+    "images": 1,
+    "bytes": 1711424,
+    "sha256": "23ee4b44fdb268a5731e4ca73739366137fe663c78aecd819987646e1d2a8deb"
+  },
+  {
+    "link": "upper_arm_link",
+    "asset": "ur20/upper_arm_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/upperarm.dae",
+    "bounds_mesh_m": [
+      [
+        -0.089862849002316,
+        -0.13104027299999998,
+        -0.0931617
+      ],
+      [
+        0.09045404296599299,
+        0.09195690000000001,
+        0.9396386
+      ]
+    ],
+    "triangles": 3900,
+    "objects": 4,
+    "materials": 1,
+    "images": 1,
+    "bytes": 2128516,
+    "sha256": "e8409bdff71f2d03fe63a7d3a4173553809f09adec52d60c872cb38a4f47dfb3"
+  },
+  {
+    "link": "forearm_link",
+    "asset": "ur20/forearm_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/forearm.dae",
+    "bounds_mesh_m": [
+      [
+        -0.075289464942104,
+        -0.07870506331897999,
+        -0.07779394222060501
+      ],
+      [
+        0.07521818495636,
+        0.10470031292393742,
+        0.78054882194511
+      ]
+    ],
+    "triangles": 4292,
+    "objects": 4,
+    "materials": 1,
+    "images": 1,
+    "bytes": 2133448,
+    "sha256": "12bc13217620a21b467a0548c2a8561ef326298026b6ddd1c6b9ba75a1c0b1b2"
+  },
+  {
+    "link": "wrist_1_link",
+    "asset": "ur20/wrist_1_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/wrist1.dae",
+    "bounds_mesh_m": [
+      [
+        -0.05006512807126926,
+        -1.4644833010881835e-06,
+        -0.0524288884010963
+      ],
+      [
+        0.05007852818405668,
+        0.12916447390541058,
+        0.08465187931840898
+      ]
+    ],
+    "triangles": 2099,
+    "objects": 3,
+    "materials": 1,
+    "images": 1,
+    "bytes": 1842876,
+    "sha256": "de27c455a91f51296984ad742ff2509ac8bc568d7446f95c92b52c39b837d951"
+  },
+  {
+    "link": "wrist_2_link",
+    "asset": "ur20/wrist_2_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/wrist2.dae",
+    "bounds_mesh_m": [
+      [
+        -0.05035632190533835,
+        -0.053839014545619096,
+        -1.338238630431421e-07
+      ],
+      [
+        0.05021971290721742,
+        0.08438294163628636,
+        0.12471248745117533
+      ]
+    ],
+    "triangles": 1442,
+    "objects": 2,
+    "materials": 1,
+    "images": 1,
+    "bytes": 1754936,
+    "sha256": "366729a7a851a3a7d4015fa2a748b680e4a9d9585a500f80af83d1a318458e48"
+  },
+  {
+    "link": "wrist_3_link",
+    "asset": "ur20/wrist_3_link.glb",
+    "source": "upstream/ur/meshes/ur20/visual/wrist3.dae",
+    "bounds_mesh_m": [
+      [
+        -0.050009125365963435,
+        -0.0002500727719007843,
+        -0.050008640051817585
+      ],
+      [
+        0.05000876474085711,
+        0.06965003653583,
+        0.05565176910729809
+      ]
+    ],
+    "triangles": 2020,
+    "objects": 2,
+    "materials": 1,
+    "images": 1,
+    "bytes": 1831200,
+    "sha256": "988d9e53d603f8e36444436902b2eed4a0870306fe3d1b4d33c9459a138c7833"
+  },
+  {
+    "link": "robotiq_85_base_link",
+    "asset": "robotiq/robotiq_85_base_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/robotiq_base.dae",
+    "bounds_mesh_m": [
+      [
+        -0.04244333,
+        -0.03749996,
+        -0.003339409
+      ],
+      [
+        0.04244297,
+        0.03749996,
+        0.08999997
+      ]
+    ],
+    "triangles": 29278,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 2110048,
+    "sha256": "593d7b6092e6a79ff09eff82956354be5c9739e84d47a735197663f6d6e34870"
+  },
+  {
+    "link": "robotiq_85_left_knuckle_link",
+    "asset": "robotiq/robotiq_85_left_knuckle_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_knuckle.dae",
+    "bounds_mesh_m": [
+      [
+        -0.007599949,
+        -0.008049964,
+        -0.009716272
+      ],
+      [
+        0.03752481,
+        0.008449971,
+        0.01025098
+      ]
+    ],
+    "triangles": 1216,
+    "objects": 1,
+    "materials": 1,
+    "images": 0,
+    "bytes": 88964,
+    "sha256": "adf4339f503c1e865f9a00506094cb2c4f0d6679f3e029aa69182841f634da18"
+  },
+  {
+    "link": "robotiq_85_right_knuckle_link",
+    "asset": "robotiq/robotiq_85_right_knuckle_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_knuckle.dae",
+    "bounds_mesh_m": [
+      [
+        -0.03752481,
+        -0.008049964,
+        -0.009716272
+      ],
+      [
+        0.007599949,
+        0.008449971,
+        0.01025098
+      ]
+    ],
+    "triangles": 1216,
+    "objects": 1,
+    "materials": 1,
+    "images": 0,
+    "bytes": 88968,
+    "sha256": "19014a9d0031c8514c3c17d63bae75bdb54f68eaabe91e7b04b821ea43c2c7f1"
+  },
+  {
+    "link": "robotiq_85_left_finger_link",
+    "asset": "robotiq/robotiq_85_left_finger_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger.dae",
+    "bounds_mesh_m": [
+      [
+        -0.01449793,
+        -0.01439994,
+        -0.006262779
+      ],
+      [
+        0.01408028,
+        0.01279997,
+        0.05315166
+      ]
+    ],
+    "triangles": 2930,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 213088,
+    "sha256": "d3031fb26bd50ceb6e4ca37afd85a67f7d64b4a280954e503a07a5c4b3ed2237"
+  },
+  {
+    "link": "robotiq_85_right_finger_link",
+    "asset": "robotiq/robotiq_85_right_finger_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger.dae",
+    "bounds_mesh_m": [
+      [
+        -0.01408028,
+        -0.01359999,
+        -0.006262779
+      ],
+      [
+        0.01449793,
+        0.01359999,
+        0.05315166
+      ]
+    ],
+    "triangles": 2930,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 213088,
+    "sha256": "2bd439d4dcb26f21b5fc1c9c2d6983d1f17ee803bc3bc4009c9a62067c834a43"
+  },
+  {
+    "link": "robotiq_85_left_inner_knuckle_link",
+    "asset": "robotiq/robotiq_85_left_inner_knuckle_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae",
+    "bounds_mesh_m": [
+      [
+        -0.005999684,
+        -0.01734995,
+        -0.005967736
+      ],
+      [
+        0.04315721,
+        0.01764994,
+        0.04941809
+      ]
+    ],
+    "triangles": 1778,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 130132,
+    "sha256": "8ec1f58234f7e7586ba6d534df1b8c3682bba94c8db4d56430e1a25e967e019e"
+  },
+  {
+    "link": "robotiq_85_right_inner_knuckle_link",
+    "asset": "robotiq/robotiq_85_right_inner_knuckle_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae",
+    "bounds_mesh_m": [
+      [
+        -0.04315721,
+        -0.01744997,
+        -0.005967736
+      ],
+      [
+        0.005999684,
+        0.01754999,
+        0.04941809
+      ]
+    ],
+    "triangles": 1778,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 130140,
+    "sha256": "44509c7d097141fbe952aae87c753c1183e51803ffe15e0f60d9366d37c4321d"
+  },
+  {
+    "link": "robotiq_85_left_finger_tip_link",
+    "asset": "robotiq/robotiq_85_left_finger_tip_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae",
+    "bounds_mesh_m": [
+      [
+        -0.0252586,
+        -0.01429998,
+        -0.005999982
+      ],
+      [
+        0.005977153,
+        0.01269996,
+        0.05101543
+      ]
+    ],
+    "triangles": 2618,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 190548,
+    "sha256": "b245ba96bc7e33947648be70aa2080ba220a8c35f9a807fdc6839ca073354518"
+  },
+  {
+    "link": "robotiq_85_right_finger_tip_link",
+    "asset": "robotiq/robotiq_85_right_finger_tip_link.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae",
+    "bounds_mesh_m": [
+      [
+        -0.005977153,
+        -0.01344996,
+        -0.005999982
+      ],
+      [
+        0.0252586,
+        0.01354998,
+        0.05101543
+      ]
+    ],
+    "triangles": 2618,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 190552,
+    "sha256": "5f4690538e78f9db93ae85f9afbe6437c0e2f3d6176ee2867d9f393d7fdd1aed"
+  },
+  {
+    "link": "robotiq_coupling",
+    "asset": "robotiq/robotiq_coupling.glb",
+    "source": "upstream/robotiq/grippers/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae",
+    "bounds_mesh_m": [
+      [
+        -0.03749996,
+        -0.03749996,
+        -0.002999961
+      ],
+      [
+        0.03749996,
+        0.03749996,
+        0.01389998
+      ]
+    ],
+    "triangles": 2644,
+    "objects": 1,
+    "materials": 2,
+    "images": 0,
+    "bytes": 192476,
+    "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
+  }
+]

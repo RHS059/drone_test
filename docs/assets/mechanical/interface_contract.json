@@ -1,0 +1,125 @@
+{
+  "revision": "frame R06 / adapter R03 new reconstruction",
+  "units": "m",
+  "frame_axes": {
+    "X": "forward",
+    "Y": "left",
+    "Z": "up"
+  },
+  "frame_origin": "center of rail envelope X/Y/Z; deck top Z+.13",
+  "arm_mounts": [
+    {
+      "id": "left",
+      "translation": [
+        0.9,
+        0.3,
+        0.13
+      ],
+      "rotation_rpy": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "right",
+      "translation": [
+        0.9,
+        -0.3,
+        0.13
+      ],
+      "rotation_rpy": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "frame_file": "frame_R06.glb",
+  "adapter_file": "adapter_R03.glb",
+  "adapter_local_origin": "UR mounting contact plane; body toward +Z; pilot towards -Z",
+  "transforms": [
+    {
+      "from": "tool0",
+      "to": "adapter",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation_rpy": [
+        0,
+        0,
+        3.141592653589793
+      ],
+      "status": "retained convention, drawing-index reconciliation required"
+    },
+    {
+      "from": "adapter",
+      "to": "coupling",
+      "translation": [
+        0,
+        0,
+        0.0235
+      ],
+      "rotation_rpy": [
+        0,
+        0,
+        0
+      ],
+      "status": "nominal seating plane"
+    },
+    {
+      "from": "coupling",
+      "to": "gripper",
+      "translation": [
+        0,
+        0,
+        0.011
+      ],
+      "rotation_rpy": [
+        0,
+        0,
+        0
+      ],
+      "status": "verified in licensed Robotiq 2F85 ur_to_robotiq_adapter.urdf.xacro; reference frame convention, not physical thickness"
+    }
+  ],
+  "mandatory_vendor_part": {
+    "part": "Robotiq GRP-CPL-062",
+    "interface": "ISO9409-1-50-4-M6",
+    "physical_overall_thickness_m": 0.0169,
+    "vendor_CAD_included": false,
+    "skirt_below_contact_plane_m": 0.003
+  },
+  "release_status": "engineering development, NOT fabrication released",
+  "warning": "Original R04 bytes unavailable. New geometry and mass; prior tests do not transfer.",
+  "adapter_skirt_relief": {
+    "inner_radius_m": 0.031,
+    "outer_radius_m": 0.038,
+    "depth_m": 0.0035,
+    "design_selected_clearance_m": 0.0005
+  },
+  "arm_mount_holes": {
+    "pattern": "six M10 intended via \u00d88.5 tap pilots",
+    "pitch_diameter_m": 0.21,
+    "phase_from_CAD_X_deg": 0,
+    "source_drawing_phase_from_page_X_deg": 0,
+    "drawing_to_robot_base_registration": "unresolved; drawing page axes are not defined as URDF axes",
+    "future_pin_centers_drawing_mm": [
+      [
+        -95,
+        -10
+      ],
+      [
+        95,
+        -10
+      ]
+    ],
+    "pin_seats_modeled": false
+  },
+  "changes_from_initial_R05": [
+    "Corrected M10 pilot phase from30\u00b0 to0\u00b0 relative CAD+X to match manufacturer page convention",
+    "No prior test claim carried forward; rerun current R06 geometry"
+  ]
+}

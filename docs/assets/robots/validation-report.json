@@ -1,0 +1,189 @@
+{
+  "status": "passed",
+  "geometry_checks": [
+    {
+      "asset": "ur20/base_link_inertia.glb",
+      "triangles": 2122,
+      "source_vertex_max_error_m": 1.2224357803791719e-08,
+      "source_normal_max_error": 1.0001094374878505e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "e1a94e380e1e0803d1405f95c5dbea7229f5ff89639ebc0b072a0c962a67d344"
+    },
+    {
+      "asset": "ur20/shoulder_link.glb",
+      "triangles": 1112,
+      "source_vertex_max_error_m": 1.515179406941236e-08,
+      "source_normal_max_error": 2.1831417451600998e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "23ee4b44fdb268a5731e4ca73739366137fe663c78aecd819987646e1d2a8deb"
+    },
+    {
+      "asset": "ur20/upper_arm_link.glb",
+      "triangles": 3900,
+      "source_vertex_max_error_m": 5.702257166451119e-09,
+      "source_normal_max_error": 1.5481306148146246e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "e8409bdff71f2d03fe63a7d3a4173553809f09adec52d60c872cb38a4f47dfb3"
+    },
+    {
+      "asset": "ur20/forearm_link.glb",
+      "triangles": 4292,
+      "source_vertex_max_error_m": 4.419546129064145e-08,
+      "source_normal_max_error": 1.2329336052108175e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "12bc13217620a21b467a0548c2a8561ef326298026b6ddd1c6b9ba75a1c0b1b2"
+    },
+    {
+      "asset": "ur20/wrist_1_link.glb",
+      "triangles": 2099,
+      "source_vertex_max_error_m": 1.0066838890265828e-08,
+      "source_normal_max_error": 2.0860501082076155e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "de27c455a91f51296984ad742ff2509ac8bc568d7446f95c92b52c39b837d951"
+    },
+    {
+      "asset": "ur20/wrist_2_link.glb",
+      "triangles": 1442,
+      "source_vertex_max_error_m": 5.56492642245221e-09,
+      "source_normal_max_error": 1.7018914744149072e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "366729a7a851a3a7d4015fa2a748b680e4a9d9585a500f80af83d1a318458e48"
+    },
+    {
+      "asset": "ur20/wrist_3_link.glb",
+      "triangles": 2020,
+      "source_vertex_max_error_m": 5.554900386894879e-09,
+      "source_normal_max_error": 1.4126709191319975e-07,
+      "uv_max_error": 5.960464477539063e-08,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": true,
+      "sha256": "988d9e53d603f8e36444436902b2eed4a0870306fe3d1b4d33c9459a138c7833"
+    },
+    {
+      "asset": "robotiq/robotiq_85_base_link.glb",
+      "triangles": 29278,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 1.1579530756478107e-07,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "593d7b6092e6a79ff09eff82956354be5c9739e84d47a735197663f6d6e34870"
+    },
+    {
+      "asset": "robotiq/robotiq_85_left_knuckle_link.glb",
+      "triangles": 1216,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 9.5667866739646e-08,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "adf4339f503c1e865f9a00506094cb2c4f0d6679f3e029aa69182841f634da18"
+    },
+    {
+      "asset": "robotiq/robotiq_85_right_knuckle_link.glb",
+      "triangles": 1216,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 9.700364278497631e-08,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "19014a9d0031c8514c3c17d63bae75bdb54f68eaabe91e7b04b821ea43c2c7f1"
+    },
+    {
+      "asset": "robotiq/robotiq_85_left_finger_link.glb",
+      "triangles": 2930,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 1.0873677303013807e-07,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "d3031fb26bd50ceb6e4ca37afd85a67f7d64b4a280954e503a07a5c4b3ed2237"
+    },
+    {
+      "asset": "robotiq/robotiq_85_right_finger_link.glb",
+      "triangles": 2930,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 9.978705961533052e-08,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "2bd439d4dcb26f21b5fc1c9c2d6983d1f17ee803bc3bc4009c9a62067c834a43"
+    },
+    {
+      "asset": "robotiq/robotiq_85_left_inner_knuckle_link.glb",
+      "triangles": 1778,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 9.92504042285347e-08,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "8ec1f58234f7e7586ba6d534df1b8c3682bba94c8db4d56430e1a25e967e019e"
+    },
+    {
+      "asset": "robotiq/robotiq_85_right_inner_knuckle_link.glb",
+      "triangles": 1778,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 1.0283470941452322e-07,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "44509c7d097141fbe952aae87c753c1183e51803ffe15e0f60d9366d37c4321d"
+    },
+    {
+      "asset": "robotiq/robotiq_85_left_finger_tip_link.glb",
+      "triangles": 2618,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 9.919146759518327e-08,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "b245ba96bc7e33947648be70aa2080ba220a8c35f9a807fdc6839ca073354518"
+    },
+    {
+      "asset": "robotiq/robotiq_85_right_finger_tip_link.glb",
+      "triangles": 2618,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 1.0599399291599809e-07,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "5f4690538e78f9db93ae85f9afbe6437c0e2f3d6176ee2867d9f393d7fdd1aed"
+    },
+    {
+      "asset": "robotiq/robotiq_coupling.glb",
+      "triangles": 2644,
+      "source_vertex_max_error_m": 0,
+      "source_normal_max_error": 1.0086403945397393e-07,
+      "uv_max_error": 0,
+      "material_diffuse_verified": true,
+      "texture_bytes_sha256_verified": null,
+      "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
+    }
+  ],
+  "fk": {
+    "arm_poses": 4,
+    "arm_standard_dh_independently_matched": true,
+    "wrist3_to_tool0_identity_verified": true,
+    "gripper_poses": 3,
+    "six_moving_joints_five_mimics_verified": true,
+    "parallel_fingertip_analytic_verified": true
+  },
+  "source_hashes_verified": true,
+  "manufacturing_fit": "not certified; project adapter seating and skirt clearance need separate mechanical audit",
+  "libraries": {
+    "pycollada": "0.9.3",
+    "numpy": "2.5.3"
+  }
+}

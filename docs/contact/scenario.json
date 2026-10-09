@@ -1,0 +1,50 @@
+{
+  "reconstruction": true,
+  "native_version": "3.15.0",
+  "wasm_version": "3.15.0",
+  "duration_s": 5.5,
+  "dt_s": 0.001,
+  "sample_stride": 10,
+  "sample_count": 550,
+  "fixture_release_s": 1.5,
+  "gripper_release_s": 4.0,
+  "move_start_s": 2.0,
+  "move_end_s": 3.5,
+  "target_x_m": 0.1,
+  "initial_coupon_center_m": [
+    0,
+    0,
+    0.1512
+  ],
+  "strict_position_tolerance_m": 0.01,
+  "case_parameters": [
+    {
+      "id": "nominal",
+      "mass_kg": 0.15,
+      "friction": 0.7
+    },
+    {
+      "id": "low-friction",
+      "mass_kg": 0.15,
+      "friction": 0.015
+    },
+    {
+      "id": "heavy",
+      "mass_kg": 2.0,
+      "friction": 0.7
+    }
+  ],
+  "control": {
+    "open_ctrl": 0,
+    "closed_ctrl": 200,
+    "close_start_s": 0.2,
+    "close_end_s": 1.2
+  },
+  "notes": [
+    "New declared reconstruction; historical exact parameters unavailable.",
+    "The only coupon weld is an explicitly labeled temporary world fixture, disabled at 1.5 seconds. No object-to-gripper weld.",
+    "Mesh source millimetres scaled 0.001 by Menagerie. Coupon STEP/STL millimetres; analytic box collision half sizes metres.",
+    "Strict task positioning error is max Euclidean coupon-target error over 1.6 <= time < 4.0 s; release is separately checked.",
+    "Transport trajectory is prescribed gripper base motion; contacts and object rigid-body dynamics are solved. No full arm/UGV/controller simulation."
+  ]
+}
