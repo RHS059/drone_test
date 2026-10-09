@@ -1,3 +1,4 @@
+import {restoreCadNodeNames} from './connected/restore-cad-names.mjs';
 import * as T from 'three/webgpu';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {GLTFLoader} from './vendor/GLTFLoader.js';
@@ -15,7 +16,7 @@ export async function createScene(host,onSelect){
  scene.add(new T.HemisphereLight('#e7f2ee','#738887',3));const light=new T.DirectionalLight('#fff2dd',4);light.position.set(2,-3,6);scene.add(light);const fill=new T.DirectionalLight('#bddef4',2);fill.position.set(-2,4,3);scene.add(fill);
  const grid=new T.GridHelper(12,24,'#668477','#334b45');grid.rotation.x=Math.PI/2;grid.position.z=0;scene.add(grid);const axes=new T.AxesHelper(.4);axes.visible=false;scene.add(axes);
  const loader=new GLTFLoader(),cache=new Map();const pending=new Map();let meshCount=0;
- async function asset(url,label){if(!pending.has(url))pending.set(url,url.endsWith('.gz')?(async()=>{const r=await fetch(url);if(!r.ok)throw Error('Missing compressed CAD asset');const bytes=await decodeCadBytes(await r.arrayBuffer());return loader.parseAsync(bytes,new URL('.',new URL(url,location.href)).href)})():loader.loadAsync(url));const original=(await pending.get(url)).scene;const obj=original.clone(true);obj.traverse(o=>{if(o.isMesh){o.userData.label=label;meshCount++;}});cache.set(url,original);return obj;}
+ async function asset(url,label){if(!pending.has(url))pending.set(url,url.endsWith('.gz')?(async()=>{const r=await fetch(url);if(!r.ok)throw Error('Missing compressed CAD asset');const bytes=await decodeCadBytes(await r.arrayBuffer());return loader.parseAsync(bytes,new URL('.',new URL(url,location.href)).href)})():loader.loadAsync(url));const original=restoreCadNodeNames(await pending.get(url)).scene;const obj=original.clone(true);obj.traverse(o=>{if(o.isMesh){o.userData.label=label;meshCount++;}});cache.set(url,original);return obj;}
  const vehicle=new T.Group();vehicle.position.z=.6655;scene.add(vehicle);
  const frame=await asset('./assets/mechanical/frame_R07.glb','Original lighter frame candidate · parametric B-rep · unqualified structure');vehicle.add(frame);
  const rover=await loadRover(vehicle,asset);

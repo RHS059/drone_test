@@ -6,13 +6,13 @@
   "files": [
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 1358,
-      "sha256": "c421ad0336c1b2fc0c32be17c5bb0423c158c7011a13ff0c7b498aafac978dd0"
+      "bytes": 1390,
+      "sha256": "abb2e0f6df771914f2ec0c8f773d12fb09757f10030ff211dd96190fe103dfbf"
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 1148,
-      "sha256": "dd36e2ef4a7e7d07ec32d9c2cc6edc126c46e6f86844143bdeb7de1037a650ff"
+      "bytes": 1180,
+      "sha256": "fe29de0b98616caebee9e84bfaa154b16d1381339c59d3c606160425f4d67f0a"
     },
     {
       "path": "BASELINE.md",
@@ -42,7 +42,7 @@
     {
       "path": "docs/app.js",
       "bytes": 5875,
-      "sha256": "40b6b54111e96373344519c49ee612d14576f516b50d15ecc636fb0449368744"
+      "sha256": "9d4e09f753776c76676f15d008de57e0e25136d42fcb52ceb951c13ade91e0e6"
     },
     {
       "path": "docs/assembly.json",
@@ -255,71 +255,6 @@
       "sha256": "3d775993edff5130dcb896b7eb34f986020aa7e5c3a8e423688f3f44f513eb38"
     },
     {
-      "path": "docs/assets/connected/actuator.json",
-      "bytes": 3971,
-      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
-    },
-    {
-      "path": "docs/assets/connected/drive.glb.gz",
-      "bytes": 610822,
-      "sha256": "b17a40e2913c70606a253610d84d1c59765e49836384b3abec0275259a5a5e6f"
-    },
-    {
-      "path": "docs/assets/connected/drive.json",
-      "bytes": 10966,
-      "sha256": "153cbcf754da7a3c830ae7fa3ac221beb97fb2d6557057b8ac79f4d457a0ba00"
-    },
-    {
-      "path": "docs/assets/connected/joints.glb.gz",
-      "bytes": 1616908,
-      "sha256": "a15a93d1f751b5951c68a0b4149541733acaebda2f698a9cf8929894a19de74c"
-    },
-    {
-      "path": "docs/assets/connected/joints.json",
-      "bytes": 481636,
-      "sha256": "945a21aea2d3a304912020ef2677732c6d664f11adcf665ca20c99de514283ae"
-    },
-    {
-      "path": "docs/assets/connected/mechanical-contract.json",
-      "bytes": 9530,
-      "sha256": "a49138b89926d5338b96a993fa07c616b830ddf6aab2ea4b078a4217bb2fc8b5"
-    },
-    {
-      "path": "docs/assets/connected/retained-graph.json",
-      "bytes": 404268,
-      "sha256": "eec5e71f23f76af841ecfe7d0dfd3c92de881f608b95e426dc0eb1962a17509d"
-    },
-    {
-      "path": "docs/assets/connected/shock.glb.gz",
-      "bytes": 2032322,
-      "sha256": "6a486b8902f5c83bfbb7e43629fbfffd8d4a961b80f0101cd1c6b73588bafeea"
-    },
-    {
-      "path": "docs/assets/connected/shock.json",
-      "bytes": 11320,
-      "sha256": "8d4f102c6e61f1cb9e68e7f96215d1658bcff187773e1d03548b8edf8d02cd3b"
-    },
-    {
-      "path": "docs/assets/connected/structure.glb.gz",
-      "bytes": 12251666,
-      "sha256": "7ce4dda8c2ef9457c5718c1cba0755d75da71b57e35566b58322b2ed5d63ffe7"
-    },
-    {
-      "path": "docs/assets/connected/structure.json",
-      "bytes": 140171,
-      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
-    },
-    {
-      "path": "docs/assets/connected/wheel.glb.gz",
-      "bytes": 1291564,
-      "sha256": "4428707128dcccc0c4f3cfe7de55ee5307a66a8ed89c7083a30c02cb2b98071f"
-    },
-    {
-      "path": "docs/assets/connected/wheel.json",
-      "bytes": 2759,
-      "sha256": "772213abb0f5dccfe95340abd31fe3000194b822039def732009be58820fa201"
-    },
-    {
       "path": "docs/assets/connected-audit/R11_lower_miter_wall_audit.json",
       "bytes": 1155,
       "sha256": "5a6491b3c3ce73c4e7d174c54a86e69d656b025e6c59ac91a057a9aecc2a8957"
@@ -528,6 +463,71 @@
       "path": "docs/assets/connected-sources/mechanical-source.zip.part08",
       "bytes": 2800861,
       "sha256": "69694e8480b30048c6178304c7814bf2f51e6640ea36d3d647f1472de6c54be5"
+    },
+    {
+      "path": "docs/assets/connected/actuator.json",
+      "bytes": 3971,
+      "sha256": "fb38a94d6e5d66ed4ce97af0faf7d7e435e62e8be273aca38dbb4de231326203"
+    },
+    {
+      "path": "docs/assets/connected/drive.glb.gz",
+      "bytes": 610822,
+      "sha256": "b17a40e2913c70606a253610d84d1c59765e49836384b3abec0275259a5a5e6f"
+    },
+    {
+      "path": "docs/assets/connected/drive.json",
+      "bytes": 10966,
+      "sha256": "153cbcf754da7a3c830ae7fa3ac221beb97fb2d6557057b8ac79f4d457a0ba00"
+    },
+    {
+      "path": "docs/assets/connected/joints.glb.gz",
+      "bytes": 1616908,
+      "sha256": "a15a93d1f751b5951c68a0b4149541733acaebda2f698a9cf8929894a19de74c"
+    },
+    {
+      "path": "docs/assets/connected/joints.json",
+      "bytes": 481636,
+      "sha256": "945a21aea2d3a304912020ef2677732c6d664f11adcf665ca20c99de514283ae"
+    },
+    {
+      "path": "docs/assets/connected/mechanical-contract.json",
+      "bytes": 9530,
+      "sha256": "a49138b89926d5338b96a993fa07c616b830ddf6aab2ea4b078a4217bb2fc8b5"
+    },
+    {
+      "path": "docs/assets/connected/retained-graph.json",
+      "bytes": 404268,
+      "sha256": "eec5e71f23f76af841ecfe7d0dfd3c92de881f608b95e426dc0eb1962a17509d"
+    },
+    {
+      "path": "docs/assets/connected/shock.glb.gz",
+      "bytes": 2032322,
+      "sha256": "6a486b8902f5c83bfbb7e43629fbfffd8d4a961b80f0101cd1c6b73588bafeea"
+    },
+    {
+      "path": "docs/assets/connected/shock.json",
+      "bytes": 11320,
+      "sha256": "8d4f102c6e61f1cb9e68e7f96215d1658bcff187773e1d03548b8edf8d02cd3b"
+    },
+    {
+      "path": "docs/assets/connected/structure.glb.gz",
+      "bytes": 12251666,
+      "sha256": "7ce4dda8c2ef9457c5718c1cba0755d75da71b57e35566b58322b2ed5d63ffe7"
+    },
+    {
+      "path": "docs/assets/connected/structure.json",
+      "bytes": 140171,
+      "sha256": "2b75580bd87381495d0b5c044e6ebd8e3a4072fde29def12e663514cef76380d"
+    },
+    {
+      "path": "docs/assets/connected/wheel.glb.gz",
+      "bytes": 1291564,
+      "sha256": "4428707128dcccc0c4f3cfe7de55ee5307a66a8ed89c7083a30c02cb2b98071f"
+    },
+    {
+      "path": "docs/assets/connected/wheel.json",
+      "bytes": 2759,
+      "sha256": "772213abb0f5dccfe95340abd31fe3000194b822039def732009be58820fa201"
     },
     {
       "path": "docs/assets/corners/drive-reservation.json",
@@ -1265,6 +1265,11 @@
       "sha256": "9f686c08d2de54a5094ac97274cf3311538bdab7d53f0bbe4341c931a6552472"
     },
     {
+      "path": "docs/assets/robots/source-manifest.json",
+      "bytes": 9887,
+      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
+    },
+    {
       "path": "docs/assets/robots/source/robotiq/LICENSE",
       "bytes": 1515,
       "sha256": "376150a80f36fc6ca750935fb74f99b6a77b9942f1c6c5bf1d51a2adc853b096"
@@ -1513,11 +1518,6 @@
       "path": "docs/assets/robots/source/ur/urdf/ur_macro.xacro",
       "bytes": 18813,
       "sha256": "2683ddcc2db392116d69ac775e4d6dd1c7b3d420f9eca926bd10cf43a1ce8b35"
-    },
-    {
-      "path": "docs/assets/robots/source-manifest.json",
-      "bytes": 9887,
-      "sha256": "9b9711aa6ccc3825c4e5d703fe5f5c05ea61f119593f073833e0cf0570b1593f"
     },
     {
       "path": "docs/assets/robots/ur20/base_link_inertia.glb",
@@ -2185,6 +2185,11 @@
       "sha256": "70d5e5ff317e00df052e5b0bfd7f89ad411137edd8713273d296daa03f5d7aaf"
     },
     {
+      "path": "docs/connected/restore-cad-names.mjs",
+      "bytes": 538,
+      "sha256": "e30f33f9640a7ec518a2f4d3ff38a90f9b05c054bdc1c78a14291215c23ecb40"
+    },
+    {
       "path": "docs/connected/rigid-matrix.mjs",
       "bytes": 619,
       "sha256": "7c9693be24985d27ea330665fad6a0f6d22b6cfc7f87640628e7882cb99cd006"
@@ -2457,7 +2462,7 @@
     {
       "path": "docs/index.html",
       "bytes": 14854,
-      "sha256": "5563f4d186645e418358db58963999fa0a5d1c0192d149714ae4e956aaa291df"
+      "sha256": "af295cd0381fea1b9470b21fb620e3d6cb748f749be679d6bf3c1c98f8758bdb"
     },
     {
       "path": "docs/kinematics.js",
@@ -2486,8 +2491,8 @@
     },
     {
       "path": "docs/scene.js",
-      "bytes": 7440,
-      "sha256": "994164a00869afa439d5e4eec26913a8bf754a7b4e139fcdb19d90cf640384fd"
+      "bytes": 7530,
+      "sha256": "5e44a60859a2f493cf1b43b26ee3404dab1373b33cba673a5b20515e73501e7e"
     },
     {
       "path": "docs/steering-transforms.js",
@@ -2793,6 +2798,11 @@
       "path": "test-motion-study.mjs",
       "bytes": 3580,
       "sha256": "cc21f61d1c112efb94f2ca18ca8ff377f844bdb110b762fbef7ba5dc09e3dbdb"
+    },
+    {
+      "path": "test-real-gltf-body.mjs",
+      "bytes": 1502,
+      "sha256": "f5a3ecb528f3a814b43e13c8c59040a2cb041391cbf6c7db347f2db1d677e8f5"
     },
     {
       "path": "test-rigid-matrix.mjs",
