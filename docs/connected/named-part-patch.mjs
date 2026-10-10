@@ -33,12 +33,14 @@ export function applyNamedPartPatch(base, delta, changes) {
   return {replaced:changes.filter(c=>c.action==='replace').length,added:changes.filter(c=>c.action==='add').length,removed:changes.filter(c=>c.action==='remove').length,nodes:base.children.length};
 }
 
-export function bindServiceVisibility(body, groups) {
+export function bindServiceVisibility(body, groups, inspectionPanels=[]) {
   const nodes=new Map(body.children.map(n=>[n.name,n])), removable=new Set(),retained=new Set();
   for(const group of groups){
     for(const n of group.removable||[]){if(!nodes.has(n))throw Error('Missing removable service part: '+n);removable.add(n);}
     for(const n of group.retained_on_body||[]){if(!nodes.has(n))throw Error('Missing retained service part: '+n);retained.add(n);}
   }
   if([...retained].some(n=>removable.has(n)))throw Error('Part cannot be both removed and retained');
-  return {setOpen(v){for(const n of removable)nodes.get(n).visible=!v;},snapshot(){return {removable:[...removable],retained:[...retained]};}};
+  const panels=new Set([...inspectionPanels,...removable]);for(const n of panels)if(!nodes.has(n)||retained.has(n))throw Error('Invalid inspection panel: '+n);
+  let open=false,visible=true;const apply=()=>{for(const n of panels)nodes.get(n).visible=visible&&!(open&&removable.has(n));};
+  return {setOpen(v){open=Boolean(v);apply();},setPanelsVisible(v){visible=Boolean(v);apply();},snapshot(){return {removable:[...removable],retained:[...retained],inspectionPanels:[...panels],panelsVisible:visible,serviceOpen:open};}};
 }

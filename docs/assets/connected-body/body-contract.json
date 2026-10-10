@@ -992,5 +992,18 @@
       "physical_electrical_continuity_verified": false
     }
   },
-  "main_pair_partition_revision": "E05: exactly two replacements,40-hole deck and BA02 unchanged"
+  "main_pair_partition_revision": "E05: exactly two replacements,40-hole deck and BA02 unchanged",
+  "inspection_panel_names": [
+    "main_left_side_3mm",
+    "main_right_side_3mm",
+    "main_left_lower_sloping_shoulder",
+    "main_left_upper_sloping_shoulder",
+    "main_right_lower_sloping_shoulder",
+    "main_right_upper_sloping_shoulder",
+    "front_tool_left_side",
+    "front_tool_right_side",
+    "front_tool_nose_wall",
+    "front_sloped_service_nose"
+  ],
+  "inspection_panel_scope": "Visibility-only outer shell plus removable service covers and their loose hardware. Retain deck, bulkheads, partitions, battery assemblies, ledges, carriers, nutplates and electrical supports. Hiding fixed shell panels is not a removal procedure."
 }

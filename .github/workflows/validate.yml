@@ -17,7 +17,7 @@ jobs:
       - run: node test-model.mjs
       - run: node test-cad.mjs
       - run: node test-connected-mechanics.mjs && node test-current-rover.mjs && node test-battery-polarity.mjs
-      - run: node test-composed-body.mjs && node test-real-gltf-body.mjs && node test-main-pair.mjs
+      - run: node test-composed-body.mjs && node test-real-gltf-body.mjs && node test-main-pair.mjs && node test-panel-visibility.mjs
       - run: node test-electrical-scene.mjs && node test-rigid-matrix.mjs && node docs/assets/flange-regression/test-flange-fastener.mjs docs/assets/mechanical/adapter_R04.step docs/assets/flange-regression/flange-fastener-contract.json docs/assets/flange-regression/flange-fastener-report.json
       - run: node test-costs.mjs
       - run: node test-controls-ready.mjs

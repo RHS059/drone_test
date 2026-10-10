@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '24'
       - name: Validate CAD reconstruction
-        run: node --check docs/app.js && node --check docs/scene.js && node test-model.mjs && node test-cad.mjs && node test-connected-mechanics.mjs && node test-current-rover.mjs && node test-battery-polarity.mjs && node test-composed-body.mjs && node test-real-gltf-body.mjs && node test-main-pair.mjs && node test-electrical-scene.mjs && node test-rigid-matrix.mjs && node docs/assets/flange-regression/test-flange-fastener.mjs docs/assets/mechanical/adapter_R04.step docs/assets/flange-regression/flange-fastener-contract.json docs/assets/flange-regression/flange-fastener-report.json && node test-costs.mjs && node test-controls-ready.mjs && node docs/contact/scripts/validate.mjs
+        run: node --check docs/app.js && node --check docs/scene.js && node test-model.mjs && node test-cad.mjs && node test-connected-mechanics.mjs && node test-current-rover.mjs && node test-battery-polarity.mjs && node test-composed-body.mjs && node test-real-gltf-body.mjs && node test-main-pair.mjs && node test-panel-visibility.mjs && node test-electrical-scene.mjs && node test-rigid-matrix.mjs && node docs/assets/flange-regression/test-flange-fastener.mjs docs/assets/mechanical/adapter_R04.step docs/assets/flange-regression/flange-fastener-contract.json docs/assets/flange-regression/flange-fastener-report.json && node test-costs.mjs && node test-controls-ready.mjs && node docs/contact/scripts/validate.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

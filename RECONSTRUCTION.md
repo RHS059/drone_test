@@ -24,3 +24,7 @@ Preserve per-asset notices. UR geometry is subject to the complete graphical-doc
 ## Supported main cable pair
 
 E05 adds exactly 98 named cable/support/retention parts and replaces two partitions for four retained glands. Its graph binds 105 actual scene objects across 22 interface edges. Only the isolator-output to BMS-battery pair has modeled jacket routes; upstream battery wiring, conductor/crimp continuity and full-circuit protection remain unfinished. The 40-hole deck, BA02 parts and corrected terminal polarity are unchanged. The known modeled/catalogue subset is 1272.550107 kg; complete vehicle mass and electrical operation remain unverified. Run `node test-main-pair.mjs` for the actual-GLTFLoader composed regression.
+
+## Inspection visibility
+
+The Outer panels layer hides an explicit set of ten exterior skin pieces plus the 92 removable service-cover/loose-fastener nodes. It retains 185 body nodes, including deck, bulkheads, partitions, battery assemblies, support ledges and nutplates. Electrical hardware and cable supports stay visible. This is an inspection layer, not a removal or load-support procedure. Service-open combines with this layer; Home resets motion without changing either visibility choice. `test-panel-visibility.mjs` checks 18 state transitions and stable component identities.
